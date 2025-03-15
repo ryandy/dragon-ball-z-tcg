@@ -23,10 +23,11 @@ class PersonalityCard(Card):
         self.card_power = card_power
 
     def __repr__(self):
-        return f'{self.name} LV{self.level}'
+        return f'{self.name} Lv{self.level}'
 
-    def from_spec(card_module):
-        return PersonalityCard(
+    @classmethod
+    def from_spec(cls, card_module):
+        return cls(
             card_module.NAME,
             card_module.LEVEL,
             card_module.SAGA,

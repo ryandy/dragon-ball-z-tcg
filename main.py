@@ -1,14 +1,18 @@
+import random
 import sys
 
-from card_factory import CardFactory
-from saga import Saga
+from deck import Deck
+from state import State
 
 
 def main():
-    goku1 = CardFactory.from_spec(Saga.SAIYAN, 158)
-    goku2 = CardFactory.from_spec(Saga.SAIYAN, 159)
-    print(goku1)
-    print(goku2)
+    random.seed(0)
+
+    deck1 = Deck.from_spec('goku')
+    deck2 = Deck.from_spec('goku')
+
+    state = State(deck1, deck2)
+    print(state)
 
 
 if __name__ == '__main__':

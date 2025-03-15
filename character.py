@@ -1,7 +1,8 @@
+import enum
 import sys
 
 
-class Character:
+class Character(enum.Enum):
     GOKU = 1
     PICCOLO = 2
     GOHAN = 3

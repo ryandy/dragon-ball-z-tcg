@@ -1,7 +1,8 @@
+import enum
 import sys
 
 
-class Rarity:
+class Rarity(enum.Enum):
     COMMON = 1
     PROMO = 2
     UNCOMMON = 3
