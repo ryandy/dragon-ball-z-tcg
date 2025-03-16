@@ -1,7 +1,7 @@
 import sys
 
 
-class LossError(Exception):
-    def __init__(self, message, player):
+class GameOver(Exception):
+    def __init__(self, message, winning_player):
         super().__init__(message)
-        self.player = player
+        self.winning_player = winning_player

@@ -3,7 +3,7 @@ import sys
 from combat_phase import CombatPhase
 from discard_phase import DiscardPhase
 from draw_phase import DrawPhase
-from exception import LossError
+from exception import GameOver
 from non_combat_phase import NonCombatPhase
 from player import Player
 from power_up_phase import PowerUpPhase
@@ -26,15 +26,17 @@ class State:
         while True:
             try:
                 self.take_turn()
-            except LossError as err:
-                print(f'{err.player.opponent.character.name.title()} has won!')
-                print(f'{err.player.character.name.title()} lost: {err}')
-                print()
-                err.player.opponent.show()
+            except GameOver as err:
+                print(f'{err.winning_player.name()} has won!')
+                print(f'{err}')
+                #print()
+                #err.player.opponent.show()
                 return
             self.turn += 1
 
     def take_turn(self):
+        print(f'Turn {self.turn}')
+
         player = self.players[self.turn % 2]
 
         draw_phase = DrawPhase(player)
@@ -51,3 +53,8 @@ class State:
 
         discard_phase = DiscardPhase(player, combat_phase)
         discard_phase.execute()
+
+        #if self.turn % 2 == 1:
+        #    player.show()
+
+        print()

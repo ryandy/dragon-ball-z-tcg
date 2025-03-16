@@ -8,14 +8,14 @@ from style import Style
 
 class CombatCard(Card):
     def __init__(self, name, saga, card_number, rarity, character, card_text,
-                 style, is_physical, is_attack, card_power):
-        super().__init__(name, saga, card_number, rarity, character, card_text)
+                 style, is_physical, is_attack, card_power_condition, card_power):
+        super().__init__(name, saga, card_number, rarity, character, card_text,
+                         card_power_condition, card_power)
         if isinstance(style, str):
             style = Style[style.upper()]
         self.style = Style(style)
         self.is_physical = is_physical
         self.is_attack = is_attack
-        self.card_power = card_power
 
     def __repr__(self):
         desc1 = 'Physical' if self.is_physical else 'Energy'
@@ -43,4 +43,5 @@ class CombatCard(Card):
             card_module.STYLE,
             card_module.IS_PHYSICAL,
             card_module.IS_ATTACK,
+            card_module.CARD_POWER_CONDITION,
             card_module.CARD_POWER)
