@@ -16,7 +16,4 @@ class Character(enum.Enum):
     BULMA = 11
     CHIAOTZU = 12
     YAJIROBE = 13
-    KING_KAI = 14
-    MASTER_ROSHI = 15
-    SAIBAIMEN = 16
-    SHENRON = 17  # Dragon
+    SAIBAIMEN = 14

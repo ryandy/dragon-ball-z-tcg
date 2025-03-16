@@ -3,8 +3,9 @@ import sys
 
 
 class Style(enum.Enum):
-    RED = 1
-    BLUE = 2
-    ORANGE = 3
-    BLACK = 4
-    SAIYAN = 5
+    FREESTYLE = 1  # Any card that does not have the style as first word of title
+    RED = 2
+    BLUE = 3
+    ORANGE = 4
+    BLACK = 5
+    SAIYAN = 6

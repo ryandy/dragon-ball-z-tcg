@@ -1,3 +1,4 @@
+import random
 import sys
 
 from combat_phase import CombatPhase
@@ -9,12 +10,13 @@ from player import Player
 from power_up_phase import PowerUpPhase
 
 
-class State:
+class State:  # TODO: rename to Runner
     def __init__(self, deck1, deck2):
         self.turn = 0
         self.players = [
             Player(deck1),
             Player(deck2)]
+        #random.shuffle(self.players)
 
         self.players[0].register_opponent(self.players[1])
         self.players[1].register_opponent(self.players[0])
@@ -29,8 +31,6 @@ class State:
             except GameOver as err:
                 print(f'{err.winning_player.name()} has won!')
                 print(f'{err}')
-                #print()
-                #err.player.opponent.show()
                 return
             self.turn += 1
 

@@ -1,6 +1,8 @@
 import random
 import sys
 
+from card import Card
+
 
 class Pile:
     '''0-index represents the bottom of the pile'''
@@ -14,6 +16,10 @@ class Pile:
     def __len__(self):
         return len(self.cards)
 
+    def __iter__(self):
+        for card in self.cards:
+            yield card
+
     def shuffle(self):
         random.shuffle(self.cards)
 
@@ -22,7 +28,13 @@ class Pile:
             return None
         return self.cards.pop()
 
-    def remove(self, idx):
+    def remove(self, card_or_idx):
+        if isinstance(card_or_idx, Card):
+            for idx in range(len(self)):
+                if self.cards[idx] is card_or_idx:
+                    break
+        else:
+            idx = card_or_idx
         if idx >= len(self):
             return None
         return self.cards.pop(idx)

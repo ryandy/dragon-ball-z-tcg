@@ -1,0 +1,14 @@
+import enum
+import sys
+
+
+class Timing(enum.Enum):
+    BEGINNING_OF_TURN = 1
+    BEGINNING_OF_COMBAT = 2
+    END_OF_COMBAT = 3
+    END_OF_TURN = 4
+    ATTACK = 5
+    PHYSICAL_DEFENSE = 6
+    ENERGY_DEFENSE = 7
+    PHYSICAL_DAMAGE_REDUCTION = 8
+    ENERGY_DAMAGE_REDUCTION = 9

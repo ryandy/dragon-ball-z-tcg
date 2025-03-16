@@ -1,3 +1,4 @@
+import collections
 import sys
 
 from exception import GameOver
@@ -25,6 +26,7 @@ class Player:
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
 
+        self.powers = collections.defaultdict(list)  # {Timing: [(card,cost,damage,execute),]}
         self.anger = 0
         self.opponent = None
         self.life_deck = Pile(life_deck_cards, shuffle=True)
@@ -39,7 +41,7 @@ class Player:
         name = self.name()
         level = self.personality.level
         max_level = len(self.personality_cards)
-        return f'{name} Lv{level}/{max_level} ({len(self.life_deck)} life)'
+        return f'{name} Lv{level}/{max_level} ({len(self.life_deck)} life, {len(self.hand)} hand)'
 
     def name(self):
         return self.character.name.title()
@@ -47,15 +49,47 @@ class Player:
     def register_opponent(self, opponent):
         self.opponent = opponent
 
+    def register_power(self, timing, card, cost, damage, execute):
+        self.powers[timing].append((card, cost, damage, execute))
+
+    def exhaust_power(self, card):
+        for timing in self.powers.keys():
+            for idx in reversed(range(len(self.powers[timing]))):
+                _card, _, _, _ = self.powers[timing][idx]
+                if _card is card:
+                    del self.powers[timing][idx]
+
+    def can_afford_cost(self, cost):
+        return (self.personality.power_stage >= cost.power
+                and len(self.life_deck) >= cost.life)
+
+    def pay_cost(self, cost):
+        assert self.can_afford_cost(cost)
+        self.personality.reduce_power_stage(cost.power)
+        self.apply_life_damage(cost.life)
+
     def raise_level(self):
         next_level = self.personality.level + 1
         next_level_idx = next_level - 1
+
+        # Check for win condition
         if (next_level_idx == len(self.personality_cards) - 1
             and len(self.personality_cards) >= len(self.opponent.personality_cards)):
             raise GameOver(f'{self.name()} has achieved the Most Powerful Personality', self)
+
+        # Upgrade personality if possible
         if next_level_idx < len(self.personality_cards):
             self.personality = self.personality_cards[next_level_idx]
+
+            # Discard all drills
+            while len(self.drills) > 0:
+                card = self.drills.draw()
+                self.discard_pile.add(card)
+
+        # Set power to maximum
         self.personality.init_power_stage_for_main()
+
+        # Reset anger to 0
         self.anger = 0
 
     def raise_anger(self, count):
@@ -63,30 +97,44 @@ class Player:
         if self.anger == MAX_ANGER:
             self.raise_level()
 
-    def draw(self):
+    def draw(self, dest_pile=None):
+        if dest_pile is None:
+            dest_pile = self.hand
         card = self.life_deck.draw()
-        self.hand.add(card)
+        dest_pile.add(card)
         if len(self.life_deck) == 0:
             raise GameOver(f'{self.name()}\'s Life Deck is empty', self.opponent)
 
-    def discard(self, idx):
-        card = self.hand.remove(idx)
+    def discard(self, card_or_idx):
+        card = self.hand.remove(card_or_idx)
+        assert card
         self.discard_pile.add(card)
 
-    def add_life_for_skipping_combat(self):
+    def rejuvenate(self):
         card = self.discard_pile.draw()
         if card:
             self.life_deck.add_bottom(card)
 
-    def apply_physical_damage(self, damage):
-        energy_damage = max(0, damage - self.personality.power_stage)
-        self.personality.reduce_power_stage(damage)
-        self.apply_energy_damage(energy_damage)
+    def apply_physical_attack_damage(self, damage):
+        power_damage, life_damage = damage.calculate(self.opponent)
+        life_damage += max(0, power_damage - self.personality.power_stage)
+        self.apply_power_damage(power_damage)
+        self.apply_life_damage(life_damage)
 
-    def apply_energy_damage(self, damage):
-        for _ in range(damage):
-            card = self.draw()
-            self.discard_pile.add(card)
+    def apply_energy_attack_damage(self, damage):
+        power_damage, life_damage = damage.calculate(self.opponent)
+        life_damage += max(0, power_damage - self.personality.power_stage)
+        self.apply_power_damage(power_damage)
+        self.apply_life_damage(life_damage)
+
+    def apply_power_damage(self, power_damage):
+        life_damage = max(0, power_damage - self.personality.power_stage)
+        self.personality.reduce_power_stage(power_damage)
+        self.apply_life_damage(life_damage)
+
+    def apply_life_damage(self, life_damage):
+        for _ in range(life_damage):
+            self.draw(dest_pile=self.discard_pile)
 
     @staticmethod
     def show_pile(pile, detailed=False):

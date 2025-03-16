@@ -25,3 +25,14 @@ class Deck(Pile):
                     card = CardFactory.from_spec(Saga[saga.upper()], card_number)
                     cards.append(card)
         return cls(cards)
+
+    def validate(self):
+        '''
+        At least 3 consecutive main personality cards
+        Check for maximum number of duplicates allowed (1, 2, 3, or 4)
+        Check for "saiyan heritage only"
+        Check for total number of cards
+        
+
+        '''
+        pass
