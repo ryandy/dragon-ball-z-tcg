@@ -7,7 +7,7 @@ from saga import Saga
 
 
 class Card(abc.ABC):
-    def __init__(self, name, saga, card_number, rarity, character):
+    def __init__(self, name, saga, card_number, rarity, character, card_text):
         self.name = name
         if isinstance(saga, str):
             saga = Saga[saga.upper()]
@@ -17,3 +17,8 @@ class Card(abc.ABC):
         if isinstance(character, str):
             character = Character[character.replace('-', '_').upper()]
         self.character = Character(character)
+        self.card_text = card_text
+
+    @abc.abstractmethod
+    def get_description(self, detailed=False):
+        pass

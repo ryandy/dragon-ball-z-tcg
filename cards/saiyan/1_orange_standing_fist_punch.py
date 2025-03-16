@@ -8,6 +8,7 @@ CHARACTER = 'Raditz'
 STYLE = 'Orange'
 IS_PHYSICAL = True
 IS_ATTACK = True
+CARD_TEXT = ('Physical Attack. Raise card user\'s anger level 1.')
 
 def CARD_POWER(card, state):
     pass

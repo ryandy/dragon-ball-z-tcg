@@ -12,7 +12,8 @@ def main():
     deck2 = Deck.from_spec('goku')
 
     state = State(deck1, deck2)
-    print(state)
+    #state.take_turn()
+    state.run()
 
 
 if __name__ == '__main__':

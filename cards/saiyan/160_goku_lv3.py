@@ -9,6 +9,7 @@ CHARACTER = 'Goku'
 IS_HERO = True
 POWER_UP_RATING = 3
 POWER_STAGES = range(8000, 12500+1, 500)
+CARD_TEXT = ('Prevent 2 life card draws from being discarded from a successful energy attack.')
 
 def CARD_POWER(card, state):
     pass
