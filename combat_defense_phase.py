@@ -1,5 +1,6 @@
 import sys
 
+from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from combat_card import CombatCard
 from phase import Phase
 from timing import Timing
@@ -8,49 +9,22 @@ from timing import Timing
 class CombatDefensePhase(Phase):
     def __init__(self, player):
         self.player = player
-        self.attack_successful = False
 
-    def register_damage_modifier(self, damage_modifier):
-        self.damage_modifier = damage_modifier
+    def physical_defense(self, damage):
+        '''Returns resulting damage'''
+        return self._defense(damage, is_physical=True)
 
-    def execute_physical_defense(self, damage, src=None):
-        '''Returns True if attack was stopped'''
-        # TODO: player should be able to pass
+    def energy_defense(self, damage):
+        '''Returns resulting damage'''
+        return self._defense(damage, is_physical=False)
 
-        powers = self.player.powers[Timing.PHYSICAL_DEFENSE]
-        print(f'{self.player} has {len(powers)} physical defense choice(s)')
-        for card, cost, _, execute in powers:
-            if self.player.can_afford_cost(cost):
-                execute(card, cost, damage, self.player, self)
-                return True
-
-        self.attack_successful = True
-
-        powers = self.player.powers[Timing.PHYSICAL_DAMAGE_REDUCTION]
-        print(f'{self.player} has {len(powers)} physical damage reduction choice(s)')
-        for card, cost, _, execute in powers:
-            if self.player.can_afford_cost(cost):
-                execute(card, cost, damage, self.player, self)
-                break
-
-        return False
-
-    # TODO
-    def execute_energy_defense(self, damage, src=None):
-        '''Returns True if attack was stopped'''
-
-        powers = self.player.powers[Timing.ENERGY_DEFENSE]
-        print(f'{self.player} has {len(powers)} energy defense choice(s)')
-        for card, cost, _, execute in powers:
-            if self.player.can_afford_cost(cost):
-                execute(card, cost, damage, self.player, self)
-                return True
-
-        powers = self.player.powers[Timing.ENERGY_DAMAGE_REDUCTION]
-        print(f'{self.player} has {len(powers)} energy damage reduction choice(s)')
-        for card, cost, _, execute in powers:
-            if self.player.can_afford_cost(cost):
-                execute(card, cost, damage, self.player, self)
-                break
-
-        return False
+    def _defense(self, damage, is_physical=None):
+        card_power_class = CardPowerPhysicalDefense if is_physical else CardPowerEnergyDefense
+        card_power = self.player.card_power_choice(card_power_class)
+        if card_power:
+            damage = card_power.on_defense(self.player, self, damage)
+            if damage.was_stopped():
+                print(f'{self.player} uses {card_power.name} to stop the attack')
+            else:
+                print(f'{self.player} uses {card_power.name} to reduce damage')
+        return damage

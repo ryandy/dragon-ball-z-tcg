@@ -1,6 +1,6 @@
 import sys
 
-from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
@@ -18,9 +18,6 @@ POWER_UP_RATING = 3
 POWER_STAGES = range(8000, 12500+1, 500)
 CARD_TEXT = ('Prevent 2 life card draws from being discarded from a successful energy attack.')
 
-
-# TODO:
-CARD_POWER = []
-#CardPowerPhysicalAttack(
-#    NAME, CARD_TEXT, exhaust=False, discard=False,
-#    damage=Damage(power=4))
+CARD_POWER = CardPowerEnergyDefense(
+    NAME, CARD_TEXT, exhaust=False, discard=False,
+    damage_modifier=DamageModifier(life_add=-2))

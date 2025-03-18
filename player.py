@@ -148,14 +148,14 @@ class Player:
             self.life_deck.add_bottom(card)
 
     def apply_physical_attack_damage(self, damage):
-        power_damage, life_damage = damage.calculate(self.opponent)
-        self.apply_power_damage(power_damage)
-        self.apply_life_damage(life_damage)
+        damage = damage.resolve(self.opponent)
+        self.apply_power_damage(damage.power)
+        self.apply_life_damage(damage.life)
 
     def apply_energy_attack_damage(self, damage):
-        power_damage, life_damage = damage.calculate(self.opponent)
-        self.apply_power_damage(power_damage)
-        self.apply_life_damage(life_damage)
+        damage = damage.resolve(self.opponent)
+        self.apply_power_damage(damage.power)
+        self.apply_life_damage(damage.life)
 
     def apply_power_damage(self, power_damage):
         life_damage = max(0, power_damage - self.personality.power_stage)
@@ -174,11 +174,11 @@ class Player:
                 print(f'  {line}')
             
     def show_hand(self, detailed=False):
-        print(f'{len(self.hand)} card(s) in hand:')
+        print(f'{len(self.hand)} card(s) in {self.name()}\'s hand:')
         Player.show_pile(self.hand, detailed=detailed)
 
     def show_discard_pile(self, detailed=False):
-        print(f'{len(self.discard_pile)} card(s) in discard pile:')
+        print(f'{len(self.discard_pile)} card(s) in {self.name()}\'s discard pile:')
         Player.show_pile(self.discard_pile, detailed=detailed)
 
     def show_allies(self, detailed=False):

@@ -2,14 +2,16 @@ import sys
 
 
 class Damage:
-    def __init__(self, power=None, life=None, use_pat=None, mods=None):
+    def __init__(self, power=None, life=None, use_pat=None, mods=None, stopped=None):
         assert (not power or not use_pat)
         self.power = power or 0
         self.life = life or 0
         self.use_pat = use_pat or False
         self.mods = mods or []
+        self.stopped = stopped or False
 
     def __repr__(self):
+        # TODO: incorporate mods
         power = 'PAT' if self.use_pat else self.power
         return f'Damage({power}, {self.life})'
 
@@ -17,11 +19,11 @@ class Damage:
         self.mods.append(mod)
 
     def was_stopped(self):
-        return any(x.stopped for x in self.mods)
+        return self.stopped or any(x.stopped for x in self.mods)
 
-    def calculate(self, attacker):
+    def resolve(self, attacker):
         if self.was_stopped():
-            return 0, 0
+            return Damage(stopped=True)
 
         power, life = self.power, self.life
         if self.use_pat:
@@ -34,12 +36,12 @@ class Damage:
             life += mod.life_add
         for mod in self.mods:
             power *= mod.power_mult
-            life *= life.life_mult
+            life *= mod.life_mult
         for mod in self.mods:
             power = min(power, mod.power_max)
             life = min(life, mod.life_max)
 
-        return max(0, power), max(0, life)
+        return Damage(power=max(0, power), life=max(0, life))
 
     @classmethod
     def energy_attack(cls, life=4):

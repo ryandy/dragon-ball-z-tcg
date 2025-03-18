@@ -37,7 +37,7 @@ class Runner:
             State.TURN += 1
 
     def take_turn(self):
-        print(f'Turn {State.TURN}')
+        print(f'==== Turn {State.TURN} ====')
 
         player = self.players[State.TURN % 2]
 

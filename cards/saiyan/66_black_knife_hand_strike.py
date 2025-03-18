@@ -1,6 +1,7 @@
 import sys
 
 from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
@@ -16,5 +17,7 @@ CHARACTER = None
 STYLE = 'Black'
 CARD_TEXT = ('Energy Attack doing 4 life card draws of damage or stopping any energy attack.')
 
-# TODO: add defense power
-CARD_POWER = CardPowerEnergyAttack(NAME, CARD_TEXT)
+CARD_POWER = [
+    CardPowerEnergyAttack(NAME, CARD_TEXT),
+    CardPowerEnergyDefense(NAME, CARD_TEXT)
+]
