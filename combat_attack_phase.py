@@ -1,8 +1,7 @@
 import sys
 
-from combat_card import CombatCard
+from card_power_attack import CardPowerAttack
 from phase import Phase
-from timing import Timing
 
 
 class CombatAttackPhase(Phase):
@@ -11,23 +10,29 @@ class CombatAttackPhase(Phase):
         self.passed = True
 
     def execute(self):
-        # TODO give player opportunity to pass
-
-        powers = self.player.powers[Timing.ATTACK]
-        if len(powers) == 0:
-            return
-
-        print(f'{self.player} has {len(powers)} combat attack choice(s)')
-        for card, cost, damage, execute in powers:
-            if self.player.can_afford_cost(cost):
-                self.passed = False
-                execute(card, self.player, self)
-                return
+        card_power = self.player.card_power_choice(CardPowerAttack)
+        if card_power:
+            self.passed = False
+            card_power.on_attack(self.player, self)
 
     def physical_attack(self, damage, src=None):
+        #defense_phase = CombatDefensePhase(self.player.opponent)
+        #attack_stopped = defense_phase.execute_physical_defense(damage)
 
-        # TODO Defender defends
+        #if defense_phase.damage_modifier:
+        #    # TODO modify damage
+        #    pass
 
-        if src and True:
+        if src:
             print(f'{self.player} uses {src} for {damage}')
+
         self.player.opponent.apply_physical_attack_damage(damage)
+        #return not attack_stopped
+        return True
+
+    def energy_attack(self, damage, src=None):
+        # TODO Defender defends
+        if src:
+            print(f'{self.player} uses {src} for {damage}')
+        self.player.opponent.apply_energy_attack_damage(damage)
+        return True

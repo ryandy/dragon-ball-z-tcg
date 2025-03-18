@@ -1,4 +1,4 @@
-import collections
+import random
 import sys
 
 from exception import GameOver
@@ -10,10 +10,14 @@ MAX_ANGER = 5
 
 
 class Player:
-    def __init__(self, deck):
+    def __init__(self, deck, state):
+        self.state = state
         self.character = deck.cards[0].character
         self.personality_cards = []
         self.tokui_waza = None  # TODO
+        self.card_powers = []
+        self.anger = 0
+        self.opponent = None
 
         life_deck_cards = []
         for card in deck.cards:
@@ -23,13 +27,8 @@ class Player:
                 life_deck_cards.append(card)
 
         self.personality_cards.sort(key=lambda x: x.level)
-        self.personality = self.personality_cards[0]
-        self.personality.init_power_stage_for_main()
-
-        self.powers = collections.defaultdict(list)  # {Timing: [(card,cost,damage,execute),]}
-        self.anger = 0
-        self.opponent = None
         self.life_deck = Pile(life_deck_cards, shuffle=True)
+
         self.hand = Pile()
         self.discard_pile = Pile()
         self.removed_pile = Pile()
@@ -37,11 +36,21 @@ class Player:
         self.non_combat = Pile()
         self.drills = Pile()
 
+        self.personality = self.personality_cards[0]
+        self.personality.init_power_stage_for_main()
+        self.register_card_powers(self.personality.card_powers)
+
     def __repr__(self):
         name = self.name()
         level = self.personality.level
         max_level = len(self.personality_cards)
-        return f'{name} Lv{level}/{max_level} ({len(self.life_deck)} life, {len(self.hand)} hand)'
+        life = len(self.life_deck)
+        non_combat = len(self.allies) + len(self.non_combat) + len(self.drills)
+        anger = self.anger
+        hand = len(self.hand)
+        power = self.personality.power_stage
+        pat_idx = self.personality.get_physical_attack_table_index()
+        return f'{name} (v{level}.{anger}/{life}hp/{power}pow/{pat_idx}atk/{non_combat}nc/{hand}c)'
 
     def name(self):
         return self.character.name.title()
@@ -49,15 +58,34 @@ class Player:
     def register_opponent(self, opponent):
         self.opponent = opponent
 
-    def register_power(self, timing, card, cost, damage, execute):
-        self.powers[timing].append((card, cost, damage, execute))
+    def register_card_power(self, card_power):
+        self.card_powers.append(card_power)
 
-    def exhaust_power(self, card):
-        for timing in self.powers.keys():
-            for idx in reversed(range(len(self.powers[timing]))):
-                _card, _, _, _ = self.powers[timing][idx]
-                if _card is card:
-                    del self.powers[timing][idx]
+    def register_card_powers(self, card_powers):
+        self.card_powers.extend(card_powers)
+
+    def exhaust_card(self, card):
+        for idx in reversed(range(len(self.card_powers))):
+            if self.card_powers[idx].card is card:
+                del self.card_powers[idx]
+
+    def exhaust_card_power(self, card_power):
+        for idx in reversed(range(len(self.card_powers))):
+            if self.card_powers[idx] is card_power:
+                del self.card_powers[idx]
+
+    def exhaust_card_powers(self, card_powers):
+        for card_power in card_powers:
+            self.exhaust_card_power(card_power)
+
+    def get_valid_card_powers(self, card_power_type):
+        filtered_card_powers = []
+        for card_power in self.card_powers:
+            if ((not card_power_type or isinstance(card_power, card_power_type))
+                and not card_power.is_exhausted()
+                and self.can_afford_cost(card_power.cost)):
+                filtered_card_powers.append(card_power)
+        return filtered_card_powers
 
     def can_afford_cost(self, cost):
         return (self.personality.power_stage >= cost.power
@@ -79,7 +107,9 @@ class Player:
 
         # Upgrade personality if possible
         if next_level_idx < len(self.personality_cards):
+            self.exhaust_card(self.personality)
             self.personality = self.personality_cards[next_level_idx]
+            self.register_card_powers(self.personality.card_powers)
 
             # Discard all drills
             while len(self.drills) > 0:
@@ -92,8 +122,8 @@ class Player:
         # Reset anger to 0
         self.anger = 0
 
-    def raise_anger(self, count):
-        self.anger = min(self.anger + count, MAX_ANGER)
+    def adjust_anger(self, count):
+        self.anger = max(0, min(MAX_ANGER, self.anger + count))
         if self.anger == MAX_ANGER:
             self.raise_level()
 
@@ -104,8 +134,10 @@ class Player:
         dest_pile.add(card)
         if len(self.life_deck) == 0:
             raise GameOver(f'{self.name()}\'s Life Deck is empty', self.opponent)
+        return card
 
     def discard(self, card_or_idx):
+        # TODO: Prevent discarding dragon balls
         card = self.hand.remove(card_or_idx)
         assert card
         self.discard_pile.add(card)
@@ -117,13 +149,11 @@ class Player:
 
     def apply_physical_attack_damage(self, damage):
         power_damage, life_damage = damage.calculate(self.opponent)
-        life_damage += max(0, power_damage - self.personality.power_stage)
         self.apply_power_damage(power_damage)
         self.apply_life_damage(life_damage)
 
     def apply_energy_attack_damage(self, damage):
         power_damage, life_damage = damage.calculate(self.opponent)
-        life_damage += max(0, power_damage - self.personality.power_stage)
         self.apply_power_damage(power_damage)
         self.apply_life_damage(life_damage)
 
@@ -168,3 +198,18 @@ class Player:
         self.show_personality(detailed=detailed)
         self.show_hand(detailed=detailed)
         #self.show_discard_pile(detailed=detailed)
+
+    def card_power_choice(self, card_power_type):
+        # Filter
+        # Random choice / UI choice / Heuristic choice
+
+        # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford
+        filtered = self.get_valid_card_powers(card_power_type)
+
+        print(f'{self} has {len(filtered)} {card_power_type.__name__} choice(s)')
+
+        if not filtered:
+            return None
+
+        idx = random.randrange(len(filtered))
+        return filtered[idx]

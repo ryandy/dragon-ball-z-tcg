@@ -5,21 +5,15 @@ from phase import Phase
 
 
 class DrawPhase(Phase):
-    def __init__(self, player, is_defender=False):
+    def __init__(self, player):
         self.player = player
-        self.is_defender = is_defender
 
     def execute(self):
-        if not self.is_defender:
-            # "BEGINNING OF TURN" (attacker before defender)
-            pass
-
         # TODO: if an unplayable drill is drawn, it can be shuffled back into the deck
         for _ in range(3):
-            self.player.draw()
+            card = self.player.draw()
 
-        # Register callbacks for all combat cards in hand
-        for card in self.player.hand:
+            # Register callbacks for all new combat cards in hand
             if isinstance(card, CombatCard):
-                for timing, (cost, damage, execute) in card.card_power.items():
-                    self.player.register_power(timing, card, cost, damage, execute)
+                for card_power in card.card_powers:
+                    self.player.register_card_power(card_power)

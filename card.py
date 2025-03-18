@@ -18,7 +18,10 @@ class Card(abc.ABC):
             character = Character[character.replace('-', '_').upper()]
         self.character = Character(character) if character else None
         self.card_text = card_text
-        self.card_power = card_power
+        if isinstance(card_power, list):
+            self.card_powers = card_power
+        else:
+            self.card_powers = [card_power]
 
     @abc.abstractmethod
     def get_description(self, detailed=False):

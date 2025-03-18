@@ -28,7 +28,7 @@ class PersonalityCard(Card):
         self.power_stage = None
 
     def __repr__(self):
-        return f'{self.name} Lv{self.level}'
+        return f'{self.name}'
 
     def init_power_stage_for_main(self):
         if self.level == 1:
@@ -84,7 +84,7 @@ class PersonalityCard(Card):
 
     @classmethod
     def from_spec(cls, card_module):
-        return cls(
+        card = cls(
             card_module.NAME,
             card_module.LEVEL,
             card_module.SAGA,
@@ -96,3 +96,6 @@ class PersonalityCard(Card):
             card_module.POWER_UP_RATING,
             card_module.POWER_STAGES,
             card_module.CARD_POWER)
+        for card_power in card.card_powers:
+            card_power.register_card(card)
+        return card

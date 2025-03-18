@@ -10,15 +10,15 @@ class DiscardPhase(Phase):
         self.combat_phase = combat_phase
 
     def execute(self):
+        # TODO player choice
         while len(self.player.hand) > 1:
             idx = random.randrange(len(self.player.hand))
             self.player.discard(idx)
 
-        if self.combat_phase.passed:
-            self.player.rejuvenate()
-        else:
-            while len(self.player.opponent.hand) > 1:
-                idx = random.randrange(len(self.player.opponent.hand))
-                self.player.opponent.discard(idx)
+        # TODO player choice
+        while len(self.player.opponent.hand) > 1:
+            idx = random.randrange(len(self.player.opponent.hand))
+            self.player.opponent.discard(idx)
 
-        # "END OF TURN" (attacker before defender)
+        if self.combat_phase.skipped:
+            self.player.rejuvenate()

@@ -27,7 +27,7 @@ class CombatCard(Card):
 
     @classmethod
     def from_spec(cls, card_module):
-        return cls(
+        card = cls(
             card_module.NAME,
             card_module.SAGA,
             card_module.CARD_NUMBER,
@@ -37,3 +37,6 @@ class CombatCard(Card):
             card_module.CARD_POWER,
             card_module.SUBTYPE,
             card_module.STYLE)
+        for card_power in card.card_powers:
+            card_power.register_card(card)
+        return card

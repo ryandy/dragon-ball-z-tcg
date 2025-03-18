@@ -18,11 +18,11 @@ class Deck(Pile):
             lines = f.readlines()
             for line in lines:
                 tokens = line.split()
-                if len(tokens) < 3:
+                if len(tokens) < 3 or tokens[0] == '#':
                     continue
-                count, saga, card_number = int(tokens[0]), tokens[1], int(tokens[2])
+                count, saga, card_number = int(tokens[0]), tokens[1], tokens[2]
                 for _ in range(count):
-                    card = CardFactory.from_spec(Saga[saga.upper()], card_number)
+                    card = CardFactory.from_spec(Saga[saga.upper()], card_number.lower())
                     cards.append(card)
         return cls(cards)
 
@@ -30,6 +30,7 @@ class Deck(Pile):
         '''
         At least 3 consecutive main personality cards
         Check for maximum number of duplicates allowed (1, 2, 3, or 4)
+         - only 1 of each dragon ball
         Check for "saiyan heritage only"
         Check for total number of cards
         
