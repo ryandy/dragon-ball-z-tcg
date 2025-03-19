@@ -142,7 +142,7 @@ class Player:
         return card
 
     def discard(self, card_or_idx):
-        # TODO: Prevent discarding dragon balls
+        # TODO: Prevent discarding dragon balls (dragon balls do not count toward damage)
         card = self.hand.remove(card_or_idx)
         assert card
         self.exhaust_card(card=card)

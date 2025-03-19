@@ -1,6 +1,7 @@
 import sys
 
 from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
@@ -12,6 +13,7 @@ SUBTYPE = 'Physical Combat - Attack'
 SAGA = 'Saiyan'
 CARD_NUMBER = '1'
 RARITY = 1
+DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Orange'
 CARD_TEXT = ('Physical Attack. Raise card user\'s anger level 1.')

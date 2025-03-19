@@ -13,6 +13,7 @@ SUBTYPE = 'Physical Combat - Attack'
 SAGA = 'Saiyan'
 CARD_NUMBER = '11'
 RARITY = 1
+DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Blue'
 CARD_TEXT = ('Physical Attack doing +4 stages of damage. If successful, this attack stops any'

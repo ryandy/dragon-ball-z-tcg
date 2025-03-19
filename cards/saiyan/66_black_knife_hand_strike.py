@@ -13,6 +13,7 @@ SUBTYPE = 'Energy Combat - Attack'
 SAGA = 'Saiyan'
 CARD_NUMBER = '66'
 RARITY = 3
+DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Black'
 CARD_TEXT = ('Energy Attack doing 4 life card draws of damage or stopping any energy attack.')

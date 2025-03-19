@@ -12,9 +12,11 @@ PHYSICAL_ATTACK_TABLE_VALUES = [0, 100, 600, 1000, 3000, 10000, 15500, 25000]
 
 
 class PersonalityCard(Card):
-    def __init__(self, name, level, saga, card_number, rarity, character, card_text,
+    def __init__(self, name, level, saga, card_number, rarity, deck_limit, character, card_text,
                  is_hero, power_up_rating, power_stages, card_power):
-        super().__init__(name, saga, card_number, rarity, character, card_text, card_power)
+        style = None
+        super().__init__(name, saga, card_number, rarity, deck_limit, character, style,
+                         card_text, card_power)
         self.level = level
         self.is_hero = is_hero
         self.power_up_rating = power_up_rating
@@ -90,6 +92,7 @@ class PersonalityCard(Card):
             card_module.SAGA,
             card_module.CARD_NUMBER,
             card_module.RARITY,
+            card_module.DECK_LIMIT,
             card_module.CHARACTER,
             card_module.CARD_TEXT,
             card_module.IS_HERO,
