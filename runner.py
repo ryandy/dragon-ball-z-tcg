@@ -36,13 +36,30 @@ class Runner:
                 return
             State.TURN += 1
 
+    def beginning_of_turn(self):
+        for idx in range(State.TURN, State.TURN + 2):
+            self.players[idx%2].exhaust_expired_card_powers()
+
+    def end_of_turn(self):
+        pass
+
     def take_turn(self):
         print(f'==== Turn {State.TURN} ====')
 
+        self.beginning_of_turn()
+
+        #for player in self.players:
+        #    print(f'{player.name()}\'s start-of-turn energy defense powers:')
+        #    for card_power in player.card_powers:
+        #        if isinstance(card_power, CardPowerEnergyDefense):
+        #            print(f'  {card_power.name}, {card_power.card}, {card_power.is_exhausted()}')
+        #    print(f'{player.name()}\'s start-of-turn hand:')
+        #    for card in player.hand:
+        #        print(f'  {card.name}')
+        #print()
+
         player = self.players[State.TURN % 2]
 
-        # BEGINNING OF TURN
-        
         draw_phase = DrawPhase(player)
         draw_phase.execute()
 
@@ -58,9 +75,6 @@ class Runner:
         discard_phase = DiscardPhase(player, combat_phase)
         discard_phase.execute()
 
-        # END OF TURN
-
-        #if State.TURN % 2 == 1:
-        #    player.show()
+        self.end_of_turn()
 
         print()

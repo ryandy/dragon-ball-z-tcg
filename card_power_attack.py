@@ -10,10 +10,10 @@ class CardPowerAttack(CardPower):
                  cost=None, damage=None, damage_modifier=None,
                  own_anger=None, opp_anger=None,
                  exhaust=True, discard=True, remove_from_game=None,
-                 card=None):
+                 is_floating=None, card=None):
         if cost is None:
             cost = Cost.none() if is_physical else Cost.energy_attack()
-        super().__init__(name, description, cost, card=card)
+        super().__init__(name, description, cost, card=card, is_floating=is_floating)
 
         if damage is None:
             damage = Damage.physical_attack() if is_physical else Damage.energy_attack()

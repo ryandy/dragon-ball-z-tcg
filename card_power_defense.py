@@ -10,8 +10,8 @@ class CardPowerDefense(CardPower):
                  cost=None, damage_modifier=None,
                  own_anger=None, opp_anger=None,
                  exhaust=True, discard=True, remove_from_game=None,
-                 card=None):
-        super().__init__(name, description, cost or Cost.none(), card=card)
+                 is_floating=None, card=None):
+        super().__init__(name, description, cost or Cost.none(), card=card, is_floating=is_floating)
         self.is_physical = is_physical
         self.damage_modifier = damage_modifier
         self.own_anger = own_anger

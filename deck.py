@@ -18,7 +18,7 @@ class Deck(Pile):
             lines = f.readlines()
             for line in lines:
                 tokens = line.split()
-                if len(tokens) < 3 or tokens[0] == '#':
+                if len(tokens) < 3 or tokens[0][0] == '#':
                     continue
                 count, saga, card_number = int(tokens[0]), tokens[1], tokens[2]
                 for _ in range(count):

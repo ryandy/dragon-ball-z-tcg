@@ -78,6 +78,11 @@ class Player:
         for card_power in card_powers:
             self.exhaust_card_power(card_power)
 
+    def exhaust_expired_card_powers(self):
+        for idx in reversed(range(len(self.card_powers))):
+            if self.card_powers[idx].is_exhausted():
+                del self.card_powers[idx]
+
     def get_valid_card_powers(self, card_power_type):
         filtered_card_powers = []
         for card_power in self.card_powers:
@@ -140,6 +145,7 @@ class Player:
         # TODO: Prevent discarding dragon balls
         card = self.hand.remove(card_or_idx)
         assert card
+        self.exhaust_card(card=card)
         self.discard_pile.add(card)
 
     def rejuvenate(self):
@@ -206,7 +212,13 @@ class Player:
         # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford
         filtered = self.get_valid_card_powers(card_power_type)
 
-        print(f'{self} has {len(filtered)} {card_power_type.__name__} choice(s)')
+        #print(f'{self} has {len(filtered)} {card_power_type.__name__} choice(s)')
+        #if card_power_type is CardPowerEnergyDefense:
+        #    for card_power in filtered:
+        #        print(f'  {card_power.name}')
+        #    print(f'  Cards in hand:')
+        #    for card in self.hand:
+        #        print(f'    {card}')
 
         if not filtered:
             return None
