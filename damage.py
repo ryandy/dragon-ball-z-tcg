@@ -44,6 +44,10 @@ class Damage:
         return Damage(power=max(0, power), life=max(0, life))
 
     @classmethod
+    def none(cls):
+        return cls()
+
+    @classmethod
     def energy_attack(cls, life=4):
         return cls(life=life)
 

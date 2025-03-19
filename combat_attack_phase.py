@@ -15,6 +15,8 @@ class CombatAttackPhase(Phase):
         if card_power:
             self.passed = False
             card_power.on_attack(self.player, self)
+        else:
+            print(f'{self.player} passed')
 
     def physical_attack(self, damage, src=None):
         '''Returns True if attack was successful'''
@@ -25,7 +27,7 @@ class CombatAttackPhase(Phase):
         return self._attack(damage, src=src, is_physical=False)
 
     def _attack(self, damage, src=None, is_physical=None):
-        print(f'{self.player} uses {src} for {damage}')
+        #print(f'{self.player} uses {src} for {damage}')
 
         defense_phase = CombatDefensePhase(self.player.opponent)
         if is_physical:

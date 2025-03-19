@@ -32,6 +32,15 @@ class Card(abc.ABC):
         else:
             self.card_powers = [card_power]
 
+        self.pile = None  # Current pile
+
+    def __repr__(self):
+        return f'{self.name}'
+
+    def set_pile(self, pile):
+        assert self.pile is not pile
+        self.pile = pile
+
     @abc.abstractmethod
     def get_description(self, detailed=False):
         pass

@@ -5,6 +5,7 @@ from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack, Ca
 from character import Character
 from combat_card import CombatCard
 from exception import GameOver
+from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
 from pile import Pile
 
@@ -31,6 +32,8 @@ class Player:
 
         self.personality_cards.sort(key=lambda x: x.level)
         self.life_deck = Pile(life_deck_cards, shuffle=True)
+        for card in self.life_deck:
+            card.set_pile(self.life_deck)
 
         self.hand = Pile()
         self.discard_pile = Pile()
@@ -123,6 +126,7 @@ class Player:
             while len(self.drills) > 0:
                 card = self.drills.remove_top()
                 self.discard_pile.add(card)
+                card.set_pile(self.discard_pile)
 
         # Set power to maximum
         self.personality.init_power_stage_for_main()
@@ -151,35 +155,44 @@ class Player:
             self.add_card_to_hand(card)
         else:
             dest_pile.add(card)
+            card.set_pile(dest_pile)
 
         return card
 
     def add_card_to_hand(self, card):
         # Register callbacks for all new combat cards in hand
         self.hand.add(card)
+        card.set_pile(self.hand)
         if isinstance(card, CombatCard):
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
 
-    def remove_from_game(self, card_or_idx, exhaust_card=True):
-        return self.discard(card_or_idx, dest_pile=self.removed_pile, exhaust_card=exhaust_card)
+    def remove_from_game(self, card, exhaust_card=True):
+        return self.discard(card, remove_from_game=True, exhaust_card=exhaust_card)
 
-    def discard(self, card_or_idx, dest_pile=None, exhaust_card=True):
-        '''Hand -> Discard/Removed'''
+    def discard(self, card, remove_from_game=False, exhaust_card=True):
+        '''Hand/Table -> Discard/Removed'''
         # TODO: Prevent discarding dragon balls (dragon balls do not count toward damage)
-        if dest_pile is None:
-            dest_pile = self.discard_pile
+        assert card.pile is not self.discard_pile and card.pile is not self.removed_pile
 
-        card = self.hand.remove(card_or_idx)
-        assert card
+        card_removed = card.pile.remove(card)
+        assert card_removed is card
+
         if exhaust_card:
             self.exhaust_card(card=card)
-        dest_pile.add(card)
+
+        if remove_from_game:
+            self.removed_pile.add(card)
+            card.set_pile(self.removed_pile)
+        else:
+            self.discard_pile.add(card)
+            card.set_pile(self.discard_pile)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
         if card:
             self.life_deck.add_bottom(card)
+            card.set_pile(self.life_deck)
 
     def apply_physical_attack_damage(self, damage):
         damage = damage.resolve(self.opponent)
@@ -253,3 +266,26 @@ class Player:
 
         idx = random.randrange(len(filtered))
         return filtered[idx]
+
+    def play_non_combat_card(self):
+        filtered = []
+        for card in self.hand:
+            if isinstance(card, NonCombatCard):
+                filtered.append(card)
+
+        if not filtered:
+            return None
+
+        idx = random.randrange(len(filtered))
+        card = filtered[idx]
+
+        self.hand.remove(card)
+
+        if isinstance(card, NonCombatCard):
+            print(f'{self} plays {card} to Non-Combat area')
+            self.non_combat.add(card)
+            card.set_pile(self.non_combat)
+            for card_power in card.card_powers:
+                self.register_card_power(card_power)
+        else:
+            assert False

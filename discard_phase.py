@@ -12,13 +12,11 @@ class DiscardPhase(Phase):
     def execute(self):
         # TODO player choice
         while len(self.player.hand) > 1:
-            idx = random.randrange(len(self.player.hand))
-            self.player.discard(idx)
+            self.player.discard(random.choice(self.player.hand.cards))
 
         # TODO player choice
         while len(self.player.opponent.hand) > 1:
-            idx = random.randrange(len(self.player.opponent.hand))
-            self.player.opponent.discard(idx)
+            self.player.opponent.discard(random.choice(self.player.opponent.hand.cards))
 
         if self.combat_phase.skipped:
             self.player.rejuvenate()

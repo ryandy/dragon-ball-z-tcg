@@ -3,6 +3,7 @@ import pathlib
 import sys
 
 from combat_card import CombatCard
+from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
 from saga import Saga
 
@@ -20,3 +21,5 @@ class CardFactory:
             return PersonalityCard.from_spec(card_module)
         if card_module.TYPE.lower() == 'combat':
             return CombatCard.from_spec(card_module)
+        if card_module.TYPE.lower() == 'non-combat':
+            return NonCombatCard.from_spec(card_module)

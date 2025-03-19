@@ -11,8 +11,8 @@ class CardPower(abc.ABC):
         self.cost = cost
         self.card = card
         self.is_floating = is_floating
-        self.valid_from = None  # tuple of (turn #, combat phase #)
-        self.valid_until = None
+        self.valid_from = None  # tuple of (turn #, combat round #)
+        self.valid_until = None  # tuple of (turn #, combat round #)
 
     def __repr__(self):
         suffix = ' (*)' if self.is_floating else ''

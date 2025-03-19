@@ -8,4 +8,6 @@ class NonCombatPhase(Phase):
         self.player = player
 
     def execute(self):
-        pass
+        # TODO: Choice
+        while self.player.play_non_combat_card():
+            pass
