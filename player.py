@@ -1,6 +1,9 @@
 import random
 import sys
 
+from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack, CardPowerAttack
+from character import Character
+from combat_card import CombatCard
 from exception import GameOver
 from personality_card import PersonalityCard
 from pile import Pile
@@ -118,7 +121,7 @@ class Player:
 
             # Discard all drills
             while len(self.drills) > 0:
-                card = self.drills.draw()
+                card = self.drills.remove_top()
                 self.discard_pile.add(card)
 
         # Set power to maximum
@@ -133,23 +136,48 @@ class Player:
             self.raise_level()
 
     def draw(self, dest_pile=None):
+        '''Life Deck -> Hand/Discard'''
         if dest_pile is None:
             dest_pile = self.hand
+
         card = self.life_deck.draw()
-        dest_pile.add(card)
+
+        # Check for end-of-game condition
         if len(self.life_deck) == 0:
             raise GameOver(f'{self.name()}\'s Life Deck is empty', self.opponent)
+
+        # Adding cards to hand requires some special handling
+        if dest_pile is self.hand:
+            self.add_card_to_hand(card)
+        else:
+            dest_pile.add(card)
+
         return card
 
-    def discard(self, card_or_idx):
+    def add_card_to_hand(self, card):
+        # Register callbacks for all new combat cards in hand
+        self.hand.add(card)
+        if isinstance(card, CombatCard):
+            for card_power in card.card_powers:
+                self.register_card_power(card_power)
+
+    def remove_from_game(self, card_or_idx, exhaust_card=True):
+        return self.discard(card_or_idx, dest_pile=self.removed_pile, exhaust_card=exhaust_card)
+
+    def discard(self, card_or_idx, dest_pile=None, exhaust_card=True):
+        '''Hand -> Discard/Removed'''
         # TODO: Prevent discarding dragon balls (dragon balls do not count toward damage)
+        if dest_pile is None:
+            dest_pile = self.discard_pile
+
         card = self.hand.remove(card_or_idx)
         assert card
-        self.exhaust_card(card=card)
-        self.discard_pile.add(card)
+        if exhaust_card:
+            self.exhaust_card(card=card)
+        dest_pile.add(card)
 
     def rejuvenate(self):
-        card = self.discard_pile.draw()
+        card = self.discard_pile.remove_top()
         if card:
             self.life_deck.add_bottom(card)
 
@@ -206,17 +234,17 @@ class Player:
         #self.show_discard_pile(detailed=detailed)
 
     def card_power_choice(self, card_power_type):
-        # Filter
         # Random choice / UI choice / Heuristic choice
 
         # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford
         filtered = self.get_valid_card_powers(card_power_type)
 
-        #print(f'{self} has {len(filtered)} {card_power_type.__name__} choice(s)')
-        #if card_power_type is CardPowerEnergyDefense:
+        #if card_power_type is CardPowerAttack and self.character == Character.GOKU:
+        #    print()
+        #    print(f'  {self.name()} has {len(filtered)} {card_power_type.__name__} choice(s):')
         #    for card_power in filtered:
-        #        print(f'  {card_power.name}')
-        #    print(f'  Cards in hand:')
+        #        print(f'    {card_power.name} ' + ('(floating)' if card_power.is_floating else ''))
+        #    print(f'  {self.name()} has {len(self.hand)} card(s) in hand:')
         #    for card in self.hand:
         #        print(f'    {card}')
 

@@ -10,7 +10,6 @@ class CombatPhase(Phase):
     def __init__(self, player):
         self.player = player
         self.skipped = True
-        State.COMBAT_ROUND = 0
 
     def execute(self):
         # TODO give player opportunity to skip combat

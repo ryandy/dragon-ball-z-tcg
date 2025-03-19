@@ -60,9 +60,9 @@ class CardPowerAttack(CardPower):
 
         if self.card:
             if self.remove_from_game:
-                player.remove_from_game(self.card)
+                player.remove_from_game(self.card, exhaust_card=False)
             elif self.discard:
-                player.discard(self.card)
+                player.discard(self.card, exhaust_card=False)
             self.discard = self.remove_from_game = False
 
 

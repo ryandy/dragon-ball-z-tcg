@@ -14,6 +14,8 @@ from state import State
 class Runner:
     def __init__(self, deck1, deck2):
         State.TURN = 0
+        State.COMBAT_ROUND = 0
+
         self.players = [
             Player(deck1, self),
             Player(deck2, self)]
@@ -27,6 +29,7 @@ class Runner:
 
     def run(self):
         while True:
+            State.COMBAT_ROUND = 0
             try:
                 self.take_turn()
             except GameOver as err:

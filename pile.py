@@ -23,10 +23,18 @@ class Pile:
     def shuffle(self):
         random.shuffle(self.cards)
 
+    def remove_top(self):
+        return self.draw()
+
     def draw(self):
         if not self.cards:
             return None
         return self.cards.pop()
+
+    def draw_from_bottom(self):
+        if not self.cards:
+            return None
+        return self.cards.pop(0)
 
     def remove(self, card_or_idx):
         if isinstance(card_or_idx, Card):
