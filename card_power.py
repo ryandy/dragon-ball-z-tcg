@@ -5,10 +5,16 @@ from state import State
 
 
 class CardPower(abc.ABC):
-    def __init__(self, name, description, cost, card=None, is_floating=False):
+    def __init__(self, name, description, cost,
+                 heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
+                 card=None, is_floating=False):
         self.name = name
         self.description = description
         self.cost = cost
+        self.heroes_only = heroes_only
+        self.villains_only = villains_only
+        self.saiyan_only = saiyan_only
+        self.namekian_only = namekian_only
         self.card = card
         self.is_floating = is_floating
         self.valid_from = None  # tuple of (turn #, combat round #)
@@ -38,3 +44,15 @@ class CardPower(abc.ABC):
         valid = ((not self.valid_from or self.valid_from <= cur_time)
                  and (not self.valid_until or cur_time <= self.valid_until))
         return not valid
+
+    def is_personality_restricted(self, personality):
+        '''If this card power cannot be activated by a given personality'''
+        if self.heroes_only:
+            return not personality.is_hero
+        if self.villains_only:
+            return personality.is_hero
+        if self.saiyan_only:
+            return not personality.character.has_saiyan_heritage()
+        if self.namekian_only:
+            return not personality.character.has_namekian_heritage()
+        return False

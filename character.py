@@ -17,3 +17,15 @@ class Character(enum.Enum):
     CHIAOTZU = 12
     YAJIROBE = 13
     SAIBAIMEN = 14
+
+    def has_saiyan_heritage(self):
+        return self in [
+            Character.GOKU,
+            Character.VEGETA,
+            Character.GOHAN,
+            Character.RADITZ,
+            Character.NAPPA]
+
+    def has_namekian_heritage(self):
+        return self in [
+            Character.PICCOLO]

@@ -94,6 +94,7 @@ class Player:
         for card_power in self.card_powers:
             if ((not card_power_type or isinstance(card_power, card_power_type))
                 and not card_power.is_exhausted()
+                and not card_power.is_personality_restricted(self.personality)
                 and self.can_afford_cost(card_power.cost)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers

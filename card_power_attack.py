@@ -7,6 +7,7 @@ from damage import Damage
 
 class CardPowerAttack(CardPower):
     def __init__(self, name, description, is_physical=None,
+                 heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
                  cost=None, damage=None, damage_modifier=None,
                  own_anger=None, opp_anger=None,
                  own_power=None, opp_power=None,
@@ -14,7 +15,10 @@ class CardPowerAttack(CardPower):
                  is_floating=None, card=None):
         if cost is None:
             cost = Cost.energy_attack() if (is_physical is False) else Cost.none()
-        super().__init__(name, description, cost, card=card, is_floating=is_floating)
+        super().__init__(name, description, cost,
+                         heroes_only=heroes_only, villains_only=villains_only,
+                         saiyan_only=saiyan_only, namekian_only=namekian_only,
+                         card=card, is_floating=is_floating)
 
         if damage is None:
             if is_physical is None:
