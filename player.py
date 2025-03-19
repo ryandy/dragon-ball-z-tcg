@@ -233,7 +233,7 @@ class Player:
         self.show_hand(detailed=detailed)
         #self.show_discard_pile(detailed=detailed)
 
-    def card_power_choice(self, card_power_type):
+    def choose_card_power(self, card_power_type):
         # Random choice / UI choice / Heuristic choice
 
         # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford

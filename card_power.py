@@ -14,6 +14,10 @@ class CardPower(abc.ABC):
         self.valid_from = None  # tuple of (turn #, combat phase #)
         self.valid_until = None
 
+    def __repr__(self):
+        suffix = ' (*)' if self.is_floating else ''
+        return f'{self.name}{suffix}'
+
     def register_card(self, card):
         self.card = card
 

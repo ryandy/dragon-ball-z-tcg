@@ -37,9 +37,9 @@ class CardPowerAttack(CardPower):
             player.opponent.adjust_anger(self.opp_anger)
 
         if self.is_physical:
-            success = phase.physical_attack(self.damage, src=self.name)
+            success = phase.physical_attack(self.damage, src=self)
         else:
-            success = phase.energy_attack(self.damage, src=self.name)
+            success = phase.energy_attack(self.damage, src=self)
 
         if success:
             self.on_success(player, phase)

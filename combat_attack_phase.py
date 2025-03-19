@@ -11,7 +11,7 @@ class CombatAttackPhase(Phase):
         self.passed = True
 
     def execute(self):
-        card_power = self.player.card_power_choice(CardPowerAttack)
+        card_power = self.player.choose_card_power(CardPowerAttack)
         if card_power:
             self.passed = False
             card_power.on_attack(self.player, self)
