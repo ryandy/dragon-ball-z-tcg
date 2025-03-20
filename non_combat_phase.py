@@ -1,5 +1,6 @@
 import sys
 
+from card_power_dragon_ball import CardPowerDragonBall
 from dragon_ball_card import DragonBallCard
 from phase import Phase
 
@@ -11,7 +12,9 @@ class NonCombatPhase(Phase):
     def execute(self):
         card = self.player.play_non_combat_card()
         while card:
+            # Dragon balls are executed immediately rather than simply registered with player
             if isinstance(card, DragonBallCard):
                 for card_power in card.card_powers:
-                    card_power.on_play(self.player, self)
+                    if isinstance(card_power, CardPowerDragonBall):
+                        card_power.on_play(self.player, self)
             card = self.player.play_non_combat_card()

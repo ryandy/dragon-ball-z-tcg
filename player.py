@@ -1,7 +1,9 @@
+import copy
 import random
 import sys
 
-from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack, CardPowerAttack
+from card_power_attack import CardPowerAttack
+from card_power_defense import CardPowerDefense
 from character import Character
 from combat_card import CombatCard
 from dragon_ball_card import DragonBallCard
@@ -32,17 +34,17 @@ class Player:
                 life_deck_cards.append(card)
 
         self.personality_cards.sort(key=lambda x: x.level)
-        self.life_deck = Pile(life_deck_cards, shuffle=True)
+        self.life_deck = Pile('LifeDeck', life_deck_cards, shuffle=True)
         for card in self.life_deck:
             card.set_pile(self.life_deck)
 
-        self.hand = Pile()
-        self.discard_pile = Pile()
-        self.removed_pile = Pile()
-        self.allies = Pile()
-        self.non_combat = Pile()
-        self.drills = Pile()
-        self.dragon_balls = Pile()
+        self.hand = Pile('Hand')
+        self.discard_pile = Pile('Discard')
+        self.removed_pile = Pile('Removed')
+        self.allies = Pile('Allies')
+        self.non_combat = Pile('Non-Combat')
+        self.drills = Pile('Drills')
+        self.dragon_balls = Pile('DragonBalls')
 
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
@@ -67,10 +69,11 @@ class Player:
         self.opponent = opponent
 
     def register_card_power(self, card_power):
-        self.card_powers.append(card_power)
+        self.card_powers.append(copy.copy(card_power))
 
     def register_card_powers(self, card_powers):
-        self.card_powers.extend(card_powers)
+        for card_power in card_powers:
+            self.register_card_power(card_power)
 
     def exhaust_card(self, card):
         for idx in reversed(range(len(self.card_powers))):
@@ -81,10 +84,6 @@ class Player:
         for idx in reversed(range(len(self.card_powers))):
             if self.card_powers[idx] is card_power:
                 del self.card_powers[idx]
-
-    def exhaust_card_powers(self, card_powers):
-        for card_power in card_powers:
-            self.exhaust_card_power(card_power)
 
     def exhaust_expired_card_powers(self):
         for idx in reversed(range(len(self.card_powers))):
@@ -159,7 +158,8 @@ class Player:
 
         if (dest_pile is self.discard_pile
             and isinstance(card, DragonBallCard)):
-            self.life_deck.add_bottom(card)
+            card.set_pile(dest_pile)  # Temporarily move card so it can move back when recycled
+            self.recycle_dragon_ball(card)
             return None
 
         # Adding cards to hand requires some special handling
@@ -174,10 +174,16 @@ class Player:
     def add_card_to_hand(self, card):
         # Register callbacks for all new combat cards in hand
         self.hand.add(card)
+        #print(f'{self.name()} draws {card}')
+        #self.show_hand()
         card.set_pile(self.hand)
-        if isinstance(card, CombatCard):
+        if (isinstance(card, CombatCard)
+            or card.get_id() == 'saiyan.187'  # dragon ball that can be played as attack from hand
+            ):
             for card_power in card.card_powers:
-                self.register_card_power(card_power)
+                if (isinstance(card_power, CardPowerAttack)
+                    or isinstance(card_power, CardPowerDefense)):
+                    self.register_card_power(card_power)
 
     def remove_from_game(self, card, exhaust_card=True):
         return self.discard(card, remove_from_game=True, exhaust_card=exhaust_card)
@@ -189,16 +195,23 @@ class Player:
 
         card_removed = card.pile.remove(card)
         assert card_removed is card
+        #print(f'Discarded {card} from {self.name()} {card.pile}')
 
         if exhaust_card:
             self.exhaust_card(card=card)
 
-        if remove_from_game:
+        if isinstance(card, DragonBallCard):
+            self.recycle_dragon_ball(card)
+        elif remove_from_game:
             self.removed_pile.add(card)
             card.set_pile(self.removed_pile)
-        else:
+        else:  # discard
             self.discard_pile.add(card)
             card.set_pile(self.discard_pile)
+
+    def recycle_dragon_ball(self, card):
+        self.life_deck.add_bottom(card)
+        card.set_pile(self.life_deck)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
@@ -234,7 +247,7 @@ class Player:
             description = card.get_description(detailed=detailed)
             for line in description.split('\n'):
                 print(f'  {line}')
-            
+
     def show_hand(self, detailed=False):
         print(f'{len(self.hand)} card(s) in {self.name()}\'s hand:')
         Player.show_pile(self.hand, detailed=detailed)
@@ -267,26 +280,26 @@ class Player:
         # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford
         filtered = self.get_valid_card_powers(card_power_type)
 
-        #if card_power_type is CardPowerAttack and self.character == Character.GOKU:
-        #    print()
-        #    print(f'  {self.name()} has {len(filtered)} {card_power_type.__name__} choice(s):')
-        #    for card_power in filtered:
-        #        print(f'    {card_power.name} ' + ('(floating)' if card_power.is_floating else ''))
-        #    print(f'  {self.name()} has {len(self.hand)} card(s) in hand:')
-        #    for card in self.hand:
-        #        print(f'    {card}')
-
         if not filtered:
             return None
 
         idx = random.randrange(len(filtered))
         return filtered[idx]
 
+    def choose_card_from_discard_pile(self):
+        if len(self.discard_pile) == 0:
+            return None
+
+        return random.choice(self.discard_pile.cards)
+
     def play_non_combat_card(self):
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
                 or isinstance(card, DragonBallCard)):
+                # This dragon ball can be played as NC or Combat, so sometimes wait for Combat
+                if card.get_id() == 'saiyan.187' and random.random() < 0.5:
+                    continue
                 filtered.append(card)
 
         if not filtered:

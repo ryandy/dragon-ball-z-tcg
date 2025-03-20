@@ -38,5 +38,6 @@ class CombatPhase(Phase):
                 break
             attacker = attacker.opponent
             State.COMBAT_ROUND += 1
+            #print(f'! round{State.COMBAT_ROUND} {attacker.opponent}->{attacker}')
 
         # "AT THE END OF COMBAT" (attacker before defender)

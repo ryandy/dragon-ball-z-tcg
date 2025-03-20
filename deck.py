@@ -7,8 +7,8 @@ from saga import Saga
 
 
 class Deck(Pile):
-    def __init__(self, cards):
-        super().__init__(cards)
+    def __init__(self, name, cards):
+        super().__init__(name, cards=cards)
 
     @classmethod
     def from_spec(cls, name):
@@ -24,7 +24,7 @@ class Deck(Pile):
                 for _ in range(count):
                     card = CardFactory.from_spec(Saga[saga.upper()], card_number.lower())
                     cards.append(card)
-        return cls(cards)
+        return cls(f'{name.title()}Deck', cards)
 
     def validate(self):
         '''

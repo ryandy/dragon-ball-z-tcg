@@ -6,12 +6,16 @@ from card import Card
 
 class Pile:
     '''0-index represents the bottom of the pile'''
-    def __init__(self, cards=None, shuffle=False):
+    def __init__(self, name, cards=None, shuffle=False):
+        self.name = name
         if cards is None:
             cards = []
         self.cards = list(cards)
         if shuffle:
             self.shuffle()
+
+    def __repr__(self):
+        return f'{self.name.title()}({len(self)})'
 
     def __len__(self):
         return len(self.cards)
@@ -38,6 +42,7 @@ class Pile:
 
     def remove(self, card_or_idx):
         if isinstance(card_or_idx, Card):
+            idx = 0
             for idx in range(len(self)):
                 if self.cards[idx] is card_or_idx:
                     break

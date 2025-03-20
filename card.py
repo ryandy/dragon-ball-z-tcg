@@ -41,6 +41,9 @@ class Card(abc.ABC):
         assert self.pile is not pile
         self.pile = pile
 
+    def get_id(self):
+        return f'{self.saga.name.lower()}.{self.card_number}'
+
     @abc.abstractmethod
     def get_description(self, detailed=False):
         pass

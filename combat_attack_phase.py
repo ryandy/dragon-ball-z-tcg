@@ -15,6 +15,15 @@ class CombatAttackPhase(Phase):
         card_power = self.player.choose_card_power(CardPowerAttack)
         if card_power:
             self.passed = False
+            #print(f'// start of {self.player.name()} combat attack phase')
+            #self.player.show_hand()
+            #print('card powers:')
+            #for _cp in self.player.card_powers:
+            #    print(f' - {_cp}')
+            #print('non combat area:')
+            #for _nc in self.player.non_combat:
+            #    print(f' - {_nc}')
+            #print(f'{self.player} uses {card_power}')
             card_power.on_attack(self.player, self)
         else:
             print(f'{self.player} passed')
