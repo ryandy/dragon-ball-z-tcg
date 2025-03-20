@@ -4,6 +4,7 @@ import sys
 from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack, CardPowerAttack
 from character import Character
 from combat_card import CombatCard
+from dragon_ball_card import DragonBallCard
 from exception import GameOver
 from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
@@ -41,6 +42,7 @@ class Player:
         self.allies = Pile()
         self.non_combat = Pile()
         self.drills = Pile()
+        self.dragon_balls = Pile()
 
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
@@ -147,9 +149,18 @@ class Player:
 
         card = self.life_deck.draw()
 
-        # Check for end-of-game condition
+        # Check for end-of-game conditions
         if len(self.life_deck) == 0:
             raise GameOver(f'{self.name()}\'s Life Deck is empty', self.opponent)
+        if (dest_pile is self.discard_pile
+            and isinstance(card, DragonBallCard)
+            and all(isinstance(x, DragonBallCard) for x in self.life_deck)):
+            raise GameOver(f'{self.name()} can take no more life damage', self.opponent)
+
+        if (dest_pile is self.discard_pile
+            and isinstance(card, DragonBallCard)):
+            self.life_deck.add_bottom(card)
+            return None
 
         # Adding cards to hand requires some special handling
         if dest_pile is self.hand:
@@ -211,8 +222,11 @@ class Player:
         self.apply_life_damage(life_damage)
 
     def apply_life_damage(self, life_damage):
-        for _ in range(life_damage):
-            self.draw(dest_pile=self.discard_pile)
+        discard_count = 0
+        while discard_count < life_damage:
+            card_discarded = self.draw(dest_pile=self.discard_pile)
+            if card_discarded:
+                discard_count += 1
 
     @staticmethod
     def show_pile(pile, detailed=False):
@@ -271,7 +285,8 @@ class Player:
     def play_non_combat_card(self):
         filtered = []
         for card in self.hand:
-            if isinstance(card, NonCombatCard):
+            if (isinstance(card, NonCombatCard)
+                or isinstance(card, DragonBallCard)):
                 filtered.append(card)
 
         if not filtered:
@@ -288,5 +303,11 @@ class Player:
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
+        elif isinstance(card, DragonBallCard):
+            print(f'{self} plays {card} to Dragon Ball area')
+            self.dragon_balls.add(card)
+            card.set_pile(self.dragon_balls)
         else:
             assert False
+
+        return card
