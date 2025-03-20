@@ -304,7 +304,7 @@ class Player:
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, DragonBallCard):
-            print(f'{self} plays {card} to Dragon Ball area')
+            print(f'{self} plays {card}')
             self.dragon_balls.add(card)
             card.set_pile(self.dragon_balls)
         else:

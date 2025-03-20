@@ -47,6 +47,9 @@ class PersonalityCard(Card):
     def adjust_power_stage(self, amount):
         self.power_stage = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
 
+    def set_power_stage(self, new_power_stage):
+        self.power_stage = new_power_stage
+
     def get_power(self):
         if self.power_stage is None:
             return None

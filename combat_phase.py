@@ -12,8 +12,11 @@ class CombatPhase(Phase):
         self.skipped = True
 
     def execute(self):
+        # This could be broken out into a "Declare Phase"
         # TODO give player opportunity to skip combat
         self.skipped = False
+
+        # on_combat_declared
 
         # "WHEN ENTERING COMBAT" (attacker before defender)
 
@@ -30,6 +33,8 @@ class CombatPhase(Phase):
             else:
                 pass_count = 0
             if pass_count == 2:
+                break
+            if attack_phase.combat_ended:
                 break
             attacker = attacker.opponent
             State.COMBAT_ROUND += 1

@@ -9,6 +9,7 @@ class CombatAttackPhase(Phase):
     def __init__(self, player):
         self.player = player
         self.passed = True
+        self.combat_ended = False
 
     def execute(self):
         card_power = self.player.choose_card_power(CardPowerAttack)
@@ -17,6 +18,9 @@ class CombatAttackPhase(Phase):
             card_power.on_attack(self.player, self)
         else:
             print(f'{self.player} passed')
+
+    def end_combat(self):
+        self.combat_ended = True
 
     def physical_attack(self, damage, src=None):
         '''Returns True if attack was successful'''
