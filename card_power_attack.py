@@ -1,3 +1,4 @@
+import copy
 import sys
 
 from card_power import CardPower
@@ -29,6 +30,7 @@ class CardPowerAttack(CardPower):
                 damage = Damage.physical_attack()
             else:
                 damage = Damage.energy_attack()
+        damage = damage.copy()
         if damage_modifier:
             damage.modify(damage_modifier)
         self.damage = damage
@@ -42,6 +44,13 @@ class CardPowerAttack(CardPower):
         self.exhaust = exhaust
         self.discard = discard
         self.remove_from_game = remove_from_game
+
+    def copy(self):
+        # Note: do not deep copy self.card
+        card_power_copy = copy.copy(self)
+        card_power_copy.cost = self.cost.copy()
+        card_power_copy.damage = self.damage.copy()
+        return card_power_copy
 
     def on_attack(self, player, phase):
         if self.is_physical is None:  # Non-combat attacks
@@ -64,9 +73,9 @@ class CardPowerAttack(CardPower):
         if self.is_physical is None:  # Non-combat attacks
             success = True
         elif self.is_physical:
-            success = phase.physical_attack(self.damage, src=self)
+            success = phase.physical_attack(self.damage.copy(), src=self)
         else:
-            success = phase.energy_attack(self.damage, src=self)
+            success = phase.energy_attack(self.damage.copy(), src=self)
 
         if success:
             self.on_success(player, phase)

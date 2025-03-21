@@ -49,9 +49,12 @@ class CombatAttackPhase(Phase):
             damage = defense_phase.energy_defense(damage)
 
         if not damage.was_stopped():
+            print(f'Attack was successful: damage={damage}')
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(damage)
             else:
                 self.player.opponent.apply_energy_attack_damage(damage)
+        else:
+            print(f'Attack was stopped: damage={damage}')
 
         return not damage.was_stopped()

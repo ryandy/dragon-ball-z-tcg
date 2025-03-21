@@ -1,13 +1,15 @@
+import copy
 import sys
 
 
 class Cost:
-    def __init__(self, power, life, friendly_ally=None, any_ally=None, specific_ally=None):
+    def __init__(self, power, life):
+        # TODO: can also handle discard/ally/drill/etc costs
         self.power = power
         self.life = life
-        self.friendly_ally = friendly_ally
-        self.any_ally = any_ally
-        self.specific_ally = specific_ally
+
+    def copy(self):
+        return copy.copy(self)
 
     @classmethod
     def none(cls):

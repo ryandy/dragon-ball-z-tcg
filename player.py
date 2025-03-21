@@ -1,4 +1,3 @@
-import copy
 import random
 import sys
 
@@ -69,7 +68,7 @@ class Player:
         self.opponent = opponent
 
     def register_card_power(self, card_power):
-        self.card_powers.append(copy.copy(card_power))
+        self.card_powers.append(card_power.copy())
 
     def register_card_powers(self, card_powers):
         for card_power in card_powers:
@@ -238,6 +237,7 @@ class Player:
         discard_count = 0
         while discard_count < life_damage:
             card_discarded = self.draw(dest_pile=self.discard_pile)
+            print(f' 1 life damage, discarded {card_discarded}')
             if card_discarded:
                 discard_count += 1
 
@@ -274,6 +274,20 @@ class Player:
         self.show_hand(detailed=detailed)
         #self.show_discard_pile(detailed=detailed)
 
+    def choose(self, names, descriptions, data=None):
+        print(f'Choose an action:')
+        for i in range(len(names)):
+            print(f'{i+1}. {names[i]}')
+            print(f'   {descriptions[i]}')
+        choice = -1
+        while choice <= 0 or choice > len(names):  # Choice is 1-indexed
+            choice = input('Choice... ')
+            try:
+                choice = int(choice)
+            except:
+                choice = -1
+        return choice - 1
+
     def choose_card_power(self, card_power_type):
         # Random choice / UI choice / Heuristic choice
 
@@ -283,7 +297,14 @@ class Player:
         if not filtered:
             return None
 
-        idx = random.randrange(len(filtered))
+        if self.name() == 'Goku':
+            print(f'{self}')
+            print(f'{self.opponent}')
+            idx = self.choose([cp.name for cp in filtered],
+                              [cp.description for cp in filtered],
+                              filtered)
+        else:
+            idx = random.randrange(len(filtered))
         return filtered[idx]
 
     def choose_card_from_discard_pile(self):

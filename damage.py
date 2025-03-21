@@ -12,8 +12,20 @@ class Damage:
 
     def __repr__(self):
         # TODO: incorporate mods
-        power = 'PAT' if self.use_pat else self.power
-        return f'Damage({power}, {self.life})'
+        stopped = self.was_stopped()
+        if stopped:
+            return f'Damage(STOPPED, mods={len(self.mods)})'
+        else:
+            power = 'PAT' if self.use_pat else self.power
+            return f'Damage({power}, {self.life}, mods={len(self.mods)})'
+
+    def copy(self):
+        return Damage(
+            power=self.power,
+            life=self.life,
+            use_pat=self.use_pat,
+            mods=[m.copy() for m in self.mods],
+            stopped=self.stopped)
 
     def modify(self, mod):
         self.mods.append(mod)

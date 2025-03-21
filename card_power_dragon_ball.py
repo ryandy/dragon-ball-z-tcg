@@ -8,5 +8,9 @@ class CardPowerDragonBall(CardPower):
     def __init__(self, name, description, cost=None):
         super().__init__(name, description, cost or Cost.none())
 
+    def copy(self):
+        # Note: do not deep copy self.card
+        return super().copy()
+
     def on_play(self, player, phase):
         pass

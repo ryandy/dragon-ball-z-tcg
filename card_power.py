@@ -1,4 +1,5 @@
 import abc
+import copy
 import sys
 
 from state import State
@@ -10,7 +11,7 @@ class CardPower(abc.ABC):
                  card=None, is_floating=False):
         self.name = name
         self.description = description
-        self.cost = cost
+        self.cost = cost.copy()
         self.heroes_only = heroes_only
         self.villains_only = villains_only
         self.saiyan_only = saiyan_only
@@ -23,6 +24,12 @@ class CardPower(abc.ABC):
     def __repr__(self):
         suffix = ' (*)' if self.is_floating else ''
         return f'{self.name}{suffix}'
+
+    def copy(self):
+        # Note: do not deep copy self.card
+        card_power_copy = copy.copy(self)
+        card_power_copy.cost = self.cost.copy()
+        return card_power_copy
 
     def register_card(self, card):
         self.card = card

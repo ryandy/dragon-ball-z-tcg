@@ -1,3 +1,4 @@
+import copy
 import sys
 
 
@@ -11,3 +12,6 @@ class DamageModifier:
         self.life_mult = life_mult or 1
         self.life_max = life_max or 1000
         self.stopped = stopped or False
+
+    def copy(self):
+        return copy.copy(self)

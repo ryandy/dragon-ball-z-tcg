@@ -1,3 +1,4 @@
+import copy
 import sys
 
 from card_power import CardPower
@@ -13,12 +14,20 @@ class CardPowerDefense(CardPower):
                  is_floating=None, card=None):
         super().__init__(name, description, cost or Cost.none(), card=card, is_floating=is_floating)
         self.is_physical = is_physical
-        self.damage_modifier = damage_modifier
+        self.damage_modifier = damage_modifier.copy() if damage_modifier else None
         self.own_anger = own_anger
         self.opp_anger = opp_anger
         self.exhaust = exhaust
         self.discard = discard
         self.remove_from_game = remove_from_game
+
+    def copy(self):
+        # Note: do not deep copy self.card
+        card_power_copy = copy.copy(self)
+        card_power_copy.cost = self.cost.copy()
+        card_power_copy.damage_modifier = (
+            self.damage_modifier.copy() if self.damage_modifier else None)
+        return card_power_copy
 
     def on_defense(self, player, phase, damage):
         player.pay_cost(self.cost)
