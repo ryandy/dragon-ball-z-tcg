@@ -17,13 +17,6 @@ class DragonBallCard(Card):
     def __repr__(self):
         return f'{self.name} (Non-Combat)'
 
-    def get_description(self, detailed=False):
-        description = f'{self.name}'
-        if not detailed:
-            return description
-        description = f'{description}\n  {self.card_text}'
-        return description
-
     @classmethod
     def from_spec(cls, card_module):
         card = cls(

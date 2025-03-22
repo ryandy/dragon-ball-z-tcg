@@ -13,5 +13,13 @@ class DamageModifier:
         self.life_max = life_max or 1000
         self.stopped = stopped or False
 
+    def __repr__(self):
+        return (f'DamageModifier({self.power_add}, {self.power_mult}, {self.power_max}'
+                f', {self.life_add}, {self.life_mult}, {self.life_max}, {self.stopped})')
+
     def copy(self):
         return copy.copy(self)
+
+    @classmethod
+    def none(cls):
+        return cls()

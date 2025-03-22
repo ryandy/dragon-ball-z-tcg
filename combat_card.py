@@ -16,13 +16,6 @@ class CombatCard(Card):
     def __repr__(self):
         return f'{self.name} ({self.subtype})'
 
-    def get_description(self, detailed=False):
-        description = f'{self.name} - {self.subtype}'
-        if not detailed:
-            return description
-        description = f'{description}\n  {self.card_text}'
-        return description
-
     @classmethod
     def from_spec(cls, card_module):
         card = cls(

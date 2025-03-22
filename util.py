@@ -1,7 +1,10 @@
 import sys
 import time
 
+from state import State
+
 
 def dprint(msg=''):
-    time.sleep(0.1)
+    if State.ENABLE_INTERACTIVE:
+        time.sleep(0.1)
     print(msg)

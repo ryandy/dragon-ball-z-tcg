@@ -41,8 +41,9 @@ class Runner:
             State.TURN += 1
 
     def beginning_of_turn(self):
-        for idx in range(State.TURN, State.TURN + 2):  # This turn's attacker goes first
-            self.players[idx%2].exhaust_expired_card_powers()
+        attacker = self.players[State.TURN % 2]
+        for player in [attacker, attacker.opponent]:
+            player.exhaust_expired_card_powers()
         for player in self.players:
             player.show_summary()
 

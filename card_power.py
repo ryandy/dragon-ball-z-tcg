@@ -20,6 +20,7 @@ class CardPower(abc.ABC):
         self.is_floating = is_floating
         self.valid_from = None  # tuple of (turn #, combat round #)
         self.valid_until = None  # tuple of (turn #, combat round #)
+        self.player = None
 
     def __repr__(self):
         suffix = ' (*)' if self.is_floating else ''
@@ -32,7 +33,12 @@ class CardPower(abc.ABC):
         return card_power_copy
 
     def register_card(self, card):
+        '''Source card is registered with the card power after the card is instantiated'''
         self.card = card
+
+    def register_player(self, player):
+        '''Owning player is registered with the card power when it is registered with the player'''
+        self.player = player
 
     def set_floating(self):
         self.is_floating = True

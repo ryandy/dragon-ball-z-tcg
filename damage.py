@@ -42,7 +42,10 @@ class Damage:
             stopped=self.stopped)
 
     def modify(self, mod):
-        self.mods.append(mod)
+        if isinstance(mod, list):
+            self.mods.extend(mod)
+        else:
+            self.mods.append(mod)
 
     def was_stopped(self):
         return self.stopped or any(x.stopped for x in self.mods)

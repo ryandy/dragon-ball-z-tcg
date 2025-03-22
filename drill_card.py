@@ -3,9 +3,7 @@ import sys
 from card import Card
 
 
-class NonCombatCard(Card):
-    '''Does not include drills, dragon balls, or allies'''
-
+class DrillCard(Card):
     def __repr__(self):
         return f'{self.name} (Non-Combat)'
 

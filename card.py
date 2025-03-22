@@ -24,7 +24,7 @@ class Card(abc.ABC):
 
         if isinstance(style, str):
             style = Style[style.upper()]
-        self.style = Style(style) if style else None
+        self.style = Style(style) if style else Style.FREESTYLE
 
         self.card_text = card_text
         if isinstance(card_power, list):
@@ -51,7 +51,3 @@ class Card(abc.ABC):
 
     def get_id(self):
         return f'{self.saga.name.lower()}.{self.card_number}'
-
-    @abc.abstractmethod
-    def get_description(self, detailed=False):
-        pass

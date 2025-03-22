@@ -33,25 +33,22 @@ class PersonalityCard(Card):
         return f'{self.name} Lv{self.level} (Personality)'
 
     def init_power_stage_for_main(self):
-        if self.level == 1:
-            self.power_stage = 5
-        else:
-            self.power_stage = POWER_STAGES_LEN - 1
+        self.set_power_stage(5)
 
     def init_power_stage_for_ally(self):
-        self.power_stage = 3
+        self.set_power_stage(3)
 
     def reduce_power_stage(self, amount):
         self.adjust_power_stage(-amount)
 
     def adjust_power_stage(self, amount):
-        self.power_stage = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
+        self.set_power_stage(min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount)))
 
     def set_power_stage(self, new_power_stage):
         self.power_stage = new_power_stage
 
     def set_power_stage_max(self):
-        self.power_stage = POWER_STAGES_LEN - 1
+        self.set_power_stage(POWER_STAGES_LEN - 1)
 
     def get_power(self):
         if self.power_stage is None:
@@ -76,22 +73,6 @@ class PersonalityCard(Card):
 
     def deactivate(self):
         self.power_stage = None
-
-    def get_description(self, detailed=False, anger=None, life=None):
-        description = f'{self.name} Lv{self.level}'
-        if self.power_stage is None:  # Card is unplayed/inactive
-            description = f'{description}, Power {self.power_stages[1]}-{self.power_stages[-1]}'
-        else:
-            description = (f'{description}, Power {self.power_stage}/{POWER_STAGES_LEN-1}'
-                           f' ({self.power_stages[self.power_stage]})')
-        if anger is not None:
-            description = f'{description}, Anger {anger}/5'
-        if life is not None:
-            description = f'{description}, Life {life}'
-        if not detailed:
-            return description
-        description = f'{description}\n  {self.card_text}'
-        return description
 
     @classmethod
     def from_spec(cls, card_module):

@@ -6,10 +6,12 @@ from card_power_defense import CardPowerDefense
 from character import Character
 from combat_card import CombatCard
 from dragon_ball_card import DragonBallCard
+from drill_card import DrillCard
 from exception import GameOver
 from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
 from pile import Pile
+from state import State
 from util import dprint
 
 
@@ -49,7 +51,7 @@ class Player:
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
         self.register_card_powers(self.personality.card_powers)
-        self.interactive = (self.name() == 'Goku')
+        self.interactive = (self.name() == 'Goku') if State.ENABLE_INTERACTIVE else False
 
     def __repr__(self):
         name = self.name()
@@ -70,7 +72,9 @@ class Player:
         self.opponent = opponent
 
     def register_card_power(self, card_power):
-        self.card_powers.append(card_power.copy())
+        card_power_copy = card_power.copy()
+        card_power_copy.register_player(self)
+        self.card_powers.append(card_power_copy)
 
     def register_card_powers(self, card_powers):
         for card_power in card_powers:
@@ -121,21 +125,44 @@ class Player:
 
         # Upgrade personality if possible
         if next_level_idx < len(self.personality_cards):
+            dprint(f'{self.name()} levels up to Lv{next_level}!')
             self.exhaust_card(self.personality)
             self.personality = self.personality_cards[next_level_idx]
             self.register_card_powers(self.personality.card_powers)
 
-            # Discard all drills
+            # Discard/exhaust all drills
             while len(self.drills) > 0:
                 card = self.drills.remove_top()
-                self.discard_pile.add(card)
-                card.set_pile(self.discard_pile)
+                self.discard(card)
+        else:
+            dprint(f'{self.name()} levels up, but stays at Lv{next_level-1}!')
 
         # Set power to maximum
-        self.personality.init_power_stage_for_main()
+        self.personality.set_power_stage_max()
 
-        # Reset anger to 0
-        self.anger = 0
+        # Reset anger to 0 if anger reached the maximum
+        if self.anger == MAX_ANGER:
+            self.anger = 0
+
+    def reduce_level(self):
+        '''Can be caused by card effects'''
+        next_level = self.personality.level - 1
+        next_level_idx = next_level - 1
+
+        # Downgrade personality if possible
+        if next_level_idx >= 0:
+            dprint(f'{self.name()} levels down to Lv{next_level}!')
+            self.exhaust_card(self.personality)
+            self.personality = self.personality_cards[next_level_idx]
+            self.register_card_powers(self.personality.card_powers)
+
+            # Discard/exhaust all drills
+            while len(self.drills) > 0:
+                card = self.drills.remove_top()
+                self.discard(card)
+
+            # Reset power
+            self.personality.init_power_stage_for_main()
 
     def adjust_anger(self, count):
         self.anger = max(0, min(MAX_ANGER, self.anger + count))
@@ -249,39 +276,6 @@ class Player:
                 discard_count += 1
                 dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
 
-    @staticmethod
-    def show_pile(pile, detailed=False):
-        for card in pile.cards:
-            description = card.get_description(detailed=detailed)
-            for line in description.split('\n'):
-                dprint(f'  {line}')
-
-    def show_hand(self, detailed=False):
-        dprint(f'{len(self.hand)} card(s) in {self.name()}\'s hand:')
-        Player.show_pile(self.hand, detailed=detailed)
-
-    def show_discard_pile(self, detailed=False):
-        dprint(f'{len(self.discard_pile)} card(s) in {self.name()}\'s discard pile:')
-        Player.show_pile(self.discard_pile, detailed=detailed)
-
-    def show_allies(self, detailed=False):
-        if not self.allies.cards:
-            dprint(f'No Allies')
-        else:
-            dprint(f'Allies:')
-            Player.show_pile(self.allies, detailed=detailed)
-
-    def show_personality(self, detailed=False):
-        description = self.personality.get_description(
-            detailed=True, anger=self.anger, life=len(self.life_deck))
-        for line in description.split('\n'):
-            dprint(f'{line}')
-
-    def show(self, detailed=False):
-        self.show_personality(detailed=detailed)
-        self.show_hand(detailed=detailed)
-        #self.show_discard_pile(detailed=detailed)
-
     def show_summary(self):
         '''1-line summary of current state'''
         name = self.name()
@@ -385,7 +379,8 @@ class Player:
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
-                or isinstance(card, DragonBallCard)):
+                or isinstance(card, DragonBallCard)
+                or isinstance(card, DrillCard)):
                 filtered.append(card)
 
         if self.interactive:
@@ -439,6 +434,11 @@ class Player:
         if isinstance(card, NonCombatCard):
             self.non_combat.add(card)
             card.set_pile(self.non_combat)
+            for card_power in card.card_powers:
+                self.register_card_power(card_power)
+        elif isinstance(card, DrillCard):
+            self.drills.add(card)
+            card.set_pile(self.drills)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, DragonBallCard):
