@@ -15,6 +15,7 @@ RARITY = 3
 DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Orange'
+RESTRICTED = False
 CARD_TEXT = ('All of your physical attacks do +4 power stages of damage.')
 
 CARD_POWER = CardPowerOnDamageModification(

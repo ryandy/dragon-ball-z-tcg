@@ -1,14 +1,25 @@
+# Main Personality
 1 saiyan 161 piccolo1
 1 saiyan 162 piccolo2
 1 saiyan 163 piccolo3
 1 saiyan p2 piccolo4
+
+# Combat
 20 saiyan 1 orange standing fist punch
 20 saiyan 66 black knife hand strike
 10 saiyan 11 blue forward foot sweep
 10 saiyan 25 gokus physical attack
 3 saiyan 28 vegetas physical stance
+
+# Non-Combat
 5 saiyan 22 power up!
-15 saiyan 78 roshi training
+10 saiyan 78 roshi training
+
+# Drills
+2 saiyan 142 orange energy drill (restricted)
+3 saiyan 151 orange joint restraint drill
+
+# Dragon Balls
 1 saiyan 15 earth dragon ball 1
 1 saiyan 16 earth dragon ball 2
 1 saiyan 75 earth dragon ball 3

@@ -4,7 +4,10 @@ import sys
 class State:
     TURN = 0
     COMBAT_ROUND = 0
-    ENABLE_INTERACTIVE = True # False
+
+    ENABLE_INTERACTIVE = False
+    ENABLE_INTERACTIVE = True
+
 
     @classmethod
     def get_time(cls):

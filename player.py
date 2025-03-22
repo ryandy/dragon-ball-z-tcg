@@ -12,6 +12,7 @@ from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
 from pile import Pile
 from state import State
+from style import Style
 from util import dprint
 
 
@@ -132,7 +133,7 @@ class Player:
 
             # Discard/exhaust all drills
             while len(self.drills) > 0:
-                card = self.drills.remove_top()
+                card = self.drills.cards[-1]
                 self.discard(card)
         else:
             dprint(f'{self.name()} levels up, but stays at Lv{next_level-1}!')
@@ -158,7 +159,7 @@ class Player:
 
             # Discard/exhaust all drills
             while len(self.drills) > 0:
-                card = self.drills.remove_top()
+                card = self.drills.cards[-1]
                 self.discard(card)
 
             # Reset power
@@ -184,10 +185,22 @@ class Player:
             and all(isinstance(x, DragonBallCard) for x in self.life_deck)):
             raise GameOver(f'{self.name()} can take no more life damage', self.opponent)
 
+        # Check if a dragon ball is being discarded directly from the life deck - recycle it
         if (dest_pile is self.discard_pile
             and isinstance(card, DragonBallCard)):
             card.set_pile(dest_pile)  # Temporarily move card so it can move back when recycled
             self.recycle_dragon_ball(card)
+            return None
+
+        # Check if an unplayable drill was drawn - can shuffle back into deck
+        if (dest_pile is self.hand
+            and isinstance(card, DrillCard)
+            and card.style != Style.FREESTYLE
+            and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
+            # TODO: Choice?
+            dprint(f'{self.name()} draws unplayable {card.name} and shuffles it back into deck')
+            self.life_deck.add(card)
+            self.life_deck.shuffle()
             return None
 
         # Adding cards to hand requires some special handling
@@ -223,7 +236,9 @@ class Player:
         assert card.pile is not self.discard_pile and card.pile is not self.removed_pile
 
         card_removed = card.pile.remove(card)
-        assert card_removed is card
+        if card_removed is not card:
+            print(f'Attempted to remove {card} from {card.pile} but got {card_removed}')
+            assert False
 
         if exhaust_card:
             self.exhaust_card(card=card)
@@ -286,7 +301,8 @@ class Player:
         life = len(self.life_deck)
         allies = len(self.allies)
         discard = len(self.discard_pile)
-        non_combat = len(self.non_combat) + len(self.drills)  # Drills separate?
+        non_combat = len(self.non_combat)
+        drills = len(self.drills)
         dbs = len(self.dragon_balls)
         hand = len(self.hand)
 
@@ -294,7 +310,7 @@ class Player:
         pat_idx = self.personality.get_physical_attack_table_index()
         power = f'{power}({pat_idx})'
         dprint(f'{level : <5} {name : <9} {life : >2}hp {discard : >2}dp {power : >5}pwr'
-               f' {non_combat : >2}nc {allies : >2}al {dbs : >2}db {hand : >2}hd')
+               f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
 
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
@@ -380,8 +396,20 @@ class Player:
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
                 or isinstance(card, DragonBallCard)
-                or isinstance(card, DrillCard)):
+                or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
                 filtered.append(card)
+            elif isinstance(card, DrillCard):
+                dup_restricted = any(x.get_id() == card.get_id() for x in self.drills)
+                style_restricted = any(x.style != card.style
+                                       for x in self.drills if x.style != Style.FREESTYLE)
+                special_restricted = (
+                    card.restricted
+                    and (any(x.style == card.style for x in self.drills)
+                         or any(x.style == card.style for x in self.opponent.drills)))
+                if (not dup_restricted
+                    and not style_restricted
+                    and not special_restricted):
+                    filtered.append(card)
 
         if self.interactive:
             other_hand = []
@@ -439,6 +467,16 @@ class Player:
         elif isinstance(card, DrillCard):
             self.drills.add(card)
             card.set_pile(self.drills)
+
+            # Discard any newly invalidated restricted drills
+            for player in [self, self.opponent]:
+                for drill_card in player.drills:
+                    if (drill_card is not card
+                        and drill_card.restricted
+                        and drill_card.style == card.style):
+                        dprint(f'{player.name()}\'s restricted {drill_card.name} invalidated')
+                        player.discard(drill_card)
+
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, DragonBallCard):

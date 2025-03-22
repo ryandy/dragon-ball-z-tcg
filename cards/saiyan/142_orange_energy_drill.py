@@ -15,6 +15,7 @@ RARITY = 3
 DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Orange'
+RESTRICTED = True
 CARD_TEXT = ('All energy attacks performed against you do 1 less life card of damage. Cannot be'
              ' used with other Orange Drills in play.')
 
