@@ -35,7 +35,7 @@ class CardPowerEDB7_DragonBall(CardPowerDragonBall):
         player.opponent.adjust_anger(-2)
 
         for _ in range(3):
-            card = player.choose_card_from_discard_pile()
+            card = player.choose_discard_pile_card()
             if card:
                 player.discard_pile.remove(card)
                 player.life_deck.add_top(card)
@@ -49,7 +49,7 @@ class CardPowerEDB7_DragonBall(CardPowerDragonBall):
 class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
     def on_success(self, player, phase):
         for _ in range(3):
-            card = player.choose_card_from_discard_pile()
+            card = player.choose_discard_pile_card()
             if card:
                 player.discard_pile.remove(card)
                 player.life_deck.add_top(card)

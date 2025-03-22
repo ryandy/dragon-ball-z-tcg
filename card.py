@@ -37,6 +37,14 @@ class Card(abc.ABC):
     def __repr__(self):
         return f'{self.name}'
 
+    def __copy__(self):
+        '''Cards cannot be copied'''
+        assert False
+
+    def __deepcopy__(self):
+        '''Cards cannot be copied'''
+        assert False
+
     def set_pile(self, pile):
         assert self.pile is not pile
         self.pile = pile

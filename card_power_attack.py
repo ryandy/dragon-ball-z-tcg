@@ -5,6 +5,7 @@ from card_power import CardPower
 from cost import Cost
 from damage import Damage
 from dragon_ball_card import DragonBallCard
+from util import dprint
 
 
 class CardPowerAttack(CardPower):
@@ -54,9 +55,11 @@ class CardPowerAttack(CardPower):
 
     def on_attack(self, player, phase):
         if self.is_physical is None:  # Non-combat attacks
-            print(f'{player} attacks with {self}')
+            dprint(f'{player.name()} uses {self} (Non-Combat)')
         else:
-            print(f'{player} attacks with {self} for {self.damage}')
+            dprint(f'{player.name()} attacks with {self} for {self.damage.resolve(player)}')
+        if not player.interactive:
+            dprint(f'  - {self.description}')
 
         player.pay_cost(self.cost)
 
@@ -92,10 +95,8 @@ class CardPowerAttack(CardPower):
         # TODO: easy option for exhaust after this turn?
         if self.exhaust:
             if self.card:
-                #print(f' {player.name()} exhaust {self.card} - A')
                 player.exhaust_card(card=self.card)
             else:
-                #print(f' {player.name()} exhaust {self.card} - B')
                 player.exhaust_card_power(self)
         else:
             self.exhaust_until_next_turn()
@@ -105,9 +106,6 @@ class CardPowerAttack(CardPower):
                 player.remove_from_game(self.card, exhaust_card=False)
             elif self.discard:
                 player.discard(self.card, exhaust_card=False)
-
-        #print(f'// end of {self} on_resolved')
-        #player.show_hand()
 
 
 class CardPowerPhysicalAttack(CardPowerAttack):

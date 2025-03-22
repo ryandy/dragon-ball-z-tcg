@@ -9,6 +9,7 @@ from non_combat_phase import NonCombatPhase
 from player import Player
 from power_up_phase import PowerUpPhase
 from state import State
+from util import dprint
 
 
 class Runner:
@@ -33,35 +34,30 @@ class Runner:
             try:
                 self.take_turn()
             except GameOver as err:
-                print(f'{err.winning_player.name()} has won!')
-                print(f'{err}')
+                dprint(f'{err.winning_player.name()} has won!')
+                dprint(f'{err}')
                 #err.winning_player.show_discard_pile()
                 return
             State.TURN += 1
 
     def beginning_of_turn(self):
-        for idx in range(State.TURN, State.TURN + 2):
+        for idx in range(State.TURN, State.TURN + 2):  # This turn's attacker goes first
             self.players[idx%2].exhaust_expired_card_powers()
+        for player in self.players:
+            player.show_summary()
 
     def end_of_turn(self):
         pass
 
     def take_turn(self):
-        print(f'==== Turn {State.TURN} ====')
+        player = self.players[State.TURN % 2]
+        header = f'========== Turn {State.TURN+1}: {player.name()} =========='
+        border = '=' * len(header)
+        dprint(border)
+        dprint(header)
+        dprint(border)
 
         self.beginning_of_turn()
-
-        #for player in self.players:
-        #    print(f'{player.name()}\'s start-of-turn energy defense powers:')
-        #    for card_power in player.card_powers:
-        #        if isinstance(card_power, CardPowerEnergyDefense):
-        #            print(f'  {card_power.name}, {card_power.card}, {card_power.is_exhausted()}')
-        #    print(f'{player.name()}\'s start-of-turn hand:')
-        #    for card in player.hand:
-        #        print(f'  {card.name}')
-        #print()
-
-        player = self.players[State.TURN % 2]
 
         draw_phase = DrawPhase(player)
         draw_phase.execute()
@@ -72,7 +68,7 @@ class Runner:
         power_up_phase = PowerUpPhase(player)
         power_up_phase.execute()
 
-        combat_phase = CombatPhase(player)
+        combat_phase = CombatPhase(player, self.players)
         combat_phase.execute()
 
         discard_phase = DiscardPhase(player, combat_phase)
@@ -80,4 +76,4 @@ class Runner:
 
         self.end_of_turn()
 
-        print()
+        dprint()

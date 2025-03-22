@@ -10,6 +10,7 @@ from exception import GameOver
 from non_combat_card import NonCombatCard
 from personality_card import PersonalityCard
 from pile import Pile
+from util import dprint
 
 
 MAX_ANGER = 5
@@ -48,6 +49,7 @@ class Player:
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
         self.register_card_powers(self.personality.card_powers)
+        self.interactive = (self.name() == 'Goku')
 
     def __repr__(self):
         name = self.name()
@@ -172,9 +174,11 @@ class Player:
 
     def add_card_to_hand(self, card):
         # Register callbacks for all new combat cards in hand
+        if self.interactive:
+            dprint(f'{self.name()} adds {card} to hand')
+        else:
+            dprint(f'{self.name()} adds a card to hand')
         self.hand.add(card)
-        #print(f'{self.name()} draws {card}')
-        #self.show_hand()
         card.set_pile(self.hand)
         if (isinstance(card, CombatCard)
             or card.get_id() == 'saiyan.187'  # dragon ball that can be played as attack from hand
@@ -189,12 +193,10 @@ class Player:
 
     def discard(self, card, remove_from_game=False, exhaust_card=True):
         '''Hand/Table -> Discard/Removed'''
-        # TODO: Prevent discarding dragon balls (dragon balls do not count toward damage)
         assert card.pile is not self.discard_pile and card.pile is not self.removed_pile
 
         card_removed = card.pile.remove(card)
         assert card_removed is card
-        #print(f'Discarded {card} from {self.name()} {card.pile}')
 
         if exhaust_card:
             self.exhaust_card(card=card)
@@ -202,29 +204,35 @@ class Player:
         if isinstance(card, DragonBallCard):
             self.recycle_dragon_ball(card)
         elif remove_from_game:
+            dprint(f'{self.name()} removes {card} from game')
             self.removed_pile.add(card)
             card.set_pile(self.removed_pile)
         else:  # discard
+            dprint(f'{self.name()} discards {card}')
             self.discard_pile.add(card)
             card.set_pile(self.discard_pile)
 
     def recycle_dragon_ball(self, card):
+        dprint(f'{self.name()} recycles {card}')
         self.life_deck.add_bottom(card)
         card.set_pile(self.life_deck)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
+        dprint(f'{self.name()} rejuvenates with {card}')
         if card:
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
 
     def apply_physical_attack_damage(self, damage):
         damage = damage.resolve(self.opponent)
+        dprint(f'{self.name()} takes {damage}')
         self.apply_power_damage(damage.power)
         self.apply_life_damage(damage.life)
 
     def apply_energy_attack_damage(self, damage):
         damage = damage.resolve(self.opponent)
+        dprint(f'{self.name()} takes {damage}')
         self.apply_power_damage(damage.power)
         self.apply_life_damage(damage.life)
 
@@ -237,108 +245,203 @@ class Player:
         discard_count = 0
         while discard_count < life_damage:
             card_discarded = self.draw(dest_pile=self.discard_pile)
-            print(f' 1 life damage, discarded {card_discarded}')
             if card_discarded:
                 discard_count += 1
+                dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
 
     @staticmethod
     def show_pile(pile, detailed=False):
         for card in pile.cards:
             description = card.get_description(detailed=detailed)
             for line in description.split('\n'):
-                print(f'  {line}')
+                dprint(f'  {line}')
 
     def show_hand(self, detailed=False):
-        print(f'{len(self.hand)} card(s) in {self.name()}\'s hand:')
+        dprint(f'{len(self.hand)} card(s) in {self.name()}\'s hand:')
         Player.show_pile(self.hand, detailed=detailed)
 
     def show_discard_pile(self, detailed=False):
-        print(f'{len(self.discard_pile)} card(s) in {self.name()}\'s discard pile:')
+        dprint(f'{len(self.discard_pile)} card(s) in {self.name()}\'s discard pile:')
         Player.show_pile(self.discard_pile, detailed=detailed)
 
     def show_allies(self, detailed=False):
         if not self.allies.cards:
-            print(f'No Allies')
+            dprint(f'No Allies')
         else:
-            print(f'Allies:')
+            dprint(f'Allies:')
             Player.show_pile(self.allies, detailed=detailed)
 
     def show_personality(self, detailed=False):
         description = self.personality.get_description(
             detailed=True, anger=self.anger, life=len(self.life_deck))
         for line in description.split('\n'):
-            print(f'{line}')
+            dprint(f'{line}')
 
     def show(self, detailed=False):
         self.show_personality(detailed=detailed)
         self.show_hand(detailed=detailed)
         #self.show_discard_pile(detailed=detailed)
 
-    def choose(self, names, descriptions, data=None):
-        print(f'Choose an action:')
-        for i in range(len(names)):
-            print(f'{i+1}. {names[i]}')
-            print(f'   {descriptions[i]}')
+    def show_summary(self):
+        '''1-line summary of current state'''
+        name = self.name()
+        level = self.personality.level
+        anger = self.anger
+        level = f'Lv{level}.{anger}'
+
+        life = len(self.life_deck)
+        allies = len(self.allies)
+        discard = len(self.discard_pile)
+        non_combat = len(self.non_combat) + len(self.drills)  # Drills separate?
+        dbs = len(self.dragon_balls)
+        hand = len(self.hand)
+
+        power = self.personality.power_stage
+        pat_idx = self.personality.get_physical_attack_table_index()
+        power = f'{power}({pat_idx})'
+        dprint(f'{level : <5} {name : <9} {life : >2}hp {discard : >2}dp {power : >5}pwr'
+               f' {non_combat : >2}nc {allies : >2}al {dbs : >2}db {hand : >2}hd')
+
+    def choose(self, names, descriptions,
+               other_names=None, other_descriptions=None,
+               allow_pass=True):
+        full_names = list(names)
+        full_descriptions = list(descriptions)
+
+        other_names = other_names or []
+        if other_names:
+            full_names.extend(other_names)
+            full_descriptions.extend(other_descriptions)
+
+        if allow_pass:
+            full_names.append('Pass')
+            full_descriptions.append('Do nothing.')
+
+        dprint(f'>>> Choose an action:')
+
+        show_descriptions = any(x for x in full_descriptions)
+        for i in range(len(full_names)):
+            if i < len(names):
+                number = f'{i+1}'
+            elif i < len(names) + len(other_names):
+                number = f'/'
+            else:  # pass
+                number = f'{len(names)+1}'
+            prefix = f'{number}. '
+            dprint(f'{prefix}{full_names[i]}')
+            if show_descriptions:
+                dprint(f'{" "*(len(prefix)+2)}{full_descriptions[i]}')
+
         choice = -1
-        while choice <= 0 or choice > len(names):  # Choice is 1-indexed
-            choice = input('Choice... ')
+        while (choice < 0
+               or choice >= len(names)+int(allow_pass)):
+            choice = input('>>> Choice: ')
             try:
-                choice = int(choice)
+                choice = int(choice) - 1
             except:
                 choice = -1
-        return choice - 1
+
+        # Check to see if 'Pass' (None) was chosen
+        if allow_pass and choice == len(names):
+            return None
+
+        return choice
 
     def choose_card_power(self, card_power_type):
         # Random choice / UI choice / Heuristic choice
 
-        # TODO: for UI, will want to display valid-ish card powers e.g. cannot afford
         filtered = self.get_valid_card_powers(card_power_type)
 
-        if not filtered:
-            return None
-
-        if self.name() == 'Goku':
-            print(f'{self}')
-            print(f'{self.opponent}')
-            idx = self.choose([cp.name for cp in filtered],
-                              [cp.description for cp in filtered],
-                              filtered)
+        if self.interactive:
+            other_hand = []
+            for card in self.hand:
+                if not any(x.card is card for x in filtered):
+                    other_hand.append(card)
+            idx = self.choose(
+                [str(cp) for cp in filtered],
+                [cp.description for cp in filtered],
+                other_names=[c.name for c in other_hand],
+                other_descriptions=[c.card_text for c in other_hand])
         else:
-            idx = random.randrange(len(filtered))
+            idx = random.randrange(len(filtered)) if filtered else None
+
+        if idx is None:  # Pass
+            return None
         return filtered[idx]
 
-    def choose_card_from_discard_pile(self):
-        if len(self.discard_pile) == 0:
+    def choose_discard_pile_card(self):
+        if self.interactive:
+            idx = self.choose(
+                [str(c) for c in self.discard_pile],
+                [c.card_text for c in self.discard_pile])
+        else:
+            idx = random.randrange(len(self.discard_pile)) if self.discard_pile.cards else None
+
+        if idx is None:  # Pass
             return None
+        return self.discard_pile.cards[idx]
 
-        return random.choice(self.discard_pile.cards)
-
-    def play_non_combat_card(self):
+    def choose_hand_non_combat_card(self):
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
                 or isinstance(card, DragonBallCard)):
-                # This dragon ball can be played as NC or Combat, so sometimes wait for Combat
-                if card.get_id() == 'saiyan.187' and random.random() < 0.5:
-                    continue
                 filtered.append(card)
 
-        if not filtered:
+        if self.interactive:
+            other_hand = []
+            for card in self.hand:
+                if not any(x is card for x in filtered):
+                    other_hand.append(card)
+            idx = self.choose(
+                [str(c) for c in filtered],
+                [c.card_text for c in filtered],
+                other_names=[c.name for c in other_hand],
+                other_descriptions=[c.card_text for c in other_hand])
+        else:
+            # May want to sometimes hold on to non-combat cards
+            idx = random.randrange(len(filtered)) if (filtered and random.random() < 0.9) else None
+
+        if idx is None:  # Pass
             return None
+        return filtered[idx]
 
-        idx = random.randrange(len(filtered))
-        card = filtered[idx]
+    def choose_hand_discard_card(self):
+        '''Assumes hand has at least 1 card and a card must be chosen'''
+        if self.interactive:
+            idx = self.choose(
+                [str(c) for c in self.hand],
+                [c.card_text for c in self.hand],
+                allow_pass=False)
+        else:
+            idx = random.randrange(len(self.hand))
 
+        return self.hand.cards[idx]
+
+    def choose_declare_combat(self):
+        '''True -> declare combat'''
+        if self.interactive:
+            idx = self.choose(['Declare Combat', 'Skip Combat'],
+                              ['', ''],
+                              allow_pass=False)
+        else:
+            idx = 0 if random.random() < 0.9 else 1
+
+        return idx == 0
+
+    def play_non_combat_card(self, card):
         self.hand.remove(card)
 
+        dprint(f'{self.name()} plays {card}')
+        if not self.interactive:
+            dprint(f'  - {card.card_text}')
+
         if isinstance(card, NonCombatCard):
-            print(f'{self} plays {card} to Non-Combat area')
             self.non_combat.add(card)
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, DragonBallCard):
-            print(f'{self} plays {card}')
             self.dragon_balls.add(card)
             card.set_pile(self.dragon_balls)
         else:

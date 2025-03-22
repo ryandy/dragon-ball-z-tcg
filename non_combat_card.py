@@ -9,6 +9,9 @@ from style import Style
 class NonCombatCard(Card):
     '''Does not include drills, dragon balls, or allies'''
 
+    def __repr__(self):
+        return f'{self.name} (Non-Combat)'
+
     def get_description(self, detailed=False):
         description = f'{self.name}'
         if not detailed:

@@ -10,11 +10,14 @@ class NonCombatPhase(Phase):
         self.player = player
 
     def execute(self):
-        card = self.player.play_non_combat_card()
+        card = self.player.choose_hand_non_combat_card()
         while card:
-            # Dragon balls are executed immediately rather than simply registered with player
+            self.player.play_non_combat_card(card)
+
+            # Dragon balls are executed immediately
             if isinstance(card, DragonBallCard):
                 for card_power in card.card_powers:
                     if isinstance(card_power, CardPowerDragonBall):
                         card_power.on_play(self.player, self)
-            card = self.player.play_non_combat_card()
+
+            card = self.player.choose_hand_non_combat_card()

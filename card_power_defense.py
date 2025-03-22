@@ -4,6 +4,7 @@ import sys
 from card_power import CardPower
 from cost import Cost
 from damage_modifier import DamageModifier
+from util import dprint
 
 
 class CardPowerDefense(CardPower):
@@ -39,6 +40,13 @@ class CardPowerDefense(CardPower):
 
         damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
         damage.modify(damage_modifier)
+
+        if damage.was_stopped():
+            dprint(f'{player.name()} uses {self} to stop the attack')
+        else:
+            dprint(f'{player.name()} uses {src} to reduce damage')
+        if not player.interactive:
+            dprint(f'  - {self.description}')
 
         self.on_resolved(player, phase)
         return damage

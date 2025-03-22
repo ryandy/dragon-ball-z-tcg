@@ -4,17 +4,23 @@ from combat_attack_phase import CombatAttackPhase
 from draw_phase import DrawPhase
 from phase import Phase
 from state import State
+from util import dprint
 
 
 class CombatPhase(Phase):
-    def __init__(self, player):
+    def __init__(self, player, players):
         self.player = player
+        self.players = players
         self.skipped = True
 
     def execute(self):
-        # This could be broken out into a "Declare Phase"
-        # TODO give player opportunity to skip combat
-        self.skipped = False
+        self.skipped = not self.player.choose_declare_combat()
+
+        if self.skipped:
+            dprint(f'{self.player.name()} chooses to skip combat')
+            return
+        else:
+            dprint(f'{self.player.name()} declares combat!')
 
         # on_combat_declared
 
@@ -26,6 +32,11 @@ class CombatPhase(Phase):
         pass_count = 0
         attacker = self.player
         while True:
+            dprint()
+            dprint(f'---------- Attack Phase {State.COMBAT_ROUND+1}: {attacker.name()} ----------')
+            for player in self.players:
+                player.show_summary()
+
             attack_phase = CombatAttackPhase(attacker)
             attack_phase.execute()
             if attack_phase.passed:
@@ -38,6 +49,5 @@ class CombatPhase(Phase):
                 break
             attacker = attacker.opponent
             State.COMBAT_ROUND += 1
-            #print(f'! round{State.COMBAT_ROUND} {attacker.opponent}->{attacker}')
 
         # "AT THE END OF COMBAT" (attacker before defender)

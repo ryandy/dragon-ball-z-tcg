@@ -14,6 +14,9 @@ class DragonBallCard(Card):
         self.db_set = db_set
         self.db_number = db_number
 
+    def __repr__(self):
+        return f'{self.name} (Non-Combat)'
+
     def get_description(self, detailed=False):
         description = f'{self.name}'
         if not detailed:

@@ -3,6 +3,7 @@ import sys
 from card_power_attack import CardPowerAttack
 from combat_defense_phase import CombatDefensePhase
 from phase import Phase
+from util import dprint
 
 
 class CombatAttackPhase(Phase):
@@ -15,18 +16,9 @@ class CombatAttackPhase(Phase):
         card_power = self.player.choose_card_power(CardPowerAttack)
         if card_power:
             self.passed = False
-            #print(f'// start of {self.player.name()} combat attack phase')
-            #self.player.show_hand()
-            #print('card powers:')
-            #for _cp in self.player.card_powers:
-            #    print(f' - {_cp}')
-            #print('non combat area:')
-            #for _nc in self.player.non_combat:
-            #    print(f' - {_nc}')
-            #print(f'{self.player} uses {card_power}')
             card_power.on_attack(self.player, self)
         else:
-            print(f'{self.player} passed')
+            dprint(f'{self.player.name()} passes')
 
     def end_combat(self):
         self.combat_ended = True
@@ -40,8 +32,6 @@ class CombatAttackPhase(Phase):
         return self._attack(damage, src=src, is_physical=False)
 
     def _attack(self, damage, src=None, is_physical=None):
-        #print(f'{self.player} uses {src} for {damage}')
-
         defense_phase = CombatDefensePhase(self.player.opponent)
         if is_physical:
             damage = defense_phase.physical_defense(damage)
@@ -49,12 +39,9 @@ class CombatAttackPhase(Phase):
             damage = defense_phase.energy_defense(damage)
 
         if not damage.was_stopped():
-            print(f'Attack was successful: damage={damage}')
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(damage)
             else:
                 self.player.opponent.apply_energy_attack_damage(damage)
-        else:
-            print(f'Attack was stopped: damage={damage}')
 
         return not damage.was_stopped()

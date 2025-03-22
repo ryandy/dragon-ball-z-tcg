@@ -22,10 +22,5 @@ class CombatDefensePhase(Phase):
         card_power_class = CardPowerPhysicalDefense if is_physical else CardPowerEnergyDefense
         card_power = self.player.choose_card_power(card_power_class)
         if card_power:
-            src = f'{card_power}'  # get string before card power resolves
             damage = card_power.on_defense(self.player, self, damage)
-            if damage.was_stopped():
-                print(f'{self.player} uses {src} to stop the attack')
-            else:
-                print(f'{self.player} uses {src} to reduce damage')
         return damage
