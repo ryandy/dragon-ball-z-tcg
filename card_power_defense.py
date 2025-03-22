@@ -44,7 +44,7 @@ class CardPowerDefense(CardPower):
         if damage.was_stopped():
             dprint(f'{player.name()} uses {self} to stop the attack')
         else:
-            dprint(f'{player.name()} uses {src} to reduce damage')
+            dprint(f'{player.name()} uses {self} to reduce damage')
         if not player.interactive:
             dprint(f'  - {self.description}')
 

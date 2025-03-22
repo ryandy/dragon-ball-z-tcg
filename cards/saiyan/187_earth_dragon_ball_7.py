@@ -59,6 +59,7 @@ class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
         assert self.card
         player.exhaust_card(self.card)
 
+        # Card is played from hand so must be put into DB area
         assert self.card.pile is player.hand
         player.hand.remove(self.card)
         player.dragon_balls.add(self.card)

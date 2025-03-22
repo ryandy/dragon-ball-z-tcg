@@ -1,5 +1,6 @@
 import sys
 
+from card_power_on_combat_declared import CardPowerOnCombatDeclared
 from combat_attack_phase import CombatAttackPhase
 from draw_phase import DrawPhase
 from phase import Phase
@@ -18,11 +19,17 @@ class CombatPhase(Phase):
 
         if self.skipped:
             dprint(f'{self.player.name()} chooses to skip combat')
+
+        if not self.skipped:
+            for player in [self.player, self.player.opponent]:
+                card_powers = player.get_valid_card_powers(CardPowerOnCombatDeclared)
+                for card_power in card_powers:
+                    card_power.on_combat_declared(player, self)
+
+        if self.skipped:
             return
         else:
             dprint(f'{self.player.name()} declares combat!')
-
-        # on_combat_declared
 
         # "WHEN ENTERING COMBAT" (attacker before defender)
 

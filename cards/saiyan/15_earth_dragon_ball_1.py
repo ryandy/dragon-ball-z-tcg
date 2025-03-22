@@ -22,7 +22,7 @@ CARD_TEXT = ('Instantly power up to full and draw a card.')
 
 class CardPowerEDB1(CardPowerDragonBall):
     def on_play(self, player, phase):
-        player.personality.adjust_power_stage(10)
+        player.personality.set_power_stage_max()
         player.draw()
 
 
