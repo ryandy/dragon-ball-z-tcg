@@ -4,20 +4,32 @@
 1 saiyan 163 piccolo3
 1 saiyan p2 piccolo4
 
-# Combat
-20 saiyan 1 orange standing fist punch
-20 saiyan 66 black knife hand strike
-10 saiyan 11 blue forward foot sweep
-10 saiyan 25 gokus physical attack
+# Combat - Attack
+5 saiyan 1 orange standing fist punch
+5 saiyan 25 gokus physical attack
+3 saiyan 26 gohans physical attack
+3 saiyan 46 goku anger attack
+4 saiyan 109 piccolos energy attack
+
+# Combat - Defense
 3 saiyan 28 vegetas physical stance
+3 saiyan 59 blue big outside drop
+3 saiyan 72 black axe heel kick
+2 saiyan 108 gokus energy defense
+4 saiyan 110 piccolos physical defense
+
+# Combat - Attack/Defense
+5 saiyan 11 blue forward foot sweep
+5 saiyan 66 black knife hand strike
 
 # Non-Combat
-5 saiyan 22 power up!
-10 saiyan 78 roshi training
+3 saiyan 22 power up!
+3 saiyan 78 roshi training
 
 # Drills
-2 saiyan 142 orange energy drill (restricted)
-3 saiyan 151 orange joint restraint drill
+1 saiyan 142 orange energy drill (restricted)
+2 saiyan 131 black bear hug drill
+2 saiyan 151 orange joint restraint drill
 4 saiyan 155 piccolo defense drill
 
 # Dragon Balls

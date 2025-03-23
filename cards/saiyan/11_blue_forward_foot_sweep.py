@@ -25,7 +25,6 @@ class CardPowerBFFS(CardPowerPhysicalAttack):
         card_power = CardPowerEnergyDefense(
             self.name, self.description, discard=False, is_floating=True)
         card_power.exhaust_after_next_combat_phase()
-        #print(f'success! registering energy defense power for {player.name()}')
         player.register_card_power(card_power)
 
 

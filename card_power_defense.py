@@ -11,6 +11,7 @@ class CardPowerDefense(CardPower):
     def __init__(self, name, description, is_physical=True,
                  cost=None, damage_modifier=None,
                  own_anger=None, opp_anger=None,
+                 own_power=None, opp_power=None,
                  exhaust=True, discard=True, remove_from_game=None,
                  is_floating=None, card=None):
         super().__init__(name, description, cost or Cost.none(), card=card, is_floating=is_floating)
@@ -18,6 +19,8 @@ class CardPowerDefense(CardPower):
         self.damage_modifier = damage_modifier.copy() if damage_modifier else None
         self.own_anger = own_anger
         self.opp_anger = opp_anger
+        self.own_power = own_power
+        self.opp_power = opp_power
         self.exhaust = exhaust
         self.discard = discard
         self.remove_from_game = remove_from_game
@@ -37,6 +40,11 @@ class CardPowerDefense(CardPower):
             player.adjust_anger(self.own_anger)
         if self.opp_anger is not None:
             player.opponent.adjust_anger(self.opp_anger)
+
+        if self.own_power is not None:
+            player.personality.adjust_power_stage(self.own_power)
+        if self.opp_power is not None:
+            player.opponent.personality.adjust_power_stage(self.opp_power)
 
         damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
         damage.modify(damage_modifier)
@@ -58,7 +66,6 @@ class CardPowerDefense(CardPower):
                 player.remove_from_game(self.card)
             elif self.discard:
                 player.discard(self.card)
-            self.discard = self.remove_from_game = False
 
 
 class CardPowerPhysicalDefense(CardPowerDefense):
