@@ -44,6 +44,7 @@ class CardPowerDefense(CardPower):
         if self.own_power is not None:
             player.personality.adjust_power_stage(self.own_power)
         if self.opp_power is not None:
+            assert False  # Feels like this shouldn't be possible
             player.opponent.personality.adjust_power_stage(self.opp_power)
 
         damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
@@ -59,7 +60,10 @@ class CardPowerDefense(CardPower):
             else:
                 player.exhaust_card_power(self)
         else:
-            self.exhaust_until_next_turn()
+            if self.card:
+                player.exhaust_card_until_next_turn(card=self.card)
+            else:
+                self.exhaust_until_next_turn()
 
         if self.card:
             if self.remove_from_game:

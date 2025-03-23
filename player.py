@@ -1,6 +1,7 @@
 import random
 import sys
 
+from card_power import CardPower
 from card_power_attack import CardPowerAttack
 from card_power_defense import CardPowerDefense
 from character import Character
@@ -31,6 +32,7 @@ class Player:
 
         life_deck_cards = []
         for card in deck.cards:
+            card.register_owner(self)
             if isinstance(card, PersonalityCard) and card.character == self.character:
                 self.personality_cards.append(card)
             else:
@@ -85,6 +87,11 @@ class Player:
         for idx in reversed(range(len(self.card_powers))):
             if self.card_powers[idx].card is card:
                 del self.card_powers[idx]
+
+    def exhaust_card_until_next_turn(self, card):
+        for idx in reversed(range(len(self.card_powers))):
+            if self.card_powers[idx].card is card:
+                self.card_powers[idx].exhaust_until_next_turn()
 
     def exhaust_card_power(self, card_power):
         for idx in reversed(range(len(self.card_powers))):
@@ -197,12 +204,11 @@ class Player:
             and isinstance(card, DrillCard)
             and card.style != Style.FREESTYLE
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
-            idx = 0
             if self.interactive:
                 dprint(f'{self.name()} draws unplayable {card.name}')
-                idx = self.choose(['Shuffle it back into deck.', 'Keep it.'],
-                                  ['', ''],
-                                  allow_pass=False)
+            idx = self.choose(['Shuffle it back into deck.', 'Keep it.'],
+                              ['', ''],
+                              allow_pass=False)
             if idx == 0:
                 dprint(f'{self.name()} shuffles unplayable {card.name} back into deck')
                 self.life_deck.add(card)
@@ -251,7 +257,7 @@ class Player:
                 assert False
 
         if exhaust_card:
-            self.exhaust_card(card=card)
+            self.exhaust_card(card)
 
         if isinstance(card, DragonBallCard) and not remove_from_game:
             self.recycle_dragon_ball(card)
@@ -275,6 +281,23 @@ class Player:
             dprint(f'{self.name()} recycles {card}')
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
+
+    def steal_dragon_ball(self):
+        card = self.choose_opponent_dragon_ball()
+        if not card:
+            return
+
+        dprint(f'{self.name()} steals {card.name}!')
+        self.opponent.dragon_balls.remove(card)
+        self.dragon_balls.add(card)
+        card.set_pile(self.dragon_balls)
+
+        for idx in reversed(range(len(self.opponent.card_powers))):
+            if self.opponent.card_powers[idx].card is card:
+                card_power = self.opponent.card_powers[idx]
+                dprint(f'{self.name()} takes over {card_power} card power')
+                del self.opponent.card_powers[idx]
+                self.register_card_power(card_power)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
@@ -311,7 +334,10 @@ class Player:
             if card_discarded:
                 discard_count += 1
                 dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
-        # TODO: Check for Dragon Ball Life Card Capture
+
+        # Check for Dragon Ball Life Card Capture
+        if discard_count >= 5:
+            self.steal_dragon_ball()
 
     def show_summary(self):
         '''1-line summary of current state'''
@@ -337,6 +363,15 @@ class Player:
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
                allow_pass=True):
+        assert names or allow_pass
+
+        if not self.interactive:
+            if allow_pass and not names:  # Have to pass if that's the only option
+                return None
+            if allow_pass and random.random() < 0.1:  # Pass small % of the time
+                return None
+            return random.randrange(len(names))  # Random choice
+
         full_names = list(names)
         full_descriptions = list(descriptions)
 
@@ -345,13 +380,13 @@ class Player:
             full_names.extend(other_names)
             full_descriptions.extend(other_descriptions)
 
+        show_descriptions = any(x for x in full_descriptions)
         if allow_pass:
             full_names.append('Pass')
             full_descriptions.append('Do nothing.')
 
+        # TODO: custom prompts?
         dprint(f'>>> Choose an action:')
-
-        show_descriptions = any(x for x in full_descriptions)
         for i in range(len(full_names)):
             if i < len(names):
                 number = f'{i+1}'
@@ -380,34 +415,26 @@ class Player:
         return choice
 
     def choose_card_power(self, card_power_type):
-        # Random choice / UI choice / Heuristic choice
-
         filtered = self.get_valid_card_powers(card_power_type)
 
-        if self.interactive:
-            other_hand = []
-            for card in self.hand:
-                if not any(x.card is card for x in filtered):
-                    other_hand.append(card)
-            idx = self.choose(
-                [str(cp) for cp in filtered],
-                [cp.description for cp in filtered],
-                other_names=[c.name for c in other_hand],
-                other_descriptions=[c.card_text for c in other_hand])
-        else:
-            idx = random.randrange(len(filtered)) if filtered else None
+        other_hand = []
+        for card in self.hand:
+            if not any(x.card is card for x in filtered):
+                other_hand.append(card)
+        idx = self.choose(
+            [str(cp) for cp in filtered],
+            [cp.description for cp in filtered],
+            other_names=[c.name for c in other_hand],
+            other_descriptions=[c.card_text for c in other_hand])
 
         if idx is None:  # Pass
             return None
         return filtered[idx]
 
     def choose_discard_pile_card(self):
-        if self.interactive:
-            idx = self.choose(
-                [str(c) for c in self.discard_pile],
-                [c.card_text for c in self.discard_pile])
-        else:
-            idx = random.randrange(len(self.discard_pile)) if self.discard_pile.cards else None
+        idx = self.choose(
+            [str(c) for c in self.discard_pile],
+            [c.card_text for c in self.discard_pile])
 
         if idx is None:  # Pass
             return None
@@ -438,19 +465,16 @@ class Player:
                     and not special_restricted):
                     filtered.append(card)
 
-        if self.interactive:
-            other_hand = []
-            for card in self.hand:
-                if not any(x is card for x in filtered):
-                    other_hand.append(card)
-            idx = self.choose(
-                [str(c) for c in filtered],
-                [c.card_text for c in filtered],
-                other_names=[c.name for c in other_hand],
-                other_descriptions=[c.card_text for c in other_hand])
-        else:
-            # May want to sometimes hold on to non-combat cards
-            idx = random.randrange(len(filtered)) if (filtered and random.random() < 0.9) else None
+        other_hand = []
+        for card in self.hand:
+            if not any(x is card for x in filtered):
+                other_hand.append(card)
+
+        idx = self.choose(
+            [str(c) for c in filtered],
+            [c.card_text for c in filtered],
+            other_names=[c.name for c in other_hand],
+            other_descriptions=[c.card_text for c in other_hand])
 
         if idx is None:  # Pass
             return None
@@ -458,26 +482,35 @@ class Player:
 
     def choose_hand_discard_card(self):
         '''Assumes hand has at least 1 card and a card must be chosen'''
-        if self.interactive:
-            idx = self.choose(
-                [str(c) for c in self.hand],
-                [c.card_text for c in self.hand],
-                allow_pass=False)
-        else:
-            idx = random.randrange(len(self.hand))
+        idx = self.choose(
+            [str(c) for c in self.hand],
+            [c.card_text for c in self.hand],
+            allow_pass=False)
 
         return self.hand.cards[idx]
 
     def choose_declare_combat(self):
         '''True -> declare combat'''
-        if self.interactive:
-            idx = self.choose(['Declare Combat', 'Skip Combat'],
-                              ['', ''],
-                              allow_pass=False)
-        else:
-            idx = 0 if random.random() < 0.9 else 1
+        idx = self.choose(['Declare Combat'], [''])
 
-        return idx == 0
+        if idx is None:
+            return False
+        return True
+
+    def choose_opponent_dragon_ball(self):
+        if not self.opponent.dragon_balls.cards:
+            return None
+
+        # Annotate choices with active card powers
+        names, descriptions = [], []
+        card_powers = self.opponent.get_valid_card_powers(CardPower)
+        for card in self.opponent.dragon_balls:
+            suffix = ' (*)' if any(x.card is card for x in card_powers) else ''
+            names.append(f'{card.name}{suffix}')
+            descriptions.append(card.card_text)
+
+        idx = self.choose(names, descriptions, allow_pass=False)
+        return self.opponent.dragon_balls.cards[idx]
 
     def play_non_combat_card(self, card):
         self.hand.remove(card)

@@ -19,9 +19,9 @@ CARD_TEXT = ('Stops all heroes from losing 1 life card of damage from every atta
              ' remainder of Combat. Remove from the game after use.')
 
 
-# TODO: What if an attack does power stages of damage that convert into life cards?
-#       So does this card power "prevent" damage or "reduce" it?
-#       Damage is reduced before it is actually applied (according to the battle sequence)
+# What if an attack does power stages of damage that convert into life cards?
+# So does this card power "prevent" damage or "reduce" it?
+# Damage is reduced before it is actually applied (according to the battle sequence)
 '''
 From 11/24/04 CRD:
 

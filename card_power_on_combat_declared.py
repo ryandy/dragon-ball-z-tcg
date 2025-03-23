@@ -5,8 +5,8 @@ from cost import Cost
 
 
 class CardPowerOnCombatDeclared(CardPower):
-    def __init__(self, name, description):
-        super().__init__(name, description, Cost.none())
+    def __init__(self, name, description, card=None):
+        super().__init__(name, description, Cost.none(), card=card)
 
     def copy(self):
         # Note: do not deep copy self.card

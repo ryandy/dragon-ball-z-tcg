@@ -32,6 +32,7 @@ class Card(abc.ABC):
         else:
             self.card_powers = [card_power]
 
+        self.owner = None  # Player who owns this card - control may change, ownership does not
         self.pile = None  # Current pile
 
     def __repr__(self):
@@ -44,6 +45,9 @@ class Card(abc.ABC):
     def __deepcopy__(self):
         '''Cards cannot be copied'''
         assert False
+
+    def register_owner(self, owner):
+        self.owner = owner
 
     def set_pile(self, pile):
         assert self.pile is not pile

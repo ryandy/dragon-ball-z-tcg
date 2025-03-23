@@ -35,7 +35,7 @@ class CardPowerEDB4(CardPowerDragonBall):
                     _player.exhaust_card_power(_self)
 
         card_text = 'End the very next combat you are forced into before you sustain damage.'
-        card_power = CardPowerEDB4_OnCombatDeclared(self.name, card_text)
+        card_power = CardPowerEDB4_OnCombatDeclared(self.name, card_text, card=self.card)
         player.register_card_power(card_power)
 
 

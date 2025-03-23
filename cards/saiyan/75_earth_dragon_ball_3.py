@@ -23,12 +23,8 @@ CARD_TEXT = ('Draw three cards if you wish, and place the top discarded card at 
 
 class CardPowerEDB3(CardPowerDragonBall):
     def on_play(self, player, phase):
-        idx = 0  # Draw the cards
-        if player.interactive:
-            idx = player.choose(['Draw 3 cards.', 'Do not draw cards.'],
-                                ['', ''],
-                                allow_pass=False)
-        if idx == 0:
+        idx = player.choose(['Draw 3 cards.'], [''])
+        if idx is not None:
             for _ in range(3):
                 player.draw()
 

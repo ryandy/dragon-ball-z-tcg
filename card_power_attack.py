@@ -64,6 +64,7 @@ class CardPowerAttack(CardPower):
         if self.own_power is not None:
             player.personality.adjust_power_stage(self.own_power)
         if self.opp_power is not None:
+            assert False  # Feels like this shouldn't be possible
             player.opponent.personality.adjust_power_stage(self.opp_power)
 
         if self.is_physical is None:  # Non-combat attacks
@@ -87,11 +88,14 @@ class CardPowerAttack(CardPower):
     def on_resolved(self, player, phase):
         if self.exhaust:
             if self.card:
-                player.exhaust_card(card=self.card)
+                player.exhaust_card(self.card)
             else:
                 player.exhaust_card_power(self)
         else:
-            self.exhaust_until_next_turn()
+            if self.card:
+                player.exhaust_card_until_next_turn(card=self.card)
+            else:
+                self.exhaust_until_next_turn()
 
         if self.card:
             if self.remove_from_game:
