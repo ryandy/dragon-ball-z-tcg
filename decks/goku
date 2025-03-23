@@ -1,35 +1,35 @@
 # Main Personality
 1 saiyan 158 goku1
 1 saiyan 159 goku2
-1 saiyan 160 goku3
+1 saiyan 160 goku3 (prevent damage)
 
 # Combat - Attack
-5 saiyan 1 orange standing fist punch
-5 saiyan 5 orange arm bar
+3 saiyan 1 orange standing fist punch
+3 saiyan 5 orange arm bar
 4 saiyan 25 gokus physical attack
 3 saiyan 26 gohans physical attack
 4 saiyan 46 goku anger attack
 
 # Combat - Defense
-3 saiyan 28 vegetas physical stance
-3 saiyan 59 blue big outside drop
-3 saiyan 72 black axe heel kick
-4 saiyan 108 gokus energy defense
-2 saiyan 110 piccolos physical defense
+3 saiyan 28 vegetas physical stance (stop)
+3 saiyan 59 blue big outside drop (stop)
+3 saiyan 72 black axe heel kick (stop)
+4 saiyan 108 gokus energy defense (prevent damage)
+2 saiyan 110 piccolos physical defense (stop)
 
 # Combat - Attack/Defense
-5 saiyan 11 blue forward foot sweep
-5 saiyan 66 black knife hand strike
+3 saiyan 11 blue forward foot sweep (stop)
+3 saiyan 66 black knife hand strike (stop)
 
 # Non-Combat
 3 saiyan 22 power up!
-3 saiyan 250 chiaotzus physical defense
+2 saiyan 250 chiaotzus physical defense (stop/prevent damage)
 
 # Drills
-1 saiyan 142 orange energy drill (restricted)
-2 saiyan 131 black bear hug drill
-2 saiyan 151 orange joint restraint drill
-3 saiyan 230 chiaotzus drill
+2 saiyan 131 black bear hug drill (modify damage)
+1 saiyan 142 orange energy drill (restricted) (modify damage)
+2 saiyan 151 orange joint restraint drill (modify damage)
+3 saiyan 230 chiaotzus drill (modify damage)
 
 # Dragon Balls
 1 saiyan 15 earth dragon ball 1

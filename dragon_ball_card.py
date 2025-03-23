@@ -17,6 +17,11 @@ class DragonBallCard(Card):
     def __repr__(self):
         return f'{self.name} (Non-Combat)'
 
+    def is_duplicate(self, other_card):
+        return (isinstance(other_card, DragonBallCard)
+                and self.db_set == other_card.db_set
+                and self.db_number == other_card.db_number)
+
     @classmethod
     def from_spec(cls, card_module):
         card = cls(

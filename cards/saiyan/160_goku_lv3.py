@@ -21,4 +21,4 @@ CARD_TEXT = ('Prevent 2 life card draws from being discarded from a successful e
 
 CARD_POWER = CardPowerEnergyDefense(
     NAME, CARD_TEXT, exhaust=False, discard=False,
-    damage_modifier=DamageModifier(life_add=-2))
+    damage_modifier=DamageModifier(life_prevent=2))

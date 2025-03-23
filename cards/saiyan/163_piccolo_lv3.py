@@ -27,5 +27,8 @@ class CardPowerMultiForm(CardPowerPhysicalAttack):
         super().on_attack(player, phase)
 
 
-CARD_POWER = CardPowerMultiForm(
-    NAME, CARD_TEXT, exhaust=False, discard=False)
+CARD_POWER = [
+    CardPowerMultiForm(NAME, CARD_TEXT, exhaust=False, discard=False),
+    CardPowerPhysicalDefense(NAME, CARD_TEXT, exhaust=False, discard=False,
+                             damage_modifier=DamageModifier(power_prevent=4))
+]

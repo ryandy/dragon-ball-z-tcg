@@ -41,4 +41,4 @@ class CardPowerGED(CardPowerEnergyDefense):
             self.set_floating()
 
 
-CARD_POWER = CardPowerGED(NAME, CARD_TEXT, damage_modifier=DamageModifier(life_add=-3))
+CARD_POWER = CardPowerGED(NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=3))

@@ -45,6 +45,10 @@ class CombatAttackPhase(Phase):
     def _attack(self, damage, is_physical=None):
         # Damage estimate is most helpful/accurate here
         damage_estimate, damage_mod_srcs = self._get_damage(self.attack_power.damage)
+        #power_estimate = max(0, damage_estimate.power - damage_estimate.power_prevent)
+        #carry_estimate = max(0, power_estimate - self.player.personality.power_stage)
+        #life_estimate = max(0, damage_estimate.life + carry_estimate - damage_estimate.life_prevent)
+        #applied_damage_estimate = Damage(power=power_estimate, life=life_estimate)
         dprint(f'{self.player.name()}\'s attack damage estimate: {damage_estimate}')
         if damage_mod_srcs:
             for damage_mod_src in damage_mod_srcs:

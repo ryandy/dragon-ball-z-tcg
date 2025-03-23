@@ -17,6 +17,9 @@ class Character(enum.Enum):
     CHIAOTZU = 12
     YAJIROBE = 13
     SAIBAIMEN = 14
+    GARLIC_JR = 15
+    GULDO = 16
+    FRIEZA = 17
 
     def has_saiyan_heritage(self):
         return self in [
@@ -29,3 +32,15 @@ class Character(enum.Enum):
     def has_namekian_heritage(self):
         return self in [
             Character.PICCOLO]
+
+    def can_steal_dragon_balls(self):
+        return self in [
+            Character.BULMA,
+            Character.KRILLIN,
+            Character.SAIBAIMEN,
+            Character.CHI_CHI,
+            Character.TIEN,
+            Character.YAMCHA,
+            Character.GARLIC_JR,
+            Character.GULDO,
+            Character.FRIEZA]

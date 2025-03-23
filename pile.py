@@ -24,6 +24,9 @@ class Pile:
         for card in self.cards:
             yield card
 
+    def __add__(self, o):
+        return self.cards + o.cards
+
     def shuffle(self):
         random.shuffle(self.cards)
 

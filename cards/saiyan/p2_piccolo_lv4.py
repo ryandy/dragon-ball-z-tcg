@@ -30,7 +30,6 @@ _beam_text = ('Special Energy Beam Cannon. This energy blast only takes 1 power 
               ' does 2 life card draws of damage.')
 _form_text = ('Multi-Form allows two physical attacks, one after another.')
 
-# TODO: Or single CardPower that then splits and allows user to choose?
 CARD_POWER = [
     CardPowerEnergyAttack(
         NAME + ' - Special Beam Cannon', _beam_text,

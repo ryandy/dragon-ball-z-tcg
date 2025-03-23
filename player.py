@@ -188,7 +188,7 @@ class Player:
         # Check if a dragon ball is being discarded directly from the life deck - recycle it
         if (dest_pile is self.discard_pile
             and isinstance(card, DragonBallCard)):
-            card.set_pile(dest_pile)  # Temporarily move card so it can move back when recycled
+            card.set_pile(None)  # Temporarily move card so it can move back when recycled
             self.recycle_dragon_ball(card)
             return None
 
@@ -200,7 +200,7 @@ class Player:
             idx = 0
             if self.interactive:
                 dprint(f'{self.name()} draws unplayable {card.name}')
-                idx = self.choose(['Shuffle it back into deck.', 'Keep it.']
+                idx = self.choose(['Shuffle it back into deck.', 'Keep it.'],
                                   ['', ''],
                                   allow_pass=False)
             if idx == 0:
@@ -237,19 +237,23 @@ class Player:
     def remove_from_game(self, card, exhaust_card=True):
         return self.discard(card, remove_from_game=True, exhaust_card=exhaust_card)
 
-    def discard(self, card, remove_from_game=False, exhaust_card=True):
+    def discard(self, card, remove_from_game=False, exhaust_card=True, card_in_pile=True):
         '''Hand/Table -> Discard/Removed'''
-        assert card.pile is not self.discard_pile and card.pile is not self.removed_pile
+        if card_in_pile:
+            if remove_from_game:
+                assert card.pile is not self.removed_pile
+            else:
+                assert card.pile is not self.discard_pile
 
-        card_removed = card.pile.remove(card)
-        if card_removed is not card:
-            print(f'Attempted to remove {card} from {card.pile} but got {card_removed}')
-            assert False
+            card_removed = card.pile.remove(card)
+            if card_removed is not card:
+                print(f'Attempted to remove {card} from {card.pile} but got {card_removed}')
+                assert False
 
         if exhaust_card:
             self.exhaust_card(card=card)
 
-        if isinstance(card, DragonBallCard):
+        if isinstance(card, DragonBallCard) and not remove_from_game:
             self.recycle_dragon_ball(card)
         elif remove_from_game:
             dprint(f'{self.name()} removes {card} from game')
@@ -261,9 +265,16 @@ class Player:
             card.set_pile(self.discard_pile)
 
     def recycle_dragon_ball(self, card):
-        dprint(f'{self.name()} recycles {card}')
-        self.life_deck.add_bottom(card)
-        card.set_pile(self.life_deck)
+        '''Card has already been removed from its source pile, so currently in no-mans-land'''
+        dup_restricted = any(card.is_duplicate(x)
+                             for x in self.dragon_balls + self.opponent.dragon_balls)
+        if dup_restricted:
+            # If this is a duplicate of a dragon ball in play, remove it from the game
+            self.discard(card, remove_from_game=True, card_in_pile=False)
+        else:
+            dprint(f'{self.name()} recycles {card}')
+            self.life_deck.add_bottom(card)
+            card.set_pile(self.life_deck)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
@@ -272,30 +283,35 @@ class Player:
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
 
-    def apply_physical_attack_damage(self, damage):
+    def _apply_damage(self, damage, is_physical=None):
         damage = damage.resolve(self.opponent)
         dprint(f'{self.name()} takes {damage}')
-        self.apply_power_damage(damage.power)
-        self.apply_life_damage(damage.life)
+        carryover_life_damage = self.apply_power_damage(damage.power - damage.power_prevent)
+        self.apply_life_damage(damage.life + carryover_life_damage - damage.life_prevent)
+
+    def apply_physical_attack_damage(self, damage):
+        return self._apply_damage(damage, is_physical=True)
 
     def apply_energy_attack_damage(self, damage):
-        damage = damage.resolve(self.opponent)
-        dprint(f'{self.name()} takes {damage}')
-        self.apply_power_damage(damage.power)
-        self.apply_life_damage(damage.life)
+        return self._apply_damage(damage, is_physical=False)
 
     def apply_power_damage(self, power_damage):
-        life_damage = max(0, power_damage - self.personality.power_stage)
+        '''Returns amount of excess damage that could not be applied to target personality'''
+        power_damage = max(0, power_damage)
+        carryover_life_damage = max(0, power_damage - self.personality.power_stage)
         self.personality.reduce_power_stage(power_damage)
-        self.apply_life_damage(life_damage)
+        return carryover_life_damage
 
     def apply_life_damage(self, life_damage):
+        life_damage = max(0, life_damage)
+        # TODO: Check for Dragon Ball Personality Capture
         discard_count = 0
         while discard_count < life_damage:
             card_discarded = self.draw(dest_pile=self.discard_pile)
             if card_discarded:
                 discard_count += 1
                 dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
+        # TODO: Check for Dragon Ball Life Card Capture
 
     def show_summary(self):
         '''1-line summary of current state'''
@@ -401,9 +417,14 @@ class Player:
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
-                or isinstance(card, DragonBallCard)
                 or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
                 filtered.append(card)
+            elif isinstance(card, DragonBallCard):
+                # Only 1 of each Dragon Ball set/number can be on the table at a time
+                dup_restricted = any(card.is_duplicate(x)
+                                     for x in self.dragon_balls + self.opponent.dragon_balls)
+                if not dup_restricted:
+                    filtered.append(card)
             elif isinstance(card, DrillCard):
                 dup_restricted = any(x.get_id() == card.get_id() for x in self.drills)
                 style_restricted = any(x.style != card.style

@@ -2,13 +2,16 @@ import sys
 
 
 class Damage:
-    def __init__(self, power=None, life=None, use_pat=None, mods=None, stopped=None):
+    def __init__(self, power=None, life=None, use_pat=None, mods=None, stopped=None,
+                 power_prevent=None, life_prevent=None):
         assert (not power or not use_pat)
         self.power = power or 0
         self.life = life or 0
         self.use_pat = use_pat or False
         self.mods = mods or []
         self.stopped = stopped or False
+        self.power_prevent = power_prevent or 0
+        self.life_prevent = life_prevent or 0
 
     def __repr__(self):
         stopped = self.was_stopped()
@@ -18,19 +21,26 @@ class Damage:
         power = 'PAT' if self.use_pat else f'{self.power}'
         life = f'{self.life}'
         power_add, life_add, power_mult, life_mult = 0, 0, 1, 1
+        power_prevent, life_prevent = self.power_prevent, self.life_prevent
         for mod in self.mods:
             power_add += mod.power_add
             life_add += mod.life_add
-            power_mult *= mod.power_mult
-            life_mult *= mod.life_mult
+            power_mult = max(power_mult, mod.power_mult)  # mults do not stack
+            life_mult = max(life_mult, mod.life_mult)  # mults do not stack
+            power_prevent += mod.power_prevent
+            life_prevent += mod.life_prevent
         if power_mult != 1:
             power = f'{power}*{power_mult}'
         if power_add != 0:
-            power = f'{power}+{power_add}'
+            power = f'{power}+({power_add})'
+        if power_prevent != 0:
+            power = f'{power}-{power_prevent}'
         if life_mult != 1:
             life = f'{life}*{life_mult}'
         if life_add != 0:
-            life = f'{life}+{life_add}'
+            life = f'{life}+({life_add})'
+        if life_prevent != 0:
+            life = f'{life}-{life_prevent}'
         return f'Damage({power}, {life})'
 
     def copy(self):
@@ -39,9 +49,12 @@ class Damage:
             life=self.life,
             use_pat=self.use_pat,
             mods=[m.copy() for m in self.mods],
-            stopped=self.stopped)
+            stopped=self.stopped,
+            power_prevent=self.power_prevent,
+            life_prevent=self.life_prevent)
 
     def modify(self, mod):
+        # TODO return new Damage instance
         if isinstance(mod, list):
             self.mods.extend(mod)
         else:
@@ -60,9 +73,12 @@ class Damage:
             defend_idx = attacker.opponent.personality.get_physical_attack_table_index()
             power = max(0, 1 + attack_idx - defend_idx)
 
+        power_mult, life_mult = 1, 1
         for mod in self.mods:
-            power *= mod.power_mult
-            life *= mod.life_mult
+            power_mult = max(power_mult, mod.power_mult)  # mults do not stack
+            life_mult = max(life_mult, mod.life_mult)  # mults do not stack
+        power *= power_mult
+        life *= life_mult
         for mod in self.mods:
             power += mod.power_add
             life += mod.life_add
@@ -70,7 +86,15 @@ class Damage:
             power = min(power, mod.power_max)
             life = min(life, mod.life_max)
 
-        return Damage(power=max(0, power), life=max(0, life))
+        power_prevent, life_prevent = self.power_prevent, self.life_prevent
+        for mod in self.mods:
+            power_prevent += mod.power_prevent
+            life_prevent += mod.life_prevent
+
+        return Damage(power=max(0, power),
+                      life=max(0, life),
+                      power_prevent=power_prevent,
+                      life_prevent=life_prevent)
 
     @classmethod
     def none(cls):
