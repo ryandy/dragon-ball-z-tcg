@@ -20,6 +20,7 @@ class CardPower(abc.ABC):
         self.is_floating = is_floating
         self.valid_from = None  # tuple of (turn #, combat round #)
         self.valid_until = None  # tuple of (turn #, combat round #)
+        self.deactivated = False  # Can be temporarily turned on/off without exhausting
         self.player = None
 
     def __repr__(self):
@@ -39,6 +40,15 @@ class CardPower(abc.ABC):
     def register_player(self, player):
         '''Owning player is registered with the card power when it is registered with the player'''
         self.player = player
+
+    def activate(self):
+        self.deactivated = False
+
+    def deactivate(self):
+        self.deactivated = True
+
+    def is_deactivated(self):
+        return self.deactivated
 
     def set_floating(self):
         self.is_floating = True

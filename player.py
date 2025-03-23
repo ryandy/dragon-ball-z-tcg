@@ -54,7 +54,7 @@ class Player:
         self.personality = self.personality_cards[0]
         self.personality.init_power_stage_for_main()
         self.register_card_powers(self.personality.card_powers)
-        self.interactive = (self.name() == 'Goku') if State.ENABLE_INTERACTIVE else False
+        self.interactive = (self.name() == 'Goku') if State.INTERACTIVE else False
 
     def __repr__(self):
         name = self.name()
@@ -83,6 +83,16 @@ class Player:
         for card_power in card_powers:
             self.register_card_power(card_power)
 
+    def activate_card_powers(self, card):
+        for card_power in self.card_powers:
+            if card_power.card is card:
+                card_power.activate()
+
+    def deactivate_card_powers(self, card):
+        for card_power in self.card_powers:
+            if card_power.card is card:
+                card_power.deactivate()
+
     def exhaust_card(self, card):
         for idx in reversed(range(len(self.card_powers))):
             if self.card_powers[idx].card is card:
@@ -108,6 +118,7 @@ class Player:
         for card_power in self.card_powers:
             if ((not card_power_type or isinstance(card_power, card_power_type))
                 and not card_power.is_exhausted()
+                and not card_power.is_deactivated()
                 and not card_power.is_personality_restricted(self.personality)
                 and self.can_afford_cost(card_power.cost)):
                 filtered_card_powers.append(card_power)
@@ -440,46 +451,6 @@ class Player:
             return None
         return self.discard_pile.cards[idx]
 
-    def choose_hand_non_combat_card(self):
-        filtered = []
-        for card in self.hand:
-            if (isinstance(card, NonCombatCard)
-                or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
-                filtered.append(card)
-            elif isinstance(card, DragonBallCard):
-                # Only 1 of each Dragon Ball set/number can be on the table at a time
-                dup_restricted = any(card.is_duplicate(x)
-                                     for x in self.dragon_balls + self.opponent.dragon_balls)
-                if not dup_restricted:
-                    filtered.append(card)
-            elif isinstance(card, DrillCard):
-                dup_restricted = any(x.get_id() == card.get_id() for x in self.drills)
-                style_restricted = any(x.style != card.style
-                                       for x in self.drills if x.style != Style.FREESTYLE)
-                special_restricted = (
-                    card.restricted
-                    and (any(x.style == card.style for x in self.drills)
-                         or any(x.style == card.style for x in self.opponent.drills)))
-                if (not dup_restricted
-                    and not style_restricted
-                    and not special_restricted):
-                    filtered.append(card)
-
-        other_hand = []
-        for card in self.hand:
-            if not any(x is card for x in filtered):
-                other_hand.append(card)
-
-        idx = self.choose(
-            [str(c) for c in filtered],
-            [c.card_text for c in filtered],
-            other_names=[c.name for c in other_hand],
-            other_descriptions=[c.card_text for c in other_hand])
-
-        if idx is None:  # Pass
-            return None
-        return filtered[idx]
-
     def choose_hand_discard_card(self):
         '''Assumes hand has at least 1 card and a card must be chosen'''
         idx = self.choose(
@@ -512,6 +483,69 @@ class Player:
         idx = self.choose(names, descriptions, allow_pass=False)
         return self.opponent.dragon_balls.cards[idx]
 
+    def choose_hand_non_combat_card(self):
+        filtered = []
+        for card in self.hand:
+            if (isinstance(card, NonCombatCard)
+                or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
+                filtered.append(card)
+            elif isinstance(card, DragonBallCard):
+                # Only 1 of each Dragon Ball set/number can be on the table at a time
+                dup_restricted = any(card.is_duplicate(x)
+                                     for x in self.dragon_balls + self.opponent.dragon_balls)
+                if not dup_restricted:
+                    filtered.append(card)
+            elif isinstance(card, PersonalityCard):
+                # Cannot be the same character/level as any ally in play
+                # TODO: Saibaimen exception
+                dup_restricted = any(x.get_name_level() == card.get_name_level()
+                                     for x in self.allies + self.opponent.allies)
+                # Cannot be a different hero/villain status than Main Personality
+                hero_restricted = card.is_hero != self.personality.is_hero
+                # Cannot be the same character as either Main Personality
+                mp_restricted = card.character in [self.personality.character,
+                                                   self.opponent.personality.character]
+                # Cannot be the same character as an ally you have in play unless overlaying
+                # TODO: Saibaimen exception
+                char_restricted = any(
+                    (x.character == card.character and x.level != card.level - 1)
+                    for x in self.allies)
+                if (not dup_restricted
+                    and not hero_restricted
+                    and not mp_restricted
+                    and not char_restricted):
+                    filtered.append(card)
+            elif isinstance(card, DrillCard):
+                # Styled drills cannot be played if they are duplicates of a drill you have in
+                # play, are a different style than a drill you have in play, or are restricted and
+                # are the same style as any styled drill in play.
+                dup_restricted = any(x.get_id() == card.get_id() for x in self.drills)
+                style_restricted = any(x.style != card.style
+                                       for x in self.drills if x.style != Style.FREESTYLE)
+                special_restricted = (
+                    card.restricted
+                    and (any(x.style == card.style for x in self.drills)
+                         or any(x.style == card.style for x in self.opponent.drills)))
+                if (not dup_restricted
+                    and not style_restricted
+                    and not special_restricted):
+                    filtered.append(card)
+
+        other_hand = []
+        for card in self.hand:
+            if not any(x is card for x in filtered):
+                other_hand.append(card)
+
+        idx = self.choose(
+            [str(c) for c in filtered],
+            [c.card_text for c in filtered],
+            other_names=[c.name for c in other_hand],
+            other_descriptions=[c.card_text for c in other_hand])
+
+        if idx is None:  # Pass
+            return None
+        return filtered[idx]
+
     def play_non_combat_card(self, card):
         self.hand.remove(card)
 
@@ -524,6 +558,13 @@ class Player:
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
+        elif isinstance(card, PersonalityCard):
+            self.allies.add(card)
+            card.set_pile(self.allies)
+            card.init_power_stage_for_ally()
+            for card_power in card.card_powers:
+                self.register_card_power(card_power)
+            self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat
         elif isinstance(card, DrillCard):
             self.drills.add(card)
             card.set_pile(self.drills)

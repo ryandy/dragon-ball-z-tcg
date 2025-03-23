@@ -4,9 +4,7 @@ import sys
 class State:
     TURN = 0
     COMBAT_ROUND = 0
-
-    ENABLE_INTERACTIVE = False
-    ENABLE_INTERACTIVE = True
+    INTERACTIVE = False
 
 
     @classmethod

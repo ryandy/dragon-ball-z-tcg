@@ -30,7 +30,10 @@ class PersonalityCard(Card):
         self.power_stage = None
 
     def __repr__(self):
-        return f'{self.name} Lv{self.level} (Personality)'
+        return f'{self.name} (Personality)'
+
+    def get_name_level(self):
+        return f'{self.character.name}.{self.level}'
 
     def init_power_stage_for_main(self):
         self.set_power_stage(5)

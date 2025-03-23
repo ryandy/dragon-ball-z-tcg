@@ -46,6 +46,7 @@ class CombatPhase(Phase):
 
             attack_phase = CombatAttackPhase(attacker)
             attack_phase.execute()
+
             if attack_phase.passed:
                 pass_count += 1
             else:
@@ -56,5 +57,7 @@ class CombatPhase(Phase):
                 break
             attacker = attacker.opponent
             State.COMBAT_ROUND += 1
+
+        # TODO: Control reverts to MP for both players
 
         # "AT THE END OF COMBAT" (attacker before defender)

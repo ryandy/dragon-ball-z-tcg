@@ -15,6 +15,8 @@ class CombatAttackPhase(Phase):
         self.combat_ended = False
 
     def execute(self):
+        # TODO: Choose if an ally (of the attacker) will take control of combat
+
         self.attack_power = self.player.choose_card_power(CardPowerAttack)
         if not self.attack_power:
             self.passed = True
@@ -29,7 +31,13 @@ class CombatAttackPhase(Phase):
         if not self.player.interactive:
             dprint(f'  - {self.attack_power.description}')
 
+        # TODO: Choose if an ally (of the defender) will take control of combat
+        # Note: This needs to happen here rather than combat_defense_phase so that the choice can
+        #       be made before any secondary effects from the attack take place.
+
         self.attack_power.on_attack(self.player, self)
+
+        # TODO: Control reverts to MP for either attacker or defender if MP power >= 2
 
     def end_combat(self):
         self.combat_ended = True
@@ -65,6 +73,8 @@ class CombatAttackPhase(Phase):
         if not damage.was_stopped():
             # Refresh damage mods
             final_damage, _ = self._get_damage(damage)
+
+            # TODO: Choose if an ally (of the defender) will take damage
 
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(final_damage)
