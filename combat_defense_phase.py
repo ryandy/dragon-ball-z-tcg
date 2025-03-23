@@ -4,6 +4,7 @@ from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from combat_card import CombatCard
 from phase import Phase
 from timing import Timing
+from util import dprint
 
 
 class CombatDefensePhase(Phase):
@@ -22,5 +23,11 @@ class CombatDefensePhase(Phase):
         card_power_class = CardPowerPhysicalDefense if is_physical else CardPowerEnergyDefense
         card_power = self.player.choose_card_power(card_power_class)
         if card_power:
+            dprint(f'{self.player.name()} uses {card_power} to defend')
+            if not self.player.interactive:
+                dprint(f'  - {card_power.description}')
             damage = card_power.on_defense(self.player, self, damage)
+        else:
+            dprint(f'{self.player.name()} has no defense')
+
         return damage

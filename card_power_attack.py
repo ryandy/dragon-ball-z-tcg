@@ -53,7 +53,7 @@ class CardPowerAttack(CardPower):
         card_power_copy.damage = self.damage.copy()
         return card_power_copy
 
-    def on_attack(self, player, phase, damage_mods=None):
+    def on_attack(self, player, phase):
         player.pay_cost(self.cost)
 
         if self.own_anger is not None:
@@ -69,15 +69,9 @@ class CardPowerAttack(CardPower):
         if self.is_physical is None:  # Non-combat attacks
             success = True
         elif self.is_physical:
-            damage_copy = self.damage.copy()
-            if damage_mods:
-                damage_copy.modify(damage_mods)
-            success = phase.physical_attack(damage_copy, src=self)
+            success = phase.physical_attack(self.damage.copy())
         else:
-            damage_copy = self.damage.copy()
-            if damage_mods:
-                damage_copy.modify(damage_mods)
-            success = phase.energy_attack(damage_copy, src=self)
+            success = phase.energy_attack(self.damage.copy())
 
         if success:
             self.on_success(player, phase)
@@ -91,7 +85,6 @@ class CardPowerAttack(CardPower):
         pass
 
     def on_resolved(self, player, phase):
-        # TODO: easy option for exhaust after this turn?
         if self.exhaust:
             if self.card:
                 player.exhaust_card(card=self.card)

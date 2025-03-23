@@ -61,11 +61,11 @@ class Damage:
             power = max(0, 1 + attack_idx - defend_idx)
 
         for mod in self.mods:
-            power += mod.power_add
-            life += mod.life_add
-        for mod in self.mods:
             power *= mod.power_mult
             life *= mod.life_mult
+        for mod in self.mods:
+            power += mod.power_add
+            life += mod.life_add
         for mod in self.mods:
             power = min(power, mod.power_max)
             life = min(life, mod.life_max)

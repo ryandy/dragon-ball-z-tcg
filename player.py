@@ -197,10 +197,16 @@ class Player:
             and isinstance(card, DrillCard)
             and card.style != Style.FREESTYLE
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
-            # TODO: Choice?
-            dprint(f'{self.name()} draws unplayable {card.name} and shuffles it back into deck')
-            self.life_deck.add(card)
-            self.life_deck.shuffle()
+            idx = 0
+            if self.interactive:
+                dprint(f'{self.name()} draws unplayable {card.name}')
+                idx = self.choose(['Shuffle it back into deck.', 'Keep it.']
+                                  ['', ''],
+                                  allow_pass=False)
+            if idx == 0:
+                dprint(f'{self.name()} shuffles unplayable {card.name} back into deck')
+                self.life_deck.add(card)
+                self.life_deck.shuffle()
             return None
 
         # Adding cards to hand requires some special handling

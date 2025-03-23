@@ -34,7 +34,7 @@ class Runner:
             try:
                 self.take_turn()
             except GameOver as err:
-                dprint(f'{err.winning_player.name()} has won!')
+                dprint(f'{err.winning_player.name()} wins!')
                 dprint(f'{err}')
                 #err.winning_player.show_discard_pile()
                 return
