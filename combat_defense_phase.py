@@ -32,4 +32,11 @@ class CombatDefensePhase(Phase):
         else:
             dprint(f'{self.player.name()} has no defense')
 
+        if not damage.was_stopped():
+            # Activate a relevant defense shield
+            shield_card_power = self.player.choose_defense_shield(is_physical=is_physical)
+            if shield_card_power:
+                dprint(f'{self.player.name()} activates Defense Shield: {shield_card_power}')
+                damage = shield_card_power.on_defense(self.player, self, damage)
+
         return damage

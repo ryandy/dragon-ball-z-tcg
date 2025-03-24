@@ -5,6 +5,9 @@ import sys
 from card_power import CardPower
 from card_power_attack import CardPowerAttack
 from card_power_defense import CardPowerDefense
+from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
+                                       CardPowerEnergyDefenseShield,
+                                       CardPowerAnyDefenseShield)
 from character import Character
 from combat_card import CombatCard
 from dragon_ball_card import DragonBallCard
@@ -481,6 +484,21 @@ class Player:
 
         if idx is None:  # Pass
             return None
+        return filtered[idx]
+
+    def choose_defense_shield(self, is_physical=None):
+        card_power_class = (CardPowerPhysicalDefenseShield
+                            if is_physical else CardPowerEnergyDefenseShield)
+        filtered = self.get_valid_card_powers(
+            [card_power_class, CardPowerAnyDefenseShield])
+        if not filtered:
+            return None
+
+        idx = self.choose(
+            [str(cp) for cp in filtered],
+            [cp.description for cp in filtered],
+            allow_pass=False,
+            prompt='Select a Defense Shield to activate')
         return filtered[idx]
 
     def choose_discard_pile_card(self):
