@@ -24,4 +24,5 @@ class CardPowerPU(CardPowerNonCombatAttack):
         player.rejuvenate()
 
 
+# TODO: Choose target personality for power stages
 CARD_POWER = CardPowerPU(NAME, CARD_TEXT, own_power=5)

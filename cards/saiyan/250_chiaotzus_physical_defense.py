@@ -1,14 +1,15 @@
 import sys
 
-from card_power_attack import CardPowerNonCombatAttack
+from card_power_defense import CardPowerAnyDefense
 from character import Character
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
 
 
-TYPE = 'Non-Combat'
+TYPE = 'Combat'
 NAME = 'Chiaotzu\'s Physical Defense'
+SUBTYPE = 'Combat - Defense'
 SAGA = 'Saiyan'
 CARD_NUMBER = '250'
 RARITY = 6
@@ -54,8 +55,8 @@ modifies an attack, and doesn’t stop the attack or damage from the attack.
 # then life cards.
 
 
-class CardPowerCPD(CardPowerNonCombatAttack):
-    def on_success(self, player, phase):
+class CardPowerCPD(CardPowerAnyDefense):
+    def on_resolved(self, player, phase):
         class CardPowerCPD_DamageModification(CardPowerOnDamageModification):
             def _on_damage_modification(_self, _attacker, _phase):
                 if _attacker.opponent.personality.is_hero:
@@ -68,6 +69,8 @@ class CardPowerCPD(CardPowerNonCombatAttack):
         card_power.exhaust_after_this_turn()
         card_power.set_floating()
         player.register_card_power(card_power)
+        return super().on_resolved(player, phase)
 
 
-CARD_POWER = CardPowerCPD(NAME, CARD_TEXT, remove_from_game=True)
+CARD_POWER = CardPowerCPD(
+    NAME, CARD_TEXT, damage_modifier=DamageModifier.none(), remove_from_game=True)

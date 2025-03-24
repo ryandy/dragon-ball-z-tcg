@@ -85,12 +85,12 @@ class CombatAttackPhase(Phase):
             # Refresh damage mods
             final_damage, _ = self._get_damage(damage)
 
-            # TODO: Choose if an ally (of the defender) will take damage
-
             if is_physical:
-                self.player.opponent.apply_physical_attack_damage(final_damage)
+                self.player.opponent.apply_physical_attack_damage(
+                    final_damage, src_personality=self.player.personality)
             else:
-                self.player.opponent.apply_energy_attack_damage(final_damage)
+                self.player.opponent.apply_energy_attack_damage(
+                    final_damage, src_personality=self.player.personality)
 
         return not damage.was_stopped()
 

@@ -114,10 +114,13 @@ class Player:
             if self.card_powers[idx].is_exhausted():
                 del self.card_powers[idx]
 
-    def get_valid_card_powers(self, card_power_type):
+    def get_valid_card_powers(self, card_power_types):
+        if not isinstance(card_power_types, list):
+            card_power_types = [card_power_types]
+
         filtered_card_powers = []
         for card_power in self.card_powers:
-            if ((not card_power_type or isinstance(card_power, card_power_type))
+            if (any(isinstance(card_power, x) for x in card_power_types)
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
                 and not card_power.is_personality_restricted(self.personality)
@@ -314,33 +317,60 @@ class Player:
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
-        dprint(f'{self.name()} rejuvenates with {card}')
         if card:
+            dprint(f'{self.name()} rejuvenates with {card}')
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
+        else:
+            dprint(f'{self.name()} failed to rejuvenate because the discard pile is empty')
 
-    def _apply_damage(self, damage, is_physical=None):
+    def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)
         dprint(f'{self.name()} takes {damage}')
+
         carryover_life_damage = self.apply_power_damage(damage.power - damage.power_prevent)
-        self.apply_life_damage(damage.life + carryover_life_damage - damage.life_prevent)
+        self.apply_life_damage(
+            damage.life + carryover_life_damage - damage.life_prevent,
+            src_personality=src_personality)
 
-    def apply_physical_attack_damage(self, damage):
-        return self._apply_damage(damage, is_physical=True)
+    def apply_physical_attack_damage(self, damage, src_personality=None):
+        return self._apply_damage(damage, src_personality=src_personality, is_physical=True)
 
-    def apply_energy_attack_damage(self, damage):
-        return self._apply_damage(damage, is_physical=False)
+    def apply_energy_attack_damage(self, damage, src_personality=None):
+        return self._apply_damage(damage, src_personality=src_personality, is_physical=False)
 
     def apply_power_damage(self, power_damage):
         '''Returns amount of excess damage that could not be applied to target personality'''
         power_damage = max(0, power_damage)
-        carryover_life_damage = max(0, power_damage - self.personality.power_stage)
-        self.personality.reduce_power_stage(power_damage)
+        target_personality = self.personality
+        if power_damage:
+            target_personality = self.choose_damage_target()
+            if target_personality is not self.personality:
+                dprint(f'{self.name()} selects {target_personality.name} to take damage')
+
+        carryover_life_damage = max(0, power_damage - target_personality.power_stage)
+        power_damage -= carryover_life_damage
+        dprint(f'{target_personality.name} takes {power_damage} power damage')
+        target_personality.reduce_power_stage(power_damage)
         return carryover_life_damage
 
-    def apply_life_damage(self, life_damage):
+    def apply_life_damage(self, life_damage, src_personality=None):
         life_damage = max(0, life_damage)
-        # TODO: Check for Dragon Ball Personality Capture
+
+        # Check for Dragon Ball Personality Capture
+        if (0 < life_damage < 5
+            and len(self.dragon_balls) > 0
+            and src_personality
+            and src_personality.character.can_steal_dragon_balls()):
+            # Opponent can choose to steal or deal the damage
+            dprint(f'{self.opponent.name()} can steal a dragon ball instead of'
+                   f' dealing {life_damage} life damage')
+            idx = self.opponent.choose(
+                ['Steal a Dragon Ball.'], ['Deal the damage.'], [''], allow_pass=False)
+            if idx == 0:
+                self.opponent.steal_dragon_ball()
+                return
+
         discard_count = 0
         while discard_count < life_damage:
             card_discarded = self.draw(dest_pile=self.discard_pile)
@@ -349,8 +379,8 @@ class Player:
                 dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
 
         # Check for Dragon Ball Life Card Capture
-        if discard_count >= 5:
-            self.steal_dragon_ball()
+        if discard_count >= 5 and src_personality:
+            self.opponent.steal_dragon_ball()
 
     def show_summary(self):
         '''1-line summary of current state'''
@@ -370,12 +400,19 @@ class Player:
         power = self.personality.power_stage
         pat_idx = self.personality.get_physical_attack_table_index()
         power = f'{power}({pat_idx})'
-        dprint(f'{level : <5} {name : <9} {life : >2}hp {discard : >2}dp {power : >5}pwr'
+        dprint(f'{level : <5} {name : <9} {power : >5}pwr {life : >2}hp {discard : >2}dp'
                f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
+        for ally in self.allies:
+            level = f'Lv{ally.level}'
+            name = ally.character.name.title()
+            power = ally.power_stage
+            pat_idx = ally.get_physical_attack_table_index()
+            power = f'{power}({pat_idx})'
+            dprint(f'{level : <5} {name : <9} {power : >5}pwr')
 
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
-               allow_pass=True):
+               allow_pass=True, prompt=None):
         assert names or allow_pass
 
         if not self.interactive:
@@ -398,8 +435,8 @@ class Player:
             full_names.append('Pass')
             full_descriptions.append('Do nothing.')
 
-        # TODO: custom prompts?
-        dprint(f'>>> Choose an action:')
+        prompt = prompt or 'Choose an action'
+        dprint(f'>>> {prompt}:')
         for i in range(len(full_names)):
             if i < len(names):
                 number = f'{i+1}'
@@ -427,7 +464,7 @@ class Player:
 
         return choice
 
-    def choose_card_power(self, card_power_type):
+    def choose_card_power(self, card_power_type, prompt=None):
         filtered = self.get_valid_card_powers(card_power_type)
 
         other_hand = []
@@ -438,13 +475,17 @@ class Player:
             [str(cp) for cp in filtered],
             [cp.description for cp in filtered],
             other_names=[c.name for c in other_hand],
-            other_descriptions=[c.card_text for c in other_hand])
+            other_descriptions=[c.card_text for c in other_hand],
+            prompt=prompt)
 
         if idx is None:  # Pass
             return None
         return filtered[idx]
 
     def choose_discard_pile_card(self):
+        if len(self.discard_pile) == 0:
+            return None
+
         idx = self.choose(
             [str(c) for c in self.discard_pile],
             [c.card_text for c in self.discard_pile])
@@ -482,8 +523,24 @@ class Player:
             names.append(f'{card.name}{suffix}')
             descriptions.append(card.card_text)
 
-        idx = self.choose(names, descriptions, allow_pass=False)
+        idx = self.choose(names, descriptions, allow_pass=False,
+                          prompt='Select a Dragon Ball to steal')
         return self.opponent.dragon_balls.cards[idx]
+
+    def choose_damage_target(self):
+        if len(self.allies) == 0:
+            return self.personality
+
+        names, descriptions = [], []
+        for  personality in ([self.personality] + self.allies.cards):
+            names.append(f'{personality.name} ({personality.power_stage}/10)')
+            descriptions.append(personality.card_text)
+
+        idx = self.choose(names, descriptions, allow_pass=False,
+                          prompt='Select a personality to take power stages of damage')
+        if idx == 0:
+            return self.personality
+        return self.allies.cards[idx-1]
 
     def choose_hand_non_combat_card(self):
         filtered = []
@@ -550,7 +607,8 @@ class Player:
             [str(c) for c in filtered],
             [c.card_text for c in filtered],
             other_names=[c.name for c in other_hand],
-            other_descriptions=[c.card_text for c in other_hand])
+            other_descriptions=[c.card_text for c in other_hand],
+            prompt='Select a Non-Combat card to play from your hand')
 
         if idx is None:  # Pass
             return None

@@ -8,7 +8,7 @@ from util import dprint
 
 
 class CardPowerDefense(CardPower):
-    def __init__(self, name, description, is_physical=True,
+    def __init__(self, name, description, is_physical=None,
                  cost=None, damage_modifier=None,
                  own_anger=None, opp_anger=None,
                  own_power=None, opp_power=None,
@@ -80,3 +80,8 @@ class CardPowerPhysicalDefense(CardPowerDefense):
 class CardPowerEnergyDefense(CardPowerDefense):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, is_physical=False)
+
+
+class CardPowerAnyDefense(CardPowerDefense):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs, is_physical=None)
