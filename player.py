@@ -127,23 +127,9 @@ class Player:
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
                 and not card_power.is_personality_restricted(self.personality)
-                and self.can_afford_cost(card_power.cost)):
+                and card_power.cost.can_afford(self)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
-
-    def can_afford_cost(self, cost):
-        # TODO: Consider control of combat
-        if (cost.character_in_control_req
-            and self.personality.character not in cost.character_in_control_req):
-            return False
-
-        return (self.personality.power_stage >= cost.power
-                and len(self.life_deck) >= cost.life)
-
-    def pay_cost(self, cost):
-        assert self.can_afford_cost(cost)
-        self.personality.reduce_power_stage(cost.power)
-        self.apply_life_damage(cost.life)
 
     def raise_level(self):
         next_level = self.personality.level + 1

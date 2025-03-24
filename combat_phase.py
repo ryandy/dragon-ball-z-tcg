@@ -41,7 +41,8 @@ class CombatPhase(Phase):
         next_attack_power = None  # Will almost always be None
         while True:
             dprint()
-            dprint(f'---------- Attack Phase {State.COMBAT_ROUND+1}: {attacker.name()} ----------')
+            dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
+                   f' {attacker.name()} ----------')
             for player in self.players:
                 player.show_summary()
 

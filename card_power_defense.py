@@ -34,7 +34,7 @@ class CardPowerDefense(CardPower):
         return card_power_copy
 
     def on_defense(self, player, phase, damage):
-        player.pay_cost(self.cost)
+        self.cost.pay(player)
 
         if self.own_anger is not None:
             player.adjust_anger(self.own_anger)

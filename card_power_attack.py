@@ -5,6 +5,7 @@ from card_power import CardPower
 from cost import Cost
 from damage import Damage
 from dragon_ball_card import DragonBallCard
+from state import State
 from util import dprint
 
 
@@ -54,7 +55,7 @@ class CardPowerAttack(CardPower):
         return card_power_copy
 
     def on_attack(self, player, phase):
-        player.pay_cost(self.cost)
+        self.cost.pay(player)
 
         if self.own_anger is not None:
             player.adjust_anger(self.own_anger)
@@ -123,9 +124,15 @@ class CardPowerNonCombatAttack(CardPowerAttack):
 class CardPowerMultiForm(CardPowerPhysicalAttack):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.resolved_turn = -1
         self.resolved_count = 0
 
     def on_resolved(self, player, phase):
+        # Reset each turn the power is used
+        if self.resolved_turn != State.TURN:
+            self.resolved_turn = State.TURN
+            self.resolved_count = 0
+
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False

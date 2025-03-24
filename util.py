@@ -15,4 +15,28 @@ def dprint(msg=''):
         time.sleep(max(0, print_period - time_elapsed))
 
     _dprint_time = time.time()
-    print(msg)
+    _print_with_width_and_indent(msg)
+
+
+def _print_with_width_and_indent(msg):
+    count = 0
+    indent = _get_indent(msg)
+    while len(msg):
+        if count > 0:
+            msg = f'{" " * indent}{msg}'
+        width = State.PRINT_WIDTH
+        if width < len(msg):
+            while msg[width] != ' ':
+                width -= 1
+            width += 1
+        chunk = msg[:width]
+        msg = msg[width:]
+        print(chunk)
+        count += 1
+
+
+def _get_indent(s):
+    idx = 0
+    while idx < len(s) and (s[idx] == ' ' or s[idx] == '-'):
+        idx += 1
+    return idx

@@ -6,6 +6,7 @@ class State:
     COMBAT_ROUND = 0
     INTERACTIVE = False
     PRINT_FREQUENCY = 15  # lines per second
+    PRINT_WIDTH = 100
 
 
     @classmethod
