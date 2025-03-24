@@ -13,12 +13,15 @@ from saga import Saga
 class CardFactory:
     @staticmethod
     def from_spec(saga, card_number):
-        path = pathlib.Path(f'./cards/{Saga(saga).name}'.lower())
+        saga_name = f'{Saga(saga).name}'.lower()
+        path = pathlib.Path(f'./cards/{saga_name}')
         files = list(path.glob(f'{card_number}_*.py'))
         if len(files) != 1:
+            print(f'Warning: Could not find card at {path}')
             return None
         filename = files[0]
-        card_module = SourceFileLoader('card_module', str(filename)).load_module()
+        module_name = '{saga_name}_{card_number}'
+        card_module = SourceFileLoader(module_name, str(filename)).load_module()
         if card_module.TYPE.lower() == 'personality':
             return PersonalityCard.from_spec(card_module)
         if card_module.TYPE.lower() == 'combat':

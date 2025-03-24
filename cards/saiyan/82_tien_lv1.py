@@ -8,16 +8,16 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Piccolo Lv3'
-LEVEL = 3
+NAME = 'Tien Lv1'
+LEVEL = 1
 SAGA = 'Saiyan'
-CARD_NUMBER = '163'
-RARITY = 4
+CARD_NUMBER = '82'
+RARITY = 3
 DECK_LIMIT = 1
-CHARACTER = 'Piccolo'
+CHARACTER = 'Tien'
 IS_HERO = True
-POWER_UP_RATING = 3
-POWER_STAGES = range(3200, 7700+1, 500)
+POWER_UP_RATING = 1
+POWER_STAGES = range(100, 1000+1, 100)
 CARD_TEXT = ('Multi-Form allows two physical attacks, one after another, or a defense against a'
              ' physical attack preventing 4 stages of successful damage.')
 

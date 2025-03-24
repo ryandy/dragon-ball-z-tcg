@@ -117,3 +117,20 @@ class CardPowerEnergyAttack(CardPowerAttack):
 class CardPowerNonCombatAttack(CardPowerAttack):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs, is_physical=None)
+
+
+# Physical attack used by Piccolo and Tien personalities
+class CardPowerMultiForm(CardPowerPhysicalAttack):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.resolved_count = 0
+
+    def on_resolved(self, player, phase):
+        self.resolved_count += 1
+        if self.resolved_count > 2:
+            assert False
+        elif self.resolved_count == 2:
+            player.exhaust_card_until_next_turn(card=self.card)
+        else:
+            phase.set_skip_next_attack_phase()
+            phase.set_next_attack_power(self)
