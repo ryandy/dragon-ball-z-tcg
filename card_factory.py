@@ -20,7 +20,7 @@ class CardFactory:
             print(f'Warning: Could not find card at {path}')
             return None
         filename = files[0]
-        module_name = '{saga_name}_{card_number}'
+        module_name = f'{saga_name}_{card_number}'
         card_module = SourceFileLoader(module_name, str(filename)).load_module()
         if card_module.TYPE.lower() == 'personality':
             return PersonalityCard.from_spec(card_module)

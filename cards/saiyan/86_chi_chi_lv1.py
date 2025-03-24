@@ -1,6 +1,7 @@
 import sys
 
 from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from card_power_defense import CardPowerPhysicalDefense
 from character import Character
 from cost import Cost
 from damage import Damage
