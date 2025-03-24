@@ -47,7 +47,8 @@ class Player:
         self.discard_pile = Pile('Discard')
         self.removed_pile = Pile('Removed')
         self.allies = Pile('Allies')
-        self.covered_allies = Pile('CoveredAllies')  # Temporary home for allies that have been overlaid
+        # TODO: Need to discard/remove covered allies when the overlaid one leaves play
+        self.covered_allies = Pile('CoveredAllies')  # Temporary home for overlaid allies
         self.non_combat = Pile('Non-Combat')
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
@@ -129,6 +130,11 @@ class Player:
         return filtered_card_powers
 
     def can_afford_cost(self, cost):
+        # TODO: Consider control of combat
+        if (cost.character_in_control_req
+            and self.personality.character not in cost.character_in_control_req):
+            return False
+
         return (self.personality.power_stage >= cost.power
                 and len(self.life_deck) >= cost.life)
 
