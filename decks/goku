@@ -24,6 +24,7 @@
 3 saiyan 72 black axe heel kick (stop)
 4 saiyan 108 gokus energy defense (prevent damage)
 2 saiyan 110 piccolos physical defense (stop)
+2 saiyan 250 chiaotzus physical defense (stop/prevent damage)
 
 # Combat - Attack/Defense
 3 saiyan 11 blue forward foot sweep (stop)
@@ -31,7 +32,7 @@
 
 # Non-Combat
 3 saiyan 22 power up!
-2 saiyan 250 chiaotzus physical defense (stop/prevent damage)
+1 saiyan 241 vegetas dragon ball capture
 
 # Drills
 2 saiyan 131 black bear hug drill (modify damage)

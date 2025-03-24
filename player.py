@@ -1,3 +1,4 @@
+import collections
 import random
 import sys
 
@@ -71,6 +72,7 @@ class Player:
         return f'{name} (v{level}.{anger}/{life}hp/{power}pow/{pat_idx}atk/{non_combat}nc/{hand}c)'
 
     def name(self):
+        # TODO: Append differentiator if both players are using the same character
         return self.character.name.title()
 
     def register_opponent(self, opponent):
@@ -198,6 +200,13 @@ class Player:
         self.anger = max(0, min(MAX_ANGER, self.anger + count))
         if self.anger == MAX_ANGER:
             self.raise_level()
+
+    def check_for_dragon_ball_victory(self):
+        set_counts = collections.defaultdict(int)
+        for card in self.dragon_balls:
+            set_counts[card.db_set] += 1
+            if set_counts[card.db_set] == 7:
+                raise GameOver(f'{self.name()} has collected all 7 {card.db_set} Dragon Balls',self)
 
     def draw(self, dest_pile=None):
         '''Life Deck -> Hand/Discard'''
@@ -517,20 +526,25 @@ class Player:
             return False
         return True
 
-    def choose_opponent_dragon_ball(self):
+    def choose_opponent_dragon_ball(self, prompt=None):
         if not self.opponent.dragon_balls.cards:
             return None
+
+        if prompt is None:
+            prompt = 'Select a Dragon Ball to steal'
 
         # Annotate choices with active card powers
         names, descriptions = [], []
         card_powers = self.opponent.get_valid_card_powers(CardPower)
         for card in self.opponent.dragon_balls:
             suffix = ' (*)' if any(x.card is card for x in card_powers) else ''
+            if card.owner is not self.opponent:
+                suffix = f' ({card.owner.name()}\'s){suffix}'
+
             names.append(f'{card.name}{suffix}')
             descriptions.append(card.card_text)
 
-        idx = self.choose(names, descriptions, allow_pass=False,
-                          prompt='Select a Dragon Ball to steal')
+        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
         return self.opponent.dragon_balls.cards[idx]
 
     def choose_damage_target(self):
@@ -671,6 +685,7 @@ class Player:
         elif isinstance(card, DragonBallCard):
             self.dragon_balls.add(card)
             card.set_pile(self.dragon_balls)
+            self.check_for_dragon_ball_victory()
         else:
             assert False
 

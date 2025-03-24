@@ -36,7 +36,6 @@ class Runner:
             except GameOver as err:
                 dprint(f'{err.winning_player.name()} wins!')
                 dprint(f'{err}')
-                #err.winning_player.show_discard_pile()
                 return
             State.TURN += 1
 
@@ -46,6 +45,7 @@ class Runner:
             player.exhaust_expired_card_powers()
         for player in self.players:
             player.show_summary()
+        attacker.check_for_dragon_ball_victory()
 
     def end_of_turn(self):
         pass
