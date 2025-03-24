@@ -47,6 +47,7 @@ class Player:
         self.discard_pile = Pile('Discard')
         self.removed_pile = Pile('Removed')
         self.allies = Pile('Allies')
+        self.covered_allies = Pile('CoveredAllies')  # Temporary home for allies that have been overlaid
         self.non_combat = Pile('Non-Combat')
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
@@ -140,6 +141,7 @@ class Player:
         # Check for win condition
         if (next_level_idx == len(self.personality_cards) - 1
             and len(self.personality_cards) >= len(self.opponent.personality_cards)):
+            dprint(f'{self.name()} levels up to Lv{next_level}!')
             raise GameOver(f'{self.name()} has achieved the Most Powerful Personality', self)
 
         # Upgrade personality if possible
@@ -496,6 +498,10 @@ class Player:
                 if not dup_restricted:
                     filtered.append(card)
             elif isinstance(card, PersonalityCard):
+                is_overlay = any(
+                    (x.character == card.character and x.level == card.level - 1)
+                    for x in self.allies)
+
                 # Cannot be the same character/level as any ally in play
                 # TODO: Saibaimen exception
                 dup_restricted = any(x.get_name_level() == card.get_name_level()
@@ -505,14 +511,18 @@ class Player:
                 # Cannot be the same character as either Main Personality
                 mp_restricted = card.character in [self.personality.character,
                                                    self.opponent.personality.character]
+
+                # Cannot be a higher level than Main Personality unless overlaying
+                level_restricted = not is_overlay and (card.level > self.personality.level)
+
                 # Cannot be the same character as an ally you have in play unless overlaying
                 # TODO: Saibaimen exception
-                char_restricted = any(
-                    (x.character == card.character and x.level != card.level - 1)
-                    for x in self.allies)
+                char_restricted = not is_overlay and any(
+                    x.character == card.character for x in self.allies)
                 if (not dup_restricted
                     and not hero_restricted
                     and not mp_restricted
+                    and not level_restricted
                     and not char_restricted):
                     filtered.append(card)
             elif isinstance(card, DrillCard):
@@ -559,9 +569,23 @@ class Player:
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, PersonalityCard):
+            # TODO: Saibaimen can choose whether/which to overlay
+            covered_ally = None
+            for ally in self.allies:
+                if ally.character == card.character and ally.level == card.level - 1:
+                    covered_ally = ally
+                    break
+
+            card.init_power_stage_for_ally()
+            if covered_ally:
+                card.set_power_stage_max()
+                self.exhaust_card(covered_ally)
+                self.allies.remove(covered_ally)
+                self.covered_allies.add(covered_ally)
+
             self.allies.add(card)
             card.set_pile(self.allies)
-            card.init_power_stage_for_ally()
+
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
             self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat

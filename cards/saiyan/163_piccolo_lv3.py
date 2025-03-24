@@ -22,9 +22,19 @@ CARD_TEXT = ('Multi-Form allows two physical attacks, one after another, or a de
 
 
 class CardPowerMultiForm(CardPowerPhysicalAttack):
-    def on_attack(self, player, phase):
-        super().on_attack(player, phase)
-        super().on_attack(player, phase)
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.resolved_count = 0
+
+    def on_resolved(self, player, phase):
+        self.resolved_count += 1
+        if self.resolved_count > 2:
+            assert False
+        elif self.resolved_count == 2:
+            player.exhaust_card_until_next_turn(card=self.card)
+        else:
+            phase.set_skip_next_attack_phase()
+            phase.set_next_attack_power(self)
 
 
 CARD_POWER = [

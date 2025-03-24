@@ -8,16 +8,25 @@ from util import dprint
 
 
 class CombatAttackPhase(Phase):
-    def __init__(self, player):
+    def __init__(self, player, attack_power_override=None):
         self.player = player
-        self.passed = False
+        self.attack_power_override = attack_power_override
+
         self.attack_power = None
-        self.combat_ended = False
+        self.passed = False
+        self.end_combat = False
+        self.skip_next_attack_phase = False
+        self.next_attack_power = None  # attack power to be used for the next combat attack phase
 
     def execute(self):
         # TODO: Choose if an ally (of the attacker) will take control of combat
 
-        self.attack_power = self.player.choose_card_power(CardPowerAttack)
+        # Very rarely an attack power will be pre-selected for the attack phase
+        if self.attack_power_override:
+            self.attack_power = self.attack_power_override
+        else:
+            self.attack_power = self.player.choose_card_power(CardPowerAttack)
+
         if not self.attack_power:
             self.passed = True
             dprint(f'{self.player.name()} passes')
@@ -39,8 +48,14 @@ class CombatAttackPhase(Phase):
 
         # TODO: Control reverts to MP for either attacker or defender if MP power >= 2
 
-    def end_combat(self):
-        self.combat_ended = True
+    def set_end_combat(self):
+        self.end_combat = True
+
+    def set_skip_next_attack_phase(self):
+        self.skip_next_attack_phase = True
+
+    def set_next_attack_power(self, next_attack_power):
+        self.next_attack_power = next_attack_power
 
     def physical_attack(self, damage):
         '''Returns True if attack was successful'''
@@ -53,10 +68,6 @@ class CombatAttackPhase(Phase):
     def _attack(self, damage, is_physical=None):
         # Damage estimate is most helpful/accurate here
         damage_estimate, damage_mod_srcs = self._get_damage(self.attack_power.damage)
-        #power_estimate = max(0, damage_estimate.power - damage_estimate.power_prevent)
-        #carry_estimate = max(0, power_estimate - self.player.personality.power_stage)
-        #life_estimate = max(0, damage_estimate.life + carry_estimate - damage_estimate.life_prevent)
-        #applied_damage_estimate = Damage(power=power_estimate, life=life_estimate)
         dprint(f'{self.player.name()}\'s attack damage estimate: {damage_estimate}')
         if damage_mod_srcs:
             for damage_mod_src in damage_mod_srcs:

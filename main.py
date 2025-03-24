@@ -9,7 +9,6 @@ from state import State
 
 def main():
     parser = argparse.ArgumentParser(
-        prog='DBZ TCG',
         description='For the Collector in You! For the Gamer in You!',
         epilog='Recommended for ages 11 and up')
     parser.add_argument('-s', '--seed', type=int, default=0)

@@ -38,25 +38,34 @@ class CombatPhase(Phase):
 
         pass_count = 0
         attacker = self.player
+        next_attack_power = None  # Will almost always be None
         while True:
             dprint()
             dprint(f'---------- Attack Phase {State.COMBAT_ROUND+1}: {attacker.name()} ----------')
             for player in self.players:
                 player.show_summary()
 
-            attack_phase = CombatAttackPhase(attacker)
+            attack_phase = CombatAttackPhase(attacker, attack_power_override=next_attack_power)
             attack_phase.execute()
 
             if attack_phase.passed:
                 pass_count += 1
             else:
                 pass_count = 0
-            if pass_count == 2:
+
+            # End Combat Phase when two players pass consecutively or the phase is forcibly ended
+            if pass_count == 2 or attack_phase.end_combat:
                 break
-            if attack_phase.combat_ended:
-                break
-            attacker = attacker.opponent
-            State.COMBAT_ROUND += 1
+
+            # Check to see if the next player's attack phase should be skipped
+            if attack_phase.skip_next_attack_phase:
+                State.COMBAT_ROUND += 2
+            else:
+                attacker = attacker.opponent
+                State.COMBAT_ROUND += 1
+
+            # Will almost always be None
+            next_attack_power = attack_phase.next_attack_power
 
         # TODO: Control reverts to MP for both players
 

@@ -20,6 +20,8 @@ class Character(enum.Enum):
     GARLIC_JR = 15
     GULDO = 16
     FRIEZA = 17
+    MASTER_ROSHI = 18
+    VIDEL = 19
 
     def has_saiyan_heritage(self):
         return self in [
@@ -43,4 +45,6 @@ class Character(enum.Enum):
             Character.YAMCHA,
             Character.GARLIC_JR,
             Character.GULDO,
-            Character.FRIEZA]
+            Character.FRIEZA,
+            Character.MASTER_ROSHI,
+            Character.VIDEL]

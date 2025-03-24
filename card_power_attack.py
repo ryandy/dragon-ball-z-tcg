@@ -78,7 +78,7 @@ class CardPowerAttack(CardPower):
             self.on_success(player, phase)
 
         if self.end_combat:
-            phase.end_combat()
+            phase.set_end_combat()
 
         self.on_resolved(player, phase)
 
