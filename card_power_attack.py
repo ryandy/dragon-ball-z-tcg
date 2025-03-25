@@ -9,6 +9,7 @@ from state import State
 from util import dprint
 
 
+# TODO CardPowerCombat class that this, ..Defense, and ..DefenseShield inherit from
 class CardPowerAttack(CardPower):
     def __init__(self, name, description, is_physical=None,
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
@@ -24,7 +25,6 @@ class CardPowerAttack(CardPower):
                          heroes_only=heroes_only, villains_only=villains_only,
                          saiyan_only=saiyan_only, namekian_only=namekian_only,
                          card=card, is_floating=is_floating)
-
         if damage is None:
             if is_physical is None:
                 damage = Damage.none()
@@ -58,6 +58,27 @@ class CardPowerAttack(CardPower):
     def on_attack(self, player, phase):
         self.on_pay_cost(player, phase)
 
+        self.on_secondary_effects(player, phase)
+
+        if self.is_physical is None:  # Non-combat attacks
+            success = True
+        elif self.is_physical:
+            success = phase.physical_attack(self.damage.copy())
+        else:
+            success = phase.energy_attack(self.damage.copy())
+
+        if success:
+            self.on_success(player, phase)
+
+        self.on_resolved(player, phase)
+
+        if self.end_combat:
+            phase.set_end_combat()
+
+    def on_pay_cost(self, player, phase):
+        self.cost.pay(player)
+
+    def on_secondary_effects(self, player, phase):
         if self.own_anger:
             player.adjust_anger(self.own_anger)
         if self.opp_anger:
@@ -72,24 +93,6 @@ class CardPowerAttack(CardPower):
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
                 player.rejuvenate()
-
-        if self.is_physical is None:  # Non-combat attacks
-            success = True
-        elif self.is_physical:
-            success = phase.physical_attack(self.damage.copy())
-        else:
-            success = phase.energy_attack(self.damage.copy())
-
-        if success:
-            self.on_success(player, phase)
-
-        if self.end_combat:
-            phase.set_end_combat()
-
-        self.on_resolved(player, phase)
-
-    def on_pay_cost(self, player, phase):
-        self.cost.pay(player)
 
     def on_success(self, player, phase):
         pass

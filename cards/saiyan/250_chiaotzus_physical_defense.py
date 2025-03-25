@@ -57,7 +57,9 @@ modifies an attack, and doesn’t stop the attack or damage from the attack.
 
 
 class CardPowerCPD(CardPowerAnyDefense):
-    def on_resolved(self, player, phase):
+    def on_secondary_effects(self, player, phase):
+        super().on_secondary_effects(player, phase)
+
         class CardPowerCPD_DamageModification(CardPowerOnDamageModification):
             def _on_damage_modification(_self, _attacker, _phase):
                 if _attacker.opponent.control_personality.is_hero:
@@ -70,7 +72,6 @@ class CardPowerCPD(CardPowerAnyDefense):
         card_power.exhaust_after_this_turn()
         card_power.set_floating()
         player.register_card_power(card_power)
-        return super().on_resolved(player, phase)
 
 
 CARD_POWER = CardPowerCPD(

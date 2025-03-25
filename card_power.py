@@ -68,14 +68,14 @@ class CardPower(abc.ABC):
                  and (not self.valid_until or cur_time <= self.valid_until))
         return not valid
 
-    def is_personality_restricted(self, personality):
+    def is_restricted(self, player):
         '''If this card power cannot be activated by a given personality'''
         if self.heroes_only:
-            return not personality.is_hero
+            return not player.control_personality.is_hero
         if self.villains_only:
-            return personality.is_hero
+            return player.control_personality.is_hero
         if self.saiyan_only:
-            return not personality.character.has_saiyan_heritage()
+            return not player.control_personality.character.has_saiyan_heritage()
         if self.namekian_only:
-            return not personality.character.has_namekian_heritage()
+            return not player.control_personality.character.has_namekian_heritage()
         return False

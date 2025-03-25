@@ -4,6 +4,7 @@ import sys
 
 from card import Card
 from saga import Saga
+from state import State
 from util import dprint
 
 
@@ -30,6 +31,7 @@ class PersonalityCard(Card):
         # Play state
         self.power_stage = None
         self.covered_ally = None  # When an ally overlays another, point to the covered one
+        self.play_turn = None
 
     def __repr__(self):
         return f'{self.name} (Personality)'
@@ -41,9 +43,11 @@ class PersonalityCard(Card):
         return f'{self.character.name}.{self.level}'
 
     def init_for_main(self):
+        self.play_turn = State.TURN
         self.set_power_stage(5)
 
     def init_for_ally(self, covered_ally=None):
+        self.play_turn = State.TURN
         self.set_power_stage(3)
         self.covered_ally = covered_ally
         if covered_ally:

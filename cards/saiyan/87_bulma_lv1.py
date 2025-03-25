@@ -24,4 +24,4 @@ CARD_TEXT = ('Scientific Defense. Reduces the damage done by an energy attack by
 
 CARD_POWER = CardPowerEnergyDefense(
     NAME, CARD_TEXT, exhaust=False, discard=False,
-    damage_modifier=DamageModifier(life_prevent=2))
+    damage_modifier=DamageModifier(life_add=-2))

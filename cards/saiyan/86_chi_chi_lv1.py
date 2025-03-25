@@ -28,7 +28,11 @@ class CardPowerMothersDefense(CardPowerPhysicalDefense):
     def is_deactivated(self):
         return False
 
+    def is_restricted(self, player):
+        if (player.control_personality.character != Character.GOHAN
+            and player.control_personality.character != Character.GOKU):
+            return True
+        return super().is_restricted(player)
 
-CARD_POWER = CardPowerMothersDefense(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
-    cost=Cost(character_in_control_req=[Character.GOHAN, Character.GOKU]))
+
+CARD_POWER = CardPowerMothersDefense(NAME, CARD_TEXT, exhaust=False, discard=False)

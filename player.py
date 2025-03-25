@@ -120,7 +120,7 @@ class Player:
             if (any(isinstance(card_power, x) for x in card_power_types)
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
-                and not card_power.is_personality_restricted(self.control_personality)
+                and not card_power.is_restricted(self)
                 and card_power.cost.can_afford(self)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers

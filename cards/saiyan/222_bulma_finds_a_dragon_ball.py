@@ -23,6 +23,11 @@ class CardPowerBFADB(CardPowerNonCombatAttack):
     def on_success(self, player, phase):
         player.steal_dragon_ball()
 
+    def is_restricted(self, player):
+        allies_in_play = [x for x in player.allies + player.opponent.allies]
+        if not any(x.character == Character.BULMA for x in allies_in_play):
+            return True
+        return super().is_restricted(player)
 
-CARD_POWER = CardPowerBFADB(NAME, CARD_TEXT, remove_from_game=True,
-                            cost=Cost(ally_in_play_req=Character.BULMA))
+
+CARD_POWER = CardPowerBFADB(NAME, CARD_TEXT, remove_from_game=True)

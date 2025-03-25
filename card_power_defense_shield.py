@@ -39,8 +39,20 @@ class CardPowerDefenseShield(CardPower):
         return card_power_copy
 
     def on_defense(self, player, phase, damage):
+        self.on_pay_cost(player, phase)
+
+        self.on_secondary_effects(player, phase)
+
+        damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
+        damage.modify(damage_modifier)
+
+        self.on_resolved(player, phase)
+        return damage
+
+    def on_pay_cost(self, player, phase):
         self.cost.pay(player)
 
+    def on_secondary_effects(self, player, phase):
         if self.own_anger:
             player.adjust_anger(self.own_anger)
         if self.opp_anger:
@@ -55,12 +67,6 @@ class CardPowerDefenseShield(CardPower):
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
                 player.rejuvenate()
-
-        damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
-        damage.modify(damage_modifier)
-
-        self.on_resolved(player, phase)
-        return damage
 
     def on_resolved(self, player, phase):
         if self.exhaust:

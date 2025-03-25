@@ -23,7 +23,9 @@ CARD_TEXT = ('Search your Life Deck or discard pile for an Ally and put them int
 
 
 class CardPowerUA(CardPowerAnyDefense):
-    def on_resolved(self, player, phase):
+    def on_secondary_effects(self, player, phase):
+        super().on_secondary_effects(player, phase)
+
         cards, names, descriptions = [], [], []
         for card in (player.life_deck.cards + player.discard_pile.cards):
             if (isinstance(card, PersonalityCard)
@@ -37,7 +39,6 @@ class CardPowerUA(CardPowerAnyDefense):
             ally = cards[idx]
             player.play_ally(ally)
             ally.set_power_stage_max()
-        return super().on_resolved(player, phase)
 
 
 CARD_POWER = CardPowerUA(NAME, CARD_TEXT, damage_modifier=DamageModifier.none())

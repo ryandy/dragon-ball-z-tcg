@@ -9,34 +9,15 @@ class Cost:
                  own_ally=None,
                  character_in_control_req=None,
                  ally_in_play_req=None):
-        # Costs:
         self.power = power or 0
         self.life = life or 0
         # TODO: not sure if this should be int/list/Character/Card...
         self.own_ally = own_ally or 0
 
-        # Requirements:
-        self.character_in_control_req = character_in_control_req or []  # OR of list [Character,]
-        if isinstance(self.character_in_control_req, Character):
-            self.character_in_control_req = [self.character_in_control_req]
-
-        self.ally_in_play_req = ally_in_play_req or []  # OR of list [Character,]
-        if isinstance(self.ally_in_play_req, Character):
-            self.ally_in_play_req = [self.ally_in_play_req]
-
     def copy(self):
         return copy.copy(self)
 
     def can_afford(self, player):
-        if (self.character_in_control_req
-            and player.control_personality.character not in self.character_in_control_req):
-            return False
-
-        if self.ally_in_play_req:
-            allies_in_play = [x.character for x in player.allies + player.opponent.allies]
-            if not any(x in allies_in_play for x in self.ally_in_play_req):
-                return False
-
         return (player.control_personality.power_stage >= self.power
                 and len(player.life_deck) >= self.life
                 and len(player.allies) >= self.own_ally)
