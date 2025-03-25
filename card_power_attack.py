@@ -12,9 +12,9 @@ from util import dprint
 class CardPowerAttack(CardPower):
     def __init__(self, name, description, is_physical=None,
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
-                 cost=None, damage=None, damage_modifier=None,
+                 cost=None, damage=None, damage_modifier=None, rejuvenate_count=None,
                  own_anger=None, opp_anger=None,
-                 own_power=None, opp_power=None,
+                 main_power=None, any_power=None,
                  end_combat=None,
                  exhaust=True, discard=True, remove_from_game=False,
                  is_floating=None, card=None):
@@ -38,10 +38,11 @@ class CardPowerAttack(CardPower):
         self.damage = damage
 
         self.is_physical = is_physical
+        self.rejuvenate_count = rejuvenate_count
         self.own_anger = own_anger
         self.opp_anger = opp_anger
-        self.own_power = own_power
-        self.opp_power = opp_power
+        self.main_power = main_power
+        self.any_power = any_power
         self.end_combat = end_combat
         self.exhaust = exhaust
         self.discard = discard
@@ -57,17 +58,20 @@ class CardPowerAttack(CardPower):
     def on_attack(self, player, phase):
         self.cost.pay(player)
 
-        if self.own_anger is not None:
+        if self.own_anger:
             player.adjust_anger(self.own_anger)
-        if self.opp_anger is not None:
+        if self.opp_anger:
             player.opponent.adjust_anger(self.opp_anger)
 
-        if self.own_power is not None:
-            # TODO main/any?
-            player.main_personality.adjust_power_stage(self.own_power)
-        if self.opp_power is not None:
-            assert False  # Feels like this shouldn't be possible
-            player.opponent.main_personality.adjust_power_stage(self.opp_power)
+        if self.main_power:
+            player.main_personality.adjust_power_stage(self.main_power)
+        if self.any_power:
+            personality = player.choose_power_stage_target(self.any_power)
+            personality.adjust_power_stage(self.any_power)
+
+        if self.rejuvenate_count:
+            for _ in range(self.rejuvenate_count):
+                player.rejuvenate()
 
         if self.is_physical is None:  # Non-combat attacks
             success = True

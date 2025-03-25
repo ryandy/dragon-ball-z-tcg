@@ -24,8 +24,9 @@ CARD_TEXT = ('Raise any one of your personalities to their highest power stage. 
 
 class CardPowerEDB5(CardPowerDragonBall):
     def on_play(self, player, phase):
-        # TODO: main/any?
-        player.main_personality.set_power_stage_max()
+        personality = player.choose_power_stage_target(10)
+        personality.adjust_power_stage(10)
+
         player.adjust_anger(2)
 
         for _ in range(2):

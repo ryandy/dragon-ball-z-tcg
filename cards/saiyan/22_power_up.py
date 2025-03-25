@@ -18,11 +18,4 @@ STYLE = None
 CARD_TEXT = ('Powers up 5 stages for a personality. Take the top discarded card and place at the'
              ' bottom of your life deck.')
 
-
-class CardPowerPU(CardPowerNonCombatAttack):
-    def on_success(self, player, phase):
-        player.rejuvenate()
-
-
-# TODO: Choose target personality for power stages
-CARD_POWER = CardPowerPU(NAME, CARD_TEXT, own_power=5)
+CARD_POWER = CardPowerNonCombatAttack(NAME, CARD_TEXT, any_power=5, rejuvenate_count=1)

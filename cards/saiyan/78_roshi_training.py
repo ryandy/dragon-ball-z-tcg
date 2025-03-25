@@ -17,11 +17,4 @@ CHARACTER = None
 STYLE = None
 CARD_TEXT = ('Heroes only. The top 3 discarded cards are placed at the bottom of your life deck.')
 
-
-class CardPowerRT(CardPowerNonCombatAttack):
-    def on_success(self, player, phase):
-        for _ in range(3):
-            player.rejuvenate()
-
-
-CARD_POWER = CardPowerRT(NAME, CARD_TEXT, heroes_only=True)
+CARD_POWER = CardPowerNonCombatAttack(NAME, CARD_TEXT, heroes_only=True, rejuvenate_count=3)

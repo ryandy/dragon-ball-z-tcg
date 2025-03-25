@@ -144,6 +144,7 @@ class Player:
             if self.control_personality is self.main_personality:
                 self.control_personality = self.main_personalities[next_level_idx]
             self.main_personality = self.main_personalities[next_level_idx]
+            self.main_personality.init_for_main()
 
             # Register (and deactivate if not in control) new card powers
             self.register_card_powers(self.main_personality.card_powers)
@@ -435,11 +436,9 @@ class Player:
 
     def show_summary(self):
         '''1-line summary of current state'''
+        level = f'Lv{self.main_personality.level}.{self.anger}'
         name = self.name
-        level = self.main_personality.level
-        anger = self.anger
-        level = f'Lv{level}.{anger}'
-
+        power = self.main_personality.get_power_attack_str()
         life = len(self.life_deck)
         allies = len(self.allies)
         discard = len(self.discard_pile)
@@ -447,18 +446,12 @@ class Player:
         drills = len(self.drills)
         dbs = len(self.dragon_balls)
         hand = len(self.hand)
-
-        power = self.main_personality.power_stage
-        pat_idx = self.main_personality.get_physical_attack_table_index()
-        power = f'{power}({pat_idx})'
         dprint(f'{level : <5} {name : <9} {power : >5}pwr {life : >2}hp {discard : >2}dp'
                f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
         for ally in self.allies:
             level = f'Lv{ally.level}'
             name = ally.char_name()
-            power = ally.power_stage
-            pat_idx = ally.get_physical_attack_table_index()
-            power = f'{power}({pat_idx})'
+            power = ally.get_power_attack_str()
             dprint(f'{level : <5} {name : <9} {power : >5}pwr')
 
     def choose(self, names, descriptions,
@@ -602,6 +595,11 @@ class Player:
         return self.choose_personality(
             prompt='Select a personality to take power stages of damage')
 
+    def choose_power_stage_target(self, power):
+        verb = 'gain' if power > 0 else 'lose'
+        return self.choose_personality(
+            prompt=f'Select a personality to {verb} {abs(power)} power stage(s)')
+
     def choose_personality(self, prompt=None):
         if len(self.allies) == 0:
             return self.main_personality
@@ -615,9 +613,7 @@ class Player:
                      if personality is self.main_personality
                      else f'Lv{personality.level}')
             name = personality.char_name()
-            power = personality.power_stage
-            pat_idx = personality.get_physical_attack_table_index()
-            power = f'{power}({pat_idx})'
+            power = personality.get_power_attack_str()
             names.append(f'{level : <5} {name : <9} {power : >5}pwr')
             descriptions.append(personality.card_text)
 

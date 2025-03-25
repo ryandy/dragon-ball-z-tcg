@@ -19,4 +19,4 @@ CHARACTER = 'Piccolo'
 STYLE = None
 CARD_TEXT = ('Stops a physical attack. Gain 4 power stages.')
 
-CARD_POWER = CardPowerPhysicalDefense(NAME, CARD_TEXT, own_power=4)
+CARD_POWER = CardPowerPhysicalDefense(NAME, CARD_TEXT, any_power=4)

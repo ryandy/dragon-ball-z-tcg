@@ -19,4 +19,4 @@ STYLE = None
 CARD_TEXT = ('Physical attack. Raise your anger 1. Gain 5 power stages.')
 
 CARD_POWER = CardPowerPhysicalAttack(
-    NAME, CARD_TEXT, own_anger=1, own_power=5)
+    NAME, CARD_TEXT, own_anger=1, any_power=5)

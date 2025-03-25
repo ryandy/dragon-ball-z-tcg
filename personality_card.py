@@ -4,6 +4,7 @@ import sys
 
 from card import Card
 from saga import Saga
+from util import dprint
 
 
 POWER_STAGES_LEN = 11
@@ -52,29 +53,43 @@ class PersonalityCard(Card):
         self.adjust_power_stage(-amount)
 
     def adjust_power_stage(self, amount):
-        self.set_power_stage(min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount)))
+        new_power = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
+        delta = new_power - self.power_stage
+        if delta:
+            verb = 'increases' if delta > 0 else 'decreases'
+            old_str = self.get_power_attack_str()
+            new_str = self.get_power_attack_str(power_stage=new_power)
+            dprint(f'{self.name}\'s power {verb} from {old_str} to {new_str}')
+        self.set_power_stage(new_power)
 
     def set_power_stage(self, new_power_stage):
         self.power_stage = new_power_stage
 
     def set_power_stage_max(self):
-        self.set_power_stage(POWER_STAGES_LEN - 1)
+        self.adjust_power_stage(POWER_STAGES_LEN - 1)
 
-    def get_power(self):
-        if self.power_stage is None:
+    def get_power(self, power_stage=None):
+        if power_stage is None:
+            power_stage = self.power_stage
+        if power_stage is None:
             return None
-        return self.power_stages[self.power_stage]
+        return self.power_stages[power_stage]
 
-    def get_physical_attack_table_index(self, power=None):
-        if power is None:
-            power = self.get_power()
+    def get_physical_attack_table_index(self, power_stage=None):
+        power = self.get_power(power_stage=power_stage)
         if power is None:
             return 0
         index = bisect.bisect_right(PHYSICAL_ATTACK_TABLE_VALUES, power) - 1
         return index
 
     def get_physical_attack_table_index_max(self):
-        return self.get_physical_attack_table_index(power=self.power_stages[-1])
+        return self.get_physical_attack_table_index(power_stage=POWER_STAGES_LEN-1)
+
+    def get_power_attack_str(self, power_stage=None):
+        if power_stage is None:
+            power_stage = self.power_stage
+        pat_idx = self.get_physical_attack_table_index(power_stage=power_stage)
+        return f'{power_stage}({pat_idx})'
 
     def power_up(self, is_ally=False, tokui_waza=None):
         if is_ally:
@@ -83,7 +98,7 @@ class PersonalityCard(Card):
             increment = self.power_up_rating + 1
         else:
             increment = self.power_up_rating
-        self.power_stage = min(self.power_stage + increment, POWER_STAGES_LEN - 1)
+        self.adjust_power_stage(increment)
 
     def can_be_played_as_ally(self, player):
         is_overlay = any(
