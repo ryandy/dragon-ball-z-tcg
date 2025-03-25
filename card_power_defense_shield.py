@@ -42,10 +42,11 @@ class CardPowerDefenseShield(CardPower):
             player.opponent.adjust_anger(self.opp_anger)
 
         if self.own_power is not None:
-            player.personality.adjust_power_stage(self.own_power)
+            # TODO: main/any?
+            player.main_personality.adjust_power_stage(self.own_power)
         if self.opp_power is not None:
             assert False  # Feels like this shouldn't be possible
-            player.opponent.personality.adjust_power_stage(self.opp_power)
+            player.opponent.main_personality.adjust_power_stage(self.opp_power)
 
         damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
         damage.modify(damage_modifier)

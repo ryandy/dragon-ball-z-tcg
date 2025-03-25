@@ -19,7 +19,7 @@ class CombatAttackPhase(Phase):
         self.next_attack_power = None  # attack power to be used for the next combat attack phase
 
     def execute(self):
-        # TODO: Choose if an ally (of the attacker) will take control of combat
+        self.player.determine_control_of_combat()
 
         # Very rarely an attack power will be pre-selected for the attack phase
         if self.attack_power_override:
@@ -40,13 +40,16 @@ class CombatAttackPhase(Phase):
         if not self.player.interactive:
             dprint(f'  - {self.attack_power.description}')
 
-        # TODO: Choose if an ally (of the defender) will take control of combat
+        # Choose if an ally (of the defender) will take control of combat
         # Note: This needs to happen here rather than combat_defense_phase so that the choice can
         #       be made before any secondary effects from the attack take place.
+        self.player.opponent.determine_control_of_combat()
 
         self.attack_power.on_attack(self.player, self)
 
-        # TODO: Control reverts to MP for either attacker or defender if MP power >= 2
+        # Control reverts to MP for either attacker or defender if MP power >= 2
+        for player in [self.player, self.player.opponent]:
+            player.revert_control_of_combat_if_able()
 
     def set_end_combat(self):
         self.end_combat = True
@@ -87,10 +90,10 @@ class CombatAttackPhase(Phase):
 
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(
-                    final_damage, src_personality=self.player.personality)
+                    final_damage, src_personality=self.player.control_personality)
             else:
                 self.player.opponent.apply_energy_attack_damage(
-                    final_damage, src_personality=self.player.personality)
+                    final_damage, src_personality=self.player.control_personality)
 
         return not damage.was_stopped()
 

@@ -60,7 +60,7 @@ class CardPowerCPD(CardPowerAnyDefense):
     def on_resolved(self, player, phase):
         class CardPowerCPD_DamageModification(CardPowerOnDamageModification):
             def _on_damage_modification(_self, _attacker, _phase):
-                if _attacker.opponent.personality.is_hero:
+                if _attacker.opponent.control_personality.is_hero:
                     return DamageModifier(life_prevent=1)
             def on_physical_damage_modification(_self, _attacker, _phase):
                 return _self._on_damage_modification(_attacker, _phase)

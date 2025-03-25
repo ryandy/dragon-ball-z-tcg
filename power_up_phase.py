@@ -8,6 +8,6 @@ class PowerUpPhase(Phase):
         self.player = player
 
     def execute(self):
-        self.player.personality.power_up(tokui_waza=self.player.tokui_waza)
+        self.player.main_personality.power_up(tokui_waza=self.player.tokui_waza)
         for ally in self.player.allies:
             ally.power_up(is_ally=True)

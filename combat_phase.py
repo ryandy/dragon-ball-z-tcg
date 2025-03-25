@@ -14,6 +14,13 @@ class CombatPhase(Phase):
         self.players = players
         self.skipped = True
 
+    def entering_combat(self):
+        pass
+
+    def end_of_combat(self):
+        for player in [self.player, self.player.opponent]:
+            player.revert_control_of_combat()
+
     def execute(self):
         self.skipped = not self.player.choose_declare_combat()
 
@@ -31,7 +38,7 @@ class CombatPhase(Phase):
         else:
             dprint(f'{self.player.name()} declares combat!')
 
-        # "WHEN ENTERING COMBAT" (attacker before defender)
+        self.entering_combat()
 
         opp_draw_phase = DrawPhase(self.player.opponent)
         opp_draw_phase.execute()
@@ -68,6 +75,4 @@ class CombatPhase(Phase):
             # Will almost always be None
             next_attack_power = attack_phase.next_attack_power
 
-        # TODO: Control reverts to MP for both players
-
-        # "AT THE END OF COMBAT" (attacker before defender)
+        self.end_of_combat()

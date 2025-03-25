@@ -69,8 +69,8 @@ class Damage:
 
         power, life = self.power, self.life
         if self.use_pat:
-            attack_idx = attacker.personality.get_physical_attack_table_index()
-            defend_idx = attacker.opponent.personality.get_physical_attack_table_index()
+            attack_idx = attacker.control_personality.get_physical_attack_table_index()
+            defend_idx = attacker.opponent.control_personality.get_physical_attack_table_index()
             power = max(0, 1 + attack_idx - defend_idx)
 
         power_mult, life_mult = 1, 1

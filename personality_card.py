@@ -32,6 +32,9 @@ class PersonalityCard(Card):
     def __repr__(self):
         return f'{self.name} (Personality)'
 
+    def char_name(self):
+        return f'{self.character.name.title().replace("_", "-")}'
+
     def get_name_level(self):
         return f'{self.character.name}.{self.level}'
 
@@ -73,9 +76,6 @@ class PersonalityCard(Card):
         else:
             increment = self.power_up_rating
         self.power_stage = min(self.power_stage + increment, POWER_STAGES_LEN - 1)
-
-    def deactivate(self):
-        self.power_stage = None
 
     @classmethod
     def from_spec(cls, card_module):

@@ -33,7 +33,7 @@ class CardPowerGPA(CardPowerPhysicalAttack):
             player.add_card_to_hand(card)
 
     def on_resolved(self, player, phase):
-        if player.character != Character.GOKU:
+        if player.control_personality.character != Character.GOKU:
             return super().on_resolved(player, phase)
 
         self.resolved_count += 1

@@ -3,7 +3,6 @@ import sys
 from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense, CardPowerAnyDefense
 from combat_card import CombatCard
 from phase import Phase
-from timing import Timing
 from util import dprint
 
 

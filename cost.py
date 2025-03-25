@@ -25,9 +25,8 @@ class Cost:
         return copy.copy(self)
 
     def can_afford(self, player):
-        # TODO: consider control of combat
         if (self.character_in_control_req
-            and player.personality.character not in self.character_in_control_req):
+            and player.control_personality.character not in self.character_in_control_req):
             return False
 
         if self.ally_in_play_req:
@@ -35,12 +34,12 @@ class Cost:
             if not any(x in allies_in_play for x in self.ally_in_play_req):
                 return False
 
-        return (player.personality.power_stage >= self.power
+        return (player.control_personality.power_stage >= self.power
                 and len(player.life_deck) >= self.life)
 
     def pay(self, player):
         assert self.can_afford(player)
-        player.personality.reduce_power_stage(self.power)
+        player.control_personality.reduce_power_stage(self.power)
         player.apply_life_damage(self.life)
 
     @classmethod

@@ -28,7 +28,9 @@ class Player:
     def __init__(self, deck, state):
         self.state = state
         self.character = deck.cards[0].character
-        self.personality_cards = []
+        self.main_personalities = []
+        self.main_personality = None
+        self.control_personality = None
         self.tokui_waza = None  # TODO
         self.card_powers = []
         self.anger = 0
@@ -38,11 +40,11 @@ class Player:
         for card in deck.cards:
             card.register_owner(self)
             if isinstance(card, PersonalityCard) and card.character == self.character:
-                self.personality_cards.append(card)
+                self.main_personalities.append(card)
             else:
                 life_deck_cards.append(card)
 
-        self.personality_cards.sort(key=lambda x: x.level)
+        self.main_personalities.sort(key=lambda x: x.level)
         self.life_deck = Pile('LifeDeck', life_deck_cards, shuffle=True)
         for card in self.life_deck:
             card.set_pile(self.life_deck)
@@ -57,26 +59,19 @@ class Player:
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
 
-        self.personality = self.personality_cards[0]
-        self.personality.init_power_stage_for_main()
-        self.register_card_powers(self.personality.card_powers)
+        self.main_personality = self.main_personalities[0]
+        self.main_personality.init_power_stage_for_main()
+        self.control_personality = self.main_personality
+        self.register_card_powers(self.main_personality.card_powers)
         self.interactive = (self.name() == 'Goku') if State.INTERACTIVE else False
 
     def __repr__(self):
-        name = self.name()
-        level = self.personality.level
-        max_level = len(self.personality_cards)
-        life = len(self.life_deck)
-        non_combat = len(self.allies) + len(self.non_combat) + len(self.drills)
-        anger = self.anger
-        hand = len(self.hand)
-        power = self.personality.power_stage
-        pat_idx = self.personality.get_physical_attack_table_index()
-        return f'{name} (v{level}.{anger}/{life}hp/{power}pow/{pat_idx}atk/{non_combat}nc/{hand}c)'
+        # TODO: Append differentiator if both players are using the same character
+        return f'{self.main_personality.char_name()}'
 
     def name(self):
-        # TODO: Append differentiator if both players are using the same character
-        return self.character.name.title()
+        # TODO: deprecate
+        return f'{self}'
 
     def register_opponent(self, opponent):
         self.opponent = opponent
@@ -129,27 +124,35 @@ class Player:
             if (any(isinstance(card_power, x) for x in card_power_types)
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
-                and not card_power.is_personality_restricted(self.personality)
+                and not card_power.is_personality_restricted(self.control_personality)
                 and card_power.cost.can_afford(self)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
 
     def raise_level(self):
-        next_level = self.personality.level + 1
+        next_level = self.main_personality.level + 1
         next_level_idx = next_level - 1
 
         # Check for win condition
-        if (next_level_idx == len(self.personality_cards) - 1
-            and len(self.personality_cards) >= len(self.opponent.personality_cards)):
+        if (next_level_idx == len(self.main_personalities) - 1
+            and len(self.main_personalities) >= len(self.opponent.main_personalities)):
             dprint(f'{self.name()} levels up to Lv{next_level}!')
             raise GameOver(f'{self.name()} has achieved the Most Powerful Personality', self)
 
         # Upgrade personality if possible
-        if next_level_idx < len(self.personality_cards):
+        if next_level_idx < len(self.main_personalities):
             dprint(f'{self.name()} levels up to Lv{next_level}!')
-            self.exhaust_card(self.personality)
-            self.personality = self.personality_cards[next_level_idx]
-            self.register_card_powers(self.personality.card_powers)
+            self.exhaust_card(self.main_personality)
+
+            # Control personality only updates if it is currently MP
+            if self.control_personality is self.main_personality:
+                self.control_personality = self.main_personalities[next_level_idx]
+            self.main_personality = self.main_personalities[next_level_idx]
+
+            # Register (and deactivate if not in control) new card powers
+            self.register_card_powers(self.main_personality.card_powers)
+            if self.control_personality is not self.main_personality:
+                self.deactivate_card_powers(self.main_personality)
 
             # Discard/exhaust all drills
             while len(self.drills) > 0:
@@ -159,7 +162,7 @@ class Player:
             dprint(f'{self.name()} levels up, but stays at Lv{next_level-1}!')
 
         # Set power to maximum
-        self.personality.set_power_stage_max()
+        self.main_personality.set_power_stage_max()
 
         # Reset anger to 0 if anger reached the maximum
         if self.anger == MAX_ANGER:
@@ -167,23 +170,33 @@ class Player:
 
     def reduce_level(self):
         '''Can be caused by card effects'''
-        next_level = self.personality.level - 1
+        next_level = self.main_personality.level - 1
         next_level_idx = next_level - 1
 
         # Downgrade personality if possible
-        if next_level_idx >= 0:
-            dprint(f'{self.name()} levels down to Lv{next_level}!')
-            self.exhaust_card(self.personality)
-            self.personality = self.personality_cards[next_level_idx]
-            self.register_card_powers(self.personality.card_powers)
+        if next_level_idx < 0:
+            return
 
-            # Discard/exhaust all drills
-            while len(self.drills) > 0:
-                card = self.drills.cards[-1]
-                self.discard(card)
+        dprint(f'{self.name()} levels down to Lv{next_level}!')
+        self.exhaust_card(self.main_personality)
 
-            # Reset power
-            self.personality.init_power_stage_for_main()
+        # Control personality only updates if it is currently MP
+        if self.control_personality is self.main_personality:
+            self.control_personality = self.main_personalities[next_level_idx]
+        self.main_personality = self.main_personalities[next_level_idx]
+
+        # Register (and deactivate if not in control) new card powers
+        self.register_card_powers(self.main_personality.card_powers)
+        if self.control_personality is not self.main_personality:
+            self.deactivate_card_powers(self.main_personality)
+
+        # Discard/exhaust all drills
+        while len(self.drills) > 0:
+            card = self.drills.cards[-1]
+            self.discard(card)
+
+        # Reset power
+        self.main_personality.init_power_stage_for_main()
 
     def adjust_anger(self, count):
         self.anger = max(0, min(MAX_ANGER, self.anger + count))
@@ -345,12 +358,12 @@ class Player:
 
     def apply_power_damage(self, power_damage):
         '''Returns amount of excess damage that could not be applied to target personality'''
-        power_damage = max(0, power_damage)
-        target_personality = self.personality
-        if power_damage:
-            target_personality = self.choose_damage_target()
-            if target_personality is not self.personality:
-                dprint(f'{self.name()} selects {target_personality.name} to take damage')
+        if power_damage <= 0:
+            return 0
+
+        target_personality = self.choose_damage_target()
+        if target_personality is not self.main_personality:
+            dprint(f'{self.name()} selects {target_personality.name} to take damage')
 
         carryover_life_damage = max(0, power_damage - target_personality.power_stage)
         power_damage -= carryover_life_damage
@@ -386,10 +399,31 @@ class Player:
         if discard_count >= 5 and src_personality:
             self.opponent.steal_dragon_ball()
 
+    def determine_control_of_combat(self):
+        if self.main_personality.power_stage < 2 and len(self.allies) > 0:
+            dprint(f'{self.name()} is weak and may select an ally to take control of Combat')
+            # TODO: activate/deactivate
+            self.control_personality = self.choose_personality()
+            if self.control_personality is self.main_personality:
+                dprint(f'{self.name()} has control of Combat')
+            else:
+                dprint(f'{self.control_personality.char_name()} takes control of Combat'
+                       f' for {self.name()}')
+
+    def revert_control_of_combat(self):
+        if self.control_personality is not self.main_personality:
+            # TODO: activate/deactivate
+            dprint(f'{self.name()} resumes control of Combat')
+            self.control_personality = self.main_personality
+
+    def revert_control_of_combat_if_able(self):
+        if self.main_personality.power_stage >= 2:
+            self.revert_control_of_combat()
+
     def show_summary(self):
         '''1-line summary of current state'''
         name = self.name()
-        level = self.personality.level
+        level = self.main_personality.level
         anger = self.anger
         level = f'Lv{level}.{anger}'
 
@@ -401,14 +435,14 @@ class Player:
         dbs = len(self.dragon_balls)
         hand = len(self.hand)
 
-        power = self.personality.power_stage
-        pat_idx = self.personality.get_physical_attack_table_index()
+        power = self.main_personality.power_stage
+        pat_idx = self.main_personality.get_physical_attack_table_index()
         power = f'{power}({pat_idx})'
         dprint(f'{level : <5} {name : <9} {power : >5}pwr {life : >2}hp {discard : >2}dp'
                f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
         for ally in self.allies:
             level = f'Lv{ally.level}'
-            name = ally.character.name.title()
+            name = ally.char_name()
             power = ally.power_stage
             pat_idx = ally.get_physical_attack_table_index()
             power = f'{power}({pat_idx})'
@@ -552,18 +586,31 @@ class Player:
         return self.opponent.dragon_balls.cards[idx]
 
     def choose_damage_target(self):
+        return self.choose_personality(
+            prompt='Select a personality to take power stages of damage')
+
+    def choose_personality(self, prompt=None):
         if len(self.allies) == 0:
-            return self.personality
+            return self.main_personality
+
+        if prompt is None:
+            prompt = 'Select a personality'
 
         names, descriptions = [], []
-        for  personality in ([self.personality] + self.allies.cards):
-            names.append(f'{personality.name} ({personality.power_stage}/10)')
+        for personality in ([self.main_personality] + self.allies.cards):
+            level = (f'Lv{personality.level}.{self.anger}'
+                     if personality is self.main_personality
+                     else f'Lv{personality.level}')
+            name = personality.char_name()
+            power = personality.power_stage
+            pat_idx = personality.get_physical_attack_table_index()
+            power = f'{power}({pat_idx})'
+            names.append(f'{level : <5} {name : <9} {power : >5}pwr')
             descriptions.append(personality.card_text)
 
-        idx = self.choose(names, descriptions, allow_pass=False,
-                          prompt='Select a personality to take power stages of damage')
+        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
         if idx == 0:
-            return self.personality
+            return self.main_personality
         return self.allies.cards[idx-1]
 
     def choose_hand_non_combat_card(self):
@@ -588,13 +635,13 @@ class Player:
                 dup_restricted = any(x.get_name_level() == card.get_name_level()
                                      for x in self.allies + self.opponent.allies)
                 # Cannot be a different hero/villain status than Main Personality
-                hero_restricted = card.is_hero != self.personality.is_hero
+                hero_restricted = card.is_hero != self.main_personality.is_hero
                 # Cannot be the same character as either Main Personality
-                mp_restricted = card.character in [self.personality.character,
-                                                   self.opponent.personality.character]
+                mp_restricted = card.character in [self.main_personality.character,
+                                                   self.opponent.main_personality.character]
 
                 # Cannot be a higher level than Main Personality unless overlaying
-                level_restricted = not is_overlay and (card.level > self.personality.level)
+                level_restricted = not is_overlay and (card.level > self.main_personality.level)
 
                 # Cannot be the same character as an ally you have in play unless overlaying
                 # TODO: Saibaimen exception

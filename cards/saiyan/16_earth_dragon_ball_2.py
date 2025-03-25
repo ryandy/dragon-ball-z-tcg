@@ -22,7 +22,7 @@ CARD_TEXT = ('All foes have their power ratings changed to 2 stages higher than 
 
 class CardPowerEDB2(CardPowerDragonBall):
     def on_play(self, player, phase):
-        player.opponent.personality.set_power_stage(2)
+        player.opponent.main_personality.set_power_stage(2)
         for ally in player.opponent.allies:
             ally.set_power_stage(2)
 
