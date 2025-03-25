@@ -19,12 +19,11 @@ class CombatAttackPhase(Phase):
         self.next_attack_power = None  # attack power to be used for the next combat attack phase
 
     def execute(self):
-        self.player.determine_control_of_combat()
-
         # Very rarely an attack power will be pre-selected for the attack phase
         if self.attack_power_override:
             self.attack_power = self.attack_power_override
         else:
+            self.player.determine_control_of_combat()
             self.attack_power = self.player.choose_card_power(CardPowerAttack)
 
         if not self.attack_power:

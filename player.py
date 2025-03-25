@@ -619,8 +619,12 @@ class Player:
                      else f'Lv{personality.level}')
             name = personality.char_name()
             power = personality.get_power_attack_str()
+            card_power_available = any(
+                x.card is personality and not x.is_floating and not x.is_exhausted()
+                for x in self.card_powers)
+            prefix = '' if card_power_available else '(/) '
             names.append(f'{level : <5} {name : <9} {power : >5}pwr')
-            descriptions.append(personality.card_text)
+            descriptions.append(f'{prefix}{personality.card_text}')
 
         idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
         idx = idx + 1 if skip_main else idx

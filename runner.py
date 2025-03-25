@@ -31,7 +31,7 @@ class Runner:
         self.players[1].register_opponent(self.players[0])
 
     def __repr__(self):
-        return f'{self.players[0]} vs {self.players[1]}'
+        return f'{self.players[0].name} vs {self.players[1].name}'
 
     def run(self):
         while True:
@@ -39,7 +39,7 @@ class Runner:
             try:
                 self.take_turn()
             except GameOver as err:
-                dprint(f'{err.winning_player} wins!')
+                dprint(f'{err.winning_player.name} wins!')
                 dprint(f'{err}')
                 return
             State.TURN += 1
