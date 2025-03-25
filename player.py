@@ -229,7 +229,7 @@ class Player:
             self.recycle_dragon_ball(card)
             return None
 
-        # Check if an unplayable drill was drawn - can shuffle back into deck
+        # Check if an unplayable drill was drawn to hand - can shuffle back into deck
         if (dest_pile is self.hand
             and isinstance(card, DrillCard)
             and card.style != Style.FREESTYLE
@@ -310,6 +310,8 @@ class Player:
 
         if isinstance(card, PersonalityCard) and src_pile is self.allies:
             self.discard_covered_allies(card, remove_from_game=remove_from_game)
+            if self.control_personality is card:
+                self.revert_control_of_combat()
 
     def recycle_dragon_ball(self, card):
         '''Card has already been removed from its source pile, so currently in no-mans-land'''

@@ -56,7 +56,7 @@ class CardPowerAttack(CardPower):
         return card_power_copy
 
     def on_attack(self, player, phase):
-        self.cost.pay(player)
+        self.on_pay_cost(player, phase)
 
         if self.own_anger:
             player.adjust_anger(self.own_anger)
@@ -87,6 +87,9 @@ class CardPowerAttack(CardPower):
             phase.set_end_combat()
 
         self.on_resolved(player, phase)
+
+    def on_pay_cost(self, player, phase):
+        self.cost.pay(player)
 
     def on_success(self, player, phase):
         pass
