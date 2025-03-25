@@ -53,14 +53,12 @@ class Player:
         self.discard_pile = Pile('Discard')
         self.removed_pile = Pile('Removed')
         self.allies = Pile('Allies')
-        # TODO: Need to discard/remove covered allies when the overlaid one leaves play
-        self.covered_allies = Pile('CoveredAllies')  # TODO: change to linked list of cards
         self.non_combat = Pile('Non-Combat')
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
 
         self.main_personality = self.main_personalities[0]
-        self.main_personality.init_power_stage_for_main()
+        self.main_personality.init_for_main()
         self.control_personality = self.main_personality
         self.register_card_powers(self.main_personality.card_powers)
         self.name = self.main_personality.char_name()
@@ -192,7 +190,7 @@ class Player:
             self.discard(card)
 
         # Reset power
-        self.main_personality.init_power_stage_for_main()
+        self.main_personality.init_for_main()
 
     def adjust_anger(self, count):
         self.anger = max(0, min(MAX_ANGER, self.anger + count))
@@ -272,8 +270,16 @@ class Player:
     def remove_from_game(self, card, exhaust_card=True):
         return self.discard(card, remove_from_game=True, exhaust_card=exhaust_card)
 
+    def discard_covered_allies(self, card, remove_from_game=False):
+        covered_ally = card.covered_ally
+        while covered_ally:
+            self.discard(covered_ally, remove_from_game=remove_from_game, card_in_pile=False)
+            covered_ally = covered_ally.covered_ally
+
     def discard(self, card, remove_from_game=False, exhaust_card=True, card_in_pile=True):
         '''Hand/Table -> Discard/Removed'''
+        src_pile = card.pile
+
         if card_in_pile:
             if remove_from_game:
                 assert card.pile is not self.removed_pile
@@ -298,6 +304,9 @@ class Player:
             dprint(f'{self} discards {card}')
             self.discard_pile.add(card)
             card.set_pile(self.discard_pile)
+
+        if isinstance(card, PersonalityCard) and src_pile is self.allies:
+            self.discard_covered_allies(card, remove_from_game=remove_from_game)
 
     def recycle_dragon_ball(self, card):
         '''Card has already been removed from its source pile, so currently in no-mans-land'''
@@ -665,15 +674,13 @@ class Player:
         covered_ally = None
         for ally in self.allies:
             if ally.character == card.character and ally.level == card.level - 1:
+                assert covered_ally is None
                 covered_ally = ally
-                break
 
-        card.init_power_stage_for_ally()
+        card.init_for_ally(covered_ally=covered_ally)
         if covered_ally:
-            card.set_power_stage_max()
             self.exhaust_card(covered_ally)
             self.allies.remove(covered_ally)
-            self.covered_allies.add(covered_ally)
 
         card.pile.remove(card)
         self.allies.add(card)

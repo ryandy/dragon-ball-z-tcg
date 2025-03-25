@@ -28,6 +28,7 @@ class PersonalityCard(Card):
 
         # Play state
         self.power_stage = None
+        self.covered_ally = None  # When an ally overlays another, point to the covered one
 
     def __repr__(self):
         return f'{self.name} (Personality)'
@@ -38,11 +39,14 @@ class PersonalityCard(Card):
     def get_name_level(self):
         return f'{self.character.name}.{self.level}'
 
-    def init_power_stage_for_main(self):
+    def init_for_main(self):
         self.set_power_stage(5)
 
-    def init_power_stage_for_ally(self):
+    def init_for_ally(self, covered_ally=None):
         self.set_power_stage(3)
+        self.covered_ally = covered_ally
+        if covered_ally:
+            self.set_power_stage_max()
 
     def reduce_power_stage(self, amount):
         self.adjust_power_stage(-amount)
@@ -61,12 +65,16 @@ class PersonalityCard(Card):
             return None
         return self.power_stages[self.power_stage]
 
-    def get_physical_attack_table_index(self):
-        power = self.get_power()
+    def get_physical_attack_table_index(self, power=None):
+        if power is None:
+            power = self.get_power()
         if power is None:
             return 0
         index = bisect.bisect_right(PHYSICAL_ATTACK_TABLE_VALUES, power) - 1
         return index
+
+    def get_physical_attack_table_index_max(self):
+        return self.get_physical_attack_table_index(power=self.power_stages[-1])
 
     def power_up(self, is_ally=False, tokui_waza=None):
         if is_ally:
