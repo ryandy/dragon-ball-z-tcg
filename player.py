@@ -63,15 +63,11 @@ class Player:
         self.main_personality.init_power_stage_for_main()
         self.control_personality = self.main_personality
         self.register_card_powers(self.main_personality.card_powers)
-        self.interactive = (self.name() == 'Goku') if State.INTERACTIVE else False
+        self.name = self.main_personality.char_name()
+        self.interactive = (self.name == 'Goku') if State.INTERACTIVE else False
 
     def __repr__(self):
-        # TODO: Append differentiator if both players are using the same character
-        return f'{self.main_personality.char_name()}'
-
-    def name(self):
-        # TODO: deprecate
-        return f'{self}'
+        return self.name
 
     def register_opponent(self, opponent):
         self.opponent = opponent
@@ -136,12 +132,12 @@ class Player:
         # Check for win condition
         if (next_level_idx == len(self.main_personalities) - 1
             and len(self.main_personalities) >= len(self.opponent.main_personalities)):
-            dprint(f'{self.name()} levels up to Lv{next_level}!')
-            raise GameOver(f'{self.name()} has achieved the Most Powerful Personality', self)
+            dprint(f'{self} levels up to Lv{next_level}!')
+            raise GameOver(f'{self} has achieved the Most Powerful Personality', self)
 
         # Upgrade personality if possible
         if next_level_idx < len(self.main_personalities):
-            dprint(f'{self.name()} levels up to Lv{next_level}!')
+            dprint(f'{self} levels up to Lv{next_level}!')
             self.exhaust_card(self.main_personality)
 
             # Control personality only updates if it is currently MP
@@ -159,7 +155,7 @@ class Player:
                 card = self.drills.cards[-1]
                 self.discard(card)
         else:
-            dprint(f'{self.name()} levels up, but stays at Lv{next_level-1}!')
+            dprint(f'{self} levels up, but stays at Lv{next_level-1}!')
 
         # Set power to maximum
         self.main_personality.set_power_stage_max()
@@ -177,7 +173,7 @@ class Player:
         if next_level_idx < 0:
             return
 
-        dprint(f'{self.name()} levels down to Lv{next_level}!')
+        dprint(f'{self} levels down to Lv{next_level}!')
         self.exhaust_card(self.main_personality)
 
         # Control personality only updates if it is currently MP
@@ -208,7 +204,7 @@ class Player:
         for card in self.dragon_balls:
             set_counts[card.db_set] += 1
             if set_counts[card.db_set] == 7:
-                raise GameOver(f'{self.name()} has collected all 7 {card.db_set} Dragon Balls',self)
+                raise GameOver(f'{self} has collected all 7 {card.db_set} Dragon Balls',self)
 
     def draw(self, dest_pile=None):
         '''Life Deck -> Hand/Discard'''
@@ -219,11 +215,11 @@ class Player:
 
         # Check for end-of-game conditions
         if len(self.life_deck) == 0:
-            raise GameOver(f'{self.name()}\'s Life Deck is empty', self.opponent)
+            raise GameOver(f'{self}\'s Life Deck is empty', self.opponent)
         if (dest_pile is self.discard_pile
             and isinstance(card, DragonBallCard)
             and all(isinstance(x, DragonBallCard) for x in self.life_deck)):
-            raise GameOver(f'{self.name()} can take no more life damage', self.opponent)
+            raise GameOver(f'{self} can take no more life damage', self.opponent)
 
         # Check if a dragon ball is being discarded directly from the life deck - recycle it
         if (dest_pile is self.discard_pile
@@ -238,12 +234,12 @@ class Player:
             and card.style != Style.FREESTYLE
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
             if self.interactive:
-                dprint(f'{self.name()} draws unplayable {card.name}')
+                dprint(f'{self} draws unplayable {card.name}')
             idx = self.choose(['Shuffle it back into deck.', 'Keep it.'],
                               ['', ''],
                               allow_pass=False)
             if idx == 0:
-                dprint(f'{self.name()} shuffles unplayable {card.name} back into deck')
+                dprint(f'{self} shuffles unplayable {card.name} back into deck')
                 self.life_deck.add(card)
                 self.life_deck.shuffle()
             return None
@@ -260,9 +256,9 @@ class Player:
     def add_card_to_hand(self, card):
         # Register callbacks for all new combat cards in hand
         if self.interactive:
-            dprint(f'{self.name()} adds {card} to hand')
+            dprint(f'{self} adds {card} to hand')
         else:
-            dprint(f'{self.name()} adds a card to hand')
+            dprint(f'{self} adds a card to hand')
         self.hand.add(card)
         card.set_pile(self.hand)
         if (isinstance(card, CombatCard)
@@ -295,11 +291,11 @@ class Player:
         if isinstance(card, DragonBallCard) and not remove_from_game:
             self.recycle_dragon_ball(card)
         elif remove_from_game:
-            dprint(f'{self.name()} removes {card} from game')
+            dprint(f'{self} removes {card} from game')
             self.removed_pile.add(card)
             card.set_pile(self.removed_pile)
         else:  # discard
-            dprint(f'{self.name()} discards {card}')
+            dprint(f'{self} discards {card}')
             self.discard_pile.add(card)
             card.set_pile(self.discard_pile)
 
@@ -311,7 +307,7 @@ class Player:
             # If this is a duplicate of a dragon ball in play, remove it from the game
             self.discard(card, remove_from_game=True, card_in_pile=False)
         else:
-            dprint(f'{self.name()} recycles {card}')
+            dprint(f'{self} recycles {card}')
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
 
@@ -320,7 +316,7 @@ class Player:
         if not card:
             return
 
-        dprint(f'{self.name()} steals {card.name}!')
+        dprint(f'{self} steals {card.name}!')
         self.opponent.dragon_balls.remove(card)
         self.dragon_balls.add(card)
         card.set_pile(self.dragon_balls)
@@ -328,22 +324,22 @@ class Player:
         for idx in reversed(range(len(self.opponent.card_powers))):
             if self.opponent.card_powers[idx].card is card:
                 card_power = self.opponent.card_powers[idx]
-                dprint(f'{self.name()} takes over {card_power} card power')
+                dprint(f'{self} takes over {card_power} card power')
                 del self.opponent.card_powers[idx]
                 self.register_card_power(card_power)
 
     def rejuvenate(self):
         card = self.discard_pile.remove_top()
         if card:
-            dprint(f'{self.name()} rejuvenates with {card}')
+            dprint(f'{self} rejuvenates with {card}')
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
         else:
-            dprint(f'{self.name()} failed to rejuvenate because the discard pile is empty')
+            dprint(f'{self} failed to rejuvenate because the discard pile is empty')
 
     def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)
-        dprint(f'{self.name()} takes {damage}')
+        dprint(f'{self} takes {damage}')
 
         carryover_life_damage = self.apply_power_damage(damage.power - damage.power_prevent)
         self.apply_life_damage(
@@ -363,7 +359,7 @@ class Player:
 
         target_personality = self.choose_damage_target()
         if target_personality is not self.main_personality:
-            dprint(f'{self.name()} selects {target_personality.name} to take damage')
+            dprint(f'{self} selects {target_personality.name} to take damage')
 
         carryover_life_damage = max(0, power_damage - target_personality.power_stage)
         power_damage -= carryover_life_damage
@@ -393,7 +389,7 @@ class Player:
             card_discarded = self.draw(dest_pile=self.discard_pile)
             if card_discarded:
                 discard_count += 1
-                dprint(f'{self.name()} takes 1 life damage: {card_discarded}')
+                dprint(f'{self} takes 1 life damage: {card_discarded}')
 
         # Check for Dragon Ball Life Card Capture
         if discard_count >= 5 and src_personality:
@@ -401,19 +397,19 @@ class Player:
 
     def determine_control_of_combat(self):
         if self.main_personality.power_stage < 2 and len(self.allies) > 0:
-            dprint(f'{self.name()} is weak and may select an ally to take control of Combat')
+            dprint(f'{self} is weak and may select an ally to take control of Combat')
             # TODO: activate/deactivate
             self.control_personality = self.choose_personality()
             if self.control_personality is self.main_personality:
-                dprint(f'{self.name()} has control of Combat')
+                dprint(f'{self} has control of Combat')
             else:
                 dprint(f'{self.control_personality.char_name()} takes control of Combat'
-                       f' for {self.name()}')
+                       f' for {self}')
 
     def revert_control_of_combat(self):
         if self.control_personality is not self.main_personality:
             # TODO: activate/deactivate
-            dprint(f'{self.name()} resumes control of Combat')
+            dprint(f'{self} resumes control of Combat')
             self.control_personality = self.main_personality
 
     def revert_control_of_combat_if_able(self):
@@ -422,7 +418,7 @@ class Player:
 
     def show_summary(self):
         '''1-line summary of current state'''
-        name = self.name()
+        name = f'{self}'
         level = self.main_personality.level
         anger = self.anger
         level = f'Lv{level}.{anger}'
@@ -577,7 +573,7 @@ class Player:
         for card in self.opponent.dragon_balls:
             suffix = ' (*)' if any(x.card is card for x in card_powers) else ''
             if card.owner is not self.opponent:
-                suffix = f' ({card.owner.name()}\'s){suffix}'
+                suffix = f' ({card.owner}\'s){suffix}'
 
             names.append(f'{card.name}{suffix}')
             descriptions.append(card.card_text)
@@ -661,7 +657,7 @@ class Player:
         return filtered[idx]
 
     def play_ally(self, card):
-        dprint(f'{self.name()} plays {card}')
+        dprint(f'{self} plays {card}')
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
@@ -688,7 +684,7 @@ class Player:
         self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat
 
     def play_drill(self, card):
-        dprint(f'{self.name()} plays {card}')
+        dprint(f'{self} plays {card}')
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
@@ -702,7 +698,7 @@ class Player:
                 if (drill_card is not card
                     and drill_card.restricted
                     and drill_card.style == card.style):
-                    dprint(f'{player.name()}\'s restricted {drill_card.name} invalidated')
+                    dprint(f'{player}\'s restricted {drill_card.name} invalidated')
                     player.discard(drill_card)
 
         for card_power in card.card_powers:
@@ -710,7 +706,7 @@ class Player:
 
     def play_non_combat_card(self, card):
         if isinstance(card, NonCombatCard):
-            dprint(f'{self.name()} plays {card}')
+            dprint(f'{self} plays {card}')
             if not self.interactive:
                 dprint(f'  - {card.card_text}')
             card.pile.remove(card)
@@ -723,7 +719,7 @@ class Player:
         elif isinstance(card, DrillCard):
             self.play_drill(card)
         elif isinstance(card, DragonBallCard):
-            dprint(f'{self.name()} plays {card}')
+            dprint(f'{self} plays {card}')
             if not self.interactive:
                 dprint(f'  - {card.card_text}')
             card.pile.remove(card)

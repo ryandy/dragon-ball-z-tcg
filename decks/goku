@@ -5,7 +5,7 @@
 
 # Allies
 1 saiyan 82 tien lv1
-1 saiyan 83 tien lv1
+1 saiyan 83 tien lv2
 1 saiyan 84 yamcha lv1
 1 saiyan 85 yamcha lv2
 1 saiyan 86 chi-chi lv1
@@ -18,6 +18,10 @@
 3 saiyan 26 gohans physical attack
 4 saiyan 46 goku anger attack
 
+# Combat - Attack/Defense
+3 saiyan 11 blue forward foot sweep
+3 saiyan 66 black knife hand strike
+
 # Combat - Defense
 3 saiyan 28 vegetas physical stance
 3 saiyan 59 blue big outside drop
@@ -26,10 +30,6 @@
 2 saiyan 110 piccolos physical defense
 2 saiyan 250 chiaotzus physical defense
 3 saiyan 218 unexpected allies
-
-# Combat - Attack/Defense
-3 saiyan 11 blue forward foot sweep
-3 saiyan 66 black knife hand strike
 
 # Non-Combat
 3 saiyan 22 power up!

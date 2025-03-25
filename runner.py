@@ -22,6 +22,11 @@ class Runner:
             Player(deck2, self)]
         #random.shuffle(self.players)
 
+        # Disambiguate player names
+        if self.players[0].name == self.players[1].name:
+            self.players[0].name = f'{self.players[0].name}-1'
+            self.players[1].name = f'{self.players[1].name}-2'
+
         self.players[0].register_opponent(self.players[1])
         self.players[1].register_opponent(self.players[0])
 
@@ -34,7 +39,7 @@ class Runner:
             try:
                 self.take_turn()
             except GameOver as err:
-                dprint(f'{err.winning_player.name()} wins!')
+                dprint(f'{err.winning_player} wins!')
                 dprint(f'{err}')
                 return
             State.TURN += 1
@@ -52,7 +57,7 @@ class Runner:
 
     def take_turn(self):
         player = self.players[State.TURN % 2]
-        header = f'========== Turn {State.TURN+1}: {player.name()} =========='
+        header = f'========== Turn {State.TURN+1}: {player} =========='
         border = '=' * len(header)
         dprint(border)
         dprint(header)

@@ -25,7 +25,7 @@ class CombatPhase(Phase):
         self.skipped = not self.player.choose_declare_combat()
 
         if self.skipped:
-            dprint(f'{self.player.name()} chooses to skip combat')
+            dprint(f'{self.player} chooses to skip combat')
 
         if not self.skipped:
             for player in [self.player, self.player.opponent]:
@@ -36,7 +36,7 @@ class CombatPhase(Phase):
         if self.skipped:
             return
         else:
-            dprint(f'{self.player.name()} declares combat!')
+            dprint(f'{self.player} declares combat!')
 
         self.entering_combat()
 
@@ -49,7 +49,7 @@ class CombatPhase(Phase):
         while True:
             dprint()
             dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
-                   f' {attacker.name()} ----------')
+                   f' {attacker} ----------')
             for player in self.players:
                 player.show_summary()
 

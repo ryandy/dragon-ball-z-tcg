@@ -24,18 +24,18 @@ class CombatDefensePhase(Phase):
             [card_power_class, CardPowerAnyDefense],
             prompt='Select a card power for defense')
         if card_power:
-            dprint(f'{self.player.name()} uses {card_power} to defend')
+            dprint(f'{self.player} uses {card_power} to defend')
             if not self.player.interactive:
                 dprint(f'  - {card_power.description}')
             damage = card_power.on_defense(self.player, self, damage)
         else:
-            dprint(f'{self.player.name()} has no defense')
+            dprint(f'{self.player} has no defense')
 
         if not damage.was_stopped():
             # Activate a relevant defense shield
             shield_card_power = self.player.choose_defense_shield(is_physical=is_physical)
             if shield_card_power:
-                dprint(f'{self.player.name()} activates Defense Shield: {shield_card_power}')
+                dprint(f'{self.player} activates Defense Shield: {shield_card_power}')
                 damage = shield_card_power.on_defense(self.player, self, damage)
 
         return damage

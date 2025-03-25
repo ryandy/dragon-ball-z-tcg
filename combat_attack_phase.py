@@ -29,14 +29,14 @@ class CombatAttackPhase(Phase):
 
         if not self.attack_power:
             self.passed = True
-            dprint(f'{self.player.name()} passes')
+            dprint(f'{self.player} passes')
             return
 
         damage_mod_srcs = []
         if self.attack_power.is_physical is None:  # Non-combat attacks
-            dprint(f'{self.player.name()} uses {self.attack_power} (Non-Combat)')
+            dprint(f'{self.player} uses {self.attack_power} (Non-Combat)')
         else:
-            dprint(f'{self.player.name()} attacks with {self.attack_power}')
+            dprint(f'{self.player} attacks with {self.attack_power}')
         if not self.player.interactive:
             dprint(f'  - {self.attack_power.description}')
 
@@ -71,7 +71,7 @@ class CombatAttackPhase(Phase):
     def _attack(self, damage, is_physical=None):
         # Damage estimate is most helpful/accurate here
         damage_estimate, damage_mod_srcs = self._get_damage(self.attack_power.damage)
-        dprint(f'{self.player.name()}\'s attack damage estimate: {damage_estimate}')
+        dprint(f'{self.player}\'s attack damage estimate: {damage_estimate}')
         if damage_mod_srcs:
             for damage_mod_src in damage_mod_srcs:
                 dprint(f'  - Damage modified by {damage_mod_src}')
@@ -108,12 +108,12 @@ class CombatAttackPhase(Phase):
                     mod = odm_card_power.on_physical_damage_modification(self.player, self)
                     if mod:
                         damage_mods.append(mod)
-                        damage_mod_srcs.append(f'{player.name()}\'s: {odm_card_power}')
+                        damage_mod_srcs.append(f'{player}\'s: {odm_card_power}')
                 elif self.attack_power.is_physical is False:
                     mod = odm_card_power.on_energy_damage_modification(self.player, self)
                     if mod:
                         damage_mods.append(mod)
-                        damage_mod_srcs.append(f'{player.name()}\'s: {odm_card_power}')
+                        damage_mod_srcs.append(f'{player}\'s: {odm_card_power}')
         damage_copy = base_damage.copy()
         damage_copy.modify(damage_mods)
         return damage_copy.resolve(self.player), damage_mod_srcs

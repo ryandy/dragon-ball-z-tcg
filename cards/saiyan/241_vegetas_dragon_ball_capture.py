@@ -26,8 +26,8 @@ class CardPowerVDBC(CardPowerNonCombatAttack):
             card = player.choose_opponent_dragon_ball(
                 prompt='Select a Dragon Ball to capture')
             if card:
-                dprint(f'{player.name()} captures {card.name}, returning it to'
-                       f' {card.owner.name()}\'s life deck')
+                dprint(f'{player} captures {card.name}, returning it to'
+                       f' {card.owner}\'s life deck')
                 player.opponent.exhaust_card(card)
                 player.opponent.dragon_balls.remove(card)
                 card.owner.life_deck.add_bottom(card)

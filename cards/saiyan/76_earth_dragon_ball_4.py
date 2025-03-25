@@ -30,7 +30,7 @@ class CardPowerEDB4(CardPowerDragonBall):
         class CardPowerEDB4_OnCombatDeclared(CardPowerOnCombatDeclared):
             def on_combat_declared(_self, _player, _phase):
                 if _phase.player is not _player:
-                    dprint(f'{_player.name()}\'s {_self.name} ends combat')
+                    dprint(f'{_player}\'s {_self.name} ends combat')
                     _phase.skipped = True
                     _player.exhaust_card_power(_self)
 
