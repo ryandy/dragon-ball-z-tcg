@@ -602,15 +602,18 @@ class Player:
         return self.choose_personality(
             prompt=f'Select a personality to {verb} {abs(power)} power stage(s)')
 
-    def choose_personality(self, prompt=None):
+    def choose_personality(self, skip_main=False, prompt=None):
+        if skip_main:
+            assert len(self.allies) > 0
+
         if len(self.allies) == 0:
             return self.main_personality
 
-        if prompt is None:
-            prompt = 'Select a personality'
-
         names, descriptions = [], []
-        for personality in ([self.main_personality] + self.allies.cards):
+        personalities = [] if skip_main else [self.main_personality]
+        personalities.extend(self.allies.cards)
+        prompt = prompt or 'Select a personality'
+        for personality in personalities:
             level = (f'Lv{personality.level}.{self.anger}'
                      if personality is self.main_personality
                      else f'Lv{personality.level}')
@@ -620,6 +623,7 @@ class Player:
             descriptions.append(personality.card_text)
 
         idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
+        idx = idx + 1 if skip_main else idx
         if idx == 0:
             return self.main_personality
         return self.allies.cards[idx-1]
