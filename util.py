@@ -6,19 +6,25 @@ from state import State
 
 _dprint_time = None
 def dprint(msg=''):
-    global _dprint_time
+    _print_with_width_and_indent(msg)
 
+
+def _wait():
+    global _dprint_time
     # Track time of last dprint and sleep until target period before the next print
     if State.INTERACTIVE and _dprint_time is not None:
         print_period = 1.0 / State.PRINT_FREQUENCY
         time_elapsed = time.time() - _dprint_time
         time.sleep(max(0, print_period - time_elapsed))
-
     _dprint_time = time.time()
-    _print_with_width_and_indent(msg)
 
 
 def _print_with_width_and_indent(msg):
+    if not msg:
+        _wait()
+        print()
+        return
+
     count = 0
     indent = _get_indent(msg)
     while len(msg):
@@ -31,6 +37,7 @@ def _print_with_width_and_indent(msg):
             width += 1
         chunk = msg[:width]
         msg = msg[width:]
+        _wait()
         print(chunk)
         count += 1
 

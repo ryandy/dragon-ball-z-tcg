@@ -54,7 +54,7 @@ class Player:
         self.removed_pile = Pile('Removed')
         self.allies = Pile('Allies')
         # TODO: Need to discard/remove covered allies when the overlaid one leaves play
-        self.covered_allies = Pile('CoveredAllies')  # Temporary home for overlaid allies
+        self.covered_allies = Pile('CoveredAllies')  # TODO: change to linked list of cards
         self.non_combat = Pile('Non-Combat')
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
@@ -380,7 +380,7 @@ class Player:
             and src_personality
             and src_personality.character.can_steal_dragon_balls()):
             # Opponent can choose to steal or deal the damage
-            dprint(f'{self.opponent.name()} can steal a dragon ball instead of'
+            dprint(f'{src_personality} can steal a dragon ball instead of'
                    f' dealing {life_damage} life damage')
             idx = self.opponent.choose(
                 ['Steal a Dragon Ball.'], ['Deal the damage.'], [''], allow_pass=False)
@@ -626,32 +626,7 @@ class Player:
                 if not dup_restricted:
                     filtered.append(card)
             elif isinstance(card, PersonalityCard):
-                is_overlay = any(
-                    (x.character == card.character and x.level == card.level - 1)
-                    for x in self.allies)
-
-                # Cannot be the same character/level as any ally in play
-                # TODO: Saibaimen exception
-                dup_restricted = any(x.get_name_level() == card.get_name_level()
-                                     for x in self.allies + self.opponent.allies)
-                # Cannot be a different hero/villain status than Main Personality
-                hero_restricted = card.is_hero != self.main_personality.is_hero
-                # Cannot be the same character as either Main Personality
-                mp_restricted = card.character in [self.main_personality.character,
-                                                   self.opponent.main_personality.character]
-
-                # Cannot be a higher level than Main Personality unless overlaying
-                level_restricted = not is_overlay and (card.level > self.main_personality.level)
-
-                # Cannot be the same character as an ally you have in play unless overlaying
-                # TODO: Saibaimen exception
-                char_restricted = not is_overlay and any(
-                    x.character == card.character for x in self.allies)
-                if (not dup_restricted
-                    and not hero_restricted
-                    and not mp_restricted
-                    and not level_restricted
-                    and not char_restricted):
+                if card.can_be_played_as_ally(self):
                     filtered.append(card)
             elif isinstance(card, DrillCard):
                 # Styled drills cannot be played if they are duplicates of a drill you have in
@@ -685,55 +660,73 @@ class Player:
             return None
         return filtered[idx]
 
-    def play_non_combat_card(self, card):
-        self.hand.remove(card)
-
+    def play_ally(self, card):
         dprint(f'{self.name()} plays {card}')
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
+        # TODO: Saibaimen can choose whether/which to overlay
+        covered_ally = None
+        for ally in self.allies:
+            if ally.character == card.character and ally.level == card.level - 1:
+                covered_ally = ally
+                break
+
+        card.init_power_stage_for_ally()
+        if covered_ally:
+            card.set_power_stage_max()
+            self.exhaust_card(covered_ally)
+            self.allies.remove(covered_ally)
+            self.covered_allies.add(covered_ally)
+
+        card.pile.remove(card)
+        self.allies.add(card)
+        card.set_pile(self.allies)
+
+        for card_power in card.card_powers:
+            self.register_card_power(card_power)
+        self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat
+
+    def play_drill(self, card):
+        dprint(f'{self.name()} plays {card}')
+        if not self.interactive:
+            dprint(f'  - {card.card_text}')
+
+        card.pile.remove(card)
+        self.drills.add(card)
+        card.set_pile(self.drills)
+
+        # Discard any newly invalidated restricted drills
+        for player in [self, self.opponent]:
+            for drill_card in player.drills:
+                if (drill_card is not card
+                    and drill_card.restricted
+                    and drill_card.style == card.style):
+                    dprint(f'{player.name()}\'s restricted {drill_card.name} invalidated')
+                    player.discard(drill_card)
+
+        for card_power in card.card_powers:
+            self.register_card_power(card_power)
+
+    def play_non_combat_card(self, card):
         if isinstance(card, NonCombatCard):
+            dprint(f'{self.name()} plays {card}')
+            if not self.interactive:
+                dprint(f'  - {card.card_text}')
+            card.pile.remove(card)
             self.non_combat.add(card)
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
         elif isinstance(card, PersonalityCard):
-            # TODO: Saibaimen can choose whether/which to overlay
-            covered_ally = None
-            for ally in self.allies:
-                if ally.character == card.character and ally.level == card.level - 1:
-                    covered_ally = ally
-                    break
-
-            card.init_power_stage_for_ally()
-            if covered_ally:
-                card.set_power_stage_max()
-                self.exhaust_card(covered_ally)
-                self.allies.remove(covered_ally)
-                self.covered_allies.add(covered_ally)
-
-            self.allies.add(card)
-            card.set_pile(self.allies)
-
-            for card_power in card.card_powers:
-                self.register_card_power(card_power)
-            self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat
+            self.play_ally(card)
         elif isinstance(card, DrillCard):
-            self.drills.add(card)
-            card.set_pile(self.drills)
-
-            # Discard any newly invalidated restricted drills
-            for player in [self, self.opponent]:
-                for drill_card in player.drills:
-                    if (drill_card is not card
-                        and drill_card.restricted
-                        and drill_card.style == card.style):
-                        dprint(f'{player.name()}\'s restricted {drill_card.name} invalidated')
-                        player.discard(drill_card)
-
-            for card_power in card.card_powers:
-                self.register_card_power(card_power)
+            self.play_drill(card)
         elif isinstance(card, DragonBallCard):
+            dprint(f'{self.name()} plays {card}')
+            if not self.interactive:
+                dprint(f'  - {card.card_text}')
+            card.pile.remove(card)
             self.dragon_balls.add(card)
             card.set_pile(self.dragon_balls)
             self.check_for_dragon_ball_victory()

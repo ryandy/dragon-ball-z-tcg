@@ -77,6 +77,35 @@ class PersonalityCard(Card):
             increment = self.power_up_rating
         self.power_stage = min(self.power_stage + increment, POWER_STAGES_LEN - 1)
 
+    def can_be_played_as_ally(self, player):
+        is_overlay = any(
+            (x.character == self.character and x.level == self.level - 1)
+            for x in player.allies)
+
+        # Cannot be the same character/level as any ally in play
+        # TODO: Saibaimen exception
+        dup_restricted = any(x.get_name_level() == self.get_name_level()
+                             for x in player.allies + player.opponent.allies)
+        # Cannot be a different hero/villain status than Main Personality
+        hero_restricted = self.is_hero != player.main_personality.is_hero
+        # Cannot be the same character as either Main Personality
+        mp_restricted = self.character in [player.main_personality.character,
+                                           player.opponent.main_personality.character]
+
+        # Cannot be a higher level than Main Personality unless overlaying
+        level_restricted = not is_overlay and (self.level > player.main_personality.level)
+
+        # Cannot be the same character as an ally you have in play unless overlaying
+        # TODO: Saibaimen exception
+        char_restricted = not is_overlay and any(
+            x.character == self.character for x in player.allies)
+
+        return (not dup_restricted
+                and not hero_restricted
+                and not mp_restricted
+                and not level_restricted
+                and not char_restricted)
+
     @classmethod
     def from_spec(cls, card_module):
         card = cls(
