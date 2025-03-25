@@ -65,6 +65,8 @@ class Player:
         self.interactive = (self.name == 'Goku') if State.INTERACTIVE else False
 
     def __repr__(self):
+        if self.control_personality is not self.main_personality:
+            return f'{self.name}/{self.control_personality.char_name()}'
         return self.name
 
     def register_opponent(self, opponent):
@@ -385,7 +387,7 @@ class Player:
             and src_personality
             and src_personality.character.can_steal_dragon_balls()):
             # Opponent can choose to steal or deal the damage
-            dprint(f'{src_personality} can steal a dragon ball instead of'
+            dprint(f'{src_personality.char_name()} can steal a dragon ball instead of'
                    f' dealing {life_damage} life damage')
             idx = self.opponent.choose(
                 ['Steal a Dragon Ball.'], ['Deal the damage.'], [''], allow_pass=False)
@@ -406,20 +408,26 @@ class Player:
 
     def determine_control_of_combat(self):
         if self.main_personality.power_stage < 2 and len(self.allies) > 0:
-            dprint(f'{self} is weak and may select an ally to take control of Combat')
-            # TODO: activate/deactivate
-            self.control_personality = self.choose_personality()
+            dprint(f'{self.name} is weak and may select an ally to take control of Combat')
+
+            new_control_personality = self.choose_personality()
+            if self.control_personality is not new_control_personality:
+                self.deactivate_card_powers(self.control_personality)
+                self.control_personality = new_control_personality
+                self.activate_card_powers(self.control_personality)
+
             if self.control_personality is self.main_personality:
                 dprint(f'{self} has control of Combat')
             else:
                 dprint(f'{self.control_personality.char_name()} takes control of Combat'
-                       f' for {self}')
+                       f' for {self.name}')
 
     def revert_control_of_combat(self):
         if self.control_personality is not self.main_personality:
-            # TODO: activate/deactivate
-            dprint(f'{self} resumes control of Combat')
+            self.deactivate_card_powers(self.control_personality)
+            dprint(f'{self.name} resumes control of Combat')
             self.control_personality = self.main_personality
+            self.activate_card_powers(self.control_personality)
 
     def revert_control_of_combat_if_able(self):
         if self.main_personality.power_stage >= 2:
@@ -427,7 +435,7 @@ class Player:
 
     def show_summary(self):
         '''1-line summary of current state'''
-        name = f'{self}'
+        name = self.name
         level = self.main_personality.level
         anger = self.anger
         level = f'Lv{level}.{anger}'
