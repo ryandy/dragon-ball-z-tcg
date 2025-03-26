@@ -33,18 +33,22 @@ class CardPowerGPA(CardPowerPhysicalAttack):
             player.add_card_to_hand(card)
 
     def on_resolved(self, player, phase):
-        if player.control_personality.character != Character.GOKU:
-            return super().on_resolved(player, phase)
-
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
             player.exhaust_card_power(self)
-        else:
-            self.exhaust_after_this_turn()
-            player.remove_from_game(self.card, exhaust_card=False)
-            self.set_floating()
+            return
+
+        # First time through, if not Goku, exhaust/remove as normal
+        if player.control_personality.character != Character.GOKU:
+            super().on_resolved(player, phase)
+            return
+
+        # Used by Goku, set up for second use
+        self.exhaust_after_this_turn()
+        player.remove_from_game(self.card, exhaust_card=False)
+        self.set_floating()
 
 
 CARD_POWER = CardPowerGPA(NAME, CARD_TEXT, remove_from_game=True)

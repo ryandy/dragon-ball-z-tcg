@@ -27,18 +27,22 @@ class CardPowerGED(CardPowerEnergyDefense):
         self.resolved_count = 0
 
     def on_resolved(self, player, phase):
-        if player.character != Character.GOKU:
-            return super().on_resolved(player, phase)
-
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
             player.exhaust_card_power(self)
-        else:
-            self.exhaust_after_this_turn()
-            player.discard(self.card, exhaust_card=False)
-            self.set_floating()
+            return
+
+        # First time through, if not Goku, exhaust/remove as normal
+        if player.character != Character.GOKU:
+            super().on_resolved(player, phase)
+            return
+
+        # Used by Goku, set up for second use
+        self.exhaust_after_this_turn()
+        player.discard(self.card, exhaust_card=False)
+        self.set_floating()
 
 
 CARD_POWER = CardPowerGED(NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=3))

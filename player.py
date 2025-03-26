@@ -207,12 +207,13 @@ class Player:
             if set_counts[card.db_set] == 7:
                 raise GameOver(f'{self} has collected all 7 {card.db_set} Dragon Balls',self)
 
-    def draw(self, dest_pile=None):
+    def draw(self, card=None, dest_pile=None):
         '''Life Deck -> Hand/Discard'''
         if dest_pile is None:
             dest_pile = self.hand
 
-        card = self.life_deck.draw()
+        if card is None:
+            card = self.life_deck.draw()
 
         # Check for end-of-game conditions
         if len(self.life_deck) == 0:
@@ -243,7 +244,9 @@ class Player:
                 dprint(f'{self} shuffles unplayable {card.name} back into deck')
                 self.life_deck.add(card)
                 self.life_deck.shuffle()
-            return None
+                if card.pile is not self.life_deck:
+                    card.set_pile(self.life_deck)
+                return None
 
         # Adding cards to hand requires some special handling
         if dest_pile is self.hand:

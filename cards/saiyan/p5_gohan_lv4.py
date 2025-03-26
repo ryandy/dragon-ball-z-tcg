@@ -1,0 +1,22 @@
+import sys
+
+from card_power_attack import CardPowerEnergyAttack, CardPowerMultiForm
+from cost import Cost
+from damage import Damage
+from damage_modifier import DamageModifier
+
+
+TYPE = 'Personality'
+NAME = 'Gohan Lv4'
+LEVEL = 4
+SAGA = 'Saiyan'
+CARD_NUMBER = 'P5'
+RARITY = 2
+DECK_LIMIT = 1
+CHARACTER = 'Gohan'
+IS_HERO = True
+POWER_UP_RATING = 4
+POWER_STAGES = range(3200, 7700+1, 500)
+CARD_TEXT = ('Draws an extra card from the bottom of the discard pile for this combat.')
+
+CARD_POWER = CardPowerOnDraw(NAME, CARD_TEXT, own_draw_from_discard_add=1)
