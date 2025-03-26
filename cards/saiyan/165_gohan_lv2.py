@@ -39,7 +39,6 @@ class CardPowerKongGohan(CardPowerPhysicalAttack):
 
     def on_secondary_effects(self, player, phase):
         # Store this property regardless of attack success
-        print('RMA HERE')
         setattr(self.card, '_kong_gohan_used', True)
 
 

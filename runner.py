@@ -18,7 +18,7 @@ class Runner:
         State.COMBAT_ROUND = 0
 
         self.players = [
-            Player(deck1, self),
+            Player(deck1, self, interactive=State.INTERACTIVE),
             Player(deck2, self)]
         #random.shuffle(self.players)
 

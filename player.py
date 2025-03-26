@@ -25,8 +25,9 @@ MAX_ANGER = 5
 
 
 class Player:
-    def __init__(self, deck, state):
+    def __init__(self, deck, state, interactive=False):
         self.state = state
+        self.interactive = interactive
         self.character = deck.cards[0].character
         self.main_personalities = []
         self.main_personality = None
@@ -62,7 +63,6 @@ class Player:
         self.control_personality = self.main_personality
         self.register_card_powers(self.main_personality.card_powers)
         self.name = self.main_personality.char_name()
-        self.interactive = (self.name == 'Goku') if State.INTERACTIVE else False
 
     def __repr__(self):
         if self.control_personality is not self.main_personality:

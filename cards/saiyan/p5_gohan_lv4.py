@@ -1,6 +1,7 @@
 import sys
 
-from card_power_attack import CardPowerEnergyAttack, CardPowerMultiForm
+from card_power_attack import CardPowerPhysicalAttack, CardPowerEnergyAttack
+from card_power_on_draw import CardPowerOnDraw
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier

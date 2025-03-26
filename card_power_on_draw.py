@@ -18,6 +18,7 @@ class CardPowerOnDraw(CardPower):
         return copy.copy(self)
 
     def on_draw(self, phase):
+        # Note: may need to distinguish between whose turn it is (attacking vs defending)
         if self.player is phase.player:
             phase.draw_count += self.own_draw_add
             phase.discard_pile_draw_count += self.own_draw_from_discard_add
