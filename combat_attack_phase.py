@@ -81,18 +81,21 @@ class CombatAttackPhase(Phase):
         else:
             damage = defense_phase.energy_defense(damage)
 
+        # Refresh damage mods
+        damage, _ = self._get_damage(damage)
+
         # TODO: on_attack_resolved
+        #       Or below damage application
+        # TODO: Search for "on ____ attack success" card powers
+        # e.g. Vegeta Lv3
 
         if not damage.was_stopped():
-            # Refresh damage mods
-            final_damage, _ = self._get_damage(damage)
-
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(
-                    final_damage, src_personality=self.player.control_personality)
+                    damage, src_personality=self.player.control_personality)
             else:
                 self.player.opponent.apply_energy_attack_damage(
-                    final_damage, src_personality=self.player.control_personality)
+                    damage, src_personality=self.player.control_personality)
 
         return not damage.was_stopped()
 

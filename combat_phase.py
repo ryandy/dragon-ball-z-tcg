@@ -40,7 +40,7 @@ class CombatPhase(Phase):
 
         self.entering_combat()
 
-        opp_draw_phase = DrawPhase(self.player.opponent)
+        opp_draw_phase = DrawPhase(self.player.opponent, is_attacker=False)
         opp_draw_phase.execute()
 
         pass_count = 0

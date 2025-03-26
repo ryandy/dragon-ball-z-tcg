@@ -20,4 +20,7 @@ POWER_UP_RATING = 4
 POWER_STAGES = range(3200, 7700+1, 500)
 CARD_TEXT = ('Draws an extra card from the bottom of the discard pile for this combat.')
 
-CARD_POWER = CardPowerOnDraw(NAME, CARD_TEXT, own_draw_from_discard_add=1)
+CARD_POWER = CardPowerOnDraw(
+    NAME, CARD_TEXT, exhaust=False, discard=False,
+    own_attack_draw_from_discard_add=1,
+    own_defend_draw_from_discard_add=1)

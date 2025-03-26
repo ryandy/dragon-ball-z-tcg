@@ -65,7 +65,7 @@ class Runner:
 
         self.beginning_of_turn()
 
-        draw_phase = DrawPhase(player)
+        draw_phase = DrawPhase(player, is_attacker=True)
         draw_phase.execute()
 
         non_combat_phase = NonCombatPhase(player)

@@ -575,6 +575,11 @@ class Player:
             return False
         return True
 
+    def choose_to_use_card_power(self, card_power):
+        idx = self.choose([f'Use {card_power}'], [card_power.description],
+                          prompt=f'You can use {card_power} now')
+        return idx == 0
+
     def choose_opponent_dragon_ball(self, prompt=None):
         if not self.opponent.dragon_balls.cards:
             return None

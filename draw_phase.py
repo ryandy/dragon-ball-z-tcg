@@ -6,8 +6,9 @@ from phase import Phase
 
 
 class DrawPhase(Phase):
-    def __init__(self, player):
+    def __init__(self, player, is_attacker=None):
         self.player = player
+        self.is_attacker = is_attacker
         self.draw_count = 3
         self.discard_pile_draw_count = 0
 
@@ -22,5 +23,5 @@ class DrawPhase(Phase):
 
         for _ in range(self.discard_pile_draw_count):
             if len(self.player.discard_pile) > 0:
-                card = self.player.dicard_pile.draw_from_bottom()
+                card = self.player.discard_pile.draw_from_bottom()
                 self.player.draw(card=card)
