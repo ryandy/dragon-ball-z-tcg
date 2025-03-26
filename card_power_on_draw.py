@@ -11,7 +11,7 @@ class CardPowerOnDraw(CardPower):
                  opp_attack_draw_add=None, opp_defend_draw_add=None,
                  own_attack_draw_from_discard_add=None,
                  own_defend_draw_from_discard_add=None,
-                 exhaust=True, discard=True, remove_from_game=False):
+                 choice=False, exhaust=True, discard=True, remove_from_game=False):
         super().__init__(name, description, Cost.none())
         self.own_attack_draw_add = own_attack_draw_add or 0
         self.own_defend_draw_add = own_defend_draw_add or 0
@@ -19,6 +19,7 @@ class CardPowerOnDraw(CardPower):
         self.opp_defend_draw_add = opp_defend_draw_add or 0
         self.own_attack_draw_from_discard_add = own_attack_draw_from_discard_add or 0
         self.own_defend_draw_from_discard_add = own_defend_draw_from_discard_add or 0
+        self.choice = choice
         self.exhaust = exhaust
         self.discard = discard
         self.remove_from_game = remove_from_game
@@ -44,6 +45,10 @@ class CardPowerOnDraw(CardPower):
         )
 
         if activated:
+            self.on_activated(phase)
+
+    def on_activated(self, phase):
+        if not self.choice or self.player.choose_to_use_card_power(self):
             phase.draw_count += self.own_attack_draw_add
             phase.discard_pile_draw_count += self.own_attack_draw_from_discard_add
             phase.draw_count += self.own_defend_draw_add

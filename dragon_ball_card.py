@@ -22,6 +22,12 @@ class DragonBallCard(Card):
                 and self.db_set == other_card.db_set
                 and self.db_number == other_card.db_number)
 
+    def can_be_played(self, player):
+        # Only 1 of each Dragon Ball set/number can be on the table at a time
+        dup_restricted = any(self.is_duplicate(x)
+                             for x in player.dragon_balls + player.opponent.dragon_balls)
+        return not dup_restricted
+
     @classmethod
     def from_spec(cls, card_module):
         card = cls(

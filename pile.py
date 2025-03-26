@@ -6,13 +6,11 @@ from card import Card
 
 class Pile:
     '''0-index represents the bottom of the pile'''
-    def __init__(self, name, cards=None, shuffle=False):
+    def __init__(self, name, cards=None):
         self.name = name
         if cards is None:
             cards = []
         self.cards = list(cards)
-        if shuffle:
-            self.shuffle()
 
     def __repr__(self):
         return f'{self.name.title()}({len(self)})'
@@ -36,12 +34,12 @@ class Pile:
     def draw(self):
         if not self.cards:
             return None
-        return self.cards.pop()
+        return self._pop()
 
     def draw_from_bottom(self):
         if not self.cards:
             return None
-        return self.cards.pop(0)
+        return self._pop(0)
 
     def remove(self, card_or_idx):
         if isinstance(card_or_idx, Card):
@@ -53,7 +51,7 @@ class Pile:
             idx = card_or_idx
         if idx >= len(self):
             return None
-        return self.cards.pop(idx)
+        return self._pop(idx)
 
     def add(self, card):
         '''place card at top of pile'''
@@ -66,3 +64,6 @@ class Pile:
     def add_bottom(self, card):
         '''place card at bottom of pile'''
         self.cards.insert(0, card)
+
+    def _pop(self, idx=-1):
+        return self.cards.pop(idx)

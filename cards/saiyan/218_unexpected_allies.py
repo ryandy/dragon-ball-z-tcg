@@ -27,9 +27,9 @@ class CardPowerUA(CardPowerAnyDefense):
         super().on_secondary_effects(player, phase)
 
         cards, names, descriptions = [], [], []
-        for card in (player.life_deck.cards + player.discard_pile.cards):
+        for card in (player.life_deck + player.discard_pile):
             if (isinstance(card, PersonalityCard)
-                and card.can_be_played_as_ally(player)):
+                and card.can_be_played(player)):
                 cards.append(card)
                 names.append(f'{card.name} ({card.pile.name})')
                 descriptions.append(card.card_text)

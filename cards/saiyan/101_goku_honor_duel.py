@@ -19,7 +19,8 @@ STYLE = None
 CARD_TEXT = ('Use when entering Combat as the defender. Instead of drawing 3 cards from your life '
              'deck, draw the bottom 3 cards from your discard pile. Remove from the game after use')
 
+# TODO: what if this power gets used twice in one turn? Drawing 6 from discard doesn't sound right..
 CARD_POWER = CardPowerOnDraw(
-    NAME, CARD_TEXT, remove_from_game=True,
+    NAME, CARD_TEXT, choice=True, remove_from_game=True,
     own_defend_draw_add=-3,
     own_defend_draw_from_discard_add=3)

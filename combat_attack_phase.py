@@ -1,15 +1,18 @@
 import sys
 
 from card_power_attack import CardPowerAttack
+from card_power_on_attack_resolved import CardPowerOnAttackResolved
 from card_power_on_damage_modification import CardPowerOnDamageModification
 from combat_defense_phase import CombatDefensePhase
 from phase import Phase
+from state import State
 from util import dprint
 
 
 class CombatAttackPhase(Phase):
-    def __init__(self, player, attack_power_override=None):
+    def __init__(self, player, combat_phase, attack_power_override=None):
         self.player = player
+        self.combat_phase = combat_phase
         self.attack_power_override = attack_power_override
 
         self.attack_power = None
@@ -19,6 +22,8 @@ class CombatAttackPhase(Phase):
         self.next_attack_power = None  # attack power to be used for the next combat attack phase
 
     def execute(self):
+        State.PHASE = self
+
         # Very rarely an attack power will be pre-selected for the attack phase
         if self.attack_power_override:
             self.attack_power = self.attack_power_override
@@ -50,8 +55,8 @@ class CombatAttackPhase(Phase):
         for player in [self.player, self.player.opponent]:
             player.revert_control_of_combat_if_able()
 
-    def set_end_combat(self):
-        self.end_combat = True
+    def set_force_end_combat(self):
+        self.combat_phase.set_force_end_combat()
 
     def set_skip_next_attack_phase(self):
         self.skip_next_attack_phase = True
@@ -75,7 +80,7 @@ class CombatAttackPhase(Phase):
             for damage_mod_src in damage_mod_srcs:
                 dprint(f'  - Damage modified by {damage_mod_src}')
 
-        defense_phase = CombatDefensePhase(self.player.opponent)
+        defense_phase = CombatDefensePhase(self.player.opponent, self.combat_phase, self)
         if is_physical:
             damage = defense_phase.physical_defense(damage)
         else:
@@ -84,11 +89,6 @@ class CombatAttackPhase(Phase):
         # Refresh damage mods
         damage, _ = self._get_damage(damage)
 
-        # TODO: on_attack_resolved
-        #       Or below damage application
-        # TODO: Search for "on ____ attack success" card powers
-        # e.g. Vegeta Lv3
-
         if not damage.was_stopped():
             if is_physical:
                 self.player.opponent.apply_physical_attack_damage(
@@ -96,6 +96,11 @@ class CombatAttackPhase(Phase):
             else:
                 self.player.opponent.apply_energy_attack_damage(
                     damage, src_personality=self.player.control_personality)
+
+        for player in [self.player, self.player.opponent]:
+            card_powers = player.get_valid_card_powers(CardPowerOnAttackResolved)
+            for card_power in card_powers:
+                card_power.on_attack_resolved(self, damage, is_physical)
 
         return not damage.was_stopped()
 

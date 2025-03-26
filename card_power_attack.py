@@ -16,7 +16,7 @@ class CardPowerAttack(CardPower):
                  cost=None, damage=None, damage_modifier=None, rejuvenate_count=None,
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None,
-                 end_combat=None,
+                 force_end_combat=None,
                  exhaust=True, discard=True, remove_from_game=False,
                  is_floating=None, card=None):
         if cost is None:
@@ -43,7 +43,7 @@ class CardPowerAttack(CardPower):
         self.opp_anger = opp_anger
         self.main_power = main_power
         self.any_power = any_power
-        self.end_combat = end_combat
+        self.force_end_combat = force_end_combat
         self.exhaust = exhaust
         self.discard = discard
         self.remove_from_game = remove_from_game
@@ -72,8 +72,8 @@ class CardPowerAttack(CardPower):
 
         self.on_resolved(player, phase)
 
-        if self.end_combat:
-            phase.set_end_combat()
+        if self.force_end_combat:
+            phase.set_force_end_combat()
 
     def on_pay_cost(self, player, phase):
         self.cost.pay(player)
@@ -103,7 +103,7 @@ class CardPowerAttack(CardPower):
                 player.exhaust_card(self.card)
             else:
                 player.exhaust_card_power(self)
-        else:
+        else:  # TODO: separate flag for exhaust_until_next_turn
             if self.card:
                 player.exhaust_card_until_next_turn(card=self.card)
             else:

@@ -13,6 +13,10 @@ class CombatPhase(Phase):
         self.player = player
         self.players = players
         self.skipped = True
+        self.force_end_combat = False
+
+    def set_force_end_combat(self):
+        self.force_end_combat = True
 
     def entering_combat(self):
         pass
@@ -22,6 +26,8 @@ class CombatPhase(Phase):
             player.revert_control_of_combat()
 
     def execute(self):
+        State.PHASE = self
+
         self.skipped = not self.player.choose_declare_combat()
 
         if self.skipped:
@@ -47,23 +53,23 @@ class CombatPhase(Phase):
         attacker = self.player
         next_attack_power = None  # Will almost always be None
         while True:
+            # End Combat Phase when two players pass consecutively or the phase is forcibly ended
+            if pass_count == 2 or self.force_end_combat:
+                break
+
             dprint()
             dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
                    f' {attacker} ----------')
             for player in self.players:
                 player.show_summary()
 
-            attack_phase = CombatAttackPhase(attacker, attack_power_override=next_attack_power)
+            attack_phase = CombatAttackPhase(attacker,self, attack_power_override=next_attack_power)
             attack_phase.execute()
 
             if attack_phase.passed:
                 pass_count += 1
             else:
                 pass_count = 0
-
-            # End Combat Phase when two players pass consecutively or the phase is forcibly ended
-            if pass_count == 2 or attack_phase.end_combat:
-                break
 
             # Check to see if the next player's attack phase should be skipped
             if attack_phase.skip_next_attack_phase:

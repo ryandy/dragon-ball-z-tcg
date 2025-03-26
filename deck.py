@@ -2,6 +2,7 @@ import pathlib
 import sys
 
 from card_factory import CardFactory
+from exception import DeckEmpty
 from pile import Pile
 from saga import Saga
 
@@ -9,6 +10,12 @@ from saga import Saga
 class Deck(Pile):
     def __init__(self, name, cards):
         super().__init__(name, cards=cards)
+
+    def _pop(self, idx=-1):
+        card = super()._pop(idx) if (len(self.cards) > 0) else None
+        if len(self.cards) == 0:
+            raise DeckEmpty(card)
+        return card
 
     @classmethod
     def from_spec(cls, name):
@@ -29,11 +36,10 @@ class Deck(Pile):
     def validate(self):
         '''
         At least 3 consecutive main personality cards
-        Check for maximum number of duplicates allowed (1, 2, 3, or 4)
-         - only 1 of each dragon ball
+        Check for maximum number of duplicates allowed (0-4)
         Check for "saiyan heritage only"
         Check for total number of cards
-        
-
+        No HT personalities as allies
+        No allies with level greater than MP's max minus 2
         '''
         pass

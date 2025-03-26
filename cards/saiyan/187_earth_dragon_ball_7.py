@@ -3,9 +3,13 @@ import sys
 from card_power_attack import CardPowerNonCombatAttack
 from card_power_dragon_ball import CardPowerDragonBall
 from character import Character
+from combat_attack_phase import CombatAttackPhase
+from combat_defense_phase import CombatDefensePhase
+from combat_phase import CombatPhase
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
+from util import dprint
 
 
 TYPE = 'Dragon Ball'
@@ -30,16 +34,29 @@ CARD_TEXT = ('Play this card during combat to end the battle. Pick 3 cards out o
 #     - card power needs to be exhausted if/when played during non-combat
 
 
+def _search_discard_pile(player):
+    for _ in range(3):
+        card = player.choose_discard_pile_card()
+        if card:
+            if player.interactive:
+                dprint(f'{player} returns {card} to their life deck')
+            else:
+                dprint(f'{player} returns a card to their life deck')
+            player.discard_pile.remove(card)
+            player.life_deck.add_top(card)
+            card.set_pile(player.life_deck)
+
+
 class CardPowerEDB7_DragonBall(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.opponent.adjust_anger(-2)
+        _search_discard_pile(player)
 
-        for _ in range(3):
-            card = player.choose_discard_pile_card()
-            if card:
-                player.discard_pile.remove(card)
-                player.life_deck.add_top(card)
-                card.set_pile(player.life_deck)
+        # In special circumstances can be played during CombatPhase not as a CardPowerAttack
+        if (isinstance(phase, CombatPhase)
+            or isinstance(phase, CombatAttackPhase)
+            or isinstance(phase, CombatDefensePhase)):
+            phase.set_force_end_combat()
 
         # Need to exhaust the registered attack card power
         assert self.card
@@ -47,13 +64,8 @@ class CardPowerEDB7_DragonBall(CardPowerDragonBall):
 
 
 class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
-    def on_success(self, player, phase):
-        for _ in range(3):
-            card = player.choose_discard_pile_card()
-            if card:
-                player.discard_pile.remove(card)
-                player.life_deck.add_top(card)
-                card.set_pile(player.life_deck)
+    def on_secondary_effects(self, player, phase):
+        _search_discard_pile(player)
 
     def on_resolved(self, player, phase):
         assert self.card
@@ -68,5 +80,5 @@ class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
 
 CARD_POWER = [
     CardPowerEDB7_DragonBall(NAME, CARD_TEXT),
-    CardPowerEDB7_Attack(NAME, CARD_TEXT, opp_anger=-2, end_combat=True)
+    CardPowerEDB7_Attack(NAME, CARD_TEXT, opp_anger=-2, force_end_combat=True)
 ]

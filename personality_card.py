@@ -104,7 +104,7 @@ class PersonalityCard(Card):
             increment = self.power_up_rating
         self.adjust_power_stage(increment)
 
-    def can_be_played_as_ally(self, player):
+    def can_be_played(self, player):
         is_overlay = any(
             (x.character == self.character and x.level == self.level - 1)
             for x in player.allies)

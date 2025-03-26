@@ -2,6 +2,7 @@ import random
 import sys
 
 from phase import Phase
+from state import State
 from util import dprint
 
 
@@ -11,6 +12,8 @@ class DiscardPhase(Phase):
         self.combat_phase = combat_phase
 
     def execute(self):
+        State.PHASE = self
+
         if len(self.player.hand) > 1:
             dprint(f'{self.player} must discard down to 1 card')
         while len(self.player.hand) > 1:

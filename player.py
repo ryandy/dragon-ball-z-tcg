@@ -8,8 +8,10 @@ from card_power_defense import CardPowerDefense
 from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
+from card_power_dragon_ball import CardPowerDragonBall
 from character import Character
 from combat_card import CombatCard
+from deck import Deck
 from dragon_ball_card import DragonBallCard
 from drill_card import DrillCard
 from exception import GameOver
@@ -46,7 +48,8 @@ class Player:
                 life_deck_cards.append(card)
 
         self.main_personalities.sort(key=lambda x: x.level)
-        self.life_deck = Pile('LifeDeck', life_deck_cards, shuffle=True)
+        self.life_deck = Deck('LifeDeck', life_deck_cards)
+        self.life_deck.shuffle()
         for card in self.life_deck:
             card.set_pile(self.life_deck)
 
@@ -68,6 +71,11 @@ class Player:
         if self.control_personality is not self.main_personality:
             return f'{self.name}/{self.control_personality.char_name()}'
         return self.name
+
+    def debug(self):
+        '''Use to jump into the game at certain points to debug'''
+        self.interactive = True
+        State.INTERACTIVE = True
 
     def register_opponent(self, opponent):
         self.opponent = opponent
@@ -196,7 +204,13 @@ class Player:
         self.main_personality.init_for_main()
 
     def adjust_anger(self, count):
-        self.anger = max(0, min(MAX_ANGER, self.anger + count))
+        new_anger = max(0, min(MAX_ANGER, self.anger + count))
+        delta = new_anger - self.anger
+        if delta:
+            verb = 'increases' if delta > 0 else 'decreases'
+            dprint(f'{self.name}\'s anger {verb} from {self.anger} to {new_anger}')
+
+        self.anger = new_anger
         if self.anger == MAX_ANGER:
             self.raise_level()
 
@@ -216,8 +230,6 @@ class Player:
             card = self.life_deck.draw()
 
         # Check for end-of-game conditions
-        if len(self.life_deck) == 0:
-            raise GameOver(f'{self}\'s Life Deck is empty', self.opponent)
         if (dest_pile is self.discard_pile
             and isinstance(card, DragonBallCard)
             and all(isinstance(x, DragonBallCard) for x in self.life_deck)):
@@ -237,8 +249,7 @@ class Player:
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
             if self.interactive:
                 dprint(f'{self} draws unplayable {card.name}')
-            idx = self.choose(['Shuffle it back into deck.', 'Keep it.'],
-                              ['', ''],
+            idx = self.choose(['Shuffle it back into deck.', 'Keep it.'], [''],
                               allow_pass=False)
             if idx == 0:
                 dprint(f'{self} shuffles unplayable {card.name} back into deck')
@@ -258,13 +269,15 @@ class Player:
         return card
 
     def add_card_to_hand(self, card):
-        # Register callbacks for all new combat cards in hand
+        assert card
         if self.interactive:
             dprint(f'{self} adds {card} to hand')
         else:
             dprint(f'{self} adds a card to hand')
         self.hand.add(card)
         card.set_pile(self.hand)
+
+        # Register callbacks for all new combat cards in hand
         if (isinstance(card, CombatCard)
             or card.get_id() == 'saiyan.187'  # dragon ball that can be played as attack from hand
             ):
@@ -647,13 +660,10 @@ class Player:
                 or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
                 filtered.append(card)
             elif isinstance(card, DragonBallCard):
-                # Only 1 of each Dragon Ball set/number can be on the table at a time
-                dup_restricted = any(card.is_duplicate(x)
-                                     for x in self.dragon_balls + self.opponent.dragon_balls)
-                if not dup_restricted:
+                if card.can_be_played(self):
                     filtered.append(card)
             elif isinstance(card, PersonalityCard):
-                if card.can_be_played_as_ally(self):
+                if card.can_be_played(self):
                     filtered.append(card)
             elif isinstance(card, DrillCard):
                 # Styled drills cannot be played if they are duplicates of a drill you have in
@@ -733,6 +743,22 @@ class Player:
         for card_power in card.card_powers:
             self.register_card_power(card_power)
 
+    def play_dragon_ball(self, card):
+        dprint(f'{self} plays {card}')
+        if not self.interactive:
+            dprint(f'  - {card.card_text}')
+
+        card.pile.remove(card)
+        self.dragon_balls.add(card)
+        card.set_pile(self.dragon_balls)
+
+        self.check_for_dragon_ball_victory()
+
+        # Dragon balls are executed immediately
+        for card_power in card.card_powers:
+            if isinstance(card_power, CardPowerDragonBall):
+                card_power.on_play(self, State.PHASE)
+
     def play_non_combat_card(self, card):
         if isinstance(card, NonCombatCard):
             dprint(f'{self} plays {card}')
@@ -748,13 +774,7 @@ class Player:
         elif isinstance(card, DrillCard):
             self.play_drill(card)
         elif isinstance(card, DragonBallCard):
-            dprint(f'{self} plays {card}')
-            if not self.interactive:
-                dprint(f'  - {card.card_text}')
-            card.pile.remove(card)
-            self.dragon_balls.add(card)
-            card.set_pile(self.dragon_balls)
-            self.check_for_dragon_ball_victory()
+            self.play_dragon_ball(card)
         else:
             assert False
 

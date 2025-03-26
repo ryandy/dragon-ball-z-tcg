@@ -3,6 +3,7 @@ import sys
 from card_power_on_draw import CardPowerOnDraw
 from combat_card import CombatCard
 from phase import Phase
+from state import State
 
 
 class DrawPhase(Phase):
@@ -13,6 +14,8 @@ class DrawPhase(Phase):
         self.discard_pile_draw_count = 0
 
     def execute(self):
+        State.PHASE = self
+
         for player in [self.player, self.player.opponent]:
             draw_powers = player.get_valid_card_powers(CardPowerOnDraw)
             for draw_power in draw_powers:

@@ -3,19 +3,27 @@ import sys
 from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense, CardPowerAnyDefense
 from combat_card import CombatCard
 from phase import Phase
+from state import State
 from util import dprint
 
 
 class CombatDefensePhase(Phase):
-    def __init__(self, player):
+    def __init__(self, player, combat_phase, attack_phase):
         self.player = player
+        self.combat_phase = combat_phase
+        self.attack_phase = attack_phase
+
+    def set_force_end_combat(self):
+        self.combat_phase.set_force_end_combat()
 
     def physical_defense(self, damage):
         '''Returns resulting damage'''
+        State.PHASE = self
         return self._defense(damage, is_physical=True)
 
     def energy_defense(self, damage):
         '''Returns resulting damage'''
+        State.PHASE = self
         return self._defense(damage, is_physical=False)
 
     def _defense(self, damage, is_physical=None):

@@ -4,7 +4,7 @@ import sys
 from combat_phase import CombatPhase
 from discard_phase import DiscardPhase
 from draw_phase import DrawPhase
-from exception import GameOver
+from exception import DeckEmpty, GameOver
 from non_combat_phase import NonCombatPhase
 from player import Player
 from power_up_phase import PowerUpPhase
@@ -36,12 +36,24 @@ class Runner:
     def run(self):
         while True:
             State.COMBAT_ROUND = 0
+
             try:
                 self.take_turn()
+
             except GameOver as err:
-                dprint(f'{err.winning_player.name} wins!')
+                dprint(f'{err.winning_player} wins!')
                 dprint(f'{err}')
                 return
+
+            except DeckEmpty as err:
+                for player in self.players:
+                    if len(player.life_deck) == 0:
+                        dprint(f'{player.opponent} wins!')
+                        #dprint(f'{player}\'s Life Deck is empty. Last card: {err.last_card}')
+                        dprint(f'{player}\'s Life Deck is empty')
+                        return
+                assert False
+
             State.TURN += 1
 
     def beginning_of_turn(self):
