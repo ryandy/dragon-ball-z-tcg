@@ -2,6 +2,7 @@ import collections
 import random
 import sys
 
+from card import Card
 from card_power import CardPower
 from card_power_attack import CardPowerAttack
 from card_power_defense import CardPowerDefense
@@ -9,6 +10,7 @@ from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
 from card_power_dragon_ball import CardPowerDragonBall
+from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
 from character import Character
 from combat_card import CombatCard
 from deck import Deck
@@ -132,6 +134,26 @@ class Player:
                 and card_power.cost.can_afford(self)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
+
+    def card_in_play(self, card_or_card_id, own_side=True, either_side=False):
+        if isinstance(card_or_card_id, Card):
+            card_id = card_or_card_id.get_id()
+        else:
+            card_id = card_or_card_id
+
+        cards = []
+        opp_side = not own_side or either_side
+        own_side = own_side or either_side
+        if own_side:
+            cards += (self.allies.cards + self.non_combat.cards
+                      + self.drills.cards + self.dragon_balls.cards)
+        if opp_side:
+            cards += (self.opponent.allies.cards + self.opponent.non_combat.cards
+                      + self.opponent.drills.cards + self.opponent.dragon_balls.cards)
+        for card in cards:
+            if card.get_id() == card_id:
+                return True
+        return False
 
     def raise_level(self):
         next_level = self.main_personality.level + 1
@@ -323,6 +345,13 @@ class Player:
             dprint(f'{self} discards {card}')
             self.discard_pile.add(card)
             card.set_pile(self.discard_pile)
+
+        if (src_pile is self.allies
+            or src_pile is self.non_combat
+            or src_pile is self.drills):
+            for card_power in card.card_powers:
+                if isinstance(card_power, CardPowerOnRemoveFromPlay):
+                    card_power.on_remove_from_play(self, State.PHASE)
 
         if isinstance(card, PersonalityCard) and src_pile is self.allies:
             self.discard_covered_allies(card, remove_from_game=remove_from_game)
@@ -657,28 +686,10 @@ class Player:
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
-                or (isinstance(card, DrillCard) and card.style == Style.FREESTYLE)):
-                filtered.append(card)
-            elif isinstance(card, DragonBallCard):
+                or isinstance(card, DrillCard)
+                or isinstance(card, DragonBallCard)
+                or isinstance(card, PersonalityCard)):
                 if card.can_be_played(self):
-                    filtered.append(card)
-            elif isinstance(card, PersonalityCard):
-                if card.can_be_played(self):
-                    filtered.append(card)
-            elif isinstance(card, DrillCard):
-                # Styled drills cannot be played if they are duplicates of a drill you have in
-                # play, are a different style than a drill you have in play, or are restricted and
-                # are the same style as any styled drill in play.
-                dup_restricted = any(x.get_id() == card.get_id() for x in self.drills)
-                style_restricted = any(x.style != card.style
-                                       for x in self.drills if x.style != Style.FREESTYLE)
-                special_restricted = (
-                    card.restricted
-                    and (any(x.style == card.style for x in self.drills)
-                         or any(x.style == card.style for x in self.opponent.drills)))
-                if (not dup_restricted
-                    and not style_restricted
-                    and not special_restricted):
                     filtered.append(card)
 
         other_hand = []

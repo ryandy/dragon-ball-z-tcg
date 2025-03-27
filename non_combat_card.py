@@ -9,6 +9,9 @@ class NonCombatCard(Card):
     def __repr__(self):
         return f'{self.name} (Non-Combat)'
 
+    def can_be_played(self, player):
+        return True
+
     @classmethod
     def from_spec(cls, card_module):
         card = cls(
