@@ -1,5 +1,6 @@
 from importlib.machinery import SourceFileLoader
 import pathlib
+import re
 import sys
 
 from combat_card import CombatCard
@@ -15,13 +16,20 @@ class CardFactory:
     def from_spec(saga, card_number):
         saga_name = f'{Saga(saga).name}'.lower()
         path = pathlib.Path(f'./cards/{saga_name}')
-        files = list(path.glob(f'{card_number}_*.py'))
-        if len(files) != 1:
-            print(f'Warning: Could not find card at {path}')
+        files = list(path.glob(f'*{card_number}_*.py'))
+
+        cardfile = None
+        for f in files:
+            if re.match(f'0*{card_number}_', f.name):
+                cardfile = f
+                break
+
+        if cardfile is None:
+            print(f'Warning: Could not find card {card_number} at {path}')
             return None
-        filename = files[0]
+
         module_name = f'{saga_name}_{card_number}'
-        card_module = SourceFileLoader(module_name, str(filename)).load_module()
+        card_module = SourceFileLoader(module_name, str(cardfile)).load_module()
         if card_module.TYPE.lower() == 'personality':
             return PersonalityCard.from_spec(card_module)
         if card_module.TYPE.lower() == 'combat':
