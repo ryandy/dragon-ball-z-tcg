@@ -20,27 +20,36 @@ class Damage:
 
         power = 'PAT' if self.use_pat else f'{self.power}'
         life = f'{self.life}'
-        power_add, life_add, power_mult, life_mult = 0, 0, 1, 1
+        power_add, life_add, power_mult, life_mult, power_max, life_max = 0, 0, 1, 1, 1000, 1000
         power_prevent, life_prevent = self.power_prevent, self.life_prevent
         for mod in self.mods:
             power_add += mod.power_add
             life_add += mod.life_add
             power_mult = max(power_mult, mod.power_mult)  # mults do not stack
             life_mult = max(life_mult, mod.life_mult)  # mults do not stack
+            power_max = min(power_max, mod.power_max)
+            life_max = min(life_max, mod.life_max)
             power_prevent += mod.power_prevent
             life_prevent += mod.life_prevent
+
         if power_mult != 1:
             power = f'{power}*{power_mult}'
         if power_add != 0:
             power = f'{power}+({power_add})'
         if power_prevent != 0:
             power = f'{power}-{power_prevent}'
+        if power_max != 1000:
+            power = f'min({power},{power_max})'
+
         if life_mult != 1:
             life = f'{life}*{life_mult}'
         if life_add != 0:
             life = f'{life}+({life_add})'
         if life_prevent != 0:
             life = f'{life}-{life_prevent}'
+        if life_max != 1000:
+            life = f'min({life},{life_max})'
+
         return f'Damage({power}, {life})'
 
     def copy(self):

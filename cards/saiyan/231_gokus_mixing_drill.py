@@ -39,7 +39,7 @@ class CardPowerGMD(CardPowerOnRemoveFromPlay):
 
         while not _drills_are_legal(player):
             # Choose a drill to discard
-            cards = [x for x in player.drills if x is not self.card and x.style != FREESTYLE]
+            cards = [x for x in player.drills if x is not self.card and x.style != Style.FREESTYLE]
             assert cards
             idx = player.choose(
                 [x.name for x in cards],

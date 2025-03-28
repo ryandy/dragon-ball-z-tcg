@@ -8,7 +8,7 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Piccolo Lv1 HT'
+NAME = 'Piccolo HT Lv1'
 LEVEL = 1
 SAGA = 'Saiyan'
 CARD_NUMBER = '180'

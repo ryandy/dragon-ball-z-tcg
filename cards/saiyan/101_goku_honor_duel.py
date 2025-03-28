@@ -16,11 +16,18 @@ RARITY = 3
 DECK_LIMIT = None
 CHARACTER = 'Goku'
 STYLE = None
-CARD_TEXT = ('Use when entering Combat as the defender. Instead of drawing 3 cards from your life '
-             'deck, draw the bottom 3 cards from your discard pile. Remove from the game after use')
+CARD_TEXT = (
+    'Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck,'
+    ' draw the bottom 3 cards from your discard pile. Remove from the game after use.')
 
-# TODO: what if this power gets used twice in one turn? Drawing 6 from discard doesn't sound right..
-CARD_POWER = CardPowerOnDraw(
-    NAME, CARD_TEXT, choice=True, remove_from_game=True,
-    own_defend_draw_add=-3,
-    own_defend_draw_from_discard_add=3)
+
+class CardPowerGHD(CardPowerOnDraw):
+    def on_activated(self, phase):
+        # If this is played twice in one turn, you shouldn't end up drawing 6 cards
+        draws_shifted = max(0, min(3, phase.draw_count))
+        phase.discard_pile_draw_count += draw_shifted
+        phase.draw_count -= draws_shifted
+
+
+CARD_POWER = CardPowerGHD(
+    NAME, CARD_TEXT, choice=True, remove_from_game=True)

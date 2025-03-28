@@ -1,23 +1,25 @@
 import sys
 
 from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Gohan HT Lv1'
-LEVEL = 1
+NAME = 'Vegeta Lv2'
+LEVEL = 2
 SAGA = 'Saiyan'
-CARD_NUMBER = '181'
+CARD_NUMBER = '174'
 RARITY = 4
 DECK_LIMIT = 1
-CHARACTER = 'Gohan'
-IS_HERO = True
-POWER_UP_RATING = 1
-POWER_STAGES = range(100, 1000+1, 100)
-CARD_TEXT = ('Energy Attack. Costs 1 stage and does 3 life card draws of damage.')
+CHARACTER = 'Vegeta'
+IS_HERO = False
+POWER_UP_RATING = 4
+POWER_STAGES = range(4200, 8700+1, 500)
+CARD_TEXT = ('Saiyan Energy Blast does 3 life card draw of damage and only costs 1 power stage'
+             ' to perform.')
 
 CARD_POWER = CardPowerEnergyAttack(
     NAME, CARD_TEXT, exhaust=False, discard=False,

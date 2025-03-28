@@ -462,7 +462,8 @@ class Player:
                 dprint(f'{self} takes 1 life damage: {card_discarded}')
 
         # Check for Dragon Ball Life Card Capture
-        if discard_count >= 5 and src_personality:
+        if (discard_count >= 5 and src_personality
+            and self.opponent.can_steal_dragon_ball()):
             self.opponent.steal_dragon_ball()
 
     def determine_control_of_combat(self):

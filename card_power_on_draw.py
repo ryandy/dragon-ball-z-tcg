@@ -44,18 +44,18 @@ class CardPowerOnDraw(CardPower):
              and self.player is not phase.player and not phase.is_attacker)
         )
 
-        if activated:
+        if (activated
+            and (not self.choice or self.player.choose_to_use_card_power(self))):
             self.on_activated(phase)
+            self.on_resolved(phase)
 
     def on_activated(self, phase):
-        if not self.choice or self.player.choose_to_use_card_power(self):
-            phase.draw_count += self.own_attack_draw_add
-            phase.discard_pile_draw_count += self.own_attack_draw_from_discard_add
-            phase.draw_count += self.own_defend_draw_add
-            phase.discard_pile_draw_count += self.own_defend_draw_from_discard_add
-            phase.draw_count += self.opp_attack_draw_add
-            phase.draw_count += self.opp_defend_draw_add
-            self.on_resolved(phase)
+        phase.draw_count += self.own_attack_draw_add
+        phase.discard_pile_draw_count += self.own_attack_draw_from_discard_add
+        phase.draw_count += self.own_defend_draw_add
+        phase.discard_pile_draw_count += self.own_defend_draw_from_discard_add
+        phase.draw_count += self.opp_attack_draw_add
+        phase.draw_count += self.opp_defend_draw_add
 
     def on_resolved(self, phase):
         if self.exhaust:

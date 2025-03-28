@@ -20,12 +20,14 @@ CARD_TEXT = ('When the Bulma ally is in play, use this card to capture a Dragon 
 
 
 class CardPowerBFADB(CardPowerNonCombatAttack):
-    def on_success(self, player, phase):
+    def on_secondary_effects(self, player, phase):
         player.steal_dragon_ball()
 
     def is_restricted(self, player):
         allies_in_play = [x for x in player.allies + player.opponent.allies]
         if not any(x.character == Character.BULMA for x in allies_in_play):
+            return True
+        if not player.can_steal_dragon_ball():
             return True
         return super().is_restricted(player)
 

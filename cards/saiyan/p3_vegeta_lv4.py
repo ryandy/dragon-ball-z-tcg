@@ -7,18 +7,18 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Goku HT Lv1'
-LEVEL = 1
+NAME = 'Vegeta Lv4'
+LEVEL = 4
 SAGA = 'Saiyan'
-CARD_NUMBER = '179'
-RARITY = 4
+CARD_NUMBER = 'P3'
+RARITY = 2
 DECK_LIMIT = 1
-CHARACTER = 'Goku'
-IS_HERO = True
-POWER_UP_RATING = 1
-POWER_STAGES = range(500, 1400+1, 100)
-CARD_TEXT = ('Physical Attack. Do not consult the chart and do 4 stages of damage to the foe.')
+CHARACTER = 'Vegeta'
+IS_HERO = False
+POWER_UP_RATING = 4
+POWER_STAGES = range(20000, 38000+1, 2000)
+CARD_TEXT = ('Vegeta\'s laugh reduces a foe\'s power rating by 3.')
 
 CARD_POWER = CardPowerPhysicalAttack(
     NAME, CARD_TEXT, exhaust=False, discard=False,
-    damage=Damage(power=4))
+    damage=Damage(power=3))

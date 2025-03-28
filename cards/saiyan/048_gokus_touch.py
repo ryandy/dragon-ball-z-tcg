@@ -26,7 +26,7 @@ class CardPowerGT(CardPowerOnAttackResolved):
         return (self.player is phase.player  # attacking
                 and not damage.was_stopped()  # successful
                 and is_physical  # physical
-                and len(self.player.opponent.dragon_balls) > 0)  # dragon ball(s) to steal
+                and self.player.can_steal_dragon_ball())  # dragon ball(s) to steal
 
     def on_effect(self, phase, damage, is_physical):
         self.player.steal_dragon_ball()
