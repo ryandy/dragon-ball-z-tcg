@@ -370,7 +370,19 @@ class Player:
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
 
+    def can_steal_dragon_ball(self):
+        if len(self.opponent.dragon_balls) == 0:
+            return False
+
+        # Check to see if a capture-preventing card is in play
+        if self.opponent.card_in_play('saiyan.237'):  # Goku's Capturing Drill
+            return False
+        return True
+
     def steal_dragon_ball(self):
+        if not self.can_steal_dragon_ball():
+            return
+
         card = self.choose_opponent_dragon_ball()
         if not card:
             return
@@ -430,10 +442,9 @@ class Player:
         life_damage = max(0, life_damage)
 
         # Check for Dragon Ball Personality Capture
-        if (0 < life_damage < 5
-            and len(self.dragon_balls) > 0
-            and src_personality
-            and src_personality.character.can_steal_dragon_balls()):
+        if (0 < life_damage < 5 and src_personality
+            and src_personality.character.can_steal_dragon_balls()
+            and self.opponent.can_steal_dragon_ball()):
             # Opponent can choose to steal or deal the damage
             dprint(f'{src_personality.char_name()} can steal a dragon ball instead of'
                    f' dealing {life_damage} life damage')

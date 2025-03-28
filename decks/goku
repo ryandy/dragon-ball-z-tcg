@@ -16,11 +16,13 @@
 1 saiyan 105 chiaotzu lv2
 1 saiyan 106 yajirobe lv1
 1 saiyan 107 yajirobe lv2
+1 saiyan 161 piccolo lv1
+1 saiyan 162 piccolo lv2
 1 saiyan 164 gohan lv1
 1 saiyan 165 gohan lv2
 
 # Combat - Attack
-3 saiyan 1 orange standing fist punch
+2 saiyan 1 orange standing fist punch
 2 saiyan 5 orange arm bar
 4 saiyan 25 gokus physical attack
 2 saiyan 26 gohans physical attack
@@ -33,7 +35,7 @@
 2 saiyan 66 black knife hand strike
 
 # Combat - Defense
-2 saiyan 28 vegetas physical stance
+1 saiyan 28 vegetas physical stance
 2 saiyan 59 blue big outside drop
 2 saiyan 72 black axe heel kick
 4 saiyan 108 gokus energy defense
@@ -44,7 +46,7 @@
 1 saiyan 250 chiaotzus physical defense
 
 # Non-Combat
-2 saiyan 22 power up!
+1 saiyan 22 power up!
 4 saiyan 101 goku honor duel!
 1 saiyan 222 bulma finds a dragon ball
 1 saiyan 241 vegetas dragon ball capture
@@ -52,11 +54,12 @@
 4 saiyan 202 gokus lucky break
 
 # Drills
-4 saiyan 131 black bear hug drill
+1 saiyan 131 black bear hug drill
 1 saiyan 142 orange energy drill (restricted)
-4 saiyan 151 orange joint restraint drill
+1 saiyan 151 orange joint restraint drill
 1 saiyan 230 chiaotzus drill
 4 saiyan 231 gokus mixing drill
+4 saiyan 237 gokus capturing drill
 
 # Dragon Balls
 1 saiyan 15 earth dragon ball 1
