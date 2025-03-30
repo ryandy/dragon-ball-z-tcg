@@ -3,6 +3,7 @@ import pathlib
 import sys
 
 from card import Card
+from character import Character
 from saga import Saga
 from state import State
 from util import dprint
@@ -121,10 +122,15 @@ class PersonalityCard(Card):
         # Cannot be a higher level than MP's highest level minus 2
         max_level_restricted = self.level > len(player.main_personalities) - 2
 
-        # Cannot be the same character as an ally you have in play unless overlaying
-        # TODO: Saibaimen exception
-        char_restricted = not is_overlay and any(
-            x.character == self.character for x in player.allies)
+        if self.character == Character.SAIBAIMEN:
+            # No more than 2 others of this character/level in the game
+            all_allies = player.allies + player.opponent.allies
+            sames = [x for x in all_allies if x.get_name_level() == self.get_name_level()]
+            char_restricted = (len(sames) >= 2)
+        else:
+            # Cannot be the same character as an ally you have in play unless overlaying
+            char_restricted = not is_overlay and any(
+                x.character == self.character for x in player.allies)
 
         return (not hero_restricted
                 and not mp_restricted

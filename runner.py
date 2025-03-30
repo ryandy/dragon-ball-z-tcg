@@ -64,6 +64,9 @@ class Runner:
             player.show_summary()
         attacker.check_for_dragon_ball_victory()
 
+        # TODO: CardPowerOnBeginningOfTurn
+        #       213 Plant Two Saibaimen (floating effect)
+
     def end_of_turn(self):
         pass
 

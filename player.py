@@ -725,12 +725,24 @@ class Player:
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
-        # TODO: Saibaimen can choose whether/which to overlay
         covered_ally = None
-        for ally in self.allies:
-            if ally.character == card.character and ally.level == card.level - 1:
-                assert covered_ally is None
-                covered_ally = ally
+        if card.character == Character.SAIBAIMEN:
+            # Saibaimen can choose whether/which to overlay
+            covered_choices = [x for x in self.allies
+                               if x.character == card.character and x.level == card.level - 1]
+            if covered_choices:
+                names = [f'Overlay {card.name} on top of {x.name} {x.get_power_attack_str()}pwr'
+                         for x in covered_choices]
+                idx = self.choose(names + ['Play separately'], [''], allow_pass=False,
+                                  prompt=f'Select how to play your {card.name}')
+                if idx < len(covered_choices):
+                    covered_ally = covered_choices[idx]
+        else:
+            # For all other characters, overlays are mandatory to maintain only 1 card per character
+            for ally in self.allies:
+                if ally.character == card.character and ally.level == card.level - 1:
+                    assert covered_ally is None
+                    covered_ally = ally
 
         card.init_for_ally(covered_ally=covered_ally)
         if covered_ally:

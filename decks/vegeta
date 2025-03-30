@@ -6,22 +6,24 @@
 1 saiyan p3 vegeta lv4
 
 # Allies
+3 saiyan 243 saibaimen lv1
+3 saiyan 244 saibaimen lv2
+3 saiyan 245 saibaimen lv3
 
 # Combat - Attack
-2 saiyan 1 orange standing fist punch
-2 saiyan 5 orange arm bar
-4 saiyan 25 gokus physical attack
-2 saiyan 26 gohans physical attack
-4 saiyan 46 goku anger attack
-4 saiyan 24 gokus surprise attack
-4 saiyan 44 goku body throw
+3 saiyan 1 orange standing fist punch
+3 saiyan 5 orange arm bar
+3 saiyan 25 gokus physical attack
+3 saiyan 26 gohans physical attack
+3 saiyan 46 goku anger attack
+3 saiyan 24 gokus surprise attack
 
 # Combat - Attack/Defense
 2 saiyan 11 blue forward foot sweep
 2 saiyan 66 black knife hand strike
 
 # Combat - Defense
-1 saiyan 28 vegetas physical stance
+1 saiyan 28 vegetas physical stance (limit 1)
 2 saiyan 59 blue big outside drop
 2 saiyan 72 black axe heel kick
 4 saiyan 108 gokus energy defense
@@ -33,19 +35,16 @@
 
 # Non-Combat
 1 saiyan 22 power up!
-4 saiyan 101 goku honor duel!
-1 saiyan 222 bulma finds a dragon ball
-1 saiyan 241 vegetas dragon ball capture
-4 saiyan 48 gokus touch
-4 saiyan 202 gokus lucky break
+3 saiyan 101 goku honor duel!
+4 saiyan 241 vegetas dragon ball capture
+3 saiyan 48 gokus touch
+3 saiyan 202 gokus lucky break
 
 # Drills
 1 saiyan 131 black bear hug drill
-1 saiyan 142 orange energy drill (restricted)
 1 saiyan 151 orange joint restraint drill
-1 saiyan 230 chiaotzus drill
-4 saiyan 231 gokus mixing drill
-4 saiyan 237 gokus capturing drill
+3 saiyan 231 gokus mixing drill
+3 saiyan 237 gokus capturing drill
 
 # Dragon Balls
 1 saiyan 15 earth dragon ball 1

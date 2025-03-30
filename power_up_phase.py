@@ -14,3 +14,6 @@ class PowerUpPhase(Phase):
         self.player.main_personality.power_up(tokui_waza=self.player.tokui_waza)
         for ally in self.player.allies:
             ally.power_up(is_ally=True)
+
+        # TODO: CardPowerOnEndOfPowerUp
+        #       213 Plant Two Saibaimen
