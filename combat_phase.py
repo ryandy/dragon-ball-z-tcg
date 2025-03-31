@@ -18,6 +18,9 @@ class CombatPhase(Phase):
     def set_force_end_combat(self):
         self.force_end_combat = True
 
+    def set_force_skip_phase(self):
+        self.skipped = True
+
     def entering_combat(self):
         pass
 
@@ -37,7 +40,7 @@ class CombatPhase(Phase):
             for player in [self.player, self.player.opponent]:
                 card_powers = player.get_valid_card_powers(CardPowerOnCombatDeclared)
                 for card_power in card_powers:
-                    card_power.on_combat_declared(player, self)
+                    card_power.on_combat_declared(self)
 
         if self.skipped:
             return

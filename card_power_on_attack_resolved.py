@@ -3,6 +3,7 @@ import sys
 
 from card_power import CardPower
 from cost import Cost
+from util import dprint
 
 
 class CardPowerOnAttackResolved(CardPower):
@@ -21,6 +22,8 @@ class CardPowerOnAttackResolved(CardPower):
     def on_attack_resolved(self, phase, damage, is_physical):
         if (self.on_condition(phase, damage, is_physical)
             and (not self.choice or self.player.choose_to_use_card_power(self))):
+            dprint(f'{self.player} uses {self}')
+            dprint(f'  - {self.description}')
             self.on_effect(phase, damage, is_physical)
             self.on_resolved(phase)
 

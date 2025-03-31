@@ -22,7 +22,7 @@ CARD_TEXT = (
 
 
 class CardPowerGHD(CardPowerOnDraw):
-    def on_activated(self, phase):
+    def on_effect(self, phase):
         # If this is played twice in one turn, you shouldn't end up drawing 6 cards
         draws_shifted = max(0, min(3, phase.draw_count))
         phase.discard_pile_draw_count += draw_shifted

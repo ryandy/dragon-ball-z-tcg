@@ -30,7 +30,6 @@ class CardPowerGT(CardPowerOnAttackResolved):
                 and self.player.can_steal_dragon_ball())  # dragon ball(s) to steal
 
     def on_effect(self, phase, damage, is_physical):
-        dprint(f'{self.player} uses {self} to capture a Dragon Ball')
         self.player.steal_dragon_ball()
 
 

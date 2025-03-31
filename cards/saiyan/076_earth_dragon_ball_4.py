@@ -28,14 +28,15 @@ class CardPowerEDB4(CardPowerDragonBall):
         player.adjust_anger(2)
 
         class CardPowerEDB4_OnCombatDeclared(CardPowerOnCombatDeclared):
-            def on_combat_declared(_self, _player, _phase):
-                if _phase.player is not _player:
-                    dprint(f'{_player}\'s {_self.name} ends combat')
-                    _phase.skipped = True
-                    _player.exhaust_card_power(_self)
+            def on_condition(_self, _phase):
+                return _self.player is not _phase.player
+
+            def on_effect(_self, _phase):
+                _phase.set_force_skip_phase()
 
         card_text = 'End the very next combat you are forced into before you sustain damage.'
-        card_power = CardPowerEDB4_OnCombatDeclared(self.name, card_text, card=self.card)
+        card_power = CardPowerEDB4_OnCombatDeclared(
+            self.name, card_text, choice=False, discard=False, card=self.card)
         player.register_card_power(card_power)
 
 
