@@ -56,7 +56,7 @@ class CardPower(abc.ABC):
     def exhaust_until_next_turn(self):
         self.valid_from = (State.TURN + 1, 0)
 
-    def exhaust_after_next_combat_phase(self):
+    def exhaust_after_next_combat_attack_phase(self):
         self.valid_until = (State.TURN, State.COMBAT_ROUND + 1)
 
     def exhaust_after_this_turn(self):
