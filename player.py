@@ -804,6 +804,8 @@ class Player:
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
+            # TODO: Some non-combat cards activate immediately
+            #       43 Senzu Bean
         elif isinstance(card, PersonalityCard):
             self.play_ally(card)
         elif isinstance(card, DrillCard):
