@@ -6,11 +6,11 @@ from character import Character
 
 class Cost:
     def __init__(self, power=None, life=None,
-                 own_ally=None,
-                 character_in_control_req=None,
-                 ally_in_play_req=None):
+                 discard=None,
+                 own_ally=None):
         self.power = power or 0
         self.life = life or 0
+        self.discard = discard or 0
         # TODO: not sure if this should be int/list/Character/Card...
         self.own_ally = own_ally or 0
 
@@ -20,12 +20,18 @@ class Cost:
     def can_afford(self, player):
         return (player.control_personality.power_stage >= self.power
                 and len(player.life_deck) >= self.life
+                and len(player.hand) >= self.discard
                 and len(player.allies) >= self.own_ally)
 
     def pay(self, player):
         assert self.can_afford(player)
         player.control_personality.reduce_power_stage(self.power)
         player.apply_life_damage(self.life)
+
+        for _ in range(self.discard):
+            card = player.choose_hand_discard_card()
+            player.discard(card)
+
         for _ in range(self.own_ally):
             ally = player.choose_personality(
                 skip_main=True, prompt='Select an ally to sacrifice')

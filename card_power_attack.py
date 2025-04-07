@@ -131,6 +131,20 @@ class CardPowerNonCombatAttack(CardPowerAttack):
         super().__init__(*args, **kwargs, is_physical=None)
 
 
+class CardPowerFinalPhysicalAttack(CardPowerPhysicalAttack):
+    def __init__(self):
+        super().__init__(
+            'Final Physical Attack',
+            ('Discard a card to perform a physical attack.'
+             ' You must pass for the rest of this combat.'),
+            cost=Cost(discard=1),
+            exhaust=False)
+
+    def on_secondary_effects(self, player, phase):
+        super().on_secondary_effects(player, phase)
+        player.must_pass_until_next_turn()
+
+
 # Physical attack used by Piccolo and Tien personalities
 class CardPowerMultiForm(CardPowerPhysicalAttack):
     def __init__(self, *args, **kwargs):

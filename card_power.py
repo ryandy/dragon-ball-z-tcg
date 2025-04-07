@@ -57,15 +57,15 @@ class CardPower(abc.ABC):
         self.valid_from = (State.TURN + 1, 0)
 
     def exhaust_after_next_combat_attack_phase(self):
-        self.valid_until = (State.TURN, State.COMBAT_ROUND + 1)
+        self.valid_until = (State.TURN, State.COMBAT_ROUND + 2)
 
     def exhaust_after_this_turn(self):
-        self.valid_until = (State.TURN + 1, -1)
+        self.valid_until = (State.TURN + 1, 0)
 
     def is_exhausted(self):
         cur_time = State.get_time()
         valid = ((not self.valid_from or self.valid_from <= cur_time)
-                 and (not self.valid_until or cur_time <= self.valid_until))
+                 and (not self.valid_until or cur_time < self.valid_until))
         return not valid
 
     def is_restricted(self, player):

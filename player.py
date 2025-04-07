@@ -4,7 +4,7 @@ import sys
 
 from card import Card
 from card_power import CardPower
-from card_power_attack import CardPowerAttack
+from card_power_attack import CardPowerAttack, CardPowerFinalPhysicalAttack
 from card_power_defense import CardPowerDefense
 from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
@@ -40,6 +40,7 @@ class Player:
         self.card_powers = []
         self.anger = 0
         self.opponent = None
+        self.must_pass_until = None  # tuple of (turn #, combat round #)
 
         life_deck_cards = []
         for card in deck.cards:
@@ -62,6 +63,7 @@ class Player:
         self.non_combat = Pile('Non-Combat')
         self.drills = Pile('Drills')
         self.dragon_balls = Pile('DragonBalls')
+        self.register_card_power(CardPowerFinalPhysicalAttack())
 
         self.main_personality = self.main_personalities[0]
         self.main_personality.init_for_main()
@@ -121,7 +123,7 @@ class Player:
             if self.card_powers[idx].is_exhausted():
                 del self.card_powers[idx]
 
-    def get_valid_card_powers(self, card_power_types):
+    def get_valid_card_powers(self, card_power_types, floating_only=False):
         if not isinstance(card_power_types, list):
             card_power_types = [card_power_types]
 
@@ -131,9 +133,17 @@ class Player:
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
                 and not card_power.is_restricted(self)
-                and card_power.cost.can_afford(self)):
+                and card_power.cost.can_afford(self)
+                and (not floating_only or card_power.is_floating)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
+
+    def must_pass(self):
+        cur_time = State.get_time()
+        return self.must_pass_until and cur_time < self.must_pass_until
+
+    def must_pass_until_next_turn(self):
+        self.must_pass_until = (State.TURN + 1, 0)
 
     def card_in_play(self, card_or_card_id, own_side=True, either_side=False):
         if isinstance(card_or_card_id, Card):
@@ -162,12 +172,12 @@ class Player:
         # Check for win condition
         if (next_level_idx == len(self.main_personalities) - 1
             and len(self.main_personalities) >= len(self.opponent.main_personalities)):
-            dprint(f'{self} levels up to Lv{next_level}!')
+            dprint(f'{self.name} levels up to Lv{next_level}!')
             raise GameOver(f'{self} has achieved the Most Powerful Personality', self)
 
         # Upgrade personality if possible
         if next_level_idx < len(self.main_personalities):
-            dprint(f'{self} levels up to Lv{next_level}!')
+            dprint(f'{self.name} levels up to Lv{next_level}!')
             self.exhaust_card(self.main_personality)
 
             # Control personality only updates if it is currently MP
@@ -186,7 +196,7 @@ class Player:
                 card = self.drills.cards[-1]
                 self.discard(card)
         else:
-            dprint(f'{self} levels up, but stays at Lv{next_level-1}!')
+            dprint(f'{self.name} levels up, but stays at Lv{next_level-1}!')
 
         # Set power to maximum
         self.main_personality.set_power_stage_max()
@@ -519,11 +529,20 @@ class Player:
         assert names or allow_pass
 
         if not self.interactive:
-            if allow_pass and not names:  # Have to pass if that's the only option
+            if allow_pass and not names:
+                # Have to pass if that's the only option
                 return None
-            if allow_pass and random.random() < 0.1:  # Pass small % of the time
+            if allow_pass and random.random() < 0.1:
+                # Pass small % of the time
                 return None
-            return random.randrange(len(names))  # Random choice
+            if len(names) > 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.95:
+                # Almost never want to choose FPA if another choice exists
+                return random.randrange(len(names) - 1)
+            if len(names) == 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.67:
+                # Even when it's the only choice, probably want to pass instead of FPA most of the time
+                return None
+            # Random choice
+            return random.randrange(len(names))
 
         full_names = list(names)
         full_descriptions = list(descriptions)
@@ -568,7 +587,9 @@ class Player:
         return choice
 
     def choose_card_power(self, card_power_type, prompt=None):
-        filtered = self.get_valid_card_powers(card_power_type)
+        must_pass = self.must_pass()
+        filtered = self.get_valid_card_powers(card_power_type, floating_only=must_pass)
+        filtered.sort(key=lambda x: (1 if isinstance(x, CardPowerFinalPhysicalAttack) else 0))
 
         other_hand = []
         for card in self.hand:
@@ -606,7 +627,8 @@ class Player:
 
         idx = self.choose(
             [str(c) for c in self.discard_pile],
-            [c.card_text for c in self.discard_pile])
+            [c.card_text for c in self.discard_pile],
+            prompt='Select a card from your discard pile')
 
         if idx is None:  # Pass
             return None
@@ -617,7 +639,8 @@ class Player:
         idx = self.choose(
             [str(c) for c in self.hand],
             [c.card_text for c in self.hand],
-            allow_pass=False)
+            allow_pass=False,
+            prompt='Select a card to discard')
 
         return self.hand.cards[idx]
 
