@@ -52,12 +52,6 @@ class CombatPhase(Phase):
         opp_draw_phase = DrawPhase(self.player.opponent, is_attacker=False)
         opp_draw_phase.execute()
 
-        # TODO: Need to track whether a player "must pass" for their remaining attack phases
-        #       This can be caused by performing a final physical attack
-        #       Or some card effects e.g. 38 Straining Arm Drag Move
-        # This info can be stored here in the combat phase (returned from the attack phase)
-        #   or it can be managed in the player class
-
         pass_count = 0
         attacker = self.player
         next_attack_power = None  # Will almost always be None

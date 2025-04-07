@@ -8,7 +8,7 @@
 # Allies
 3 saiyan 243 saibaimen lv1
 3 saiyan 244 saibaimen lv2
-3 saiyan 245 saibaimen lv3
+#3 saiyan 245 saibaimen lv3
 
 # Combat - Attack
 3 saiyan 1 orange standing fist punch
@@ -24,11 +24,12 @@
 
 # Combat - Defense
 1 saiyan 28 vegetas physical stance (limit 1)
+2 saiyan 39 straining ankle smash move
 2 saiyan 59 blue big outside drop
 2 saiyan 72 black axe heel kick
-4 saiyan 108 gokus energy defense
+3 saiyan 108 gokus energy defense
 2 saiyan 110 piccolos physical defense
-4 saiyan 153 gokus energy blast!
+3 saiyan 153 gokus energy blast!
 3 saiyan 156 allys sacrifice
 3 saiyan 218 unexpected allies
 
@@ -41,10 +42,9 @@
 3 saiyan 202 gokus lucky break
 
 # Drills
-1 saiyan 131 black bear hug drill
-1 saiyan 151 orange joint restraint drill
+3 saiyan 131 black bear hug drill
+3 saiyan 151 orange joint restraint drill
 3 saiyan 231 gokus mixing drill
-3 saiyan 237 gokus capturing drill
 
 # Dragon Balls
 1 saiyan 15 earth dragon ball 1
