@@ -9,14 +9,14 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Combat'
-NAME = 'Goku Body Throw!'
-SUBTYPE = 'Physical Combat - Attack'
+NAME = 'Raditz Total Defense'
+SUBTYPE = 'Physical Combat - Defense'
 SAGA = 'Saiyan'
-CARD_NUMBER = '44'
+CARD_NUMBER = '47'
 RARITY = 1
 DECK_LIMIT = None
-CHARACTER = 'Goku'
+CHARACTER = 'Raditz'
 STYLE = None
-CARD_TEXT = ('Physical attack doing 1 life card of damage.')
+CARD_TEXT = ('Stops a physical attack, but costs 1 power stage to perform.')
 
-CARD_POWER = CardPowerPhysicalAttack(NAME, CARD_TEXT, damage=Damage(life=1))
+CARD_POWER = CardPowerPhysicalDefense(NAME, CARD_TEXT, cost=Cost(power=1))

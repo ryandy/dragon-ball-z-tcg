@@ -49,7 +49,6 @@ class Runner:
                 for player in self.players:
                     if len(player.life_deck) == 0:
                         dprint(f'{player.opponent} wins!')
-                        #dprint(f'{player}\'s Life Deck is empty. Last card: {err.last_card}')
                         dprint(f'{player}\'s Life Deck is empty')
                         return
                 assert False

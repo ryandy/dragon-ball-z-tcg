@@ -9,14 +9,14 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Combat'
-NAME = 'Goku Body Throw!'
-SUBTYPE = 'Physical Combat - Attack'
+NAME = 'Orange Wrist Flex Takedown'
+SUBTYPE = 'Physical Combat - Defense'
 SAGA = 'Saiyan'
-CARD_NUMBER = '44'
+CARD_NUMBER = '49'
 RARITY = 1
 DECK_LIMIT = None
-CHARACTER = 'Goku'
-STYLE = None
-CARD_TEXT = ('Physical attack doing 1 life card of damage.')
+CHARACTER = None
+STYLE = 'Orange'
+CARD_TEXT = ('Stops a physical attack. Raise the card user\'s anger level 1.')
 
-CARD_POWER = CardPowerPhysicalAttack(NAME, CARD_TEXT, damage=Damage(life=1))
+CARD_POWER = CardPowerPhysicalDefense(NAME, CARD_TEXT, own_anger=1)

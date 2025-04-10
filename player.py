@@ -41,6 +41,8 @@ class Player:
         self.anger = 0
         self.opponent = None
 
+        self.must_skip_next_combat = False
+
         self.must_pass_attack_until = None  # tuple of (turn #, combat round #)
         self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
 
@@ -667,6 +669,10 @@ class Player:
 
     def choose_declare_combat(self):
         '''True -> declare combat'''
+        if self.must_skip_next_combat:
+            self.must_skip_next_combat = False
+            return False
+
         idx = self.choose(['Declare Combat'], [''])
 
         if idx is None:
@@ -843,13 +849,18 @@ class Player:
             dprint(f'{self} plays {card}')
             if not self.interactive:
                 dprint(f'  - {card.card_text}')
+
             card.pile.remove(card)
             self.non_combat.add(card)
             card.set_pile(self.non_combat)
             for card_power in card.card_powers:
                 self.register_card_power(card_power)
-            # TODO: Some non-combat cards activate immediately
-            #       43 Senzu Bean
+
+            # Some non-combat cards activate immediately using a "Dragon Ball" card power
+            for card_power in card.card_powers:
+                if isinstance(card_power, CardPowerDragonBall):
+                    card_power.on_play(self, State.PHASE)
+
         elif isinstance(card, PersonalityCard):
             self.play_ally(card)
         elif isinstance(card, DrillCard):
