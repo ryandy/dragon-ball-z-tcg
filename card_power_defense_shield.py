@@ -50,7 +50,7 @@ class CardPowerDefenseShield(CardPower):
         return damage
 
     def on_pay_cost(self, player, phase):
-        self.cost.pay(player)
+        self.cost.pay(player, self)
 
     def on_secondary_effects(self, player, phase):
         if self.own_anger:

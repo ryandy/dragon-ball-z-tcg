@@ -75,6 +75,8 @@ class CombatPhase(Phase):
                 pass_count = 0
 
             # Check to see if the next player's attack phase should be skipped
+            # Note: Skipping is different than forced passing (e.g. after FPA) because it does
+            #       not contribute toward the pass_count == 2 check
             if attack_phase.skip_next_attack_phase:
                 State.COMBAT_ROUND += 2
             else:

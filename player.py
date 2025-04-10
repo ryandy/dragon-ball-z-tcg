@@ -40,7 +40,9 @@ class Player:
         self.card_powers = []
         self.anger = 0
         self.opponent = None
-        self.must_pass_until = None  # tuple of (turn #, combat round #)
+
+        self.must_pass_attack_until = None  # tuple of (turn #, combat round #)
+        self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
 
         life_deck_cards = []
         for card in deck.cards:
@@ -123,27 +125,42 @@ class Player:
             if self.card_powers[idx].is_exhausted():
                 del self.card_powers[idx]
 
-    def get_valid_card_powers(self, card_power_types, floating_only=False):
+    def get_valid_card_powers(self, card_power_types):
         if not isinstance(card_power_types, list):
             card_power_types = [card_power_types]
 
         filtered_card_powers = []
         for card_power in self.card_powers:
             if (any(isinstance(card_power, x) for x in card_power_types)
+                and (not isinstance(card_power, CardPowerDefense)
+                     or card_power.is_floating
+                     or not self.must_pass_defense())
+                and (not isinstance(card_power, CardPowerAttack)
+                     or not self.must_pass_attack())
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
                 and not card_power.is_restricted(self)
-                and card_power.cost.can_afford(self)
-                and (not floating_only or card_power.is_floating)):
+                and card_power.cost.can_afford(self, card_power)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
 
-    def must_pass(self):
+    def must_pass_attack(self):
         cur_time = State.get_time()
-        return self.must_pass_until and cur_time < self.must_pass_until
+        return self.must_pass_attack_until and cur_time < self.must_pass_attack_until
+
+    def must_pass_defense(self):
+        cur_time = State.get_time()
+        return self.must_pass_defense_until and cur_time < self.must_pass_defense_until
 
     def must_pass_until_next_turn(self):
-        self.must_pass_until = (State.TURN + 1, 0)
+        self.must_pass_attack_until = (State.TURN + 1, 0)
+        self.must_pass_defense_until = (State.TURN + 1, 0)
+
+    def must_pass_attack_until_next_turn(self):
+        self.must_pass_attack_until = (State.TURN + 1, 0)
+
+    def must_pass_defense_until_next_turn(self):
+        self.must_pass_defense_until = (State.TURN + 1, 0)
 
     def card_in_play(self, card_or_card_id, own_side=True, either_side=False):
         if isinstance(card_or_card_id, Card):
@@ -587,8 +604,7 @@ class Player:
         return choice
 
     def choose_card_power(self, card_power_type, prompt=None):
-        must_pass = self.must_pass()
-        filtered = self.get_valid_card_powers(card_power_type, floating_only=must_pass)
+        filtered = self.get_valid_card_powers(card_power_type)
         filtered.sort(key=lambda x: (1 if isinstance(x, CardPowerFinalPhysicalAttack) else 0))
 
         other_hand = []
@@ -634,15 +650,20 @@ class Player:
             return None
         return self.discard_pile.cards[idx]
 
-    def choose_hand_discard_card(self):
+    def choose_hand_discard_card(self, ignore_card=None):
         '''Assumes hand has at least 1 card and a card must be chosen'''
+        hand_cards = self.hand.cards
+        if ignore_card:
+            hand_cards = [x for x in hand_cards if x is not ignore_card]
+        assert len(hand_cards) > 0
+
         idx = self.choose(
-            [str(c) for c in self.hand],
-            [c.card_text for c in self.hand],
+            [str(c) for c in hand_cards],
+            [c.card_text for c in hand_cards],
             allow_pass=False,
             prompt='Select a card to discard')
 
-        return self.hand.cards[idx]
+        return hand_cards[idx]
 
     def choose_declare_combat(self):
         '''True -> declare combat'''
