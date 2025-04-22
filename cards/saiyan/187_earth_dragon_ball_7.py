@@ -65,6 +65,7 @@ class CardPowerEDB7_DragonBall(CardPowerDragonBall):
 
 class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
+        super().on_secondary_effects(player, phase)
         _search_discard_pile(player)
 
     def on_resolved(self, player, phase):

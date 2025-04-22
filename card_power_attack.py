@@ -15,7 +15,7 @@ class CardPowerAttack(CardPower):
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
                  cost=None, damage=None, damage_modifier=None, rejuvenate_count=None,
                  own_anger=None, opp_anger=None,
-                 main_power=None, any_power=None,
+                 main_power=None, any_power=None, opp_power=None,
                  force_end_combat=None,
                  exhaust=True, discard=True, remove_from_game=False,
                  is_floating=None, card=None):
@@ -43,6 +43,7 @@ class CardPowerAttack(CardPower):
         self.opp_anger = opp_anger
         self.main_power = main_power
         self.any_power = any_power
+        self.opp_power = opp_power
         self.force_end_combat = force_end_combat
         self.exhaust = exhaust
         self.discard = discard
@@ -89,6 +90,8 @@ class CardPowerAttack(CardPower):
         if self.any_power:
             personality = player.choose_power_stage_target(self.any_power)
             personality.adjust_power_stage(self.any_power)
+        if self.opp_power:
+            player.opponent.main_personality.adjust_power_stage(self.opp_power)
 
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
