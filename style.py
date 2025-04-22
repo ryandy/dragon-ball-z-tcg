@@ -9,3 +9,4 @@ class Style(enum.Enum):
     ORANGE = 4
     BLACK = 5
     SAIYAN = 6
+    NAMEKIAN = 7

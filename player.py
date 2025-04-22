@@ -29,37 +29,19 @@ MAX_ANGER = 5
 
 
 class Player:
-    def __init__(self, deck, state, interactive=False):
-        self.state = state
+    def __init__(self, deck=None, interactive=False):
         self.interactive = interactive
-        self.character = deck.cards[0].character
+        self.character = None
         self.main_personalities = []
         self.main_personality = None
         self.control_personality = None
-        self.tokui_waza = None  # TODO
+        self.tokui_waza = None
         self.card_powers = []
         self.anger = 0
         self.opponent = None
+        self.name = 'Player'
 
-        self.must_skip_next_combat = False
-
-        self.must_pass_attack_until = None  # tuple of (turn #, combat round #)
-        self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
-
-        life_deck_cards = []
-        for card in deck.cards:
-            card.register_owner(self)
-            if isinstance(card, PersonalityCard) and card.character == self.character:
-                self.main_personalities.append(card)
-            else:
-                life_deck_cards.append(card)
-
-        self.main_personalities.sort(key=lambda x: x.level)
-        self.life_deck = Deck('LifeDeck', life_deck_cards)
-        self.life_deck.shuffle()
-        for card in self.life_deck:
-            card.set_pile(self.life_deck)
-
+        self.life_deck = None
         self.hand = Pile('Hand')
         self.discard_pile = Pile('Discard')
         self.removed_pile = Pile('Removed')
@@ -69,11 +51,12 @@ class Player:
         self.dragon_balls = Pile('DragonBalls')
         self.register_card_power(CardPowerFinalPhysicalAttack())
 
-        self.main_personality = self.main_personalities[0]
-        self.main_personality.init_for_main()
-        self.control_personality = self.main_personality
-        self.register_card_powers(self.main_personality.card_powers)
-        self.name = self.main_personality.char_name()
+        self.must_skip_next_combat = False
+        self.must_pass_attack_until = None  # tuple of (turn #, combat round #)
+        self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
+
+        if deck:
+            self.register_deck(deck)
 
     def __repr__(self):
         if self.control_personality is not self.main_personality:
@@ -84,6 +67,37 @@ class Player:
         '''Use to jump into the game at certain points to debug'''
         self.interactive = True
         State.INTERACTIVE = True
+
+    def register_deck(self, deck):
+        self.character = deck.cards[0].character
+
+        style_counts = collections.defaultdict(int)
+        life_deck_cards = []
+        for card in deck.cards:
+            card.register_owner(self)
+            if isinstance(card, PersonalityCard) and card.character == self.character:
+                self.main_personalities.append(card)
+            else:
+                life_deck_cards.append(card)
+                style_counts[card.style] += 1
+
+        styles = [x for x in style_counts.keys() if x != Style.FREESTYLE]
+        if len(styles) == 1:
+            self.tokui_waza = styles[0]
+
+        self.main_personalities.sort(key=lambda x: x.level)
+        self.life_deck = Deck('LifeDeck', life_deck_cards)
+        self.life_deck.shuffle()
+        for card in self.life_deck:
+            card.set_pile(self.life_deck)
+
+        self.main_personality = self.main_personalities[0]
+        self.main_personality.init_for_main()
+        self.control_personality = self.main_personality
+        self.name = self.main_personality.char_name()
+        if self.tokui_waza:
+            self.name = f'{self.tokui_waza.name.title()}{self.name}'
+        self.register_card_powers(self.main_personality.card_powers)
 
     def register_opponent(self, opponent):
         self.opponent = opponent
@@ -534,7 +548,7 @@ class Player:
         drills = len(self.drills)
         dbs = len(self.dragon_balls)
         hand = len(self.hand)
-        dprint(f'{level : <5} {name : <9} {power : >5}pwr {life : >2}hp {discard : >2}dp'
+        dprint(f'{level : <5} {name : <15} {power : >5}pwr {life : >2}hp {discard : >2}dp'
                f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
         for ally in self.allies:
             level = f'Lv{ally.level}'

@@ -124,8 +124,9 @@ class PersonalityCard(Card):
 
         if self.character == Character.SAIBAIMEN:
             # No more than 2 others of this character/level in the game
-            all_allies = player.allies + player.opponent.allies
-            sames = [x for x in all_allies if x.get_name_level() == self.get_name_level()]
+            cards = (player.allies.cards + player.opponent.allies.cards
+                     + [player.main_personality, player.opponent.main_personality])
+            sames = [x for x in cards if x.get_name_level() == self.get_name_level()]
             char_restricted = (len(sames) >= 2)
         else:
             # Cannot be the same character as an ally you have in play unless overlaying
