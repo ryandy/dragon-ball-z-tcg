@@ -55,6 +55,8 @@ class Player:
         self.must_pass_attack_until = None  # tuple of (turn #, combat round #)
         self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
 
+        self.cards_played_this_combat = []
+
         if deck:
             self.register_deck(deck)
 
@@ -710,12 +712,7 @@ class Player:
     def choose_to_use_card_power(self, card_power):
         idx = self.choose([f'Use {card_power}'], [card_power.description],
                           prompt=f'You can use {card_power} now')
-        if idx == 0:
-            dprint(f'{self} activates {card_power}')
-            if not self.interactive:
-                dprint(f'  - {card_power.description}')
-            return True
-        return False
+        return idx == 0
 
     def choose_opponent_dragon_ball(self, prompt=None):
         if not self.opponent.dragon_balls.cards:

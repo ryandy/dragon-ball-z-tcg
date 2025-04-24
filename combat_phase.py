@@ -1,5 +1,6 @@
 import sys
 
+from card_power_on_entering_combat import CardPowerOnEnteringCombat
 from card_power_on_combat_declared import CardPowerOnCombatDeclared
 from combat_attack_phase import CombatAttackPhase
 from draw_phase import DrawPhase
@@ -22,11 +23,16 @@ class CombatPhase(Phase):
         self.skipped = True
 
     def entering_combat(self):
-        pass
+        for player in [self.player, self.player.opponent]:
+            player.cards_played_this_combat = []
+            card_powers = player.get_valid_card_powers(CardPowerOnEnteringCombat)
+            for card_power in card_powers:
+                card_power.on_entering_combat(self)
 
     def end_of_combat(self):
         for player in [self.player, self.player.opponent]:
             player.revert_control_of_combat()
+            player.cards_played_this_combat = []
 
     def execute(self):
         State.PHASE = self

@@ -31,7 +31,11 @@ class CombatDefensePhase(Phase):
         card_power = self.player.choose_card_power(
             [card_power_class, CardPowerAnyDefense],
             prompt='Select a card power for defense')
+
         if card_power:
+            # Log the card used
+            if card_power.card and not card_power.is_floating:
+                self.player.cards_played_this_combat.append(card_power.card)
             dprint(f'{self.player} uses {card_power} to defend')
             if not self.player.interactive:
                 dprint(f'  - {card_power.description}')
@@ -43,6 +47,9 @@ class CombatDefensePhase(Phase):
             # Activate a relevant defense shield
             shield_card_power = self.player.choose_defense_shield(is_physical=is_physical)
             if shield_card_power:
+                # Log the card used
+                if shield_card_power.card and not shield_card_power.is_floating:
+                    self.player.cards_played_this_combat.append(shield_card_power.card)
                 dprint(f'{self.player} activates Defense Shield: {shield_card_power}')
                 damage = shield_card_power.on_defense(self.player, self, damage)
 

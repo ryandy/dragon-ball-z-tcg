@@ -3,6 +3,7 @@ import sys
 
 from card_power import CardPower
 from cost import Cost
+from util import dprint
 
 
 class CardPowerOnDraw(CardPower):
@@ -46,6 +47,8 @@ class CardPowerOnDraw(CardPower):
 
         if (activated
             and (not self.choice or self.player.choose_to_use_card_power(self))):
+            dprint(f'{self.player} uses {self}')
+            dprint(f'  - {self.description}')
             self.on_effect(phase)
             self.on_resolved(phase)
 

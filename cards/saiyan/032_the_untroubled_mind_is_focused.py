@@ -32,7 +32,7 @@ class CardPowerTUMIF(CardPowerNonCombatAttack):
                             [x.card_text for x in cards],
                             allow_pass=False,
                             prompt='Select an opponent\'s card to remove from the game')
-        player.discard(cards[idx], remove_from_game=True)
+        player.opponent.discard(cards[idx], remove_from_game=True)
 
 
 CARD_POWER = CardPowerTUMIF(NAME, CARD_TEXT)

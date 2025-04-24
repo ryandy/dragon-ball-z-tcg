@@ -36,6 +36,10 @@ class CombatAttackPhase(Phase):
             dprint(f'{self.player} passes')
             return
 
+        # Log the card used
+        if self.attack_power.card and not self.attack_power.is_floating:
+            self.player.cards_played_this_combat.append(self.attack_power.card)
+
         damage_mod_srcs = []
         if self.attack_power.is_physical is None:  # Non-combat attacks
             dprint(f'{self.player} uses {self.attack_power} (Non-Combat)')
