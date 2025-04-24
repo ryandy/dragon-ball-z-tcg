@@ -8,10 +8,10 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Non-Combat'
-NAME = 'Power Up!'
+NAME = 'Power Up the Most!'
 SAGA = 'Saiyan'
-CARD_NUMBER = '22'
-RARITY = 1
+CARD_NUMBER = '98'
+RARITY = 3
 DECK_LIMIT = None
 CHARACTER = None
 STYLE = None

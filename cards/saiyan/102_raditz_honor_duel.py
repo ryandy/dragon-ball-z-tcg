@@ -21,7 +21,7 @@ CARD_TEXT = (
     ' draw the bottom 3 cards from your discard pile. Remove from the game after use.')
 
 
-class CardPowerGHD(CardPowerOnDraw):
+class CardPowerRHD(CardPowerOnDraw):
     def on_effect(self, phase):
         # If this is played twice in one turn, you shouldn't end up drawing 6 cards
         super().on_effect(phase)
@@ -30,6 +30,6 @@ class CardPowerGHD(CardPowerOnDraw):
             phase.draw_count = 0
 
 
-CARD_POWER = CardPowerGHD(
+CARD_POWER = CardPowerRHD(
     NAME, CARD_TEXT, own_defend_draw_add=-3, own_defend_draw_from_discard_add=3,
     choice=True, remove_from_game=True)
