@@ -5,7 +5,6 @@ from character import Character
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
-from util import dprint
 
 
 TYPE = 'Non-Combat'
@@ -19,20 +18,5 @@ STYLE = None
 CARD_TEXT = ('Heroes only. Choose 2 cards from your discard pile and place them on'
              ' the bottom of your Life Deck. Remove from the game after use.')
 
-
-class CardPowerDCT(CardPowerNonCombatAttack):
-    def on_secondary_effects(self, player, phase):
-        super().on_secondary_effects(player, phase)
-        for _ in range(2):
-            card = player.choose_discard_pile_card()
-            if card:
-                if player.interactive:
-                    dprint(f'{player} returns {card} to their life deck')
-                else:
-                    dprint(f'{player} returns a card to their life deck')
-                player.discard_pile.remove(card)
-                player.life_deck.add_bottom(card)
-                card.set_pile(player.life_deck)
-
-
-CARD_POWER = CardPowerDCT(NAME, CARD_TEXT, heroes_only=True, remove_from_game=True)
+CARD_POWER = CardPowerNonCombatAttack(
+    NAME, CARD_TEXT, rejuvenate_choice_count=2, heroes_only=True, remove_from_game=True)

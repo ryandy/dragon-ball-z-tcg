@@ -38,10 +38,7 @@ def _search_discard_pile(player):
     for _ in range(3):
         card = player.choose_discard_pile_card()
         if card:
-            if player.interactive:
-                dprint(f'{player} returns {card} to their life deck')
-            else:
-                dprint(f'{player} returns a card to their life deck')
+            dprint(f'{player} returns {card} to their life deck')
             player.discard_pile.remove(card)
             player.life_deck.add_top(card)
             card.set_pile(player.life_deck)

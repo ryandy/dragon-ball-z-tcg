@@ -5,7 +5,6 @@ from character import Character
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
-from util import dprint
 
 
 TYPE = 'Non-Combat'
@@ -27,18 +26,5 @@ class CardPowerST(CardPowerNonCombatAttack):
             return True
         return super().is_restricted(player)
 
-    def on_secondary_effects(self, player, phase):
-        super().on_secondary_effects(player, phase)
-        for _ in range(2):
-            card = player.choose_discard_pile_card()
-            if card:
-                if player.interactive:
-                    dprint(f'{player} returns {card} to their life deck')
-                else:
-                    dprint(f'{player} returns a card to their life deck')
-                player.discard_pile.remove(card)
-                player.life_deck.add_bottom(card)
-                card.set_pile(player.life_deck)
 
-
-CARD_POWER = CardPowerST(NAME, CARD_TEXT)
+CARD_POWER = CardPowerST(NAME, CARD_TEXT, rejuvenate_choice_count=2)

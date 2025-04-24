@@ -451,14 +451,28 @@ class Player:
         else:
             dprint(f'{self} failed to rejuvenate because the discard pile is empty')
 
+    def rejuvenate_with_choice(self):
+        card = self.choose_discard_pile_card()
+        if card:
+            dprint(f'{self} returns {card} to their life deck')
+            self.discard_pile.remove(card)
+            self.life_deck.add_bottom(card)
+            card.set_pile(self.life_deck)
+
     def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)
         dprint(f'{self} takes {damage}')
 
         carryover_life_damage = self.apply_power_damage(damage.power - damage.power_prevent)
-        self.apply_life_damage(
-            damage.life + carryover_life_damage - damage.life_prevent,
-            src_personality=src_personality)
+        total_life_damage = max(0, damage.life + carryover_life_damage - damage.life_prevent)
+        life_draw = min(total_life_damage, damage.life_prevent_and_draw)
+        if life_draw > 0:
+            dprint(f'{self} converted {life_draw} life damage into card draw')
+            for _ in range(life_draw):
+                self.draw()
+
+        total_life_damage -= life_draw
+        self.apply_life_damage(total_life_damage, src_personality=src_personality)
 
     def apply_physical_attack_damage(self, damage, src_personality=None):
         return self._apply_damage(damage, src_personality=src_personality, is_physical=True)
@@ -696,7 +710,12 @@ class Player:
     def choose_to_use_card_power(self, card_power):
         idx = self.choose([f'Use {card_power}'], [card_power.description],
                           prompt=f'You can use {card_power} now')
-        return idx == 0
+        if idx == 0:
+            dprint(f'{self} activates {card_power}')
+            if not self.interactive:
+                dprint(f'  - {card_power.description}')
+            return True
+        return False
 
     def choose_opponent_dragon_ball(self, prompt=None):
         if not self.opponent.dragon_balls.cards:

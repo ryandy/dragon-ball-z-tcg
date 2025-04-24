@@ -6,7 +6,6 @@ from character import Character
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
-from util import dprint
 
 
 TYPE = 'Dragon Ball'

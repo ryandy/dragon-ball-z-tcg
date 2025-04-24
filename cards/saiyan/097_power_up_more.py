@@ -8,14 +8,13 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Non-Combat'
-NAME = 'King Kai Training'
+NAME = 'Power Up More!'
 SAGA = 'Saiyan'
-CARD_NUMBER = '79'
+CARD_NUMBER = '97'
 RARITY = 3
 DECK_LIMIT = None
 CHARACTER = None
 STYLE = None
-CARD_TEXT = ('Heroes only. Choose 2 cards from your discard pile and place them on'
-             ' the bottom of your Life Deck.')
+CARD_TEXT = ('Powers up 6 stages for a personality.')
 
-CARD_POWER = CardPowerNonCombatAttack(NAME, CARD_TEXT, rejuvenate_choice_count=2, heroes_only=True)
+CARD_POWER = CardPowerNonCombatAttack(NAME, CARD_TEXT, any_power=6)

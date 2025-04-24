@@ -20,6 +20,13 @@ CARD_TEXT = ('Saiyan Heritage only. Physical attack. If successful, it stops a s
              ' from making a physical attack on their next phase.')
 
 
+# TODO: I don't think this card power is being handled correctly. I think the opponent cannot
+#       make any physical/energy attack at all next phase. They would have to
+#       do a different kind of attack or pass.
+# Note: There is no errata for this card, but there is for 94:
+#       "If successful, your opponent cannot perform a physical attack during his next
+#        Attacker Attacks phase.”
+# Note: Other similar cards: 18, 19, 21, 94
 class CardPowerSAT(CardPowerPhysicalAttack):
     def on_success(self, player, phase):
         card_power = CardPowerPhysicalDefense(

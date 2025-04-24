@@ -3,7 +3,7 @@ import sys
 
 class Damage:
     def __init__(self, power=None, life=None, use_pat=None, mods=None, stopped=None,
-                 power_prevent=None, life_prevent=None):
+                 power_prevent=None, life_prevent=None, life_prevent_and_draw=None):
         assert (not power or not use_pat)
         self.power = power or 0
         self.life = life or 0
@@ -12,6 +12,7 @@ class Damage:
         self.stopped = stopped or False
         self.power_prevent = power_prevent or 0
         self.life_prevent = life_prevent or 0
+        self.life_prevent_and_draw = life_prevent_and_draw or 0
 
     def __repr__(self):
         stopped = self.was_stopped()
@@ -21,7 +22,8 @@ class Damage:
         power = 'PAT' if self.use_pat else f'{self.power}'
         life = f'{self.life}'
         power_add, life_add, power_mult, life_mult, power_max, life_max = 0, 0, 1, 1, 1000, 1000
-        power_prevent, life_prevent = self.power_prevent, self.life_prevent
+        power_prevent, life_prevent = (
+            self.power_prevent, self.life_prevent + self.life_prevent_and_draw)
         for mod in self.mods:
             power_add += mod.power_add
             life_add += mod.life_add
@@ -30,7 +32,7 @@ class Damage:
             power_max = min(power_max, mod.power_max)
             life_max = min(life_max, mod.life_max)
             power_prevent += mod.power_prevent
-            life_prevent += mod.life_prevent
+            life_prevent += mod.life_prevent + mod.life_prevent_and_draw
 
         if power_mult != 1:
             power = f'{power}*{power_mult}'
@@ -60,7 +62,8 @@ class Damage:
             mods=[m.copy() for m in self.mods],
             stopped=self.stopped,
             power_prevent=self.power_prevent,
-            life_prevent=self.life_prevent)
+            life_prevent=self.life_prevent,
+            life_prevent_and_draw=self.life_prevent_and_draw)
 
     def modify(self, mod):
         # TODO return new Damage instance
@@ -95,15 +98,18 @@ class Damage:
             power = min(power, mod.power_max)
             life = min(life, mod.life_max)
 
-        power_prevent, life_prevent = self.power_prevent, self.life_prevent
+        power_prevent, life_prevent, life_prevent_and_draw = (
+            self.power_prevent, self.life_prevent, self.life_prevent_and_draw)
         for mod in self.mods:
             power_prevent += mod.power_prevent
             life_prevent += mod.life_prevent
+            life_prevent_and_draw += mod.life_prevent_and_draw
 
         return Damage(power=max(0, power),
                       life=max(0, life),
                       power_prevent=power_prevent,
-                      life_prevent=life_prevent)
+                      life_prevent=life_prevent,
+                      life_prevent_and_draw=life_prevent_and_draw)
 
     @classmethod
     def none(cls):

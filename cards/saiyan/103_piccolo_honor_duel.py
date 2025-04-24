@@ -9,12 +9,12 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Non-Combat'
-NAME = 'Goku Honor Duel!'
+NAME = 'Piccolo Honor Duel!'
 SAGA = 'Saiyan'
-CARD_NUMBER = '101'
+CARD_NUMBER = '103'
 RARITY = 3
 DECK_LIMIT = None
-CHARACTER = 'Goku'
+CHARACTER = 'Piccolo'
 STYLE = None
 CARD_TEXT = (
     'Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck,'

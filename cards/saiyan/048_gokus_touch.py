@@ -7,7 +7,6 @@ from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
 from state import State
-from util import dprint
 
 
 TYPE = 'Non-Combat'

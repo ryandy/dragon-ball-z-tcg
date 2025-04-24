@@ -6,7 +6,6 @@ from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
 from personality_card import PersonalityCard
-from util import dprint
 
 
 TYPE = 'Combat'
