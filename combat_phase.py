@@ -25,6 +25,7 @@ class CombatPhase(Phase):
     def entering_combat(self):
         for player in [self.player, self.player.opponent]:
             player.cards_played_this_combat = []
+            player.card_powers_played_this_combat = []
             card_powers = player.get_valid_card_powers(CardPowerOnEnteringCombat)
             for card_power in card_powers:
                 card_power.on_entering_combat(self)
@@ -33,6 +34,7 @@ class CombatPhase(Phase):
         for player in [self.player, self.player.opponent]:
             player.revert_control_of_combat()
             player.cards_played_this_combat = []
+            player.card_powers_played_this_combat = []
 
     def execute(self):
         State.PHASE = self

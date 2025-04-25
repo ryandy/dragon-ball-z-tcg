@@ -28,7 +28,8 @@ class CardPowerCL2(CardPowerEnergyAttack):
         if player.main_personality is self.card:
             raise GameOver(f'{player}\'s Main Personality has been removed from the game',
                            player.opponent)
-        player.remove_from_game(self.card)
+        if self.card:
+            player.remove_from_game(self.card)
 
 
 CARD_POWER = CardPowerCL2(NAME, CARD_TEXT, exhaust=False, discard=False,

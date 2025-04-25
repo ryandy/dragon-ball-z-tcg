@@ -22,10 +22,6 @@ CARD_TEXT = ('Energy attack doing 2 life cards of damage. If used by Krillin, it
 
 
 class CardPowerEnergyAttackKEA(CardPowerEnergyAttack):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.resolved_count = 0
-
     def on_resolved(self, player, phase):
         self.resolved_count += 1
         if self.resolved_count > 2:
@@ -41,7 +37,8 @@ class CardPowerEnergyAttackKEA(CardPowerEnergyAttack):
 
         # Used by Krillin, set up for second use
         self.exhaust_after_this_turn()
-        player.remove_from_game(self.card, exhaust_card=False)
+        if self.card:
+            player.remove_from_game(self.card, exhaust_card=False)
         self.set_floating()
 
 

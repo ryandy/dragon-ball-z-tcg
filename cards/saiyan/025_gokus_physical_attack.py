@@ -23,10 +23,6 @@ CARD_TEXT = ('Physical attack. If successful, draw the bottom card from your dis
 
 
 class CardPowerGPA(CardPowerPhysicalAttack):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.resolved_count = 0
-
     def on_success(self, player, phase):
         card = player.discard_pile.draw_from_bottom()
         if card:
@@ -47,7 +43,8 @@ class CardPowerGPA(CardPowerPhysicalAttack):
 
         # Used by Goku, set up for second use
         self.exhaust_after_this_turn()
-        player.remove_from_game(self.card, exhaust_card=False)
+        if self.card:
+            player.remove_from_game(self.card, exhaust_card=False)
         self.set_floating()
 
 

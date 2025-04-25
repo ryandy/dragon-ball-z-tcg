@@ -22,6 +22,7 @@ class CardPower(abc.ABC):
         self.valid_until = None  # tuple of (turn #, combat round #)
         self.deactivated = False  # Can be temporarily turned on/off without exhausting
         self.player = None
+        self.resolved_count = 0
 
     def __repr__(self):
         suffix = ' (*)' if self.is_floating else ''

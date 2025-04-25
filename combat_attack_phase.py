@@ -34,9 +34,11 @@ class CombatAttackPhase(Phase):
         if not self.attack_power:
             self.passed = True
             dprint(f'{self.player} passes')
+            self.player.card_powers_played_this_combat.append(None)
             return
 
         # Log the card used
+        self.player.card_powers_played_this_combat.append(self.attack_power.copy())
         if self.attack_power.card and not self.attack_power.is_floating:
             self.player.cards_played_this_combat.append(self.attack_power.card)
 

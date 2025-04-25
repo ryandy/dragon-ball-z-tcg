@@ -24,10 +24,6 @@ CARD_TEXT = ('Play this card as a defense. If your opponent’s attack does life
 
 
 class CardPowerAnyDefenseKPD(CardPowerAnyDefense):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.resolved_count = 0
-
     def on_resolved(self, player, phase):
         self.resolved_count += 1
         if self.resolved_count > 2:
@@ -43,7 +39,8 @@ class CardPowerAnyDefenseKPD(CardPowerAnyDefense):
 
         # Used by Krillin, set up for second use
         self.exhaust_after_this_turn()
-        player.discard(self.card, exhaust_card=False)
+        if self.card:
+            player.discard(self.card, exhaust_card=False)
         self.set_floating()
 
 

@@ -56,6 +56,7 @@ class Player:
         self.must_pass_defense_until = None  # tuple of (turn #, combat round #)
 
         self.cards_played_this_combat = []
+        self.card_powers_played_this_combat = []
 
         if deck:
             self.register_deck(deck)
@@ -108,6 +109,7 @@ class Player:
         card_power_copy = card_power.copy()
         card_power_copy.register_player(self)
         self.card_powers.append(card_power_copy)
+        return card_power_copy
 
     def register_card_powers(self, card_powers):
         for card_power in card_powers:
@@ -676,6 +678,7 @@ class Player:
         idx = self.choose(
             [str(c) for c in self.discard_pile],
             [c.card_text for c in self.discard_pile],
+            allow_pass=False,
             prompt='Select a card from your discard pile')
 
         if idx is None:  # Pass

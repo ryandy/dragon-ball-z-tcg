@@ -24,10 +24,6 @@ CARD_TEXT = ('Captures one Dragon Ball once per game after a successful energy a
 
 
 class CardPowerVL3(CardPowerOnAttackResolved):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.resolved_count = 0
-
     def on_condition(self, phase, damage, is_physical):
         return (self.resolved_count == 0  # once per game
                 and self.player is phase.player  # attacking
