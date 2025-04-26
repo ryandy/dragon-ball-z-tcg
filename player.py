@@ -572,7 +572,7 @@ class Player:
             level = f'Lv{ally.level}'
             name = ally.char_name()
             power = ally.get_power_attack_str()
-            dprint(f'{level : <5} {name : <9} {power : >5}pwr')
+            dprint(f'{level : <5} {name : <15} {power : >5}pwr')
 
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
@@ -590,7 +590,7 @@ class Player:
                 # Almost never want to choose FPA if another choice exists
                 return random.randrange(len(names) - 1)
             if len(names) == 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.67:
-                # Even when it's the only choice, probably want to pass instead of FPA most of the time
+                # Even when it's the only choice, probably want to pass instead of FPA sometimes
                 return None
             # Random choice
             return random.randrange(len(names))
@@ -849,17 +849,20 @@ class Player:
         self.drills.add(card)
         card.set_pile(self.drills)
 
-        # Discard any newly invalidated restricted drills
-        for player in [self, self.opponent]:
-            for drill_card in player.drills:
-                if (drill_card is not card
-                    and drill_card.restricted
-                    and drill_card.style == card.style):
-                    dprint(f'{player}\'s restricted {drill_card.name} invalidated')
-                    player.discard(drill_card)
-
         for card_power in card.card_powers:
             self.register_card_power(card_power)
+
+        # Discard any newly invalidated restricted drills
+        invalid_drills = []
+        for player in [self, self.opponent]:
+            for drill_card in player.drills:
+                if (drill_card.restricted
+                    and len([x for x in self.drills + self.opponent.drills
+                             if x is not drill_card and x.style == drill_card.restricted]) > 0):
+                    invalid_drills.append((player, drill_card))
+        for player, invalid_drill in invalid_drills:
+            dprint(f'{player}\'s restricted {invalid_drill.name} invalidated')
+            player.discard(invalid_drill)
 
     def play_dragon_ball(self, card):
         dprint(f'{self} plays {card}')

@@ -15,9 +15,9 @@ RARITY = 3
 DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Orange'
-RESTRICTED = True
-CARD_TEXT = ('All energy attacks performed against you do 1 less life card of damage. Cannot be'
-             ' used with other Orange Drills in play.')
+RESTRICTED = 'Orange'
+CARD_TEXT = ('All energy attacks performed against you do 1 less life card of damage. Can\'t be'
+             ' used with other Orange drills in play anywhere on the table.')
 
 CARD_POWER = CardPowerOnDamageModification(
     NAME, CARD_TEXT, opp_energy=DamageModifier(life_add=-1))

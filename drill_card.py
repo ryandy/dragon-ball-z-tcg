@@ -9,13 +9,10 @@ class DrillCard(Card):
                  card_text, card_power, restricted):
         super().__init__(name, saga, card_number, rarity, deck_limit, character, style,
                          card_text, card_power)
-        self.restricted = restricted
+        self.restricted = Style[restricted.upper()] if restricted else False
 
     def __repr__(self):
         return f'{self.name} (Non-Combat)'
-
-    def is_restricted(self):
-        return self.restricted
 
     def can_be_played(self, player):
         if self.style == Style.FREESTYLE:
@@ -29,8 +26,8 @@ class DrillCard(Card):
                                for x in player.drills if x.style != Style.FREESTYLE)
         special_restricted = (
             self.restricted
-            and (any(x.style == self.style for x in player.drills)
-                 or any(x.style == self.style for x in player.opponent.drills)))
+            and (any(x.style == self.restricted
+                     for x in player.drills + player.opponent.drills)))
 
         # Goku's Mixing Drill allows drills of multiple colors to be used at the same time
         if player.card_in_play('saiyan.231'):
