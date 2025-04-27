@@ -17,7 +17,7 @@ CHARACTER = None
 STYLE = 'Orange'
 RESTRICTED = 'Orange'
 CARD_TEXT = ('All energy attacks performed against you do 1 less life card of damage. Can\'t be'
-             ' used with other Orange drills in play anywhere on the table.')
+             ' used with any other Orange drills in play.')
 
 CARD_POWER = CardPowerOnDamageModification(
     NAME, CARD_TEXT, opp_energy=DamageModifier(life_add=-1))

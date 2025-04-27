@@ -29,4 +29,4 @@ class CardPowerOnAttackResolvedBTD(CardPowerOnAttackResolved):
 
 
 CARD_POWER = CardPowerOnAttackResolvedBTD(
-    NAME, CARD_TEXT, exhaust=False, discard=False, choice=True)
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False, choice=True)

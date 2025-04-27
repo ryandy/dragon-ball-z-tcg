@@ -10,6 +10,7 @@ from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
 from card_power_dragon_ball import CardPowerDragonBall
+from card_power_on_damage_applied import CardPowerOnDamageApplied
 from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
 from character import Character
 from combat_card import CombatCard
@@ -497,6 +498,12 @@ class Player:
         power_damage -= carryover_life_damage
         dprint(f'{target_personality.name} takes {power_damage} power damage')
         target_personality.reduce_power_stage(power_damage)
+
+        for player in [self.opponent, self]:
+            card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
+            for card_power in card_powers:
+                card_power.on_damage_applied(self, power_damage=power_damage)
+
         return carryover_life_damage
 
     def apply_life_damage(self, life_damage, src_personality=None):
@@ -521,6 +528,11 @@ class Player:
             if card_discarded:
                 discard_count += 1
                 dprint(f'{self} takes 1 life damage: {card_discarded}')
+
+        for player in [self.opponent, self]:
+            card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
+            for card_power in card_powers:
+                card_power.on_damage_applied(self, life_damage=life_damage)
 
         # Check for Dragon Ball Life Card Capture
         if (discard_count >= 5 and src_personality

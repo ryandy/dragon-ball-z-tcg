@@ -114,7 +114,7 @@ class CardPowerAttack(CardPower):
                 player.exhaust_card_power(self)
         else:  # TODO: separate flag for exhaust_until_next_turn
             if self.card:
-                player.exhaust_card_until_next_turn(card=self.card)
+                player.exhaust_card_until_next_turn(self.card)
             else:
                 self.exhaust_until_next_turn()
 

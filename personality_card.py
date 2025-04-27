@@ -61,6 +61,8 @@ class PersonalityCard(Card):
         new_power = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
         delta = new_power - self.power_stage
         if delta:
+            # TODO: OnPowerAdjusted
+            #       e.g. 139 Red Wrist Control Drill
             verb = 'increases' if delta > 0 else 'decreases'
             old_str = self.get_power_attack_str()
             new_str = self.get_power_attack_str(power_stage=new_power)

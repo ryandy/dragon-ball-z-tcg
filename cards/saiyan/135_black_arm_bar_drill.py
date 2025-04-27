@@ -17,8 +17,8 @@ DECK_LIMIT = None
 CHARACTER = None
 STYLE = 'Black'
 RESTRICTED = 'Orange'
-CARD_TEXT = ('Stop the first energy attack made on you in a combat. Can\'t be used with other'
-             ' Orange drills in play anywhere on the table.')
+CARD_TEXT = ('Stop the first energy attack made on you in a combat. Can\'t be used with any'
+             ' other Orange drills in play.')
 
 
 class CardPowerEnergyDefenseBABD(CardPowerEnergyDefense):

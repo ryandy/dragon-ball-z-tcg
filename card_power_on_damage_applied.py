@@ -6,7 +6,7 @@ from cost import Cost
 from util import dprint
 
 
-class CardPowerOnAttackResolved(CardPower):
+class CardPowerOnDamageApplied(CardPower):
     def __init__(self, name, description,
                  choice=False, exhaust=True, exhaust_until_next_turn=False,
                  discard=True, remove_from_game=False):
@@ -21,21 +21,21 @@ class CardPowerOnAttackResolved(CardPower):
         # Note: do not deep copy self.card
         return copy.copy(self)
 
-    def on_attack_resolved(self, phase, damage, is_physical):
-        if (self.on_condition(phase, damage, is_physical)
+    def on_damage_applied(self, damaged_player, power_damage=None, life_damage=None):
+        if (self.on_condition(damaged_player, power_damage, life_damage)
             and (not self.choice or self.player.choose_to_use_card_power(self))):
             dprint(f'{self.player} uses {self}')
             dprint(f'  - {self.description}')
-            self.on_effect(phase, damage, is_physical)
-            self.on_resolved(phase)
+            self.on_effect(damaged_player, power_damage, life_damage)
+            self.on_resolved()
 
-    def on_condition(self, phase, damage, is_physical):
+    def on_condition(self, damaged_player, power_damage, life_damage):
         return True
 
-    def on_effect(self, phase, damage, is_physical):
+    def on_effect(self, damaged_player, power_damage, life_damage):
         pass
 
-    def on_resolved(self, phase):
+    def on_resolved(self):
         if self._exhaust_until_next_turn:
             if self.card:
                 self.player.exhaust_card_until_next_turn(self.card)
