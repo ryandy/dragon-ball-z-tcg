@@ -18,11 +18,14 @@ class CardPowerAttack(CardPower):
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None, opp_power=None,
                  force_end_combat=None,
-                 exhaust=True, discard=True, remove_from_game=False,
+                 exhaust=True, exhaust_until_next_turn=False,
+                 discard=True, remove_from_game=False,
                  is_floating=None, card=None):
         if cost is None:
             cost = Cost.energy_attack() if (is_physical is False) else Cost.none()
         super().__init__(name, description, cost,
+                         exhaust=exhaust, exhaust_until_next_turn=exhaust_until_next_turn,
+                         discard=discard, remove_from_game=remove_from_game,
                          heroes_only=heroes_only, villains_only=villains_only,
                          saiyan_only=saiyan_only, namekian_only=namekian_only,
                          card=card, is_floating=is_floating)
@@ -47,9 +50,6 @@ class CardPowerAttack(CardPower):
         self.any_power = any_power
         self.opp_power = opp_power
         self.force_end_combat = force_end_combat
-        self.exhaust = exhaust
-        self.discard = discard
-        self.remove_from_game = remove_from_game
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -73,7 +73,7 @@ class CardPowerAttack(CardPower):
         if success:
             self.on_success(player, phase)
 
-        self.on_resolved(player, phase)
+        self.on_resolved()
 
         if self.force_end_combat:
             phase.set_force_end_combat()
@@ -105,24 +105,6 @@ class CardPowerAttack(CardPower):
 
     def on_success(self, player, phase):
         pass
-
-    def on_resolved(self, player, phase):
-        if self.exhaust:
-            if self.card:
-                player.exhaust_card(self.card)
-            else:
-                player.exhaust_card_power(self)
-        else:  # TODO: separate flag for exhaust_until_next_turn
-            if self.card:
-                player.exhaust_card_until_next_turn(self.card)
-            else:
-                self.exhaust_until_next_turn()
-
-        if self.card:
-            if self.remove_from_game:
-                player.remove_from_game(self.card, exhaust_card=False)
-            elif self.discard:
-                player.discard(self.card, exhaust_card=False)
 
 
 class CardPowerPhysicalAttack(CardPowerAttack):
@@ -161,7 +143,7 @@ class CardPowerMultiForm(CardPowerPhysicalAttack):
         self.resolved_turn = -1
         self.resolved_count = 0
 
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         # Reset each turn the power is used
         if self.resolved_turn != State.TURN:
             self.resolved_turn = State.TURN
@@ -171,7 +153,7 @@ class CardPowerMultiForm(CardPowerPhysicalAttack):
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
-            player.exhaust_card_until_next_turn(card=self.card)
+            self.player.exhaust_card_until_next_turn(self.card)
         else:
-            phase.set_skip_next_attack_phase()
-            phase.set_next_attack_power(self)
+            State.PHASE.set_skip_next_attack_phase()
+            State.PHASE.set_next_attack_power(self)

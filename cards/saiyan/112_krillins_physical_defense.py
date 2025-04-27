@@ -24,23 +24,23 @@ CARD_TEXT = ('Play this card as a defense. If your opponent’s attack does life
 
 
 class CardPowerAnyDefenseKPD(CardPowerAnyDefense):
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
-            player.exhaust_card_power(self)
+            self.player.exhaust_card_power(self)
             return
 
         # First time through, if not Krillin, exhaust/discard as normal
-        if player.control_personality.character != Character.KRILLIN:
-            super().on_resolved(player, phase)
+        if self.player.control_personality.character != Character.KRILLIN:
+            super().on_resolved()
             return
 
         # Used by Krillin, set up for second use
         self.exhaust_after_this_turn()
         if self.card:
-            player.discard(self.card, exhaust_card=False)
+            self.player.discard(self.card, exhaust_card=False)
         self.set_floating()
 
 

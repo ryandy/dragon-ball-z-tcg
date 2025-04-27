@@ -20,4 +20,4 @@ POWER_UP_RATING = 1
 POWER_STAGES = range(100, 1000+1, 100)
 CARD_TEXT = ('Physical Attack.')
 
-CARD_POWER = CardPowerPhysicalAttack(NAME, CARD_TEXT, exhaust=False, discard=False)
+CARD_POWER = CardPowerPhysicalAttack(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)

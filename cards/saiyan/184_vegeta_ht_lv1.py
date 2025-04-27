@@ -21,4 +21,4 @@ POWER_STAGES = range(2000, 3800+1, 200)
 CARD_TEXT = ('Stop an energy attack.')
 
 CARD_POWER = CardPowerEnergyDefense(
-    NAME, CARD_TEXT, exhaust=False, discard=False)
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)

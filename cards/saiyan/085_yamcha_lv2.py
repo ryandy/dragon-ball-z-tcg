@@ -26,4 +26,4 @@ class CardPowerSolarFlare(CardPowerEnergyAttack):
         phase.set_skip_next_attack_phase()
 
 
-CARD_POWER = CardPowerSolarFlare(NAME, CARD_TEXT, exhaust=False, discard=False)
+CARD_POWER = CardPowerSolarFlare(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)

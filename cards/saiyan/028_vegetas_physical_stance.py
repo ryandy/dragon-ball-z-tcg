@@ -22,12 +22,12 @@ CARD_TEXT = ('Stops a physical attack. Stops all physical attacks performed agai
 
 
 class CardPowerVPS(CardPowerPhysicalDefense):
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count == 1:
             self.exhaust_after_this_turn()
             if self.card:
-                player.remove_from_game(self.card, exhaust_card=False)
+                self.player.remove_from_game(self.card, exhaust_card=False)
             self.set_floating()
 
 

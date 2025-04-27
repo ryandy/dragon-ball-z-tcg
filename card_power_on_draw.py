@@ -13,7 +13,8 @@ class CardPowerOnDraw(CardPower):
                  own_attack_draw_from_discard_add=None,
                  own_defend_draw_from_discard_add=None,
                  choice=False, exhaust=True, discard=True, remove_from_game=False):
-        super().__init__(name, description, Cost.none())
+        super().__init__(name, description, Cost.none(),
+                         exhaust=exhaust, discard=discard, remove_from_game=remove_from_game)
         self.own_attack_draw_add = own_attack_draw_add or 0
         self.own_defend_draw_add = own_defend_draw_add or 0
         self.opp_attack_draw_add = opp_attack_draw_add or 0
@@ -21,9 +22,6 @@ class CardPowerOnDraw(CardPower):
         self.own_attack_draw_from_discard_add = own_attack_draw_from_discard_add or 0
         self.own_defend_draw_from_discard_add = own_defend_draw_from_discard_add or 0
         self.choice = choice
-        self.exhaust = exhaust
-        self.discard = discard
-        self.remove_from_game = remove_from_game
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -50,7 +48,7 @@ class CardPowerOnDraw(CardPower):
             dprint(f'{self.player} uses {self}')
             dprint(f'  - {self.description}')
             self.on_effect(phase)
-            self.on_resolved(phase)
+            self.on_resolved()
 
     def on_effect(self, phase):
         phase.draw_count += self.own_attack_draw_add
@@ -59,16 +57,3 @@ class CardPowerOnDraw(CardPower):
         phase.discard_pile_draw_count += self.own_defend_draw_from_discard_add
         phase.draw_count += self.opp_attack_draw_add
         phase.draw_count += self.opp_defend_draw_add
-
-    def on_resolved(self, phase):
-        if self.exhaust:
-            if self.card:
-                self.player.exhaust_card(self.card)
-            else:
-                self.player.exhaust_card_power(self)
-
-        if self.card:
-            if self.remove_from_game:
-                self.player.remove_from_game(self.card, exhaust_card=False)
-            elif self.discard:
-                self.player.discard(self.card, exhaust_card=False)

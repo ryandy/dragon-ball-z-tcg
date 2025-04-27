@@ -13,9 +13,12 @@ class CardPowerDefenseShield(CardPower):
                  cost=None, damage_modifier=None, rejuvenate_count=None,
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None,
-                 exhaust=True, discard=True, remove_from_game=None,
+                 exhaust=True, exhaust_until_next_turn=False,
+                 discard=True, remove_from_game=False,
                  is_floating=None, card=None):
         super().__init__(name, description, cost or Cost.none(),
+                         exhaust=exhaust, exhaust_until_next_turn=exhaust_until_next_turn,
+                         discard=discard, remove_from_game=remove_from_game,
                          heroes_only=heroes_only, villains_only=villains_only,
                          saiyan_only=saiyan_only, namekian_only=namekian_only,
                          card=card, is_floating=is_floating)
@@ -26,9 +29,6 @@ class CardPowerDefenseShield(CardPower):
         self.opp_anger = opp_anger
         self.main_power = main_power
         self.any_power = any_power
-        self.exhaust = exhaust
-        self.discard = discard
-        self.remove_from_game = remove_from_game
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -46,7 +46,7 @@ class CardPowerDefenseShield(CardPower):
         damage_modifier = self.damage_modifier or DamageModifier(stopped=True)
         damage.modify(damage_modifier)
 
-        self.on_resolved(player, phase)
+        self.on_resolved()
         return damage
 
     def on_pay_cost(self, player, phase):
@@ -67,24 +67,6 @@ class CardPowerDefenseShield(CardPower):
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
                 player.rejuvenate()
-
-    def on_resolved(self, player, phase):
-        if self.exhaust:
-            if self.card:
-                player.exhaust_card(card=self.card)
-            else:
-                player.exhaust_card_power(self)
-        else:
-            if self.card:
-                player.exhaust_card_until_next_turn(card=self.card)
-            else:
-                self.exhaust_until_next_turn()
-
-        if self.card:
-            if self.remove_from_game:
-                player.remove_from_game(self.card)
-            elif self.discard:
-                player.discard(self.card)
 
 
 class CardPowerPhysicalDefenseShield(CardPowerDefenseShield):

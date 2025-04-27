@@ -20,6 +20,6 @@ POWER_STAGES = range(100, 1000+1, 100)
 CARD_TEXT = ('Energy Attack. Costs 1 stage and does 3 life card draws of damage.')
 
 CARD_POWER = CardPowerEnergyAttack(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     cost=Cost.energy_attack(power=1),
     damage=Damage.energy_attack(life=3))

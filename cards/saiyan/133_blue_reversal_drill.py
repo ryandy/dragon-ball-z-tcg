@@ -65,8 +65,8 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
         self.damage = Damage.none()
 
         # Need to also call on_resolved for the drill so it gets exhausted appropriately
-        self.on_resolved(player, phase)
+        self.on_resolved()
 
 
 CARD_POWER = CardPowerPhysicalAttackBRD(
-    NAME, CARD_TEXT, exhaust=False, discard=False, damage=Damage.none())
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False, damage=Damage.none())

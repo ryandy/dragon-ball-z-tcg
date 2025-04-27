@@ -29,4 +29,5 @@ class CardPowerEnergyDefenseBABD(CardPowerEnergyDefense):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerEnergyDefenseBABD(NAME, CARD_TEXT, exhaust=False, discard=False)
+CARD_POWER = CardPowerEnergyDefenseBABD(
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)

@@ -20,5 +20,5 @@ POWER_UP_RATING = 2
 POWER_STAGES = range(500, 1400+1, 100)
 CARD_TEXT = ('Energy attack needs 3 power stages to perform.')
 
-CARD_POWER = CardPowerEnergyAttack(NAME, CARD_TEXT, exhaust=False, discard=False,
+CARD_POWER = CardPowerEnergyAttack(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
                                    cost=Cost.energy_attack(power=3))

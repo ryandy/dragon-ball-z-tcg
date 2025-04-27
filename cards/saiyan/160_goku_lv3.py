@@ -20,5 +20,5 @@ POWER_STAGES = range(8000, 12500+1, 500)
 CARD_TEXT = ('Prevent 2 life card draws from being discarded from a successful energy attack.')
 
 CARD_POWER = CardPowerEnergyDefense(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage_modifier=DamageModifier(life_prevent=2))

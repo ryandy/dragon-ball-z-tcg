@@ -22,6 +22,6 @@ CARD_TEXT = ('Saiyan Energy Blast does 3 life card draw of damage and only costs
              ' to perform.')
 
 CARD_POWER = CardPowerEnergyAttack(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     cost=Cost.energy_attack(power=1),
     damage=Damage.energy_attack(life=3))

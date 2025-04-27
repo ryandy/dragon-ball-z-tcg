@@ -22,23 +22,23 @@ CARD_TEXT = ('Energy attack doing 2 life cards of damage. If used by Krillin, it
 
 
 class CardPowerEnergyAttackKEA(CardPowerEnergyAttack):
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
-            player.exhaust_card_power(self)
+            self.player.exhaust_card_power(self)
             return
 
         # First time through, if not Krillin, exhaust/remove as normal
-        if player.control_personality.character != Character.KRILLIN:
-            super().on_resolved(player, phase)
+        if self.player.control_personality.character != Character.KRILLIN:
+            super().on_resolved()
             return
 
         # Used by Krillin, set up for second use
         self.exhaust_after_this_turn()
         if self.card:
-            player.remove_from_game(self.card, exhaust_card=False)
+            self.player.remove_from_game(self.card, exhaust_card=False)
         self.set_floating()
 
 

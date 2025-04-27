@@ -22,7 +22,7 @@ CARD_TEXT = ('Multi-Form allows two physical attacks, one after another, or a de
              ' physical attack preventing 4 stages of successful damage.')
 
 CARD_POWER = [
-    CardPowerMultiForm(NAME, CARD_TEXT, exhaust=False, discard=False),
-    CardPowerPhysicalDefense(NAME, CARD_TEXT, exhaust=False, discard=False,
+    CardPowerMultiForm(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False),
+    CardPowerPhysicalDefense(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
                              damage_modifier=DamageModifier(power_prevent=4))
 ]

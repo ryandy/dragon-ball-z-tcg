@@ -10,12 +10,10 @@ class CardPowerOnDamageApplied(CardPower):
     def __init__(self, name, description,
                  choice=False, exhaust=True, exhaust_until_next_turn=False,
                  discard=True, remove_from_game=False):
-        super().__init__(name, description, Cost.none())
+        super().__init__(name, description, Cost.none(),
+                         exhaust=exhaust, exhaust_until_next_turn=exhaust_until_next_turn,
+                         discard=discard, remove_from_game=remove_from_game)
         self.choice = choice
-        self.exhaust = exhaust
-        self._exhaust_until_next_turn = exhaust_until_next_turn
-        self.discard = discard
-        self.remove_from_game = remove_from_game
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -34,21 +32,3 @@ class CardPowerOnDamageApplied(CardPower):
 
     def on_effect(self, damaged_player, power_damage, life_damage):
         pass
-
-    def on_resolved(self):
-        if self._exhaust_until_next_turn:
-            if self.card:
-                self.player.exhaust_card_until_next_turn(self.card)
-            else:
-                self.exhaust_until_next_turn()
-        elif self.exhaust:
-            if self.card:
-                self.player.exhaust_card(self.card)
-            else:
-                self.player.exhaust_card_power(self)
-
-        if self.card:
-            if self.remove_from_game:
-                self.player.remove_from_game(self.card, exhaust_card=False)
-            elif self.discard:
-                self.player.discard(self.card, exhaust_card=False)

@@ -21,5 +21,5 @@ CARD_TEXT = ('Kaio-Ken Power Level Booster. Physical attack draining 4 power sta
              ' Goku\'s power is. Do not consult table.')
 
 CARD_POWER = CardPowerPhysicalAttack(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage=Damage(power=4))

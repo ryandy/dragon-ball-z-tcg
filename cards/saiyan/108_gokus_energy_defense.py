@@ -22,23 +22,23 @@ CARD_TEXT = ('Prevents 3 life cards from being discarded from a successful energ
 
 
 class CardPowerGED(CardPowerEnergyDefense):
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count > 2:
             assert False
         elif self.resolved_count == 2:
-            player.exhaust_card_power(self)
+            self.player.exhaust_card_power(self)
             return
 
         # First time through, if not Goku, exhaust/remove as normal
-        if player.character != Character.GOKU:
-            super().on_resolved(player, phase)
+        if self.player.character != Character.GOKU:
+            super().on_resolved()
             return
 
         # Used by Goku, set up for second use
         self.exhaust_after_this_turn()
         if self.card:
-            player.discard(self.card, exhaust_card=False)
+            self.player.discard(self.card, exhaust_card=False)
         self.set_floating()
 
 

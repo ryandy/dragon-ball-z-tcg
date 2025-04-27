@@ -65,15 +65,15 @@ class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
         super().on_secondary_effects(player, phase)
         _search_discard_pile(player)
 
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         assert self.card
-        player.exhaust_card(self.card)
+        self.player.exhaust_card(self.card)
 
         # Card is played from hand so must be put into DB area
-        assert self.card.pile is player.hand
-        player.hand.remove(self.card)
-        player.dragon_balls.add(self.card)
-        self.card.set_pile(player.dragon_balls)
+        assert self.card.pile is self.player.hand
+        self.player.hand.remove(self.card)
+        self.player.dragon_balls.add(self.card)
+        self.card.set_pile(self.player.dragon_balls)
 
 
 CARD_POWER = [

@@ -20,5 +20,5 @@ POWER_STAGES = range(500, 1400+1, 100)
 CARD_TEXT = ('Screw Blast Energy Attack inflicts 2 life card draws of damage.')
 
 CARD_POWER = CardPowerEnergyAttack(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage=Damage.energy_attack(life=2))

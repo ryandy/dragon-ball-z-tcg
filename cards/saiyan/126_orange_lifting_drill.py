@@ -33,4 +33,5 @@ class CardPowerNonCombatAttackOLD(CardPowerNonCombatAttack):
             player.opponent.discard(card)
 
 
-CARD_POWER = CardPowerNonCombatAttackOLD(NAME, CARD_TEXT, exhaust=False, discard=False)
+CARD_POWER = CardPowerNonCombatAttackOLD(
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)

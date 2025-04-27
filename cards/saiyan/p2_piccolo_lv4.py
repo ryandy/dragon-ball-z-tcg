@@ -28,10 +28,10 @@ _form_text = ('Multi-Form allows two physical attacks, one after another.')
 CARD_POWER = [
     CardPowerEnergyAttack(
         NAME + ' - Special Energy Beam Cannon', _beam_text,
-        exhaust=False, discard=False,
+        exhaust_until_next_turn=True, discard=False,
         cost=Cost.energy_attack(power=1),
         damage=Damage.energy_attack(life=2)),
     CardPowerMultiForm(
         NAME + ' - Multi-Form', _form_text,
-        exhaust=False, discard=False)
+        exhaust_until_next_turn=True, discard=False)
 ]

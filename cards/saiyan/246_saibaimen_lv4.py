@@ -33,5 +33,5 @@ class CardPowerSL4(CardPowerPhysicalAttack):
 
 
 CARD_POWER = CardPowerSL4(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage=Damage(life=5))

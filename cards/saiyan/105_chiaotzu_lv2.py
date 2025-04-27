@@ -32,5 +32,5 @@ class CardPowerCL2(CardPowerEnergyAttack):
             player.remove_from_game(self.card)
 
 
-CARD_POWER = CardPowerCL2(NAME, CARD_TEXT, exhaust=False, discard=False,
+CARD_POWER = CardPowerCL2(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
                           damage=Damage.energy_attack(life=6))

@@ -20,5 +20,5 @@ POWER_STAGES = range(500, 1400+1, 100)
 CARD_TEXT = ('Physical Attack. Do not consult the chart and do 4 stages of damage to the foe.')
 
 CARD_POWER = CardPowerPhysicalAttack(
-    NAME, CARD_TEXT, exhaust=False, discard=False,
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage=Damage(power=4))

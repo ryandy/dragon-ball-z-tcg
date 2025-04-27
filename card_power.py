@@ -7,11 +7,17 @@ from state import State
 
 class CardPower(abc.ABC):
     def __init__(self, name, description, cost,
+                 exhaust=True, exhaust_until_next_turn=False,
+                 discard=True, remove_from_game=False,
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
                  card=None, is_floating=False):
         self.name = name
         self.description = description
         self.cost = cost.copy()
+        self.exhaust_after_use = exhaust
+        self.exhaust_until_next_turn_after_use = exhaust_until_next_turn
+        self.discard_after_use = discard
+        self.remove_from_game_after_use = remove_from_game
         self.heroes_only = heroes_only
         self.villains_only = villains_only
         self.saiyan_only = saiyan_only
@@ -53,6 +59,7 @@ class CardPower(abc.ABC):
 
     def set_floating(self):
         self.is_floating = True
+        self.card = None
 
     def exhaust_until_next_turn(self):
         self.valid_from = (State.TURN + 1, 0)
@@ -81,3 +88,26 @@ class CardPower(abc.ABC):
         if self.namekian_only:
             return not player.control_personality.character.has_namekian_heritage()
         return False
+
+    def on_resolved(self):
+        if self.card:
+            self._on_resolved_with_card()
+        else:
+            self._on_resolved_without_card()
+
+    def _on_resolved_with_card(self):
+        if self.exhaust_until_next_turn_after_use:
+            self.player.exhaust_card_until_next_turn(self.card)
+        elif self.exhaust_after_use:
+            self.player.exhaust_card(self.card)
+
+        if self.remove_from_game_after_use:
+            self.player.remove_from_game(self.card, exhaust_card=False)
+        elif self.discard_after_use:
+            self.player.discard(self.card, exhaust_card=False)
+
+    def _on_resolved_without_card(self):
+        if self.exhaust_until_next_turn_after_use:
+            self.exhaust_until_next_turn()
+        elif self.exhaust_after_use:
+            self.player.exhaust_card_power(self)

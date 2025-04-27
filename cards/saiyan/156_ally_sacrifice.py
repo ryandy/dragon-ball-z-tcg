@@ -22,14 +22,14 @@ CARD_TEXT = ('Stops all of your opponent\'s physical and energy attacks for the 
 
 
 class CardPowerAS(CardPowerAnyDefense):
-    def on_resolved(self, player, phase):
+    def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count == 1:
             self.cost = Cost.none()
             self.exhaust_after_this_turn()
             if self.card:
-                player.remove_from_game(self.card, exhaust_card=False)
+                self.player.discard(self.card, exhaust_card=False)
             self.set_floating()
 
 
-CARD_POWER = CardPowerAS(NAME, CARD_TEXT, cost=Cost(own_ally=1), remove_from_game=True)
+CARD_POWER = CardPowerAS(NAME, CARD_TEXT, cost=Cost(own_ally=1))
