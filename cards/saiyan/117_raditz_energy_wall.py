@@ -23,7 +23,7 @@ CARD_TEXT = ('Forces a Hero opponent in this combat to discard 1 life card from 
 
 class CardPowerNonCombatAttackREW(CardPowerNonCombatAttack):
      def is_restricted(self, player):
-         if not player.opponent.control_personality.is_hero:
+         if not player.opponent.main_personality.is_hero:
              return True
          return super().is_restricted(player)
 

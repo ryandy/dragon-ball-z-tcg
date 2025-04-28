@@ -22,7 +22,7 @@ CARD_TEXT = ('This card ends a combat and the user is powered up to full. Shift 
              ' anger levels down 2.')
 
 
-class CardPowerEDB6(CardPowerDragonBall):
+class CardPowerDragonBallEDB6(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.opponent.adjust_anger(-2)
         card_text = 'This card ends a combat and the user is powered up to full.'
@@ -31,4 +31,4 @@ class CardPowerEDB6(CardPowerDragonBall):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerEDB6(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallEDB6(NAME, CARD_TEXT)

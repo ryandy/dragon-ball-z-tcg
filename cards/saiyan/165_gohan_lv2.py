@@ -27,20 +27,21 @@ CARD_TEXT = ('Once during the game, he can turn into Kong Gohan, inflicting 8 st
 class CardPowerPhysicalAttackGL2(CardPowerPhysicalAttack):
     def is_restricted(self, player):
         # Can only be used the turn Gohan is played
-        if self.card.play_turn != State.TURN:
+        if self.card and self.card.play_turn != State.TURN:
             return True
 
         # Can only be used once per game
         # Card powers can be copied, but cards never are, so store this property on the card
         # This will prevent the power from being reusable, even if Gohan levels back down to 2 later
-        if hasattr(self.card, '_once_per_game_used'):
+        if self.card and hasattr(self.card, '_once_per_game_used'):
             return True
 
         return super().is_restricted(player)
 
     def on_secondary_effects(self, player, phase):
         # Store this property regardless of attack success
-        setattr(self.card, '_once_per_game_used', True)
+        if self.card:
+            setattr(self.card, '_once_per_game_used', True)
 
 
 CARD_POWER = CardPowerPhysicalAttackGL2(

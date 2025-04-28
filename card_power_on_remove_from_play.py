@@ -14,5 +14,6 @@ class CardPowerOnRemoveFromPlay(CardPower):
         return copy.copy(self)
 
     # Important to have player passed in here because card_power may not have player registered
-    def on_remove_from_play(self, player, phase):
+    # Called _after_ the card has been removed from play
+    def on_remove_from_play(self, player):
         pass

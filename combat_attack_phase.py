@@ -91,6 +91,7 @@ class CombatAttackPhase(Phase):
             damage = defense_phase.physical_defense(damage)
         else:
             damage = defense_phase.energy_defense(damage)
+        State.PHASE = self
 
         # Refresh damage mods
         damage, _ = self._get_damage(damage)

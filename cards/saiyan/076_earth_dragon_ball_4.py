@@ -22,11 +22,11 @@ CARD_TEXT = ('End the very next combat you are forced into before you sustain da
              ' level increases 2.')
 
 
-class CardPowerEDB4(CardPowerDragonBall):
+class CardPowerDragonBallEDB4(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.adjust_anger(2)
 
-        class CardPowerEDB4_OnCombatDeclared(CardPowerOnCombatDeclared):
+        class CardPowerOnCombatDeclaredEDB4(CardPowerOnCombatDeclared):
             def on_condition(_self, _phase):
                 return _self.player is not _phase.player
 
@@ -34,9 +34,9 @@ class CardPowerEDB4(CardPowerDragonBall):
                 _phase.set_force_skip_phase()
 
         card_text = 'End the very next combat you are forced into before you sustain damage.'
-        card_power = CardPowerEDB4_OnCombatDeclared(
+        card_power = CardPowerOnCombatDeclaredEDB4(
             self.name, card_text, choice=False, discard=False, card=self.card)
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerEDB4(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallEDB4(NAME, CARD_TEXT)

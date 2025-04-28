@@ -20,10 +20,10 @@ CARD_TEXT = ('When you place this card in play, immediately raise your Main Pers
              ' its highest power stage. Remove from the game after use.')
 
 
-class CardPowerSB(CardPowerDragonBall):
+class CardPowerDragonBallSB(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.main_personality.adjust_power_stage(10)
-        player.remove_from_game(self.card)
+        self.on_resolved()
 
 
-CARD_POWER = CardPowerSB(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallSB(NAME, CARD_TEXT, remove_from_game=True)

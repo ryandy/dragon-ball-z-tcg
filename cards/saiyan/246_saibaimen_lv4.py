@@ -26,8 +26,7 @@ class CardPowerSL4(CardPowerPhysicalAttack):
     def is_restricted(self, player):
         cards = (player.allies.cards + player.opponent.allies.cards
                  + [player.main_personality, player.opponent.main_personality])
-        if not any((card is not self.card
-                    and card.character == Character.SAIBAIMEN) for card in cards):
+        if len([card for card in cards if card.character == Character.SAIBAIMEN]) <= 1:
             return True
         return super().is_restricted(player)
 

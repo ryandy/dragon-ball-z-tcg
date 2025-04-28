@@ -21,8 +21,9 @@ CARD_TEXT = ('Allows multiple colors of drills to be used at the same time.')
 
 
 def _drills_are_legal(player):
-    for card in player.drills:
-        if any(x.style != card.style for x in player.drills if x.style != Style.FREESTYLE):
+    styled_drills = [x for x in player.drills if x.style != Style.FREESTYLE]
+    for card in styled_drills:
+        if any(x.style != card.style for x in styled_drills):
             return False
     return True
 
@@ -30,16 +31,15 @@ def _drills_are_legal(player):
 # This card's power is enforced automatically and passively. We just need to re-enforce the rules
 # once the drill is removed from play.
 class CardPowerGMD(CardPowerOnRemoveFromPlay):
-    def on_remove_from_play(self, player, phase):
+    # Called _after_ the card has been removed from play
+    def on_remove_from_play(self, player):
         # If another Goku's Mixing Drill remains in play, no need to do anything
-        for card in player.drills:
-            if (card is not self.card
-                and card.get_id() == self.card.get_id()):
-                return
+        if player.card_in_play('saiyan.231'):  # Goku's Mixing Drill
+            return
 
         while not _drills_are_legal(player):
             # Choose a drill to discard
-            cards = [x for x in player.drills if x is not self.card and x.style != Style.FREESTYLE]
+            cards = [x for x in player.drills if x.style != Style.FREESTYLE]
             assert cards
             idx = player.choose(
                 [x.name for x in cards],

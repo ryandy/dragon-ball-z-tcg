@@ -33,9 +33,10 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
         card_power.valid_from = None
         card_power.valid_until = None
         card_power.deactivated = False
-        card_power.card = None
-        card_power.discard = False
-        card_power.remove_from_game = False
+        card_power.exhaust_after_use = False
+        card_power.exhaust_until_next_turn_after_use = False
+        card_power.discard_after_use = False
+        card_power.remove_from_game_after_use = False
 
         # Regardless of how the copied card exhausts itself, make sure it's exhausted by next turn
         card_power.exhaust_after_this_turn()
@@ -44,8 +45,10 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
 
     def is_restricted(self, player):
         card_power = self._get_card_power(player)
+        # Ignore the copied card power's restrictions. If it was played last phase, it gets copied
+        # and played this phase, regardless of its ordinary restrictions e.g. saiyan heritage only
+        # Do check and pay for copied card's cost (if any) though
         if (not card_power
-            or card_power.is_restricted(player)
             or not card_power.cost.can_afford(player, card_power)):
             return True
         return super().is_restricted(player)

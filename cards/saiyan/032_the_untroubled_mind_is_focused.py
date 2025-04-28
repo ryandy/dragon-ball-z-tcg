@@ -28,11 +28,12 @@ class CardPowerTUMIF(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         cards = player.opponent.drills + player.opponent.allies
-        idx = player.choose([x.name for x in cards],
-                            [x.card_text for x in cards],
-                            allow_pass=False,
-                            prompt='Select an opponent\'s card to remove from the game')
-        player.opponent.discard(cards[idx], remove_from_game=True)
+        if cards:
+            idx = player.choose([x.name for x in cards],
+                                [x.card_text for x in cards],
+                                allow_pass=False,
+                                prompt='Select an opponent\'s card to remove from the game')
+            player.opponent.discard(cards[idx], remove_from_game=True)
 
 
 CARD_POWER = CardPowerTUMIF(NAME, CARD_TEXT)

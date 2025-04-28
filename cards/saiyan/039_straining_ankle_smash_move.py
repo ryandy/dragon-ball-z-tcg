@@ -26,9 +26,9 @@ CARD_TEXT = ('Use immediately after your opponent attacks you (physical or energ
 
 class CardPowerSASM(CardPowerAnyDefense):
     def is_restricted(self, player):
-        applicable = (isinstance(State.PHASE, CombatDefensePhase)
-                      and not State.PHASE.attack_phase.attack_power.cost.is_none())
-        if not applicable:
+        # Can be called at various times, so need to check that the phase is what we expect
+        if (isinstance(State.PHASE, CombatDefensePhase)
+            and not State.PHASE.attack_phase.attack_power.cost.is_none()):
             return True
         return super().is_restricted(player)
 

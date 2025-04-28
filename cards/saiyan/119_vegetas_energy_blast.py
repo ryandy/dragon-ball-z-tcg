@@ -42,5 +42,6 @@ CARD_POWER = [
     CardPowerNonCombatAttackVEB(
         NAME, CARD_TEXT, main_power=10, saiyan_only=True, remove_from_game=True),
     CardPowerAnyDefenseVEB(
-        NAME, CARD_TEXT, main_power=10, saiyan_only=True, remove_from_game=True)
+        NAME, CARD_TEXT, main_power=10, saiyan_only=True, remove_from_game=True,
+        damage_modifier=DamageModifier.none())
 ]

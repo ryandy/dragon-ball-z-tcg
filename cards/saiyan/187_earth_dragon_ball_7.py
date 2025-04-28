@@ -44,39 +44,40 @@ def _search_discard_pile(player):
             card.set_pile(player.life_deck)
 
 
-class CardPowerEDB7_DragonBall(CardPowerDragonBall):
+class CardPowerDragonBallEDB7(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.opponent.adjust_anger(-2)
         _search_discard_pile(player)
 
         # In special circumstances can be played during CombatPhase not as a CardPowerAttack
+        # e.g. another card searches deck for a dragon ball and plays it during combat
         if (isinstance(phase, CombatPhase)
             or isinstance(phase, CombatAttackPhase)
             or isinstance(phase, CombatDefensePhase)):
             phase.set_force_end_combat()
 
         # Need to exhaust the registered attack card power
-        assert self.card
-        player.exhaust_card(self.card)
+        player.exhaust_card_by_id('saiyan.187')  # Earth Dragon Ball 7
 
 
-class CardPowerEDB7_Attack(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackEDB7(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         _search_discard_pile(player)
 
     def on_resolved(self):
-        assert self.card
-        self.player.exhaust_card(self.card)
+        super().on_resolved()
 
         # Card is played from hand so must be put into DB area
-        assert self.card.pile is self.player.hand
-        self.player.hand.remove(self.card)
-        self.player.dragon_balls.add(self.card)
-        self.card.set_pile(self.player.dragon_balls)
+        if self.card:
+            assert self.card.pile is self.player.hand
+            self.player.hand.remove(self.card)
+            self.player.dragon_balls.add(self.card)
+            self.card.set_pile(self.player.dragon_balls)
 
 
 CARD_POWER = [
-    CardPowerEDB7_DragonBall(NAME, CARD_TEXT),
-    CardPowerEDB7_Attack(NAME, CARD_TEXT, opp_anger=-2, force_end_combat=True)
+    CardPowerDragonBallEDB7(NAME, CARD_TEXT),
+    CardPowerNonCombatAttackEDB7(
+        NAME, CARD_TEXT, opp_anger=-2, discard=False, force_end_combat=True)
 ]

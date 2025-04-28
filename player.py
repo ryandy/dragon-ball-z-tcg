@@ -131,6 +131,11 @@ class Player:
             if self.card_powers[idx].card is card:
                 del self.card_powers[idx]
 
+    def exhaust_card_by_id(self, card_id):
+        for idx in reversed(range(len(self.card_powers))):
+            if self.card_powers[idx].card and self.card_powers[idx].card.get_id() == card_id:
+                del self.card_powers[idx]
+
     def exhaust_card_until_next_turn(self, card):
         for idx in reversed(range(len(self.card_powers))):
             if self.card_powers[idx].card is card:
@@ -399,7 +404,7 @@ class Player:
             or src_pile is self.drills):
             for card_power in card.card_powers:
                 if isinstance(card_power, CardPowerOnRemoveFromPlay):
-                    card_power.on_remove_from_play(self, State.PHASE)
+                    card_power.on_remove_from_play(self)
 
         if isinstance(card, PersonalityCard) and src_pile is self.allies:
             self.discard_covered_allies(card, remove_from_game=remove_from_game)
@@ -907,6 +912,8 @@ class Player:
             # Some non-combat cards activate immediately using a "Dragon Ball" card power
             for card_power in card.card_powers:
                 if isinstance(card_power, CardPowerDragonBall):
+                    # Give card power access to Player
+                    card_power = self.register_card_power(card_power)
                     card_power.on_play(self, State.PHASE)
 
         elif isinstance(card, PersonalityCard):
