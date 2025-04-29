@@ -25,9 +25,12 @@ CARD_TEXT = ('This card ends a combat and the user is powered up to full. Shift 
 class CardPowerDragonBallEDB6(CardPowerDragonBall):
     def on_play(self, player, phase):
         player.opponent.adjust_anger(-2)
+
+        # self.card has to be passed along so that stealing dragon balls + powers works
         card_text = 'This card ends a combat and the user is powered up to full.'
         card_power = CardPowerNonCombatAttack(
-            self.name, card_text, main_power=10, force_end_combat=True, card=self.card)
+            self.name, card_text, discard=False,
+            main_power=10, force_end_combat=True, card=self.card)
         player.register_card_power(card_power)
 
 

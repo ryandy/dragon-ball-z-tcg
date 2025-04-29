@@ -67,8 +67,10 @@ class Player:
             return f'{self.name}/{self.control_personality.char_name()}'
         return self.name
 
-    def debug(self):
+    def debug(self, msg=None):
         '''Use to jump into the game at certain points to debug'''
+        if msg:
+            dprint(f'Warning: {msg}')
         self.interactive = True
         State.INTERACTIVE = True
 
@@ -213,7 +215,8 @@ class Player:
         next_level_idx = next_level - 1
 
         # Check for win condition
-        if (next_level_idx == len(self.main_personalities) - 1
+        if (State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY
+            and next_level_idx == len(self.main_personalities) - 1
             and len(self.main_personalities) >= len(self.opponent.main_personalities)):
             dprint(f'{self.name} levels up to Lv{next_level}!')
             raise GameOver(f'{self} has achieved the Most Powerful Personality', self)
@@ -290,6 +293,12 @@ class Player:
             self.raise_level()
 
     def check_for_dragon_ball_victory(self):
+        dbs = self.dragon_balls + self.opponent.dragon_balls
+        for i in range(len(dbs)):
+            for j in range(len(dbs)):
+                if i != j and dbs[i].get_id() == dbs[j].get_id():
+                    self.debug('Duplicate Dragon Balls')
+
         set_counts = collections.defaultdict(int)
         for card in self.dragon_balls:
             set_counts[card.db_set] += 1
@@ -440,11 +449,13 @@ class Player:
         if not card:
             return
 
+        # Do not check for dragon ball victory
         dprint(f'{self} steals {card.name}!')
         self.opponent.dragon_balls.remove(card)
         self.dragon_balls.add(card)
         card.set_pile(self.dragon_balls)
 
+        # Steal any active Dragon Ball card powers
         for idx in reversed(range(len(self.opponent.card_powers))):
             if self.opponent.card_powers[idx].card is card:
                 card_power = self.opponent.card_powers[idx]
@@ -881,10 +892,11 @@ class Player:
             dprint(f'{player}\'s restricted {invalid_drill.name} invalidated')
             player.discard(invalid_drill)
 
-    def play_dragon_ball(self, card):
-        dprint(f'{self} plays {card}')
-        if not self.interactive:
-            dprint(f'  - {card.card_text}')
+    def play_dragon_ball(self, card, verbose=True):
+        if verbose:
+            dprint(f'{self} plays {card}')
+            if not self.interactive:
+                dprint(f'  - {card.card_text}')
 
         card.pile.remove(card)
         self.dragon_balls.add(card)

@@ -33,6 +33,7 @@ class CardPowerDragonBallEDB4(CardPowerDragonBall):
             def on_effect(_self, _phase):
                 _phase.set_force_skip_phase()
 
+        # self.card has to be passed along so that stealing dragon balls + powers works
         card_text = 'End the very next combat you are forced into before you sustain damage.'
         card_power = CardPowerOnCombatDeclaredEDB4(
             self.name, card_text, choice=False, discard=False, card=self.card)

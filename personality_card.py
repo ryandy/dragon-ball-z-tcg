@@ -45,11 +45,11 @@ class PersonalityCard(Card):
 
     def init_for_main(self):
         self.play_turn = State.TURN
-        self.set_power_stage(5)
+        self.init_power_stage(5)
 
     def init_for_ally(self, covered_ally=None):
         self.play_turn = State.TURN
-        self.set_power_stage(3)
+        self.init_power_stage(3)
         self.covered_ally = covered_ally
         if covered_ally:
             self.set_power_stage_max()
@@ -63,14 +63,19 @@ class PersonalityCard(Card):
         if delta:
             # TODO: OnPowerAdjusted
             #       e.g. 139 Red Wrist Control Drill
+            #       Probably want to pass along which personality is being adjusted too
             verb = 'increases' if delta > 0 else 'decreases'
             old_str = self.get_power_attack_str()
             new_str = self.get_power_attack_str(power_stage=new_power)
             dprint(f'{self.name}\'s power {verb} from {old_str} to {new_str}')
-        self.set_power_stage(new_power)
+        self.init_power_stage(new_power)
+
+    def init_power_stage(self, new_power_stage):
+        self.power_stage = new_power_stage
 
     def set_power_stage(self, new_power_stage):
-        self.power_stage = new_power_stage
+        delta = new_power_stage - self.power_stage
+        self.adjust_power_stage(delta)
 
     def set_power_stage_max(self):
         self.adjust_power_stage(POWER_STAGES_LEN - 1)

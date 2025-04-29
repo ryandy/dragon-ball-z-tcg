@@ -16,7 +16,7 @@ from util import dprint
 
 CHARACTERS = []
 CARDS = []
-DECK_SIZE = 10
+DECK_SIZE = 60
 
 
 def fetch_cards():
@@ -122,19 +122,25 @@ def draft_deck(player):
 
 
 def main():
+    global DECK_SIZE
     parser = argparse.ArgumentParser(
         description='For the Collector in You! For the Gamer in You!',
         epilog='Recommended for ages 11 and up')
     parser.add_argument('-s', '--seed', type=int, default=0)
     parser.add_argument('-f', '--print-frequency', type=int, default=15)
+    parser.add_argument('-i', '--interactive', action='store_true')
+    parser.add_argument('--deck-size', type=int, default=DECK_SIZE)
+    parser.add_argument('--no-mpp', action='store_true')
     args = parser.parse_args()
 
     random.seed(args.seed)
-    State.INTERACTIVE = True
+    State.INTERACTIVE = args.interactive
     State.PRINT_FREQUENCY = args.print_frequency
+    State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = not args.no_mpp
+    DECK_SIZE = args.deck_size
 
     fetch_cards()
-    p1 = Player(interactive=True)
+    p1 = Player(interactive=args.interactive)
     p2 = Player()
 
     decks = []

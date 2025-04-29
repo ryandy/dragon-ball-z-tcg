@@ -61,6 +61,11 @@ class CardPowerDragonBallEDB7(CardPowerDragonBall):
 
 
 class CardPowerNonCombatAttackEDB7(CardPowerNonCombatAttack):
+    def is_restricted(self, player):
+        if self.card and not self.card.can_be_played(player):
+            return True
+        return super().is_restricted(player)
+
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         _search_discard_pile(player)
@@ -70,10 +75,10 @@ class CardPowerNonCombatAttackEDB7(CardPowerNonCombatAttack):
 
         # Card is played from hand so must be put into DB area
         if self.card:
-            assert self.card.pile is self.player.hand
-            self.player.hand.remove(self.card)
-            self.player.dragon_balls.add(self.card)
-            self.card.set_pile(self.player.dragon_balls)
+            if self.card.can_be_played(self.player):
+                self.player.play_dragon_ball(self.card, verbose=False)
+            else:
+                self.player.discard(self.card)
 
 
 CARD_POWER = [
