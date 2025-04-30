@@ -1,5 +1,8 @@
+import itertools
 import random
 import sys
+
+import tabulate
 
 from combat_phase import CombatPhase
 from discard_phase import DiscardPhase
@@ -33,6 +36,14 @@ class Runner:
     def __repr__(self):
         return f'{self.players[0].name} vs {self.players[1].name}'
 
+    def show_summary(self):
+        tabulate.PRESERVE_WHITESPACE = True
+        summaries = [player.get_summary() for player in reversed(self.players)]
+        table = tabulate.tabulate(
+            itertools.zip_longest(*reversed(summaries)),
+            tablefmt='fancy_grid')
+        dprint(table)
+
     def run(self):
         while True:
             State.COMBAT_ROUND = 0
@@ -59,8 +70,7 @@ class Runner:
         attacker = self.players[State.TURN % 2]
         for player in [attacker, attacker.opponent]:
             player.exhaust_expired_card_powers()
-        for player in self.players:
-            player.show_summary()
+        self.show_summary()
         attacker.check_for_dragon_ball_victory()
 
         # TODO: CardPowerOnBeginningOfTurn
@@ -88,7 +98,7 @@ class Runner:
         power_up_phase = PowerUpPhase(player)
         power_up_phase.execute()
 
-        combat_phase = CombatPhase(player, self.players)
+        combat_phase = CombatPhase(self, player)
         combat_phase.execute()
 
         discard_phase = DiscardPhase(player, combat_phase)

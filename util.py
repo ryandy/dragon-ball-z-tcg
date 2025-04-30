@@ -6,7 +6,8 @@ from state import State
 
 _dprint_time = None
 def dprint(msg=''):
-    _print_with_width_and_indent(msg)
+    for line in msg.split('\n'):
+        _print_with_width_and_indent(line)
 
 
 def _wait():

@@ -42,6 +42,7 @@ class Player:
         self.opponent = None
         self.name = 'Player'
 
+        self.deck_size = None
         self.life_deck = None
         self.hand = Pile('Hand')
         self.discard_pile = Pile('Discard')
@@ -75,6 +76,7 @@ class Player:
         State.INTERACTIVE = True
 
     def register_deck(self, deck):
+        self.deck_size = len(deck)
         self.character = deck.cards[0].character
 
         style_counts = collections.defaultdict(int)
@@ -582,25 +584,52 @@ class Player:
         if self.main_personality.power_stage >= 2:
             self.revert_control_of_combat()
 
-    def show_summary(self):
-        '''1-line summary of current state'''
+    def get_summary(self):
+        summary = []
+
+        header = [f'{self.name} - {len(self.life_deck)}/{self.deck_size} HP',
+                  (f'Hand: {len(self.hand)}'
+                   f' | Discard: {len(self.discard_pile)}'
+                   f' | Removed: {len(self.removed_pile)}')]
+        card_powers = self.get_valid_card_powers(CardPower)
+        db_sets = set([x.db_set for x in self.dragon_balls])
+        for db_set in sorted(db_sets):
+            dbs = [x for x in self.dragon_balls if x.db_set == db_set]
+            plural = 's' if len(dbs) > 1 else ''
+            db_str = f'{db_set} Dragon Ball{plural} '
+            for i, card in enumerate(sorted(dbs, key=lambda x: x.db_number)):
+                active = any(x.card is card for x in card_powers)
+                comma = ',' if i != 0 else ''
+                suffix = '(*)' if active else ''
+                db_str = f'{db_str}{comma}{card.db_number}{suffix}'
+            header.append(db_str)
+        summary.append('\n'.join(header))
+
+        personalities = []
         level = f'Lv{self.main_personality.level}.{self.anger}'
-        name = self.name
+        name = self.main_personality.char_name()
         power = self.main_personality.get_power_attack_str()
-        life = len(self.life_deck)
-        allies = len(self.allies)
-        discard = len(self.discard_pile)
-        non_combat = len(self.non_combat)
-        drills = len(self.drills)
-        dbs = len(self.dragon_balls)
-        hand = len(self.hand)
-        dprint(f'{level : <5} {name : <15} {power : >5}pwr {life : >2}hp {discard : >2}dp'
-               f' {allies : >2}al {dbs : >2}db {drills : >2}dr {non_combat : >2}nc {hand : >2}hd')
+        row = f'{level : <5} {name : <9} {power : >5}pwr'
+        personalities.append(row)
         for ally in self.allies:
             level = f'Lv{ally.level}'
             name = ally.char_name()
             power = ally.get_power_attack_str()
-            dprint(f'{level : <5} {name : <15} {power : >5}pwr')
+            row = f'{level : <5} {name : <9} {power : >5}pwr'
+            personalities.append(row)
+        summary.append('\n'.join(personalities))
+
+        non_combats = []
+        for card in self.non_combat:
+            non_combats.append(card.name)
+        summary.append('\n'.join(non_combats))
+
+        drills = []
+        for card in self.drills:
+            drills.append(card.name)
+        summary.append('\n'.join(drills))
+
+        return summary
 
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,

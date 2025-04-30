@@ -10,9 +10,9 @@ from util import dprint
 
 
 class CombatPhase(Phase):
-    def __init__(self, player, players):
+    def __init__(self, runner, player):
+        self.runner = runner
         self.player = player
-        self.players = players
         self.skipped = True
         self.force_end_combat = False
 
@@ -71,8 +71,7 @@ class CombatPhase(Phase):
             dprint()
             dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
                    f' {attacker} ----------')
-            for player in self.players:
-                player.show_summary()
+            self.runner.show_summary()
 
             attack_phase = CombatAttackPhase(attacker,self, attack_power_override=next_attack_power)
             attack_phase.execute()
