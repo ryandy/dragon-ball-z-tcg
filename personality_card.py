@@ -3,6 +3,7 @@ import pathlib
 import sys
 
 from card import Card
+from card_power_on_power_adjusted import CardPowerOnPowerAdjusted
 from character import Character
 from saga import Saga
 from state import State
@@ -61,9 +62,10 @@ class PersonalityCard(Card):
         new_power = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
         delta = new_power - self.power_stage
         if delta:
-            # TODO: OnPowerAdjusted
-            #       e.g. 139 Red Wrist Control Drill
-            #       Probably want to pass along which personality is being adjusted too
+            for player in [self.owner.opponent, self.owner]:
+                card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
+                for card_power in card_powers:
+                    card_power.on_power_adjusted(self.owner, self, amount)
             verb = 'increases' if delta > 0 else 'decreases'
             old_str = self.get_power_attack_str()
             new_str = self.get_power_attack_str(power_stage=new_power)
