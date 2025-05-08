@@ -52,9 +52,6 @@ class CardPowerDefense(CardPower):
         self.on_resolved()
         return damage
 
-    def on_pay_cost(self, player, phase):
-        self.cost.pay(player, self)
-
     def on_secondary_effects(self, player, phase):
         if self.own_anger:
             player.adjust_anger(self.own_anger)

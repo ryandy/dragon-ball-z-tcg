@@ -89,6 +89,9 @@ class CardPower(abc.ABC):
             return not player.control_personality.character.has_namekian_heritage()
         return False
 
+    def on_pay_cost(self, player, phase):
+        player.pay_cost(self)
+
     def on_resolved(self):
         if self.card:
             self._on_resolved_with_card()

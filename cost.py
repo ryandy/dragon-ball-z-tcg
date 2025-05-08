@@ -2,6 +2,7 @@ import copy
 import sys
 
 from character import Character
+from state import State
 
 
 class Cost:
@@ -23,35 +24,28 @@ class Cost:
                 and self.discard == 0
                 and self.own_ally == 0)
 
-    def resolve(self, player):
-        # TODO
-        #for player in State.gen_players():
-        #        card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
-        #        for card_power in card_powers:
-        #            card_power.on_power_adjusted(self.owner, self, amount)
-        pass
+    # Note: cannot import CardPowerOnCostModification without creating a circular dep..
+    def resolve(self, payer, card_power, mod_class):
+        cost_mods = []
+        cost_mod_srcs = []
+        for ocm_player in State.gen_players():
+            ocm_card_powers = ocm_player.get_valid_card_powers(mod_class)
+            for ocm_card_power in ocm_card_powers:
+                mod = ocm_card_power.on_cost_modification(payer, card_power)
+                if mod:
+                    cost_mods.append(mod)
+                    cost_mod_srcs.append(f'{ocm_player}\'s {ocm_card_power}')
 
-    def can_afford(self, player, card_power):
-        return (player.control_personality.power_stage >= self.power
-                and len(player.life_deck) >= self.life
-                and len([x for x in player.hand
-                         if x is not card_power.card]) >= self.discard
-                and len(player.allies) >= self.own_ally)
+        if not cost_mods:
+            return self, cost_mod_srcs
 
-    def pay(self, player, card_power):
-        assert self.can_afford(player, card_power)
-        player.control_personality.reduce_power_stage(self.power)
-        player.apply_life_damage(self.life)
+        power, life = self.power, self.life
+        for mod in cost_mods:
+            if power in mod.power_ittt:
+                power = mod.power_ittt[power]
 
-        for _ in range(self.discard):
-            card = player.choose_hand_discard_card(ignore_card=card_power.card)
-            player.discard(card)
-
-        for _ in range(self.own_ally):
-            ally = player.choose_personality(
-                skip_main=True, prompt='Select an ally to sacrifice')
-            # TODO: assuming remove from game for now
-            player.remove_from_game(ally)
+        return (Cost(power=power, life=life, discard=self.discard, own_ally=self.own_ally),
+                cost_mod_srcs)
 
     @classmethod
     def none(cls):

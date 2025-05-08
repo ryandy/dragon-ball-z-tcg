@@ -10,6 +10,7 @@ from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
 from card_power_dragon_ball import CardPowerDragonBall
+from card_power_on_cost_modification import CardPowerOnCostModification
 from card_power_on_damage_applied import CardPowerOnDamageApplied
 from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
 from character import Character
@@ -170,7 +171,7 @@ class Player:
                 and not card_power.is_exhausted()
                 and not card_power.is_deactivated()
                 and not card_power.is_restricted(self)
-                and card_power.cost.can_afford(self, card_power)):
+                and self.can_afford_cost(card_power)):
                 filtered_card_powers.append(card_power)
         return filtered_card_powers
 
@@ -481,6 +482,35 @@ class Player:
             self.discard_pile.remove(card)
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
+
+    def can_afford_cost(self, card_power):
+        if isinstance(card_power, CardPowerOnCostModification):  # prevent infinite loop
+            return True
+        cost, _ = card_power.cost.resolve(self, card_power, CardPowerOnCostModification)
+        return (self.control_personality.power_stage >= cost.power
+                and len(self.life_deck) >= cost.life
+                and len([x for x in self.hand
+                         if x is not card_power.card]) >= cost.discard
+                and len(self.allies) >= cost.own_ally)
+
+    def pay_cost(self, card_power):
+        assert self.can_afford_cost(card_power)
+        cost, cost_mod_srcs = card_power.cost.resolve(self, card_power, CardPowerOnCostModification)
+        for cost_mod_src in cost_mod_srcs:
+            dprint(f'  - Cost modified by {cost_mod_src}')
+
+        self.control_personality.reduce_power_stage(cost.power)
+        self.apply_life_damage(cost.life)
+
+        for _ in range(cost.discard):
+            card = self.choose_hand_discard_card(ignore_card=card_power.card)
+            self.discard(card)
+
+        for _ in range(cost.own_ally):
+            ally = self.choose_personality(
+                skip_main=True, prompt='Select an ally to sacrifice')
+            # TODO: assuming remove from game for now
+            self.remove_from_game(ally)
 
     def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)

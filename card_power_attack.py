@@ -78,9 +78,6 @@ class CardPowerAttack(CardPower):
         if self.force_end_combat:
             phase.set_force_end_combat()
 
-    def on_pay_cost(self, player, phase):
-        self.cost.pay(player, self)
-
     def on_secondary_effects(self, player, phase):
         if self.own_anger:
             player.adjust_anger(self.own_anger)
