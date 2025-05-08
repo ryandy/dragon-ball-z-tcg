@@ -6,7 +6,6 @@ from character import Character
 from cost import Cost
 from damage import Damage
 from damage_modifier import DamageModifier
-from state import State
 
 
 TYPE = 'Non-Combat'
@@ -21,7 +20,7 @@ CARD_TEXT = ('Use after you perform a successful physical attack to capture an o
              ' Dragon Ball. Remove from the game after use.')
 
 
-class CardPowerGT(CardPowerOnAttackResolved):
+class CardPowerOnAttackResolvedGT(CardPowerOnAttackResolved):
     def on_condition(self, phase, damage, is_physical):
         return (self.player is phase.player  # attacking
                 and not damage.was_stopped()  # successful
@@ -32,4 +31,4 @@ class CardPowerGT(CardPowerOnAttackResolved):
         self.player.steal_dragon_ball()
 
 
-CARD_POWER = CardPowerGT(NAME, CARD_TEXT, choice=True, remove_from_game=True)
+CARD_POWER = CardPowerOnAttackResolvedGT(NAME, CARD_TEXT, choice=True, remove_from_game=True)

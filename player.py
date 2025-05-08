@@ -336,7 +336,7 @@ class Player:
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
             if self.interactive:
                 dprint(f'{self} draws unplayable {card.name}')
-            idx = self.choose(['Shuffle it back into deck.', 'Keep it.'], [''],
+            idx = self.choose(['Shuffle it back into deck', 'Keep it'], [''],
                               allow_pass=False)
             if idx == 0:
                 dprint(f'{self} shuffles unplayable {card.name} back into deck')
@@ -565,7 +565,7 @@ class Player:
             dprint(f'{src_personality.char_name()} can steal a dragon ball instead of'
                    f' dealing {life_damage} life damage')
             idx = self.opponent.choose(
-                ['Steal a Dragon Ball.'], ['Deal the damage.'], [''], allow_pass=False)
+                ['Steal a Dragon Ball', 'Deal the damage'], [''], allow_pass=False)
             if idx == 0:
                 self.opponent.steal_dragon_ball()
                 return

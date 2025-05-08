@@ -49,7 +49,7 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
         # and played this phase, regardless of its ordinary restrictions e.g. saiyan heritage only
         # Do check and pay for copied card's cost (if any) though
         if (not card_power
-            or not card_power.cost.can_afford(player, card_power)):
+            or not player.can_afford_cost(card_power)):
             return True
         return super().is_restricted(player)
 

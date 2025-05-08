@@ -33,7 +33,7 @@ class CardPowerGLB(CardPowerNonCombatAttack):
                 descriptions.append(card.card_text)
         if cards:
             idx = player.choose(names, descriptions, allow_pass=False,
-                                prompt='Select a Dragon Ball to play')
+                                prompt='Select a Dragon Ball to play from your Life Deck')
             card = cards[idx]
             player.play_dragon_ball(card)
 
