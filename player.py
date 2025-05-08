@@ -517,7 +517,7 @@ class Player:
         dprint(f'{target_personality.name} takes {power_damage} power damage')
         target_personality.reduce_power_stage(power_damage)
 
-        for player in [self.opponent, self]:
+        for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
             for card_power in card_powers:
                 card_power.on_damage_applied(self, power_damage=power_damage)
@@ -547,7 +547,7 @@ class Player:
                 discard_count += 1
                 dprint(f'{self} takes 1 life damage: {card_discarded}')
 
-        for player in [self.opponent, self]:
+        for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
             for card_power in card_powers:
                 card_power.on_damage_applied(self, life_damage=life_damage)
@@ -911,7 +911,7 @@ class Player:
 
         # Discard any newly invalidated restricted drills
         invalid_drills = []
-        for player in [self, self.opponent]:
+        for player in State.gen_players():
             for drill_card in player.drills:
                 if (drill_card.restricted
                     and len([x for x in self.drills + self.opponent.drills

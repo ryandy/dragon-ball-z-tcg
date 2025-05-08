@@ -62,7 +62,7 @@ class PersonalityCard(Card):
         new_power = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
         delta = new_power - self.power_stage
         if delta:
-            for player in [self.owner.opponent, self.owner]:
+            for player in State.gen_players():
                 card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
                 for card_power in card_powers:
                     card_power.on_power_adjusted(self.owner, self, amount)

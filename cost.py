@@ -23,6 +23,14 @@ class Cost:
                 and self.discard == 0
                 and self.own_ally == 0)
 
+    def resolve(self, player):
+        # TODO
+        #for player in State.gen_players():
+        #        card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
+        #        for card_power in card_powers:
+        #            card_power.on_power_adjusted(self.owner, self, amount)
+        pass
+
     def can_afford(self, player, card_power):
         return (player.control_personality.power_stage >= self.power
                 and len(player.life_deck) >= self.life

@@ -23,7 +23,9 @@ class CombatPhase(Phase):
         self.skipped = True
 
     def entering_combat(self):
-        for player in [self.player, self.player.opponent]:
+        State.ATTACKING_PLAYER = self.player
+
+        for player in State.gen_players():
             player.cards_played_this_combat = []
             player.card_powers_played_this_combat = []
             card_powers = player.get_valid_card_powers(CardPowerOnEnteringCombat)
@@ -31,7 +33,9 @@ class CombatPhase(Phase):
                 card_power.on_entering_combat(self)
 
     def end_of_combat(self):
-        for player in [self.player, self.player.opponent]:
+        State.ATTACKING_PLAYER = None
+
+        for player in State.gen_players():
             player.revert_control_of_combat()
             player.cards_played_this_combat = []
             player.card_powers_played_this_combat = []
@@ -45,7 +49,7 @@ class CombatPhase(Phase):
             dprint(f'{self.player} chooses to skip combat')
 
         if not self.skipped:
-            for player in [self.player, self.player.opponent]:
+            for player in State.gen_players():
                 card_powers = player.get_valid_card_powers(CardPowerOnCombatDeclared)
                 for card_power in card_powers:
                     card_power.on_combat_declared(self)
@@ -61,7 +65,6 @@ class CombatPhase(Phase):
         opp_draw_phase.execute()
 
         pass_count = 0
-        attacker = self.player
         next_attack_power = None  # Will almost always be None
         while True:
             # End Combat Phase when two players pass consecutively or the phase is forcibly ended
@@ -70,10 +73,11 @@ class CombatPhase(Phase):
 
             dprint()
             dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
-                   f' {attacker} ----------')
+                   f' {State.ATTACKING_PLAYER} ----------')
             self.runner.show_summary()
 
-            attack_phase = CombatAttackPhase(attacker,self, attack_power_override=next_attack_power)
+            attack_phase = CombatAttackPhase(
+                State.ATTACKING_PLAYER, self, attack_power_override=next_attack_power)
             attack_phase.execute()
 
             if attack_phase.passed:
@@ -87,7 +91,7 @@ class CombatPhase(Phase):
             if attack_phase.skip_next_attack_phase:
                 State.COMBAT_ROUND += 2
             else:
-                attacker = attacker.opponent
+                State.ATTACKING_PLAYER = State.ATTACKING_PLAYER.opponent
                 State.COMBAT_ROUND += 1
 
             # Will almost always be None

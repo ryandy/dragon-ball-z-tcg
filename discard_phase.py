@@ -14,17 +14,12 @@ class DiscardPhase(Phase):
     def execute(self):
         State.PHASE = self
 
-        if len(self.player.hand) > 1:
-            dprint(f'{self.player} must discard down to 1 card')
-        while len(self.player.hand) > 1:
-            card = self.player.choose_hand_discard_card()
-            self.player.discard(card)
-
-        if len(self.player.opponent.hand) > 1:
-            dprint(f'{self.player.opponent} must discard down to 1 card')
-        while len(self.player.opponent.hand) > 1:
-            card = self.player.opponent.choose_hand_discard_card()
-            self.player.opponent.discard(card)
+        for player in State.gen_players():
+            if len(player.hand) > 1:
+                dprint(f'{player} must discard down to 1 card')
+            while len(player.hand) > 1:
+                card = player.choose_hand_discard_card()
+                player.discard(card)
 
         if self.combat_phase.skipped:
             self.player.rejuvenate()

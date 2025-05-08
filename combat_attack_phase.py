@@ -58,7 +58,7 @@ class CombatAttackPhase(Phase):
         self.attack_power.on_attack(self.player, self)
 
         # Control reverts to MP for either attacker or defender if MP power >= 2
-        for player in [self.player, self.player.opponent]:
+        for player in State.gen_players():
             player.revert_control_of_combat_if_able()
 
     def set_force_end_combat(self):
@@ -104,7 +104,7 @@ class CombatAttackPhase(Phase):
                 self.player.opponent.apply_energy_attack_damage(
                     damage, src_personality=self.player.control_personality)
 
-        for player in [self.player, self.player.opponent]:
+        for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnAttackResolved)
             for card_power in card_powers:
                 card_power.on_attack_resolved(self, damage, is_physical)
@@ -115,7 +115,7 @@ class CombatAttackPhase(Phase):
         # Check for active DamageModification card powers
         damage_mods = []
         damage_mod_srcs = []
-        for player in [self.player, self.player.opponent]:
+        for player in State.gen_players():
             odm_card_powers = player.get_valid_card_powers(CardPowerOnDamageModification)
             for odm_card_power in odm_card_powers:
                 if self.attack_power.is_physical is True:

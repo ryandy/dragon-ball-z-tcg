@@ -16,7 +16,7 @@ class DrawPhase(Phase):
     def execute(self):
         State.PHASE = self
 
-        for player in [self.player, self.player.opponent]:
+        for player in State.gen_players():
             draw_powers = player.get_valid_card_powers(CardPowerOnDraw)
             for draw_power in draw_powers:
                 draw_power.on_draw(self)

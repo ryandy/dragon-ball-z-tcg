@@ -67,11 +67,10 @@ class Runner:
             State.TURN += 1
 
     def beginning_of_turn(self):
-        attacker = self.players[State.TURN % 2]
-        for player in [attacker, attacker.opponent]:
+        for player in State.gen_players():
             player.exhaust_expired_card_powers()
         self.show_summary()
-        attacker.check_for_dragon_ball_victory()
+        State.TURN_PLAYER.check_for_dragon_ball_victory()
 
         # TODO: CardPowerOnBeginningOfTurn
         #       213 Plant Two Saibaimen (floating effect)
@@ -81,6 +80,8 @@ class Runner:
 
     def take_turn(self):
         player = self.players[State.TURN % 2]
+        State.TURN_PLAYER = player
+
         header = f'========== Turn {State.TURN+1}: {player} =========='
         border = '=' * len(header)
         dprint(border)
