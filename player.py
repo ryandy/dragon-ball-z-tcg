@@ -467,8 +467,11 @@ class Player:
                 del self.opponent.card_powers[idx]
                 self.register_card_power(card_power)
 
-    def rejuvenate(self):
-        card = self.discard_pile.remove_top()
+    def rejuvenate(self, from_bottom=False):
+        if from_bottom:
+            card = self.discard_pile.remove_bottom()
+        else:
+            card = self.discard_pile.remove_top()
         if card:
             dprint(f'{self} rejuvenates with {card}')
             self.life_deck.add_bottom(card)

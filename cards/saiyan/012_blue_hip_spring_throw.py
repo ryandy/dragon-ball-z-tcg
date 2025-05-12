@@ -20,7 +20,7 @@ CARD_TEXT = ('Physical Attack doing +2 stages of damage if successful. Stops a f
              ' physical attack on their next round. Lower foe\'s anger level 1.')
 
 
-class CardPowerBHST(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackBHST(CardPowerPhysicalAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
 
@@ -30,5 +30,5 @@ class CardPowerBHST(CardPowerPhysicalAttack):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerBHST(
+CARD_POWER = CardPowerPhysicalAttackBHST(
     NAME, CARD_TEXT, damage_modifier=DamageModifier(power_add=2), opp_anger=-1)

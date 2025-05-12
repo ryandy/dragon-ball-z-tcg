@@ -19,7 +19,7 @@ CARD_TEXT = ('When the Bulma ally is in play, use this card to capture a Dragon 
              ' the game after use.')
 
 
-class CardPowerBFADB(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackBFADB(CardPowerNonCombatAttack):
     def is_restricted(self, player):
         allies_in_play = [x for x in player.allies + player.opponent.allies]
         if not any(x.character == Character.BULMA for x in allies_in_play):
@@ -33,4 +33,4 @@ class CardPowerBFADB(CardPowerNonCombatAttack):
         player.steal_dragon_ball()
 
 
-CARD_POWER = CardPowerBFADB(NAME, CARD_TEXT, remove_from_game=True)
+CARD_POWER = CardPowerNonCombatAttackBFADB(NAME, CARD_TEXT, remove_from_game=True)

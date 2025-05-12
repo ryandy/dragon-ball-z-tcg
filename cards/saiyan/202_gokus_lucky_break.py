@@ -20,7 +20,7 @@ CARD_TEXT = ('Search your Life Deck for a Dragon Ball and place it into play. Re
              ' after use.')
 
 
-class CardPowerGLB(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackGLB(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
 
@@ -41,4 +41,4 @@ class CardPowerGLB(CardPowerNonCombatAttack):
         player.life_deck.shuffle()
 
 
-CARD_POWER = CardPowerGLB(NAME, CARD_TEXT, remove_from_game=True)
+CARD_POWER = CardPowerNonCombatAttackGLB(NAME, CARD_TEXT, remove_from_game=True)

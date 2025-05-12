@@ -19,4 +19,4 @@ CARD_TEXT = ('Increase your anger level by 2. Take the bottom 2 cards from your 
              ' place them at the bottom of your life deck. Remove from the game after use.')
 
 CARD_POWER = CardPowerNonCombatAttack(
-    NAME, CARD_TEXT, own_anger=2, rejuvenate_count=2, remove_from_game=True)
+    NAME, CARD_TEXT, own_anger=2, rejuvenate_bottom_count=2, remove_from_game=True)

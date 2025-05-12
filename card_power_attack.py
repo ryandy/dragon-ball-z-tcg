@@ -14,7 +14,7 @@ class CardPowerAttack(CardPower):
     def __init__(self, name, description, is_physical=None,
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
                  cost=None, damage=None, damage_modifier=None,
-                 rejuvenate_count=None, rejuvenate_choice_count=None,
+                 rejuvenate_count=None, rejuvenate_bottom_count=None, rejuvenate_choice_count=None,
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None, opp_power=None,
                  force_end_combat=None,
@@ -43,6 +43,7 @@ class CardPowerAttack(CardPower):
 
         self.is_physical = is_physical
         self.rejuvenate_count = rejuvenate_count
+        self.rejuvenate_bottom_count = rejuvenate_bottom_count
         self.rejuvenate_choice_count = rejuvenate_choice_count
         self.own_anger = own_anger
         self.opp_anger = opp_anger
@@ -95,6 +96,10 @@ class CardPowerAttack(CardPower):
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
                 player.rejuvenate()
+
+        if self.rejuvenate_bottom_count:
+            for _ in range(self.rejuvenate_bottom_count):
+                player.rejuvenate(from_bottom=True)
 
         if self.rejuvenate_choice_count:
             for _ in range(self.rejuvenate_choice_count):

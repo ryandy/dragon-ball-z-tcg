@@ -20,7 +20,7 @@ CARD_TEXT = ('Physical Attack doing +4 stages of damage. If successful, this att
              ' energy attack from an opponent in their next phase. Lower foe\'s anger level 1.')
 
 
-class CardPowerBFFS(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackBFFS(CardPowerPhysicalAttack):
     def on_success(self, player, phase):
         card_power = CardPowerEnergyDefense(
             self.name, self.description, discard=False, is_floating=True)
@@ -28,5 +28,5 @@ class CardPowerBFFS(CardPowerPhysicalAttack):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerBFFS(
+CARD_POWER = CardPowerPhysicalAttackBFFS(
     NAME, CARD_TEXT, damage_modifier=DamageModifier(power_add=4), opp_anger=-1)

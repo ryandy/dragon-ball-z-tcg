@@ -22,7 +22,7 @@ CARD_TEXT = ('Raise any one of your personalities to their highest power stage. 
              ' your Life Deck.')
 
 
-class CardPowerEDB5(CardPowerDragonBall):
+class CardPowerDragonBallEDB5(CardPowerDragonBall):
     def on_play(self, player, phase):
         personality = player.choose_power_stage_target(10)
         personality.adjust_power_stage(10)
@@ -36,4 +36,4 @@ class CardPowerEDB5(CardPowerDragonBall):
             player.rejuvenate()
 
 
-CARD_POWER = CardPowerEDB5(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallEDB5(NAME, CARD_TEXT)

@@ -23,7 +23,7 @@ CARD_TEXT = ('If a successful energy attack is performed against Gohan, he may r
              ' 1 level once per combat.')
 
 
-class CardPowerGL1(CardPowerEnergyDefense):
+class CardPowerEnergyDefenseGL1(CardPowerEnergyDefense):
     # Only relevant when Gohan is the Main and controlling Personality
     # This power is only activated when Gohan is controlling, so only need to check for Main
     def is_restricted(self, player):
@@ -32,5 +32,6 @@ class CardPowerGL1(CardPowerEnergyDefense):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerGL1(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
-                          own_anger=1, damage_modifier=DamageModifier.none())
+CARD_POWER = CardPowerEnergyDefenseGL1(
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
+    own_anger=1, damage_modifier=DamageModifier.none())

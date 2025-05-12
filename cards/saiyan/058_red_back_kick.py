@@ -21,7 +21,7 @@ CARD_TEXT = ('Physical attack doing +3 stages of damage if successful. Stops all
              ' for the rest of this combat. Foe\'s anger level decreases by 1.')
 
 
-class CardPowerRBK(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackRBK(CardPowerPhysicalAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         defense_text = 'Stops all energy attacks for the rest of this combat.'
@@ -32,5 +32,5 @@ class CardPowerRBK(CardPowerPhysicalAttack):
         player.opponent.register_card_power(card_power.copy())
 
 
-CARD_POWER = CardPowerRBK(
+CARD_POWER = CardPowerPhysicalAttackRBK(
     NAME, CARD_TEXT, opp_anger=-1, damage_modifier=DamageModifier(power_add=3))

@@ -20,7 +20,7 @@ CARD_TEXT = ('Capture 2 of a foe\'s Dragon Balls and place them at the bottom of
              ' life deck.')
 
 
-class CardPowerVDBC(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackVDBC(CardPowerNonCombatAttack):
     def on_success(self, player, phase):
         for _ in range(2):
             card = player.choose_opponent_dragon_ball(
@@ -33,4 +33,4 @@ class CardPowerVDBC(CardPowerNonCombatAttack):
                 card.owner.life_deck.add_bottom(card)
                 card.set_pile(card.owner.life_deck)
 
-CARD_POWER = CardPowerVDBC(NAME, CARD_TEXT)
+CARD_POWER = CardPowerNonCombatAttackVDBC(NAME, CARD_TEXT)

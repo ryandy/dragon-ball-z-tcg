@@ -54,4 +54,4 @@ class Card(abc.ABC):
         self.pile = pile
 
     def get_id(self):
-        return f'{self.saga.name.lower()}.{self.card_number}'
+        return f'{self.saga.name.lower()}.{self.card_number.zfill(3)}'

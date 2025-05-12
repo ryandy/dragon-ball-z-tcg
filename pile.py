@@ -31,6 +31,9 @@ class Pile:
     def remove_top(self):
         return self.draw()
 
+    def remove_bottom(self):
+        return self.draw_from_bottom()
+
     def draw(self):
         if not self.cards:
             return None

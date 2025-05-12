@@ -23,7 +23,7 @@ CARD_TEXT = ('Captures one Dragon Ball once per game after a successful energy a
              ' the combat step.')
 
 
-class CardPowerVL3(CardPowerOnAttackResolved):
+class CardPowerOnAttackResolvedVL3(CardPowerOnAttackResolved):
     def on_condition(self, phase, damage, is_physical):
         return (not hasattr(self.card, '_once_per_game_used')  # once per game
                 and self.player is phase.player  # attacking
@@ -37,4 +37,4 @@ class CardPowerVL3(CardPowerOnAttackResolved):
         phase.set_force_end_combat()
 
 
-CARD_POWER = CardPowerVL3(NAME, CARD_TEXT, discard=False, choice=True)
+CARD_POWER = CardPowerOnAttackResolvedVL3(NAME, CARD_TEXT, discard=False, choice=True)
