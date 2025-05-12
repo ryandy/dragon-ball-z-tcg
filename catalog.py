@@ -50,7 +50,8 @@ def main():
                      or (hasattr(card_power, args.attr) and getattr(card_power, args.attr))
                      or (hasattr(card, args.attr) and getattr(card, args.attr)))
                 and (not args.text
-                     or args.text.lower() in card_power.description.lower())):
+                     or args.text.lower() in card_power.description.lower()
+                     or args.text.lower() in str(card).lower())):
                 row = [card.get_id(),
                        card.name,
                        card.__class__.__name__.replace("Card", ""),

@@ -19,11 +19,11 @@ CARD_TEXT = ('Villains only. Skip your next Combat step. Place the top 2 cards f
              ' pile on the bottom of your Life Deck. Remove from the game after use.')
 
 
-class CardPowerSCD(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackSCD(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         player.must_skip_next_combat = True
 
 
-CARD_POWER = CardPowerSCD(
+CARD_POWER = CardPowerNonCombatAttackSCD(
     NAME, CARD_TEXT, villains_only=True, rejuvenate_count=2, remove_from_game=True)

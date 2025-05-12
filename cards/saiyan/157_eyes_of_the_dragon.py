@@ -46,4 +46,4 @@ class CardPowerOnAttackResolvedEOTD(CardPowerOnAttackResolved):
         self.player.steal_dragon_ball()
 
 
-CARD_POWER = CardPowerOnAttackResolvedEOTD(NAME, CARD_TEXT, choice=True, remove_from_game=True)
+CARD_POWER = CardPowerOnAttackResolvedEOTD(NAME, CARD_TEXT, choice=True)

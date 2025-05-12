@@ -21,10 +21,10 @@ CARD_TEXT = ('Stops an energy attack, but the user cannot make any attacks for t
              ' of this combat.')
 
 
-class CardPowerSREM(CardPowerEnergyDefense):
+class CardPowerEnergyDefenseSREM(CardPowerEnergyDefense):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         player.must_pass_attack_until_next_turn()
 
 
-CARD_POWER = CardPowerSREM(NAME, CARD_TEXT)
+CARD_POWER = CardPowerEnergyDefenseSREM(NAME, CARD_TEXT)

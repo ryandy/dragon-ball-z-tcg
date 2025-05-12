@@ -21,7 +21,7 @@ CARD_TEXT = ('Saiyan Heritage only. Stops an energy attack and stops an energy a
              ' your opponent\'s next Attacker Attacks phase.')
 
 
-class CardPowerSEA(CardPowerEnergyDefense):
+class CardPowerEnergyDefenseSEA(CardPowerEnergyDefense):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         card_power = CardPowerEnergyDefense(
@@ -30,4 +30,4 @@ class CardPowerSEA(CardPowerEnergyDefense):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerSEA(NAME, CARD_TEXT, saiyan_only=True)
+CARD_POWER = CardPowerEnergyDefenseSEA(NAME, CARD_TEXT, saiyan_only=True)

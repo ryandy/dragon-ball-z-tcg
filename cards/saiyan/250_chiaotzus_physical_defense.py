@@ -56,7 +56,7 @@ modifies an attack, and doesn’t stop the attack or damage from the attack.
 # then life cards.
 
 
-class CardPowerCPD(CardPowerAnyDefense):
+class CardPowerAnyDefenseCPD(CardPowerAnyDefense):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
 
@@ -74,5 +74,5 @@ class CardPowerCPD(CardPowerAnyDefense):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerCPD(
+CARD_POWER = CardPowerAnyDefenseCPD(
     NAME, CARD_TEXT, damage_modifier=DamageModifier.none(), remove_from_game=True)

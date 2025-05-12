@@ -21,7 +21,7 @@ CARD_TEXT = ('Stops all of your opponent\'s physical and energy attacks for the 
              ' Combat. Remove one of your Allies in play from the game to use this card.')
 
 
-class CardPowerAS(CardPowerAnyDefense):
+class CardPowerAnyDefenseAS(CardPowerAnyDefense):
     def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count == 1:
@@ -32,4 +32,4 @@ class CardPowerAS(CardPowerAnyDefense):
             self.set_floating()
 
 
-CARD_POWER = CardPowerAS(NAME, CARD_TEXT, cost=Cost(own_ally=1))
+CARD_POWER = CardPowerAnyDefenseAS(NAME, CARD_TEXT, cost=Cost(own_ally=1))

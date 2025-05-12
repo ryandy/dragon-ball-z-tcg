@@ -22,7 +22,7 @@ CARD_TEXT = ('Physical attack. If successful, draw the bottom card from your dis
              ' game after use.')
 
 
-class CardPowerGPA(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackGPA(CardPowerPhysicalAttack):
     def on_success(self, player, phase):
         card = player.discard_pile.draw_from_bottom()
         if card:
@@ -48,4 +48,4 @@ class CardPowerGPA(CardPowerPhysicalAttack):
         self.set_floating()
 
 
-CARD_POWER = CardPowerGPA(NAME, CARD_TEXT, remove_from_game=True)
+CARD_POWER = CardPowerPhysicalAttackGPA(NAME, CARD_TEXT, remove_from_game=True)

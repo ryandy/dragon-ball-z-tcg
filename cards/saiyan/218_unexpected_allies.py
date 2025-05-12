@@ -21,7 +21,7 @@ CARD_TEXT = ('Search your Life Deck or discard pile for an Ally and put them int
              ' their highest power stage.')
 
 
-class CardPowerUA(CardPowerAnyDefense):
+class CardPowerAnyDefenseUA(CardPowerAnyDefense):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
 
@@ -43,4 +43,4 @@ class CardPowerUA(CardPowerAnyDefense):
         player.life_deck.shuffle()
 
 
-CARD_POWER = CardPowerUA(NAME, CARD_TEXT, damage_modifier=DamageModifier.none())
+CARD_POWER = CardPowerAnyDefenseUA(NAME, CARD_TEXT, damage_modifier=DamageModifier.none())

@@ -21,7 +21,7 @@ CARD_TEXT = ('Saiyan Heritage only. Stops a physical attack and stops a physical
              ' your opponent\'s next Attacker Attacks phase.')
 
 
-class CardPowerSSD(CardPowerPhysicalDefense):
+class CardPowerPhysicalDefenseSSD(CardPowerPhysicalDefense):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         card_power = CardPowerPhysicalDefense(
@@ -30,4 +30,4 @@ class CardPowerSSD(CardPowerPhysicalDefense):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerSSD(NAME, CARD_TEXT, saiyan_only=True)
+CARD_POWER = CardPowerPhysicalDefenseSSD(NAME, CARD_TEXT, saiyan_only=True)

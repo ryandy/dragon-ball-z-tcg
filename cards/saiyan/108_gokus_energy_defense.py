@@ -21,7 +21,7 @@ CARD_TEXT = ('Prevents 3 life cards from being discarded from a successful energ
              ' by Goku, it stays on the table to be used one more time in this combat.')
 
 
-class CardPowerGED(CardPowerEnergyDefense):
+class CardPowerEnergyDefenseGED(CardPowerEnergyDefense):
     def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count > 2:
@@ -42,4 +42,5 @@ class CardPowerGED(CardPowerEnergyDefense):
         self.set_floating()
 
 
-CARD_POWER = CardPowerGED(NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=3))
+CARD_POWER = CardPowerEnergyDefenseGED(
+    NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=3))

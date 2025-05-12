@@ -24,7 +24,7 @@ CARD_TEXT = ('Use immediately after your opponent attacks you (physical or energ
              ' stages immediately when played.')
 
 
-class CardPowerSASM(CardPowerAnyDefense):
+class CardPowerAnyDefenseSASM(CardPowerAnyDefense):
     def is_restricted(self, player):
         # Can be called at various times, so need to check that the phase is what we expect
         if (isinstance(State.PHASE, CombatDefensePhase)
@@ -33,4 +33,5 @@ class CardPowerSASM(CardPowerAnyDefense):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerSASM(NAME, CARD_TEXT, damage_modifier=DamageModifier.none(), opp_power=-4)
+CARD_POWER = CardPowerAnyDefenseSASM(
+    NAME, CARD_TEXT, damage_modifier=DamageModifier.none(), opp_power=-4)

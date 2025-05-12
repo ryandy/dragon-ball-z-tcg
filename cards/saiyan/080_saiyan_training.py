@@ -19,7 +19,7 @@ CARD_TEXT = ('Villains and Goku only. Choose 2 cards from your discard pile and 
              ' on the bottom of your Life Deck.')
 
 
-class CardPowerST(CardPowerNonCombatAttack):
+class CardPowerNonCombatAttackST(CardPowerNonCombatAttack):
     def is_restricted(self, player):
         if (player.control_personality.is_hero
             and player.character != Character.GOKU):
@@ -27,4 +27,4 @@ class CardPowerST(CardPowerNonCombatAttack):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerST(NAME, CARD_TEXT, rejuvenate_choice_count=2)
+CARD_POWER = CardPowerNonCombatAttackST(NAME, CARD_TEXT, rejuvenate_choice_count=2)

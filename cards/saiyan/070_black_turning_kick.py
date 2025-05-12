@@ -21,5 +21,5 @@ CARD_TEXT = ('Energy attack doing 5 life card draws of damage or stops a physica
 
 CARD_POWER = [
     CardPowerEnergyAttack(NAME, CARD_TEXT, damage=Damage(life=5), own_anger=1),
-    CardPowerPhysicalAttack(NAME, CARD_TEXT, own_anger=1)
+    CardPowerPhysicalDefense(NAME, CARD_TEXT, own_anger=1)
 ]

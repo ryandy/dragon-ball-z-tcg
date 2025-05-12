@@ -21,7 +21,7 @@ CARD_TEXT = ('Stops a physical attack. Stops all physical attacks performed agai
              ' remainder of Combat. Remove from the game after use.')
 
 
-class CardPowerVPS(CardPowerPhysicalDefense):
+class CardPowerPhysicalDefenseVPS(CardPowerPhysicalDefense):
     def on_resolved(self):
         self.resolved_count += 1
         if self.resolved_count == 1:
@@ -31,4 +31,4 @@ class CardPowerVPS(CardPowerPhysicalDefense):
             self.set_floating()
 
 
-CARD_POWER = CardPowerVPS(NAME, CARD_TEXT, remove_from_game=True)
+CARD_POWER = CardPowerPhysicalDefenseVPS(NAME, CARD_TEXT, remove_from_game=True)
