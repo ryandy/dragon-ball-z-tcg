@@ -8,16 +8,16 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Vegeta Lv2'
+NAME = 'Raditz Lv2'
 LEVEL = 2
 SAGA = 'Saiyan'
-CARD_NUMBER = '174'
+CARD_NUMBER = '171'
 RARITY = 4
 DECK_LIMIT = 1
-CHARACTER = 'Vegeta'
+CHARACTER = 'Raditz'
 IS_HERO = False
-POWER_UP_RATING = 4
-POWER_STAGES = range(4200, 8700+1, 500)
+POWER_UP_RATING = 2
+POWER_STAGES = range(2000, 3800+1, 200)
 CARD_TEXT = ('Saiyan Energy Blast does 3 life card draw of damage and costs only 1 power stage'
              ' to perform.')
 

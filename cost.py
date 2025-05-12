@@ -37,15 +37,17 @@ class Cost:
                     cost_mod_srcs.append(f'{ocm_player}\'s {ocm_card_power}')
 
         if not cost_mods:
-            return self, cost_mod_srcs
+            return self, []
 
+        mod_used = [False] * len(cost_mods)
         power, life = self.power, self.life
-        for mod in cost_mods:
+        for i, mod in enumerate(cost_mods):
             if power in mod.power_ittt:
                 power = mod.power_ittt[power]
+                mod_used[i] = True
 
         return (Cost(power=power, life=life, discard=self.discard, own_ally=self.own_ally),
-                cost_mod_srcs)
+                [x for i, x in enumerate(cost_mod_srcs) if mod_used[i]])
 
     @classmethod
     def none(cls):

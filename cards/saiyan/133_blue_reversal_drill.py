@@ -30,13 +30,24 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
             return None
         card_power = card_power.copy()
         card_power.player = player
+
+        # Ensure that the power is active and valid
         card_power.valid_from = None
         card_power.valid_until = None
         card_power.deactivated = False
-        card_power.exhaust_after_use = False
-        card_power.exhaust_until_next_turn_after_use = False
+
+        # No need to discard/remove the card because we do not control it
         card_power.discard_after_use = False
         card_power.remove_from_game_after_use = False
+
+        # Without setting card to None, we can run into trouble when custom card_power logic checks
+        # self.card then tries to manipulate it e.g. #25 Goku's Physical Attack, which attempts
+        # to remove the card from the game.
+        card_power.card = None
+
+        # Do not modify how the power should be exhausted after use
+        #card_power.exhaust_after_use = False
+        #card_power.exhaust_until_next_turn_after_use = False
 
         # Regardless of how the copied card exhausts itself, make sure it's exhausted by next turn
         card_power.exhaust_after_this_turn()

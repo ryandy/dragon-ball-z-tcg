@@ -8,20 +8,18 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Vegeta Lv2'
-LEVEL = 2
+NAME = 'Krillin Lv1'
+LEVEL = 1
 SAGA = 'Saiyan'
-CARD_NUMBER = '174'
+CARD_NUMBER = '167'
 RARITY = 4
 DECK_LIMIT = 1
-CHARACTER = 'Vegeta'
-IS_HERO = False
-POWER_UP_RATING = 4
-POWER_STAGES = range(4200, 8700+1, 500)
-CARD_TEXT = ('Saiyan Energy Blast does 3 life card draw of damage and costs only 1 power stage'
-             ' to perform.')
+CHARACTER = 'Krillin'
+IS_HERO = True
+POWER_UP_RATING = 1
+POWER_STAGES = range(100, 1000+1, 100)
+CARD_TEXT = ('Power Ball Energy Attack inflicts 2 life card draws of damage.')
 
 CARD_POWER = CardPowerEnergyAttack(
     NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
-    cost=Cost.energy_attack(power=1),
-    damage=Damage.energy_attack(life=3))
+    damage=Damage.energy_attack(life=2))

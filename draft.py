@@ -88,7 +88,8 @@ def draft_deck(player):
         if isinstance(card, PersonalityCard):
             if (card.is_hero != deck_cards[0].is_hero
                 or card.character == deck_cards[0].character
-                or card.level > max_level - 2):
+                or card.level > max_level - 2
+                or ' HT' in card.name):
                 continue
         card_pool.append(card)
 

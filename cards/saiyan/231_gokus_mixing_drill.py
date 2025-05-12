@@ -30,7 +30,7 @@ def _drills_are_legal(player):
 
 # This card's power is enforced automatically and passively. We just need to re-enforce the rules
 # once the drill is removed from play.
-class CardPowerGMD(CardPowerOnRemoveFromPlay):
+class CardPowerOnRemoveFromPlayGMD(CardPowerOnRemoveFromPlay):
     # Called _after_ the card has been removed from play
     def on_remove_from_play(self, player):
         # If another Goku's Mixing Drill remains in play, no need to do anything
@@ -49,4 +49,4 @@ class CardPowerGMD(CardPowerOnRemoveFromPlay):
             player.discard(cards[idx])
 
 
-CARD_POWER = CardPowerGMD(NAME, CARD_TEXT)
+CARD_POWER = CardPowerOnRemoveFromPlayGMD(NAME, CARD_TEXT)

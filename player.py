@@ -333,7 +333,8 @@ class Player:
         if (dest_pile is self.hand
             and isinstance(card, DrillCard)
             and card.style != Style.FREESTYLE
-            and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)):
+            and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)
+            and not self.card_in_play('saiyan.231')):  # Goku's Mixing Drill
             if self.interactive:
                 dprint(f'{self} draws unplayable {card.name}')
             idx = self.choose(['Shuffle it back into deck', 'Keep it'], [''],

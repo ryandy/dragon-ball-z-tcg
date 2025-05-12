@@ -8,20 +8,19 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Vegeta Lv2'
-LEVEL = 2
+NAME = 'Nappa Lv3'
+LEVEL = 3
 SAGA = 'Saiyan'
-CARD_NUMBER = '174'
+CARD_NUMBER = '178'
 RARITY = 4
 DECK_LIMIT = 1
-CHARACTER = 'Vegeta'
+CHARACTER = 'Nappa'
 IS_HERO = False
 POWER_UP_RATING = 4
-POWER_STAGES = range(4200, 8700+1, 500)
-CARD_TEXT = ('Saiyan Energy Blast does 3 life card draw of damage and costs only 1 power stage'
-             ' to perform.')
+POWER_STAGES = range(9000, 13500+1, 500)
+CARD_TEXT = ('Reduce the damage from a physical attack performed against you to 2 power stages'
+             ' of damage.')
 
-CARD_POWER = CardPowerEnergyAttack(
+CARD_POWER = CardPowerPhysicalDefense(
     NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
-    cost=Cost.energy_attack(power=1),
-    damage=Damage.energy_attack(life=3))
+    damage_modifier=DamageModifier(power_max=2))

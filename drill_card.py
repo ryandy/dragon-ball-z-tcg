@@ -30,7 +30,7 @@ class DrillCard(Card):
                      for x in player.drills + player.opponent.drills)))
 
         # Goku's Mixing Drill allows drills of multiple colors to be used at the same time
-        if player.card_in_play('saiyan.231'):
+        if player.card_in_play('saiyan.231'):  # Goku's Mixing Drill
             style_restricted = False
 
         return (not dup_restricted
