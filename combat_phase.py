@@ -10,10 +10,10 @@ from util import dprint
 
 
 class CombatPhase(Phase):
-    def __init__(self, runner, player):
+    def __init__(self, runner, player, power_up_phase):
         self.runner = runner
         self.player = player
-        self.skipped = True
+        self.skipped = power_up_phase.force_skip_combat
         self.force_end_combat = False
 
     def set_force_end_combat(self):
@@ -43,10 +43,13 @@ class CombatPhase(Phase):
     def execute(self):
         State.PHASE = self
 
-        self.skipped = not self.player.choose_declare_combat()
-
         if self.skipped:
-            dprint(f'{self.player} chooses to skip combat')
+            # Choice of declaring combat was prevented before combat phase began
+            dprint(f'{self.player} cannot declare combat')
+        else:
+            self.skipped = not self.player.choose_declare_combat()
+            if self.skipped:
+                dprint(f'{self.player} chooses to skip combat')
 
         if not self.skipped:
             for player in State.gen_players():

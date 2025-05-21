@@ -473,7 +473,7 @@ class Player:
         else:
             card = self.discard_pile.remove_top()
         if card:
-            dprint(f'{self} rejuvenates with {card}')
+            dprint(f'{self} rejuvenates{" (from the bottom) " if from_bottom else " "}with {card}')
             self.life_deck.add_bottom(card)
             card.set_pile(self.life_deck)
         else:

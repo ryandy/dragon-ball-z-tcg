@@ -99,7 +99,7 @@ class Runner:
         power_up_phase = PowerUpPhase(player)
         power_up_phase.execute()
 
-        combat_phase = CombatPhase(self, player)
+        combat_phase = CombatPhase(self, player, power_up_phase)
         combat_phase.execute()
 
         discard_phase = DiscardPhase(player, combat_phase)
