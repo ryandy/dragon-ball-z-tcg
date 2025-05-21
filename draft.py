@@ -5,7 +5,10 @@ import random
 import re
 import sys
 
+import numpy.random as np_random
+
 from card_factory import CardFactory
+from character import Character
 from deck import Deck
 from personality_card import PersonalityCard
 from player import Player
@@ -84,20 +87,39 @@ def draft_deck(player):
 
     max_level = len(deck_cards)
     card_pool = []
+    card_pool_weights = []
     for card in CARDS:
         if isinstance(card, PersonalityCard):
             if (card.is_hero != deck_cards[0].is_hero
-                or card.character == deck_cards[0].character
+                or card.character == character
                 or card.level > max_level - 2
                 or ' HT' in card.name):
                 continue
+        if ('heroes only' in card.card_text.lower()
+            and not deck_cards[0].is_hero):
+            continue
+        if ('villains only' in card.card_text.lower()
+            and deck_cards[0].is_hero):
+            continue
+        if ('villains and goku only' in card.card_text.lower()
+            and not (not deck_cards[0].is_hero or character == Character.GOKU)):
+            continue
+        if ('saiyan heritage only' in card.card_text.lower()
+            and not character.has_saiyan_heritage()):
+            continue
+        if ('namekian heritage only' in card.card_text.lower()
+            and not character.has_namekian_heritage()):
+            continue
         card_pool.append(card)
+        card_pool_weights.append(card.deck_limit or 4)
 
+    card_pool_weight = sum(card_pool_weights)
+    card_pool_weights = [x / card_pool_weight for x in card_pool_weights]
     style_counts = collections.defaultdict(int)
     subtype_counts = collections.defaultdict(int)
     subtype_counts['Main Personality'] = max_level
     while len(deck_cards) < DECK_SIZE:
-        choices = random.sample(card_pool, 3)
+        choices = np_random.choice(card_pool, size=3, p=card_pool_weights, replace=False)
         random.shuffle(choices)
         idx = player.choose([str(x) for x in choices],
                             [x.card_text for x in choices],
@@ -135,6 +157,7 @@ def main():
     args = parser.parse_args()
 
     random.seed(args.seed)
+    np_random.seed(args.seed)
     State.INTERACTIVE = args.interactive
     State.PRINT_FREQUENCY = args.print_frequency
     State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = not args.no_mpp
@@ -147,6 +170,7 @@ def main():
     decks = []
     for i, player in enumerate([p1, p2]):
         random.seed(args.seed + i)
+        np_random.seed(args.seed + i)
         decks.append(draft_deck(player))
 
     runner = Runner(*decks)

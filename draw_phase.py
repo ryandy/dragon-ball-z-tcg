@@ -12,6 +12,7 @@ class DrawPhase(Phase):
         self.is_attacker = is_attacker
         self.draw_count = 3
         self.discard_pile_draw_count = 0
+        self.discard_pile_bottom_draw_count = 0
 
     def execute(self):
         State.PHASE = self
@@ -25,6 +26,11 @@ class DrawPhase(Phase):
             card = self.player.draw()
 
         for _ in range(self.discard_pile_draw_count):
+            if len(self.player.discard_pile) > 0:
+                card = self.player.discard_pile.draw()
+                self.player.draw(card=card)
+
+        for _ in range(self.discard_pile_bottom_draw_count):
             if len(self.player.discard_pile) > 0:
                 card = self.player.discard_pile.draw_from_bottom()
                 self.player.draw(card=card)
