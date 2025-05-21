@@ -8,19 +8,19 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Non-Combat'
-NAME = 'Raditz Honor Duel!'
+NAME = 'Saiyan Honor Quest'
 SAGA = 'Saiyan'
-CARD_NUMBER = '102'
-RARITY = 3
+CARD_NUMBER = '196'
+RARITY = 5
 DECK_LIMIT = None
-CHARACTER = 'Raditz'
-STYLE = None
-CARD_TEXT = (
-    'Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck,'
-    ' draw the bottom 3 cards from your discard pile. Remove from the game after use.')
+CHARACTER = None
+STYLE = 'Saiyan'
+CARD_TEXT = ('Use when entering Combat as the defender. Instead of drawing 3 cards from your life'
+             ' deck, draw the bottom 3 cards from your discard pile.'
+             ' Remove from the game after use.')
 
 
-class CardPowerOnDrawRHD(CardPowerOnDraw):
+class CardPowerOnDrawSHQ(CardPowerOnDraw):
     def on_effect(self, phase):
         # If this is played twice in one turn, you shouldn't end up drawing 6 cards
         super().on_effect(phase)
@@ -29,6 +29,6 @@ class CardPowerOnDrawRHD(CardPowerOnDraw):
             phase.draw_count = 0
 
 
-CARD_POWER = CardPowerOnDrawRHD(
+CARD_POWER = CardPowerOnDrawSHQ(
     NAME, CARD_TEXT, own_defend_draw_add=-3, own_defend_draw_from_discard_bottom_add=3,
     choice=True, remove_from_game=True)

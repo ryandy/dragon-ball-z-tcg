@@ -1,6 +1,5 @@
 import sys
 
-from card_power_attack import CardPowerNonCombatAttack
 from card_power_on_draw import CardPowerOnDraw
 from character import Character
 from cost import Cost
@@ -22,7 +21,7 @@ CARD_TEXT = ('Heroes only. Use when entering Combat as the defender. Instead of 
              ' Remove from the game after use.')
 
 
-class CardPowerRHD(CardPowerOnDraw):
+class CardPowerOnDrawHA(CardPowerOnDraw):
     def on_condition(self, phase):
         return (self.player.control_personality.is_hero
                 and len(self.player.discard_pile) >= 3)
@@ -35,6 +34,6 @@ class CardPowerRHD(CardPowerOnDraw):
             phase.draw_count = 0
 
 
-CARD_POWER = CardPowerRHD(
+CARD_POWER = CardPowerOnDrawHA(
     NAME, CARD_TEXT, own_defend_draw_add=-3, own_defend_draw_from_discard_add=3,
     choice=True, remove_from_game=True)

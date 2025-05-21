@@ -1,0 +1,39 @@
+import sys
+
+from card_power_attack import CardPowerNonCombatAttack
+from character import Character
+from cost import Cost
+from damage import Damage
+from damage_modifier import DamageModifier
+
+
+TYPE = 'Non-Combat'
+NAME = 'Saiyan Battle Terms'
+SAGA = 'Saiyan'
+CARD_NUMBER = '197'
+RARITY = 5
+DECK_LIMIT = None
+CHARACTER = None
+STYLE = 'Saiyan'
+CARD_TEXT = ('Remove a Non-Combat Card or Ally from in front of another player from the game.'
+             ' Remove from the game after use.')
+
+
+class CardPowerNonCombatAttackSBT(CardPowerNonCombatAttack):
+    def on_secondary_effects(self, player, phase):
+        super().on_secondary_effects(player, phase)
+
+        # Interpreting this as allowing drills to be removed, but not Dragon Balls
+        cards = (self.player.opponent.non_combat.cards
+                 + self.player.opponent.drills.cards
+                 + self.player.opponent.allies.cards)
+        if cards:
+            idx = self.player.choose([str(c) for c in cards],
+                                     [c.card_text for c in cards],
+                                     allow_pass=False,
+                                     prompt='Select an opponent card to remove from the game')
+            card = cards[idx]
+            self.player.opponent.remove_from_game(card)
+
+
+CARD_POWER = CardPowerNonCombatAttackSBT(NAME, CARD_TEXT, remove_from_game=True)
