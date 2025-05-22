@@ -71,6 +71,9 @@ class CardPower(abc.ABC):
     def exhaust_after_this_turn(self):
         self.valid_until = (State.TURN + 1, 0)
 
+    def exhaust_after_turns(self, count):
+        self.valid_until = (State.TURN + 1 + count, 0)
+
     def is_exhausted(self):
         cur_time = State.get_time()
         valid = ((not self.valid_from or self.valid_from <= cur_time)
