@@ -26,8 +26,6 @@ CARD_TEXT = ('Name a Non-Combat card and foes with any in their deck must remove
 class CardPowerNonCombatAttackSAM(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
-
-        self.player.debug()
         
         cards = []
         root_card_path = pathlib.Path(f'./cards')

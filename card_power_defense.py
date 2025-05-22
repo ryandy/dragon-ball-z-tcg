@@ -11,9 +11,10 @@ class CardPowerDefense(CardPower):
     def __init__(self, name, description, is_physical=None,
                  heroes_only=False, villains_only=False, saiyan_only=False, namekian_only=False,
                  cost=None, damage_modifier=None,
-                 rejuvenate_count=None, rejuvenate_choice_count=None,
+                 rejuvenate_count=None, rejuvenate_bottom_count=None, rejuvenate_choice_count=None,
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None, opp_power=None,
+                 force_end_combat=None,
                  exhaust=True, exhaust_until_next_turn=False,
                  discard=True, remove_from_game=False,
                  is_floating=None, card=None):
@@ -26,12 +27,14 @@ class CardPowerDefense(CardPower):
         self.is_physical = is_physical
         self.damage_modifier = damage_modifier.copy() if damage_modifier else None
         self.rejuvenate_count = rejuvenate_count
+        self.rejuvenate_bottom_count = rejuvenate_bottom_count
         self.rejuvenate_choice_count = rejuvenate_choice_count
         self.own_anger = own_anger
         self.opp_anger = opp_anger
         self.main_power = main_power
         self.any_power = any_power
         self.opp_power = opp_power
+        self.force_end_combat = force_end_combat
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -50,6 +53,10 @@ class CardPowerDefense(CardPower):
         damage.modify(damage_modifier)
 
         self.on_resolved()
+
+        if self.force_end_combat:
+            phase.set_force_end_combat()
+
         return damage
 
     def on_secondary_effects(self, player, phase):
@@ -69,6 +76,10 @@ class CardPowerDefense(CardPower):
         if self.rejuvenate_count:
             for _ in range(self.rejuvenate_count):
                 player.rejuvenate()
+
+        if self.rejuvenate_bottom_count:
+            for _ in range(self.rejuvenate_bottom_count):
+                player.rejuvenate(from_bottom=True)
 
         if self.rejuvenate_choice_count:
             for _ in range(self.rejuvenate_choice_count):
