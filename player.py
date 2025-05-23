@@ -10,6 +10,7 @@ from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
 from card_power_dragon_ball import CardPowerDragonBall
+from card_power_on_anger_adjusted import CardPowerOnAngerAdjusted
 from card_power_on_cost_modification import CardPowerOnCostModification
 from card_power_on_damage_applied import CardPowerOnDamageApplied
 from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
@@ -287,6 +288,16 @@ class Player:
     def adjust_anger(self, count):
         new_anger = max(0, min(MAX_ANGER, self.anger + count))
         delta = new_anger - self.anger
+
+        # Anger delta could be modified by card powers
+        for player in State.gen_players():
+            card_powers = player.get_valid_card_powers(CardPowerOnAngerAdjusted)
+            for card_power in card_powers:
+                delta = card_power.on_anger_adjusted(self, delta)
+
+        new_anger = max(0, min(MAX_ANGER, self.anger + delta))
+        delta = new_anger - self.anger
+
         if delta:
             verb = 'increases' if delta > 0 else 'decreases'
             dprint(f'{self.name}\'s anger {verb} from {self.anger} to {new_anger}')
@@ -656,6 +667,9 @@ class Player:
         non_combats = []
         for card in self.non_combat:
             non_combats.append(card.name)
+        for card_power in card_powers:
+            if card_power.is_floating:
+                non_combats.append(str(card_power))
         summary.append('\n'.join(non_combats))
 
         drills = []

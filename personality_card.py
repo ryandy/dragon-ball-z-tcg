@@ -65,7 +65,7 @@ class PersonalityCard(Card):
             for player in State.gen_players():
                 card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
                 for card_power in card_powers:
-                    card_power.on_power_adjusted(self.owner, self, amount)
+                    card_power.on_power_adjusted(self.owner, self, delta)
             verb = 'increases' if delta > 0 else 'decreases'
             old_str = self.get_power_attack_str()
             new_str = self.get_power_attack_str(power_stage=new_power)

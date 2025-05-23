@@ -27,7 +27,6 @@ class CardPowerNonCombatAttackPG(CardPowerNonCombatAttack):
 
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
-        player.debug()
 
         ally = player.choose_personality(
             skip_main=True, prompt='Select an ally to take power from')
