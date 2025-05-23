@@ -14,7 +14,6 @@ class CardPowerDefense(CardPower):
                  rejuvenate_count=None, rejuvenate_bottom_count=None, rejuvenate_choice_count=None,
                  own_anger=None, opp_anger=None,
                  main_power=None, any_power=None, opp_power=None,
-                 force_end_combat=None,
                  exhaust=True, exhaust_until_next_turn=False,
                  discard=True, remove_from_game=False,
                  is_floating=None, card=None):
@@ -34,7 +33,6 @@ class CardPowerDefense(CardPower):
         self.main_power = main_power
         self.any_power = any_power
         self.opp_power = opp_power
-        self.force_end_combat = force_end_combat
 
     def copy(self):
         # Note: do not deep copy self.card
@@ -54,8 +52,9 @@ class CardPowerDefense(CardPower):
 
         self.on_resolved()
 
-        if self.force_end_combat:
-            phase.set_force_end_combat()
+        # Note: Defensive powers cannot end combat according to 11/24/04 CRD pg3
+        #if self.force_end_combat:
+        #    phase.set_force_end_combat()
 
         return damage
 

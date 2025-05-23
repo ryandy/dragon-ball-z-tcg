@@ -1,6 +1,6 @@
 import sys
 
-from card_power_defense import CardPowerEnergyDefense, CardPowerAnyDefense
+from card_power_attack import CardPowerNonCombatAttack
 from card_power_on_discard import CardPowerOnDiscard
 from character import Character
 from cost import Cost
@@ -11,13 +11,13 @@ from state import State
 
 TYPE = 'Combat'
 NAME = 'Saiyan Truce Card'
-SUBTYPE = 'Combat - Defense'
+SUBTYPE = 'Combat - Attack'  # Must be used as an attack according to 11/24/04 CRD pg3
 SAGA = 'Saiyan'
 CARD_NUMBER = '203'
 RARITY = 5
 DECK_LIMIT = 1
 CHARACTER = None
-STYLE = None
+STYLE = 'Saiyan'
 CARD_TEXT = ('End Combat. Until the Rejuvenation Step of your next turn, you may keep any cards in'
              ' your hand during any Rejuvenation Steps. Remove from the game after use.')
 
@@ -27,7 +27,7 @@ class CardPowerOnDiscardSTC(CardPowerOnDiscard):
         phase.skip_discard[self.player] = True
 
 
-class CardPowerAnyDefenseSTC(CardPowerAnyDefense):
+class CardPowerNonCombatAttackSTC(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
 
@@ -45,5 +45,5 @@ class CardPowerAnyDefenseSTC(CardPowerAnyDefense):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerAnyDefenseSTC(
+CARD_POWER = CardPowerNonCombatAttackSTC(
     NAME, CARD_TEXT, force_end_combat=True, remove_from_game=True)
