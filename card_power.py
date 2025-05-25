@@ -107,10 +107,11 @@ class CardPower(abc.ABC):
         elif self.exhaust_after_use:
             self.player.exhaust_card(self.card)
 
+        card_in_pile = (self.card.attached_to is None)
         if self.remove_from_game_after_use:
-            self.player.remove_from_game(self.card, exhaust_card=False)
+            self.player.remove_from_game(self.card, exhaust_card=False, card_in_pile=card_in_pile)
         elif self.discard_after_use:
-            self.player.discard(self.card, exhaust_card=False)
+            self.player.discard(self.card, exhaust_card=False, card_in_pile=card_in_pile)
 
     def _on_resolved_without_card(self):
         if self.exhaust_until_next_turn_after_use:

@@ -194,6 +194,19 @@ class Player:
     def must_pass_defense_until_next_turn(self):
         self.must_pass_defense_until = (State.TURN + 1, 0)
 
+    def character_in_play(self, character, own_side=True, either_side=False):
+        cards = []
+        opp_side = not own_side or either_side
+        own_side = own_side or either_side
+        if own_side:
+            cards += [self.main_personality] + self.allies.cards
+        if opp_side:
+            cards += [self.opponent.main_personality] + self.opponent.allies.cards
+        for card in cards:
+            if card.character == character:
+                return True
+        return False
+
     def card_in_play(self, card_or_card_id, own_side=True, either_side=False):
         if isinstance(card_or_card_id, Card):
             card_id = card_or_card_id.get_id()
@@ -204,14 +217,19 @@ class Player:
         opp_side = not own_side or either_side
         own_side = own_side or either_side
         if own_side:
-            cards += (self.allies.cards + self.non_combat.cards
+            cards += ([self.main_personality]
+                      + self.allies.cards + self.non_combat.cards
                       + self.drills.cards + self.dragon_balls.cards)
         if opp_side:
-            cards += (self.opponent.allies.cards + self.opponent.non_combat.cards
+            cards += ([self.opponent.main_personality]
+                      + self.opponent.allies.cards + self.opponent.non_combat.cards
                       + self.opponent.drills.cards + self.opponent.dragon_balls.cards)
         for card in cards:
             if card.get_id() == card_id:
                 return True
+            for attached_card in card.attached_cards:
+                if attached_card.get_id() == card_id:
+                    return True
         return False
 
     def raise_level(self):
@@ -229,6 +247,7 @@ class Player:
         if next_level_idx < len(self.main_personalities):
             dprint(f'{self.name} levels up to Lv{next_level}!')
             self.exhaust_card(self.main_personality)
+            self.discard_attached_cards(self.main_personality)
 
             # Control personality only updates if it is currently MP
             if self.control_personality is self.main_personality:
@@ -266,6 +285,7 @@ class Player:
 
         dprint(f'{self} levels down to Lv{next_level}!')
         self.exhaust_card(self.main_personality)
+        self.discard_attached_cards(self.main_personality)
 
         # Control personality only updates if it is currently MP
         if self.control_personality is self.main_personality:
@@ -369,7 +389,12 @@ class Player:
 
     def add_card_to_hand(self, card):
         assert card
-        if self.interactive:
+        if (self.interactive
+            or (self.opponent.interactive
+                # Check own side for TMRT because it would be attached to own Main Personality
+                and self.card_in_play('saiyan.211')  # Tien Mind Reading Trick
+                and self.character_in_play(Character.TIEN, either_side=True)
+                and not self.main_personality.is_hero)):
             dprint(f'{self} adds {card} to hand')
         else:
             dprint(f'{self} adds a card to hand')
@@ -385,14 +410,27 @@ class Player:
                     or isinstance(card_power, CardPowerDefense)):
                     self.register_card_power(card_power)
 
-    def remove_from_game(self, card, exhaust_card=True):
-        return self.discard(card, remove_from_game=True, exhaust_card=exhaust_card)
+    def remove_from_game(self, card, exhaust_card=True, card_in_pile=True):
+        return self.discard(card, remove_from_game=True,
+                            exhaust_card=exhaust_card, card_in_pile=card_in_pile)
 
     def discard_covered_allies(self, card, remove_from_game=False):
-        covered_ally = card.covered_ally
-        while covered_ally:
-            self.discard(covered_ally, remove_from_game=remove_from_game, card_in_pile=False)
-            covered_ally = covered_ally.covered_ally
+        cur_covered_ally = card.covered_ally
+        while cur_covered_ally:
+            next_covered_ally = cur_covered_ally.covered_ally
+            cur_covered_ally.covered_ally = None
+            self.discard(cur_covered_ally,
+                         remove_from_game=remove_from_game,
+                         card_in_pile=False)
+            cur_covered_ally = next_covered_ally
+
+    def discard_attached_cards(self, card):
+        for attached_card in card.attached_cards:
+            remove_from_game = ('remove from the game after use' in attached_card.card_text.lower())
+            attached_card.owner.discard(attached_card,
+                                        remove_from_game=remove_from_game,
+                                        card_in_pile=False)
+        card.attached_cards = []
 
     def discard(self, card, remove_from_game=False, exhaust_card=True, card_in_pile=True):
         '''Hand/Table -> Discard/Removed'''
@@ -430,6 +468,11 @@ class Player:
                 if isinstance(card_power, CardPowerOnRemoveFromPlay):
                     card_power.on_remove_from_play(self)
 
+        # Discard attached/covered cards
+        self.discard_attached_cards(card)
+        if card.attached_to:
+            card.attached_to.attached_cards.remove(card)
+            card.attached_to = None
         if isinstance(card, PersonalityCard) and src_pile is self.allies:
             self.discard_covered_allies(card, remove_from_game=remove_from_game)
             if self.control_personality is card:
@@ -670,6 +713,8 @@ class Player:
         for card_power in card_powers:
             if card_power.is_floating:
                 non_combats.append(str(card_power))
+        for card in self.main_personality.attached_cards:
+            non_combats.append(f'{card.name}\n  - attached to {self.main_personality.name}')
         summary.append('\n'.join(non_combats))
 
         drills = []

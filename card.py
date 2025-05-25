@@ -34,6 +34,8 @@ class Card(abc.ABC):
 
         self.owner = None  # Player who owns this card - control may change, ownership does not
         self.pile = None  # Current pile
+        self.attached_cards = []
+        self.attached_to = None
 
     def __repr__(self):
         return f'{self.name}'
@@ -52,6 +54,12 @@ class Card(abc.ABC):
     def set_pile(self, pile):
         assert self.pile is not pile
         self.pile = pile
+
+    def attach_to(self, target_card):
+        target_card.attached_cards.append(self)
+        self.pile.remove(self)
+        self.set_pile(None)
+        self.attached_to = target_card
 
     def get_id(self):
         return f'{self.saga.name.lower()}.{self.card_number.zfill(3)}'

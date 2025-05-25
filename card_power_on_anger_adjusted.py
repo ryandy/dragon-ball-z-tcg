@@ -9,10 +9,10 @@ from util import dprint
 class CardPowerOnAngerAdjusted(CardPower):
     def __init__(self, name, description,
                  choice=False, exhaust=True, exhaust_until_next_turn=False,
-                 discard=True, remove_from_game=False):
+                 card=None, discard=True, remove_from_game=False):
         super().__init__(name, description, Cost.none(),
                          exhaust=exhaust, exhaust_until_next_turn=exhaust_until_next_turn,
-                         discard=discard, remove_from_game=remove_from_game)
+                         card=card, discard=discard, remove_from_game=remove_from_game)
         self.choice = choice
 
     def copy(self):
