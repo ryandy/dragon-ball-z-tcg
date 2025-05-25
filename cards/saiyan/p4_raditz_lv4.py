@@ -8,18 +8,18 @@ from damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'
-NAME = 'Goku Lv4'
+NAME = 'Raditz Lv4'
 LEVEL = 4
 SAGA = 'Saiyan'
-CARD_NUMBER = 'P1'
+CARD_NUMBER = 'P4'
 RARITY = 2
 DECK_LIMIT = 1
-CHARACTER = 'Goku'
-IS_HERO = True
+CHARACTER = 'Raditz'
+IS_HERO = False
 POWER_UP_RATING = 4
-POWER_STAGES = range(14000, 32000+1, 2000)
-CARD_TEXT = ('Spirit bomb energy attack, costs 1 stage to do.')
+POWER_STAGES = range(9000, 18000+1, 1000)
+CARD_TEXT = ('Saiyan Throat Strike does five stages of physical damage.')
 
-CARD_POWER = CardPowerEnergyAttack(
+CARD_POWER = CardPowerPhysicalAttack(
     NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
-    cost=Cost.energy_attack(power=1))
+    damage=Damage(power=5))
