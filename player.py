@@ -557,7 +557,8 @@ class Player:
                 and len(self.life_deck) >= cost.life
                 and len([x for x in self.hand
                          if x is not card_power.card]) >= cost.discard
-                and len(self.allies) >= cost.own_ally)
+                and len(self.allies) >= cost.own_ally
+                and len(self.allies + self.opponent.allies) >= cost.any_ally + cost.own_ally)
 
     def pay_cost(self, card_power):
         assert self.can_afford_cost(card_power)
@@ -575,6 +576,12 @@ class Player:
         for _ in range(cost.own_ally):
             ally = self.choose_personality(
                 skip_main=True, prompt='Select an ally to sacrifice')
+            # TODO: assuming remove from game for now
+            self.remove_from_game(ally)
+
+        for _ in range(cost.any_ally):
+            ally = self.choose_personality(
+                skip_main=True, either_side=True, prompt='Select an ally to sacrifice')
             # TODO: assuming remove from game for now
             self.remove_from_game(ally)
 
@@ -624,7 +631,9 @@ class Player:
         life_damage = max(0, life_damage)
 
         # Check for Dragon Ball Personality Capture
-        if (0 < life_damage < 5 and src_personality
+        if (0 < life_damage < 5
+            and src_personality
+            and src_personality is not self.opponent.main_personality
             and src_personality.character.can_steal_dragon_balls()
             and self.opponent.can_steal_dragon_ball()):
             # Opponent can choose to steal or deal the damage
@@ -905,18 +914,24 @@ class Player:
         return self.choose_personality(
             prompt=f'Select a personality to {verb} {abs(power)} power stage(s)')
 
-    def choose_personality(self, skip_main=False, prompt=None):
-        if skip_main:
-            assert len(self.allies) > 0
+    def choose_personality(self, skip_main=False, own_side=True, either_side=False, prompt=None):
+        cards = []
+        opp_side = not own_side or either_side
+        own_side = own_side or either_side
+        if own_side:
+            if not skip_main:
+                cards += [self.main_personality]
+            cards += self.allies.cards
+        if opp_side:
+            if not skip_main:
+                cards += [self.opponent.main_personality]
+            cards += self.opponent.allies.cards
 
-        if len(self.allies) == 0:
-            return self.main_personality
+        assert len(cards) > 0
 
         names, descriptions = [], []
-        personalities = [] if skip_main else [self.main_personality]
-        personalities.extend(self.allies.cards)
         prompt = prompt or 'Select a personality'
-        for personality in personalities:
+        for personality in cards:
             level = (f'Lv{personality.level}.{self.anger}'
                      if personality is self.main_personality
                      else f'Lv{personality.level}')
@@ -930,10 +945,7 @@ class Player:
             descriptions.append(f'{prefix}{personality.card_text}')
 
         idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
-        idx = idx + 1 if skip_main else idx
-        if idx == 0:
-            return self.main_personality
-        return self.allies.cards[idx-1]
+        return cards[idx]
 
     def choose_hand_non_combat_card(self):
         filtered = []

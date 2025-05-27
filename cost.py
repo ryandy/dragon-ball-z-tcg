@@ -8,12 +8,12 @@ from state import State
 class Cost:
     def __init__(self, power=None, life=None,
                  discard=None,
-                 own_ally=None):
+                 own_ally=None, any_ally=None):
         self.power = power or 0
         self.life = life or 0
         self.discard = discard or 0
-        # TODO: not sure if this should be int/list/Character/Card...
         self.own_ally = own_ally or 0
+        self.any_ally = any_ally or 0
 
     def copy(self):
         return copy.copy(self)
@@ -22,7 +22,8 @@ class Cost:
         return (self.power == 0
                 and self.life == 0
                 and self.discard == 0
-                and self.own_ally == 0)
+                and self.own_ally == 0
+                and self.any_ally == 0)
 
     # Note: cannot import CardPowerOnCostModification without creating a circular dep..
     def resolve(self, payer, card_power, mod_class):
@@ -46,7 +47,8 @@ class Cost:
                 power = mod.power_ittt[power]
                 mod_used[i] = True
 
-        return (Cost(power=power, life=life, discard=self.discard, own_ally=self.own_ally),
+        return (Cost(power=power, life=life, discard=self.discard,
+                     own_ally=self.own_ally, any_ally=self.any_ally),
                 [x for i, x in enumerate(cost_mod_srcs) if mod_used[i]])
 
     @classmethod
