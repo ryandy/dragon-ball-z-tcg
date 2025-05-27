@@ -34,6 +34,7 @@ class CardPowerNonCombatAttackTMRT(CardPowerNonCombatAttack):
         # Attach to opp personality rather than discard
         self.card.attach_to(player.opponent.main_personality)
 
+        # One-time review of opp's hand if applicable
         if (player.interactive
             and player.character_in_play(Character.TIEN, either_side=True)
             and not player.opponent.main_personality.is_hero):
@@ -42,4 +43,3 @@ class CardPowerNonCombatAttackTMRT(CardPowerNonCombatAttack):
 
 
 CARD_POWER = CardPowerNonCombatAttackTMRT(NAME, CARD_TEXT, exhaust=True, discard=False)
-

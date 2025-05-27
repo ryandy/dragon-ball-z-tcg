@@ -21,7 +21,7 @@ CARD_TEXT = ('Use this card at the beginning of your opponent\'s Power Up step.'
 
 class CardPowerOnEnteringPowerUpPhaseTTUFO(CardPowerOnEnteringPowerUpPhase):
     def on_condition(self, phase):
-        return phase.player != self.player  # opponent's Power Up step
+        return phase.player is not self.player  # opponent's Power Up step
 
     def on_effect(self, phase):
         phase.set_force_skip_combat()

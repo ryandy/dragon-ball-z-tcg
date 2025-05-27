@@ -40,7 +40,7 @@ class CardPowerAnyDefenseUA(CardPowerAnyDefense):
             ally.set_power_stage_max()
 
         # Regardless of outcome, shuffle the deck after "searching" it
-        player.life_deck.shuffle()
+        player.shuffle_deck()
 
 
 CARD_POWER = CardPowerAnyDefenseUA(NAME, CARD_TEXT, damage_modifier=DamageModifier.none())

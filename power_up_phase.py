@@ -1,5 +1,6 @@
 import sys
 
+from card_power_on_end_of_power_up_phase import CardPowerOnEndOfPowerUpPhase
 from card_power_on_entering_power_up_phase import CardPowerOnEnteringPowerUpPhase
 from phase import Phase
 from state import State
@@ -25,5 +26,7 @@ class PowerUpPhase(Phase):
         for ally in self.player.allies:
             ally.power_up(is_ally=True)
 
-        # TODO: CardPowerOnEndOfPowerUp
-        #       213 Plant Two Saibaimen
+        for player in State.gen_players():
+            card_powers = player.get_valid_card_powers(CardPowerOnEndOfPowerUpPhase)
+            for card_power in card_powers:
+                card_power.on_end_of_power_up_phase(self)

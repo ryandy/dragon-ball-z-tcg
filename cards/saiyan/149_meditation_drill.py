@@ -24,9 +24,9 @@ class CardPowerOnEnteringCombatMD(CardPowerOnEnteringCombat):
         idx = self.player.choose(
             ['Shuffle Life Deck', 'Shuffle discard pile'], [''], allow_pass=True)
         if idx == 0:
-            self.player.life_deck.shuffle()
+            self.player.shuffle_deck()
         elif idx == 1:
-            self.player.discard_pile.shuffle()
+            self.player.shuffle_discard_pile()
 
 
 CARD_POWER = CardPowerOnEnteringCombatMD(

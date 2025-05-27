@@ -97,9 +97,9 @@ class Player:
 
         self.main_personalities.sort(key=lambda x: x.level)
         self.life_deck = Deck('LifeDeck', life_deck_cards)
-        self.life_deck.shuffle()
         for card in self.life_deck:
             card.set_pile(self.life_deck)
+        self.shuffle_deck()
 
         self.main_personality = self.main_personalities[0]
         self.main_personality.init_for_main()
@@ -108,6 +108,14 @@ class Player:
         if self.tokui_waza:
             self.name = f'{self.tokui_waza.name.title()}{self.name}'
         self.register_card_powers(self.main_personality.card_powers)
+
+    def shuffle_deck(self):
+        self.life_deck.shuffle()
+        dprint(f'{self.name} shuffles their deck')
+
+    def shuffle_discard_pile(self):
+        self.discard_pile.shuffle()
+        dprint(f'{self.name} shuffles their discard pile')
 
     def register_opponent(self, opponent):
         self.opponent = opponent
@@ -371,9 +379,9 @@ class Player:
             idx = self.choose(['Shuffle it back into deck', 'Keep it'], [''],
                               allow_pass=False)
             if idx == 0:
-                dprint(f'{self} shuffles unplayable {card.name} back into deck')
+                dprint(f'{self} returns unplayable {card.name} back to deck')
                 self.life_deck.add(card)
-                self.life_deck.shuffle()
+                self.shuffle_deck()
                 if card.pile is not self.life_deck:
                     card.set_pile(self.life_deck)
                 return None

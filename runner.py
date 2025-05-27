@@ -4,6 +4,7 @@ import sys
 
 import tabulate
 
+from card_power_on_entering_turn import CardPowerOnEnteringTurn
 from combat_phase import CombatPhase
 from discard_phase import DiscardPhase
 from draw_phase import DrawPhase
@@ -70,10 +71,13 @@ class Runner:
         for player in State.gen_players():
             player.exhaust_expired_card_powers()
         self.show_summary()
+
         State.TURN_PLAYER.check_for_dragon_ball_victory()
 
-        # TODO: CardPowerOnBeginningOfTurn
-        #       213 Plant Two Saibaimen (floating effect)
+        for player in State.gen_players():
+            card_powers = player.get_valid_card_powers(CardPowerOnEnteringTurn)
+            for card_power in card_powers:
+                card_power.on_entering_turn()
 
     def end_of_turn(self):
         pass

@@ -42,7 +42,7 @@ class CardPowerNonCombatAttackVS(CardPowerNonCombatAttack):
                 player.discard(db)
 
         # Regardless of outcome, shuffle the deck after "searching" it
-        player.life_deck.shuffle()
+        player.shuffle_deck()
 
 
 CARD_POWER = CardPowerNonCombatAttackVS(NAME, CARD_TEXT, remove_from_game=True)

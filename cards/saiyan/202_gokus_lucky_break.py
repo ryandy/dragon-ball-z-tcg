@@ -38,7 +38,7 @@ class CardPowerNonCombatAttackGLB(CardPowerNonCombatAttack):
             player.play_dragon_ball(card)
 
         # Regardless of outcome, shuffle the deck after "searching" it
-        player.life_deck.shuffle()
+        player.shuffle_deck()
 
 
 CARD_POWER = CardPowerNonCombatAttackGLB(NAME, CARD_TEXT, remove_from_game=True)

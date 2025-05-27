@@ -63,11 +63,15 @@ class CardPowerOnDraw(CardPower):
         return True
 
     def on_effect(self, phase):
-        phase.draw_count += self.own_attack_draw_add
-        phase.discard_pile_draw_count += self.own_attack_draw_from_discard_add
-        phase.discard_pile_bottom_draw_count += self.own_attack_draw_from_discard_bottom_add
-        phase.draw_count += self.own_defend_draw_add
-        phase.discard_pile_draw_count += self.own_defend_draw_from_discard_add
-        phase.discard_pile_bottom_draw_count += self.own_defend_draw_from_discard_bottom_add
-        phase.draw_count += self.opp_attack_draw_add
-        phase.draw_count += self.opp_defend_draw_add
+        if self.player is phase.player and phase.is_attacker:
+            phase.draw_count += self.own_attack_draw_add
+            phase.discard_pile_draw_count += self.own_attack_draw_from_discard_add
+            phase.discard_pile_bottom_draw_count += self.own_attack_draw_from_discard_bottom_add
+        elif self.player is phase.player and not phase.is_attacker:
+            phase.draw_count += self.own_defend_draw_add
+            phase.discard_pile_draw_count += self.own_defend_draw_from_discard_add
+            phase.discard_pile_bottom_draw_count += self.own_defend_draw_from_discard_bottom_add
+        elif self.player is not phase.player and phase.is_attacker:
+            phase.draw_count += self.opp_attack_draw_add
+        elif self.player is not phase.player and not phase.is_attacker:
+            phase.draw_count += self.opp_defend_draw_add
