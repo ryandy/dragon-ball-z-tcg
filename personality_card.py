@@ -62,15 +62,16 @@ class PersonalityCard(Card):
         new_power = min(POWER_STAGES_LEN - 1, max(0, self.power_stage + amount))
         delta = new_power - self.power_stage
         if delta:
-            for player in State.gen_players():
-                card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
-                for card_power in card_powers:
-                    card_power.on_power_adjusted(self.owner, self, delta)
             verb = 'increases' if delta > 0 else 'decreases'
             old_str = self.get_power_attack_str()
             new_str = self.get_power_attack_str(power_stage=new_power)
             dprint(f'{self.name}\'s power {verb} from {old_str} to {new_str}')
-        self.init_power_stage(new_power)
+            self.init_power_stage(new_power)
+
+            for player in State.gen_players():
+                card_powers = player.get_valid_card_powers(CardPowerOnPowerAdjusted)
+                for card_power in card_powers:
+                    card_power.on_power_adjusted(self.owner, self, delta)
 
     def init_power_stage(self, new_power_stage):
         self.power_stage = new_power_stage
