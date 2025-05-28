@@ -14,6 +14,19 @@ class Damage:
         self.life_prevent = life_prevent or 0
         self.life_prevent_and_draw = life_prevent_and_draw or 0
 
+    @classmethod
+    def _add_prevent_mods(cls, a, b):
+        if a >= 0 and b >= 0:
+            return a + b
+        if a < 0 and b < 0:
+            # e.g. prevent-all-but-1 + prevent-all-but-3 = prevent-all-but-1
+            return max(a, b)
+        if a + b < 0:
+            # e.g. prevent-all-but-3 + prevent-1 = prevent-all-but-2
+            return a + b
+        # e.g. prevent-all-but-1 + prevent-2 = prevent-all
+        return 1000
+
     def __repr__(self):
         stopped = self.was_stopped()
         if stopped:
@@ -22,8 +35,8 @@ class Damage:
         power = 'PAT' if self.use_pat else f'{self.power}'
         life = f'{self.life}'
         power_add, life_add, power_mult, life_mult, power_max, life_max = 0, 0, 1, 1, 1000, 1000
-        power_prevent, life_prevent = (
-            self.power_prevent, self.life_prevent + self.life_prevent_and_draw)
+        power_prevent = self.power_prevent
+        life_prevent = self._add_prevent_mods(self.life_prevent, self.life_prevent_and_draw)
         for mod in self.mods:
             power_add += mod.power_add
             life_add += mod.life_add
@@ -31,8 +44,9 @@ class Damage:
             life_mult = max(life_mult, mod.life_mult)  # mults do not stack
             power_max = min(power_max, mod.power_max)
             life_max = min(life_max, mod.life_max)
-            power_prevent += mod.power_prevent
-            life_prevent += mod.life_prevent + mod.life_prevent_and_draw
+            power_prevent = self._add_prevent_mods(power_prevent, mod.power_prevent)
+            life_prevent = self._add_prevent_mods(life_prevent, mod.life_prevent)
+            life_prevent = self._add_prevent_mods(life_prevent, mod.life_prevent_and_draw)
 
         if power_mult != 1:
             power = f'{power}*{power_mult}'
@@ -102,8 +116,9 @@ class Damage:
             self.power_prevent, self.life_prevent, self.life_prevent_and_draw)
         for mod in self.mods:
             power_prevent += mod.power_prevent
-            life_prevent += mod.life_prevent
-            life_prevent_and_draw += mod.life_prevent_and_draw
+            life_prevent = self._add_prevent_mods(life_prevent, mod.life_prevent)
+            life_prevent_and_draw = self._add_prevent_mods(
+                life_prevent_and_draw, mod.life_prevent_and_draw)
 
         return Damage(power=max(0, power),
                       life=max(0, life),

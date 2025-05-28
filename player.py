@@ -589,16 +589,33 @@ class Player:
         damage = damage.resolve(self.opponent)
         dprint(f'{self} takes {damage}')
 
-        carryover_life_damage = self.apply_power_damage(damage.power - damage.power_prevent)
-        total_life_damage = max(0, damage.life + carryover_life_damage - damage.life_prevent)
-        life_draw = min(total_life_damage, damage.life_prevent_and_draw)
+        # Handle power damage prevention
+        power_damage = damage.power
+        if damage.power_prevent < 0:
+            power_damage = min(damage.power, -damage.power_prevent)
+        else:
+            power_damage -= damage.power_prevent
+
+        # Apply power damage and determine carryover damage
+        carryover_damage = self.apply_power_damage(power_damage)
+
+        # Handle life damage prevention->draw
+        life_damage = damage.life + carryover_damage
+        life_draw = min(life_damage, damage.life_prevent_and_draw)
         if life_draw > 0:
+            life_damage -= life_draw
             dprint(f'{self} converted {life_draw} life damage into card draw')
             for _ in range(life_draw):
                 self.draw()
 
-        total_life_damage -= life_draw
-        self.apply_life_damage(total_life_damage, src_personality=src_personality)
+        # Handle life damage prevention
+        if damage.life_prevent < 0:
+            life_damage = min(life_damage, -damage.life_prevent)
+        else:
+            life_damage -= damage.life_prevent
+
+        # Apply life damage
+        self.apply_life_damage(life_damage, src_personality=src_personality)
 
     def apply_physical_attack_damage(self, damage, src_personality=None):
         return self._apply_damage(damage, src_personality=src_personality, is_physical=True)

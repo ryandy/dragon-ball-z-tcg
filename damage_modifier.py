@@ -14,6 +14,7 @@ class DamageModifier:
         self.life_max = life_max or 1000
         self.stopped = stopped or False
         self.power_prevent = power_prevent or 0
+        # Negative value for a prevention attribute means it prevents all damage except that amount
         self.life_prevent = life_prevent or 0
         self.life_prevent_and_draw = life_prevent_and_draw or 0
 
