@@ -7,26 +7,24 @@ from damage import Damage
 from damage_modifier import DamageModifier
 
 
-TYPE = 'Personality'
-NAME = 'Gohan Lv4'
-LEVEL = 4
+TYPE = 'Drill'
+NAME = 'Vegeta\'s Quickness Drill'
 SAGA = 'Saiyan'
-CARD_NUMBER = 'P5'
-RARITY = 2
-DECK_LIMIT = 1
-CHARACTER = 'Gohan'
-IS_HERO = True
-POWER_UP_RATING = 4
-POWER_STAGES = range(3200, 7700+1, 500)
-CARD_TEXT = ('Draws an extra card from the bottom of the discard pile for this combat.')
+CARD_NUMBER = '221'
+RARITY = 5
+DECK_LIMIT = None
+CHARACTER = 'Vegeta'
+STYLE = None
+RESTRICTED = False
+CARD_TEXT = ('At the beginning of each combat, draw 1 card from the bottom of the discard pile.')
 
 
-class CardPowerOnEnteringCombatGL4(CardPowerOnEnteringCombat):
+class CardPowerOnEnteringCombatVQD(CardPowerOnEnteringCombat):
     def on_effect(self, phase):
         if len(self.player.discard_pile) > 0:
             card = self.player.discard_pile.draw_from_bottom()
             self.player.draw(card=card)
 
 
-CARD_POWER = CardPowerOnEnteringCombatGL4(
+CARD_POWER = CardPowerOnEnteringCombatVQD(
     NAME, CARD_TEXT, exhaust=False, discard=False, choice=False)

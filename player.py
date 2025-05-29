@@ -202,14 +202,18 @@ class Player:
     def must_pass_defense_until_next_turn(self):
         self.must_pass_defense_until = (State.TURN + 1, 0)
 
-    def character_in_play(self, character, own_side=True, either_side=False):
+    def character_in_play(self, character, skip_main=False, own_side=True, either_side=False):
         cards = []
         opp_side = not own_side or either_side
         own_side = own_side or either_side
         if own_side:
-            cards += [self.main_personality] + self.allies.cards
+            if not skip_main:
+                cards += [self.main_personality]
+            cards += self.allies.cards
         if opp_side:
-            cards += [self.opponent.main_personality] + self.opponent.allies.cards
+            if not skip_main:
+                cards += [self.opponent.main_personality]
+            cards += self.opponent.allies.cards
         for card in cards:
             if card.character == character:
                 return True
@@ -374,7 +378,7 @@ class Player:
             and card.style != Style.FREESTYLE
             and any(x.style != card.style for x in self.drills if x.style != Style.FREESTYLE)
             and not self.card_in_play('saiyan.231')):  # Goku's Mixing Drill
-            if self.interactive:
+            if self.should_show_hand():
                 dprint(f'{self} draws unplayable {card.name}')
             idx = self.choose(['Shuffle it back into deck', 'Keep it'], [''],
                               allow_pass=False)
@@ -397,13 +401,10 @@ class Player:
 
     def add_card_to_hand(self, card):
         assert card
-        if (self.interactive
-            or (self.opponent.interactive
-                # Check own side for TMRT because it would be attached to own Main Personality
-                and self.card_in_play('saiyan.211')  # Tien Mind Reading Trick
-                and self.character_in_play(Character.TIEN, either_side=True)
-                and not self.main_personality.is_hero)):
+        if self.should_show_hand():
             dprint(f'{self} adds {card} to hand')
+            if not self.interactive:
+                dprint(f'  - {card.card_text}')
         else:
             dprint(f'{self} adds a card to hand')
         self.hand.add(card)
@@ -417,6 +418,24 @@ class Player:
                 if (isinstance(card_power, CardPowerAttack)
                     or isinstance(card_power, CardPowerDefense)):
                     self.register_card_power(card_power)
+
+    def should_show_hand(self):
+        if self.interactive:
+            return True
+
+        if (self.opponent.interactive
+            # Check own side for TMRT because it would be attached to own Main Personality
+            and self.card_in_play('saiyan.211')  # Tien Mind Reading Trick
+            and self.character_in_play(Character.TIEN, either_side=True)
+            and not self.main_personality.is_hero):
+            return True
+
+        if (self.opponent.interactive
+            and self.opponent.card_in_play('saiyan.224')  # Baba Witch Viewing Drill
+            and not self.main_personality.is_hero):
+            return True
+
+        return False
 
     def remove_from_game(self, card, exhaust_card=True, card_in_pile=True):
         return self.discard(card, remove_from_game=True,
@@ -1038,6 +1057,13 @@ class Player:
 
         for card_power in card.card_powers:
             self.register_card_power(card_power)
+
+        # Some drill cards activate immediately using a "Dragon Ball" card power
+        for card_power in card.card_powers:
+            if isinstance(card_power, CardPowerDragonBall):
+                # Give card power access to Player
+                card_power = self.register_card_power(card_power)
+                card_power.on_play(self, State.PHASE)
 
         # Discard any newly invalidated restricted drills
         invalid_drills = []

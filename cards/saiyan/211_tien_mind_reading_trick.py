@@ -40,6 +40,7 @@ class CardPowerNonCombatAttackTMRT(CardPowerNonCombatAttack):
             and not player.opponent.main_personality.is_hero):
             for card in player.opponent.hand:
                 dprint(f'{player.opponent} has {card} in hand')
+                dprint(f'  - {card.card_text}')
 
 
 CARD_POWER = CardPowerNonCombatAttackTMRT(NAME, CARD_TEXT, exhaust=True, discard=False)

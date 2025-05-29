@@ -22,6 +22,7 @@ class Character(enum.Enum):
     FRIEZA = 17
     MASTER_ROSHI = 18
     VIDEL = 19
+    BABA = 20
 
     def has_saiyan_heritage(self):
         return self in [

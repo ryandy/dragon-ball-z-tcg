@@ -1,6 +1,5 @@
 import sys
 
-from card_power_on_damage_modification import CardPowerOnDamageModification
 from character import Character
 from cost import Cost
 from damage import Damage
