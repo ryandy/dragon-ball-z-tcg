@@ -16,6 +16,7 @@ from card_power_on_damage_applied import CardPowerOnDamageApplied
 from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
 from character import Character
 from combat_card import CombatCard
+from damage import Damage
 from deck import Deck
 from dragon_ball_card import DragonBallCard
 from drill_card import DrillCard
@@ -635,6 +636,8 @@ class Player:
 
         # Apply life damage
         self.apply_life_damage(life_damage, src_personality=src_personality)
+
+        return Damage(power=power_damage, life=life_damage)
 
     def apply_physical_attack_damage(self, damage, src_personality=None):
         return self._apply_damage(damage, src_personality=src_personality, is_physical=True)

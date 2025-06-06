@@ -95,19 +95,20 @@ class CombatAttackPhase(Phase):
 
         # Refresh damage mods
         damage, _ = self._get_damage(damage)
+        damage_applied = damage.copy()
 
         if not damage.was_stopped():
             if is_physical:
-                self.player.opponent.apply_physical_attack_damage(
+                damage_applied = self.player.opponent.apply_physical_attack_damage(
                     damage, src_personality=self.player.control_personality)
             else:
-                self.player.opponent.apply_energy_attack_damage(
+                damage_applied = self.player.opponent.apply_energy_attack_damage(
                     damage, src_personality=self.player.control_personality)
 
         for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnAttackResolved)
             for card_power in card_powers:
-                card_power.on_attack_resolved(self, damage, is_physical)
+                card_power.on_attack_resolved(self, damage_applied, is_physical)
 
         return not damage.was_stopped()
 
