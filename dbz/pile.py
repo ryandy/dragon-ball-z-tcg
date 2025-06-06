@@ -1,7 +1,7 @@
 import random
 import sys
 
-from card import Card
+from dbz.card import Card
 
 
 class Pile:

@@ -1,13 +1,13 @@
 import sys
 
-from card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
-from card_power_defense import CardPowerAnyDefense
-from character import Character
-from combat_defense_phase import CombatDefensePhase
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from state import State
+from dbz.card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttack
+from dbz.card_power_defense import CardPowerAnyDefense
+from dbz.character import Character
+from dbz.combat_defense_phase import CombatDefensePhase
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.state import State
 
 
 TYPE = 'Combat'

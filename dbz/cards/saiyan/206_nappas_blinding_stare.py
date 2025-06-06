@@ -1,12 +1,12 @@
 import sys
 
-from card_power_attack import CardPowerNonCombatAttack
-from card_power_on_discard import CardPowerOnDiscard
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from state import State
+from dbz.card_power_attack import CardPowerNonCombatAttack
+from dbz.card_power_on_discard import CardPowerOnDiscard
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.state import State
 
 
 TYPE = 'Combat'

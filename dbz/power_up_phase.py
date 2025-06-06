@@ -1,9 +1,9 @@
 import sys
 
-from card_power_on_end_of_power_up_phase import CardPowerOnEndOfPowerUpPhase
-from card_power_on_entering_power_up_phase import CardPowerOnEnteringPowerUpPhase
-from phase import Phase
-from state import State
+from dbz.card_power_on_end_of_power_up_phase import CardPowerOnEndOfPowerUpPhase
+from dbz.card_power_on_entering_power_up_phase import CardPowerOnEnteringPowerUpPhase
+from dbz.phase import Phase
+from dbz.state import State
 
 
 class PowerUpPhase(Phase):

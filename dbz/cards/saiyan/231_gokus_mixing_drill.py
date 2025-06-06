@@ -1,11 +1,11 @@
 import sys
 
-from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from style import Style
+from dbz.card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.style import Style
 
 
 TYPE = 'Drill'

@@ -3,12 +3,12 @@ import pathlib
 import re
 import sys
 
-from combat_card import CombatCard
-from dragon_ball_card import DragonBallCard
-from drill_card import DrillCard
-from non_combat_card import NonCombatCard
-from personality_card import PersonalityCard
-from saga import Saga
+from dbz.combat_card import CombatCard
+from dbz.dragon_ball_card import DragonBallCard
+from dbz.drill_card import DrillCard
+from dbz.non_combat_card import NonCombatCard
+from dbz.personality_card import PersonalityCard
+from dbz.saga import Saga
 
 
 class CardFactory:
@@ -16,7 +16,7 @@ class CardFactory:
     def from_spec(saga, card_number):
         card_number = str(card_number).lower()
         saga_name = f'{Saga(saga).name}'.lower()
-        path = pathlib.Path(f'./cards/{saga_name}')
+        path = pathlib.Path(__file__).parent / 'cards' / saga_name
         files = list(path.glob(f'*{card_number}_*.py'))
 
         cardfile = None

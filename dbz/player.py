@@ -2,31 +2,31 @@ import collections
 import random
 import sys
 
-from card import Card
-from card_power import CardPower
-from card_power_attack import CardPowerAttack, CardPowerFinalPhysicalAttack
-from card_power_defense import CardPowerDefense
-from card_power_defense_shield import (CardPowerPhysicalDefenseShield,
+from dbz.card import Card
+from dbz.card_power import CardPower
+from dbz.card_power_attack import CardPowerAttack, CardPowerFinalPhysicalAttack
+from dbz.card_power_defense import CardPowerDefense
+from dbz.card_power_defense_shield import (CardPowerPhysicalDefenseShield,
                                        CardPowerEnergyDefenseShield,
                                        CardPowerAnyDefenseShield)
-from card_power_dragon_ball import CardPowerDragonBall
-from card_power_on_anger_adjusted import CardPowerOnAngerAdjusted
-from card_power_on_cost_modification import CardPowerOnCostModification
-from card_power_on_damage_applied import CardPowerOnDamageApplied
-from card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
-from character import Character
-from combat_card import CombatCard
-from damage import Damage
-from deck import Deck
-from dragon_ball_card import DragonBallCard
-from drill_card import DrillCard
-from exception import GameOver
-from non_combat_card import NonCombatCard
-from personality_card import PersonalityCard
-from pile import Pile
-from state import State
-from style import Style
-from util import dprint
+from dbz.card_power_dragon_ball import CardPowerDragonBall
+from dbz.card_power_on_anger_adjusted import CardPowerOnAngerAdjusted
+from dbz.card_power_on_cost_modification import CardPowerOnCostModification
+from dbz.card_power_on_damage_applied import CardPowerOnDamageApplied
+from dbz.card_power_on_remove_from_play import CardPowerOnRemoveFromPlay
+from dbz.character import Character
+from dbz.combat_card import CombatCard
+from dbz.damage import Damage
+from dbz.deck import Deck
+from dbz.dragon_ball_card import DragonBallCard
+from dbz.drill_card import DrillCard
+from dbz.exception import GameOver
+from dbz.non_combat_card import NonCombatCard
+from dbz.personality_card import PersonalityCard
+from dbz.pile import Pile
+from dbz.state import State
+from dbz.style import Style
+from dbz.util import dprint
 
 
 MAX_ANGER = 5

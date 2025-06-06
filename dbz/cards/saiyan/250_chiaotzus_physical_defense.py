@@ -1,11 +1,11 @@
 import sys
 
-from card_power_defense import CardPowerAnyDefense
-from card_power_on_damage_modification import CardPowerOnDamageModification
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
+from dbz.card_power_defense import CardPowerAnyDefense
+from dbz.card_power_on_damage_modification import CardPowerOnDamageModification
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Combat'

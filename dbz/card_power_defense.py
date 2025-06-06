@@ -1,10 +1,10 @@
 import copy
 import sys
 
-from card_power import CardPower
-from cost import Cost
-from damage_modifier import DamageModifier
-from util import dprint
+from dbz.card_power import CardPower
+from dbz.cost import Cost
+from dbz.damage_modifier import DamageModifier
+from dbz.util import dprint
 
 
 class CardPowerDefense(CardPower):

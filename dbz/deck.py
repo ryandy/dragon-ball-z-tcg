@@ -1,10 +1,10 @@
 import pathlib
 import sys
 
-from card_factory import CardFactory
-from exception import DeckEmpty
-from pile import Pile
-from saga import Saga
+from dbz.card_factory import CardFactory
+from dbz.exception import DeckEmpty
+from dbz.pile import Pile
+from dbz.saga import Saga
 
 
 class Deck(Pile):
@@ -20,7 +20,9 @@ class Deck(Pile):
     @classmethod
     def from_spec(cls, name):
         cards = []
-        path = pathlib.Path(f'./decks/{name}'.lower())
+        path = pathlib.Path(name)
+        if not path.exists():
+            path = pathlib.Path(__file__).parent / 'decks' / name
         with open(path) as f:
             lines = f.readlines()
             for line in lines:

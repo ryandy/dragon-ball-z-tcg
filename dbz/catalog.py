@@ -6,13 +6,13 @@ import sys
 import tabulate
 import textwrap
 
-from card_factory import CardFactory
+from dbz.card_factory import CardFactory
 
 
 def fetch_cards():
     cards = []
     characters = collections.defaultdict(int)
-    root_card_path = pathlib.Path(f'./cards')
+    root_card_path = pathlib.Path(__file__).parent / 'cards'
     card_paths = list(sorted(root_card_path.glob(f'**/*.py')))
     for card_path in card_paths:
         card = CardFactory.from_file(card_path)

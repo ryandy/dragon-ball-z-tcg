@@ -1,12 +1,12 @@
 import sys
 
-from card_power_attack import CardPowerAttack
-from card_power_on_attack_resolved import CardPowerOnAttackResolved
-from card_power_on_damage_modification import CardPowerOnDamageModification
-from combat_defense_phase import CombatDefensePhase
-from phase import Phase
-from state import State
-from util import dprint
+from dbz.card_power_attack import CardPowerAttack
+from dbz.card_power_on_attack_resolved import CardPowerOnAttackResolved
+from dbz.card_power_on_damage_modification import CardPowerOnDamageModification
+from dbz.combat_defense_phase import CombatDefensePhase
+from dbz.phase import Phase
+from dbz.state import State
+from dbz.util import dprint
 
 
 class CombatAttackPhase(Phase):

@@ -1,11 +1,11 @@
 import sys
 
-from card_power_dragon_ball import CardPowerDragonBall
-from card_power_on_combat_declared import CardPowerOnCombatDeclared
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
+from dbz.card_power_dragon_ball import CardPowerDragonBall
+from dbz.card_power_on_combat_declared import CardPowerOnCombatDeclared
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Dragon Ball'

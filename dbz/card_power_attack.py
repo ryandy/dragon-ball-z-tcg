@@ -1,12 +1,12 @@
 import copy
 import sys
 
-from card_power import CardPower
-from cost import Cost
-from damage import Damage
-from dragon_ball_card import DragonBallCard
-from state import State
-from util import dprint
+from dbz.card_power import CardPower
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.dragon_ball_card import DragonBallCard
+from dbz.state import State
+from dbz.util import dprint
 
 
 # TODO CardPowerCombat class that this, ..Defense, and ..DefenseShield inherit from

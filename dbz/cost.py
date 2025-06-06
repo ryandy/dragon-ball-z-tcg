@@ -1,8 +1,8 @@
 import copy
 import sys
 
-from character import Character
-from state import State
+from dbz.character import Character
+from dbz.state import State
 
 
 class Cost:

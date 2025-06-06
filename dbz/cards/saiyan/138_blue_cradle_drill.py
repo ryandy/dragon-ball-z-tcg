@@ -1,11 +1,11 @@
 import sys
 
-from card_power_on_damage_applied import CardPowerOnDamageApplied
-from character import Character
-from combat_phase import CombatPhase
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
+from dbz.card_power_on_damage_applied import CardPowerOnDamageApplied
+from dbz.character import Character
+from dbz.combat_phase import CombatPhase
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Drill'

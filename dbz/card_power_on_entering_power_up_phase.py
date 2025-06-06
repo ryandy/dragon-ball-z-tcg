@@ -1,8 +1,8 @@
 import sys
 
-from card_power import CardPower
-from cost import Cost
-from util import dprint
+from dbz.card_power import CardPower
+from dbz.cost import Cost
+from dbz.util import dprint
 
 
 class CardPowerOnEnteringPowerUpPhase(CardPower):

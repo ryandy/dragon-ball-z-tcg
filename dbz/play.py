@@ -2,9 +2,9 @@ import argparse
 import random
 import sys
 
-from deck import Deck
-from runner import Runner
-from state import State
+from dbz.deck import Deck
+from dbz.runner import Runner
+from dbz.state import State
 
 
 def main():

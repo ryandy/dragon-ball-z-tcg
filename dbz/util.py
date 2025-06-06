@@ -1,7 +1,7 @@
 import sys
 import time
 
-from state import State
+from dbz.state import State
 
 
 _dprint_time = None

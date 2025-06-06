@@ -1,13 +1,13 @@
 import sys
 
-from card_power_on_end_of_power_up_phase import CardPowerOnEndOfPowerUpPhase
-from card_power_on_entering_turn import CardPowerOnEnteringTurn
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from personality_card import PersonalityCard
-from state import State
+from dbz.card_power_on_end_of_power_up_phase import CardPowerOnEndOfPowerUpPhase
+from dbz.card_power_on_entering_turn import CardPowerOnEnteringTurn
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.personality_card import PersonalityCard
+from dbz.state import State
 
 
 TYPE = 'Non-Combat'

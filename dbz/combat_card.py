@@ -1,9 +1,8 @@
-import pathlib
 import sys
 
-from card import Card
-from saga import Saga
-from style import Style
+from dbz.card import Card
+from dbz.saga import Saga
+from dbz.style import Style
 
 
 class CombatCard(Card):

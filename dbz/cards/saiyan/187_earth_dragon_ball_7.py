@@ -1,15 +1,15 @@
 import sys
 
-from card_power_attack import CardPowerNonCombatAttack
-from card_power_dragon_ball import CardPowerDragonBall
-from character import Character
-from combat_attack_phase import CombatAttackPhase
-from combat_defense_phase import CombatDefensePhase
-from combat_phase import CombatPhase
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from util import dprint
+from dbz.card_power_attack import CardPowerNonCombatAttack
+from dbz.card_power_dragon_ball import CardPowerDragonBall
+from dbz.character import Character
+from dbz.combat_attack_phase import CombatAttackPhase
+from dbz.combat_defense_phase import CombatDefensePhase
+from dbz.combat_phase import CombatPhase
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.util import dprint
 
 
 TYPE = 'Dragon Ball'

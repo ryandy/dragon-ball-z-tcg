@@ -1,10 +1,10 @@
 import random
 import sys
 
-from card_power_on_discard import CardPowerOnDiscard
-from phase import Phase
-from state import State
-from util import dprint
+from dbz.card_power_on_discard import CardPowerOnDiscard
+from dbz.phase import Phase
+from dbz.state import State
+from dbz.util import dprint
 
 
 class DiscardPhase(Phase):

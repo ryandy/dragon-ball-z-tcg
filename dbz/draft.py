@@ -7,14 +7,14 @@ import sys
 
 import numpy.random as np_random
 
-from card_factory import CardFactory
-from character import Character
-from deck import Deck
-from personality_card import PersonalityCard
-from player import Player
-from runner import Runner
-from state import State
-from util import dprint
+from dbz.card_factory import CardFactory
+from dbz.character import Character
+from dbz.deck import Deck
+from dbz.personality_card import PersonalityCard
+from dbz.player import Player
+from dbz.runner import Runner
+from dbz.state import State
+from dbz.util import dprint
 
 
 CHARACTERS = []
@@ -26,7 +26,7 @@ def fetch_cards():
     global CHARACTERS, CARDS
 
     characters = collections.defaultdict(int)
-    root_card_path = pathlib.Path(f'./cards')
+    root_card_path = pathlib.Path(__file__).parent / 'cards'
     card_paths = list(sorted(root_card_path.glob(f'**/*.py')))
     for card_path in card_paths:
         card = CardFactory.from_file(card_path)

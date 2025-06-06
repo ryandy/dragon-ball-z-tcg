@@ -1,13 +1,13 @@
 import sys
 
-from card_power_on_attack_resolved import CardPowerOnAttackResolved
-from card_power_on_damage_modification import CardPowerOnDamageModification
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from state import State
-from util import dprint
+from dbz.card_power_on_attack_resolved import CardPowerOnAttackResolved
+from dbz.card_power_on_damage_modification import CardPowerOnDamageModification
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.state import State
+from dbz.util import dprint
 
 
 TYPE = 'Non-Combat'

@@ -1,9 +1,9 @@
 import sys
 
-from card_power_on_draw import CardPowerOnDraw
-from combat_card import CombatCard
-from phase import Phase
-from state import State
+from dbz.card_power_on_draw import CardPowerOnDraw
+from dbz.combat_card import CombatCard
+from dbz.phase import Phase
+from dbz.state import State
 
 
 class DrawPhase(Phase):

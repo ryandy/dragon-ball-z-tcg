@@ -2,7 +2,7 @@ import abc
 import copy
 import sys
 
-from state import State
+from dbz.state import State
 
 
 class CardPower(abc.ABC):

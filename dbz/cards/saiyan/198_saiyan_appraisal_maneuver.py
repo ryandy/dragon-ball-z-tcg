@@ -1,14 +1,14 @@
 import pathlib
 import sys
 
-from card_factory import CardFactory
-from card_power_attack import CardPowerNonCombatAttack
-from character import Character
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
-from drill_card import DrillCard
-from non_combat_card import NonCombatCard
+from dbz.card_factory import CardFactory
+from dbz.card_power_attack import CardPowerNonCombatAttack
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
+from dbz.drill_card import DrillCard
+from dbz.non_combat_card import NonCombatCard
 
 
 TYPE = 'Non-Combat'
@@ -28,7 +28,7 @@ class CardPowerNonCombatAttackSAM(CardPowerNonCombatAttack):
         super().on_secondary_effects(player, phase)
         
         cards = []
-        root_card_path = pathlib.Path(f'./cards')
+        root_card_path = pathlib.Path(__file__).parent.parent
         card_paths = list(sorted(root_card_path.glob(f'**/*.py')))
         for card_path in card_paths:
             card = CardFactory.from_file(card_path)

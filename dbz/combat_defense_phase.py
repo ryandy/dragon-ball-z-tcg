@@ -1,10 +1,10 @@
 import sys
 
-from card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense, CardPowerAnyDefense
-from combat_card import CombatCard
-from phase import Phase
-from state import State
-from util import dprint
+from dbz.card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefense, CardPowerAnyDefense
+from dbz.combat_card import CombatCard
+from dbz.phase import Phase
+from dbz.state import State
+from dbz.util import dprint
 
 
 class CombatDefensePhase(Phase):

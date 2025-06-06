@@ -1,13 +1,12 @@
 import bisect
-import pathlib
 import sys
 
-from card import Card
-from card_power_on_power_adjusted import CardPowerOnPowerAdjusted
-from character import Character
-from saga import Saga
-from state import State
-from util import dprint
+from dbz.card import Card
+from dbz.card_power_on_power_adjusted import CardPowerOnPowerAdjusted
+from dbz.character import Character
+from dbz.saga import Saga
+from dbz.state import State
+from dbz.util import dprint
 
 
 POWER_STAGES_LEN = 11

@@ -1,7 +1,7 @@
 import sys
 
-from phase import Phase
-from state import State
+from dbz.phase import Phase
+from dbz.state import State
 
 
 class NonCombatPhase(Phase):

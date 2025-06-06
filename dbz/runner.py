@@ -4,16 +4,16 @@ import sys
 
 import tabulate
 
-from card_power_on_entering_turn import CardPowerOnEnteringTurn
-from combat_phase import CombatPhase
-from discard_phase import DiscardPhase
-from draw_phase import DrawPhase
-from exception import DeckEmpty, GameOver
-from non_combat_phase import NonCombatPhase
-from player import Player
-from power_up_phase import PowerUpPhase
-from state import State
-from util import dprint
+from dbz.card_power_on_entering_turn import CardPowerOnEnteringTurn
+from dbz.combat_phase import CombatPhase
+from dbz.discard_phase import DiscardPhase
+from dbz.draw_phase import DrawPhase
+from dbz.exception import DeckEmpty, GameOver
+from dbz.non_combat_phase import NonCombatPhase
+from dbz.player import Player
+from dbz.power_up_phase import PowerUpPhase
+from dbz.state import State
+from dbz.util import dprint
 
 
 class Runner:

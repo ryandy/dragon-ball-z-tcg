@@ -1,7 +1,7 @@
 import sys
 
-from card import Card
-from style import Style
+from dbz.card import Card
+from dbz.style import Style
 
 
 class DrillCard(Card):

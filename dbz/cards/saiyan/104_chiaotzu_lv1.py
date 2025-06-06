@@ -1,10 +1,10 @@
 import sys
 
-from card_power_attack import CardPowerPhysicalAttack, CardPowerEnergyAttack
-from card_power_defense import CardPowerPhysicalDefense, CardPowerEnergyDefense
-from cost import Cost
-from damage import Damage
-from damage_modifier import DamageModifier
+from dbz.card_power_attack import CardPowerPhysicalAttack, CardPowerEnergyAttack
+from dbz.card_power_defense import CardPowerPhysicalDefense, CardPowerEnergyDefense
+from dbz.cost import Cost
+from dbz.damage import Damage
+from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Personality'

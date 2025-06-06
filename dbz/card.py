@@ -1,10 +1,10 @@
 import abc
 import sys
 
-from character import Character
-from rarity import Rarity
-from saga import Saga
-from style import Style
+from dbz.character import Character
+from dbz.rarity import Rarity
+from dbz.saga import Saga
+from dbz.style import Style
 
 
 class Card(abc.ABC):

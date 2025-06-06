@@ -1,9 +1,9 @@
 import sys
 
-from card_power_on_cost_modification import CardPowerOnCostModification
-from character import Character
-from cost import Cost
-from cost_modifier import CostModifier
+from dbz.card_power_on_cost_modification import CardPowerOnCostModification
+from dbz.character import Character
+from dbz.cost import Cost
+from dbz.cost_modifier import CostModifier
 
 
 TYPE = 'Drill'
