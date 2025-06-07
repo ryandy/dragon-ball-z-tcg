@@ -24,7 +24,6 @@ CARD_TEXT = ('Find the foe\'s first Dragon Ball in their Life Deck and place it 
 class CardPowerNonCombatAttackVT(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
-        player.debug()
 
         db_card = None
         for card in reversed(player.opponent.life_deck.cards):
