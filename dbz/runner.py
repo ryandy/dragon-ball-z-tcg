@@ -4,6 +4,7 @@ import sys
 
 import tabulate
 
+from dbz.card_power_on_end_of_turn import CardPowerOnEndOfTurn
 from dbz.card_power_on_entering_turn import CardPowerOnEnteringTurn
 from dbz.combat_phase import CombatPhase
 from dbz.discard_phase import DiscardPhase
@@ -80,7 +81,10 @@ class Runner:
                 card_power.on_entering_turn()
 
     def end_of_turn(self):
-        pass
+        for player in State.gen_players():
+            card_powers = player.get_valid_card_powers(CardPowerOnEndOfTurn)
+            for card_power in card_powers:
+                card_power.on_end_of_turn()
 
     def take_turn(self):
         player = self.players[State.TURN % 2]

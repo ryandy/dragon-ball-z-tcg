@@ -13,7 +13,7 @@ SAGA = 'Saiyan'
 CARD_NUMBER = '79'
 RARITY = 3
 DECK_LIMIT = None
-CHARACTER = None
+CHARACTER = 'King Kai'
 STYLE = None
 CARD_TEXT = ('Heroes only. Choose 2 cards from your discard pile and place them on'
              ' the bottom of your Life Deck.')

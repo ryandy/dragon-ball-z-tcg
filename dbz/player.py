@@ -285,7 +285,7 @@ class Player:
         # Set power to maximum
         self.main_personality.set_power_stage_max()
 
-        # Reset anger to 0 if anger reached the maximum
+        # Reset anger to 0 only if anger reached the maximum
         if self.anger == MAX_ANGER:
             self.anger = 0
 
@@ -319,6 +319,9 @@ class Player:
 
         # Reset power
         self.main_personality.init_for_main()
+
+        # Do not reset anger after losing a level
+        #self.anger = 0
 
     def adjust_anger(self, count):
         new_anger = max(0, min(MAX_ANGER, self.anger + count))

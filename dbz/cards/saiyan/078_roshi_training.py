@@ -13,7 +13,7 @@ SAGA = 'Saiyan'
 CARD_NUMBER = '78'
 RARITY = 3
 DECK_LIMIT = None
-CHARACTER = None
+CHARACTER = 'Master Roshi'
 STYLE = None
 CARD_TEXT = ('Heroes only. The top 3 discarded cards are placed at the bottom of your life deck.')
 

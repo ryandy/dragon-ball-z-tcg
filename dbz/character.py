@@ -23,6 +23,14 @@ class Character(enum.Enum):
     MASTER_ROSHI = 18
     VIDEL = 19
     BABA = 20
+    KING_KAI = 21
+
+    @classmethod
+    def from_str(cls, s):
+        s = s.upper()
+        s = s.replace('-', '_')
+        s = s.replace(' ', '_')
+        return cls[s]
 
     def has_saiyan_heritage(self):
         return self in [

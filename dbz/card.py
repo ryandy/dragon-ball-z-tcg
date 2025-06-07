@@ -19,7 +19,7 @@ class Card(abc.ABC):
         self.deck_limit = deck_limit
 
         if isinstance(character, str):
-            character = Character[character.replace('-', '_').upper()]
+            character = Character.from_str(character)
         self.character = Character(character) if character else None
 
         if isinstance(style, str):

@@ -9,12 +9,12 @@ from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Non-Combat'
-NAME = 'Saiyan Armor'
+NAME = 'King Kai Uniform'
 SAGA = 'Saiyan'
 CARD_NUMBER = '88'
 RARITY = 3
 DECK_LIMIT = 1
-CHARACTER = None
+CHARACTER = 'King Kai'
 STYLE = None
 CARD_TEXT = ('Prevents 1 life card dicard from any successful physical attack.')
 
