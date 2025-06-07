@@ -5,6 +5,7 @@ from dbz.character import Character
 from dbz.cost import Cost
 from dbz.damage import Damage
 from dbz.damage_modifier import DamageModifier
+from dbz.drill_card import DrillCard
 
 
 TYPE = 'Non-Combat'
@@ -27,6 +28,8 @@ class CardPowerNonCombatAttackSBT(CardPowerNonCombatAttack):
         cards = (self.player.opponent.non_combat.cards
                  + self.player.opponent.drills.cards
                  + self.player.opponent.allies.cards)
+        cards = [c for c in cards
+                 if not isinstance(c, DrillCard) or c.can_be_removed(player.opponent)]
         if cards:
             idx = self.player.choose([str(c) for c in cards],
                                      [c.card_text for c in cards],

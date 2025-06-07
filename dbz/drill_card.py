@@ -37,6 +37,15 @@ class DrillCard(Card):
                 and not style_restricted
                 and not special_restricted)
 
+    def can_be_removed(self, player):
+        ofd_id = 'saiyan.234'  # Orange Focusing Drill
+        is_ofd = self.get_id() == ofd_id
+        ofd_count = player.card_in_play(ofd_id)
+        ret = is_ofd or ofd_count == 0
+        #if not ret:
+        #    print(f'cannot remove {player}\'s {self} (is={is_ofd}, count={ofd_count})')
+        return ret
+
     @classmethod
     def from_spec(cls, card_module):
         card = cls(

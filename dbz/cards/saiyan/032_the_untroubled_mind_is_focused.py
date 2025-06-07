@@ -5,6 +5,7 @@ from dbz.character import Character
 from dbz.cost import Cost
 from dbz.damage import Damage
 from dbz.damage_modifier import DamageModifier
+from dbz.drill_card import DrillCard
 
 
 TYPE = 'Non-Combat'
@@ -28,6 +29,8 @@ class CardPowerTUMIF(CardPowerNonCombatAttack):
     def on_secondary_effects(self, player, phase):
         super().on_secondary_effects(player, phase)
         cards = player.opponent.drills + player.opponent.allies
+        cards = [c for c in cards
+                 if not isinstance(c, DrillCard) or c.can_be_removed(player.opponent)]
         if cards:
             idx = player.choose([x.name for x in cards],
                                 [x.card_text for x in cards],

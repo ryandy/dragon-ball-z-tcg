@@ -237,13 +237,15 @@ class Player:
             cards += ([self.opponent.main_personality]
                       + self.opponent.allies.cards + self.opponent.non_combat.cards
                       + self.opponent.drills.cards + self.opponent.dragon_balls.cards)
+
+        count = 0
         for card in cards:
             if card.get_id() == card_id:
-                return True
+                count += 1
             for attached_card in card.attached_cards:
                 if attached_card.get_id() == card_id:
-                    return True
-        return False
+                    count += 1
+        return count
 
     def raise_level(self):
         next_level = self.main_personality.level + 1
@@ -1049,6 +1051,20 @@ class Player:
             self.register_card_power(card_power)
         self.deactivate_card_powers(card)  # Card powers deactivated until they take over combat
 
+    def discard_invalid_restricted_drills(self):
+        # Discard any newly invalidated restricted drills
+        invalid_drills = []
+        for player in State.gen_players():
+            for drill_card in player.drills:
+                if (drill_card.restricted
+                    and len([x for x in self.drills + self.opponent.drills
+                             if x is not drill_card and x.style == drill_card.restricted]) > 0):
+                    invalid_drills.append((player, drill_card))
+        for player, invalid_drill in invalid_drills:
+            if invalid_drill.can_be_removed(player):
+                dprint(f'{player}\'s restricted {invalid_drill.name} invalidated')
+                player.discard(invalid_drill)
+
     def play_drill(self, card):
         dprint(f'{self} plays {card}')
         if not self.interactive:
@@ -1069,16 +1085,7 @@ class Player:
                 card_power.on_play(self, State.PHASE)
 
         # Discard any newly invalidated restricted drills
-        invalid_drills = []
-        for player in State.gen_players():
-            for drill_card in player.drills:
-                if (drill_card.restricted
-                    and len([x for x in self.drills + self.opponent.drills
-                             if x is not drill_card and x.style == drill_card.restricted]) > 0):
-                    invalid_drills.append((player, drill_card))
-        for player, invalid_drill in invalid_drills:
-            dprint(f'{player}\'s restricted {invalid_drill.name} invalidated')
-            player.discard(invalid_drill)
+        self.discard_invalid_restricted_drills()
 
     def play_dragon_ball(self, card, verbose=True):
         if verbose:
