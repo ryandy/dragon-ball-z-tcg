@@ -21,7 +21,7 @@ CARD_TEXT = ('Draw three cards if you wish, and place the top discarded card at 
              ' life deck.')
 
 
-class CardPowerEDB3(CardPowerDragonBall):
+class CardPowerDragonBallEDB3(CardPowerDragonBall):
     def on_play(self, player, phase):
         idx = player.choose(['Draw 3 cards.'], [''])
         if idx is not None:
@@ -31,4 +31,4 @@ class CardPowerEDB3(CardPowerDragonBall):
         player.rejuvenate()
 
 
-CARD_POWER = CardPowerEDB3(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallEDB3(NAME, CARD_TEXT)

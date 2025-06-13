@@ -27,6 +27,7 @@ class CardPowerOnAttackResolvedBTD(CardPowerOnAttackResolved):
 
     # Unblockable 1 life damage
     def on_effect(self, phase, damage, is_physical):
+        # TODO: This should probably contribute toward Dragon Ball capture conditions...
         self.player.opponent.apply_life_damage(1)
 
 

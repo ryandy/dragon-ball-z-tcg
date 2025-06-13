@@ -9,7 +9,7 @@ from dbz.damage_modifier import DamageModifier
 
 
 TYPE = 'Combat'
-NAME = 'Black Elbow_Strike'
+NAME = 'Black Elbow Strike'
 SUBTYPE = 'Physical Combat - Defense'
 SAGA = 'Saiyan'
 CARD_NUMBER = '67'

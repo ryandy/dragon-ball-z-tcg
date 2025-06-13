@@ -1,6 +1,6 @@
 import sys
 
-from dbz.card_power_attack import CardPowerMultiForm
+from dbz.card_power_attack import CardPowerPhysicalAttackMultiForm
 from dbz.card_power_defense import CardPowerPhysicalDefense
 from dbz.cost import Cost
 from dbz.damage import Damage
@@ -22,7 +22,7 @@ CARD_TEXT = ('Multi-Form allows two physical attacks, one after another, or a de
              ' physical attack preventing 4 stages of successful damage.')
 
 CARD_POWER = [
-    CardPowerMultiForm(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False),
+    CardPowerPhysicalAttackMultiForm(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False),
     CardPowerPhysicalDefense(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
                              damage_modifier=DamageModifier(power_prevent=4))
 ]

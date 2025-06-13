@@ -20,10 +20,10 @@ CARD_TEXT = ('Energy attack doing 6 life cards of damage. If successful, your op
              ' 3 power stages.')
 
 
-class CardPowerBFFP(CardPowerEnergyAttack):
+class CardPowerEnergyAttackBFFP(CardPowerEnergyAttack):
     def on_success(self, player, phase):
         # TODO: Do they get to choose which personality?
         player.opponent.main_personality.adjust_power_stage(-3)
 
 
-CARD_POWER = CardPowerBFFP(NAME, CARD_TEXT, damage=Damage(life=6))
+CARD_POWER = CardPowerEnergyAttackBFFP(NAME, CARD_TEXT, damage=Damage(life=6))

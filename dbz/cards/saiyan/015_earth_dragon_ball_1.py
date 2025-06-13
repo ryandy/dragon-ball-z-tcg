@@ -20,11 +20,11 @@ STYLE = None
 CARD_TEXT = ('Instantly power up to full and draw a card.')
 
 
-class CardPowerEDB1(CardPowerDragonBall):
+class CardPowerDragonBallEDB1(CardPowerDragonBall):
     def on_play(self, player, phase):
         personality = player.choose_power_stage_target(10)
         personality.adjust_power_stage(10)
         player.draw()
 
 
-CARD_POWER = CardPowerEDB1(NAME, CARD_TEXT)
+CARD_POWER = CardPowerDragonBallEDB1(NAME, CARD_TEXT)

@@ -1,6 +1,6 @@
 import sys
 
-from dbz.card_power_attack import CardPowerEnergyAttack, CardPowerMultiForm
+from dbz.card_power_attack import CardPowerEnergyAttack, CardPowerPhysicalAttackMultiForm
 from dbz.cost import Cost
 from dbz.damage import Damage
 from dbz.damage_modifier import DamageModifier
@@ -31,7 +31,7 @@ CARD_POWER = [
         exhaust_until_next_turn=True, discard=False,
         cost=Cost.energy_attack(power=1),
         damage=Damage.energy_attack(life=2)),
-    CardPowerMultiForm(
+    CardPowerPhysicalAttackMultiForm(
         NAME + ' - Multi-Form', _form_text,
         exhaust_until_next_turn=True, discard=False)
 ]

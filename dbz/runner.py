@@ -107,6 +107,9 @@ class Runner:
         power_up_phase = PowerUpPhase(player)
         power_up_phase.execute()
 
+        # Refresh summary before player has to decide whether to declare combat
+        self.show_summary()
+
         combat_phase = CombatPhase(self, player, power_up_phase)
         combat_phase.execute()
 

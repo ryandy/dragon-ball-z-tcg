@@ -139,7 +139,7 @@ class CardPowerFinalPhysicalAttack(CardPowerPhysicalAttack):
 
 
 # Physical attack used by Piccolo and Tien personalities
-class CardPowerMultiForm(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackMultiForm(CardPowerPhysicalAttack):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.resolved_turn = -1

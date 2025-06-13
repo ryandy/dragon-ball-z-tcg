@@ -2,38 +2,46 @@
 1 saiyan 158 goku lv1
 1 saiyan 159 goku lv2
 1 saiyan 160 goku lv3
-1 saiyan p1 goku lv4
+1 saiyan  p1 goku lv4
 
 # Allies
-1 saiyan 84 yamcha lv1
-1 saiyan 86 chi-chi lv1
-1 saiyan 87 bulma lv1
+1 saiyan  84 yamcha lv1
+1 saiyan  86 chi-chi lv1
+1 saiyan  87 bulma lv1
 1 saiyan 167 krillin lv1
 
 # Combat - Attack
-2 saiyan 25 goku's physical attack (limit 2)
-3 saiyan 65 black fore fist punch
+2 saiyan  25 goku's physical attack (limit 2)
+3 saiyan  65 black fore fist punch
+3 saiyan  70 black turning kick
 3 saiyan 189 earth dragon ball combat
 4 saiyan 248 goku's plan
 
 # Combat - Defense
-3 saiyan 110 piccolo's physical defense
+1 saiyan 120 nappa's energy aura (limit 1)
+3 saiyan 156 ally's sacrifice
 3 saiyan 218 unexpected allies
 4 saiyan 247 goku's truce
 
 # Non-Combat
-3 saiyan 98 power up the most!
+2 saiyan  32 the untroubled mind is focused
 1 saiyan 157 eyes of the dragon (limit 1)
+1 saiyan 192 teaching the unteachable forces observation (limit 1)
+3 saiyan 199 dream fighting
 1 saiyan 202 goku's lucky break (limit 1)
-3 saiyan 222 bulma finds a dragon ball
+1 saiyan 228 vegeta's plans (limit 1)
+1 saiyan 238 king kai's calming (limit 1)
+3 saiyan bk3 krillin's trick
+1 saiyan bk7 vegeta's smirk (limit 1)
 
 # Drills
+1 saiyan 221 vegeta's quickness drill (limit 1)
 
 # Dragon Balls
-1 saiyan 15 earth dragon ball 1
-1 saiyan 16 earth dragon ball 2
-1 saiyan 75 earth dragon ball 3
-1 saiyan 76 earth dragon ball 4
-1 saiyan 77 earth dragon ball 5
+1 saiyan  15 earth dragon ball 1
+1 saiyan  16 earth dragon ball 2
+1 saiyan  75 earth dragon ball 3
+1 saiyan  76 earth dragon ball 4
+1 saiyan  77 earth dragon ball 5
 1 saiyan 186 earth dragon ball 6
 1 saiyan 187 earth dragon ball 7
