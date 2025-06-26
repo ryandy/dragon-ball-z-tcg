@@ -27,6 +27,7 @@ class CombatDefensePhase(Phase):
         return self._defense(damage, is_physical=False)
 
     def _defense(self, damage, is_physical=None):
+        # TODO: AI needs access to damage when choosing a defense
         card_power_class = CardPowerPhysicalDefense if is_physical else CardPowerEnergyDefense
         card_power = self.player.choose_card_power(
             [card_power_class, CardPowerAnyDefense],

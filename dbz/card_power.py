@@ -2,6 +2,7 @@ import abc
 import copy
 import sys
 
+from dbz.cost import Cost
 from dbz.state import State
 
 
@@ -122,3 +123,8 @@ class CardPower(abc.ABC):
             self.exhaust_until_next_turn()
         elif self.exhaust_after_use:
             self.player.exhaust_card_power(self)
+
+
+class CardPowerPass(CardPower):
+    def __init__(self):
+        super().__init__('Pass', 'Do Nothing.', cost=Cost.none())

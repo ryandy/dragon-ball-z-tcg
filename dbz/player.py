@@ -1,7 +1,7 @@
 import collections
-import random
 import sys
 
+from dbz.ai import AI, AIStrategy
 from dbz.card import Card
 from dbz.card_power import CardPower
 from dbz.card_power_attack import CardPowerAttack, CardPowerFinalPhysicalAttack
@@ -35,6 +35,9 @@ MAX_ANGER = 5
 class Player:
     def __init__(self, deck=None, interactive=False):
         self.interactive = interactive
+        self.strategy = AIStrategy.SURVIVAL  # TODO
+        #self.strategy = AIStrategy.PERSONALITY  # TODO
+        #self.strategy = AIStrategy.DRAGON_BALLS  # TODO
         self.character = None
         self.main_personalities = []
         self.main_personality = None
@@ -246,6 +249,10 @@ class Player:
                 if attached_card.get_id() == card_id:
                     count += 1
         return count
+
+    def can_win_by_mpp(self):
+        return (State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY
+                and len(self.main_personalities) >= len(self.opponent.main_personalities))
 
     def raise_level(self):
         next_level = self.main_personality.level + 1
@@ -608,7 +615,10 @@ class Player:
             ally = self.choose_personality(
                 skip_main=True, either_side=True, prompt='Select an ally to sacrifice')
             # TODO: assuming remove from game for now
-            self.remove_from_game(ally)
+            if ally.pile is self.allies:
+                self.remove_from_game(ally)
+            else:
+                self.opponent.remove_from_game(ally)
 
     def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)
@@ -787,24 +797,15 @@ class Player:
 
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
-               allow_pass=True, prompt=None):
+               allow_pass=True, prompt=None,
+               ai_refs=None, ai_context=None,
+               ai_eval_maximize=True, ai_immediate=True):
         assert names or allow_pass
 
         if not self.interactive:
-            if allow_pass and not names:
-                # Have to pass if that's the only option
-                return None
-            if allow_pass and random.random() < 0.1:
-                # Pass small % of the time
-                return None
-            if len(names) > 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.95:
-                # Almost never want to choose FPA if another choice exists
-                return random.randrange(len(names) - 1)
-            if len(names) == 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.67:
-                # Even when it's the only choice, probably want to pass instead of FPA sometimes
-                return None
-            # Random choice
-            return random.randrange(len(names))
+            return AI.choose(self, names, descriptions, allow_pass=allow_pass,
+                             refs=ai_refs, context=ai_context,
+                             eval_maximize=ai_eval_maximize, immediate=ai_immediate)
 
         full_names = list(names)
         full_descriptions = list(descriptions)
@@ -848,7 +849,7 @@ class Player:
 
         return choice
 
-    def choose_card_power(self, card_power_type, prompt=None):
+    def choose_card_power(self, card_power_type, prompt=None, ai_context=None):
         filtered = self.get_valid_card_powers(card_power_type)
         filtered.sort(key=lambda x: (1 if isinstance(x, CardPowerFinalPhysicalAttack) else 0))
 
@@ -861,7 +862,8 @@ class Player:
             [cp.description for cp in filtered],
             other_names=[c.name for c in other_hand],
             other_descriptions=[c.card_text for c in other_hand],
-            prompt=prompt)
+            prompt=prompt,
+            ai_refs=filtered, ai_context=ai_context, ai_eval_maximize=True, ai_immediate=True)
 
         if idx is None:  # Pass
             return None

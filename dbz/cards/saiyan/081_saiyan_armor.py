@@ -16,7 +16,7 @@ RARITY = 3
 DECK_LIMIT = 1
 CHARACTER = None
 STYLE = 'Saiyan'
-CARD_TEXT = ('Prevents 1 life card dicard from any successful energy attack.')
+CARD_TEXT = ('Prevents 1 life card discard from any successful energy attack.')
 
 CARD_POWER = CardPowerEnergyDefense(
     NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=1))

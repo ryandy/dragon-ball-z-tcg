@@ -27,7 +27,7 @@ CARD_TEXT = ('Saiyan Heritage only. Physical attack. If successful, it stops a s
 #       "If successful, your opponent cannot perform a physical attack during his next
 #        Attacker Attacks phase.”
 # Note: Other similar cards: 18, 19, 21, 94
-class CardPowerSAT(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackSAT(CardPowerPhysicalAttack):
     def on_success(self, player, phase):
         card_power = CardPowerPhysicalDefense(
             self.name, self.description, discard=False, is_floating=True)
@@ -35,4 +35,4 @@ class CardPowerSAT(CardPowerPhysicalAttack):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerSAT(NAME, CARD_TEXT, saiyan_only=True)
+CARD_POWER = CardPowerPhysicalAttackSAT(NAME, CARD_TEXT, saiyan_only=True)

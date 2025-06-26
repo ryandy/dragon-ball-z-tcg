@@ -16,7 +16,7 @@ RARITY = 2
 DECK_LIMIT = None
 CHARACTER = 'Goku'
 STYLE = None
-CARD_TEXT = ('If successful, you punch defender for 5 life cards. Remove from the game after use.')
+CARD_TEXT = ('Physical attack doing 5 life cards of damage. Remove from the game after use.')
 
 CARD_POWER = CardPowerPhysicalAttack(
     NAME, CARD_TEXT, remove_from_game=True,

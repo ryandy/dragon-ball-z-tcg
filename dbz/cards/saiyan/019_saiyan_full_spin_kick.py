@@ -20,7 +20,7 @@ CARD_TEXT = ('Saiyan Heritage only. Physical attack. If successful, it stops a s
              ' from making an energy attack on their next phase.')
 
 
-class CardPowerSFSK(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackSFSK(CardPowerPhysicalAttack):
     def on_success(self, player, phase):
         card_power = CardPowerEnergyDefense(
             self.name, self.description, discard=False, is_floating=True)
@@ -28,4 +28,4 @@ class CardPowerSFSK(CardPowerPhysicalAttack):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerSFSK(NAME, CARD_TEXT, saiyan_only=True)
+CARD_POWER = CardPowerPhysicalAttackSFSK(NAME, CARD_TEXT, saiyan_only=True)

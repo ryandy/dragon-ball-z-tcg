@@ -23,7 +23,7 @@ CARD_TEXT = ('If there is more than one Saibaimen in play, this one can make a p
              ' that inflicts 5 life cards damage.')
 
 
-class CardPowerSL4(CardPowerPhysicalAttack):
+class CardPowerPhysicalAttackSL4(CardPowerPhysicalAttack):
     def is_restricted(self, player):
         cards = (player.allies.cards + player.opponent.allies.cards
                  + [player.main_personality, player.opponent.main_personality])
@@ -32,6 +32,6 @@ class CardPowerSL4(CardPowerPhysicalAttack):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerSL4(
+CARD_POWER = CardPowerPhysicalAttackSL4(
     NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
     damage=Damage(life=5))

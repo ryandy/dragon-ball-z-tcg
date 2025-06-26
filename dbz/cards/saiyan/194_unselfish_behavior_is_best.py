@@ -26,5 +26,5 @@ class CardPowerNonCombatAttackUBIB(CardPowerNonCombatAttack):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerNonCombatAttack(
+CARD_POWER = CardPowerNonCombatAttackUBIB(
     NAME, CARD_TEXT, force_end_combat=True, remove_from_game=True)

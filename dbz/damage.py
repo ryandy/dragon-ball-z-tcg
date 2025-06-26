@@ -79,6 +79,13 @@ class Damage:
             life_prevent=self.life_prevent,
             life_prevent_and_draw=self.life_prevent_and_draw)
 
+    def is_none(self):
+        return (self.power <= 0
+                and self.life <= 0
+                and not self.use_pat
+                and not any(x.power_add > 0 for x in self.mods)
+                and not any(x.life_add > 0 for x in self.mods))
+
     def modify(self, mod):
         # TODO return new Damage instance
         if isinstance(mod, list):

@@ -67,11 +67,11 @@ class CombatPhase(Phase):
         opp_draw_phase = DrawPhase(self.player.opponent, is_attacker=False)
         opp_draw_phase.execute()
 
-        pass_count = 0
+        State.PASS_COUNT = 0
         next_attack_power = None  # Will almost always be None
         while True:
             # End Combat Phase when two players pass consecutively or the phase is forcibly ended
-            if pass_count == 2 or self.force_end_combat:
+            if State.PASS_COUNT == 2 or self.force_end_combat:
                 break
 
             dprint()
@@ -84,9 +84,9 @@ class CombatPhase(Phase):
             attack_phase.execute()
 
             if attack_phase.passed:
-                pass_count += 1
+                State.PASS_COUNT += 1
             else:
-                pass_count = 0
+                State.PASS_COUNT = 0
 
             # Check to see if the next player's attack phase should be skipped
             # Note: Skipping is different than forced passing (e.g. after FPA) because it does

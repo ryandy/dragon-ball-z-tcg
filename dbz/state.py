@@ -7,6 +7,7 @@ class State:
     ATTACKING_PLAYER = None
     COMBAT_ROUND = 0
     PHASE = None
+    PASS_COUNT = 0
 
     ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = True
     INTERACTIVE = False

@@ -36,13 +36,17 @@ class CardPowerNonCombatAttackVP(CardPowerNonCombatAttack):
                                 allow_pass=False,
                                 prompt='Select a Dragon Ball to play from your deck')
             db = cards[idx]
+
+            # Shuffle deck before playing DB card, as it may affect the deck e.g. DB7
+            player.shuffle_deck()
+
             if db.can_be_played(player):
                 player.play_dragon_ball(db)
             else:
                 player.discard(db)
-
-        # Regardless of outcome, shuffle the deck after "searching" it
-        player.shuffle_deck()
+        else:
+            # Regardless of outcome, shuffle the deck after "searching" it
+            player.shuffle_deck()
 
 
 CARD_POWER = CardPowerNonCombatAttackVP(NAME, CARD_TEXT, remove_from_game=True)

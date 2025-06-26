@@ -16,7 +16,7 @@ RARITY = 3
 DECK_LIMIT = 1
 CHARACTER = 'King Kai'
 STYLE = None
-CARD_TEXT = ('Prevents 1 life card dicard from any successful physical attack.')
+CARD_TEXT = ('Prevents 1 life card discard from any successful physical attack.')
 
 CARD_POWER = CardPowerPhysicalDefense(
     NAME, CARD_TEXT, damage_modifier=DamageModifier(life_prevent=1))

@@ -21,7 +21,7 @@ CARD_TEXT = ('Saiyan heritage only. Energy attack. Costs 3 power stages to perfo
              ' it stops a single named foe from making a physical attack on their next phase.')
 
 
-class CardPowerSEB(CardPowerEnergyAttack):
+class CardPowerEnergyAttackSEB(CardPowerEnergyAttack):
     def on_success(self, player, phase):
         card_power = CardPowerPhysicalDefense(
             self.name, self.description, discard=False, is_floating=True)
@@ -29,4 +29,4 @@ class CardPowerSEB(CardPowerEnergyAttack):
         player.register_card_power(card_power)
 
 
-CARD_POWER = CardPowerSEB(NAME, CARD_TEXT, cost=Cost(power=3), saiyan_only=True)
+CARD_POWER = CardPowerEnergyAttackSEB(NAME, CARD_TEXT, cost=Cost(power=3), saiyan_only=True)

@@ -22,7 +22,7 @@ POWER_STAGES = range(500, 1400+1, 100)
 CARD_TEXT = ('Blast Energy Attack does 6 life cards of damage and removes Chiaotzu from the game.')
 
 
-class CardPowerCL2(CardPowerEnergyAttack):
+class CardPowerEnergyAttackCL2(CardPowerEnergyAttack):
     def on_pay_cost(self, player, phase):
         super().on_pay_cost(player, phase)
         if player.main_personality is self.card:
@@ -32,5 +32,6 @@ class CardPowerCL2(CardPowerEnergyAttack):
             player.remove_from_game(self.card)
 
 
-CARD_POWER = CardPowerCL2(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
-                          damage=Damage.energy_attack(life=6))
+CARD_POWER = CardPowerEnergyAttackCL2(
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False,
+    damage=Damage.energy_attack(life=6))

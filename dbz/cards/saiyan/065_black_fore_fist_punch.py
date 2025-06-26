@@ -23,6 +23,7 @@ CARD_TEXT = ('Energy attack doing 6 life cards of damage. If successful, your op
 class CardPowerEnergyAttackBFFP(CardPowerEnergyAttack):
     def on_success(self, player, phase):
         # TODO: Do they get to choose which personality?
+        # Note: If they chose, would they be able to choose a personality with less than 3 power?
         player.opponent.main_personality.adjust_power_stage(-3)
 
 

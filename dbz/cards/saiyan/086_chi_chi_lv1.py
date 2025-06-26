@@ -23,7 +23,7 @@ CARD_TEXT = ('Mother\'s Defense. Once per combat, this can block a single physic
              ' at Gohan or Goku so they are not hurt.')
 
 
-class CardPowerMothersDefense(CardPowerPhysicalDefense):
+class CardPowerPhysicalDefenseCCL1(CardPowerPhysicalDefense):
     # Power is always active even when not in control of combat
     def is_deactivated(self):
         return False
@@ -35,4 +35,5 @@ class CardPowerMothersDefense(CardPowerPhysicalDefense):
         return super().is_restricted(player)
 
 
-CARD_POWER = CardPowerMothersDefense(NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)
+CARD_POWER = CardPowerPhysicalDefenseCCL1(
+    NAME, CARD_TEXT, exhaust_until_next_turn=True, discard=False)
