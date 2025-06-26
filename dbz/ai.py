@@ -46,16 +46,15 @@ class AI:
             #idx = np_random.choice(range(len(refs)), size=1, p=[10**x for x in scores])
             idx = random.choices(
                 population=range(len(refs)), k=1, weights=[10**x for x in scores])[0]
-            for i in range(len(scores)):
-                print(refs[i].name, scores[i], 10**scores[i])
-            print(f'choice: {idx}')
+            #for i in range(len(scores)):
+            #    print(refs[i].name, scores[i], 10**scores[i])
+            #print(f'choice: {idx}')
             #print(idx)
             #sys.exit(9)
 
 
-
             # TODO: Need to give default values for defensive powers below
-            
+
 
             if idx == len(names):  # pass
                 return None
