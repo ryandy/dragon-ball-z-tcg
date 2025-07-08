@@ -25,7 +25,18 @@ class Runner:
         self.players = [
             Player(deck=deck1, interactive=State.INTERACTIVE),
             Player(deck=deck2)]
-        #random.shuffle(self.players)
+
+        # Check the D Power Rule
+        power1 = self.players[0].main_personality.get_physical_attack_table_index()
+        power2 = self.players[1].main_personality.get_physical_attack_table_index()
+        if power1 >= 3 and power2 < 3:
+            dprint(f'{self.players[1].name} will go first (Power Rule)')
+            self.players = list(reversed(self.players))
+        elif power1 < 3 and power2 >= 3:
+            dprint(f'{self.players[0].name} will go first (Power Rule)')
+        else:
+            random.shuffle(self.players)
+            dprint(f'{self.players[0].name} will go first')
 
         # Disambiguate player names
         if self.players[0].name == self.players[1].name:
@@ -38,13 +49,13 @@ class Runner:
     def __repr__(self):
         return f'{self.players[0].name} vs {self.players[1].name}'
 
-    def show_summary(self):
+    def show_summary(self, quiet=None):
         tabulate.PRESERVE_WHITESPACE = True
         summaries = [player.get_summary() for player in reversed(self.players)]
         table = tabulate.tabulate(
             itertools.zip_longest(*reversed(summaries)),
             tablefmt='fancy_grid')
-        dprint(table)
+        dprint(table, quiet=quiet)
 
     def run(self):
         while True:
@@ -54,15 +65,17 @@ class Runner:
                 self.take_turn()
 
             except GameOver as err:
-                dprint(f'{err.winning_player} wins!')
-                dprint(f'{err}')
+                self.show_summary(quiet=False)
+                dprint(f'{err.winning_player} wins!', quiet=False)
+                dprint(f'{err}', quiet=False)
                 return
 
             except DeckEmpty as err:
                 for player in self.players:
                     if len(player.life_deck) == 0:
-                        dprint(f'{player.opponent} wins!')
-                        dprint(f'{player}\'s Life Deck is empty')
+                        self.show_summary(quiet=False)
+                        dprint(f'{player.opponent} wins!', quiet=False)
+                        dprint(f'{player}\'s Life Deck is empty', quiet=False)
                         return
                 assert False
 

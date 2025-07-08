@@ -9,6 +9,7 @@ class State:
     PHASE = None
     PASS_COUNT = 0
 
+    QUIET = False
     ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = True
     INTERACTIVE = False
     PRINT_FREQUENCY = 15  # lines per second

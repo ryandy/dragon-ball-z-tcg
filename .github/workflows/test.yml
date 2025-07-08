@@ -9,14 +9,14 @@ jobs:
   test:
     strategy:
       matrix:
-        runs-on: [ubuntu-latest, macos-latest]
+        runs-on: [ubuntu-24.04, macos-14]
     runs-on: ${{ matrix.runs-on }}
 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-            python-version: '3.10'
+            python-version: '3.8'
       - name: Test Draft
         run: |
           cd  ${{ github.workspace }}

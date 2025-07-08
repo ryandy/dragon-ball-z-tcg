@@ -5,9 +5,10 @@ from dbz.state import State
 
 
 _dprint_time = None
-def dprint(msg=''):
-    for line in msg.split('\n'):
-        _print_with_width_and_indent(line)
+def dprint(msg='', quiet=None):
+    if quiet is False or State.QUIET is False:
+        for line in msg.split('\n'):
+            _print_with_width_and_indent(line)
 
 
 def _wait():

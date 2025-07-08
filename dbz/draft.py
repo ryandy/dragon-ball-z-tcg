@@ -152,6 +152,7 @@ def main():
     parser.add_argument('-s', '--seed', type=int, default=0)
     parser.add_argument('-f', '--print-frequency', type=int, default=15)
     parser.add_argument('-i', '--interactive', action='store_true')
+    parser.add_argument('-q', '--quiet', action='store_true')
     parser.add_argument('--deck-size', type=int, default=DECK_SIZE)
     parser.add_argument('--no-mpp', action='store_true')
     args = parser.parse_args()
@@ -159,6 +160,7 @@ def main():
     random.seed(args.seed)
     np_random.seed(args.seed)
     State.INTERACTIVE = args.interactive
+    State.QUIET = not args.interactive and args.quiet
     State.PRINT_FREQUENCY = args.print_frequency
     State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = not args.no_mpp
     DECK_SIZE = args.deck_size
