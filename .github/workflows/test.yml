@@ -24,4 +24,4 @@ jobs:
           . .venv/bin/activate
           python -m pip install --upgrade pip setuptools
           python -m pip install -e .
-          python dbz/draft.py --no-mpp --deck-size 1000 -s 0
+          python dbz/draft.py --no-mpp --deck-size 1000 -q -s 0
