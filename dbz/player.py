@@ -26,7 +26,7 @@ from dbz.personality_card import PersonalityCard
 from dbz.pile import Pile
 from dbz.state import State
 from dbz.style import Style
-from dbz.util import dprint
+from dbz.util import dprint, dprint_table
 
 
 MAX_ANGER = 5
@@ -35,11 +35,11 @@ MAX_ANGER = 5
 class Player:
     def __init__(self, deck=None, interactive=False):
         self.interactive = interactive
-        self.strategy = AIStrategy.SURVIVAL  # TODO
+        #self.strategy = AIStrategy.SURVIVAL  # TODO
         #self.strategy = AIStrategy.PERSONALITY  # TODO
-        #self.strategy = AIStrategy.DRAGON_BALLS  # TODO
+        self.strategy = AIStrategy.DRAGON_BALLS  # TODO
         self.character = None
-        self.main_personalities = []
+        self.main_personalities = Pile('MainPersonality')
         self.main_personality = None
         self.control_personality = None
         self.tokui_waza = None
@@ -87,10 +87,11 @@ class Player:
 
         style_counts = collections.defaultdict(int)
         life_deck_cards = []
+        main_personality_cards = []
         for card in deck.cards:
             card.register_owner(self)
             if isinstance(card, PersonalityCard) and card.character == self.character:
-                self.main_personalities.append(card)
+                main_personality_cards.append(card)
             else:
                 life_deck_cards.append(card)
                 style_counts[card.style] += 1
@@ -99,7 +100,11 @@ class Player:
         if len(styles) == 1:
             self.tokui_waza = styles[0]
 
-        self.main_personalities.sort(key=lambda x: x.level)
+        main_personality_cards.sort(key=lambda x: x.level)
+        self.main_personalities = Pile('MainPersonality', main_personality_cards)
+        for card in self.main_personalities:
+            card.set_pile(self.main_personalities)
+
         self.life_deck = Deck('LifeDeck', life_deck_cards)
         for card in self.life_deck:
             card.set_pile(self.life_deck)
@@ -436,15 +441,13 @@ class Player:
         if self.interactive:
             return True
 
-        if (self.opponent.interactive
+        if (self.card_in_play('saiyan.211')  # Tien Mind Reading Trick
             # Check own side for TMRT because it would be attached to own Main Personality
-            and self.card_in_play('saiyan.211')  # Tien Mind Reading Trick
             and self.character_in_play(Character.TIEN, either_side=True)
             and not self.main_personality.is_hero):
             return True
 
-        if (self.opponent.interactive
-            and self.opponent.card_in_play('saiyan.224')  # Baba Witch Viewing Drill
+        if (self.opponent.card_in_play('saiyan.224')  # Baba Witch Viewing Drill
             and not self.main_personality.is_hero):
             return True
 
@@ -795,6 +798,20 @@ class Player:
 
         return summary
 
+    def show_pile(self, pile, player=None):
+        player = self if player is None else player
+
+        if (pile.name == 'LifeDeck'
+            or (pile.name == 'Hand' and not player.should_show_hand())):
+            dprint(f'Cannot show {player.name}\'s {pile.name}')
+            return
+
+        lines = []
+        for card in pile:
+            lines.append(f'/. {card}')
+            lines.append(f'     {card.card_text}')
+        dprint_table([[f'{player.name}\'s {pile.name}', '\n'.join(lines)]])
+
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
                allow_pass=True, prompt=None,
@@ -821,7 +838,7 @@ class Player:
             full_descriptions.append('Do nothing.')
 
         prompt = prompt or 'Choose an action'
-        dprint(f'>>> {prompt}:')
+        prompt = f'>>> {prompt}:'
         for i in range(len(full_names)):
             if i < len(names):
                 number = f'{i+1}'
@@ -830,14 +847,61 @@ class Player:
             else:  # pass
                 number = f'{len(names)+1}'
             prefix = f'{number}. '
-            dprint(f'{prefix}{full_names[i]}')
+            prompt = f'{prompt}\n{prefix}{full_names[i]}'
             if show_descriptions:
-                dprint(f'{" "*(len(prefix)+2)}{full_descriptions[i]}')
+                prompt = f'{prompt}\n{" "*(len(prefix)+2)}{full_descriptions[i]}'
+        dprint(prompt)
 
         choice = -1
         while (choice < 0
                or choice >= len(names)+int(allow_pass)):
-            choice = input('>>> Choice: ')
+            if State.TUTORIAL_COMPLETE:
+                choice = input('>>> Choice: ')
+                choice = ''.join(choice.split()).lower()
+            else:
+                choice = 'help'
+                State.TUTORIAL_COMPLETE = True
+
+            if choice == 'help' or choice == 'h' or choice.startswith('option'):
+                dprint_table([
+                    ['Help Menu',
+                     'Enter the number corresponding to the action you\'d like to take.\n'
+                     '\n'
+                     'Other options:\n'
+                     '  help    - review these options\n'
+                     '  actions - review your available actions\n'
+                     '  hand    - see details of cards in hand\n'
+                     '  discard - see details of discarded cards\n'
+                     '  removed - see details of cards removed from the game\n'
+                     '  field   - see details of all cards in the field of play\n'
+                     '\n'
+                     'Understanding power and damage:\n'
+                     '  Two numbers are used to describe a personality\'s power level\n'
+                     '  First is the personality\'s power stage, a number from 0 to 10\n'
+                     '  Second is the corresponding index in the Physical Attack Table (PAT)\n'
+                     '  The relationship of power stage & PAT index is unique to each personality\n'
+                     '  Physical damage is calculated as the difference of PAT indexes\n'
+                     '  e.g. Goku may have power "7(3)", meaning power stage 7/10 and PAT index 3\n'
+                     '  \n'
+                     '  Two numbers are used to describe damage: power and life\n'
+                     '  e.g. Damage(1, 4) is 1 stage of power damage and 4 draws of life damage'
+                     ]
+                ])
+            elif choice.startswith('action') or choice.startswith('choice'):
+                dprint(prompt)
+            elif choice == 'hand':
+                for player in [self, self.opponent]:
+                    self.show_pile(player.hand, player=player)
+            elif choice == 'discard':
+                for player in [self, self.opponent]:
+                    self.show_pile(player.discard_pile, player=player)
+            elif choice.startswith('remove'):
+                for player in [self, self.opponent]:
+                    self.show_pile(player.removed_pile, player=player)
+            elif choice in ['board', 'game', 'state', 'field', 'non-combat', 'noncombat']:
+                for player in [self, self.opponent]:
+                    for attr in ['main_personalities', 'non_combat', 'drills', 'allies', 'dragon_balls']:
+                        self.show_pile(getattr(player, attr), player=player)
             try:
                 choice = int(choice) - 1
             except:

@@ -1,5 +1,8 @@
+import itertools
 import sys
 import time
+
+import tabulate
 
 from dbz.state import State
 
@@ -8,7 +11,40 @@ _dprint_time = None
 def dprint(msg='', quiet=None):
     if quiet is False or State.QUIET is False:
         for line in msg.split('\n'):
-            _print_with_width_and_indent(line)
+            splitlines = _split_msg_by_width_and_indent(line)
+            for splitline in splitlines:
+                _wait()
+                print(splitline)
+
+
+def dprint_table(table, quiet=None):
+    tabulate.PRESERVE_WHITESPACE = True
+    column_count = len(table)
+    assert column_count >= 1
+
+    column_width = (State.PRINT_WIDTH - (column_count + 1)) / column_count - 2
+    new_table = []
+    for column in range(column_count):
+        # Check if columns need to be different widths
+        # Note: this only works for up to 2 columns
+        # Note: column0 ends up on the right - visually we want it to be the wider column
+        if column == 0 and column_width % 1:
+            column_width += 1
+        elif column == 1 and column_width % 1:
+            column_width -= 1
+        new_column = []
+        for cell in table[column]:
+            new_cell = []
+            for line in cell.split('\n'):
+                splitlines = _split_msg_by_width_and_indent(line, width=int(column_width))
+                #print('~~', column_width, column, splitlines)
+                new_cell.extend(splitlines)
+            new_column.append('\n'.join(new_cell))
+        new_table.append(new_column)
+
+    table = itertools.zip_longest(*reversed(new_table))
+    table = tabulate.tabulate(table, tablefmt='fancy_grid')
+    dprint(table, quiet=quiet)
 
 
 def _wait():
@@ -21,27 +57,28 @@ def _wait():
     _dprint_time = time.time()
 
 
-def _print_with_width_and_indent(msg):
-    if not msg:
-        _wait()
-        print()
-        return
+def _split_msg_by_width_and_indent(msg, width=None):
+    width = State.PRINT_WIDTH if width is None else width
 
+    lines = []
     count = 0
     indent = _get_indent(msg)
     while len(msg):
         if count > 0:
             msg = f'{" " * indent}{msg}'
-        width = State.PRINT_WIDTH
-        if width < len(msg):
-            while msg[width] != ' ':
-                width -= 1
-            width += 1
-        chunk = msg[:width]
-        msg = msg[width:]
-        _wait()
-        print(chunk)
+        cur_width = State.PRINT_WIDTH if width is None else width
+        if cur_width < len(msg):
+            while msg[cur_width] != ' ':
+                #print('-->', cur_width, msg, len(msg))
+                cur_width -= 1
+        chunk = msg[:cur_width].ljust(width)
+        if cur_width < len(msg) and msg[cur_width] == ' ':
+            cur_width += 1
+        msg = msg[cur_width:]
+        lines.append(chunk)
+        #print(f'chunk: "{chunk}" len={len(chunk)}')
         count += 1
+    return lines or ['']
 
 
 def _get_indent(s):

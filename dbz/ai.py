@@ -44,8 +44,16 @@ class AI:
             #print(scores)
             #print([10**x for x in scores])
             #idx = np_random.choice(range(len(refs)), size=1, p=[10**x for x in scores])
+            weights=[10**x for x in scores]
             idx = random.choices(
-                population=range(len(refs)), k=1, weights=[10**x for x in scores])[0]
+                population=range(len(refs)), k=1, weights=weights)[0]
+            #print(refs)
+            #print(win_con_scores)
+            #print(scores)
+            #print(weights)
+            #print(idx)
+            #if weights and max(weights) > 3 and idx != len(refs) - 1:
+            #    sys.exit(0)
             #for i in range(len(scores)):
             #    print(refs[i].name, scores[i], 10**scores[i])
             #print(f'choice: {idx}')

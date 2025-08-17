@@ -2,8 +2,6 @@ import itertools
 import random
 import sys
 
-import tabulate
-
 from dbz.card_power_on_end_of_turn import CardPowerOnEndOfTurn
 from dbz.card_power_on_entering_turn import CardPowerOnEnteringTurn
 from dbz.combat_phase import CombatPhase
@@ -14,7 +12,7 @@ from dbz.non_combat_phase import NonCombatPhase
 from dbz.player import Player
 from dbz.power_up_phase import PowerUpPhase
 from dbz.state import State
-from dbz.util import dprint
+from dbz.util import dprint, dprint_table
 
 
 class Runner:
@@ -50,12 +48,9 @@ class Runner:
         return f'{self.players[0].name} vs {self.players[1].name}'
 
     def show_summary(self, quiet=None):
-        tabulate.PRESERVE_WHITESPACE = True
+        # If quiet is None, we defer to State.QUIET
         summaries = [player.get_summary() for player in reversed(self.players)]
-        table = tabulate.tabulate(
-            itertools.zip_longest(*reversed(summaries)),
-            tablefmt='fancy_grid')
-        dprint(table, quiet=quiet)
+        dprint_table(summaries, quiet=quiet)
 
     def run(self):
         while True:
@@ -103,10 +98,10 @@ class Runner:
         player = self.players[State.TURN % 2]
         State.TURN_PLAYER = player
 
-        header = f'========== Turn {State.TURN+1}: {player} =========='
-        border = '=' * len(header)
+        header = f'Turn {State.TURN+1}: {player}'
+        border = '=' * State.PRINT_WIDTH
         dprint(border)
-        dprint(header)
+        dprint(f'{"="*10} {header} {border}'[:State.PRINT_WIDTH])
         dprint(border)
 
         self.beginning_of_turn()

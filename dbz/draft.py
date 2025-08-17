@@ -150,7 +150,8 @@ def main():
         description='For the Collector in You! For the Gamer in You!',
         epilog='Recommended for ages 11 and up')
     parser.add_argument('-s', '--seed', type=int, default=0)
-    parser.add_argument('-f', '--print-frequency', type=int, default=15)
+    parser.add_argument('-f', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
+    parser.add_argument('-w', '--print-width', type=int, default=State.PRINT_WIDTH)
     parser.add_argument('-i', '--interactive', action='store_true')
     parser.add_argument('-q', '--quiet', action='store_true')
     parser.add_argument('--deck-size', type=int, default=DECK_SIZE)
@@ -161,7 +162,8 @@ def main():
     np_random.seed(args.seed)
     State.INTERACTIVE = args.interactive
     State.QUIET = not args.interactive and args.quiet
-    State.PRINT_FREQUENCY = args.print_frequency
+    State.PRINT_FREQUENCY = max(args.print_frequency, State.MIN_PRINT_FREQUENCY)
+    State.PRINT_WIDTH = max(args.print_width, State.MIN_PRINT_WIDTH)
     State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = not args.no_mpp
     DECK_SIZE = args.deck_size
 

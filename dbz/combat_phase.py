@@ -74,9 +74,10 @@ class CombatPhase(Phase):
             if State.PASS_COUNT == 2 or self.force_end_combat:
                 break
 
+            header = f'Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}: {State.ATTACKING_PLAYER}'
+            border = '-' * State.PRINT_WIDTH
             dprint()
-            dprint(f'---------- Attack Phase {State.TURN+1}.{State.COMBAT_ROUND+1}:'
-                   f' {State.ATTACKING_PLAYER} ----------')
+            dprint(f'{"-"*10} {header} {border}'[:State.PRINT_WIDTH])
             self.runner.show_summary()
 
             attack_phase = CombatAttackPhase(

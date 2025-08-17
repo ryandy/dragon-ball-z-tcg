@@ -25,6 +25,9 @@ class Pile:
     def __add__(self, o):
         return self.cards + o.cards
 
+    def __getitem__(self, i):
+        return self.cards[i]
+
     def shuffle(self):
         random.shuffle(self.cards)
 

@@ -11,15 +11,17 @@ def main():
     parser = argparse.ArgumentParser(
         description='For the Collector in You! For the Gamer in You!',
         epilog='Recommended for ages 11 and up')
-    parser.add_argument('-s', '--seed', type=int, default=0)
-    parser.add_argument('-f', '--print-frequency', type=int, default=15)
-    parser.add_argument('-i', '--interactive', action='store_true')
     parser.add_argument('-d', '--deck', action='append')
+    parser.add_argument('-i', '--interactive', action='store_true')
+    parser.add_argument('-s', '--seed', type=int, default=0)
+    parser.add_argument('-f', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
+    parser.add_argument('-w', '--print-width', type=int, default=State.PRINT_WIDTH)
     args = parser.parse_args()
 
     random.seed(args.seed)
     State.INTERACTIVE = args.interactive
-    State.PRINT_FREQUENCY = args.print_frequency
+    State.PRINT_FREQUENCY = max(args.print_frequency, State.MIN_PRINT_FREQUENCY)
+    State.PRINT_WIDTH = max(args.print_width, State.MIN_PRINT_WIDTH)
 
     deckname1 = args.deck[0] if len(args.deck) > 0 else 'goku'
     deckname2 = args.deck[1] if len(args.deck) > 1 else 'piccolo'

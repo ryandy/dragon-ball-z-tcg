@@ -8,12 +8,15 @@ class State:
     COMBAT_ROUND = 0
     PHASE = None
     PASS_COUNT = 0
+    TUTORIAL_COMPLETE = False
 
     QUIET = False
     ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = True
     INTERACTIVE = False
-    PRINT_FREQUENCY = 15  # lines per second
+    PRINT_FREQUENCY = 20  # lines per second
+    MIN_PRINT_FREQUENCY = 10
     PRINT_WIDTH = 100
+    MIN_PRINT_WIDTH = 80
 
 
     @classmethod
