@@ -10,7 +10,7 @@ from dbz.damage_modifier import DamageModifier
 
 TYPE = 'Personality'
 NAME = 'Krillin Lv4'
-LEVEL = 1
+LEVEL = 4
 SAGA = 'Saiyan'
 CARD_NUMBER = 'P6'
 RARITY = 2

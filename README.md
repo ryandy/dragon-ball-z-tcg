@@ -1,5 +1,7 @@
 # Text-based DBZ TCG Simulator
 
+![Screenshot](assets/screenshot.png)
+
 ## To setup and run
 
 - Clone this repo and navigate to the top directory
