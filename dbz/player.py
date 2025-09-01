@@ -822,9 +822,12 @@ class Player:
         assert names or allow_pass
 
         if not self.interactive:
-            return AI.choose(self, names, descriptions, allow_pass=allow_pass,
-                             refs=ai_refs, context=ai_context,
-                             eval_maximize=ai_eval_maximize, immediate=ai_immediate)
+            return AI.choose2(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
+            #, context=ai_context, eval_maximize=ai_eval_maximize, immediate=ai_immediate)
+        else:
+            # TODO: remove - debug only
+            # not returning anything, just calling it to print out messages
+            AI.choose2(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
 
         full_names = list(names)
         full_descriptions = list(descriptions)

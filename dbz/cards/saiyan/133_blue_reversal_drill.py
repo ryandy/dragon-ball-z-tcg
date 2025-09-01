@@ -1,5 +1,6 @@
 import sys
 
+from dbz.ai import AI
 from dbz.card_power_attack import CardPowerPhysicalAttack
 from dbz.character import Character
 from dbz.cost import Cost
@@ -80,6 +81,11 @@ class CardPowerPhysicalAttackBRD(CardPowerPhysicalAttack):
 
         # Need to also call on_resolved for the drill so it gets exhausted appropriately
         self.on_resolved()
+
+    def get_ai_eval_attack_survival(self, player):
+        card_power = self._get_card_power(player)
+        if card_power:
+            return AI.get_card_power_eval_attack_survival(player, card_power)
 
 
 CARD_POWER = CardPowerPhysicalAttackBRD(

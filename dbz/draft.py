@@ -152,7 +152,7 @@ def main():
     parser.add_argument('-s', '--seed', type=int, default=239847938)
     parser.add_argument('-pf', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
     parser.add_argument('-pw', '--print-width', type=int, default=State.PRINT_WIDTH)
-    parser.add_argument('-ni', '--simulate_game', action='store_true')
+    parser.add_argument('-ni', '--simulate-game', action='store_true')
     parser.add_argument('--quiet', action='store_true')
     parser.add_argument('--deck-size', type=int, default=DECK_SIZE)
     parser.add_argument('--no-mpp', action='store_true')
