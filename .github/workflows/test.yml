@@ -24,4 +24,4 @@ jobs:
           . .venv/bin/activate
           python -m pip install --upgrade pip setuptools
           python -m pip install -e .
-          dbz-draft --no-mpp --deck-size 1000 --quiet -s 0
+          dbz-draft --no-mpp --deck-size 1000 --quiet --simulate-game -s 0
