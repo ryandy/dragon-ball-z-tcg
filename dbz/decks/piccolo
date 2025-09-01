@@ -1,54 +1,51 @@
 # Main Personality
-1 saiyan 180 piccolo HT lv1
-#1 saiyan 161 piccolo lv1
+1 saiyan 161 piccolo lv1
 1 saiyan 162 piccolo lv2
 1 saiyan 163 piccolo lv3
 1 saiyan p2 piccolo lv4
 
 # Allies
-1 saiyan 82 tien lv1
-1 saiyan 83 tien lv2
-1 saiyan 84 yamcha lv1
-1 saiyan 85 yamcha lv2
-1 saiyan 87 bulma lv1
 
 # Combat - Attack
-3 saiyan 1 orange standing fist punch
-2 saiyan 25 gokus physical attack (limit 2)
-3 saiyan 26 gohans physical attack
-3 saiyan 46 goku anger attack
-4 saiyan 109 piccolos energy attack
+2 saiyan   1 orange standing fist punch
+2 saiyan   3 orange two knuckle punch
+2 saiyan  51 orange hip throw
+2 saiyan  55 red front kick
+2 saiyan  58 red back kick
+2 saiyan  74 black jump turn kick
+2 saiyan 109 piccolos energy attack
+2 saiyan 189 earth dragon ball combat
 
 # Combat - Attack/Defense
-2 saiyan 11 blue forward foot sweep
-3 saiyan 66 black knife hand strike
+2 saiyan  11 blue forward foot sweep
+2 saiyan  66 black knife hand strike
 
 # Combat - Defense
-1 saiyan 28 vegetas physical stance
-3 saiyan 59 blue big outside drop
-3 saiyan 72 black axe heel kick
-2 saiyan 108 gokus energy defense
-4 saiyan 110 piccolos physical defense
-3 saiyan 111 gohans energy defense
+1 saiyan  28 vegetas physical stance (limit 1)
+2 saiyan  59 blue big outside drop
+2 saiyan  72 black axe heel kick
+2 saiyan 110 piccolos physical defense
+1 saiyan 154 piccolo sidestep!
 
 # Non-Combat
-3 saiyan 22 power up!
-3 saiyan 78 roshi training
-4 saiyan 212 piccolos flight
-3 saiyan 222 bulma finds a dragon ball
-1 saiyan 241 vegetas dragon ball capture
+1 saiyan  22 power up!
+1 saiyan  99 blazing anger!
+1 saiyan 103 piccolo honor duel!
+1 saiyan 157 eyes of the dragon (limit 1)
+1 saiyan 205 grabbing the tail
+1 saiyan 212 piccolos flight
 
 # Drills
-2 saiyan 131 black bear hug drill
-1 saiyan 142 orange energy drill (restricted)
-2 saiyan 151 orange joint restraint drill
-4 saiyan 155 piccolo defense drill
+1 saiyan 127 black takedown drill
+1 saiyan 131 black bear hug drill
+1 saiyan 137 orange spontaneous drill
+2 saiyan 155 piccolo defense drill
 
 # Dragon Balls
-1 saiyan 15 earth dragon ball 1
-1 saiyan 16 earth dragon ball 2
-1 saiyan 75 earth dragon ball 3
-1 saiyan 76 earth dragon ball 4
-1 saiyan 77 earth dragon ball 5
+1 saiyan  15 earth dragon ball 1
+1 saiyan  16 earth dragon ball 2
+1 saiyan  75 earth dragon ball 3
+1 saiyan  76 earth dragon ball 4
+1 saiyan  77 earth dragon ball 5
 1 saiyan 186 earth dragon ball 6
 1 saiyan 187 earth dragon ball 7

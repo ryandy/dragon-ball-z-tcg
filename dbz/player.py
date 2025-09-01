@@ -33,7 +33,8 @@ MAX_ANGER = 5
 
 
 class Player:
-    def __init__(self, deck=None, interactive=False):
+    def __init__(self, deck=None, player_num=1, interactive=False):
+        self.player_num = player_num  # P1 vs P2
         self.interactive = interactive
         #self.strategy = AIStrategy.SURVIVAL  # TODO
         #self.strategy = AIStrategy.PERSONALITY  # TODO
@@ -749,7 +750,8 @@ class Player:
     def get_summary(self):
         summary = []
 
-        header = [f'{self.name} - {len(self.life_deck)}/{self.deck_size} HP',
+        player_num = f'P{self.player_num}' if self.interactive else 'CPU'
+        header = [f'{self.name} [{player_num}] - {len(self.life_deck)}/{self.deck_size} HP',
                   (f'Hand: {len(self.hand)}'
                    f' | Discard: {len(self.discard_pile)}'
                    f' | Removed: {len(self.removed_pile)}')]
@@ -875,15 +877,19 @@ class Player:
                      '  removed - see details of cards removed from the game\n'
                      '  field   - see details of all cards in the field of play\n'
                      '\n'
+                     'For a refresher on Dragon Ball Z TCG\'s rules and mechanics:\n'
+                     '  TODO\n'
+                     '\n'
                      'Understanding power and damage:\n'
-                     '  Two numbers are used to describe a personality\'s power level\n'
+                     '  Two numbers are used to describe a personality\'s POWER\n'
                      '  First is the personality\'s power stage, a number from 0 to 10\n'
                      '  Second is the corresponding index in the Physical Attack Table (PAT)\n'
                      '  The relationship of power stage & PAT index is unique to each personality\n'
                      '  Physical damage is calculated as the difference of PAT indexes\n'
                      '  e.g. Goku may have power "7(3)", meaning power stage 7/10 and PAT index 3\n'
                      '  \n'
-                     '  Two numbers are used to describe damage: power and life\n'
+                     '  Two numbers are used to describe an attack\'s DAMAGE\n'
+                     '  These numbers correspond to the effect on your power stages and life deck\n'
                      '  e.g. Damage(1, 4) is 1 stage of power damage and 4 draws of life damage'
                      ]
                 ])
@@ -891,17 +897,21 @@ class Player:
                 dprint(prompt)
             elif choice == 'hand':
                 for player in [self, self.opponent]:
-                    self.show_pile(player.hand, player=player)
+                    if player:
+                        self.show_pile(player.hand, player=player)
             elif choice == 'discard':
                 for player in [self, self.opponent]:
-                    self.show_pile(player.discard_pile, player=player)
+                    if player:
+                        self.show_pile(player.discard_pile, player=player)
             elif choice.startswith('remove'):
                 for player in [self, self.opponent]:
-                    self.show_pile(player.removed_pile, player=player)
+                    if player:
+                        self.show_pile(player.removed_pile, player=player)
             elif choice in ['board', 'game', 'state', 'field', 'non-combat', 'noncombat']:
                 for player in [self, self.opponent]:
                     for attr in ['main_personalities', 'non_combat', 'drills', 'allies', 'dragon_balls']:
-                        self.show_pile(getattr(player, attr), player=player)
+                        if player:
+                            self.show_pile(getattr(player, attr), player=player)
             try:
                 choice = int(choice) - 1
             except:

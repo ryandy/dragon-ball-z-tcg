@@ -1,84 +1,55 @@
 # Main Personality
-1 saiyan 179 goku HT lv1
-#1 saiyan 158 goku lv1
+1 saiyan 158 goku lv1
 1 saiyan 159 goku lv2
 1 saiyan 160 goku lv3
 1 saiyan p1 goku lv4
 
 # Allies
 1 saiyan 82 tien lv1
-1 saiyan 83 tien lv2
-1 saiyan 84 yamcha lv1
-1 saiyan 85 yamcha lv2
 1 saiyan 86 chi-chi lv1
-1 saiyan 87 bulma lv1
-1 saiyan 104 chiaotzu lv1
-1 saiyan 105 chiaotzu lv2
-1 saiyan 106 yajirobe lv1
-1 saiyan 107 yajirobe lv2
-1 saiyan 161 piccolo lv1
-1 saiyan 162 piccolo lv2
 1 saiyan 164 gohan lv1
-1 saiyan 165 gohan lv2
 
 # Combat - Attack
-2 saiyan 1 orange standing fist punch
-2 saiyan 5 orange arm bar
-4 saiyan 24 gokus surprise attack
-2 saiyan 25 gokus physical attack (limit 2)
-2 saiyan 26 gohans physical attack
-4 saiyan 44 goku body throw!
-4 saiyan 46 goku anger attack
-3 saiyan 58 red back kick
+2 saiyan   1 orange standing fist punch
+2 saiyan   5 orange arm bar
+2 saiyan  24 gokus surprise attack
+2 saiyan  25 gokus physical attack (limit 2)
+2 saiyan  26 gohans physical attack
+2 saiyan  44 goku body throw!
+2 saiyan  46 goku anger attack
+2 saiyan  58 red back kick
 
 # Combat - Attack/Defense
 2 saiyan 11 blue forward foot sweep
 2 saiyan 66 black knife hand strike
 
 # Combat - Defense
-1 saiyan 28 vegetas physical stance
-2 saiyan 59 blue big outside drop
-2 saiyan 72 black axe heel kick
-4 saiyan 108 gokus energy defense
-2 saiyan 110 piccolos physical defense
-2 saiyan 112 krillins physical defense
-4 saiyan 153 gokus energy blast!
-3 saiyan 156 allys sacrifice
-3 saiyan 218 unexpected allies
-1 saiyan 250 chiaotzus physical defense
+1 saiyan  59 blue big outside drop
+1 saiyan  72 black axe heel kick
+1 saiyan 108 gokus energy defense
+1 saiyan 112 krillins physical defense
+1 saiyan 153 gokus energy blast!
+1 saiyan 218 unexpected allies
 
 # Non-Combat
-1 saiyan 22 power up!
-1 saiyan 43 senzu bean
-4 saiyan 48 gokus touch
-1 saiyan 78 roshi training
-1 saiyan 79 king kai training
-1 saiyan 80 saiyan training
-2 saiyan 98 power up the most!
-4 saiyan 101 goku honor duel!
+1 saiyan  22 power up!
+1 saiyan  43 senzu bean
+1 saiyan  48 gokus touch
+1 saiyan  78 roshi training
 1 saiyan 202 gokus lucky break (limit 1)
-1 saiyan 222 bulma finds a dragon ball
-1 saiyan 241 vegetas dragon ball capture
 
 # Drills
-2 saiyan 127 black takedown drill
 1 saiyan 129 blue deceiving drill
-2 saiyan 131 black bear hug drill
-1 saiyan 133 blue reversal drill
-2 saiyan 134 orange off-balancing drill
-2 saiyan 135 black arm bar drill (orange-restricted)
-2 saiyan 136 black free-style drill (black-restricted)
-2 saiyan 142 orange energy drill (orange-restricted)
-2 saiyan 151 orange joint restraint drill
-1 saiyan 230 chiaotzus drill
-4 saiyan 231 gokus mixing drill
+1 saiyan 134 orange off-balancing drill
+1 saiyan 151 orange joint restraint drill
+1 saiyan 231 gokus mixing drill
 1 saiyan 237 gokus capturing drill
 
 # Dragon Balls
-1 saiyan 15 earth dragon ball 1
-1 saiyan 16 earth dragon ball 2
-1 saiyan 75 earth dragon ball 3
-1 saiyan 76 earth dragon ball 4
-1 saiyan 77 earth dragon ball 5
+1 saiyan  15 earth dragon ball 1
+1 saiyan  16 earth dragon ball 2
+1 saiyan  75 earth dragon ball 3
+1 saiyan  76 earth dragon ball 4
+1 saiyan  77 earth dragon ball 5
 1 saiyan 186 earth dragon ball 6
 1 saiyan 187 earth dragon ball 7

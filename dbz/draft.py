@@ -19,7 +19,7 @@ from dbz.util import dprint
 
 CHARACTERS = []
 CARDS = []
-DECK_SIZE = 60
+DECK_SIZE = 40
 
 
 def fetch_cards():
@@ -149,26 +149,26 @@ def main():
     parser = argparse.ArgumentParser(
         description='For the Collector in You! For the Gamer in You!',
         epilog='Recommended for ages 11 and up')
-    parser.add_argument('-s', '--seed', type=int, default=0)
-    parser.add_argument('-f', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
-    parser.add_argument('-w', '--print-width', type=int, default=State.PRINT_WIDTH)
-    parser.add_argument('-i', '--interactive', action='store_true')
-    parser.add_argument('-q', '--quiet', action='store_true')
+    parser.add_argument('-s', '--seed', type=int, default=239847938)
+    parser.add_argument('-pf', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
+    parser.add_argument('-pw', '--print-width', type=int, default=State.PRINT_WIDTH)
+    parser.add_argument('-ni', '--simulate_game', action='store_true')
+    parser.add_argument('--quiet', action='store_true')
     parser.add_argument('--deck-size', type=int, default=DECK_SIZE)
     parser.add_argument('--no-mpp', action='store_true')
     args = parser.parse_args()
 
     random.seed(args.seed)
     np_random.seed(args.seed)
-    State.INTERACTIVE = args.interactive
-    State.QUIET = not args.interactive and args.quiet
+    State.INTERACTIVE = not args.simulate_game
+    State.QUIET = args.simulate_game and args.quiet
     State.PRINT_FREQUENCY = max(args.print_frequency, State.MIN_PRINT_FREQUENCY)
     State.PRINT_WIDTH = max(args.print_width, State.MIN_PRINT_WIDTH)
     State.ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = not args.no_mpp
     DECK_SIZE = args.deck_size
 
     fetch_cards()
-    p1 = Player(interactive=args.interactive)
+    p1 = Player(interactive=(not args.simulate_game))
     p2 = Player()
 
     decks = []

@@ -21,8 +21,8 @@ class Runner:
         State.COMBAT_ROUND = 0
 
         self.players = [
-            Player(deck=deck1, interactive=State.INTERACTIVE),
-            Player(deck=deck2)]
+            Player(deck=deck1, player_num=1, interactive=State.INTERACTIVE),
+            Player(deck=deck2, player_num=2)]
 
         # Check the D Power Rule
         power1 = self.players[0].main_personality.get_physical_attack_table_index()

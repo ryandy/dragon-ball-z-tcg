@@ -21,8 +21,15 @@ classifiers = [
 ]
 
 [project.urls]
-Repository = "https://github.com/ryandy/tcg.git"
-Issues = "https://github.com/ryandy/tcg/issues"
+Repository = "https://github.com/ryandy/dragon-ball-z-tcg.git"
+Issues = "https://github.com/ryandy/dragon-ball-z-tcg/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
+
+[tool.setuptools.package-data]
+dbz = ["decks/*"]
+
+[project.scripts]
+dbz-play = "dbz.play:main"
+dbz-draft = "dbz.draft:main"
