@@ -61,17 +61,21 @@ class Runner:
 
             except GameOver as err:
                 self.show_summary(quiet=False)
-                dprint(f'{err.winning_player} wins!', quiet=False)
+                player_num = (f'{"P" if err.winning_player.interactive else "CPU"}'
+                              f'{err.winning_player.player_num}')
+                dprint(f'{err.winning_player} ({player_num}) wins!', quiet=False)
                 dprint(f'{err}', quiet=False)
-                return
+                return err.winning_player.player_num
 
             except DeckEmpty as err:
                 for player in self.players:
                     if len(player.life_deck) == 0:
                         self.show_summary(quiet=False)
-                        dprint(f'{player.opponent} wins!', quiet=False)
+                        player_num = (f'{"P" if player.opponent.interactive else "CPU"}'
+                                      f'{player.opponent.player_num}')
+                        dprint(f'{player.opponent} ({player_num}) wins!', quiet=False)
                         dprint(f'{player}\'s Life Deck is empty', quiet=False)
-                        return
+                        return player.opponent.player_num
                 assert False
 
             State.TURN += 1

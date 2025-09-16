@@ -14,6 +14,7 @@ def main():
     parser.add_argument('-d', '--deck', action='append')
     parser.add_argument('-s', '--seed', type=int, default=239847938)
     parser.add_argument('-ni', '--simulate-game', action='store_true')
+    parser.add_argument('--quiet', action='store_true')
     parser.add_argument('-pf', '--print-frequency', type=int, default=State.PRINT_FREQUENCY)
     parser.add_argument('-pw', '--print-width', type=int, default=State.PRINT_WIDTH)
     args = parser.parse_args()
@@ -21,6 +22,7 @@ def main():
     # TODO: randomize seed by default?
     random.seed(args.seed)
     State.INTERACTIVE = not args.simulate_game
+    State.QUIET = args.simulate_game and args.quiet
     State.PRINT_FREQUENCY = max(args.print_frequency, State.MIN_PRINT_FREQUENCY)
     State.PRINT_WIDTH = max(args.print_width, State.MIN_PRINT_WIDTH)
 
@@ -31,7 +33,11 @@ def main():
     deck2 = Deck.from_spec(deckname2)
 
     runner = Runner(deck1, deck2)
-    runner.run()
+    winning_player_num = runner.run()
+
+    if winning_player_num == 2:
+        return 0
+    return 1
 
 
 if __name__ == '__main__':

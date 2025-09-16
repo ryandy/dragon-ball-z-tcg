@@ -22,7 +22,27 @@ class AI:
         return hasattr(card_power, attr) and getattr(card_power, attr)
 
     @staticmethod
-    def choose2(player, names, descriptions, allow_pass=True, refs=None):
+    def choose_v0(player, names, descriptions, allow_pass=True, refs=None):
+        '''Baseline AI'''
+        # Check if there's only one option
+        if allow_pass and not names:
+            return None
+        if not allow_pass and len(names) == 1:
+            return 0
+        if allow_pass and random.random() < 0.1:
+            # Pass small % of the time
+            return None
+        if len(names) > 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.95:
+            # Almost never want to choose FPA if another choice exists
+            return random.randrange(len(names) - 1)
+        if len(names) == 1 and names[-1] == 'Final Physical Attack' and random.random() < 0.67:
+            # Even when it's the only choice, probably want to pass instead of FPA sometimes
+            return None
+        # Random choice
+        return random.randrange(len(names))
+
+    @staticmethod
+    def choose_v1(player, names, descriptions, allow_pass=True, refs=None):
         # Check if there's only one option
         if allow_pass and not names:
             return None

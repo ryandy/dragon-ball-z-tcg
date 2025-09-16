@@ -66,6 +66,7 @@ class CombatPhase(Phase):
 
         opp_draw_phase = DrawPhase(self.player.opponent, is_attacker=False)
         opp_draw_phase.execute()
+        State.PHASE = self
 
         State.PASS_COUNT = 0
         next_attack_power = None  # Will almost always be None
@@ -83,6 +84,7 @@ class CombatPhase(Phase):
             attack_phase = CombatAttackPhase(
                 State.ATTACKING_PLAYER, self, attack_power_override=next_attack_power)
             attack_phase.execute()
+            State.PHASE = self
 
             if attack_phase.passed:
                 State.PASS_COUNT += 1

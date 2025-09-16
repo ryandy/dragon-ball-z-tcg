@@ -822,12 +822,16 @@ class Player:
         assert names or allow_pass
 
         if not self.interactive:
-            return AI.choose2(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
-            #, context=ai_context, eval_maximize=ai_eval_maximize, immediate=ai_immediate)
+            if self.player_num == 1:
+                # CPU1 uses baseline algo
+                return AI.choose_v0(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
+            else:
+                # CPU2 uses newest version
+                return AI.choose_v1(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
         else:
-            # TODO: remove - debug only
-            # not returning anything, just calling it to print out messages
-            AI.choose2(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
+            # P1/P2 can call this function for debugging purposes only - choice is not returned
+            #AI.choose_v1(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
+            pass
 
         full_names = list(names)
         full_descriptions = list(descriptions)
