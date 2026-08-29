@@ -6,6 +6,11 @@ import numpy.random as np_random
 
 from dbz.card_power import CardPower, CardPowerPass
 from dbz.card_power_attack import CardPowerAttack
+from dbz.card_power_defense import CardPowerDefense
+from dbz.combat_attack_phase import CombatAttackPhase
+from dbz.combat_card import CombatCard
+from dbz.combat_defense_phase import CombatDefensePhase
+from dbz.damage_modifier import DamageModifier
 from dbz.state import State
 
 
@@ -49,6 +54,20 @@ class AI:
         if not allow_pass and len(names) == 1:
             return 0
 
+        if refs and False:
+            all_attack = all(isinstance(x, CardPowerAttack) for x in refs)
+            all_defense = all(isinstance(x, CardPowerDefense) for x in refs)
+            if isinstance(State.PHASE, CombatAttackPhase):
+                #print('AttackPhase', len(refs), all_attack)
+                pass
+            elif isinstance(State.PHASE, CombatDefensePhase):
+                print(State.PHASE.__class__.__name__, len(refs), all_attack, all_defense)
+                for x in names:
+                    print(' ', x)
+
+        if names and names[0] == 'Declare Combat':
+            return AI.choose_declare_combat_survival(player)
+
         # Evaluate projected utility of each attack option
         if refs and isinstance(refs[0], CardPowerAttack):
             if allow_pass:
@@ -56,6 +75,21 @@ class AI:
             # Optimize for survival victory
             #print('cards', names)
             evals = [AI.get_card_power_eval_attack_survival(player, x) for x in refs]
+            #print('evals', evals)
+            weights=[10**x for x in evals]
+            #print('weights', weights)
+            idx = random.choices(population=range(len(refs)), k=1, weights=weights)[0]
+            #print('idx', idx)
+            if idx == len(names):  # pass
+                return None
+            return idx
+
+        if (refs and isinstance(refs[0], CardPowerDefense)
+            and isinstance(State.PHASE, CombatDefensePhase) and State.PHASE.attack_phase.attack_power):
+            if allow_pass:
+                refs.append(CardPowerPass())
+            #print('cards', names)
+            evals = [AI.get_card_power_eval_defense(player, x) for x in refs]
             #print('evals', evals)
             weights=[10**x for x in evals]
             #print('weights', weights)
@@ -79,7 +113,79 @@ class AI:
         return random.randrange(len(names))
 
     @staticmethod
+    def choose_declare_combat_survival(player):
+        '''Return 0 to declare combat, None to pass'''
+        # 58% -> 64%
+        combat_cards = [card for card in player.hand if isinstance(card, CombatCard)]
+        attack_powers = [card_power
+                         for card in combat_cards
+                         for card_power in card.card_powers
+                         if isinstance(card_power, CardPowerAttack)]
+        #print('~~Choose Declare')
+        #for attack_power in attack_powers:
+        #    print(' ', attack_power)
+        if attack_powers:
+            return 0
+        return None
+
+    @staticmethod
+    def get_card_power_eval_defense(player, card_power):
+        value = 0
+
+        # Begin by looking at life/power damage of attack
+        if isinstance(card_power, CardPowerDefense):  # could be CardPowerPass
+            attacker = (card_power.player or player).opponent
+            attack_power = State.PHASE.attack_phase.attack_power
+            old_damage = attack_power.damage.resolve(attacker)
+            old_life_damage = old_damage.life
+            old_power_damage = old_damage.power
+
+            damage_modifier = card_power.damage_modifier or DamageModifier(stopped=True)
+            new_damage = attack_power.damage.copy()
+            new_damage.modify(damage_modifier)
+            new_damage = new_damage.resolve(attacker)
+            new_life_damage = new_damage.life
+            new_power_damage = new_damage.power
+
+            life_damage_saved = old_life_damage - new_life_damage
+            power_damage_saved = old_power_damage - new_power_damage
+
+            value += life_damage_saved / 2 + power_damage_saved / 4
+            #print('DEF!', card_power.name, life_damage_saved, power_damage_saved, value)
+            #print(' ', card_power.description)
+
+        # Check for card-specific eval function
+        if AI.getattr(card_power, 'get_ai_eval_defense'):
+            value = card_power.get_ai_eval_defense(player)
+            if value is not None:
+                return value
+
+        # Cards that have a cost should have slightly reduced value
+        if not card_power.cost.is_none():
+            power_cost = card_power.cost.power
+            value -= power_cost / 8
+            if card_power.cost.own_ally:
+                value -= 0.5
+            if card_power.cost.discard:
+                # Worse if you're discarding your last card (cannot retain for next turn)
+                value -= (0.5 if (len(player.hand) == 1) else 0.25)
+
+        # Cards that have already been played have slightly increased value
+        # (do not have to spend a card in hand)
+        if card_power.is_floating and value > 0:
+            value += 0.5
+
+        # Pass action has a certain baseline value
+        # TODO: Higher for defense?
+        if card_power.name == 'Pass':
+            value += 0.25
+
+        return value            
+
+
+    @staticmethod
     def get_card_power_eval_attack_survival(player, card_power):
+        # 50% -> 58%
         # TODO: Prefer weaker attacks until we're confident they don't have defense?
         #       Prefer strong attacks if we believe they want to skip combat?
         value = 0
@@ -159,7 +265,7 @@ class AI:
 
         # Cards that have already been played have slightly increased value
         # (do not have to spend a card in hand)
-        if card_power.is_floating:
+        if card_power.is_floating and value > 0:
             value += 0.5
 
         # Pass action has a certain baseline value
@@ -173,7 +279,33 @@ class AI:
 
         return value
 
+
+
+
+
+
+
+    
+
+
+
+
+    
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @staticmethod
     def choose(player, names, descriptions, allow_pass=True,

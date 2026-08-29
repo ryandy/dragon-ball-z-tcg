@@ -830,7 +830,7 @@ class Player:
                 return AI.choose_v1(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
         else:
             # P1/P2 can call this function for debugging purposes only - choice is not returned
-            #AI.choose_v1(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
+            AI.choose_v1(self, names, descriptions, allow_pass=allow_pass, refs=ai_refs)
             pass
 
         full_names = list(names)
@@ -950,7 +950,7 @@ class Player:
             return None
         return filtered[idx]
 
-    def choose_defense_shield(self, is_physical=None):
+    def choose_defense_shield(self, is_physical=None):  # RMA ~0/game
         card_power_class = (CardPowerPhysicalDefenseShield
                             if is_physical else CardPowerEnergyDefenseShield)
         filtered = self.get_valid_card_powers(
@@ -965,7 +965,7 @@ class Player:
             prompt='Select a Defense Shield to activate')
         return filtered[idx]
 
-    def choose_discard_pile_card(self):
+    def choose_discard_pile_card(self):  # RMA ~12/game
         if len(self.discard_pile) == 0:
             return None
 
@@ -979,7 +979,7 @@ class Player:
             return None
         return self.discard_pile.cards[idx]
 
-    def choose_hand_discard_card(self, ignore_card=None):
+    def choose_hand_discard_card(self, ignore_card=None):  # RMA ~10/game
         '''Assumes hand has at least 1 card and a card must be chosen'''
         hand_cards = self.hand.cards
         if ignore_card:
@@ -1006,12 +1006,12 @@ class Player:
             return False
         return True
 
-    def choose_to_use_card_power(self, card_power):
+    def choose_to_use_card_power(self, card_power):  # RMA ~2/game
         idx = self.choose([f'Use {card_power}'], [card_power.description],
                           prompt=f'You can use {card_power} now')
         return idx == 0
 
-    def choose_opponent_dragon_ball(self, prompt=None):
+    def choose_opponent_dragon_ball(self, prompt=None):  # RMA ~7/game
         if not self.opponent.dragon_balls.cards:
             return None
 
@@ -1032,11 +1032,11 @@ class Player:
         idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
         return self.opponent.dragon_balls.cards[idx]
 
-    def choose_damage_target(self):
+    def choose_damage_target(self):  # RMA ~10/game
         return self.choose_personality(
             prompt='Select a personality to take power stages of damage')
 
-    def choose_power_stage_target(self, power):
+    def choose_power_stage_target(self, power):  # RMA ~6/game
         verb = 'gain' if power > 0 else 'lose'
         return self.choose_personality(
             prompt=f'Select a personality to {verb} {abs(power)} power stage(s)')
@@ -1074,7 +1074,7 @@ class Player:
         idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
         return cards[idx]
 
-    def choose_hand_non_combat_card(self):
+    def choose_hand_non_combat_card(self):  # RMA ~25/game
         filtered = []
         for card in self.hand:
             if (isinstance(card, NonCombatCard)
