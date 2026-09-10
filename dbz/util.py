@@ -1,20 +1,18 @@
 import itertools
 import sys
-import time
 
 import tabulate
 
+import dbz.io_backend  # noqa: F401  (ensures State.IO_BACKEND has a default)
 from dbz.state import State
 
 
-_dprint_time = None
 def dprint(msg='', quiet=None):
     if quiet is False or State.QUIET is False:
         for line in msg.split('\n'):
             splitlines = _split_msg_by_width_and_indent(line)
             for splitline in splitlines:
-                _wait()
-                print(splitline)
+                State.IO_BACKEND.write(splitline)
 
 
 def dprint_table(table, quiet=None):
@@ -45,16 +43,6 @@ def dprint_table(table, quiet=None):
     table = itertools.zip_longest(*reversed(new_table))
     table = tabulate.tabulate(table, tablefmt='fancy_grid')
     dprint(table, quiet=quiet)
-
-
-def _wait():
-    global _dprint_time
-    # Track time of last dprint and sleep until target period before the next print
-    if State.INTERACTIVE and _dprint_time is not None:
-        print_period = 1.0 / State.PRINT_FREQUENCY
-        time_elapsed = time.time() - _dprint_time
-        time.sleep(max(0, print_period - time_elapsed))
-    _dprint_time = time.time()
 
 
 def _split_msg_by_width_and_indent(msg, width=None):

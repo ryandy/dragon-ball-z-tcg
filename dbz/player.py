@@ -488,7 +488,7 @@ class Player:
 
             card_removed = card.pile.remove(card)
             if card_removed is not card:
-                print(f'Attempted to remove {card} from {card.pile} but got {card_removed}')
+                dprint(f'Attempted to remove {card} from {card.pile} but got {card_removed}')
                 assert False
 
         if exhaust_card:
@@ -865,7 +865,7 @@ class Player:
         while (choice < 0
                or choice >= len(names)+int(allow_pass)):
             if State.TUTORIAL_COMPLETE:
-                choice = input('>>> Choice: ')
+                choice = State.IO_BACKEND.read_choice('>>> Choice: ')
                 choice = ''.join(choice.split()).lower()
             else:
                 choice = 'help'

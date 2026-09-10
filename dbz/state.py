@@ -10,6 +10,8 @@ class State:
     PASS_COUNT = 0
     TUTORIAL_COMPLETE = False
 
+    IO_BACKEND = None  # set below to avoid a circular import at module load time
+
     QUIET = False
     ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = True
     INTERACTIVE = False
