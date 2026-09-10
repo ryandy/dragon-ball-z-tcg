@@ -29,12 +29,15 @@ async function init() {
 }
 
 // Called synchronously from Python (dbz.io_backend.BrowserBackend.read_choice)
-// via Pyodide's js interop. Blocks this worker thread only - the main/UI
-// thread stays responsive and is what actually collects the human's
-// answer - using Pyodide's documented Atomics.wait pattern for
+// via Pyodide's js interop. optionsJson is a JSON string with
+// {prompt, names, descriptions, otherNames, otherDescriptions, allowPass}
+// (see BrowserBackend.read_choice). Blocks this worker thread only - the
+// main/UI thread stays responsive and is what actually collects the
+// human's answer - using Pyodide's documented Atomics.wait pattern for
 // synchronous I/O from a worker.
-self.dbzReadChoice = function (prompt) {
-  postMessage(JSON.stringify({type: 'need_input', prompt}));
+self.dbzReadChoice = function (optionsJson) {
+  const options = JSON.parse(optionsJson);
+  postMessage(JSON.stringify({type: 'need_input', ...options}));
   Atomics.store(controlArray, CONTROL_FLAG, 0);
   Atomics.wait(controlArray, CONTROL_FLAG, 0);
   const length = Atomics.load(controlArray, CONTROL_LENGTH);

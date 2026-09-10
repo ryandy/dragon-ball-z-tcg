@@ -11,8 +11,21 @@ class IOBackend(abc.ABC):
         '''Receives one already-wrapped line of game text.'''
 
     @abc.abstractmethod
-    def read_choice(self, prompt):
-        '''Blocks and returns raw text the way input() does today.'''
+    def read_choice(self, prompt, names=None, descriptions=None,
+                     other_names=None, other_descriptions=None, allow_pass=True):
+        '''Blocks and returns raw text the way input() does today.
+
+        names/descriptions/other_names/other_descriptions/allow_pass are
+        Player.choose()'s own parameters, forwarded through unchanged, for
+        backends that want the structured option data (e.g. to render
+        clickable cards) instead of/in addition to the pre-formatted
+        prompt text already sent via write().'''
+
+    def write_state(self, snapshot):
+        '''Receives a JSON-serializable board-state snapshot (see
+        Runner.build_state_snapshot). No-op by default - CLIBackend has
+        no use for it since the terminal already shows state via write().'''
+        pass
 
 
 class CLIBackend(IOBackend):
@@ -26,7 +39,7 @@ class CLIBackend(IOBackend):
         self._pace()
         print(line)
 
-    def read_choice(self, prompt):
+    def read_choice(self, prompt, **kwargs):
         return input(prompt)
 
     def _pace(self):
@@ -53,9 +66,22 @@ class BrowserBackend(IOBackend):
         from js import postMessage  # only importable inside a JS runtime
         postMessage(json.dumps({'type': 'write', 'line': line}))
 
-    def read_choice(self, prompt):
+    def read_choice(self, prompt, names=None, descriptions=None,
+                     other_names=None, other_descriptions=None, allow_pass=True):
         from js import dbzReadChoice
-        return dbzReadChoice(prompt)
+        options = json.dumps({
+            'prompt': prompt,
+            'names': names or [],
+            'descriptions': descriptions or [],
+            'otherNames': other_names or [],
+            'otherDescriptions': other_descriptions or [],
+            'allowPass': bool(allow_pass),
+        })
+        return dbzReadChoice(options)
+
+    def write_state(self, snapshot):
+        from js import postMessage
+        postMessage(json.dumps({'type': 'state', 'snapshot': snapshot}))
 
 
 # Default backend preserves current terminal behavior. Swap by assigning

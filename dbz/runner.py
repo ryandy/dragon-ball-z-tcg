@@ -2,6 +2,7 @@ import itertools
 import random
 import sys
 
+from dbz.card_power import CardPower
 from dbz.card_power_on_end_of_turn import CardPowerOnEndOfTurn
 from dbz.card_power_on_entering_turn import CardPowerOnEnteringTurn
 from dbz.combat_phase import CombatPhase
@@ -51,6 +52,65 @@ class Runner:
         # If quiet is None, we defer to State.QUIET
         summaries = [player.get_summary() for player in reversed(self.players)]
         dprint_table(summaries, quiet=quiet)
+        State.IO_BACKEND.write_state(self.build_state_snapshot())
+
+    def build_state_snapshot(self):
+        '''JSON-serializable board state for a browser UI (see
+        BrowserBackend.write_state). Mirrors the same fields
+        Player.get_summary()/show_pile() already gather for the terminal
+        table, just shaped as a dict instead of formatted strings.'''
+        return {
+            'turn': State.TURN + 1,
+            'players': [self._player_snapshot(player) for player in reversed(self.players)],
+        }
+
+    def _player_snapshot(self, player):
+        active_card_powers = player.get_valid_card_powers(CardPower)
+
+        def card_snapshot(card):
+            return {'id': card.get_id(), 'name': card.name, 'cardText': card.card_text}
+
+        def personality_snapshot(personality, anger=None):
+            snapshot = {
+                'id': personality.get_id(),
+                'name': personality.char_name(),
+                'level': personality.level,
+                'powerAttackStr': personality.get_power_attack_str(),
+                'cardText': personality.card_text,
+                'attachedCards': [card_snapshot(c) for c in personality.attached_cards],
+            }
+            if anger is not None:
+                snapshot['anger'] = anger
+            return snapshot
+
+        def dragon_ball_snapshot(card):
+            return {
+                'id': card.get_id(),
+                'name': card.name,
+                'dbSet': card.db_set,
+                'dbNumber': card.db_number,
+                'active': any(x.card is card for x in active_card_powers),
+            }
+
+        return {
+            'name': player.name,
+            'playerNum': player.player_num,
+            'interactive': player.interactive,
+            'lifeDeckCount': len(player.life_deck),
+            'deckSize': player.deck_size,
+            'discardCount': len(player.discard_pile),
+            'removedCount': len(player.removed_pile),
+            'handCount': len(player.hand),
+            'hand': ([card_snapshot(c) for c in player.hand]
+                     if player.should_show_hand() else None),
+            'mainPersonality': personality_snapshot(player.main_personality, anger=player.anger),
+            'allies': [personality_snapshot(ally) for ally in player.allies],
+            'nonCombat': [card_snapshot(c) for c in player.non_combat],
+            'drills': [card_snapshot(c) for c in player.drills],
+            'dragonBalls': [dragon_ball_snapshot(c) for c in player.dragon_balls],
+            'floatingCardPowers': [
+                str(cp) for cp in active_card_powers if cp.is_floating],
+        }
 
     def run(self):
         while True:

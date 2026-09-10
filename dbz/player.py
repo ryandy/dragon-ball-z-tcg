@@ -865,7 +865,10 @@ class Player:
         while (choice < 0
                or choice >= len(names)+int(allow_pass)):
             if State.TUTORIAL_COMPLETE:
-                choice = State.IO_BACKEND.read_choice('>>> Choice: ')
+                choice = State.IO_BACKEND.read_choice(
+                    '>>> Choice: ', names=names, descriptions=descriptions,
+                    other_names=other_names, other_descriptions=other_descriptions,
+                    allow_pass=allow_pass)
                 choice = ''.join(choice.split()).lower()
             else:
                 choice = 'help'

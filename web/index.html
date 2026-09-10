@@ -2,48 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>DBZ TCG - P1 smoke test</title>
+  <title>DBZ TCG - P2 board</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 1.5rem; }
+    button { font-size: 1rem; padding: 0.5rem 1rem; }
+    .buttons { margin-bottom: 0.75rem; display: flex; gap: 0.5rem; }
+
+    #board { margin-bottom: 0.75rem; }
+    .player-zone {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 0.6rem 0.75rem;
+      margin-bottom: 0.6rem;
+      background: #fafafa;
+    }
+    .player-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      font-weight: bold;
+      margin-bottom: 0.4rem;
+    }
+    .player-header .counts { font-weight: normal; color: #555; font-size: 0.8rem; }
+    .zone-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: #888;
+      margin: 0.4rem 0 0.2rem;
+    }
+    .card-row { display: flex; flex-wrap: wrap; gap: 0.4rem; min-height: 2.6rem; }
+
+    .card {
+      background: #1c1c1c;
+      color: #eee;
+      border: 1px solid #555;
+      border-radius: 6px;
+      padding: 0.35rem 0.5rem;
+      width: 10rem;
+      font-size: 0.72rem;
+      line-height: 1.25;
+    }
+    .card.main-personality { border-color: #e0a030; border-width: 2px; }
+    .card.selectable {
+      cursor: pointer;
+      border-color: #4ad06a;
+    }
+    .card.selectable:hover { background: #2a2a2a; }
+    .card.unavailable { opacity: 0.45; }
+    .card-name { font-weight: bold; margin-bottom: 0.15rem; }
+    .card-stat { font-weight: normal; color: #7fc7ff; font-size: 0.68rem; }
+    .card-text { color: #bbb; }
+    .card-back {
+      background: #333;
+      color: #888;
+      text-align: center;
+      width: 3.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     #log {
       background: #111;
       color: #ddd;
       padding: 1rem;
-      height: 55vh;
+      height: 30vh;
       overflow-y: auto;
       white-space: pre-wrap;
       font-family: ui-monospace, monospace;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
-    button { font-size: 1rem; padding: 0.5rem 1rem; }
-    .buttons { margin-bottom: 0.75rem; display: flex; gap: 0.5rem; }
-    #input-row {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
-      margin-top: 0.75rem;
-    }
-    #input-row[hidden] { display: none; }
-    #input-prompt-label { font-family: ui-monospace, monospace; }
-    #choice-input { font-size: 1rem; padding: 0.4rem; flex: 1; max-width: 20rem; }
+
+    #choices { margin-top: 0.75rem; }
+    #choices-prompt { font-family: ui-monospace, monospace; margin-bottom: 0.4rem; }
+    #choices[hidden] { display: none; }
   </style>
 </head>
 <body>
-  <h1>DBZ TCG - Pyodide smoke test (P1)</h1>
-  <p>The real engine running in-browser via Pyodide. This is a plain text
-     log, not the board UI (that's a later step) - the interactive game
-     accepts the same input a terminal session would (a number, or
-     commands like "help"/"hand").</p>
+  <h1>DBZ TCG - Pyodide board (P2)</h1>
+  <p>The real engine running in-browser via Pyodide, rendered as a board
+     instead of a plain text log. The log below still carries narration
+     text (attacks, power-ups, etc.).</p>
   <div class="buttons">
     <button id="run-cpu" disabled>Run CPU vs CPU game</button>
     <button id="run-interactive" disabled>Play interactively (you are P1)</button>
   </div>
-  <pre id="log">Loading Pyodide and the dbz engine...</pre>
-  <div id="input-row" hidden>
-    <span id="input-prompt-label"></span>
-    <input id="choice-input" type="text" autocomplete="off">
-    <button id="submit-choice">Submit</button>
+
+  <div id="board"></div>
+
+  <div id="choices" hidden>
+    <div id="choices-prompt"></div>
+    <div id="choices-row" class="card-row"></div>
   </div>
+
+  <pre id="log">Loading Pyodide and the dbz engine...</pre>
   <script src="main.js"></script>
 </body>
 </html>
