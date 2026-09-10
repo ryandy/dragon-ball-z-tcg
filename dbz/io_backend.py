@@ -1,4 +1,5 @@
 import abc
+import json
 import time
 
 from dbz.state import State
@@ -36,7 +37,28 @@ class CLIBackend(IOBackend):
         self._last_write_time = time.time()
 
 
+class BrowserBackend(IOBackend):
+    '''Runs inside a Pyodide Web Worker (see web/worker.js). Posts output
+    lines to the main thread as JSON instead of printing.
+
+    read_choice() blocks this worker thread (not the main/UI thread) via
+    a synchronous Atomics.wait bridge implemented in JS (worker.js's
+    dbzReadChoice), following Pyodide's documented pattern for
+    synchronous I/O from a worker. A headless CPU-vs-CPU game never
+    calls it: Player.choose() (dbz/player.py) short-circuits through the
+    AI path and returns before reaching IO_BACKEND.read_choice() whenever
+    a player is non-interactive.'''
+
+    def write(self, line):
+        from js import postMessage  # only importable inside a JS runtime
+        postMessage(json.dumps({'type': 'write', 'line': line}))
+
+    def read_choice(self, prompt):
+        from js import dbzReadChoice
+        return dbzReadChoice(prompt)
+
+
 # Default backend preserves current terminal behavior. Swap by assigning
-# State.IO_BACKEND (e.g. to a browser bridge backend in a future step).
+# State.IO_BACKEND (e.g. to BrowserBackend() inside a Pyodide worker).
 if State.IO_BACKEND is None:
     State.IO_BACKEND = CLIBackend()

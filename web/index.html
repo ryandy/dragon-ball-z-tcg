@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DBZ TCG - P1 smoke test</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1.5rem; }
+    #log {
+      background: #111;
+      color: #ddd;
+      padding: 1rem;
+      height: 55vh;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      font-family: ui-monospace, monospace;
+      font-size: 0.8rem;
+    }
+    button { font-size: 1rem; padding: 0.5rem 1rem; }
+    .buttons { margin-bottom: 0.75rem; display: flex; gap: 0.5rem; }
+    #input-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 0.75rem;
+    }
+    #input-row[hidden] { display: none; }
+    #input-prompt-label { font-family: ui-monospace, monospace; }
+    #choice-input { font-size: 1rem; padding: 0.4rem; flex: 1; max-width: 20rem; }
+  </style>
+</head>
+<body>
+  <h1>DBZ TCG - Pyodide smoke test (P1)</h1>
+  <p>The real engine running in-browser via Pyodide. This is a plain text
+     log, not the board UI (that's a later step) - the interactive game
+     accepts the same input a terminal session would (a number, or
+     commands like "help"/"hand").</p>
+  <div class="buttons">
+    <button id="run-cpu" disabled>Run CPU vs CPU game</button>
+    <button id="run-interactive" disabled>Play interactively (you are P1)</button>
+  </div>
+  <pre id="log">Loading Pyodide and the dbz engine...</pre>
+  <div id="input-row" hidden>
+    <span id="input-prompt-label"></span>
+    <input id="choice-input" type="text" autocomplete="off">
+    <button id="submit-choice">Submit</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
