@@ -846,8 +846,8 @@ class Player:
             full_names.append('Pass')
             full_descriptions.append('Do nothing.')
 
-        prompt = prompt or 'Choose an action'
-        prompt = f'>>> {prompt}:'
+        short_prompt = prompt or 'Choose an action'
+        prompt = f'>>> {short_prompt}:'
         for i in range(len(full_names)):
             if i < len(names):
                 number = f'{i+1}'
@@ -866,7 +866,7 @@ class Player:
                or choice >= len(names)+int(allow_pass)):
             if State.TUTORIAL_COMPLETE:
                 choice = State.IO_BACKEND.read_choice(
-                    '>>> Choice: ', names=names, descriptions=descriptions,
+                    short_prompt, names=names, descriptions=descriptions,
                     other_names=other_names, other_descriptions=other_descriptions,
                     allow_pass=allow_pass)
                 choice = ''.join(choice.split()).lower()

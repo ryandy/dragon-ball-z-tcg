@@ -1,0 +1,1299 @@
+Goku shuffles their deck                                                                            
+Vegeta shuffles their deck                                                                          
+Goku will go first (Power Rule)                                                                     
+====================================================================================================
+========== Turn 1: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 46/50 HP                          │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       5(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Orange Joint Restraint Drill (Non-Combat)                                                
+  - All of your physical attacks do +4 power stages of damage.                                      
+Goku Lv1's power increases from 5(2) to 6(3)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 43/50 HP                          │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 2 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       6(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku chooses to skip combat                                                                         
+Goku must discard down to 1 card                                                                    
+Goku discards Goku's Surprise Attack (Physical Combat - Attack)                                     
+Goku rejuvenates with Goku's Surprise Attack (Physical Combat - Attack)                             
+
+====================================================================================================
+========== Turn 2: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 44/50 HP                          │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       6(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta HT Lv1's power increases from 5(3) to 6(4)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 44/50 HP                          │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       6(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta chooses to skip combat                                                                       
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Vegeta's Dragon Ball Capture (Non-Combat)                                           
+Vegeta discards Blue Cradle Drill (Non-Combat)                                                      
+Vegeta rejuvenates with Blue Cradle Drill (Non-Combat)                                              
+
+====================================================================================================
+========== Turn 3: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 44/50 HP                          │ Vegeta [CPU] - 109/115 HP                       │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 1 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       6(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Goku's Touch (Non-Combat)                                                                
+  - Use after you perform a successful physical attack to capture an opponent's Dragon Ball. Remove 
+    from the game after use.                                                                        
+Goku Lv1's power increases from 6(3) to 7(3)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 41/50 HP                          │ Vegeta [CPU] - 109/115 HP                       │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 1 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 3.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 41/50 HP                          │ Vegeta [CPU] - 106/115 HP                       │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 4 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Orange Standing Fist Punch                                                        
+  - Physical Attack. Raise card user's anger level 1.                                               
+Goku's anger increases from 0 to 1                                                                  
+Goku's attack damage estimate: Damage(4, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta uses Piccolo's Physical Defense to defend                                                    
+  - Stops a physical attack. Gain 4 power stages.                                                   
+Vegeta HT Lv1's power increases from 6(4) to 10(4)                                                  
+Vegeta discards Piccolo's Physical Defense (Physical Combat - Defense)                              
+Goku discards Orange Standing Fist Punch (Physical Combat - Attack)                                 
+
+---------- Attack Phase 3.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 41/50 HP                          │ Vegeta [CPU] - 106/115 HP                       │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Black Front Kick                                                                
+  - Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise 
+    card user's anger level 2.                                                                      
+Vegeta HT Lv1's power decreases from 10(4) to 6(4)                                                  
+Vegeta's anger increases from 0 to 2                                                                
+Vegeta's attack damage estimate: Damage(0, 5)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(0, 5)                                                                             
+Goku takes 1 life damage: Unexpected Allies (Combat - Defense)                                      
+Goku takes 1 life damage: Senzu Bean (Non-Combat)                                                   
+Goku takes 1 life damage: Black Axe Heel Kick (Energy Combat - Defense)                             
+Goku takes 1 life damage: Goku Body Throw! (Physical Combat - Attack)                               
+Goku takes 1 life damage: Orange Arm Bar (Physical Combat - Attack)                                 
+Vegeta discards Black Front Kick (Energy Combat - Attack)                                           
+
+---------- Attack Phase 3.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 106/115 HP                       │
+│ Hand: 2 | Discard: 6 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.2 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku's Surprise Attack                                                            
+  - Physical attack doing 5 power stages of damage.                                                 
+Goku's attack damage estimate: Damage(9, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(9, 0)                                                                           
+Vegeta HT Lv1 takes 6 power damage                                                                  
+Vegeta HT Lv1's power decreases from 6(4) to 0(0)                                                   
+Vegeta takes 1 life damage: Vegeta's Surprise Defense (Combat - Defense)                            
+Vegeta takes 1 life damage: The Untroubled Mind is Focused (Non-Combat)                             
+Vegeta takes 1 life damage: Goku Honor Duel! (Non-Combat)                                           
+Goku discards Goku's Surprise Attack (Physical Combat - Attack)                                     
+
+---------- Attack Phase 3.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 103/115 HP                       │
+│ Hand: 1 | Discard: 7 | Removed: 0              │ Hand: 2 | Discard: 6 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 3.5: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 103/115 HP                       │
+│ Hand: 1 | Discard: 7 | Removed: 0              │ Hand: 2 | Discard: 6 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Anger Attack                                                                 
+  - This physical attack does double the normal damage if successful.                               
+Goku's attack damage estimate: Damage(12, 0)                                                        
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(12, 0)                                                                          
+Vegeta HT Lv1 takes 0 power damage                                                                  
+Vegeta takes 1 life damage: Goku's Surprise Attack (Physical Combat - Attack)                       
+Vegeta takes 1 life damage: Black Fore Fist Punch (Energy Combat - Attack)                          
+Vegeta takes 1 life damage: Blazing Anger! (Non-Combat)                                             
+Vegeta takes 1 life damage: Black Takedown Drill (Non-Combat)                                       
+Vegeta recycles Earth Dragon Ball 3 (Non-Combat)                                                    
+Vegeta takes 1 life damage: Goku's Physical Attack (Physical Combat - Attack)                       
+Vegeta takes 1 life damage: Black Bear Hug Drill (Non-Combat)                                       
+Vegeta takes 1 life damage: Straining Energy Defense Move (Energy Combat - Defense)                 
+Vegeta takes 1 life damage: Orange Body Shifting Drill (Non-Combat)                                 
+Vegeta takes 1 life damage: Orange Lifting Drill (Non-Combat)                                       
+Vegeta takes 1 life damage: Ally's Sacrifice (Combat - Defense)                                     
+Vegeta takes 1 life damage: Goku's Energy Defense (Energy Combat - Defense)                         
+Vegeta takes 1 life damage: Black Takedown Drill (Non-Combat)                                       
+Goku discards Goku Anger Attack (Physical Combat - Attack)                                          
+
+---------- Attack Phase 3.6: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 18 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 3.7: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 18 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       7(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 7(3) to 6(3)                                                        
+Goku's attack damage estimate: Damage(0, 3)                                                         
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 3.8: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 18 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 3.9: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 18 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Saibaimen Lv1 (Personality)                                                         
+
+====================================================================================================
+========== Turn 4: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 1 | Discard: 19 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Vegeta's Dragon Ball Capture (Non-Combat)                                              
+  - Capture 2 of a foe's Dragon Balls and place them at the bottom of their owner's life deck.      
+Vegeta HT Lv1's power increases from 0(0) to 1(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 36/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 19 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Vegeta's Dragon Ball Capture                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 4.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 33/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 3 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 19 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Vegeta's Dragon Ball Capture                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta uses Vegeta's Dragon Ball Capture (Non-Combat)                                               
+  - Capture 2 of a foe's Dragon Balls and place them at the bottom of their owner's life deck.      
+Vegeta discards Vegeta's Dragon Ball Capture (Non-Combat)                                           
+
+---------- Attack Phase 4.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 33/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 3 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 20 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 6(3) to 5(2)                                                        
+Goku's attack damage estimate: Damage(0, 3)                                                         
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 4.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 33/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 3 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 20 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 4.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 33/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 3 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 20 | Removed: 0              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Final Physical Attack                                                             
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku recycles Earth Dragon Ball 2 (Non-Combat)                                                      
+Goku's attack damage estimate: Damage(4, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta uses Vegeta's Physical Stance to defend                                                      
+  - Stops a physical attack. Stops all physical attacks performed against you for the remainder of  
+    Combat. Remove from the game after use.                                                         
+Vegeta removes Vegeta's Physical Stance (Physical Combat - Defense) from game                       
+
+---------- Attack Phase 4.5: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 34/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 2 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 20 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Vegeta's Physical Stance (*)                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 4.6: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 34/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 2 | Discard: 8 | Removed: 0              │ Hand: 2 | Discard: 20 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Vegeta's Physical Stance (*)                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Black Fore Fist Punch (Energy Combat - Attack)                                      
+Goku must discard down to 1 card                                                                    
+Goku discards Goku's Mixing Drill (Non-Combat)                                                      
+
+====================================================================================================
+========== Turn 5: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 34/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 1 | Discard: 9 | Removed: 0              │ Hand: 1 | Discard: 21 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku Lv1's power increases from 5(2) to 6(3)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 88/115 HP                        │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 1 | Discard: 21 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 5.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 85/115 HP                        │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 4 | Discard: 21 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 6(3) to 5(2)                                                        
+Goku's attack damage estimate: Damage(0, 3)                                                         
+Vegeta uses Black Knife Hand Strike to defend                                                       
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Vegeta discards Black Knife Hand Strike (Energy Combat - Attack)                                    
+
+---------- Attack Phase 5.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 85/115 HP                        │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 3 | Discard: 22 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 5.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 85/115 HP                        │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 3 | Discard: 22 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.2 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Blue Forward Foot Sweep                                                           
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Vegeta's anger decreases from 2 to 1                                                                
+Goku's attack damage estimate: Damage(8, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(8, 0)                                                                           
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 1(3) to 0(0)                                                   
+Vegeta takes 1 life damage: Goku's Lucky Break (Non-Combat)                                         
+Vegeta takes 1 life damage: Vegeta's Surprise Defense (Combat - Defense)                            
+Vegeta takes 1 life damage: Goku Honor Duel! (Non-Combat)                                           
+Vegeta takes 1 life damage: Saibaimen Lv2 (Personality)                                             
+Vegeta takes 1 life damage: Goku's Energy Blast! (Energy Combat - Defense)                          
+Vegeta takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                             
+Vegeta takes 1 life damage: Vegeta's Surprise Defense (Combat - Defense)                            
+Goku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                    
+
+---------- Attack Phase 5.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 78/115 HP                        │
+│ Hand: 3 | Discard: 10 | Removed: 0             │ Hand: 3 | Discard: 29 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 5.5: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 78/115 HP                        │
+│ Hand: 3 | Discard: 10 | Removed: 0             │ Hand: 3 | Discard: 29 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+Goku must discard down to 1 card                                                                    
+Goku discards Chi-Chi Lv1 (Personality)                                                             
+Goku discards Roshi Training (Non-Combat)                                                           
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Black Knife Hand Strike (Energy Combat - Attack)                                    
+Vegeta discards Saiyan City Destruction (Non-Combat)                                                
+
+====================================================================================================
+========== Turn 6: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 78/115 HP                        │
+│ Hand: 1 | Discard: 12 | Removed: 0             │ Hand: 1 | Discard: 31 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Earth Dragon Ball 1 (Non-Combat)                                                       
+  - Instantly power up to full and draw a card.                                                     
+Vegeta HT Lv1's power increases from 0(0) to 10(4)                                                  
+Vegeta adds a card to hand                                                                          
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 31/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 1 | Discard: 12 | Removed: 0             │ Hand: 4 | Discard: 31 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 6.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 4 | Discard: 12 | Removed: 0             │ Hand: 4 | Discard: 31 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku Anger Attack                                                               
+  - This physical attack does double the normal damage if successful.                               
+Vegeta's attack damage estimate: Damage(6, 0)                                                       
+Goku uses Goku's Energy Blast! to defend                                                            
+  - Energy defense stopping a foe's physical attack. Remove from the game after use.                
+Goku removes Goku's Energy Blast! (Energy Combat - Defense) from game                               
+Vegeta discards Goku Anger Attack (Physical Combat - Attack)                                        
+
+---------- Attack Phase 6.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 3 | Discard: 12 | Removed: 1             │ Hand: 3 | Discard: 32 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Black Knife Hand Strike                                                           
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Goku Lv1's power decreases from 5(2) to 3(2)                                                        
+Goku's attack damage estimate: Damage(0, 4)                                                         
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+Goku discards Black Knife Hand Strike (Energy Combat - Attack)                                      
+
+---------- Attack Phase 6.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 2 | Discard: 13 | Removed: 1             │ Hand: 3 | Discard: 32 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       3(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 6.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 2 | Discard: 13 | Removed: 1             │ Hand: 3 | Discard: 32 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       3(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Ally's Sacrifice (Combat - Defense)                                                 
+Vegeta discards The Untroubled Mind is Focused (Non-Combat)                                         
+Goku must discard down to 1 card                                                                    
+Goku discards Power Up! (Non-Combat)                                                                
+
+====================================================================================================
+========== Turn 7: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 1 | Discard: 14 | Removed: 1             │ Hand: 1 | Discard: 34 | Removed: 1              │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       3(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Tien Lv1 (Personality)                                                                   
+  - Multi-Form allows two physical attacks, one after another, or a defense against a physical      
+    attack preventing 4 stages of successful damage.                                                
+Goku plays Earth Dragon Ball 7 (Non-Combat)                                                         
+  - Play this card during combat to end the battle. Pick 3 cards out of your discard pile and place 
+    them at the top of your life deck. All opponents' anger levels shift down 2.                    
+Vegeta's anger decreases from 1 to 0                                                                
+Goku returns Power Up! (Non-Combat) to their life deck                                              
+Goku returns Goku's Surprise Attack (Physical Combat - Attack) to their life deck                   
+Goku returns Blue Forward Foot Sweep (Physical Combat - Attack) to their life deck                  
+Goku Lv1's power increases from 3(2) to 4(2)                                                        
+Tien Lv1's power increases from 3(1) to 4(1)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 74/115 HP                        │
+│ Hand: 2 | Discard: 11 | Removed: 1             │ Hand: 1 | Discard: 34 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       4(2)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 7.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 2 | Discard: 11 | Removed: 1             │ Hand: 4 | Discard: 34 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       4(2)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 4(2) to 3(2)                                                        
+Goku's attack damage estimate: Damage(0, 3)                                                         
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 7.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 2 | Discard: 11 | Removed: 1             │ Hand: 4 | Discard: 34 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       3(2)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Orange Arm Bar                                                                  
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta's attack damage estimate: Damage(6, 0)                                                       
+Goku uses Blue Big Outside Drop to defend                                                           
+  - Stops a physical attack. Raise the card user's anger level 1.                                   
+Goku's anger increases from 1 to 2                                                                  
+Goku discards Blue Big Outside Drop (Physical Combat - Defense)                                     
+Vegeta discards Orange Arm Bar (Physical Combat - Attack)                                           
+
+---------- Attack Phase 7.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 1 | Discard: 12 | Removed: 1             │ Hand: 3 | Discard: 35 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Body Throw!                                                                  
+  - Physical attack doing 1 life card of damage.                                                    
+Goku's attack damage estimate: Damage(4, 1)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta uses Black Side Kick to defend                                                               
+  - Stops a foe's physical attack. Raise card user's anger level 2.                                 
+Vegeta's anger increases from 1 to 3                                                                
+Vegeta discards Black Side Kick (Physical Combat - Defense)                                         
+Goku discards Goku Body Throw! (Physical Combat - Attack)                                           
+
+---------- Attack Phase 7.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 0 | Discard: 13 | Removed: 1             │ Hand: 2 | Discard: 36 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Final Physical Attack                                                           
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Vegeta discards Black Side Kick (Physical Combat - Defense)                                         
+Vegeta's attack damage estimate: Damage(3, 0)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(3, 0)                                                                             
+Goku selects Tien Lv1 to take damage                                                                
+Tien Lv1 takes 3 power damage                                                                       
+Tien Lv1's power decreases from 4(1) to 1(1)                                                        
+
+---------- Attack Phase 7.5: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 0 | Discard: 13 | Removed: 1             │ Hand: 1 | Discard: 37 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 7.6: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 0 | Discard: 13 | Removed: 1             │ Hand: 1 | Discard: 37 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+====================================================================================================
+========== Turn 8: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 71/115 HP                        │
+│ Hand: 0 | Discard: 13 | Removed: 1             │ Hand: 1 | Discard: 37 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 28/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 0 | Discard: 13 | Removed: 1             │ Hand: 4 | Discard: 37 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 8.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 25/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 3 | Discard: 13 | Removed: 1             │ Hand: 4 | Discard: 37 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku's Surprise Attack                                                          
+  - Physical attack doing 5 power stages of damage.                                                 
+Vegeta's attack damage estimate: Damage(5, 0)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(5, 0)                                                                             
+Goku selects Tien Lv1 to take damage                                                                
+Tien Lv1 takes 1 power damage                                                                       
+Tien Lv1's power decreases from 1(1) to 0(0)                                                        
+Goku recycles Earth Dragon Ball 3 (Non-Combat)                                                      
+Goku takes 1 life damage: Red Back Kick (Physical Combat - Attack)                                  
+Goku takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                     
+Goku takes 1 life damage: Goku's Physical Attack (Physical Combat - Attack)                         
+Goku takes 1 life damage: Blue Deceiving Drill (Non-Combat)                                         
+Vegeta discards Goku's Surprise Attack (Physical Combat - Attack)                                   
+
+---------- Attack Phase 8.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 21/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 3 | Discard: 38 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 8.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 21/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 3 | Discard: 38 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku Anger Attack                                                               
+  - This physical attack does double the normal damage if successful.                               
+Vegeta's attack damage estimate: Damage(6, 0)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(6, 0)                                                                             
+Goku Lv1 takes 3 power damage                                                                       
+Goku Lv1's power decreases from 3(2) to 0(0)                                                        
+Goku takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                          
+Goku takes 1 life damage: Red Back Kick (Physical Combat - Attack)                                  
+Goku recycles Earth Dragon Ball 4 (Non-Combat)                                                      
+Goku takes 1 life damage: Goku's Energy Defense (Energy Combat - Defense)                           
+Vegeta discards Goku Anger Attack (Physical Combat - Attack)                                        
+
+---------- Attack Phase 8.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 3 | Discard: 20 | Removed: 1             │ Hand: 2 | Discard: 39 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku attacks with Goku's Surprise Attack                                                            
+  - Physical attack doing 5 power stages of damage.                                                 
+Goku's attack damage estimate: Damage(9, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(9, 0)                                                                           
+Vegeta HT Lv1 takes 9 power damage                                                                  
+Vegeta HT Lv1's power decreases from 10(4) to 1(3)                                                  
+Goku discards Goku's Surprise Attack (Physical Combat - Attack)                                     
+
+---------- Attack Phase 8.5: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 2 | Discard: 21 | Removed: 1             │ Hand: 2 | Discard: 39 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.3 Vegeta     1(3)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 8.6: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 68/115 HP                        │
+│ Hand: 2 | Discard: 21 | Removed: 1             │ Hand: 2 | Discard: 39 | Removed: 1              │
+│ Earth Dragon Ball 7                            │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.3 Vegeta     1(3)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku attacks with Blue Forward Foot Sweep                                                           
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Vegeta's anger decreases from 3 to 2                                                                
+Goku's attack damage estimate: Damage(8, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(8, 0)                                                                           
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 1(3) to 0(0)                                                   
+Vegeta takes 1 life damage: Blazing Anger! (Non-Combat)                                             
+Vegeta takes 1 life damage: Goku's Mixing Drill (Non-Combat)                                        
+Vegeta takes 1 life damage: Ally's Sacrifice (Combat - Defense)                                     
+Vegeta takes 1 life damage: Senzu Bean (Non-Combat)                                                 
+Vegeta takes 1 life damage: Saibaimen Lv1 (Personality)                                             
+Vegeta takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                             
+Vegeta recycles Earth Dragon Ball 2 (Non-Combat)                                                    
+Vegeta takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                      
+Goku steals Earth Dragon Ball 1!                                                                    
+Goku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                    
+
+---------- Attack Phase 8.7: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 61/115 HP                        │
+│ Hand: 1 | Discard: 22 | Removed: 1             │ Hand: 2 | Discard: 46 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 8.8: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 61/115 HP                        │
+│ Hand: 1 | Discard: 22 | Removed: 1             │ Hand: 2 | Discard: 46 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku passes                                                                                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Goku's Energy Defense (Energy Combat - Defense)                                     
+
+====================================================================================================
+========== Turn 9: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 18/50 HP                          │ Vegeta [CPU] - 61/115 HP                        │
+│ Hand: 1 | Discard: 22 | Removed: 1             │ Hand: 1 | Discard: 47 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Power Up! (Non-Combat)                                                                   
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Goku plays Orange Off-Balancing Drill (Non-Combat)                                                  
+  - Stop the first physical attack made on you in a combat.                                         
+Goku Lv1's power increases from 0(0) to 1(1)                                                        
+Tien Lv1's power increases from 0(0) to 1(1)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 61/115 HP                        │
+│ Hand: 2 | Discard: 22 | Removed: 1             │ Hand: 1 | Discard: 47 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 9.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 58/115 HP                        │
+│ Hand: 2 | Discard: 22 | Removed: 1             │ Hand: 4 | Discard: 47 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.2 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku attacks with Final Physical Attack                                                             
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku discards Goku's Capturing Drill (Non-Combat)                                                   
+Goku's attack damage estimate: Damage(6, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta uses Black Side Kick to defend                                                               
+  - Stops a foe's physical attack. Raise card user's anger level 2.                                 
+Vegeta's anger increases from 2 to 4                                                                
+Vegeta discards Black Side Kick (Physical Combat - Defense)                                         
+
+---------- Attack Phase 9.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 58/115 HP                        │
+│ Hand: 1 | Discard: 23 | Removed: 1             │ Hand: 3 | Discard: 48 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.4 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 9.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 58/115 HP                        │
+│ Hand: 1 | Discard: 23 | Removed: 1             │ Hand: 3 | Discard: 48 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.4 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku passes                                                                                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Straining Ankle Smash Move (Energy Combat - Defense)                                
+Vegeta discards Saiyan Truce Card (Combat - Attack)                                                 
+
+====================================================================================================
+========== Turn 10: Vegeta =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 58/115 HP                        │
+│ Hand: 1 | Discard: 23 | Removed: 1             │ Hand: 1 | Discard: 50 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.4 Vegeta     0(0)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │                                                 │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Earth Dragon Ball 5 (Non-Combat)                                                       
+  - Raise any one of your personalities to their highest power stage. Raise your anger 2 levels.    
+    Draw 2 cards. Place the top 2 cards of your discard pile at the bottom of your Life Deck.       
+Vegeta HT Lv1's power increases from 0(0) to 10(4)                                                  
+Vegeta's anger increases from 4 to 5                                                                
+Vegeta levels up to Lv2!                                                                            
+Vegeta Lv2's power increases from 5(4) to 10(4)                                                     
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta rejuvenates with Saiyan Truce Card (Combat - Attack)                                         
+Vegeta rejuvenates with Straining Ankle Smash Move (Energy Combat - Defense)                        
+Vegeta plays Power Up! (Non-Combat)                                                                 
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Vegeta plays Orange Lifting Drill (Non-Combat)                                                      
+  - Once per Combat, in place of an attack, discard all of your opponents' Drills.                  
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 15/50 HP                          │ Vegeta [CPU] - 55/115 HP                        │
+│ Hand: 1 | Discard: 23 | Removed: 1             │ Hand: 3 | Discard: 48 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv2.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Power Up!                                       │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │ Orange Lifting Drill                            │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 10.1: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 12/50 HP                          │ Vegeta [CPU] - 55/115 HP                        │
+│ Hand: 4 | Discard: 23 | Removed: 1             │ Hand: 3 | Discard: 48 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv2.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Power Up!                                       │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │ Orange Lifting Drill                            │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Black Fore Fist Punch                                                           
+  - Energy attack doing 6 life cards of damage. If successful, your opponent loses 3 power stages.  
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Vegeta Lv2's power decreases from 10(4) to 8(4)                                                     
+Vegeta's attack damage estimate: Damage(0, 6)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(0, 6)                                                                             
+Goku takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                        
+Goku takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                        
+Goku takes 1 life damage: Krillin's Physical Defense (Combat - Defense)                             
+Goku takes 1 life damage: Orange Arm Bar (Physical Combat - Attack)                                 
+Goku takes 1 life damage: Goku's Lucky Break (Non-Combat)                                           
+Goku removes Earth Dragon Ball 5 (Non-Combat) from game                                             
+Goku takes 1 life damage: Goku's Physical Attack (Physical Combat - Attack)                         
+Vegeta steals Earth Dragon Ball 7!                                                                  
+Goku Lv1's power decreases from 1(1) to 0(0)                                                        
+Vegeta discards Black Fore Fist Punch (Energy Combat - Attack)                                      
+
+---------- Attack Phase 10.2: Goku -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 5/50 HP                           │ Vegeta [CPU] - 55/115 HP                        │
+│ Hand: 4 | Discard: 29 | Removed: 2             │ Hand: 2 | Discard: 49 | Removed: 1              │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 5,7                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv2.0 Vegeta     8(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Goku's Touch                                   │ Power Up!                                       │
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │ Orange Lifting Drill                            │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku attacks with Goku Anger Attack                                                                 
+  - This physical attack does double the normal damage if successful.                               
+Goku's attack damage estimate: Damage(4, 0)                                                         
+  - Damage modified by Goku's: Orange Joint Restraint Drill                                         
+Vegeta has no defense                                                                               
+Vegeta takes Damage(4, 0)                                                                           
+Vegeta Lv2 takes 4 power damage                                                                     
+Vegeta Lv2's power decreases from 8(4) to 4(4)                                                      
+Goku uses Goku's Touch                                                                              
+  - Use after you perform a successful physical attack to capture an opponent's Dragon Ball. Remove 
+    from the game after use.                                                                        
+Goku steals Earth Dragon Ball 7!                                                                    
+Goku removes Goku's Touch (Non-Combat) from game                                                    
+Goku discards Goku Anger Attack (Physical Combat - Attack)                                          
+
+---------- Attack Phase 10.3: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 5/50 HP                           │ Vegeta [CPU] - 55/115 HP                        │
+│ Hand: 3 | Discard: 30 | Removed: 3             │ Hand: 2 | Discard: 49 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv2.0 Vegeta     4(4)pwr                        │
+│ Lv1   Tien       1(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │ Orange Lifting Drill                            │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Orange Arm Bar                                                                  
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta's attack damage estimate: Damage(8, 0)                                                       
+Goku has no defense                                                                                 
+Goku takes Damage(8, 0)                                                                             
+Goku selects Tien Lv1 to take damage                                                                
+Tien Lv1 takes 1 power damage                                                                       
+Tien Lv1's power decreases from 1(1) to 0(0)                                                        
+Goku takes 1 life damage: Gohan Lv1 (Personality)                                                   
+Goku takes 1 life damage: Goku's Surprise Attack (Physical Combat - Attack)                         
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Goku [CPU] - 2/50 HP                           │ Vegeta [CPU] - 55/115 HP                        │
+│ Hand: 3 | Discard: 32 | Removed: 3             │ Hand: 2 | Discard: 49 | Removed: 1              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv2.1 Vegeta     4(4)pwr                        │
+│ Lv1   Tien       0(0)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │ Orange Lifting Drill                            │
+│ Orange Off-Balancing Drill                     │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta (CPU2) wins!                                                                                 
+Goku can take no more life damage                                                                   
+[exit code: 0]

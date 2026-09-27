@@ -24,8 +24,31 @@ async function init() {
   await micropip.install('tabulate');
   await micropip.install(new URL(DBZ_WHEEL, self.location.href).href);
 
-  postMessage(JSON.stringify({type: 'ready'}));
+  let decks;
+  try {
+    decks = await listDecks(pyodide);
+  } catch (err) {
+    postMessage(JSON.stringify({type: 'error', message: `listDecks failed: ${err}`}));
+    throw err;
+  }
+  postMessage(JSON.stringify({type: 'ready', decks}));
   return pyodide;
+}
+
+// Lists dbz/decks/* (excluding editor backup files like 'goku_survive~')
+// so the UI's deck selects always match whatever decks are actually
+// bundled in the wheel, instead of a hardcoded JS list.
+async function listDecks(pyodide) {
+  await pyodide.runPythonAsync(`
+    import pathlib
+    import dbz
+
+    _decks_dir = pathlib.Path(dbz.__file__).parent / 'decks'
+    _deck_names = sorted(
+        p.name for p in _decks_dir.iterdir()
+        if p.is_file() and not p.name.endswith('~'))
+  `);
+  return pyodide.globals.get('_deck_names').toJs();
 }
 
 // Called synchronously from Python (dbz.io_backend.BrowserBackend.read_choice)
@@ -44,52 +67,36 @@ self.dbzReadChoice = function (optionsJson) {
   return new TextDecoder().decode(textView.slice(0, length));
 };
 
-function cpuVsCpuCode(seed) {
-  return `
-    import random
+// SEED/DECK1_NAME/DECK2_NAME are passed in as Pyodide globals (set by
+// runGame's caller) rather than interpolated into this source string, so
+// user-controlled values never get spliced into Python source text.
+const INTERACTIVE_CODE = `
+  import random
 
-    from dbz.deck import Deck
-    from dbz.io_backend import BrowserBackend
-    from dbz.runner import Runner
-    from dbz.state import State
+  from dbz.deck import Deck
+  from dbz.io_backend import BrowserBackend
+  from dbz.runner import Runner
+  from dbz.state import State
 
-    random.seed(${seed})
-    State.IO_BACKEND = BrowserBackend()
-    State.INTERACTIVE = False
-    State.QUIET = False
+  random.seed(SEED)
+  State.SEED = SEED
+  State.IO_BACKEND = BrowserBackend()
+  State.INTERACTIVE = True
+  State.QUIET = False
 
-    deck1 = Deck.from_spec('goku_survival')
-    deck2 = Deck.from_spec('goku_survival')
-    runner = Runner(deck1, deck2)
-    winning_player_num = runner.run()
-  `;
-}
+  deck1 = Deck.from_spec(DECK1_NAME)
+  deck2 = Deck.from_spec(DECK2_NAME)
+  runner = Runner(deck1, deck2)
+  winning_player_num = runner.run()
+`;
 
-function interactiveCode(seed) {
-  return `
-    import random
-
-    from dbz.deck import Deck
-    from dbz.io_backend import BrowserBackend
-    from dbz.runner import Runner
-    from dbz.state import State
-
-    random.seed(${seed})
-    State.IO_BACKEND = BrowserBackend()
-    State.INTERACTIVE = True
-    State.QUIET = False
-
-    deck1 = Deck.from_spec('goku')
-    deck2 = Deck.from_spec('vegeta')
-    runner = Runner(deck1, deck2)
-    winning_player_num = runner.run()
-  `;
-}
-
-async function runGame(pyCode) {
+async function runInteractive(seed, deck1, deck2) {
   const pyodide = await pyodideReadyPromise;
   try {
-    await pyodide.runPythonAsync(pyCode);
+    pyodide.globals.set('SEED', seed);
+    pyodide.globals.set('DECK1_NAME', deck1);
+    pyodide.globals.set('DECK2_NAME', deck2);
+    await pyodide.runPythonAsync(INTERACTIVE_CODE);
     const winner = pyodide.globals.get('winning_player_num');
     postMessage(JSON.stringify({type: 'done', winner}));
   } catch (err) {
@@ -99,14 +106,12 @@ async function runGame(pyCode) {
 
 self.onmessage = async (event) => {
   const {type} = event.data;
-  const seed = event.data.seed ?? 1;
 
   if (type === 'init_sab') {
     controlArray = new Int32Array(event.data.controlSAB);
     textView = new Uint8Array(event.data.textSAB);
-  } else if (type === 'run_cpu_vs_cpu') {
-    await runGame(cpuVsCpuCode(seed));
   } else if (type === 'run_interactive') {
-    await runGame(interactiveCode(seed));
+    const {seed, deck1, deck2} = event.data;
+    await runInteractive(seed, deck1, deck2);
   }
 };

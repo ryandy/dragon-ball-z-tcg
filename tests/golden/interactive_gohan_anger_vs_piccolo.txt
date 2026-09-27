@@ -1,0 +1,1483 @@
+BlackGohan shuffles their deck                                                                      
+Piccolo shuffles their deck                                                                         
+BlackGohan will go first                                                                            
+====================================================================================================
+========== Turn 1: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 59/63 HP                     │ Piccolo [CPU] - 46/50 HP                        │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      5(1)pwr                       │ Lv1.0 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds Earth Dragon Ball 3 (Non-Combat) to hand                                            
+BlackGohan adds Vegeta's Smirk (Non-Combat) to hand                                                 
+BlackGohan adds Gohan's Physical Attack (Physical Combat - Attack) to hand                          
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Earth Dragon Ball 3 (Non-Combat)                                                                 
+     Draw three cards if you wish, and place the top discarded card at the bottom of your life deck.
+2. Vegeta's Smirk (Non-Combat)                                                                      
+     Select any Dragon Ball in your deck and put it into play. Remove from the game after use.      
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+╒══════════════════════════════════════════════════════════════════════════════════════════════════╕
+│ Help Menu                                                                                        │
+├──────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ Enter the number corresponding to the action you'd like to take.                                 │
+│                                                                                                  │
+│ Other options:                                                                                   │
+│   help    - review these options                                                                 │
+│   actions - review your available actions                                                        │
+│   hand    - see details of cards in hand                                                         │
+│   discard - see details of discarded cards                                                       │
+│   removed - see details of cards removed from the game                                           │
+│   field   - see details of all cards in the field of play                                        │
+│                                                                                                  │
+│ For a refresher on Dragon Ball Z TCG's rules and mechanics:                                      │
+│   TODO                                                                                           │
+│                                                                                                  │
+│ Understanding power and damage:                                                                  │
+│   Two numbers are used to describe a personality's POWER                                         │
+│   First is the personality's power stage, a number from 0 to 10                                  │
+│   Second is the corresponding index in the Physical Attack Table (PAT)                           │
+│   The relationship of power stage & PAT index is unique to each personality                      │
+│   Physical damage is calculated as the difference of PAT indexes                                 │
+│   e.g. Goku may have power "7(3)", meaning power stage 7/10 and PAT index 3                      │
+│                                                                                                  │
+│   Two numbers are used to describe an attack's DAMAGE                                            │
+│   These numbers correspond to the effect on your power stages and life deck                      │
+│   e.g. Damage(1, 4) is 1 stage of power damage and 4 draws of life damage                        │
+╘══════════════════════════════════════════════════════════════════════════════════════════════════╛
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Earth Dragon Ball 3 (Non-Combat)                                                   
+>>> Choose an action:                                                                               
+1. Draw 3 cards.                                                                                    
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan adds Black Front Kick (Energy Combat - Attack) to hand                                   
+BlackGohan adds Earth Dragon Ball 7 (Non-Combat) to hand                                            
+BlackGohan adds Black Rear Spin Kick (Energy Combat - Defense) to hand                              
+BlackGohan failed to rejuvenate because the discard pile is empty                                   
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Vegeta's Smirk (Non-Combat)                                                                      
+     Select any Dragon Ball in your deck and put it into play. Remove from the game after use.      
+2. Earth Dragon Ball 7 (Non-Combat)                                                                 
+     Play this card during combat to end the battle. Pick 3 cards out of your discard pile and place
+     them at the top of your life deck. All opponents' anger levels shift down 2.                   
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+/. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Vegeta's Smirk (Non-Combat)                                                        
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Earth Dragon Ball 7 (Non-Combat)                                                                 
+     Play this card during combat to end the battle. Pick 3 cards out of your discard pile and place
+     them at the top of your life deck. All opponents' anger levels shift down 2.                   
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+/. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Earth Dragon Ball 7 (Non-Combat)                                                   
+>>> Select a Non-Combat card to play from your hand:                                                
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+/. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: Gohan Lv1's power increases from 5(1) to 7(2)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 53/63 HP                     │ Piccolo [CPU] - 46/50 HP                        │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      7(2)pwr                       │ Lv1.0 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Declare Combat                                                                                   
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan declares combat!                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 1.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 53/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      7(2)pwr                       │ Lv1.0 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+2. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+3. Vegeta's Smirk                                                                                   
+     Select any Dragon Ball in your deck and put it into play. Remove from the game after use.      
+4. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+5. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan's Physical Attack                                                     
+BlackGohan's anger increases from 0 to 1                                                            
+>>> Select a personality to gain 5 power stage(s):                                                  
+1. Lv1.1 Gohan      7(2)pwr                                                                         
+     If a successful energy attack is performed against Gohan, he may raise his anger 1 level once  
+     per combat.                                                                                    
+>>> Select a personality to gain 5 power stage(s): Gohan Lv1's power increases from 7(2) to 10(3)                                                      
+BlackGohan's attack damage estimate: Damage(2, 0)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(2, 0)                                                                          
+Piccolo Lv1 takes 2 power damage                                                                    
+Piccolo Lv1's power decreases from 5(2) to 3(2)                                                     
+BlackGohan discards Gohan's Physical Attack (Physical Combat - Attack)                              
+
+---------- Attack Phase 1.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 53/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan     10(3)pwr                       │ Lv1.0 Piccolo    3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Jump Turn Kick                                                           
+  - Energy attack. Raise card user's anger level 1.                                                 
+Piccolo Lv1's power decreases from 3(2) to 1(1)                                                     
+Piccolo's anger increases from 0 to 1                                                               
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+>>> Select a card power for defense:                                                                
+1. Gohan Lv1                                                                                        
+     If a successful energy attack is performed against Gohan, he may raise his anger 1 level once  
+     per combat.                                                                                    
+2. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+/. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan uses Gohan Lv1 to defend                                                                 
+BlackGohan's anger increases from 1 to 2                                                            
+BlackGohan takes Damage(0, 4)                                                                       
+BlackGohan takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                         
+BlackGohan takes 1 life damage: Goku's Lucky Break (Non-Combat)                                     
+BlackGohan takes 1 life damage: Enraged! (Non-Combat)                                               
+BlackGohan takes 1 life damage: Black Side Kick (Physical Combat - Defense)                         
+Piccolo discards Black Jump Turn Kick (Energy Combat - Attack)                                      
+
+---------- Attack Phase 1.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 49/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 2 | Discard: 5 | Removed: 0              │ Hand: 2 | Discard: 1 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan     10(3)pwr                       │ Lv1.1 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Black Front Kick                                                                                 
+     Energy attack doing 5 life card draws in damage and costing 4 stages of power to perform. Raise
+     card user's anger level 2.                                                                     
+2. Vegeta's Smirk                                                                                   
+     Select any Dragon Ball in your deck and put it into play. Remove from the game after use.      
+3. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+4. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Black Front Kick                                                            
+Gohan Lv1's power decreases from 10(3) to 6(2)                                                      
+BlackGohan's anger increases from 2 to 4                                                            
+BlackGohan's attack damage estimate: Damage(0, 5)                                                   
+Piccolo uses Black Axe Heel Kick to defend                                                          
+  - Stops a foe's energy attack. Raise card user's anger level 1.                                   
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+BlackGohan discards Black Front Kick (Energy Combat - Attack)                                       
+
+---------- Attack Phase 1.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 49/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 0              │ Hand: 1 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan      6(2)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 49/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 0              │ Hand: 1 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Balls 3,7                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan      6(2)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Smirk                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Vegeta's Smirk                                                                                   
+     Select any Dragon Ball in your deck and put it into play. Remove from the game after use.      
+2. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan uses Vegeta's Smirk (Non-Combat)                                                         
+>>> Select a Dragon Ball to play from your deck:                                                    
+1. Earth Dragon Ball 4                                                                              
+     End the very next combat you are forced into before you sustain damage. Your anger level       
+     increases 2.                                                                                   
+2. Earth Dragon Ball 5                                                                              
+     Raise any one of your personalities to their highest power stage. Raise your anger 2 levels.   
+     Draw 2 cards. Place the top 2 cards of your discard pile at the bottom of your Life Deck.      
+>>> Select a Dragon Ball to play from your deck: BlackGohan plays Earth Dragon Ball 4 (Non-Combat)                                                   
+BlackGohan's anger increases from 4 to 5                                                            
+BlackGohan levels up to Lv2!                                                                        
+Gohan Lv2's power increases from 5(2) to 10(3)                                                      
+BlackGohan shuffles their deck                                                                      
+BlackGohan removes Vegeta's Smirk (Non-Combat) from game                                            
+
+---------- Attack Phase 1.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.7: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 43/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan Lv2                                                                                        
+     Once during the game, he can turn into Kong Gohan, inflicting 8 stages of physical damage in   
+     his first round of combat.                                                                     
+2. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan Lv2                                                                   
+BlackGohan's attack damage estimate: Damage(8, 0)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(8, 0)                                                                          
+Piccolo Lv1 takes 1 power damage                                                                    
+Piccolo Lv1's power decreases from 1(1) to 0(0)                                                     
+Piccolo takes 1 life damage: Piccolo's Physical Defense (Physical Combat - Defense)                 
+Piccolo takes 1 life damage: Blazing Anger! (Non-Combat)                                            
+Piccolo takes 1 life damage: Piccolo's Flight (Non-Combat)                                          
+Piccolo takes 1 life damage: Earth Dragon Ball Combat (Energy Combat - Attack)                      
+Piccolo takes 1 life damage: Eyes of the Dragon (Non-Combat)                                        
+Piccolo takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                     
+Piccolo takes 1 life damage: Piccolo Defense Drill (Non-Combat)                                     
+
+---------- Attack Phase 1.8: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 36/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 9 | Removed: 0               │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.9: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 36/50 HP                        │
+│ Hand: 1 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 9 | Removed: 0               │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Final Physical Attack                                                       
+>>> Select a card to discard:                                                                       
+1. Black Rear Spin Kick (Energy Combat - Defense)                                                   
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+>>> Select a card to discard: BlackGohan discards Black Rear Spin Kick (Energy Combat - Defense)                                  
+BlackGohan's attack damage estimate: Damage(4, 0)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(4, 0)                                                                          
+Piccolo Lv1 takes 0 power damage                                                                    
+Piccolo takes 1 life damage: Grabbing the Tail (Combat - Attack)                                    
+Piccolo takes 1 life damage: Black Bear Hug Drill (Non-Combat)                                      
+Piccolo takes 1 life damage: Blue Big Outside Drop (Physical Combat - Defense)                      
+Piccolo removes Earth Dragon Ball 3 (Non-Combat) from game                                          
+Piccolo takes 1 life damage: Black Takedown Drill (Non-Combat)                                      
+
+---------- Attack Phase 1.10: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 31/50 HP                        │
+│ Hand: 0 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 13 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.11: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 31/50 HP                        │
+│ Hand: 0 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 13 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Pass                                                                                             
+>>> Choose an action: BlackGohan passes                                                                                   
+
+====================================================================================================
+========== Turn 2: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 31/50 HP                        │
+│ Hand: 0 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 13 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Power Up! (Non-Combat)                                                                
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Piccolo Lv1's power increases from 0(0) to 1(1)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 28/50 HP                        │
+│ Hand: 0 | Discard: 7 | Removed: 1              │ Hand: 3 | Discard: 13 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo chooses to skip combat                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Black Knife Hand Strike (Energy Combat - Attack)                                   
+Piccolo discards Black Jump Turn Kick (Energy Combat - Attack)                                      
+Piccolo rejuvenates with Black Jump Turn Kick (Energy Combat - Attack)                              
+
+====================================================================================================
+========== Turn 3: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 48/63 HP                     │ Piccolo [CPU] - 29/50 HP                        │
+│ Hand: 0 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds Black Axe Heel Kick (Energy Combat - Defense) to hand                               
+BlackGohan adds Black Turning Kick (Energy Combat - Attack) to hand                                 
+BlackGohan adds Gohan's Anger (Non-Combat) to hand                                                  
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Gohan's Anger (Non-Combat)                                                                       
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+/. Black Turning Kick                                                                               
+     Energy attack doing 5 life card draws of damage or stops a physical attack. Raise card user's  
+     anger level 1.                                                                                 
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Gohan's Anger (Non-Combat)                                                         
+>>> Select a Non-Combat card to play from your hand:                                                
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+/. Black Turning Kick                                                                               
+     Energy attack doing 5 life card draws of damage or stops a physical attack. Raise card user's  
+     anger level 1.                                                                                 
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: ╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 29/50 HP                        │
+│ Hand: 2 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Declare Combat                                                                                   
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan declares combat!                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 3.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 26/50 HP                        │
+│ Hand: 2 | Discard: 7 | Removed: 1              │ Hand: 4 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Black Turning Kick                                                                               
+     Energy attack doing 5 life card draws of damage or stops a physical attack. Raise card user's  
+     anger level 1.                                                                                 
+2. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+3. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+4. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Black Turning Kick                                                          
+Gohan Lv2's power decreases from 10(3) to 8(3)                                                      
+BlackGohan's anger increases from 0 to 1                                                            
+BlackGohan's attack damage estimate: Damage(0, 5)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 5)                                                                          
+Piccolo recycles Earth Dragon Ball 1 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Blue Big Outside Drop (Physical Combat - Defense)                      
+Piccolo takes 1 life damage: Red Front Kick (Physical Combat - Attack)                              
+Piccolo recycles Earth Dragon Ball 5 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Orange Hip Throw (Physical Combat - Attack)                            
+Piccolo takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                       
+Piccolo takes 1 life damage: Red Back Kick (Physical Combat - Attack)                               
+BlackGohan discards Black Turning Kick (Energy Combat - Attack)                                     
+
+---------- Attack Phase 3.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 21/50 HP                        │
+│ Hand: 1 | Discard: 8 | Removed: 1              │ Hand: 4 | Discard: 19 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │ Power Up!                                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo uses Power Up! (Non-Combat)                                                                 
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Piccolo Lv1's power increases from 1(1) to 6(3)                                                     
+Piccolo rejuvenates with Red Back Kick (Physical Combat - Attack)                                   
+Piccolo discards Power Up! (Non-Combat)                                                             
+
+---------- Attack Phase 3.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 22/50 HP                        │
+│ Hand: 1 | Discard: 8 | Removed: 1              │ Hand: 4 | Discard: 19 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+2. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan uses Gohan's Anger (Non-Combat)                                                          
+BlackGohan's anger increases from 1 to 3                                                            
+BlackGohan removes Gohan's Anger (Non-Combat) from game                                             
+
+---------- Attack Phase 3.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 22/50 HP                        │
+│ Hand: 1 | Discard: 8 | Removed: 2              │ Hand: 4 | Discard: 19 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Earth Dragon Ball Combat                                                       
+  - Energy attack. If successful, capture a Dragon Ball.                                            
+Piccolo Lv1's power decreases from 6(3) to 4(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+>>> Select a card power for defense:                                                                
+1. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan uses Black Axe Heel Kick to defend                                                       
+BlackGohan's anger increases from 3 to 4                                                            
+BlackGohan discards Black Axe Heel Kick (Energy Combat - Defense)                                   
+Piccolo discards Earth Dragon Ball Combat (Energy Combat - Attack)                                  
+
+---------- Attack Phase 3.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 22/50 HP                        │
+│ Hand: 0 | Discard: 9 | Removed: 2              │ Hand: 3 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Pass                                                                                             
+>>> Choose an action: BlackGohan passes                                                                                   
+
+---------- Attack Phase 3.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 22/50 HP                        │
+│ Hand: 0 | Discard: 9 | Removed: 2              │ Hand: 3 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo recycles Earth Dragon Ball 6 (Non-Combat)                                                   
+Piccolo removes Earth Dragon Ball 7 (Non-Combat) from game                                          
+
+====================================================================================================
+========== Turn 4: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 23/50 HP                        │
+│ Hand: 0 | Discard: 9 | Removed: 2              │ Hand: 1 | Discard: 20 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Piccolo Defense Drill (Non-Combat)                                                    
+  - All energy attacks performed against you do 1 less life card of damage.                         
+Piccolo Lv1's power increases from 4(2) to 5(2)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 20/50 HP                        │
+│ Hand: 0 | Discard: 9 | Removed: 2              │ Hand: 3 | Discard: 20 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo chooses to skip combat                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Blue Forward Foot Sweep (Physical Combat - Attack)                                 
+Piccolo discards Red Back Kick (Physical Combat - Attack)                                           
+Piccolo rejuvenates with Red Back Kick (Physical Combat - Attack)                                   
+
+====================================================================================================
+========== Turn 5: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 45/63 HP                     │ Piccolo [CPU] - 21/50 HP                        │
+│ Hand: 0 | Discard: 9 | Removed: 2              │ Hand: 1 | Discard: 21 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan      8(3)pwr                       │ Lv1.2 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds Gohan's Anger (Non-Combat) to hand                                                  
+BlackGohan adds The Untroubled Mind is Focused (Non-Combat) to hand                                 
+BlackGohan adds Black Axe Heel Kick (Energy Combat - Defense) to hand                               
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Gohan's Anger (Non-Combat)                                                                       
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+2. The Untroubled Mind is Focused (Non-Combat)                                                      
+     Remove someone else's drill card or ally from the game. Remove from the game after use.        
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Gohan's Anger (Non-Combat)                                                         
+>>> Select a Non-Combat card to play from your hand:                                                
+1. The Untroubled Mind is Focused (Non-Combat)                                                      
+     Remove someone else's drill card or ally from the game. Remove from the game after use.        
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays The Untroubled Mind is Focused (Non-Combat)                                        
+>>> Select a Non-Combat card to play from your hand:                                                
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: Gohan Lv2's power increases from 8(3) to 10(3)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 21/50 HP                        │
+│ Hand: 1 | Discard: 9 | Removed: 2              │ Hand: 1 | Discard: 21 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │                                                 │
+│ The Untroubled Mind is Focused                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Declare Combat                                                                                   
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan declares combat!                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 5.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 18/50 HP                        │
+│ Hand: 1 | Discard: 9 | Removed: 2              │ Hand: 4 | Discard: 21 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan     10(3)pwr                       │ Lv1.2 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Gohan's Anger                                  │                                                 │
+│ The Untroubled Mind is Focused                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+2. The Untroubled Mind is Focused                                                                   
+     Remove someone else's drill card or ally from the game. Remove from the game after use.        
+3. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+4. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan uses Gohan's Anger (Non-Combat)                                                          
+BlackGohan's anger increases from 4 to 5                                                            
+BlackGohan levels up to Lv3!                                                                        
+Gohan Lv3's power increases from 5(3) to 10(4)                                                      
+BlackGohan removes Gohan's Anger (Non-Combat) from game                                             
+
+---------- Attack Phase 5.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 18/50 HP                        │
+│ Hand: 1 | Discard: 9 | Removed: 3              │ Hand: 4 | Discard: 21 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.0 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ The Untroubled Mind is Focused                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo's Energy Attack                                                        
+  - Does 6 life card draws of damage and costs 5 stages of power drain to perform.                  
+Piccolo Lv1's power decreases from 5(2) to 0(0)                                                     
+Piccolo's attack damage estimate: Damage(0, 6)                                                      
+>>> Select a card power for defense:                                                                
+1. Black Axe Heel Kick                                                                              
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan uses Black Axe Heel Kick to defend                                                       
+BlackGohan's anger increases from 0 to 1                                                            
+BlackGohan discards Black Axe Heel Kick (Energy Combat - Defense)                                   
+Piccolo discards Piccolo's Energy Attack (Energy Combat - Attack)                                   
+
+---------- Attack Phase 5.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 18/50 HP                        │
+│ Hand: 0 | Discard: 10 | Removed: 3             │ Hand: 3 | Discard: 22 | Removed: 2              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ The Untroubled Mind is Focused                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Defense Drill                           │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. The Untroubled Mind is Focused                                                                   
+     Remove someone else's drill card or ally from the game. Remove from the game after use.        
+2. Gohan Lv3                                                                                        
+     Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.       
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan uses The Untroubled Mind is Focused (Non-Combat)                                         
+>>> Select an opponent's card to remove from the game:                                              
+1. Piccolo Defense Drill                                                                            
+     All energy attacks performed against you do 1 less life card of damage.                        
+>>> Select an opponent's card to remove from the game: Piccolo removes Piccolo Defense Drill (Non-Combat) from game                                        
+BlackGohan discards The Untroubled Mind is Focused (Non-Combat)                                     
+
+---------- Attack Phase 5.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 18/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 3 | Discard: 22 | Removed: 3              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Final Physical Attack                                                          
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+Piccolo's attack damage estimate: Damage(0, 0)                                                      
+>>> Select a card power for defense:                                                                
+1. Pass                                                                                             
+>>> Select a card power for defense: BlackGohan has no defense                                                                           
+BlackGohan takes Damage(0, 0)                                                                       
+
+---------- Attack Phase 5.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 18/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 2 | Discard: 23 | Removed: 3              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan Lv3                                                                                        
+     Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.       
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan Lv3                                                                   
+Gohan Lv3's power decreases from 10(4) to 9(4)                                                      
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 3)                                                                          
+Piccolo removes Earth Dragon Ball 4 (Non-Combat) from game                                          
+Piccolo takes 1 life damage: Piccolo's Energy Attack (Energy Combat - Attack)                       
+Piccolo takes 1 life damage: Piccolo's Physical Defense (Physical Combat - Defense)                 
+Piccolo takes 1 life damage: Red Front Kick (Physical Combat - Attack)                              
+
+---------- Attack Phase 5.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 14/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 2 | Discard: 26 | Removed: 4              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 5.7: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 14/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 2 | Discard: 26 | Removed: 4              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Pass                                                                                             
+>>> Choose an action: BlackGohan passes                                                                                   
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Orange Spontaneous Drill (Non-Combat)                                              
+
+====================================================================================================
+========== Turn 6: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 14/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 1 | Discard: 27 | Removed: 4              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.2 Piccolo    0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Piccolo Honor Duel! (Non-Combat)                                                      
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Piccolo Lv1's power increases from 0(0) to 1(1)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 11/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 3 | Discard: 27 | Removed: 4              │
+│ Earth Dragon Balls 3,4(*),7                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Honor Duel!                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan uses Earth Dragon Ball 4                                                                 
+  - End the very next combat you are forced into before you sustain damage.                         
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Vegeta's Physical Stance (Physical Combat - Defense)                               
+Piccolo discards Orange Standing Fist Punch (Physical Combat - Attack)                              
+Piccolo rejuvenates with Orange Standing Fist Punch (Physical Combat - Attack)                      
+
+====================================================================================================
+========== Turn 7: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 42/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 0 | Discard: 11 | Removed: 3             │ Hand: 1 | Discard: 28 | Removed: 4              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Honor Duel!                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds Goku's Truce (Combat - Defense) to hand                                             
+BlackGohan adds Gohan's Physical Attack (Physical Combat - Attack) to hand                          
+BlackGohan adds Black Elbow Strike (Physical Combat - Defense) to hand                              
+>>> Select a Non-Combat card to play from your hand:                                                
+/. Goku's Truce                                                                                     
+     Stops a successful energy or physical attack.                                                  
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+/. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: Gohan Lv3's power increases from 9(4) to 10(4)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 39/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 3 | Discard: 11 | Removed: 3             │ Hand: 1 | Discard: 28 | Removed: 4              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Piccolo Honor Duel!                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Declare Combat                                                                                   
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan declares combat!                                                                         
+Piccolo uses Piccolo Honor Duel!                                                                    
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Piccolo removes Piccolo Honor Duel! (Non-Combat) from game                                          
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 7.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 39/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 3 | Discard: 11 | Removed: 3             │ Hand: 4 | Discard: 25 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan     10(4)pwr                       │ Lv1.2 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan Lv3                                                                                        
+     Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.       
+2. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+3. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Goku's Truce                                                                                     
+     Stops a successful energy or physical attack.                                                  
+/. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+4. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan Lv3                                                                   
+Gohan Lv3's power decreases from 10(4) to 9(4)                                                      
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Piccolo uses Black Axe Heel Kick to defend                                                          
+  - Stops a foe's energy attack. Raise card user's anger level 1.                                   
+Piccolo's anger increases from 2 to 3                                                               
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+
+---------- Attack Phase 7.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 39/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 3 | Discard: 11 | Removed: 3             │ Hand: 3 | Discard: 26 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.3 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Hip Throw                                                               
+  - Physical Attack doing +2 stages of damage if successful. Raise card user's anger level 1.       
+Piccolo's anger increases from 3 to 4                                                               
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+>>> Select a card power for defense:                                                                
+1. Goku's Truce                                                                                     
+     Stops a successful energy or physical attack.                                                  
+2. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+/. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan uses Goku's Truce to defend                                                              
+BlackGohan discards Goku's Truce (Combat - Defense)                                                 
+Piccolo discards Orange Hip Throw (Physical Combat - Attack)                                        
+
+---------- Attack Phase 7.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 39/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 2 | Discard: 12 | Removed: 3             │ Hand: 2 | Discard: 27 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.1 Gohan      9(4)pwr                       │ Lv1.4 Piccolo    1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan's Physical Attack                                                                          
+     Physical attack. Raise your anger 1. Gain 5 power stages.                                      
+2. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan's Physical Attack                                                     
+BlackGohan's anger increases from 1 to 2                                                            
+>>> Select a personality to gain 5 power stage(s):                                                  
+1. Lv3.2 Gohan      9(4)pwr                                                                         
+     (/) Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.   
+>>> Select a personality to gain 5 power stage(s): Gohan Lv3's power increases from 9(4) to 10(4)                                                      
+BlackGohan's attack damage estimate: Damage(4, 0)                                                   
+Piccolo uses Piccolo's Physical Defense to defend                                                   
+  - Stops a physical attack. Gain 4 power stages.                                                   
+Piccolo Lv1's power increases from 1(1) to 5(2)                                                     
+Piccolo discards Piccolo's Physical Defense (Physical Combat - Defense)                             
+BlackGohan discards Gohan's Physical Attack (Physical Combat - Attack)                              
+
+---------- Attack Phase 7.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 39/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 1 | Discard: 13 | Removed: 3             │ Hand: 1 | Discard: 28 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv1.4 Piccolo    5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Jump Turn Kick                                                           
+  - Energy attack. Raise card user's anger level 1.                                                 
+Piccolo Lv1's power decreases from 5(2) to 3(2)                                                     
+Piccolo's anger increases from 4 to 5                                                               
+Piccolo levels up to Lv2!                                                                           
+Piccolo Lv2's power increases from 5(3) to 10(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+>>> Select a card power for defense:                                                                
+/. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan has no defense                                                                           
+BlackGohan takes Damage(0, 4)                                                                       
+BlackGohan takes 1 life damage: A Beginner's Heart is Dedicated (Non-Combat)                        
+BlackGohan takes 1 life damage: Nappa's Energy Aura (Energy Combat - Defense)                       
+BlackGohan takes 1 life damage: The Untroubled Mind is Focused (Non-Combat)                         
+BlackGohan takes 1 life damage: Black Side Kick (Physical Combat - Defense)                         
+Piccolo discards Black Jump Turn Kick (Energy Combat - Attack)                                      
+
+---------- Attack Phase 7.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 35/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 1 | Discard: 17 | Removed: 3             │ Hand: 0 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv2.0 Piccolo   10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Elbow Strike                                                                               
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Final Physical Attack                                                       
+>>> Select a card to discard:                                                                       
+1. Black Elbow Strike (Physical Combat - Defense)                                                   
+     Stops a foe's physical attack. Raise card user's anger level 1.                                
+>>> Select a card to discard: BlackGohan discards Black Elbow Strike (Physical Combat - Defense)                                  
+BlackGohan's attack damage estimate: Damage(1, 0)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(1, 0)                                                                          
+Piccolo Lv2 takes 1 power damage                                                                    
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+
+---------- Attack Phase 7.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 35/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 0 | Discard: 18 | Removed: 3             │ Hand: 0 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv2.0 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 9(4) to 8(3)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+>>> Select a card power for defense:                                                                
+1. Pass                                                                                             
+>>> Select a card power for defense: BlackGohan has no defense                                                                           
+BlackGohan takes Damage(0, 2)                                                                       
+BlackGohan takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                         
+BlackGohan takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                  
+
+---------- Attack Phase 7.7: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 33/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 0 | Discard: 20 | Removed: 3             │ Hand: 0 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv2.0 Piccolo    8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Pass                                                                                             
+>>> Choose an action: BlackGohan passes                                                                                   
+
+---------- Attack Phase 7.8: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 33/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 0 | Discard: 20 | Removed: 3             │ Hand: 0 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv2.0 Piccolo    8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+====================================================================================================
+========== Turn 8: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 33/63 HP                     │ Piccolo [CPU] - 12/50 HP                        │
+│ Hand: 0 | Discard: 20 | Removed: 3             │ Hand: 0 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan     10(4)pwr                       │ Lv2.0 Piccolo    8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Earth Dragon Ball 2 (Non-Combat)                                                      
+  - All foes have their power ratings changed to 2 stages higher than 0.                            
+Gohan Lv3's power decreases from 10(4) to 2(3)                                                      
+Piccolo Lv2's power increases from 8(3) to 10(4)                                                    
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 33/63 HP                     │ Piccolo [CPU] - 9/50 HP                         │
+│ Hand: 0 | Discard: 20 | Removed: 3             │ Hand: 2 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      2(3)pwr                       │ Lv2.0 Piccolo   10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+BlackGohan adds Gohan's Anger (Non-Combat) to hand                                                  
+BlackGohan adds Blazing Anger! (Non-Combat) to hand                                                 
+BlackGohan adds Goku's Truce (Combat - Defense) to hand                                             
+
+---------- Attack Phase 8.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 30/63 HP                     │ Piccolo [CPU] - 9/50 HP                         │
+│ Hand: 3 | Discard: 20 | Removed: 3             │ Hand: 2 | Discard: 29 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      2(3)pwr                       │ Lv2.0 Piccolo   10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Two Knuckle Punch                                                       
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 0 to 1                                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+>>> Select a card power for defense:                                                                
+1. Goku's Truce                                                                                     
+     Stops a successful energy or physical attack.                                                  
+/. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan uses Goku's Truce to defend                                                              
+BlackGohan discards Goku's Truce (Combat - Defense)                                                 
+Piccolo discards Orange Two Knuckle Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 8.2: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 30/63 HP                     │ Piccolo [CPU] - 9/50 HP                         │
+│ Hand: 2 | Discard: 21 | Removed: 3             │ Hand: 1 | Discard: 30 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      2(3)pwr                       │ Lv2.1 Piccolo   10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan Lv3                                                                                        
+     Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.       
+2. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan Lv3                                                                   
+Gohan Lv3's power decreases from 2(3) to 1(3)                                                       
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 3)                                                                          
+Piccolo takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                  
+Piccolo takes 1 life damage: Piccolo Sidestep! (Energy Combat - Defense)                            
+Piccolo takes 1 life damage: Black Jump Turn Kick (Energy Combat - Attack)                          
+
+---------- Attack Phase 8.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 30/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 2 | Discard: 21 | Removed: 3             │ Hand: 1 | Discard: 33 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      1(3)pwr                       │ Lv2.1 Piccolo   10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+>>> Select a card power for defense:                                                                
+/. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan has no defense                                                                           
+BlackGohan takes Damage(0, 2)                                                                       
+BlackGohan takes 1 life damage: Blazing Anger! (Non-Combat)                                         
+BlackGohan takes 1 life damage: Black Jump Turn Kick (Energy Combat - Attack)                       
+
+---------- Attack Phase 8.4: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 28/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 2 | Discard: 23 | Removed: 3             │ Hand: 1 | Discard: 33 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      1(3)pwr                       │ Lv2.1 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Gohan's Anger                                                                                    
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Final Physical Attack                                                       
+>>> Select a card to discard:                                                                       
+1. Gohan's Anger (Non-Combat)                                                                       
+     Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.   
+2. Blazing Anger! (Non-Combat)                                                                      
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+>>> Select a card to discard: BlackGohan discards Gohan's Anger (Non-Combat)                                                      
+BlackGohan's attack damage estimate: Damage(0, 0)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 0)                                                                          
+
+---------- Attack Phase 8.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 28/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 1 | Discard: 24 | Removed: 3             │ Hand: 1 | Discard: 33 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      1(3)pwr                       │ Lv2.1 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Two Knuckle Punch                                                       
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+>>> Select a card power for defense:                                                                
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a card power for defense: BlackGohan has no defense                                                                           
+BlackGohan takes Damage(3, 0)                                                                       
+>>> Select a personality to take power stages of damage:                                            
+1. Lv3.2 Gohan      1(3)pwr                                                                         
+     (/) Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.   
+>>> Select a personality to take power stages of damage: Gohan Lv3 takes 1 power damage                                                                      
+Gohan Lv3's power decreases from 1(3) to 0(0)                                                       
+BlackGohan takes 1 life damage: Black Front Kick (Energy Combat - Attack)                           
+BlackGohan takes 1 life damage: Burning Rage! (Non-Combat)                                          
+Piccolo discards Orange Two Knuckle Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 8.6: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 26/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 0 | Discard: 34 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      0(0)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+/. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan passes                                                                                   
+
+---------- Attack Phase 8.7: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 26/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 0 | Discard: 34 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      0(0)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+====================================================================================================
+========== Turn 9: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 26/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 0 | Discard: 34 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      0(0)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds Black Rear Spin Kick (Energy Combat - Defense) to hand                              
+BlackGohan adds King Kai's Calming (Non-Combat) to hand                                             
+BlackGohan adds Enraged! (Non-Combat) to hand                                                       
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Blazing Anger! (Non-Combat)                                                                      
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+2. King Kai's Calming (Non-Combat)                                                                  
+     Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main
+     Personality one personality level.                                                             
+3. Enraged! (Non-Combat)                                                                            
+     Increase your anger level by 2. Select 2 cards from your discard pile and place them at the    
+     bottom of your Life Deck. Remove from the game after use.                                      
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+4. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Blazing Anger! (Non-Combat)                                                        
+>>> Select a Non-Combat card to play from your hand:                                                
+1. King Kai's Calming (Non-Combat)                                                                  
+     Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main
+     Personality one personality level.                                                             
+2. Enraged! (Non-Combat)                                                                            
+     Increase your anger level by 2. Select 2 cards from your discard pile and place them at the    
+     bottom of your Life Deck. Remove from the game after use.                                      
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+3. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays King Kai's Calming (Non-Combat)                                                    
+>>> Select a Non-Combat card to play from your hand:                                                
+1. Enraged! (Non-Combat)                                                                            
+     Increase your anger level by 2. Select 2 cards from your discard pile and place them at the    
+     bottom of your Life Deck. Remove from the game after use.                                      
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+2. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: BlackGohan plays Enraged! (Non-Combat)                                                              
+>>> Select a Non-Combat card to play from your hand:                                                
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+1. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Select a Non-Combat card to play from your hand: Gohan Lv3's power increases from 0(0) to 4(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 23/63 HP                     │ Piccolo [CPU] - 6/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 0 | Discard: 34 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      4(3)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blazing Anger!                                 │                                                 │
+│ King Kai's Calming                             │                                                 │
+│ Enraged!                                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Declare Combat                                                                                   
+2. Pass                                                                                             
+>>> Choose an action: BlackGohan declares combat!                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 9.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 23/63 HP                     │ Piccolo [CPU] - 3/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 34 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      4(3)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blazing Anger!                                 │                                                 │
+│ King Kai's Calming                             │                                                 │
+│ Enraged!                                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+>>> Choose an action:                                                                               
+1. Gohan Lv3                                                                                        
+     Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.       
+2. Blazing Anger!                                                                                   
+     Increase your anger level by 2. Take the top 2 cards from your discard pile and place them at  
+     the bottom of your life deck.                                                                  
+3. Enraged!                                                                                         
+     Increase your anger level by 2. Select 2 cards from your discard pile and place them at the    
+     bottom of your Life Deck. Remove from the game after use.                                      
+4. Final Physical Attack                                                                            
+     Discard a card to perform a physical attack. You must pass for the rest of this combat.        
+/. Black Rear Spin Kick                                                                             
+     Stops a foe's energy attack. Raise card user's anger level 1.                                  
+5. Pass                                                                                             
+     Do nothing.                                                                                    
+>>> Choose an action: BlackGohan attacks with Gohan Lv3                                                                   
+Gohan Lv3's power decreases from 4(3) to 3(3)                                                       
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 3)                                                                          
+Piccolo recycles Earth Dragon Ball 6 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Red Back Kick (Physical Combat - Attack)                               
+Piccolo takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                  
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlackGohan [P1] - 23/63 HP                     │ Piccolo [CPU] - 0/50 HP                         │
+│ Hand: 1 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 36 | Removed: 5              │
+│ Earth Dragon Balls 3,4,7                       │ Earth Dragon Ball 2                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.2 Gohan      3(3)pwr                       │ Lv2.2 Piccolo    9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blazing Anger!                                 │                                                 │
+│ King Kai's Calming                             │                                                 │
+│ Enraged!                                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan (P1) wins!                                                                               
+Piccolo's Life Deck is empty                                                                        
+[exit code: 0]

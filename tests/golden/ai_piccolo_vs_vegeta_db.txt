@@ -1,0 +1,2018 @@
+Piccolo shuffles their deck                                                                         
+SaiyanVegeta shuffles their deck                                                                    
+Piccolo will go first (Power Rule)                                                                  
+====================================================================================================
+========== Turn 1: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 46/50 HP                       │ SaiyanVegeta [CPU] - 46/50 HP                   │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    5(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo Lv1's power increases from 5(2) to 6(3)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 46/50 HP                   │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    6(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 1.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 43/50 HP                   │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    6(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Knife Hand Strike                                                        
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Piccolo Lv1's power decreases from 6(3) to 4(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+Piccolo discards Black Knife Hand Strike (Energy Combat - Attack)                                   
+
+---------- Attack Phase 1.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 43/50 HP                   │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    4(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 1.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 43/50 HP                   │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    4(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv1                                                                    
+  - Screw Blast Energy Attack inflicts 2 life card draws of damage.                                 
+Piccolo Lv1's power decreases from 4(2) to 2(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 2)                                                                     
+SaiyanVegeta takes 1 life damage: Raditz Honor Duel! (Non-Combat)                                   
+SaiyanVegeta takes 1 life damage: Vegeta's Plans (Non-Combat)                                       
+
+---------- Attack Phase 1.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    2(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta attacks with Final Physical Attack                                                     
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+SaiyanVegeta discards Krillin's Trick (Non-Combat)                                                  
+SaiyanVegeta's attack damage estimate: Damage(2, 0)                                                 
+Piccolo has no defense                                                                              
+Piccolo takes Damage(2, 0)                                                                          
+Piccolo Lv1 takes 2 power damage                                                                    
+Piccolo Lv1's power decreases from 2(2) to 0(0)                                                     
+
+---------- Attack Phase 1.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.6: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Red Front Kick (Physical Combat - Attack)                                          
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Raditz Honor Duel! (Non-Combat)                                               
+
+====================================================================================================
+========== Turn 2: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+Vegeta HT Lv1's power increases from 5(3) to 7(4)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 4 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     7(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 2.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 40/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 4 | Discard: 2 | Removed: 0              │ Hand: 4 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     7(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 2.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 40/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 4 | Discard: 2 | Removed: 0              │ Hand: 4 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     7(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Back Kick                                                                  
+  - Physical attack doing +3 stages of damage if successful. Stops all energy attacks for the rest  
+    of this combat. Foe's anger level decreases by 1.                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(3, 0)                                                                     
+Vegeta HT Lv1 takes 3 power damage                                                                  
+Vegeta HT Lv1's power decreases from 7(4) to 4(3)                                                   
+Piccolo discards Red Back Kick (Physical Combat - Attack)                                           
+
+---------- Attack Phase 2.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 40/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 3 | Discard: 3 | Removed: 0              │ Hand: 4 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Nappa's Blinding Stare (Non-Combat)                                               
+  - End Combat. Remove from the game after use.                                                     
+SaiyanVegeta removes Nappa's Blinding Stare (Combat - Attack) from game                             
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Nappa Lv1 (Personality)                                                       
+SaiyanVegeta discards Saiyan Battle Terms (Non-Combat)                                              
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Piccolo's Physical Defense (Physical Combat - Defense)                             
+Piccolo discards Earth Dragon Ball Combat (Energy Combat - Attack)                                  
+
+====================================================================================================
+========== Turn 3: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 40/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 1 | Discard: 5 | Removed: 0              │ Hand: 1 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Piccolo Honor Duel! (Non-Combat)                                                      
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Piccolo Lv1's power increases from 0(0) to 1(1)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 3 | Discard: 5 | Removed: 0              │ Hand: 1 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 3.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 35/50 HP                   │
+│ Hand: 3 | Discard: 5 | Removed: 0              │ Hand: 4 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Hip Throw                                                               
+  - Physical Attack doing +2 stages of damage if successful. Raise card user's anger level 1.       
+Piccolo's anger increases from 0 to 1                                                               
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(2, 0)                                                                     
+Vegeta HT Lv1 takes 2 power damage                                                                  
+Vegeta HT Lv1's power decreases from 4(3) to 2(3)                                                   
+Piccolo discards Orange Hip Throw (Physical Combat - Attack)                                        
+
+---------- Attack Phase 3.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 35/50 HP                   │
+│ Hand: 2 | Discard: 6 | Removed: 0              │ Hand: 4 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 3.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 35/50 HP                   │
+│ Hand: 2 | Discard: 6 | Removed: 0              │ Hand: 4 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Hip Throw                                                               
+  - Physical Attack doing +2 stages of damage if successful. Raise card user's anger level 1.       
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(2, 0)                                                                     
+Vegeta HT Lv1 takes 2 power damage                                                                  
+Vegeta HT Lv1's power decreases from 2(3) to 0(0)                                                   
+Piccolo discards Orange Hip Throw (Physical Combat - Attack)                                        
+
+---------- Attack Phase 3.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 35/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 0              │ Hand: 4 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 3.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 35/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 0              │ Hand: 4 | Discard: 6 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Standing Fist Punch                                                     
+  - Physical Attack. Raise card user's anger level 1.                                               
+Piccolo's anger increases from 2 to 3                                                               
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(2, 0)                                                                     
+Vegeta HT Lv1 takes 0 power damage                                                                  
+SaiyanVegeta takes 1 life damage: Saiyan Truce Card (Combat - Attack)                               
+SaiyanVegeta takes 1 life damage: Nappa's Energy Aura (Energy Combat - Defense)                     
+Piccolo discards Orange Standing Fist Punch (Physical Combat - Attack)                              
+
+---------- Attack Phase 3.6: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 4 | Discard: 8 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta attacks with Final Physical Attack                                                     
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+SaiyanVegeta discards Saiyan Battle Terms (Non-Combat)                                              
+SaiyanVegeta's attack damage estimate: Damage(0, 0)                                                 
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 0)                                                                          
+
+---------- Attack Phase 3.7: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 9 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 3.8: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 9 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Saiyan Appraisal Maneuver (Non-Combat)                                        
+SaiyanVegeta recycles Earth Dragon Ball 6 (Non-Combat)                                              
+
+====================================================================================================
+========== Turn 4: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 34/50 HP                   │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 1 | Discard: 10 | Removed: 1              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Earth Dragon Ball 4 (Non-Combat)                                                 
+  - End the very next combat you are forced into before you sustain damage. Your anger level        
+    increases 2.                                                                                    
+SaiyanVegeta's anger increases from 0 to 2                                                          
+SaiyanVegeta plays Earth Dragon Ball 1 (Non-Combat)                                                 
+  - Instantly power up to full and draw a card.                                                     
+Vegeta HT Lv1's power increases from 0(0) to 10(4)                                                  
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Vegeta's Quickness Drill (Non-Combat)                                            
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta plays Power Up the Most! (Non-Combat)                                                  
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+SaiyanVegeta plays Saiyan Battle Terms (Non-Combat)                                                 
+  - Remove a Non-Combat Card or Ally from in front of another player from the game. Remove from the 
+    game after use.                                                                                 
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 30/50 HP                   │
+│ Hand: 0 | Discard: 8 | Removed: 0              │ Hand: 0 | Discard: 10 | Removed: 1              │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Honor Duel!                            │ Power Up the Most!                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo uses Piccolo Honor Duel!                                                                    
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Piccolo removes Piccolo Honor Duel! (Non-Combat) from game                                          
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 4.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 30/50 HP                   │
+│ Hand: 3 | Discard: 5 | Removed: 1              │ Hand: 1 | Discard: 9 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Power Up the Most!                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Power Up the Most! (Non-Combat)                                                   
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+SaiyanVegeta returns Nappa Lv1 (Personality) to their life deck                                     
+SaiyanVegeta returns Saiyan Appraisal Maneuver (Non-Combat) to their life deck                      
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+
+---------- Attack Phase 4.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 5 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Back Kick                                                                  
+  - Physical attack doing +3 stages of damage if successful. Stops all energy attacks for the rest  
+    of this combat. Foe's anger level decreases by 1.                                               
+SaiyanVegeta's anger decreases from 2 to 1                                                          
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(3, 0)                                                                     
+Vegeta HT Lv1 takes 3 power damage                                                                  
+Vegeta HT Lv1's power decreases from 10(4) to 7(4)                                                  
+Piccolo discards Red Back Kick (Physical Combat - Attack)                                           
+
+---------- Attack Phase 4.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 2 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.1 Vegeta     7(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Saiyan Battle Terms                             │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 4.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 2 | Discard: 6 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv1.1 Vegeta     7(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Saiyan Battle Terms                             │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Front Kick                                                                 
+  - Physical attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 3 to 4                                                               
+Piccolo's attack damage estimate: Damage(1, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(1, 0)                                                                     
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 7(4) to 6(4)                                                   
+Piccolo discards Red Front Kick (Physical Combat - Attack)                                          
+
+---------- Attack Phase 4.5: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    1(1)pwr                       │ Lv1.1 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Saiyan Battle Terms                             │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 4.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    1(1)pwr                       │ Lv1.1 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Saiyan Battle Terms                             │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+====================================================================================================
+========== Turn 5: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 37/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    1(1)pwr                       │ Lv1.1 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Black Bear Hug Drill (Non-Combat)                                                     
+  - All of your physical attacks do +2 power stages of damage.                                      
+Piccolo Lv1's power increases from 1(1) to 2(2)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 34/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 7 | Removed: 1              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    2(2)pwr                       │ Lv1.1 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball 4                                                               
+  - End the very next combat you are forced into before you sustain damage.                         
+Piccolo must discard down to 1 card                                                                 
+Piccolo removes Earth Dragon Ball 4 (Non-Combat) from game                                          
+Piccolo discards Black Knife Hand Strike (Energy Combat - Attack)                                   
+Piccolo rejuvenates with Black Knife Hand Strike (Energy Combat - Attack)                           
+
+====================================================================================================
+========== Turn 6: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 35/50 HP                       │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 2              │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    2(2)pwr                       │ Lv1.1 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Raditz Honor Duel! (Non-Combat)                                                  
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+SaiyanVegeta plays Saibaimen Lv1 (Personality)                                                      
+  - Reduce the damage from an energy attack performed against you to 2 life cards of damage.        
+SaiyanVegeta plays Krillin's Trick (Non-Combat)                                                     
+  - Steal a Dragon Ball. Remove from the game after use.                                            
+SaiyanVegeta plays Raditz Lv1 (Personality)                                                         
+  - Reduce the damage from an energy attack performed against you to 2 life cards of damage.        
+Vegeta HT Lv1's power increases from 6(4) to 8(4)                                                   
+Saibaimen Lv1's power increases from 3(3) to 4(3)                                                   
+Raditz Lv1's power increases from 3(3) to 4(3)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 35/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 1 | Discard: 7 | Removed: 2              │ Hand: 0 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    2(2)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 6.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 4 | Discard: 7 | Removed: 2              │ Hand: 1 | Discard: 7 | Removed: 1               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    2(2)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Krillin's Trick (Non-Combat)                                                      
+  - Steal a Dragon Ball. Remove from the game after use.                                            
+SaiyanVegeta removes Krillin's Trick (Non-Combat) from game                                         
+
+---------- Attack Phase 6.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 4 | Discard: 7 | Removed: 2              │ Hand: 1 | Discard: 7 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    2(2)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Knife Hand Strike                                                        
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Piccolo Lv1's power decreases from 2(2) to 0(0)                                                     
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+Piccolo discards Black Knife Hand Strike (Energy Combat - Attack)                                   
+
+---------- Attack Phase 6.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 2              │ Hand: 1 | Discard: 7 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    0(0)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 6.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 2              │ Hand: 1 | Discard: 7 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    0(0)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Black Bear Hug Drill                           │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Two Knuckle Punch                                                       
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 4 to 5                                                               
+Piccolo levels up to Lv2!                                                                           
+Piccolo discards Black Bear Hug Drill (Non-Combat)                                                  
+Piccolo Lv2's power increases from 5(3) to 10(4)                                                    
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(2, 0)                                                                     
+SaiyanVegeta selects Raditz Lv1 to take damage                                                      
+Raditz Lv1 takes 2 power damage                                                                     
+Raditz Lv1's power decreases from 4(3) to 2(3)                                                      
+Piccolo discards Orange Two Knuckle Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 6.5: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 2 | Discard: 10 | Removed: 2             │ Hand: 1 | Discard: 7 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo   10(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 6.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 29/50 HP                   │
+│ Hand: 2 | Discard: 10 | Removed: 2             │ Hand: 1 | Discard: 7 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo   10(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 2)                                                                     
+SaiyanVegeta takes 1 life damage: King Kai's Calming (Non-Combat)                                   
+SaiyanVegeta takes 1 life damage: Raditz Honor Duel! (Non-Combat)                                   
+
+---------- Attack Phase 6.7: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 27/50 HP                   │
+│ Hand: 2 | Discard: 10 | Removed: 2             │ Hand: 1 | Discard: 9 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 6.8: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 27/50 HP                   │
+│ Hand: 2 | Discard: 10 | Removed: 2             │ Hand: 1 | Discard: 9 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+
+====================================================================================================
+========== Turn 7: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 32/50 HP                       │ SaiyanVegeta [CPU] - 27/50 HP                   │
+│ Hand: 1 | Discard: 11 | Removed: 2             │ Hand: 1 | Discard: 9 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo Lv2's power increases from 9(4) to 10(4)                                                    
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 27/50 HP                   │
+│ Hand: 4 | Discard: 11 | Removed: 2             │ Hand: 1 | Discard: 9 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo   10(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 7.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 24/50 HP                   │
+│ Hand: 4 | Discard: 11 | Removed: 2             │ Hand: 5 | Discard: 8 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo   10(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 7.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 24/50 HP                   │
+│ Hand: 4 | Discard: 11 | Removed: 2             │ Hand: 5 | Discard: 8 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 7.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 24/50 HP                   │
+│ Hand: 4 | Discard: 11 | Removed: 2             │ Hand: 5 | Discard: 8 | Removed: 2               │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Back Kick                                                                  
+  - Physical attack doing +3 stages of damage if successful. Stops all energy attacks for the rest  
+    of this combat. Foe's anger level decreases by 1.                                               
+SaiyanVegeta's anger decreases from 1 to 0                                                          
+Piccolo's attack damage estimate: Damage(4, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(4, 0)                                                                     
+SaiyanVegeta selects Raditz Lv1 to take damage                                                      
+Raditz Lv1 takes 2 power damage                                                                     
+Raditz Lv1's power decreases from 2(3) to 0(0)                                                      
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+SaiyanVegeta takes 1 life damage: Power Up the Most! (Non-Combat)                                   
+Piccolo discards Red Back Kick (Physical Combat - Attack)                                           
+
+---------- Attack Phase 7.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 22/50 HP                   │
+│ Hand: 3 | Discard: 12 | Removed: 2             │ Hand: 5 | Discard: 10 | Removed: 2              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Dream Fighting (Non-Combat)                                                       
+  - End Combat. Place the bottom card of your discard pile at the bottom of your Life Deck. Remove  
+    from the game after use.                                                                        
+SaiyanVegeta rejuvenates (from the bottom) with Raditz Honor Duel! (Non-Combat)                     
+SaiyanVegeta removes Dream Fighting (Combat - Attack) from game                                     
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+Piccolo discards Earth Dragon Ball Combat (Energy Combat - Attack)                                  
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Vegeta's Plans (Non-Combat)                                                   
+SaiyanVegeta discards Krillin's Trick (Non-Combat)                                                  
+SaiyanVegeta discards Goku's Lucky Break (Non-Combat)                                               
+
+====================================================================================================
+========== Turn 8: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 23/50 HP                   │
+│ Hand: 1 | Discard: 14 | Removed: 2             │ Hand: 1 | Discard: 12 | Removed: 3              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta     8(4)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+│                                                │ Lv1   Raditz     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+Vegeta HT Lv1's power increases from 8(4) to 10(4)                                                  
+Saibaimen Lv1's power increases from 4(3) to 5(3)                                                   
+Raditz Lv1's power increases from 0(0) to 1(3)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 1 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 12 | Removed: 3              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 8.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 5 | Discard: 11 | Removed: 3              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball Capture (Non-Combat)                                            
+  - Capture an opponent's Dragon Ball.                                                              
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+---------- Attack Phase 8.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 12 | Removed: 3              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 9(4) to 8(3)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 8.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 12 | Removed: 3              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Saiyan Battle Terms (Non-Combat)                                                  
+  - Remove a Non-Combat Card or Ally from in front of another player from the game. Remove from the 
+    game after use.                                                                                 
+SaiyanVegeta removes Saiyan Battle Terms (Non-Combat) from game                                     
+
+---------- Attack Phase 8.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 12 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Final Physical Attack                                                          
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Piccolo recycles Earth Dragon Ball 3 (Non-Combat)                                                   
+Piccolo's attack damage estimate: Damage(0, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 0)                                                                     
+
+---------- Attack Phase 8.5: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 3 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 12 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball Capture (Non-Combat)                                            
+  - Capture an opponent's Dragon Ball.                                                              
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+---------- Attack Phase 8.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 3 | Discard: 14 | Removed: 2             │ Hand: 3 | Discard: 13 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 8.7: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 3 | Discard: 14 | Removed: 2             │ Hand: 3 | Discard: 13 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta attacks with Final Physical Attack                                                     
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+SaiyanVegeta discards Saiyan Battle Terms (Non-Combat)                                              
+SaiyanVegeta's attack damage estimate: Damage(2, 0)                                                 
+Piccolo has no defense                                                                              
+Piccolo takes Damage(2, 0)                                                                          
+Piccolo Lv2 takes 2 power damage                                                                    
+Piccolo Lv2's power decreases from 8(3) to 6(3)                                                     
+
+---------- Attack Phase 8.8: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 3 | Discard: 14 | Removed: 2             │ Hand: 2 | Discard: 14 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    6(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 8.9: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 3 | Discard: 14 | Removed: 2             │ Hand: 2 | Discard: 14 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    6(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Piccolo's Physical Defense (Physical Combat - Defense)                             
+Piccolo discards Piccolo's Flight (Non-Combat)                                                      
+
+====================================================================================================
+========== Turn 9: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 27/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 1 | Discard: 16 | Removed: 2             │ Hand: 1 | Discard: 15 | Removed: 4              │
+│                                                │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Piccolo    6(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Earth Dragon Ball 5 (Non-Combat)                                                      
+  - Raise any one of your personalities to their highest power stage. Raise your anger 2 levels.    
+    Draw 2 cards. Place the top 2 cards of your discard pile at the bottom of your Life Deck.       
+Piccolo Lv2's power increases from 6(3) to 10(4)                                                    
+Piccolo's anger increases from 0 to 2                                                               
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo rejuvenates with Piccolo's Flight (Non-Combat)                                              
+Piccolo rejuvenates with Piccolo's Physical Defense (Physical Combat - Defense)                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 24/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 5 | Discard: 14 | Removed: 2             │ Hand: 1 | Discard: 15 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo chooses to skip combat                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Blue Big Outside Drop (Physical Combat - Defense)                                  
+Piccolo removes Earth Dragon Ball 1 (Non-Combat) from game                                          
+Piccolo discards Vegeta's Physical Stance (Physical Combat - Defense)                               
+Piccolo discards Orange Spontaneous Drill (Non-Combat)                                              
+Piccolo rejuvenates with Orange Spontaneous Drill (Non-Combat)                                      
+
+====================================================================================================
+========== Turn 10: SaiyanVegeta ===================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 25/50 HP                       │ SaiyanVegeta [CPU] - 20/50 HP                   │
+│ Hand: 1 | Discard: 16 | Removed: 3             │ Hand: 1 | Discard: 15 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+│                                                │ Lv1   Raditz     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Krillin's Trick (Non-Combat)                                                     
+  - Steal a Dragon Ball. Remove from the game after use.                                            
+SaiyanVegeta plays Saibaimen Lv1 (Personality)                                                      
+  - Reduce the damage from an energy attack performed against you to 2 life cards of damage.        
+SaiyanVegeta plays Unselfish Behavior is Best (Non-Combat)                                          
+  - The efforts of your allies stop this combat. You must have an ally out on the table to use this 
+    card. Remove from the game after use.                                                           
+Saibaimen Lv1's power increases from 5(3) to 6(3)                                                   
+Raditz Lv1's power increases from 1(3) to 2(3)                                                      
+Saibaimen Lv1's power increases from 3(3) to 4(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 25/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 1 | Discard: 16 | Removed: 3             │ Hand: 1 | Discard: 15 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 10.1: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 22/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 16 | Removed: 3             │ Hand: 2 | Discard: 14 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 10.2: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 22/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 16 | Removed: 3             │ Hand: 2 | Discard: 14 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Standing Fist Punch                                                     
+  - Physical Attack. Raise card user's anger level 1.                                               
+Piccolo's anger increases from 2 to 3                                                               
+Piccolo's attack damage estimate: Damage(1, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(1, 0)                                                                     
+SaiyanVegeta selects Saibaimen Lv1 to take damage                                                   
+Saibaimen Lv1 takes 1 power damage                                                                  
+Saibaimen Lv1's power decreases from 4(3) to 3(3)                                                   
+Piccolo discards Orange Standing Fist Punch (Physical Combat - Attack)                              
+
+---------- Attack Phase 10.3: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 22/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 3 | Discard: 17 | Removed: 3             │ Hand: 2 | Discard: 14 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Saiyan Truce Card (Non-Combat)                                                    
+  - End Combat. Until the Rejuvenation Step of your next turn, you may keep any cards in your hand  
+    during any Rejuvenation Steps. Remove from the game after use.                                  
+SaiyanVegeta removes Saiyan Truce Card (Combat - Attack) from game                                  
+SaiyanVegeta uses Saiyan Truce Card (*)                                                             
+  - Until the Rejuvenation Step of your next turn, you may keep any cards in your hand during any   
+    Rejuvenation Steps.                                                                             
+SaiyanVegeta skips the discard phase                                                                
+Piccolo must discard down to 1 card                                                                 
+Piccolo recycles Earth Dragon Ball 2 (Non-Combat)                                                   
+Piccolo discards Power Up! (Non-Combat)                                                             
+
+====================================================================================================
+========== Turn 11: Piccolo ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 23/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 1 | Discard: 18 | Removed: 3             │ Hand: 1 | Discard: 14 | Removed: 5              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 18 | Removed: 3             │ Hand: 1 | Discard: 14 | Removed: 5              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Raditz Honor Duel!                              │
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta uses Raditz Honor Duel!                                                                
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+SaiyanVegeta removes Raditz Honor Duel! (Non-Combat) from game                                      
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 11.1: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 18 | Removed: 3             │ Hand: 5 | Discard: 10 | Removed: 6              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 11.2: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 18 | Removed: 3             │ Hand: 5 | Discard: 10 | Removed: 6              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 1,4                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Krillin's Trick                                 │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Krillin's Trick (Non-Combat)                                                      
+  - Steal a Dragon Ball. Remove from the game after use.                                            
+SaiyanVegeta steals Earth Dragon Ball 5!                                                            
+SaiyanVegeta removes Krillin's Trick (Non-Combat) from game                                         
+
+---------- Attack Phase 11.3: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 4 | Discard: 18 | Removed: 3             │ Hand: 5 | Discard: 10 | Removed: 7              │
+│                                                │ Earth Dragon Balls 1,4,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Jump Turn Kick                                                           
+  - Energy attack. Raise card user's anger level 1.                                                 
+Piccolo Lv2's power decreases from 9(4) to 7(3)                                                     
+Piccolo's anger increases from 3 to 4                                                               
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+SaiyanVegeta uses Nappa's Energy Aura to defend                                                     
+  - Stops an energy attack. Stops all energy attacks performed against you for the remainder of     
+    Combat. Remove from the game after use.                                                         
+SaiyanVegeta removes Nappa's Energy Aura (Energy Combat - Defense) from game                        
+Piccolo discards Black Jump Turn Kick (Energy Combat - Attack)                                      
+
+---------- Attack Phase 11.4: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 3 | Discard: 19 | Removed: 3             │ Hand: 4 | Discard: 10 | Removed: 8              │
+│                                                │ Earth Dragon Balls 1,4,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    7(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+│                                                │ Nappa's Energy Aura (*)                         │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 11.5: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 3 | Discard: 19 | Removed: 3             │ Hand: 4 | Discard: 10 | Removed: 8              │
+│                                                │ Earth Dragon Balls 1,4,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    7(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+│                                                │ Nappa's Energy Aura (*)                         │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Blue Forward Foot Sweep (Physical Combat - Attack)                                 
+Piccolo discards Blazing Anger! (Non-Combat)                                                        
+SaiyanVegeta uses Saiyan Truce Card (*)                                                             
+  - Until the Rejuvenation Step of your next turn, you may keep any cards in your hand during any   
+    Rejuvenation Steps.                                                                             
+SaiyanVegeta skips the discard phase                                                                
+
+====================================================================================================
+========== Turn 12: SaiyanVegeta ===================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 1 | Discard: 21 | Removed: 3             │ Hand: 4 | Discard: 10 | Removed: 8              │
+│                                                │ Earth Dragon Balls 1,4,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    7(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  6(3)pwr                        │
+│                                                │ Lv1   Raditz     2(3)pwr                        │
+│                                                │ Lv1   Saibaimen  3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Vegeta's Smirk (Non-Combat)                                                      
+  - Select any Dragon Ball in your deck and put it into play. Remove from the game after use.       
+SaiyanVegeta plays Earth Dragon Ball 2 (Non-Combat)                                                 
+  - All foes have their power ratings changed to 2 stages higher than 0.                            
+Piccolo Lv2's power decreases from 7(3) to 2(3)                                                     
+SaiyanVegeta plays King Kai's Calming (Non-Combat)                                                  
+  - Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main 
+    Personality one personality level.                                                              
+SaiyanVegeta plays Power Up the Most! (Non-Combat)                                                  
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+SaiyanVegeta plays Saiyan Battle Terms (Non-Combat)                                                 
+  - Remove a Non-Combat Card or Ally from in front of another player from the game. Remove from the 
+    game after use.                                                                                 
+Saibaimen Lv1's power increases from 6(3) to 7(3)                                                   
+Raditz Lv1's power increases from 2(3) to 3(3)                                                      
+Saibaimen Lv1's power increases from 3(3) to 4(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 20/50 HP                       │ SaiyanVegeta [CPU] - 14/50 HP                   │
+│ Hand: 1 | Discard: 21 | Removed: 3             │ Hand: 2 | Discard: 10 | Removed: 8              │
+│                                                │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    2(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz     3(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Power Up the Most!                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 12.1: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 17/50 HP                       │ SaiyanVegeta [CPU] - 14/50 HP                   │
+│ Hand: 4 | Discard: 21 | Removed: 3             │ Hand: 3 | Discard: 9 | Removed: 8               │
+│                                                │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    2(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz     3(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Power Up the Most!                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Power Up the Most! (Non-Combat)                                                   
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+Raditz Lv1's power increases from 3(3) to 10(3)                                                     
+SaiyanVegeta returns Power Up the Most! (Non-Combat) to their life deck                             
+SaiyanVegeta returns Saiyan Battle Terms (Non-Combat) to their life deck                            
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+
+---------- Attack Phase 12.2: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 17/50 HP                       │ SaiyanVegeta [CPU] - 16/50 HP                   │
+│ Hand: 4 | Discard: 21 | Removed: 3             │ Hand: 3 | Discard: 8 | Removed: 8               │
+│                                                │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    2(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Blue Forward Foot Sweep                                                        
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Piccolo's attack damage estimate: Damage(4, 0)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(4, 0)                                                                     
+SaiyanVegeta selects Saibaimen Lv1 to take damage                                                   
+Saibaimen Lv1 takes 4 power damage                                                                  
+Saibaimen Lv1's power decreases from 4(3) to 0(0)                                                   
+Piccolo discards Blue Forward Foot Sweep (Physical Combat - Attack)                                 
+
+---------- Attack Phase 12.3: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 17/50 HP                       │ SaiyanVegeta [CPU] - 16/50 HP                   │
+│ Hand: 3 | Discard: 22 | Removed: 3             │ Hand: 3 | Discard: 8 | Removed: 8               │
+│                                                │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    2(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Forward Foot Sweep (*)                    │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Dream Fighting (Non-Combat)                                                       
+  - End Combat. Place the bottom card of your discard pile at the bottom of your Life Deck. Remove  
+    from the game after use.                                                                        
+SaiyanVegeta rejuvenates (from the bottom) with Unselfish Behavior is Best (Non-Combat)             
+SaiyanVegeta removes Dream Fighting (Combat - Attack) from game                                     
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Raditz Honor Duel! (Non-Combat)                                               
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Black Takedown Drill (Non-Combat)                                                  
+Piccolo discards Piccolo's Energy Attack (Energy Combat - Attack)                                   
+
+====================================================================================================
+========== Turn 13: Piccolo ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 17/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 1 | Discard: 24 | Removed: 3             │ Hand: 1 | Discard: 8 | Removed: 9               │
+│                                                │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    2(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Earth Dragon Ball 6 (Non-Combat)                                                      
+  - This card ends a combat and the user is powered up to full. Shift all opponents' anger levels   
+    down 2.                                                                                         
+Piccolo plays Piccolo Defense Drill (Non-Combat)                                                    
+  - All energy attacks performed against you do 1 less life card of damage.                         
+Piccolo Lv2's power increases from 2(3) to 4(3)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 17/50 HP                   │
+│ Hand: 2 | Discard: 24 | Removed: 3             │ Hand: 1 | Discard: 8 | Removed: 9               │
+│ Earth Dragon Ball 6(*)                         │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    4(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 13.1: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 14/50 HP                   │
+│ Hand: 2 | Discard: 24 | Removed: 3             │ Hand: 5 | Discard: 7 | Removed: 9               │
+│ Earth Dragon Ball 6(*)                         │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    4(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 4(3) to 3(3)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 13.2: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 14/50 HP                   │
+│ Hand: 2 | Discard: 24 | Removed: 3             │ Hand: 5 | Discard: 7 | Removed: 9               │
+│ Earth Dragon Ball 6(*)                         │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    3(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta attacks with Final Physical Attack                                                     
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+SaiyanVegeta removes Earth Dragon Ball 5 (Non-Combat) from game                                     
+SaiyanVegeta's attack damage estimate: Damage(2, 0)                                                 
+Piccolo has no defense                                                                              
+Piccolo takes Damage(2, 0)                                                                          
+Piccolo Lv2 takes 2 power damage                                                                    
+Piccolo Lv2's power decreases from 3(3) to 1(3)                                                     
+
+---------- Attack Phase 13.3: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 14/50 HP                   │
+│ Hand: 2 | Discard: 24 | Removed: 3             │ Hand: 4 | Discard: 7 | Removed: 10              │
+│ Earth Dragon Ball 6(*)                         │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    1(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo uses Earth Dragon Ball 6 (Non-Combat)                                                       
+  - This card ends a combat and the user is powered up to full.                                     
+Piccolo Lv2's power increases from 1(3) to 10(4)                                                    
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Blue Big Outside Drop (Physical Combat - Defense)                                  
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta recycles Earth Dragon Ball 3 (Non-Combat)                                              
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+====================================================================================================
+========== Turn 14: SaiyanVegeta ===================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 15/50 HP                   │
+│ Hand: 1 | Discard: 25 | Removed: 3             │ Hand: 1 | Discard: 9 | Removed: 10              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  7(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Teaching the Unteachable Forces Observation (Non-Combat)                         
+  - Use this card at the beginning of your opponent's Power Up step. Your opponent may not declare  
+    Combat this turn. Remove from the game after use.                                               
+Saibaimen Lv1's power increases from 7(3) to 8(3)                                                   
+Saibaimen Lv1's power increases from 0(0) to 1(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 14/50 HP                       │ SaiyanVegeta [CPU] - 12/50 HP                   │
+│ Hand: 1 | Discard: 25 | Removed: 3             │ Hand: 3 | Discard: 9 | Removed: 10              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 14.1: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 12/50 HP                   │
+│ Hand: 4 | Discard: 25 | Removed: 3             │ Hand: 4 | Discard: 8 | Removed: 10              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta attacks with Final Physical Attack                                                     
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+SaiyanVegeta discards Nappa's Blinding Stare (Combat - Attack)                                      
+SaiyanVegeta's attack damage estimate: Damage(1, 0)                                                 
+Piccolo has no defense                                                                              
+Piccolo takes Damage(1, 0)                                                                          
+Piccolo Lv2 takes 1 power damage                                                                    
+Piccolo Lv2's power decreases from 10(4) to 9(4)                                                    
+
+---------- Attack Phase 14.2: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 12/50 HP                   │
+│ Hand: 4 | Discard: 25 | Removed: 3             │ Hand: 3 | Discard: 9 | Removed: 10              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 1,2,4,5                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    9(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo's Energy Attack                                                        
+  - Does 6 life card draws of damage and costs 5 stages of power drain to perform.                  
+Piccolo Lv2's power decreases from 9(4) to 4(3)                                                     
+Piccolo's attack damage estimate: Damage(0, 6)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 6)                                                                     
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+SaiyanVegeta takes 1 life damage: Saiyan Appraisal Maneuver (Non-Combat)                            
+SaiyanVegeta recycles Earth Dragon Ball 7 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Saiyan Appraisal Maneuver (Non-Combat)                            
+SaiyanVegeta removes Earth Dragon Ball 6 (Non-Combat) from game                                     
+SaiyanVegeta takes 1 life damage: Nappa Lv1 (Personality)                                           
+SaiyanVegeta takes 1 life damage: Saiyan Appraisal Maneuver (Non-Combat)                            
+SaiyanVegeta takes 1 life damage: Raditz Honor Duel! (Non-Combat)                                   
+Piccolo steals Earth Dragon Ball 4!                                                                 
+Piccolo discards Piccolo's Energy Attack (Energy Combat - Attack)                                   
+
+---------- Attack Phase 14.3: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 5/50 HP                    │
+│ Hand: 3 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 15 | Removed: 11             │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Balls 1,2,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    4(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 14.4: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 5/50 HP                    │
+│ Hand: 3 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 15 | Removed: 11             │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Balls 1,2,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    4(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv2                                                                    
+  - Special Energy Beam Cannon. This energy blast only takes 1 power stage to use and does 2 life   
+    card draws of damage.                                                                           
+Piccolo Lv2's power decreases from 4(3) to 3(3)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 2)                                                                     
+SaiyanVegeta takes 1 life damage: Power Up the Most! (Non-Combat)                                   
+SaiyanVegeta takes 1 life damage: Saiyan Battle Terms (Non-Combat)                                  
+
+---------- Attack Phase 14.5: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 3/50 HP                    │
+│ Hand: 3 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 17 | Removed: 11             │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Balls 1,2,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    3(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 14.6: Piccolo --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 3/50 HP                    │
+│ Hand: 3 | Discard: 26 | Removed: 3             │ Hand: 3 | Discard: 17 | Removed: 11             │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Balls 1,2,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Piccolo    3(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Jump Turn Kick                                                           
+  - Energy attack. Raise card user's anger level 1.                                                 
+Piccolo Lv2's power decreases from 3(3) to 1(3)                                                     
+Piccolo's anger increases from 4 to 5                                                               
+Piccolo levels up to Lv3!                                                                           
+Piccolo discards Piccolo Defense Drill (Non-Combat)                                                 
+Piccolo Lv3's power increases from 5(4) to 10(4)                                                    
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 4)                                                                     
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 11/50 HP                       │ SaiyanVegeta [CPU] - 1/50 HP                    │
+│ Hand: 3 | Discard: 27 | Removed: 3             │ Hand: 3 | Discard: 18 | Removed: 11             │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Balls 1,2,5                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.0 Piccolo   10(4)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Saibaimen  8(3)pwr                        │
+│                                                │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Vegeta's Smirk                                  │
+│                                                │ King Kai's Calming                              │
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ Teaching the Unteachable Forces Observation     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo (CPU1) wins!                                                                                
+SaiyanVegeta can take no more life damage                                                           
+[exit code: 0]

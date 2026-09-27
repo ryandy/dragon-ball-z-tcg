@@ -1,0 +1,1541 @@
+Gohan shuffles their deck                                                                           
+BlackGohan shuffles their deck                                                                      
+Gohan will go first                                                                                 
+====================================================================================================
+========== Turn 1: Gohan ===========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 61/65 HP                         │ BlackGohan [CPU] - 59/63 HP                     │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      5(1)pwr                       │ Lv1.0 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan Lv1's power increases from 5(1) to 6(2)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 59/63 HP                     │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      6(2)pwr                       │ Lv1.0 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan declares combat!                                                                              
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+
+---------- Attack Phase 1.1: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 56/63 HP                     │
+│ Hand: 3 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Gohan      6(2)pwr                       │ Lv1.0 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Arm Bar                                                                   
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Gohan's anger increases from 0 to 1                                                                 
+Gohan's attack damage estimate: Damage(5, 0)                                                        
+BlackGohan uses Black Elbow Strike to defend                                                        
+  - Stops a foe's physical attack. Raise card user's anger level 1.                                 
+BlackGohan's anger increases from 0 to 1                                                            
+BlackGohan discards Black Elbow Strike (Physical Combat - Defense)                                  
+Gohan discards Orange Arm Bar (Physical Combat - Attack)                                            
+
+---------- Attack Phase 1.2: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 56/63 HP                     │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 2 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.1 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 1.3: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 56/63 HP                     │
+│ Hand: 2 | Discard: 1 | Removed: 0              │ Hand: 2 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.1 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+Gohan must discard down to 1 card                                                                   
+Gohan discards Blue Big Outside Drop (Physical Combat - Defense)                                    
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Black Axe Heel Kick (Energy Combat - Defense)                                   
+
+====================================================================================================
+========== Turn 2: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 56/63 HP                     │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.1 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan plays The Untroubled Mind is Focused (Non-Combat)                                        
+  - Remove someone else's drill card or ally from the game. Remove from the game after use.         
+BlackGohan plays Enraged! (Non-Combat)                                                              
+  - Increase your anger level by 2. Select 2 cards from your discard pile and place them at the     
+    bottom of your Life Deck. Remove from the game after use.                                       
+Gohan Lv1's power increases from 5(1) to 7(2)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 58/65 HP                         │ BlackGohan [CPU] - 53/63 HP                     │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.1 Gohan      7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Enraged!                                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 2.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 55/65 HP                         │ BlackGohan [CPU] - 53/63 HP                     │
+│ Hand: 4 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.1 Gohan      7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Enraged!                                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan uses Enraged! (Non-Combat)                                                               
+  - Increase your anger level by 2. Select 2 cards from your discard pile and place them at the     
+    bottom of your Life Deck. Remove from the game after use.                                       
+BlackGohan's anger increases from 1 to 3                                                            
+BlackGohan returns Black Elbow Strike (Physical Combat - Defense) to their life deck                
+BlackGohan returns Black Axe Heel Kick (Energy Combat - Defense) to their life deck                 
+BlackGohan removes Enraged! (Non-Combat) from game                                                  
+
+---------- Attack Phase 2.2: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 55/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 4 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 0 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.3 Gohan      7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Goku Anger Attack                                                                
+  - This physical attack does double the normal damage if successful.                               
+Gohan's attack damage estimate: Damage(2, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(2, 0)                                                                       
+Gohan Lv1 takes 2 power damage                                                                      
+Gohan Lv1's power decreases from 7(2) to 5(1)                                                       
+Gohan discards Goku Anger Attack (Physical Combat - Attack)                                         
+
+---------- Attack Phase 2.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 55/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 3 | Discard: 3 | Removed: 0              │ Hand: 2 | Discard: 0 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      6(2)pwr                       │ Lv1.3 Gohan      5(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan's Physical Attack                                                     
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+BlackGohan's anger increases from 3 to 4                                                            
+Gohan Lv1's power increases from 5(1) to 10(3)                                                      
+BlackGohan's attack damage estimate: Damage(2, 0)                                                   
+Gohan has no defense                                                                                
+Gohan takes Damage(2, 0)                                                                            
+Gohan Lv1 takes 2 power damage                                                                      
+Gohan Lv1's power decreases from 6(2) to 4(1)                                                       
+BlackGohan discards Gohan's Physical Attack (Physical Combat - Attack)                              
+
+---------- Attack Phase 2.4: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 55/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 3 | Discard: 3 | Removed: 0              │ Hand: 1 | Discard: 1 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Gohan      4(1)pwr                       │ Lv1.4 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Standing Fist Punch                                                       
+  - Physical Attack. Raise card user's anger level 1.                                               
+Gohan's anger increases from 1 to 2                                                                 
+Gohan's attack damage estimate: Damage(0, 0)                                                        
+BlackGohan uses Black Side Kick to defend                                                           
+  - Stops a foe's physical attack. Raise card user's anger level 2.                                 
+BlackGohan's anger increases from 4 to 5                                                            
+BlackGohan levels up to Lv2!                                                                        
+Gohan Lv2's power increases from 5(2) to 10(3)                                                      
+BlackGohan discards Black Side Kick (Physical Combat - Defense)                                     
+Gohan discards Orange Standing Fist Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 2.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 55/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 2 | Discard: 4 | Removed: 0              │ Hand: 0 | Discard: 2 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan      4(1)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan Lv2                                                                   
+  - Once during the game, he can turn into Kong Gohan, inflicting 8 stages of physical damage in his
+    first round of combat.                                                                          
+BlackGohan's attack damage estimate: Damage(8, 0)                                                   
+Gohan has no defense                                                                                
+Gohan takes Damage(8, 0)                                                                            
+Gohan Lv1 takes 4 power damage                                                                      
+Gohan Lv1's power decreases from 4(1) to 0(0)                                                       
+Gohan takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                         
+Gohan takes 1 life damage: Piccolo's Physical Defense (Physical Combat - Defense)                   
+Gohan recycles Earth Dragon Ball 6 (Non-Combat)                                                     
+Gohan takes 1 life damage: Chi-Chi Lv1 (Personality)                                                
+Gohan recycles Earth Dragon Ball 2 (Non-Combat)                                                     
+Gohan takes 1 life damage: Tien Lv1 (Personality)                                                   
+
+---------- Attack Phase 2.6: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 51/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 2 | Discard: 8 | Removed: 0              │ Hand: 0 | Discard: 2 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan      0(0)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+
+---------- Attack Phase 2.7: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 51/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 2 | Discard: 8 | Removed: 0              │ Hand: 0 | Discard: 2 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan      0(0)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+Gohan must discard down to 1 card                                                                   
+Gohan discards Black Axe Heel Kick (Energy Combat - Defense)                                        
+
+====================================================================================================
+========== Turn 3: Gohan ===========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 51/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 1 | Discard: 9 | Removed: 0              │ Hand: 0 | Discard: 2 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan      0(0)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan plays Earth Dragon Ball 1 (Non-Combat)                                                        
+  - Instantly power up to full and draw a card.                                                     
+Gohan Lv1's power increases from 0(0) to 10(3)                                                      
+Gohan adds a card to hand                                                                           
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 55/63 HP                     │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 0 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan     10(3)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan declares combat!                                                                              
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+
+---------- Attack Phase 3.1: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 4 | Discard: 9 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Gohan     10(3)pwr                       │ Lv2.0 Gohan     10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Arm Bar                                                                   
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Gohan's anger increases from 2 to 3                                                                 
+Gohan's attack damage estimate: Damage(4, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(4, 0)                                                                       
+Gohan Lv2 takes 4 power damage                                                                      
+Gohan Lv2's power decreases from 10(3) to 6(3)                                                      
+Gohan discards Orange Arm Bar (Physical Combat - Attack)                                            
+
+---------- Attack Phase 3.2: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 3 | Discard: 10 | Removed: 0             │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Gohan     10(3)pwr                       │ Lv2.0 Gohan      6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 3.3: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 3 | Discard: 10 | Removed: 0             │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Gohan     10(3)pwr                       │ Lv2.0 Gohan      6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Goku's Physical Attack                                                           
+  - Physical attack. If successful, draw the bottom card from your discard pile. If used by Goku, it
+    stays in play to be used one more time this Combat. Remove from the game after use.             
+Gohan's attack damage estimate: Damage(1, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(1, 0)                                                                       
+Gohan Lv2 takes 1 power damage                                                                      
+Gohan Lv2's power decreases from 6(3) to 5(2)                                                       
+Gohan adds a card to hand                                                                           
+Gohan removes Goku's Physical Attack (Physical Combat - Attack) from game                           
+
+---------- Attack Phase 3.4: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 3 | Discard: 9 | Removed: 1              │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Gohan     10(3)pwr                       │ Lv2.0 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 3.5: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 3 | Discard: 9 | Removed: 1              │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Gohan     10(3)pwr                       │ Lv2.0 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Arm Bar                                                                   
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Gohan's anger increases from 3 to 4                                                                 
+Gohan's attack damage estimate: Damage(5, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(5, 0)                                                                       
+Gohan Lv2 takes 5 power damage                                                                      
+Gohan Lv2's power decreases from 5(2) to 0(0)                                                       
+Gohan discards Orange Arm Bar (Physical Combat - Attack)                                            
+
+---------- Attack Phase 3.6: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 2 | Discard: 10 | Removed: 1             │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan     10(3)pwr                       │ Lv2.0 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 3.7: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 2 | Discard: 10 | Removed: 1             │ Hand: 3 | Discard: 2 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan     10(3)pwr                       │ Lv2.0 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+Gohan must discard down to 1 card                                                                   
+Gohan discards Goku's Energy Defense (Energy Combat - Defense)                                      
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Enraged! (Non-Combat)                                                           
+BlackGohan discards Enraged! (Non-Combat)                                                           
+
+====================================================================================================
+========== Turn 4: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 52/63 HP                     │
+│ Hand: 1 | Discard: 11 | Removed: 1             │ Hand: 1 | Discard: 4 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan     10(3)pwr                       │ Lv2.0 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan plays The Untroubled Mind is Focused (Non-Combat)                                        
+  - Remove someone else's drill card or ally from the game. Remove from the game after use.         
+BlackGohan plays Gohan's Anger (Non-Combat)                                                         
+  - Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.    
+Gohan Lv2's power increases from 0(0) to 3(2)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 47/65 HP                         │ BlackGohan [CPU] - 49/63 HP                     │
+│ Hand: 1 | Discard: 11 | Removed: 1             │ Hand: 2 | Discard: 4 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan     10(3)pwr                       │ Lv2.0 Gohan      3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 4.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 44/65 HP                         │ BlackGohan [CPU] - 49/63 HP                     │
+│ Hand: 4 | Discard: 11 | Removed: 1             │ Hand: 2 | Discard: 4 | Removed: 1               │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Gohan     10(3)pwr                       │ Lv2.0 Gohan      3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Black Turning Kick                                                          
+  - Energy attack doing 5 life card draws of damage or stops a physical attack. Raise card user's   
+    anger level 1.                                                                                  
+Gohan Lv2's power decreases from 3(2) to 1(1)                                                       
+BlackGohan's anger increases from 0 to 1                                                            
+BlackGohan's attack damage estimate: Damage(0, 5)                                                   
+Gohan uses Gohan Lv1 to defend                                                                      
+  - If a successful energy attack is performed against Gohan, he may raise his anger 1 level once   
+    per combat.                                                                                     
+Gohan's anger increases from 4 to 5                                                                 
+Gohan levels up to Lv2!                                                                             
+Gohan Lv2's power increases from 5(2) to 10(3)                                                      
+Gohan takes Damage(0, 5)                                                                            
+Gohan takes 1 life damage: Ally's Sacrifice (Combat - Defense)                                      
+Gohan takes 1 life damage: Gohan's Energy Defense (Energy Combat - Defense)                         
+Gohan takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                       
+Gohan takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                    
+Gohan takes 1 life damage: Gohan's Energy Defense (Energy Combat - Defense)                         
+BlackGohan steals Earth Dragon Ball 1!                                                              
+BlackGohan discards Black Turning Kick (Energy Combat - Attack)                                     
+
+---------- Attack Phase 4.2: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 49/63 HP                     │
+│ Hand: 4 | Discard: 16 | Removed: 1             │ Hand: 1 | Discard: 5 | Removed: 1               │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan     10(3)pwr                       │ Lv2.1 Gohan      1(1)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange One Knuckle Punch                                                         
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Gohan's anger increases from 0 to 1                                                                 
+Gohan's attack damage estimate: Damage(4, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(4, 0)                                                                       
+Gohan Lv2 takes 1 power damage                                                                      
+Gohan Lv2's power decreases from 1(1) to 0(0)                                                       
+BlackGohan takes 1 life damage: Burning Rage! (Non-Combat)                                          
+BlackGohan takes 1 life damage: Burning Rage! (Non-Combat)                                          
+BlackGohan takes 1 life damage: A Beginner's Heart is Dedicated (Non-Combat)                        
+Gohan discards Orange One Knuckle Punch (Physical Combat - Attack)                                  
+
+---------- Attack Phase 4.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 46/63 HP                     │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 1 | Discard: 8 | Removed: 1               │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.1 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan uses Gohan's Anger (Non-Combat)                                                          
+  - Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.    
+BlackGohan's anger increases from 1 to 3                                                            
+BlackGohan removes Gohan's Anger (Non-Combat) from game                                             
+
+---------- Attack Phase 4.4: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 46/63 HP                     │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 1 | Discard: 8 | Removed: 2               │
+│                                                │ Earth Dragon Ball 1                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Gohan Lv2                                                                        
+  - Once during the game, he can turn into Kong Gohan, inflicting 8 stages of physical damage in his
+    first round of combat.                                                                          
+Gohan's attack damage estimate: Damage(8, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(8, 0)                                                                       
+Gohan Lv2 takes 0 power damage                                                                      
+BlackGohan takes 1 life damage: Black Front Kick (Energy Combat - Attack)                           
+BlackGohan takes 1 life damage: Blazing Anger! (Non-Combat)                                         
+BlackGohan takes 1 life damage: Black Jump Turn Kick (Energy Combat - Attack)                       
+BlackGohan takes 1 life damage: Blazing Anger! (Non-Combat)                                         
+BlackGohan takes 1 life damage: Vegeta's Plans (Non-Combat)                                         
+BlackGohan takes 1 life damage: Gohan's Anger (Non-Combat)                                          
+BlackGohan takes 1 life damage: Black Side Kick (Physical Combat - Defense)                         
+BlackGohan takes 1 life damage: Black Front Kick (Energy Combat - Attack)                           
+Gohan steals Earth Dragon Ball 1!                                                                   
+
+---------- Attack Phase 4.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 38/63 HP                     │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 1 | Discard: 16 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 4.6: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 38/63 HP                     │
+│ Hand: 3 | Discard: 17 | Removed: 1             │ Hand: 1 | Discard: 16 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+Gohan must discard down to 1 card                                                                   
+Gohan discards Black Axe Heel Kick (Energy Combat - Defense)                                        
+Gohan recycles Earth Dragon Ball 5 (Non-Combat)                                                     
+
+====================================================================================================
+========== Turn 5: Gohan ===========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 40/65 HP                         │ BlackGohan [CPU] - 38/63 HP                     │
+│ Hand: 1 | Discard: 18 | Removed: 1             │ Hand: 1 | Discard: 16 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan plays Power Up! (Non-Combat)                                                                  
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Gohan plays Power Up! (Non-Combat)                                                                  
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 37/65 HP                         │ BlackGohan [CPU] - 38/63 HP                     │
+│ Hand: 2 | Discard: 18 | Removed: 1             │ Hand: 1 | Discard: 16 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan declares combat!                                                                              
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+
+---------- Attack Phase 5.1: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 37/65 HP                         │ BlackGohan [CPU] - 35/63 HP                     │
+│ Hand: 2 | Discard: 18 | Removed: 1             │ Hand: 4 | Discard: 16 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Goku Anger Attack                                                                
+  - This physical attack does double the normal damage if successful.                               
+Gohan's attack damage estimate: Damage(8, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(8, 0)                                                                       
+Gohan Lv2 takes 0 power damage                                                                      
+BlackGohan takes 1 life damage: Black Front Kick (Energy Combat - Attack)                           
+BlackGohan takes 1 life damage: Black Axe Heel Kick (Energy Combat - Defense)                       
+BlackGohan takes 1 life damage: Black Rear Spin Kick (Energy Combat - Defense)                      
+BlackGohan takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                  
+BlackGohan takes 1 life damage: Gohan's Anger (Non-Combat)                                          
+BlackGohan takes 1 life damage: Burning Rage! (Non-Combat)                                          
+BlackGohan takes 1 life damage: Chi-Chi Lv1 (Personality)                                           
+BlackGohan takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                         
+Gohan discards Goku Anger Attack (Physical Combat - Attack)                                         
+
+---------- Attack Phase 5.2: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 37/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 1 | Discard: 19 | Removed: 1             │ Hand: 4 | Discard: 24 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan     10(3)pwr                       │ Lv2.3 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan's Physical Attack                                                     
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+BlackGohan's anger increases from 3 to 4                                                            
+Gohan Lv2's power increases from 0(0) to 5(2)                                                       
+BlackGohan's attack damage estimate: Damage(0, 0)                                                   
+Gohan uses Blue Big Outside Drop to defend                                                          
+  - Stops a physical attack. Raise the card user's anger level 1.                                   
+Gohan's anger increases from 1 to 2                                                                 
+Gohan discards Blue Big Outside Drop (Physical Combat - Defense)                                    
+BlackGohan discards Gohan's Physical Attack (Physical Combat - Attack)                              
+
+---------- Attack Phase 5.3: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 37/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 25 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan uses Power Up! (Non-Combat)                                                                   
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Gohan rejuvenates with Blue Big Outside Drop (Physical Combat - Defense)                            
+Gohan discards Power Up! (Non-Combat)                                                               
+
+---------- Attack Phase 5.4: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 38/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 25 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 5.5: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 38/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 25 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan uses Power Up! (Non-Combat)                                                                   
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Gohan rejuvenates with Power Up! (Non-Combat)                                                       
+Gohan discards Power Up! (Non-Combat)                                                               
+
+---------- Attack Phase 5.6: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 25 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 5.7: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 25 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Black Axe Heel Kick (Energy Combat - Defense)                                   
+BlackGohan discards Nappa's Energy Aura (Energy Combat - Defense)                                   
+
+====================================================================================================
+========== Turn 6: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 27/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 1 | Discard: 27 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+Gohan Lv2's power increases from 5(2) to 8(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 39/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 0 | Discard: 20 | Removed: 1             │ Hand: 4 | Discard: 27 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 6.1: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 36/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 3 | Discard: 20 | Removed: 1             │ Hand: 4 | Discard: 27 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan     10(3)pwr                       │ Lv2.4 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan's Physical Attack                                                     
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+BlackGohan's anger increases from 4 to 5                                                            
+BlackGohan levels up to Lv3!                                                                        
+Gohan Lv3's power increases from 5(3) to 10(4)                                                      
+BlackGohan's attack damage estimate: Damage(2, 0)                                                   
+Gohan has no defense                                                                                
+Gohan takes Damage(2, 0)                                                                            
+Gohan Lv2 takes 2 power damage                                                                      
+Gohan Lv2's power decreases from 10(3) to 8(3)                                                      
+BlackGohan discards Gohan's Physical Attack (Physical Combat - Attack)                              
+
+---------- Attack Phase 6.2: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 36/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 3 | Discard: 20 | Removed: 1             │ Hand: 3 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan      8(3)pwr                       │ Lv3.0 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange One Knuckle Punch                                                         
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Gohan's anger increases from 2 to 3                                                                 
+Gohan's attack damage estimate: Damage(1, 0)                                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(1, 0)                                                                       
+Gohan Lv3 takes 1 power damage                                                                      
+Gohan Lv3's power decreases from 10(4) to 9(4)                                                      
+Gohan discards Orange One Knuckle Punch (Physical Combat - Attack)                                  
+
+---------- Attack Phase 6.3: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 36/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 2 | Discard: 21 | Removed: 1             │ Hand: 3 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan      8(3)pwr                       │ Lv3.0 Gohan      9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan Lv3                                                                   
+  - Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.        
+Gohan Lv3's power decreases from 9(4) to 8(3)                                                       
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Gohan has no defense                                                                                
+Gohan takes Damage(0, 3)                                                                            
+Gohan takes 1 life damage: Gohan's Energy Defense (Energy Combat - Defense)                         
+Gohan takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                       
+Gohan takes 1 life damage: Tien Lv2 (Personality)                                                   
+
+---------- Attack Phase 6.4: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 33/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 2 | Discard: 24 | Removed: 1             │ Hand: 3 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan      8(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+
+---------- Attack Phase 6.5: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 33/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 2 | Discard: 24 | Removed: 1             │ Hand: 3 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan      8(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Gohan's Energy Defense (Energy Combat - Defense)                                
+BlackGohan discards Black Rear Spin Kick (Energy Combat - Defense)                                  
+Gohan must discard down to 1 card                                                                   
+Gohan discards Power Up! (Non-Combat)                                                               
+
+====================================================================================================
+========== Turn 7: Gohan ===========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 33/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 1 | Discard: 25 | Removed: 1             │ Hand: 1 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan      8(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan plays Orange Joint Restraint Drill (Non-Combat)                                               
+  - All of your physical attacks do +4 power stages of damage.                                      
+Gohan Lv2's power increases from 8(3) to 10(3)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 24/63 HP                     │
+│ Hand: 3 | Discard: 25 | Removed: 1             │ Hand: 1 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan declares combat!                                                                              
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+
+---------- Attack Phase 7.1: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 21/63 HP                     │
+│ Hand: 3 | Discard: 25 | Removed: 1             │ Hand: 4 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+
+---------- Attack Phase 7.2: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 21/63 HP                     │
+│ Hand: 3 | Discard: 25 | Removed: 1             │ Hand: 4 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Final Physical Attack                                                       
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+BlackGohan discards Vegeta's Smirk (Non-Combat)                                                     
+BlackGohan's attack damage estimate: Damage(1, 0)                                                   
+Gohan uses Piccolo's Physical Defense to defend                                                     
+  - Stops a physical attack. Gain 4 power stages.                                                   
+Gohan discards Piccolo's Physical Defense (Physical Combat - Defense)                               
+
+---------- Attack Phase 7.3: Gohan -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 21/63 HP                     │
+│ Hand: 2 | Discard: 26 | Removed: 1             │ Hand: 3 | Discard: 31 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+
+---------- Attack Phase 7.4: BlackGohan ------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 21/63 HP                     │
+│ Hand: 2 | Discard: 26 | Removed: 1             │ Hand: 3 | Discard: 31 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+Gohan must discard down to 1 card                                                                   
+Gohan discards Orange Joint Restraint Drill (Non-Combat)                                            
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards A Beginner's Heart is Dedicated (Non-Combat)                                    
+BlackGohan discards Goku's Lucky Break (Non-Combat)                                                 
+
+====================================================================================================
+========== Turn 8: BlackGohan ======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 21/63 HP                     │
+│ Hand: 1 | Discard: 27 | Removed: 1             │ Hand: 1 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Ball 1                            │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan plays Earth Dragon Ball 4 (Non-Combat)                                                   
+  - End the very next combat you are forced into before you sustain damage. Your anger level        
+    increases 2.                                                                                    
+BlackGohan's anger increases from 0 to 2                                                            
+BlackGohan plays King Kai's Calming (Non-Combat)                                                    
+  - Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main 
+    Personality one personality level.                                                              
+Gohan Lv3's power increases from 8(3) to 10(4)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 18/63 HP                     │
+│ Hand: 1 | Discard: 27 | Removed: 1             │ Hand: 2 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Ball 1                            │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.2 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan chooses to skip combat                                                                   
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Black Side Kick (Physical Combat - Defense)                                     
+BlackGohan rejuvenates with Black Side Kick (Physical Combat - Defense)                             
+
+====================================================================================================
+========== Turn 9: Gohan ===========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 19/63 HP                     │
+│ Hand: 1 | Discard: 27 | Removed: 1             │ Hand: 1 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Ball 1                            │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.2 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan plays Earth Dragon Ball 7 (Non-Combat)                                                        
+  - Play this card during combat to end the battle. Pick 3 cards out of your discard pile and place 
+    them at the top of your life deck. All opponents' anger levels shift down 2.                    
+BlackGohan's anger decreases from 2 to 0                                                            
+Gohan returns Black Axe Heel Kick (Energy Combat - Defense) to their life deck                      
+Gohan returns Gohan's Energy Defense (Energy Combat - Defense) to their life deck                   
+Gohan returns Goku Anger Attack (Physical Combat - Attack) to their life deck                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 30/65 HP                         │ BlackGohan [CPU] - 19/63 HP                     │
+│ Hand: 3 | Discard: 24 | Removed: 1             │ Hand: 1 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan uses Earth Dragon Ball 4                                                                 
+  - End the very next combat you are forced into before you sustain damage.                         
+Gohan must discard down to 1 card                                                                   
+Gohan discards Black Axe Heel Kick (Energy Combat - Defense)                                        
+Gohan removes Earth Dragon Ball 4 (Non-Combat) from game                                            
+Gohan rejuvenates with Black Axe Heel Kick (Energy Combat - Defense)                                
+
+====================================================================================================
+========== Turn 10: BlackGohan =====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 31/65 HP                         │ BlackGohan [CPU] - 19/63 HP                     │
+│ Hand: 1 | Discard: 24 | Removed: 2             │ Hand: 1 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 31/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 1 | Discard: 24 | Removed: 2             │ Hand: 4 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 10.1: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 4 | Discard: 24 | Removed: 2             │ Hand: 4 | Discard: 33 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.3 Gohan     10(3)pwr                       │ Lv3.0 Gohan     10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Black Turning Kick                                                          
+  - Energy attack doing 5 life card draws of damage or stops a physical attack. Raise card user's   
+    anger level 1.                                                                                  
+Gohan Lv3's power decreases from 10(4) to 8(3)                                                      
+BlackGohan's anger increases from 0 to 1                                                            
+BlackGohan's attack damage estimate: Damage(0, 5)                                                   
+Gohan uses Gohan's Energy Defense to defend                                                         
+  - Stops an energy attack. Raise your anger 1 level.                                               
+Gohan's anger increases from 3 to 4                                                                 
+Gohan discards Gohan's Energy Defense (Energy Combat - Defense)                                     
+BlackGohan discards Black Turning Kick (Energy Combat - Attack)                                     
+
+---------- Attack Phase 10.2: Gohan ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 3 | Discard: 25 | Removed: 2             │ Hand: 3 | Discard: 34 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan     10(3)pwr                       │ Lv3.1 Gohan      8(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Goku Anger Attack                                                                
+  - This physical attack does double the normal damage if successful.                               
+Gohan's attack damage estimate: Damage(6, 0)                                                        
+  - Damage modified by Gohan's: Orange Joint Restraint Drill                                        
+BlackGohan has no defense                                                                           
+BlackGohan takes Damage(6, 0)                                                                       
+Gohan Lv3 takes 6 power damage                                                                      
+Gohan Lv3's power decreases from 8(3) to 2(3)                                                       
+Gohan discards Goku Anger Attack (Physical Combat - Attack)                                         
+
+---------- Attack Phase 10.3: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 2 | Discard: 26 | Removed: 2             │ Hand: 3 | Discard: 34 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.4 Gohan     10(3)pwr                       │ Lv3.1 Gohan      2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Black Jump Turn Kick                                                        
+  - Energy attack. Raise card user's anger level 1.                                                 
+Gohan Lv3's power decreases from 2(3) to 0(0)                                                       
+BlackGohan's anger increases from 1 to 2                                                            
+BlackGohan's attack damage estimate: Damage(0, 4)                                                   
+Gohan uses Black Axe Heel Kick to defend                                                            
+  - Stops a foe's energy attack. Raise card user's anger level 1.                                   
+Gohan's anger increases from 4 to 5                                                                 
+Gohan levels up to Lv3!                                                                             
+Gohan discards Orange Joint Restraint Drill (Non-Combat)                                            
+Gohan Lv3's power increases from 5(3) to 10(4)                                                      
+Gohan discards Black Axe Heel Kick (Energy Combat - Defense)                                        
+BlackGohan discards Black Jump Turn Kick (Energy Combat - Attack)                                   
+
+---------- Attack Phase 10.4: Gohan ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 1 | Discard: 28 | Removed: 2             │ Hand: 2 | Discard: 35 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.0 Gohan     10(4)pwr                       │ Lv3.2 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+
+---------- Attack Phase 10.5: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 1 | Discard: 28 | Removed: 2             │ Hand: 2 | Discard: 35 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv3.0 Gohan     10(4)pwr                       │ Lv3.2 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Black Elbow Strike (Physical Combat - Defense)                                  
+BlackGohan uses King Kai's Calming                                                                  
+  - Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main 
+    Personality one personality level.                                                              
+Gohan levels down to Lv2!                                                                           
+BlackGohan discards King Kai's Calming (Non-Combat)                                                 
+
+====================================================================================================
+========== Turn 11: Gohan ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 28/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 1 | Discard: 28 | Removed: 2             │ Hand: 1 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      5(2)pwr                       │ Lv3.2 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan Lv2's power increases from 5(2) to 7(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 25/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 4 | Discard: 28 | Removed: 2             │ Hand: 1 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      7(3)pwr                       │ Lv3.2 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan chooses to skip combat                                                                        
+Gohan must discard down to 1 card                                                                   
+Gohan discards Gohan's Physical Attack (Physical Combat - Attack)                                   
+Gohan discards Gohan's Energy Defense (Energy Combat - Defense)                                     
+Gohan discards Gohan's Physical Attack (Physical Combat - Attack)                                   
+Gohan rejuvenates with Gohan's Physical Attack (Physical Combat - Attack)                           
+
+====================================================================================================
+========== Turn 12: BlackGohan =====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 26/65 HP                         │ BlackGohan [CPU] - 16/63 HP                     │
+│ Hand: 1 | Discard: 30 | Removed: 2             │ Hand: 1 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      7(3)pwr                       │ Lv3.2 Gohan      0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan plays Gohan's Anger (Non-Combat)                                                         
+  - Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.    
+Gohan Lv3's power increases from 0(0) to 4(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 26/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 1 | Discard: 30 | Removed: 2             │ Hand: 3 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      7(3)pwr                       │ Lv3.2 Gohan      4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 12.1: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 23/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 4 | Discard: 30 | Removed: 2             │ Hand: 3 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      7(3)pwr                       │ Lv3.2 Gohan      4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan Lv3                                                                   
+  - Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.        
+Gohan Lv3's power decreases from 4(3) to 3(3)                                                       
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Gohan uses Black Knife Hand Strike to defend                                                        
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Gohan discards Black Knife Hand Strike (Energy Combat - Attack)                                     
+
+---------- Attack Phase 12.2: Gohan ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 23/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 3 | Discard: 31 | Removed: 2             │ Hand: 3 | Discard: 37 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.0 Gohan      7(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Arm Bar                                                                   
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Gohan's anger increases from 0 to 1                                                                 
+Gohan's attack damage estimate: Damage(4, 0)                                                        
+BlackGohan uses Goku's Truce to defend                                                              
+  - Stops a successful energy or physical attack.                                                   
+BlackGohan discards Goku's Truce (Combat - Defense)                                                 
+Gohan discards Orange Arm Bar (Physical Combat - Attack)                                            
+
+---------- Attack Phase 12.3: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 23/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 2 | Discard: 32 | Removed: 2             │ Hand: 2 | Discard: 38 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      7(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan passes                                                                                   
+
+---------- Attack Phase 12.4: Gohan ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 23/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 2 | Discard: 32 | Removed: 2             │ Hand: 2 | Discard: 38 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      7(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan passes                                                                                        
+BlackGohan must discard down to 1 card                                                              
+BlackGohan discards Gohan's Energy Defense (Energy Combat - Defense)                                
+Gohan must discard down to 1 card                                                                   
+Gohan discards Blue Big Outside Drop (Physical Combat - Defense)                                    
+
+====================================================================================================
+========== Turn 13: Gohan ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 23/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 1 | Discard: 33 | Removed: 2             │ Hand: 1 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      7(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan plays Orange Joint Restraint Drill (Non-Combat)                                               
+  - All of your physical attacks do +4 power stages of damage.                                      
+Gohan Lv2's power increases from 7(3) to 9(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 20/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 3 | Discard: 33 | Removed: 2             │ Hand: 1 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      9(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan chooses to skip combat                                                                        
+Gohan must discard down to 1 card                                                                   
+Gohan discards Black Knife Hand Strike (Energy Combat - Attack)                                     
+Gohan discards Goku's Energy Defense (Energy Combat - Defense)                                      
+Gohan rejuvenates with Goku's Energy Defense (Energy Combat - Defense)                              
+
+====================================================================================================
+========== Turn 14: BlackGohan =====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 21/65 HP                         │ BlackGohan [CPU] - 13/63 HP                     │
+│ Hand: 1 | Discard: 34 | Removed: 2             │ Hand: 1 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      9(3)pwr                       │ Lv3.2 Gohan      3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+BlackGohan adds a card to hand                                                                      
+Gohan Lv3's power increases from 3(3) to 7(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 21/65 HP                         │ BlackGohan [CPU] - 10/63 HP                     │
+│ Hand: 1 | Discard: 34 | Removed: 2             │ Hand: 4 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      9(3)pwr                       │ Lv3.2 Gohan      7(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan declares combat!                                                                         
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+Gohan adds a card to hand                                                                           
+
+---------- Attack Phase 14.1: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 18/65 HP                         │ BlackGohan [CPU] - 10/63 HP                     │
+│ Hand: 4 | Discard: 34 | Removed: 2             │ Hand: 4 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      9(3)pwr                       │ Lv3.2 Gohan      7(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan attacks with Gohan Lv3                                                                   
+  - Kamehameha Energy Attack does 3 life card draws and only costs 1 power stage to perform.        
+Gohan Lv3's power decreases from 7(3) to 6(3)                                                       
+BlackGohan's attack damage estimate: Damage(0, 3)                                                   
+Gohan has no defense                                                                                
+Gohan takes Damage(0, 3)                                                                            
+Gohan takes 1 life damage: Unexpected Allies (Combat - Defense)                                     
+Gohan takes 1 life damage: Chiaotzu Lv2 (Personality)                                               
+Gohan takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                       
+
+---------- Attack Phase 14.2: Gohan ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 15/65 HP                         │ BlackGohan [CPU] - 10/63 HP                     │
+│ Hand: 4 | Discard: 37 | Removed: 2             │ Hand: 4 | Discard: 39 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.1 Gohan      9(3)pwr                       │ Lv3.2 Gohan      6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Gohan attacks with Orange Standing Fist Punch                                                       
+  - Physical Attack. Raise card user's anger level 1.                                               
+Gohan's anger increases from 1 to 2                                                                 
+Gohan's attack damage estimate: Damage(5, 0)                                                        
+  - Damage modified by Gohan's: Orange Joint Restraint Drill                                        
+BlackGohan uses Black Elbow Strike to defend                                                        
+  - Stops a foe's physical attack. Raise card user's anger level 1.                                 
+BlackGohan's anger increases from 2 to 3                                                            
+BlackGohan discards Black Elbow Strike (Physical Combat - Defense)                                  
+Gohan discards Orange Standing Fist Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 14.3: BlackGohan -----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 15/65 HP                         │ BlackGohan [CPU] - 10/63 HP                     │
+│ Hand: 3 | Discard: 38 | Removed: 2             │ Hand: 3 | Discard: 40 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan      9(3)pwr                       │ Lv3.3 Gohan      6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan uses Gohan's Anger (Non-Combat)                                                          
+  - Raise your anger by 2 and reduce every villain's anger by 1. Remove from the game after use.    
+BlackGohan's anger increases from 3 to 5                                                            
+BlackGohan levels up to Lv4!                                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Gohan [CPU] - 15/65 HP                         │ BlackGohan [CPU] - 10/63 HP                     │
+│ Hand: 3 | Discard: 38 | Removed: 2             │ Hand: 3 | Discard: 40 | Removed: 2              │
+│ Earth Dragon Balls 1,7                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv2.2 Gohan      9(3)pwr                       │ Lv3.5 Gohan      6(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ The Untroubled Mind is Focused                  │
+│                                                │ Gohan's Anger                                   │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Orange Joint Restraint Drill                   │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlackGohan (CPU2) wins!                                                                             
+BlackGohan has achieved the Most Powerful Personality                                               
+[exit code: 0]

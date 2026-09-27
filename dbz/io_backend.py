@@ -15,6 +15,13 @@ class IOBackend(abc.ABC):
                      other_names=None, other_descriptions=None, allow_pass=True):
         '''Blocks and returns raw text the way input() does today.
 
+        prompt is the short, plain-text label for this choice (e.g.
+        "Select a Non-Combat card to play from your hand") - it's up to
+        each backend to dress it up for its own medium (CLIBackend wraps
+        it as an input() prompt; BrowserBackend shows it as-is above the
+        choice cards). The fully-formatted, numbered listing is a
+        separate, already-sent write() line - see Player.choose().
+
         names/descriptions/other_names/other_descriptions/allow_pass are
         Player.choose()'s own parameters, forwarded through unchanged, for
         backends that want the structured option data (e.g. to render
@@ -40,7 +47,7 @@ class CLIBackend(IOBackend):
         print(line)
 
     def read_choice(self, prompt, **kwargs):
-        return input(prompt)
+        return input(f'>>> {prompt}: ')
 
     def _pace(self):
         if State.INTERACTIVE and self._last_write_time is not None:
@@ -69,6 +76,8 @@ class BrowserBackend(IOBackend):
     def read_choice(self, prompt, names=None, descriptions=None,
                      other_names=None, other_descriptions=None, allow_pass=True):
         from js import dbzReadChoice
+        if State.RUNNER is not None:
+            State.RUNNER.refresh_state()
         options = json.dumps({
             'prompt': prompt,
             'names': names or [],

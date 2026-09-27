@@ -1,12 +1,25 @@
 const log = document.getElementById('log');
 const board = document.getElementById('board');
-const runCpuButton = document.getElementById('run-cpu');
-const runInteractiveButton = document.getElementById('run-interactive');
+const status = document.getElementById('status');
+const setupDiv = document.getElementById('setup');
+const seedInput = document.getElementById('seed-input');
+const deck1Select = document.getElementById('deck1-select');
+const deck2Select = document.getElementById('deck2-select');
+const startGameButton = document.getElementById('start-game');
 const choicesDiv = document.getElementById('choices');
 const choicesPrompt = document.getElementById('choices-prompt');
 const choicesRow = document.getElementById('choices-row');
 
-const worker = new Worker('worker.js', {type: 'module'});
+// Fixed starting point for reproducible playtesting.
+const DEFAULT_SEED = 1;
+const DEFAULT_DECK1 = 'goku_survival';
+const DEFAULT_DECK2 = 'vegeta_db';
+
+// Cache-bust: Chromium caches `type: 'module'` worker scripts (and their
+// static imports) separately from the regular HTTP cache, in a way that
+// can survive across navigations even with Cache-Control: no-store. A
+// unique query string forces a genuinely fresh fetch on every page load.
+const worker = new Worker(`worker.js?v=${Date.now()}`, {type: 'module'});
 
 // Shared buffers for the synchronous input bridge (see
 // dbz/io_backend.py's BrowserBackend.read_choice and worker.js's
@@ -21,6 +34,8 @@ const textSAB = new SharedArrayBuffer(1024);
 const textView = new Uint8Array(textSAB);
 
 worker.postMessage({type: 'init_sab', controlSAB, textSAB});
+
+seedInput.value = DEFAULT_SEED;
 
 function appendLine(text) {
   log.textContent += text + '\n';
@@ -99,11 +114,10 @@ function playerZoneHtml(player) {
 
 function renderBoard(snapshot) {
   board.innerHTML = snapshot.players.map((p) => playerZoneHtml(p)).join('');
-}
 
-function setButtonsDisabled(disabled) {
-  runCpuButton.disabled = disabled;
-  runInteractiveButton.disabled = disabled;
+  const phase = snapshot.phase ?? 'Starting';
+  status.textContent = `Turn ${snapshot.turn} | Phase: ${phase} | Seed: ${snapshot.seed}`;
+  status.hidden = false;
 }
 
 function submitAnswer(value) {
@@ -155,11 +169,28 @@ function renderChoices(payload) {
   choicesDiv.hidden = false;
 }
 
+function populateDeckSelects(deckNames) {
+  const optionsHtml = deckNames.map((name) => `<option value="${escapeHtml(name)}">${escapeHtml(name)}</option>`).join('');
+  deck1Select.innerHTML = optionsHtml;
+  deck2Select.innerHTML = optionsHtml;
+  deck1Select.value = deckNames.includes(DEFAULT_DECK1) ? DEFAULT_DECK1 : deckNames[0];
+  deck2Select.value = deckNames.includes(DEFAULT_DECK2) ? DEFAULT_DECK2 : (deckNames[1] ?? deckNames[0]);
+}
+
+function showSetup() {
+  seedInput.value = DEFAULT_SEED;
+  setupDiv.hidden = false;
+  status.hidden = true;
+}
+
 worker.onmessage = (event) => {
   const msg = JSON.parse(event.data);
 
   if (msg.type === 'ready') {
-    setButtonsDisabled(false);
+    populateDeckSelects(msg.decks);
+    deck1Select.disabled = false;
+    deck2Select.disabled = false;
+    startGameButton.disabled = false;
     appendLine('[Pyodide ready - dbz engine loaded]');
   } else if (msg.type === 'write') {
     appendLine(msg.line);
@@ -170,25 +201,22 @@ worker.onmessage = (event) => {
   } else if (msg.type === 'done') {
     appendLine(`[Game over - player ${msg.winner} wins]`);
     choicesDiv.hidden = true;
-    setButtonsDisabled(false);
+    showSetup();
   } else if (msg.type === 'error') {
     appendLine(`[Error] ${msg.message}`);
     choicesDiv.hidden = true;
-    setButtonsDisabled(false);
+    showSetup();
   }
 };
 
-runCpuButton.addEventListener('click', () => {
-  setButtonsDisabled(true);
-  log.textContent = '';
-  board.innerHTML = '';
-  worker.postMessage({type: 'run_cpu_vs_cpu', seed: 1});
-});
+startGameButton.addEventListener('click', () => {
+  const seed = parseInt(seedInput.value, 10) || DEFAULT_SEED;
+  const deck1 = deck1Select.value;
+  const deck2 = deck2Select.value;
 
-runInteractiveButton.addEventListener('click', () => {
-  setButtonsDisabled(true);
+  setupDiv.hidden = true;
   log.textContent = '';
   board.innerHTML = '';
-  worker.postMessage({type: 'run_interactive', seed: 1});
+  worker.postMessage({type: 'run_interactive', seed, deck1, deck2});
 });
 

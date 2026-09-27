@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Golden-log regression test for the CLI engine. See tests/run_regression.py
+# for the scenario list and --update/--scenario flags.
+cd "$(dirname "$0")"
+python tests/run_regression.py "$@"

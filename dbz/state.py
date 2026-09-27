@@ -2,6 +2,8 @@ import sys
 
 
 class State:
+    SEED = None
+    RUNNER = None
     TURN = 0
     TURN_PLAYER = None
     ATTACKING_PLAYER = None

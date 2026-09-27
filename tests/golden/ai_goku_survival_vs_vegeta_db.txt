@@ -1,0 +1,1211 @@
+BlueGoku shuffles their deck                                                                        
+SaiyanVegeta shuffles their deck                                                                    
+BlueGoku will go first (Power Rule)                                                                 
+====================================================================================================
+========== Turn 1: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 81/85 HP                      │ SaiyanVegeta [CPU] - 46/50 HP                   │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       5(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Krillin's Drill (Non-Combat)                                                         
+  - Does an extra life card of damage with each successful attack.                                  
+Goku Lv1's power increases from 5(2) to 7(3)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 46/50 HP                   │
+│ Hand: 2 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 1.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 43/50 HP                   │
+│ Hand: 2 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Hidden Power Level                                                            
+  - Physical attack. Raise your Main Personality to their highest power stage.                      
+Goku Lv1's power increases from 7(3) to 10(3)                                                       
+BlueGoku's attack damage estimate: Damage(1, 1)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(1, 1)                                                                     
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 5(3) to 4(3)                                                   
+SaiyanVegeta takes 1 life damage: Vegeta's Plans (Non-Combat)                                       
+BlueGoku discards Hidden Power Level (Physical Combat - Attack)                                     
+
+---------- Attack Phase 1.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 42/50 HP                   │
+│ Hand: 1 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball Capture (Non-Combat)                                            
+  - Capture an opponent's Dragon Ball.                                                              
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+---------- Attack Phase 1.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 42/50 HP                   │
+│ Hand: 1 | Discard: 1 | Removed: 0              │ Hand: 2 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Hip Spring Throw                                                         
+  - Physical Attack doing +2 stages of damage if successful. Stops a foe's physical attack on their 
+    next round. Lower foe's anger level 1.                                                          
+BlueGoku's attack damage estimate: Damage(3, 1)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(3, 1)                                                                     
+Vegeta HT Lv1 takes 3 power damage                                                                  
+Vegeta HT Lv1's power decreases from 4(3) to 1(3)                                                   
+SaiyanVegeta takes 1 life damage: Earth Dragon Ball Capture (Physical Combat - Attack)              
+BlueGoku discards Blue Hip Spring Throw (Physical Combat - Attack)                                  
+
+---------- Attack Phase 1.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Hip Spring Throw (*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 1.5: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Hip Spring Throw (*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Saiyan Appraisal Maneuver (Non-Combat)                                        
+
+====================================================================================================
+========== Turn 2: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 41/50 HP                   │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Saiyan Battle Terms (Non-Combat)                                                 
+  - Remove a Non-Combat Card or Ally from in front of another player from the game. Remove from the 
+    game after use.                                                                                 
+SaiyanVegeta plays Earth Dragon Ball 4 (Non-Combat)                                                 
+  - End the very next combat you are forced into before you sustain damage. Your anger level        
+    increases 2.                                                                                    
+SaiyanVegeta's anger increases from 0 to 2                                                          
+SaiyanVegeta plays King Kai's Calming (Non-Combat)                                                  
+  - Use at the end of any turn. If your opponent’s Main Personality is at Level 3, lower their Main 
+    Personality one personality level.                                                              
+Vegeta HT Lv1's power increases from 1(3) to 3(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 38/50 HP                   │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 4 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta chooses to skip combat                                                                 
+SaiyanVegeta rejuvenates with Saiyan Appraisal Maneuver (Non-Combat)                                
+
+====================================================================================================
+========== Turn 3: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ SaiyanVegeta [CPU] - 39/50 HP                   │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 3 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Vegeta's Trick (Non-Combat)                                                          
+  - Find the foe's first Dragon Ball in their Life Deck and place it at the bottom of their deck.   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 75/85 HP                      │ SaiyanVegeta [CPU] - 39/50 HP                   │
+│ Hand: 2 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 3 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku chooses to skip combat                                                                     
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Goku's Attack (Physical Combat - Attack)                                          
+BlueGoku rejuvenates with Goku's Attack (Physical Combat - Attack)                                  
+
+====================================================================================================
+========== Turn 4: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ SaiyanVegeta [CPU] - 39/50 HP                   │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 3 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     3(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Goku's Lucky Break (Non-Combat)                                                  
+  - Search your Life Deck for a Dragon Ball and place it into play. Remove from the game after use. 
+SaiyanVegeta plays Unselfish Behavior is Best (Non-Combat)                                          
+  - The efforts of your allies stop this combat. You must have an ally out on the table to use this 
+    card. Remove from the game after use.                                                           
+SaiyanVegeta plays Raditz Lv1 (Personality)                                                         
+  - Reduce the damage from an energy attack performed against you to 2 life cards of damage.        
+Vegeta HT Lv1's power increases from 3(3) to 5(3)                                                   
+Raditz Lv1's power increases from 3(3) to 4(3)                                                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ SaiyanVegeta [CPU] - 36/50 HP                   │
+│ Hand: 1 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 3 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     5(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+│                                                │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 4.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ SaiyanVegeta [CPU] - 36/50 HP                   │
+│ Hand: 4 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 3 | Removed: 0               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     5(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+│                                                │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Saiyan Truce Card (Non-Combat)                                                    
+  - End Combat. Until the Rejuvenation Step of your next turn, you may keep any cards in your hand  
+    during any Rejuvenation Steps. Remove from the game after use.                                  
+SaiyanVegeta removes Saiyan Truce Card (Combat - Attack) from game                                  
+SaiyanVegeta uses Saiyan Truce Card (*)                                                             
+  - Until the Rejuvenation Step of your next turn, you may keep any cards in your hand during any   
+    Rejuvenation Steps.                                                                             
+SaiyanVegeta skips the discard phase                                                                
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Enraged! (Non-Combat)                                                             
+BlueGoku discards Battle Pausing (Combat - Defense)                                                 
+BlueGoku discards Blue Shoulder Wheel (Physical Combat - Attack)                                    
+
+====================================================================================================
+========== Turn 5: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ SaiyanVegeta [CPU] - 36/50 HP                   │
+│ Hand: 1 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     5(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+│                                                │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Vegeta's Plans (Non-Combat)                                                          
+  - Select any Dragon Ball in your deck and put it into play. Remove from the game after use.       
+BlueGoku plays Power Up the Most! (Non-Combat)                                                      
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ SaiyanVegeta [CPU] - 36/50 HP                   │
+│ Hand: 2 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     5(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│ Vegeta's Plans                                 │ King Kai's Calming                              │
+│ Power Up the Most!                             │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Truce Card (*)                           │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball 4                                                               
+  - End the very next combat you are forced into before you sustain damage.                         
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Ribs Broken (Energy Combat - Attack)                                              
+SaiyanVegeta uses Saiyan Truce Card (*)                                                             
+  - Until the Rejuvenation Step of your next turn, you may keep any cards in your hand during any   
+    Rejuvenation Steps.                                                                             
+SaiyanVegeta skips the discard phase                                                                
+BlueGoku rejuvenates with Ribs Broken (Energy Combat - Attack)                                      
+
+====================================================================================================
+========== Turn 6: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 71/85 HP                      │ SaiyanVegeta [CPU] - 36/50 HP                   │
+│ Hand: 1 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     5(3)pwr                        │
+│                                                │ Lv1   Raditz     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│ Vegeta's Plans                                 │ King Kai's Calming                              │
+│ Power Up the Most!                             │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Saibaimen Lv1 (Personality)                                                      
+  - Reduce the damage from an energy attack performed against you to 2 life cards of damage.        
+SaiyanVegeta plays Saiyan Appraisal Maneuver (Non-Combat)                                           
+  - Name a Non-Combat card and foes with any in their deck must remove them from the game. Remove   
+    from the game after use.                                                                        
+SaiyanVegeta plays Raditz Honor Duel! (Non-Combat)                                                  
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Vegeta HT Lv1's power increases from 5(3) to 7(4)                                                   
+Raditz Lv1's power increases from 4(3) to 5(3)                                                      
+Saibaimen Lv1's power increases from 3(3) to 4(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 71/85 HP                      │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 1 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│ Vegeta's Plans                                 │ King Kai's Calming                              │
+│ Power Up the Most!                             │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 6.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 4 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│ Vegeta's Plans                                 │ King Kai's Calming                              │
+│ Power Up the Most!                             │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 6.2: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 4 | Discard: 5 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │ Saiyan Battle Terms                             │
+│ Vegeta's Plans                                 │ King Kai's Calming                              │
+│ Power Up the Most!                             │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Vegeta's Trick (Non-Combat)                                                           
+  - Find the foe's first Dragon Ball in their Life Deck and place it at the bottom of their deck.   
+SaiyanVegeta's next card revealed: Vegeta's Quickness Drill (Non-Combat)                            
+SaiyanVegeta's next card revealed: Raditz Honor Duel! (Non-Combat)                                  
+SaiyanVegeta's next card revealed: Earth Dragon Ball 7 (Non-Combat)                                 
+SaiyanVegeta shuffles their deck                                                                    
+Earth Dragon Ball 7 (Non-Combat) placed at bottom of SaiyanVegeta's deck                            
+BlueGoku discards Vegeta's Trick (Non-Combat)                                                       
+
+---------- Attack Phase 6.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 33/50 HP                   │
+│ Hand: 4 | Discard: 6 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Goku's Lucky Break                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Goku's Lucky Break (Non-Combat)                                                   
+  - Search your Life Deck for a Dragon Ball and place it into play. Remove from the game after use. 
+SaiyanVegeta plays Earth Dragon Ball 6 (Non-Combat)                                                 
+  - This card ends a combat and the user is powered up to full. Shift all opponents' anger levels   
+    down 2.                                                                                         
+SaiyanVegeta shuffles their deck                                                                    
+SaiyanVegeta removes Goku's Lucky Break (Non-Combat) from game                                      
+
+---------- Attack Phase 6.4: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 4 | Discard: 6 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 2               │
+│                                                │ Earth Dragon Balls 4,6(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 6.5: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 4 | Discard: 6 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 2               │
+│                                                │ Earth Dragon Balls 4,6(*)                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta     7(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball 6 (Non-Combat)                                                  
+  - This card ends a combat and the user is powered up to full.                                     
+Vegeta HT Lv1's power increases from 7(4) to 10(4)                                                  
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Power Up! (Non-Combat)                                                            
+BlueGoku discards Chiaotzu Lv1 (Personality)                                                        
+BlueGoku discards Blue Round Throw (Physical Combat - Attack)                                       
+
+====================================================================================================
+========== Turn 7: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 68/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 1 | Discard: 9 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 2               │
+│                                                │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│                                                │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Earth Dragon Ball 1 (Non-Combat)                                                     
+  - Instantly power up to full and draw a card.                                                     
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Tien Lv1 (Personality)                                                               
+  - Multi-Form allows two physical attacks, one after another, or a defense against a physical      
+    attack preventing 4 stages of successful damage.                                                
+Tien Lv1's power increases from 3(1) to 4(1)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 64/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 9 | Removed: 0              │ Hand: 0 | Discard: 3 | Removed: 2               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+SaiyanVegeta uses Raditz Honor Duel!                                                                
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+SaiyanVegeta removes Raditz Honor Duel! (Non-Combat) from game                                      
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 7.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 64/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 9 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 3               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien       4(1)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│ Power Up the Most!                             │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Power Up the Most! (Non-Combat)                                                       
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+Tien Lv1's power increases from 4(1) to 10(3)                                                       
+BlueGoku returns Blue Round Throw (Physical Combat - Attack) to their life deck                     
+BlueGoku returns Battle Pausing (Combat - Defense) to their life deck                               
+BlueGoku discards Power Up the Most! (Non-Combat)                                                   
+
+---------- Attack Phase 7.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 3               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Plans                                 │ Saiyan Battle Terms                             │
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Saiyan Battle Terms (Non-Combat)                                                  
+  - Remove a Non-Combat Card or Ally from in front of another player from the game. Remove from the 
+    game after use.                                                                                 
+BlueGoku removes Vegeta's Plans (Non-Combat) from game                                              
+SaiyanVegeta removes Saiyan Battle Terms (Non-Combat) from game                                     
+
+---------- Attack Phase 7.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 1              │ Hand: 3 | Discard: 0 | Removed: 4               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 7.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 1              │ Hand: 3 | Discard: 0 | Removed: 4               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Saiyan Appraisal Maneuver                       │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Saiyan Appraisal Maneuver (Non-Combat)                                            
+  - Name a Non-Combat card and foes with any in their deck must remove them from the game. Remove   
+    from the game after use.                                                                        
+SaiyanVegeta removes Saiyan Appraisal Maneuver (Non-Combat) from game                               
+
+---------- Attack Phase 7.5: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 32/50 HP                   │
+│ Hand: 3 | Discard: 8 | Removed: 1              │ Hand: 3 | Discard: 0 | Removed: 5               │
+│ Earth Dragon Ball 1                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Attack                                                                 
+  - Physical attack doing 5 life cards of damage. Remove from the game after use.                   
+BlueGoku's attack damage estimate: Damage(0, 6)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 6)                                                                     
+SaiyanVegeta recycles Earth Dragon Ball 3 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Krillin's Trick (Non-Combat)                                      
+SaiyanVegeta takes 1 life damage: Dream Fighting (Combat - Attack)                                  
+SaiyanVegeta takes 1 life damage: Power Up the Most! (Non-Combat)                                   
+SaiyanVegeta removes Earth Dragon Ball 1 (Non-Combat) from game                                     
+SaiyanVegeta recycles Earth Dragon Ball 7 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+SaiyanVegeta takes 1 life damage: Dream Fighting (Combat - Attack)                                  
+SaiyanVegeta takes 1 life damage: Saibaimen Lv1 (Personality)                                       
+BlueGoku steals Earth Dragon Ball 6!                                                                
+BlueGoku removes Goku's Attack (Physical Combat - Attack) from game                                 
+
+---------- Attack Phase 7.6: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 2 | Discard: 8 | Removed: 2              │ Hand: 3 | Discard: 6 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball Capture (Non-Combat)                                            
+  - Capture an opponent's Dragon Ball.                                                              
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+---------- Attack Phase 7.7: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 2 | Discard: 8 | Removed: 2              │ Hand: 2 | Discard: 7 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 10(3) to 9(3)                                                       
+BlueGoku's attack damage estimate: Damage(0, 4)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta uses Vegeta HT Lv1 to defend                                                           
+  - Stop an energy attack.                                                                          
+
+---------- Attack Phase 7.8: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 2 | Discard: 8 | Removed: 2              │ Hand: 2 | Discard: 7 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Earth Dragon Ball Capture (Non-Combat)                                            
+  - Capture an opponent's Dragon Ball.                                                              
+SaiyanVegeta discards Earth Dragon Ball Capture (Physical Combat - Attack)                          
+
+---------- Attack Phase 7.9: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 2 | Discard: 8 | Removed: 2              │ Hand: 1 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 7.10: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 2 | Discard: 8 | Removed: 2              │ Hand: 1 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Goku's Truce (Combat - Defense)                                                   
+
+====================================================================================================
+========== Turn 8: SaiyanVegeta ====================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 25/50 HP                   │
+│ Hand: 1 | Discard: 9 | Removed: 2              │ Hand: 1 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     5(3)pwr                        │
+│                                                │ Lv1   Saibaimen  4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Power Up the Most! (Non-Combat)                                                  
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+SaiyanVegeta plays Raditz Honor Duel! (Non-Combat)                                                  
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Raditz Lv1's power increases from 5(3) to 6(3)                                                      
+Saibaimen Lv1's power increases from 4(3) to 5(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 66/85 HP                      │ SaiyanVegeta [CPU] - 22/50 HP                   │
+│ Hand: 1 | Discard: 9 | Removed: 2              │ Hand: 2 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     6(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Power Up the Most!                              │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 8.1: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 22/50 HP                   │
+│ Hand: 4 | Discard: 9 | Removed: 2              │ Hand: 2 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz     6(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Power Up the Most!                              │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Power Up the Most! (Non-Combat)                                                   
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+Raditz Lv1's power increases from 6(3) to 10(3)                                                     
+SaiyanVegeta returns Dream Fighting (Combat - Attack) to their life deck                            
+SaiyanVegeta returns Saibaimen Lv1 (Personality) to their life deck                                 
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+
+---------- Attack Phase 8.2: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 24/50 HP                   │
+│ Hand: 4 | Discard: 9 | Removed: 2              │ Hand: 2 | Discard: 7 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       9(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Shoulder Wheel                                                           
+  - Physical Attack doing +1 stage of damage if successful. Raises your anger level by 1 and lowers 
+    foe's anger level by 1.                                                                         
+BlueGoku's anger increases from 0 to 1                                                              
+SaiyanVegeta's anger decreases from 2 to 1                                                          
+BlueGoku's attack damage estimate: Damage(1, 1)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(1, 1)                                                                     
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 10(4) to 9(4)                                                  
+SaiyanVegeta takes 1 life damage: Raditz Honor Duel! (Non-Combat)                                   
+BlueGoku discards Blue Shoulder Wheel (Physical Combat - Attack)                                    
+
+---------- Attack Phase 8.3: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 23/50 HP                   │
+│ Hand: 3 | Discard: 10 | Removed: 2             │ Hand: 2 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       9(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 8.4: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 23/50 HP                   │
+│ Hand: 3 | Discard: 10 | Removed: 2             │ Hand: 2 | Discard: 8 | Removed: 6               │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       9(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 9(3) to 8(3)                                                        
+BlueGoku's attack damage estimate: Damage(0, 4)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 4)                                                                     
+SaiyanVegeta takes 1 life damage: Saiyan Battle Terms (Non-Combat)                                  
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+SaiyanVegeta takes 1 life damage: Vegeta's Smirk (Non-Combat)                                       
+SaiyanVegeta takes 1 life damage: Saiyan Battle Terms (Non-Combat)                                  
+
+---------- Attack Phase 8.5: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 19/50 HP                   │
+│ Hand: 3 | Discard: 10 | Removed: 2             │ Hand: 2 | Discard: 12 | Removed: 6              │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       8(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Unselfish Behavior is Best                      │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Unselfish Behavior is Best (Non-Combat)                                           
+  - The efforts of your allies stop this combat. You must have an ally out on the table to use this 
+    card. Remove from the game after use.                                                           
+SaiyanVegeta removes Unselfish Behavior is Best (Non-Combat) from game                              
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Vegeta's Plans (Non-Combat)                                                   
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Cutting the Tail (Combat - Defense)                                               
+BlueGoku discards Goku's Truce (Combat - Defense)                                                   
+
+====================================================================================================
+========== Turn 9: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 63/85 HP                      │ SaiyanVegeta [CPU] - 19/50 HP                   │
+│ Hand: 1 | Discard: 12 | Removed: 2             │ Hand: 1 | Discard: 13 | Removed: 7              │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       8(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ King Kai's Calming                              │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Vegeta's Dragon Ball Capture (Non-Combat)                                            
+  - Capture 2 of a foe's Dragon Balls and place them at the bottom of their owner's life deck.      
+Goku Lv1's power increases from 8(3) to 10(3)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 19/50 HP                   │
+│ Hand: 3 | Discard: 12 | Removed: 2             │ Hand: 1 | Discard: 13 | Removed: 7              │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│                                                │ Raditz Honor Duel!                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+SaiyanVegeta uses Raditz Honor Duel!                                                                
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+SaiyanVegeta removes Raditz Honor Duel! (Non-Combat) from game                                      
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+
+---------- Attack Phase 9.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 19/50 HP                   │
+│ Hand: 3 | Discard: 12 | Removed: 2             │ Hand: 4 | Discard: 10 | Removed: 8              │
+│ Earth Dragon Balls 1,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Tien's Physical Attack                                                        
+  - Physical attack doing 5 life card draws if successful.                                          
+BlueGoku's attack damage estimate: Damage(0, 6)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 6)                                                                     
+SaiyanVegeta takes 1 life damage: Nappa's Blinding Stare (Combat - Attack)                          
+SaiyanVegeta takes 1 life damage: Earth Dragon Ball Capture (Physical Combat - Attack)              
+SaiyanVegeta takes 1 life damage: Nappa's Blinding Stare (Combat - Attack)                          
+SaiyanVegeta takes 1 life damage: Nappa's Blinding Stare (Combat - Attack)                          
+SaiyanVegeta takes 1 life damage: Krillin's Trick (Non-Combat)                                      
+SaiyanVegeta takes 1 life damage: Saiyan Appraisal Maneuver (Non-Combat)                            
+BlueGoku steals Earth Dragon Ball 4!                                                                
+BlueGoku discards Tien's Physical Attack (Physical Combat - Attack)                                 
+
+---------- Attack Phase 9.2: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 13/50 HP                   │
+│ Hand: 2 | Discard: 13 | Removed: 2             │ Hand: 4 | Discard: 16 | Removed: 8              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 9.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 13/50 HP                   │
+│ Hand: 2 | Discard: 13 | Removed: 2             │ Hand: 4 | Discard: 16 | Removed: 8              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Forward Foot Sweep                                                       
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+SaiyanVegeta's anger decreases from 1 to 0                                                          
+BlueGoku's attack damage estimate: Damage(4, 1)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(4, 1)                                                                     
+SaiyanVegeta selects Saibaimen Lv1 to take damage                                                   
+Saibaimen Lv1 takes 4 power damage                                                                  
+Saibaimen Lv1's power decreases from 5(3) to 1(3)                                                   
+SaiyanVegeta recycles Earth Dragon Ball 2 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Saiyan Appraisal Maneuver (Non-Combat)                            
+BlueGoku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                
+
+---------- Attack Phase 9.4: SaiyanVegeta ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 12/50 HP                   │
+│ Hand: 1 | Discard: 14 | Removed: 2             │ Hand: 4 | Discard: 17 | Removed: 8              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta uses Dream Fighting (Non-Combat)                                                       
+  - End Combat. Place the bottom card of your discard pile at the bottom of your Life Deck. Remove  
+    from the game after use.                                                                        
+SaiyanVegeta rejuvenates (from the bottom) with Unselfish Behavior is Best (Non-Combat)             
+SaiyanVegeta removes Dream Fighting (Combat - Attack) from game                                     
+SaiyanVegeta must discard down to 1 card                                                            
+SaiyanVegeta discards Krillin's Trick (Non-Combat)                                                  
+SaiyanVegeta discards Power Up the Most! (Non-Combat)                                               
+
+====================================================================================================
+========== Turn 10: SaiyanVegeta ===================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 13/50 HP                   │
+│ Hand: 1 | Discard: 14 | Removed: 2             │ Hand: 1 | Discard: 18 | Removed: 9              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta     9(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta adds a card to hand                                                                    
+SaiyanVegeta plays Vegeta's Quickness Drill (Non-Combat)                                            
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta plays Krillin's Trick (Non-Combat)                                                     
+  - Steal a Dragon Ball. Remove from the game after use.                                            
+Vegeta HT Lv1's power increases from 9(4) to 10(4)                                                  
+Saibaimen Lv1's power increases from 1(3) to 2(3)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ SaiyanVegeta [CPU] - 10/50 HP                   │
+│ Hand: 1 | Discard: 14 | Removed: 2             │ Hand: 2 | Discard: 18 | Removed: 9              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta declares combat!                                                                       
+SaiyanVegeta uses Vegeta's Quickness Drill                                                          
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+SaiyanVegeta adds a card to hand                                                                    
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 10.1: SaiyanVegeta ---------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ SaiyanVegeta [CPU] - 10/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 3 | Discard: 17 | Removed: 9              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+SaiyanVegeta passes                                                                                 
+
+---------- Attack Phase 10.2: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ SaiyanVegeta [CPU] - 10/50 HP                   │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 3 | Discard: 17 | Removed: 9              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Piccolo's Revenge                                                             
+  - Your successful energy beam attack slashes defender for 6 life cards. Remove from the game after
+    use.                                                                                            
+Goku Lv1's power decreases from 10(3) to 8(3)                                                       
+BlueGoku's attack damage estimate: Damage(0, 7)                                                     
+  - Damage modified by BlueGoku's: Krillin's Drill                                                  
+SaiyanVegeta has no defense                                                                         
+SaiyanVegeta takes Damage(0, 7)                                                                     
+SaiyanVegeta recycles Earth Dragon Ball 5 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Power Up the Most! (Non-Combat)                                   
+SaiyanVegeta takes 1 life damage: Dream Fighting (Combat - Attack)                                  
+SaiyanVegeta takes 1 life damage: Nappa Lv1 (Personality)                                           
+SaiyanVegeta recycles Earth Dragon Ball 3 (Non-Combat)                                              
+SaiyanVegeta recycles Earth Dragon Ball 7 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Dream Fighting (Combat - Attack)                                  
+SaiyanVegeta takes 1 life damage: Saibaimen Lv1 (Personality)                                       
+SaiyanVegeta recycles Earth Dragon Ball 2 (Non-Combat)                                              
+SaiyanVegeta takes 1 life damage: Unselfish Behavior is Best (Non-Combat)                           
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ SaiyanVegeta [CPU] - 3/50 HP                    │
+│ Hand: 4 | Discard: 14 | Removed: 2             │ Hand: 3 | Discard: 23 | Removed: 9              │
+│ Earth Dragon Balls 1,4,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       8(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+│ Lv1   Tien      10(3)pwr                       │ Lv1   Raditz    10(3)pwr                        │
+│                                                │ Lv1   Saibaimen  2(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Dragon Ball Capture                   │ King Kai's Calming                              │
+│                                                │ Krillin's Trick                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Krillin's Drill                                │ Vegeta's Quickness Drill                        │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku (CPU1) wins!                                                                               
+SaiyanVegeta can take no more life damage                                                           
+[exit code: 0]

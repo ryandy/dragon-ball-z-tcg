@@ -1,0 +1,1761 @@
+Vegeta shuffles their deck                                                                          
+BlueGoku shuffles their deck                                                                        
+BlueGoku will go first (Power Rule)                                                                 
+====================================================================================================
+========== Turn 1: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 81/85 HP                      │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       5(2)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Power Up! (Non-Combat)                                                               
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Goku Lv1's power increases from 5(2) to 7(3)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 78/85 HP                      │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 2 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku chooses to skip combat                                                                     
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Ribs Broken (Energy Combat - Attack)                                              
+BlueGoku rejuvenates with Ribs Broken (Energy Combat - Attack)                                      
+
+====================================================================================================
+========== Turn 2: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 79/85 HP                      │ Vegeta [CPU] - 111/115 HP                       │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     5(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Saiyan Training (Non-Combat)                                                           
+  - Villains and Goku only. Choose 2 cards from your discard pile and place them on the bottom of   
+    your Life Deck.                                                                                 
+Vegeta plays Black Bear Hug Drill (Non-Combat)                                                      
+  - All of your physical attacks do +2 power stages of damage.                                      
+Vegeta HT Lv1's power increases from 5(3) to 6(4)                                                   
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 79/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 1 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 2.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 4 | Discard: 0 | Removed: 0              │ Hand: 1 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta uses Saiyan Training (Non-Combat)                                                            
+  - Villains and Goku only. Choose 2 cards from your discard pile and place them on the bottom of   
+    your Life Deck.                                                                                 
+Vegeta discards Saiyan Training (Non-Combat)                                                        
+
+---------- Attack Phase 2.2: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 4 | Discard: 0 | Removed: 0              │ Hand: 1 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       7(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up!                                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Power Up! (Non-Combat)                                                                
+  - Powers up 5 stages for a personality. Take the top discarded card and place at the bottom of    
+    your life deck.                                                                                 
+Goku Lv1's power increases from 7(3) to 10(3)                                                       
+BlueGoku failed to rejuvenate because the discard pile is empty                                     
+BlueGoku discards Power Up! (Non-Combat)                                                            
+
+---------- Attack Phase 2.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 4 | Discard: 1 | Removed: 0              │ Hand: 1 | Discard: 1 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku      10(3)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Blue Forward Foot Sweep                                                         
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Vegeta's attack damage estimate: Damage(8, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku uses Cutting the Tail to defend                                                            
+  - Set your opponent's anger at 0. Remove from the game after use.                                 
+BlueGoku removes Cutting the Tail (Combat - Defense) from game                                      
+BlueGoku takes Damage(8, 0)                                                                         
+Goku Lv1 takes 8 power damage                                                                       
+Goku Lv1's power decreases from 10(3) to 2(2)                                                       
+Vegeta discards Blue Forward Foot Sweep (Physical Combat - Attack)                                  
+
+---------- Attack Phase 2.4: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 3 | Discard: 1 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       2(2)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Blue Forward Foot Sweep (*)                     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 2(2) to 1(1)                                                        
+BlueGoku's attack damage estimate: Damage(0, 3)                                                     
+Vegeta uses Blue Forward Foot Sweep (*) to defend                                                   
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+
+---------- Attack Phase 2.5: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 3 | Discard: 1 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       1(1)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 2.6: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 3 | Discard: 1 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       1(1)pwr                       │ Lv1.0 Vegeta     6(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Round Throw                                                              
+  - Physical Attack doing +5 stages of damage if successful or stops an energy attack. Lower foe's  
+    anger level 1.                                                                                  
+BlueGoku's attack damage estimate: Damage(5, 0)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(5, 0)                                                                           
+Vegeta HT Lv1 takes 5 power damage                                                                  
+Vegeta HT Lv1's power decreases from 6(4) to 1(3)                                                   
+BlueGoku discards Blue Round Throw (Physical Combat - Attack)                                       
+
+---------- Attack Phase 2.7: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 2 | Discard: 2 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       1(1)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 2.8: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 2 | Discard: 2 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       1(1)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Vegeta's Smirk (Non-Combat)                                                       
+
+====================================================================================================
+========== Turn 3: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 76/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 1 | Discard: 3 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Goku       1(1)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Earth Dragon Ball 4 (Non-Combat)                                                     
+  - End the very next combat you are forced into before you sustain damage. Your anger level        
+    increases 2.                                                                                    
+BlueGoku's anger increases from 0 to 2                                                              
+Goku Lv1's power increases from 1(1) to 3(2)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 108/115 HP                       │
+│ Hand: 3 | Discard: 3 | Removed: 1              │ Hand: 0 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 3.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 3 | Discard: 3 | Removed: 1              │ Hand: 3 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       3(2)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Piccolo's Revenge                                                             
+  - Your successful energy beam attack slashes defender for 6 life cards. Remove from the game after
+    use.                                                                                            
+Goku Lv1's power decreases from 3(2) to 1(1)                                                        
+BlueGoku's attack damage estimate: Damage(0, 6)                                                     
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+BlueGoku removes Piccolo's Revenge (Energy Combat - Attack) from game                               
+
+---------- Attack Phase 3.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 2 | Discard: 3 | Removed: 2              │ Hand: 3 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Final Physical Attack                                                           
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Vegeta discards Vegeta's Dragon Ball Capture (Non-Combat)                                           
+Vegeta's attack damage estimate: Damage(5, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku uses Blue Ground Holding to defend                                                         
+  - Stops a physical attack. Lower foe's anger level by 1.                                          
+BlueGoku discards Blue Ground Holding (Physical Combat - Defense)                                   
+
+---------- Attack Phase 3.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 1 | Discard: 4 | Removed: 2              │ Hand: 2 | Discard: 3 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       1(1)pwr                       │ Lv1.0 Vegeta     1(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Hidden Power Level                                                            
+  - Physical attack. Raise your Main Personality to their highest power stage.                      
+Goku Lv1's power increases from 1(1) to 10(3)                                                       
+BlueGoku's attack damage estimate: Damage(1, 0)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(1, 0)                                                                           
+Vegeta HT Lv1 takes 1 power damage                                                                  
+Vegeta HT Lv1's power decreases from 1(3) to 0(0)                                                   
+BlueGoku discards Hidden Power Level (Physical Combat - Attack)                                     
+
+---------- Attack Phase 3.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 0 | Discard: 5 | Removed: 2              │ Hand: 2 | Discard: 3 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 3.5: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 0 | Discard: 5 | Removed: 2              │ Hand: 2 | Discard: 3 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Orange Joint Restraint Drill (Non-Combat)                                           
+
+====================================================================================================
+========== Turn 4: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 105/115 HP                       │
+│ Hand: 0 | Discard: 5 | Removed: 2              │ Hand: 1 | Discard: 4 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.0 Vegeta     0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Earth Dragon Ball 5 (Non-Combat)                                                       
+  - Raise any one of your personalities to their highest power stage. Raise your anger 2 levels.    
+    Draw 2 cards. Place the top 2 cards of your discard pile at the bottom of your Life Deck.       
+Vegeta HT Lv1's power increases from 0(0) to 10(4)                                                  
+Vegeta's anger increases from 0 to 2                                                                
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta rejuvenates with Orange Joint Restraint Drill (Non-Combat)                                   
+Vegeta rejuvenates with Vegeta's Dragon Ball Capture (Non-Combat)                                   
+Vegeta plays Goku Honor Duel! (Non-Combat)                                                          
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 102/115 HP                       │
+│ Hand: 0 | Discard: 5 | Removed: 2              │ Hand: 4 | Discard: 2 | Removed: 0               │
+│ Earth Dragon Ball 4(*)                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Goku Honor Duel!                                │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Earth Dragon Ball 4                                                                   
+  - End the very next combat you are forced into before you sustain damage.                         
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Saibaimen Lv2 (Personality)                                                         
+Vegeta discards Goku's Energy Blast! (Energy Combat - Defense)                                      
+Vegeta discards Unexpected Allies (Combat - Defense)                                                
+Vegeta rejuvenates with Unexpected Allies (Combat - Defense)                                        
+
+====================================================================================================
+========== Turn 5: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 73/85 HP                      │ Vegeta [CPU] - 103/115 HP                       │
+│ Hand: 0 | Discard: 5 | Removed: 2              │ Hand: 1 | Discard: 4 | Removed: 0               │
+│ Earth Dragon Ball 4                            │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Goku Honor Duel!                                │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Blue Reversal Drill (Non-Combat)                                                     
+  - Do the exact same physical attack you defended against during your defending round of combat,   
+    once per combat.                                                                                
+BlueGoku plays Earth Dragon Ball 6 (Non-Combat)                                                     
+  - This card ends a combat and the user is powered up to full. Shift all opponents' anger levels   
+    down 2.                                                                                         
+Vegeta's anger decreases from 2 to 0                                                                
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 103/115 HP                       │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 1 | Discard: 4 | Removed: 0               │
+│ Earth Dragon Balls 4,6(*)                      │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Goku Honor Duel!                                │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+Vegeta uses Goku Honor Duel!                                                                        
+  - Use when entering Combat as the defender. Instead of drawing 3 cards from your life deck, draw  
+    the bottom 3 cards from your discard pile. Remove from the game after use.                      
+Vegeta removes Goku Honor Duel! (Non-Combat) from game                                              
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 5.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 103/115 HP                       │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 4 | Discard: 1 | Removed: 1               │
+│ Earth Dragon Balls 4,6(*)                      │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 10(3) to 9(3)                                                       
+BlueGoku's attack damage estimate: Damage(0, 3)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 3)                                                                           
+Vegeta takes 1 life damage: Orange Body Shifting Drill (Non-Combat)                                 
+Vegeta takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                             
+Vegeta takes 1 life damage: Goku's Mixing Drill (Non-Combat)                                        
+
+---------- Attack Phase 5.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 100/115 HP                       │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 4 | Discard: 4 | Removed: 1               │
+│ Earth Dragon Balls 4,6(*)                      │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       9(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Blue Forward Foot Sweep                                                         
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+BlueGoku's anger decreases from 2 to 1                                                              
+Vegeta's attack damage estimate: Damage(8, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(8, 0)                                                                         
+Goku Lv1 takes 8 power damage                                                                       
+Goku Lv1's power decreases from 9(3) to 1(1)                                                        
+Vegeta discards Blue Forward Foot Sweep (Physical Combat - Attack)                                  
+
+---------- Attack Phase 5.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 100/115 HP                       │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 3 | Discard: 5 | Removed: 1               │
+│ Earth Dragon Balls 4,6(*)                      │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       1(1)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Blue Forward Foot Sweep (*)                     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Earth Dragon Ball 6 (Non-Combat)                                                      
+  - This card ends a combat and the user is powered up to full.                                     
+Goku Lv1's power increases from 1(1) to 10(3)                                                       
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Black Side Kick (Physical Combat - Defense)                                         
+Vegeta discards Saibaimen Lv2 (Personality)                                                         
+
+====================================================================================================
+========== Turn 6: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 100/115 HP                       │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 1 | Discard: 7 | Removed: 1               │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Saiyan Training (Non-Combat)                                                           
+  - Villains and Goku only. Choose 2 cards from your discard pile and place them on the bottom of   
+    your Life Deck.                                                                                 
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 70/85 HP                      │ Vegeta [CPU] - 97/115 HP                        │
+│ Hand: 1 | Discard: 5 | Removed: 2              │ Hand: 3 | Discard: 7 | Removed: 1               │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 6.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 67/85 HP                      │ Vegeta [CPU] - 97/115 HP                        │
+│ Hand: 4 | Discard: 5 | Removed: 2              │ Hand: 3 | Discard: 7 | Removed: 1               │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku      10(3)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Orange Standing Fist Punch                                                      
+  - Physical Attack. Raise card user's anger level 1.                                               
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta's attack damage estimate: Damage(4, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(4, 0)                                                                         
+Goku Lv1 takes 4 power damage                                                                       
+Goku Lv1's power decreases from 10(3) to 6(3)                                                       
+Vegeta discards Orange Standing Fist Punch (Physical Combat - Attack)                               
+
+---------- Attack Phase 6.2: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 67/85 HP                      │ Vegeta [CPU] - 97/115 HP                        │
+│ Hand: 4 | Discard: 5 | Removed: 2              │ Hand: 2 | Discard: 8 | Removed: 1               │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Tien's Physical Attack                                                        
+  - Physical attack doing 5 life card draws if successful.                                          
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 5)                                                                           
+Vegeta takes 1 life damage: Black Side Kick (Physical Combat - Defense)                             
+Vegeta takes 1 life damage: Goku's Energy Blast! (Energy Combat - Defense)                          
+Vegeta takes 1 life damage: Orange Body Shifting Drill (Non-Combat)                                 
+Vegeta takes 1 life damage: Black Axe Heel Kick (Energy Combat - Defense)                           
+Vegeta takes 1 life damage: Power Up! (Non-Combat)                                                  
+BlueGoku steals Earth Dragon Ball 5!                                                                
+BlueGoku discards Tien's Physical Attack (Physical Combat - Attack)                                 
+
+---------- Attack Phase 6.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 67/85 HP                      │ Vegeta [CPU] - 92/115 HP                        │
+│ Hand: 3 | Discard: 6 | Removed: 2              │ Hand: 2 | Discard: 13 | Removed: 1              │
+│ Earth Dragon Balls 4,5,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       6(3)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku Anger Attack                                                               
+  - This physical attack does double the normal damage if successful.                               
+Vegeta's attack damage estimate: Damage(6, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(6, 0)                                                                         
+Goku Lv1 takes 6 power damage                                                                       
+Goku Lv1's power decreases from 6(3) to 0(0)                                                        
+Vegeta discards Goku Anger Attack (Physical Combat - Attack)                                        
+
+---------- Attack Phase 6.4: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 67/85 HP                      │ Vegeta [CPU] - 92/115 HP                        │
+│ Hand: 3 | Discard: 6 | Removed: 2              │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,5,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Reversal Drill                                                           
+  - Do the exact same physical attack you defended against during your defending round of combat,   
+    once per combat.                                                                                
+BlueGoku copies Goku Anger Attack via Blue Reversal Drill                                           
+  - This physical attack does double the normal damage if successful.                               
+BlueGoku's attack damage estimate: Damage(0, 0)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 0)                                                                           
+
+---------- Attack Phase 6.5: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 67/85 HP                      │ Vegeta [CPU] - 92/115 HP                        │
+│ Hand: 3 | Discard: 6 | Removed: 2              │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,5,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku's Surprise Attack                                                          
+  - Physical attack doing 5 power stages of damage.                                                 
+Vegeta's attack damage estimate: Damage(7, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(7, 0)                                                                         
+Goku Lv1 takes 0 power damage                                                                       
+BlueGoku takes 1 life damage: Blue Hip Spring Throw (Physical Combat - Attack)                      
+BlueGoku takes 1 life damage: Hidden Power Level (Physical Combat - Attack)                         
+BlueGoku takes 1 life damage: Blue Deceiving Drill (Non-Combat)                                     
+BlueGoku takes 1 life damage: Goku's Plan (Energy Combat - Attack)                                  
+BlueGoku recycles Earth Dragon Ball 3 (Non-Combat)                                                  
+BlueGoku recycles Earth Dragon Ball 2 (Non-Combat)                                                  
+BlueGoku takes 1 life damage: Chiaotzu Lv1 (Personality)                                            
+BlueGoku takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                    
+BlueGoku takes 1 life damage: Vegeta's Physical Stance (Physical Combat - Defense)                  
+Vegeta steals Earth Dragon Ball 5!                                                                  
+Vegeta discards Goku's Surprise Attack (Physical Combat - Attack)                                   
+
+---------- Attack Phase 6.6: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ Vegeta [CPU] - 92/115 HP                        │
+│ Hand: 3 | Discard: 13 | Removed: 2             │ Hand: 0 | Discard: 15 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 6.7: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ Vegeta [CPU] - 92/115 HP                        │
+│ Hand: 3 | Discard: 13 | Removed: 2             │ Hand: 0 | Discard: 15 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Saiyan Training                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta uses Saiyan Training (Non-Combat)                                                            
+  - Villains and Goku only. Choose 2 cards from your discard pile and place them on the bottom of   
+    your Life Deck.                                                                                 
+Vegeta returns Black Side Kick (Physical Combat - Defense) to their life deck                       
+Vegeta returns Orange Body Shifting Drill (Non-Combat) to their life deck                           
+Vegeta discards Saiyan Training (Non-Combat)                                                        
+
+---------- Attack Phase 6.8: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ Vegeta [CPU] - 94/115 HP                        │
+│ Hand: 3 | Discard: 13 | Removed: 2             │ Hand: 0 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 6.9: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ Vegeta [CPU] - 94/115 HP                        │
+│ Hand: 3 | Discard: 13 | Removed: 2             │ Hand: 0 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Blue Big Whirl Throw (Energy Combat - Defense)                                    
+BlueGoku discards Krillin's Drill (Non-Combat)                                                      
+
+====================================================================================================
+========== Turn 7: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 60/85 HP                      │ Vegeta [CPU] - 94/115 HP                        │
+│ Hand: 1 | Discard: 15 | Removed: 2             │ Hand: 0 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Bulma Lv1 (Personality)                                                              
+  - Scientific Defense. Reduces the damage done by an energy attack by 2 life card draws.           
+Goku Lv1's power increases from 0(0) to 2(2)                                                        
+Bulma Lv1's power increases from 3(1) to 4(1)                                                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ Vegeta [CPU] - 94/115 HP                        │
+│ Hand: 3 | Discard: 15 | Removed: 2             │ Hand: 0 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+│ Lv1   Bulma      4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 7.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ Vegeta [CPU] - 91/115 HP                        │
+│ Hand: 3 | Discard: 15 | Removed: 2             │ Hand: 3 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 4,6                         │ Earth Dragon Ball 5                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+│ Lv1   Bulma      4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Attack                                                                 
+  - Physical attack doing 5 life cards of damage. Remove from the game after use.                   
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 5)                                                                           
+Vegeta takes 1 life damage: Saibaimen Lv1 (Personality)                                             
+Vegeta takes 1 life damage: Black Front Kick (Energy Combat - Attack)                               
+Vegeta takes 1 life damage: Vegeta's Surprise Defense (Combat - Defense)                            
+Vegeta takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                        
+Vegeta takes 1 life damage: Black Fore Fist Punch (Energy Combat - Attack)                          
+BlueGoku steals Earth Dragon Ball 5!                                                                
+BlueGoku removes Goku's Attack (Physical Combat - Attack) from game                                 
+
+---------- Attack Phase 7.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 57/85 HP                      │ Vegeta [CPU] - 86/115 HP                        │
+│ Hand: 2 | Discard: 15 | Removed: 3             │ Hand: 3 | Discard: 19 | Removed: 1              │
+│ Earth Dragon Balls 4,5,6                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+│ Lv1   Bulma      4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku's Surprise Attack                                                          
+  - Physical attack doing 5 power stages of damage.                                                 
+Vegeta's attack damage estimate: Damage(7, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(7, 0)                                                                         
+Goku Lv1 takes 2 power damage                                                                       
+Goku Lv1's power decreases from 2(2) to 0(0)                                                        
+BlueGoku takes 1 life damage: Blue Shoulder Wheel (Physical Combat - Attack)                        
+BlueGoku takes 1 life damage: Cutting the Tail (Combat - Defense)                                   
+BlueGoku takes 1 life damage: Power Up the Most! (Non-Combat)                                       
+BlueGoku takes 1 life damage: Blue Deceiving Drill (Non-Combat)                                     
+BlueGoku takes 1 life damage: Blue Shoulder Wheel (Physical Combat - Attack)                        
+Vegeta steals Earth Dragon Ball 4!                                                                  
+Vegeta discards Goku's Surprise Attack (Physical Combat - Attack)                                   
+
+---------- Attack Phase 7.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 52/85 HP                      │ Vegeta [CPU] - 86/115 HP                        │
+│ Hand: 2 | Discard: 20 | Removed: 3             │ Hand: 2 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+│ Lv1   Bulma      4(1)pwr                       │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku is weak and may select an ally to take control of Combat                                   
+Bulma takes control of Combat for BlueGoku                                                          
+BlueGoku/Bulma attacks with Ribs Broken                                                             
+  - Energy attack doing 5 life cards of damage. Costs 0 power stages to perform. You must remove an 
+    Ally in play from the game in order to perform this attack. This does not have to be an Ally you
+    control.                                                                                        
+BlueGoku/Bulma removes Bulma Lv1 (Personality) from game                                            
+BlueGoku resumes control of Combat                                                                  
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta uses Vegeta HT Lv1 to defend                                                                 
+  - Stop an energy attack.                                                                          
+BlueGoku discards Ribs Broken (Energy Combat - Attack)                                              
+
+---------- Attack Phase 7.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 52/85 HP                      │ Vegeta [CPU] - 86/115 HP                        │
+│ Hand: 1 | Discard: 21 | Removed: 4             │ Hand: 2 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 7.5: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 52/85 HP                      │ Vegeta [CPU] - 86/115 HP                        │
+│ Hand: 1 | Discard: 21 | Removed: 4             │ Hand: 2 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+Vegeta must discard down to 1 card                                                                  
+Vegeta discards Senzu Bean (Non-Combat)                                                             
+
+====================================================================================================
+========== Turn 8: Vegeta ==========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 52/85 HP                      │ Vegeta [CPU] - 86/115 HP                        │
+│ Hand: 1 | Discard: 21 | Removed: 4             │ Hand: 1 | Discard: 21 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 52/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 1 | Discard: 21 | Removed: 4             │ Hand: 4 | Discard: 21 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 8.1: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 49/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 4 | Discard: 21 | Removed: 4             │ Hand: 4 | Discard: 21 | Removed: 1              │
+│ Earth Dragon Balls 5,6                         │ Earth Dragon Ball 4                             │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Orange Arm Bar                                                                  
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Vegeta's anger increases from 1 to 2                                                                
+Vegeta's attack damage estimate: Damage(10, 0)                                                      
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(10, 0)                                                                        
+Goku Lv1 takes 0 power damage                                                                       
+BlueGoku takes 1 life damage: Blue Hip Spring Throw (Physical Combat - Attack)                      
+BlueGoku takes 1 life damage: Enraged! (Non-Combat)                                                 
+BlueGoku takes 1 life damage: Blue Reversal Drill (Non-Combat)                                      
+BlueGoku takes 1 life damage: Power Up! (Non-Combat)                                                
+BlueGoku takes 1 life damage: Goku's Attack (Physical Combat - Attack)                              
+BlueGoku takes 1 life damage: Tien's Physical Attack (Physical Combat - Attack)                     
+BlueGoku takes 1 life damage: Blue Round Throw (Physical Combat - Attack)                           
+BlueGoku takes 1 life damage: Blue Hip Spring Throw (Physical Combat - Attack)                      
+BlueGoku takes 1 life damage: Piccolo's Revenge (Energy Combat - Attack)                            
+BlueGoku takes 1 life damage: Goku's Truce (Combat - Defense)                                       
+Vegeta steals Earth Dragon Ball 5!                                                                  
+Vegeta discards Orange Arm Bar (Physical Combat - Attack)                                           
+
+---------- Attack Phase 8.2: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 39/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 4 | Discard: 31 | Removed: 4             │ Hand: 3 | Discard: 22 | Removed: 1              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 4,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.2 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Plan                                                                   
+  - Energy attack doing 5 life cards of damage for no power cost.                                   
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta uses Black Axe Heel Kick to defend                                                           
+  - Stops a foe's energy attack. Raise card user's anger level 1.                                   
+Vegeta's anger increases from 2 to 3                                                                
+Vegeta discards Black Axe Heel Kick (Energy Combat - Defense)                                       
+BlueGoku discards Goku's Plan (Energy Combat - Attack)                                              
+
+---------- Attack Phase 8.3: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 39/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 3 | Discard: 32 | Removed: 4             │ Hand: 2 | Discard: 23 | Removed: 1              │
+│ Earth Dragon Ball 6                            │ Earth Dragon Balls 4,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Final Physical Attack                                                           
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Vegeta discards Black Bear Hug Drill (Non-Combat)                                                   
+Vegeta's attack damage estimate: Damage(7, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(7, 0)                                                                         
+Goku Lv1 takes 0 power damage                                                                       
+BlueGoku takes 1 life damage: Enraged! (Non-Combat)                                                 
+BlueGoku takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                    
+BlueGoku takes 1 life damage: Enraged! (Non-Combat)                                                 
+BlueGoku takes 1 life damage: Goku's Plan (Energy Combat - Attack)                                  
+BlueGoku takes 1 life damage: Terrible Wounds (Combat - Attack)                                     
+BlueGoku takes 1 life damage: Krillin Lv1 (Personality)                                             
+BlueGoku takes 1 life damage: Chi-Chi Lv1 (Personality)                                             
+Vegeta steals Earth Dragon Ball 6!                                                                  
+
+---------- Attack Phase 8.4: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 32/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 3 | Discard: 39 | Removed: 4             │ Hand: 1 | Discard: 24 | Removed: 1              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 8.5: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 32/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 3 | Discard: 39 | Removed: 4             │ Hand: 1 | Discard: 24 | Removed: 1              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+BlueGoku must discard down to 1 card                                                                
+BlueGoku removes Earth Dragon Ball 5 (Non-Combat) from game                                         
+BlueGoku discards Blue Big Whirl Throw (Energy Combat - Defense)                                    
+
+====================================================================================================
+========== Turn 9: BlueGoku ========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 32/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 1 | Discard: 40 | Removed: 5             │ Hand: 1 | Discard: 24 | Removed: 1              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Vegeta's Trick (Non-Combat)                                                          
+  - Find the foe's first Dragon Ball in their Life Deck and place it at the bottom of their deck.   
+Goku Lv1's power increases from 0(0) to 2(2)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 29/85 HP                      │ Vegeta [CPU] - 83/115 HP                        │
+│ Hand: 3 | Discard: 40 | Removed: 5             │ Hand: 1 | Discard: 24 | Removed: 1              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 9.1: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 29/85 HP                      │ Vegeta [CPU] - 80/115 HP                        │
+│ Hand: 3 | Discard: 40 | Removed: 5             │ Hand: 4 | Discard: 24 | Removed: 1              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Attack                                                                 
+  - Physical attack doing 5 life cards of damage. Remove from the game after use.                   
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 5)                                                                           
+Vegeta takes 1 life damage: Saiyan City Destruction (Non-Combat)                                    
+Vegeta takes 1 life damage: Saibaimen Lv1 (Personality)                                             
+Vegeta takes 1 life damage: Vegeta's Dragon Ball Capture (Non-Combat)                               
+Vegeta takes 1 life damage: Black Front Kick (Energy Combat - Attack)                               
+Vegeta takes 1 life damage: Goku Honor Duel! (Non-Combat)                                           
+BlueGoku steals Earth Dragon Ball 5!                                                                
+BlueGoku removes Goku's Attack (Physical Combat - Attack) from game                                 
+
+---------- Attack Phase 9.2: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 29/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 2 | Discard: 40 | Removed: 6             │ Hand: 4 | Discard: 29 | Removed: 1              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       2(2)pwr                       │ Lv1.3 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Goku's Physical Attack                                                          
+  - Physical attack. If successful, draw the bottom card from your discard pile. If used by Goku, it
+    stays in play to be used one more time this Combat. Remove from the game after use.             
+Vegeta's attack damage estimate: Damage(5, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku uses Cutting the Tail to defend                                                            
+  - Set your opponent's anger at 0. Remove from the game after use.                                 
+Vegeta's anger decreases from 3 to 0                                                                
+BlueGoku removes Cutting the Tail (Combat - Defense) from game                                      
+BlueGoku takes Damage(5, 0)                                                                         
+Goku Lv1 takes 2 power damage                                                                       
+Goku Lv1's power decreases from 2(2) to 0(0)                                                        
+BlueGoku takes 1 life damage: Vegeta's Plans (Non-Combat)                                           
+BlueGoku takes 1 life damage: Blue Shoulder Wheel (Physical Combat - Attack)                        
+BlueGoku takes 1 life damage: Vegeta's Dragon Ball Capture (Non-Combat)                             
+Vegeta adds a card to hand                                                                          
+Vegeta removes Goku's Physical Attack (Physical Combat - Attack) from game                          
+
+---------- Attack Phase 9.3: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 26/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 43 | Removed: 7             │ Hand: 4 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Vegeta's Trick                                 │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Vegeta's Trick (Non-Combat)                                                           
+  - Find the foe's first Dragon Ball in their Life Deck and place it at the bottom of their deck.   
+Vegeta's next card revealed: Goku Anger Attack (Physical Combat - Attack)                           
+Vegeta's next card revealed: Goku's Lucky Break (Non-Combat)                                        
+Vegeta's next card revealed: Black Knife Hand Strike (Energy Combat - Attack)                       
+Vegeta's next card revealed: Straining Ankle Smash Move (Energy Combat - Defense)                   
+Vegeta's next card revealed: Black Fore Fist Punch (Energy Combat - Attack)                         
+Vegeta's next card revealed: The Untroubled Mind is Focused (Non-Combat)                            
+Vegeta's next card revealed: Blazing Anger! (Non-Combat)                                            
+Vegeta's next card revealed: Black Takedown Drill (Non-Combat)                                      
+Vegeta's next card revealed: Goku's Energy Blast! (Energy Combat - Defense)                         
+Vegeta's next card revealed: Blue Big Outside Drop (Physical Combat - Defense)                      
+Vegeta's next card revealed: Goku's Surprise Attack (Physical Combat - Attack)                      
+Vegeta's next card revealed: Piccolo's Physical Defense (Physical Combat - Defense)                 
+Vegeta's next card revealed: Black Fore Fist Punch (Energy Combat - Attack)                         
+Vegeta's next card revealed: Gohan's Physical Attack (Physical Combat - Attack)                     
+Vegeta's next card revealed: Vegeta's Dragon Ball Capture (Non-Combat)                              
+Vegeta's next card revealed: Ally's Sacrifice (Combat - Defense)                                    
+Vegeta's next card revealed: Ally's Sacrifice (Combat - Defense)                                    
+Vegeta's next card revealed: Orange Arm Bar (Physical Combat - Attack)                              
+Vegeta's next card revealed: Goku's Touch (Non-Combat)                                              
+Vegeta's next card revealed: Senzu Bean (Non-Combat)                                                
+Vegeta's next card revealed: Saibaimen Lv2 (Personality)                                            
+Vegeta's next card revealed: Unexpected Allies (Combat - Defense)                                   
+Vegeta's next card revealed: Goku's Touch (Non-Combat)                                              
+Vegeta's next card revealed: Vegeta's Physical Stance (Physical Combat - Defense)                   
+Vegeta's next card revealed: Goku's Mixing Drill (Non-Combat)                                       
+Vegeta's next card revealed: The Untroubled Mind is Focused (Non-Combat)                            
+Vegeta's next card revealed: Black Side Kick (Physical Combat - Defense)                            
+Vegeta's next card revealed: Orange Lifting Drill (Non-Combat)                                      
+Vegeta's next card revealed: Blazing Anger! (Non-Combat)                                            
+Vegeta's next card revealed: Black Takedown Drill (Non-Combat)                                      
+Vegeta's next card revealed: Goku Anger Attack (Physical Combat - Attack)                           
+Vegeta's next card revealed: Unexpected Allies (Combat - Defense)                                   
+Vegeta's next card revealed: Black Turning Kick (Energy Combat - Attack)                            
+Vegeta's next card revealed: Earth Dragon Ball 7 (Non-Combat)                                       
+Vegeta shuffles their deck                                                                          
+Earth Dragon Ball 7 (Non-Combat) placed at bottom of Vegeta's deck                                  
+BlueGoku discards Vegeta's Trick (Non-Combat)                                                       
+
+---------- Attack Phase 9.4: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 26/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 44 | Removed: 7             │ Hand: 4 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 4,6                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.0 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Gohan's Physical Attack                                                         
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta's attack damage estimate: Damage(7, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(7, 0)                                                                         
+Goku Lv1 takes 0 power damage                                                                       
+BlueGoku takes 1 life damage: Power Up the Most! (Non-Combat)                                       
+BlueGoku takes 1 life damage: Goku's Truce (Combat - Defense)                                       
+BlueGoku takes 1 life damage: Ribs Broken (Energy Combat - Attack)                                  
+BlueGoku takes 1 life damage: Power Up! (Non-Combat)                                                
+BlueGoku takes 1 life damage: Goku's Attack (Physical Combat - Attack)                              
+BlueGoku takes 1 life damage: Goku's Truce (Combat - Defense)                                       
+BlueGoku takes 1 life damage: Piccolo's Revenge (Energy Combat - Attack)                            
+Vegeta steals Earth Dragon Ball 5!                                                                  
+Vegeta discards Gohan's Physical Attack (Physical Combat - Attack)                                  
+
+---------- Attack Phase 9.5: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 3 | Discard: 29 | Removed: 2              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Goku       0(0)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Reversal Drill                                                           
+  - Do the exact same physical attack you defended against during your defending round of combat,   
+    once per combat.                                                                                
+BlueGoku copies Gohan's Physical Attack via Blue Reversal Drill                                     
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+BlueGoku's anger increases from 1 to 2                                                              
+Goku Lv1's power increases from 0(0) to 5(2)                                                        
+BlueGoku's attack damage estimate: Damage(0, 0)                                                     
+Vegeta uses Goku's Energy Blast! to defend                                                          
+  - Energy defense stopping a foe's physical attack. Remove from the game after use.                
+Vegeta removes Goku's Energy Blast! (Energy Combat - Defense) from game                             
+
+---------- Attack Phase 9.6: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 2 | Discard: 29 | Removed: 3              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 9.7: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 2 | Discard: 29 | Removed: 3              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 5(2) to 4(2)                                                        
+BlueGoku's attack damage estimate: Damage(0, 3)                                                     
+Vegeta uses Goku's Energy Defense to defend                                                         
+  - Prevents 3 life cards from being discarded from a successful energy attack. If used by Goku, it 
+    stays on the table to be used one more time in this combat.                                     
+Vegeta discards Goku's Energy Defense (Energy Combat - Defense)                                     
+Vegeta takes Damage(0, 3-3)                                                                         
+
+---------- Attack Phase 9.8: Vegeta ----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 1 | Discard: 30 | Removed: 3              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 9.9: BlueGoku --------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 1 | Discard: 30 | Removed: 3              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+====================================================================================================
+========== Turn 10: Vegeta =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 75/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 1 | Discard: 30 | Removed: 3              │
+│                                                │ Earth Dragon Balls 4,5,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Earth Dragon Ball 3 (Non-Combat)                                                       
+  - Draw three cards if you wish, and place the top discarded card at the bottom of your life deck. 
+Vegeta rejuvenates with Goku's Energy Defense (Energy Combat - Defense)                             
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 19/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 1 | Discard: 51 | Removed: 7             │ Hand: 3 | Discard: 29 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 10.1: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 16/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 4 | Discard: 51 | Removed: 7             │ Hand: 3 | Discard: 29 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Black Fore Fist Punch                                                           
+  - Energy attack doing 6 life cards of damage. If successful, your opponent loses 3 power stages.  
+Vegeta HT Lv1's power decreases from 10(4) to 8(4)                                                  
+Vegeta's attack damage estimate: Damage(0, 6)                                                       
+BlueGoku uses Blue Big Whirl Throw to defend                                                        
+  - Stops an energy attack. Lower foe's anger level by 1.                                           
+Vegeta's anger decreases from 1 to 0                                                                
+BlueGoku discards Blue Big Whirl Throw (Energy Combat - Defense)                                    
+Vegeta discards Black Fore Fist Punch (Energy Combat - Attack)                                      
+
+---------- Attack Phase 10.2: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 16/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 3 | Discard: 52 | Removed: 7             │ Hand: 2 | Discard: 30 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.0 Vegeta     8(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+---------- Attack Phase 10.3: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 16/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 3 | Discard: 52 | Removed: 7             │ Hand: 2 | Discard: 30 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       4(2)pwr                       │ Lv1.0 Vegeta     8(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Final Physical Attack                                                           
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Vegeta discards Orange Lifting Drill (Non-Combat)                                                   
+Vegeta's attack damage estimate: Damage(5, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(5, 0)                                                                         
+Goku Lv1 takes 4 power damage                                                                       
+Goku Lv1's power decreases from 4(2) to 0(0)                                                        
+BlueGoku takes 1 life damage: Blue Ground Holding (Physical Combat - Defense)                       
+
+---------- Attack Phase 10.4: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 3 | Discard: 53 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     8(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Forward Foot Sweep                                                       
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+BlueGoku's attack damage estimate: Damage(4, 0)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(4, 0)                                                                           
+Vegeta HT Lv1 takes 4 power damage                                                                  
+Vegeta HT Lv1's power decreases from 8(4) to 4(3)                                                   
+BlueGoku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                
+
+---------- Attack Phase 10.5: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 2 | Discard: 54 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 10.6: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 2 | Discard: 54 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Forward Foot Sweep (*)                    │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Final Physical Attack                                                         
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+BlueGoku discards Krillin's Drill (Non-Combat)                                                      
+BlueGoku's attack damage estimate: Damage(0, 0)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 0)                                                                           
+
+---------- Attack Phase 10.7: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 1 | Discard: 55 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 10.8: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 1 | Discard: 55 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+
+====================================================================================================
+========== Turn 11: BlueGoku =======================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 15/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 1 | Discard: 55 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku plays Power Up the Most! (Non-Combat)                                                      
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+BlueGoku plays Vegeta's Quickness Drill (Non-Combat)                                                
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+Goku Lv1's power increases from 0(0) to 2(2)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 12/85 HP                      │ Vegeta [CPU] - 73/115 HP                        │
+│ Hand: 2 | Discard: 55 | Removed: 7             │ Hand: 1 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       2(2)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up the Most!                             │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku declares combat!                                                                           
+BlueGoku uses Vegeta's Quickness Drill                                                              
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+BlueGoku adds a card to hand                                                                        
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+
+---------- Attack Phase 11.1: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 12/85 HP                      │ Vegeta [CPU] - 70/115 HP                        │
+│ Hand: 3 | Discard: 54 | Removed: 7             │ Hand: 4 | Discard: 31 | Removed: 3              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       2(2)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up the Most!                             │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Plan                                                                   
+  - Energy attack doing 5 life cards of damage for no power cost.                                   
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta uses Vegeta's Surprise Defense to defend                                                     
+  - Stop a physical or energy attack. Remove from the game after use.                               
+Vegeta removes Vegeta's Surprise Defense (Combat - Defense) from game                               
+BlueGoku discards Goku's Plan (Energy Combat - Attack)                                              
+
+---------- Attack Phase 11.2: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 12/85 HP                      │ Vegeta [CPU] - 70/115 HP                        │
+│ Hand: 2 | Discard: 55 | Removed: 7             │ Hand: 3 | Discard: 31 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       2(2)pwr                       │ Lv1.0 Vegeta     4(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up the Most!                             │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Orange Arm Bar                                                                  
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta's attack damage estimate: Damage(7, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku uses Battle Pausing to defend                                                              
+  - Draw the top 2 cards from your discard pile. Your opponent’s Main Personality gains 5 power     
+    stages. Remove from the game after use.                                                         
+Vegeta HT Lv1's power increases from 4(3) to 9(4)                                                   
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku removes Battle Pausing (Combat - Defense) from game                                        
+BlueGoku takes Damage(8, 0)                                                                         
+Goku Lv1 takes 2 power damage                                                                       
+Goku Lv1's power decreases from 2(2) to 0(0)                                                        
+BlueGoku takes 1 life damage: Blue Round Throw (Physical Combat - Attack)                           
+BlueGoku takes 1 life damage: Tien's Physical Attack (Physical Combat - Attack)                     
+BlueGoku recycles Earth Dragon Ball 1 (Non-Combat)                                                  
+BlueGoku takes 1 life damage: Hidden Power Level (Physical Combat - Attack)                         
+BlueGoku takes 1 life damage: Krillin's Drill (Non-Combat)                                          
+BlueGoku takes 1 life damage: Tien Lv1 (Personality)                                                
+BlueGoku recycles Earth Dragon Ball 7 (Non-Combat)                                                  
+BlueGoku takes 1 life damage: Goku's Truce (Combat - Defense)                                       
+Vegeta discards Orange Arm Bar (Physical Combat - Attack)                                           
+
+---------- Attack Phase 11.3: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 6/85 HP                       │ Vegeta [CPU] - 70/115 HP                        │
+│ Hand: 3 | Discard: 59 | Removed: 8             │ Hand: 2 | Discard: 32 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       0(0)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Power Up the Most!                             │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku uses Power Up the Most! (Non-Combat)                                                       
+  - Powers up to the personality's highest stage. Select 2 discarded cards and place them at the    
+    bottom of your life deck.                                                                       
+Goku Lv1's power increases from 0(0) to 10(3)                                                       
+BlueGoku returns Krillin Lv1 (Personality) to their life deck                                       
+BlueGoku returns Blue Deceiving Drill (Non-Combat) to their life deck                               
+BlueGoku discards Power Up the Most! (Non-Combat)                                                   
+
+---------- Attack Phase 11.4: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 70/115 HP                        │
+│ Hand: 3 | Discard: 58 | Removed: 8             │ Hand: 2 | Discard: 32 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku      10(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Final Physical Attack                                                           
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Vegeta discards Straining Energy Defense Move (Energy Combat - Defense)                             
+Vegeta's attack damage estimate: Damage(4, 0)                                                       
+  - Damage modified by Vegeta's: Black Bear Hug Drill                                               
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(4, 0)                                                                         
+Goku Lv1 takes 4 power damage                                                                       
+Goku Lv1's power decreases from 10(3) to 6(3)                                                       
+
+---------- Attack Phase 11.5: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 70/115 HP                        │
+│ Hand: 3 | Discard: 58 | Removed: 8             │ Hand: 1 | Discard: 33 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,5,6                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       6(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku's Plan                                                                   
+  - Energy attack doing 5 life cards of damage for no power cost.                                   
+BlueGoku's attack damage estimate: Damage(0, 5)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 5)                                                                           
+Vegeta takes 1 life damage: Orange Joint Restraint Drill (Non-Combat)                               
+Vegeta takes 1 life damage: Goku Honor Duel! (Non-Combat)                                           
+Vegeta takes 1 life damage: Vegeta's Surprise Defense (Combat - Defense)                            
+Vegeta takes 1 life damage: Vegeta's Dragon Ball Capture (Non-Combat)                               
+Vegeta takes 1 life damage: Vegeta's Physical Stance (Physical Combat - Defense)                    
+BlueGoku steals Earth Dragon Ball 5!                                                                
+BlueGoku discards Goku's Plan (Energy Combat - Attack)                                              
+
+---------- Attack Phase 11.6: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 65/115 HP                        │
+│ Hand: 2 | Discard: 59 | Removed: 8             │ Hand: 1 | Discard: 38 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       6(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 11.7: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 65/115 HP                        │
+│ Hand: 2 | Discard: 59 | Removed: 8             │ Hand: 1 | Discard: 38 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       6(3)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Goku Lv1                                                                      
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 6(3) to 5(2)                                                        
+BlueGoku's attack damage estimate: Damage(0, 3)                                                     
+Vegeta has no defense                                                                               
+Vegeta takes Damage(0, 3)                                                                           
+Vegeta takes 1 life damage: Orange Body Shifting Drill (Non-Combat)                                 
+Vegeta takes 1 life damage: Black Turning Kick (Energy Combat - Attack)                             
+Vegeta takes 1 life damage: Ally's Sacrifice (Combat - Defense)                                     
+
+---------- Attack Phase 11.8: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 62/115 HP                        │
+│ Hand: 2 | Discard: 59 | Removed: 8             │ Hand: 1 | Discard: 41 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta passes                                                                                       
+
+---------- Attack Phase 11.9: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 62/115 HP                        │
+│ Hand: 2 | Discard: 59 | Removed: 8             │ Hand: 1 | Discard: 41 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku passes                                                                                     
+BlueGoku must discard down to 1 card                                                                
+BlueGoku discards Krillin's Drill (Non-Combat)                                                      
+
+====================================================================================================
+========== Turn 12: Vegeta =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 62/115 HP                        │
+│ Hand: 1 | Discard: 60 | Removed: 8             │ Hand: 1 | Discard: 41 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta     9(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta adds a card to hand                                                                          
+Vegeta plays Vegeta's Dragon Ball Capture (Non-Combat)                                              
+  - Capture 2 of a foe's Dragon Balls and place them at the bottom of their owner's life deck.      
+Vegeta HT Lv1's power increases from 9(4) to 10(4)                                                  
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 8/85 HP                       │ Vegeta [CPU] - 59/115 HP                        │
+│ Hand: 1 | Discard: 60 | Removed: 8             │ Hand: 3 | Discard: 41 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Dragon Ball Capture                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta declares combat!                                                                             
+BlueGoku uses Vegeta's Quickness Drill                                                              
+  - At the beginning of each combat, draw 1 card from the bottom of the discard pile.               
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+BlueGoku adds a card to hand                                                                        
+
+---------- Attack Phase 12.1: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 5/85 HP                       │ Vegeta [CPU] - 59/115 HP                        │
+│ Hand: 5 | Discard: 59 | Removed: 8             │ Hand: 3 | Discard: 41 | Removed: 4              │
+│ Earth Dragon Ball 5                            │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Vegeta's Dragon Ball Capture                    │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta uses Vegeta's Dragon Ball Capture (Non-Combat)                                               
+  - Capture 2 of a foe's Dragon Balls and place them at the bottom of their owner's life deck.      
+Vegeta captures Earth Dragon Ball 5, returning it to Vegeta's life deck                             
+Vegeta discards Vegeta's Dragon Ball Capture (Non-Combat)                                           
+
+---------- Attack Phase 12.2: BlueGoku -------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 5/85 HP                       │ Vegeta [CPU] - 60/115 HP                        │
+│ Hand: 5 | Discard: 59 | Removed: 8             │ Hand: 3 | Discard: 42 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+BlueGoku attacks with Blue Round Throw                                                              
+  - Physical Attack doing +5 stages of damage if successful or stops an energy attack. Lower foe's  
+    anger level 1.                                                                                  
+Vegeta's anger decreases from 1 to 0                                                                
+BlueGoku's attack damage estimate: Damage(5, 0)                                                     
+Vegeta uses Blue Big Outside Drop to defend                                                         
+  - Stops a physical attack. Raise the card user's anger level 1.                                   
+Vegeta's anger increases from 0 to 1                                                                
+Vegeta discards Blue Big Outside Drop (Physical Combat - Defense)                                   
+BlueGoku discards Blue Round Throw (Physical Combat - Attack)                                       
+
+---------- Attack Phase 12.3: Vegeta ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 5/85 HP                       │ Vegeta [CPU] - 60/115 HP                        │
+│ Hand: 4 | Discard: 60 | Removed: 8             │ Hand: 2 | Discard: 43 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta    10(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta attacks with Black Fore Fist Punch                                                           
+  - Energy attack doing 6 life cards of damage. If successful, your opponent loses 3 power stages.  
+Vegeta HT Lv1's power decreases from 10(4) to 8(4)                                                  
+Vegeta's attack damage estimate: Damage(0, 6)                                                       
+BlueGoku has no defense                                                                             
+BlueGoku takes Damage(0, 6)                                                                         
+BlueGoku recycles Earth Dragon Ball 2 (Non-Combat)                                                  
+BlueGoku recycles Earth Dragon Ball 1 (Non-Combat)                                                  
+BlueGoku recycles Earth Dragon Ball 7 (Non-Combat)                                                  
+BlueGoku takes 1 life damage: Krillin Lv1 (Personality)                                             
+BlueGoku takes 1 life damage: Blue Deceiving Drill (Non-Combat)                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ BlueGoku [CPU] - 2/85 HP                       │ Vegeta [CPU] - 60/115 HP                        │
+│ Hand: 4 | Discard: 62 | Removed: 8             │ Hand: 2 | Discard: 43 | Removed: 4              │
+│                                                │ Earth Dragon Balls 3,4,6                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Goku       5(2)pwr                       │ Lv1.1 Vegeta     8(4)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Blue Reversal Drill                            │ Black Bear Hug Drill                            │
+│ Vegeta's Quickness Drill                       │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Vegeta (CPU1) wins!                                                                                 
+BlueGoku can take no more life damage                                                               
+[exit code: 0]

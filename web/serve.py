@@ -15,6 +15,11 @@ class IsolatedRequestHandler(http.server.SimpleHTTPRequestHandler):
     def end_headers(self):
         self.send_header('Cross-Origin-Opener-Policy', 'same-origin')
         self.send_header('Cross-Origin-Embedder-Policy', 'require-corp')
+        # This is a local dev server - always serve fresh files (e.g.
+        # worker.js, loaded dynamically via `new Worker(...)` and thus not
+        # covered by a page-level hard reload) instead of letting the
+        # browser's HTTP cache serve stale content after an edit.
+        self.send_header('Cache-Control', 'no-store')
         super().end_headers()
 
 

@@ -1,0 +1,1237 @@
+Goku shuffles their deck                                                                            
+Piccolo shuffles their deck                                                                         
+Piccolo will go first                                                                               
+====================================================================================================
+========== Turn 1: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 46/50 HP                       │ Goku [CPU] - 46/50 HP                           │
+│ Hand: 0 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    5(2)pwr                       │ Lv1.0 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Piccolo Defense Drill (Non-Combat)                                                    
+  - All energy attacks performed against you do 1 less life card of damage.                         
+Piccolo plays Piccolo's Flight (Non-Combat)                                                         
+  - Defense Shield: Stop the first unstopped energy or physical attack performed against you.       
+Piccolo Lv1's power increases from 5(2) to 6(3)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 46/50 HP                           │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 0 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    6(3)pwr                       │ Lv1.0 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo's Flight                               │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 1.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 43/50 HP                           │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 0 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    6(3)pwr                       │ Lv1.0 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo's Flight                               │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv1                                                                    
+  - Screw Blast Energy Attack inflicts 2 life card draws of damage.                                 
+Piccolo Lv1's power decreases from 6(3) to 4(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+Goku has no defense                                                                                 
+Goku takes Damage(0, 2)                                                                             
+Goku takes 1 life damage: Blue Big Outside Drop (Physical Combat - Defense)                         
+Goku takes 1 life damage: Goku's Physical Attack (Physical Combat - Attack)                         
+
+---------- Attack Phase 1.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 1 | Discard: 0 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.0 Piccolo    4(2)pwr                       │ Lv1.0 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo's Flight                               │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 5(2) to 4(2)                                                        
+Goku's attack damage estimate: Damage(0, 2)                                                         
+  - Damage modified by Piccolo's: Piccolo Defense Drill                                             
+Piccolo uses Black Axe Heel Kick to defend                                                          
+  - Stops a foe's energy attack. Raise card user's anger level 1.                                   
+Piccolo's anger increases from 0 to 1                                                               
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+
+---------- Attack Phase 1.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    4(2)pwr                       │ Lv1.0 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo's Flight                               │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 1 | Removed: 0              │ Hand: 3 | Discard: 2 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    4(2)pwr                       │ Lv1.0 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo's Flight                               │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Orange Arm Bar                                                                    
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Goku's anger increases from 0 to 1                                                                  
+Goku's attack damage estimate: Damage(4, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo activates Defense Shield: Piccolo's Flight                                                  
+Piccolo discards Piccolo's Flight (Non-Combat)                                                      
+Goku discards Orange Arm Bar (Physical Combat - Attack)                                             
+
+---------- Attack Phase 1.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    4(2)pwr                       │ Lv1.1 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.6: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 2 | Discard: 3 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    4(2)pwr                       │ Lv1.1 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Orange Standing Fist Punch                                                        
+  - Physical Attack. Raise card user's anger level 1.                                               
+Goku's anger increases from 1 to 2                                                                  
+Goku's attack damage estimate: Damage(1, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(1, 0)                                                                          
+Piccolo Lv1 takes 1 power damage                                                                    
+Piccolo Lv1's power decreases from 4(2) to 3(2)                                                     
+Goku discards Orange Standing Fist Punch (Physical Combat - Attack)                                 
+
+---------- Attack Phase 1.7: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    3(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.8: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 41/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 1 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    3(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Final Physical Attack                                                             
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku recycles Earth Dragon Ball 6 (Non-Combat)                                                      
+Goku's attack damage estimate: Damage(1, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(1, 0)                                                                          
+Piccolo Lv1 takes 1 power damage                                                                    
+Piccolo Lv1's power decreases from 3(2) to 2(2)                                                     
+
+---------- Attack Phase 1.9: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 42/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 0 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 1.10: Goku -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 42/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 0 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+====================================================================================================
+========== Turn 2: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 42/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 0 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku Lv1's power increases from 4(2) to 5(2)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 43/50 HP                       │ Goku [CPU] - 39/50 HP                           │
+│ Hand: 0 | Discard: 2 | Removed: 0              │ Hand: 3 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 2.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 40/50 HP                       │ Goku [CPU] - 39/50 HP                           │
+│ Hand: 3 | Discard: 2 | Removed: 0              │ Hand: 3 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       5(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 5(2) to 4(2)                                                        
+Goku's attack damage estimate: Damage(0, 2)                                                         
+  - Damage modified by Piccolo's: Piccolo Defense Drill                                             
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 2)                                                                          
+Piccolo takes 1 life damage: Black Jump Turn Kick (Energy Combat - Attack)                          
+Piccolo takes 1 life damage: Piccolo's Physical Defense (Physical Combat - Defense)                 
+
+---------- Attack Phase 2.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 38/50 HP                       │ Goku [CPU] - 39/50 HP                           │
+│ Hand: 3 | Discard: 4 | Removed: 0              │ Hand: 3 | Discard: 4 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    2(2)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv1                                                                    
+  - Screw Blast Energy Attack inflicts 2 life card draws of damage.                                 
+Piccolo Lv1's power decreases from 2(2) to 0(0)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+Goku has no defense                                                                                 
+Goku takes Damage(0, 2)                                                                             
+Goku takes 1 life damage: Goku Body Throw! (Physical Combat - Attack)                               
+Goku takes 1 life damage: Gohan Lv1 (Personality)                                                   
+
+---------- Attack Phase 2.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 38/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 3 | Discard: 4 | Removed: 0              │ Hand: 3 | Discard: 6 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Anger Attack                                                                 
+  - This physical attack does double the normal damage if successful.                               
+Goku's attack damage estimate: Damage(6, 0)                                                         
+Piccolo uses Blue Big Outside Drop to defend                                                        
+  - Stops a physical attack. Raise the card user's anger level 1.                                   
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo discards Blue Big Outside Drop (Physical Combat - Defense)                                  
+Goku discards Goku Anger Attack (Physical Combat - Attack)                                          
+
+---------- Attack Phase 2.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 38/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 5 | Removed: 0              │ Hand: 2 | Discard: 7 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 2.5: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 38/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 5 | Removed: 0              │ Hand: 2 | Discard: 7 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Blue Forward Foot Sweep                                                           
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Piccolo's anger decreases from 2 to 1                                                               
+Goku's attack damage estimate: Damage(7, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(7, 0)                                                                          
+Piccolo Lv1 takes 0 power damage                                                                    
+Piccolo takes 1 life damage: Blazing Anger! (Non-Combat)                                            
+Piccolo recycles Earth Dragon Ball 7 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Earth Dragon Ball Combat (Energy Combat - Attack)                      
+Piccolo takes 1 life damage: Eyes of the Dragon (Non-Combat)                                        
+Piccolo takes 1 life damage: Blue Forward Foot Sweep (Physical Combat - Attack)                     
+Piccolo takes 1 life damage: Black Takedown Drill (Non-Combat)                                      
+Piccolo recycles Earth Dragon Ball 4 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Blue Big Outside Drop (Physical Combat - Defense)                      
+Piccolo recycles Earth Dragon Ball 2 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Earth Dragon Ball Combat (Energy Combat - Attack)                      
+Goku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                    
+
+---------- Attack Phase 2.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 31/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 12 | Removed: 0             │ Hand: 1 | Discard: 8 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Blue Forward Foot Sweep (*)                     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 2.7: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 31/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 12 | Removed: 0             │ Hand: 1 | Discard: 8 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Blue Forward Foot Sweep (*)                     │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Final Physical Attack                                                             
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku discards Goku's Capturing Drill (Non-Combat)                                                   
+Goku's attack damage estimate: Damage(3, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(3, 0)                                                                          
+Piccolo Lv1 takes 0 power damage                                                                    
+Piccolo recycles Earth Dragon Ball 5 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Black Jump Turn Kick (Energy Combat - Attack)                          
+Piccolo takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                       
+Piccolo recycles Earth Dragon Ball 3 (Non-Combat)                                                   
+Piccolo takes 1 life damage: Orange Spontaneous Drill (Non-Combat)                                  
+
+---------- Attack Phase 2.8: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 28/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 15 | Removed: 0             │ Hand: 0 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 2.9: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 28/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 2 | Discard: 15 | Removed: 0             │ Hand: 0 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+Piccolo must discard down to 1 card                                                                 
+Piccolo recycles Earth Dragon Ball 6 (Non-Combat)                                                   
+
+====================================================================================================
+========== Turn 3: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 29/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 1 | Discard: 15 | Removed: 0             │ Hand: 0 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Black Bear Hug Drill (Non-Combat)                                                     
+  - All of your physical attacks do +2 power stages of damage.                                      
+Piccolo Lv1's power increases from 0(0) to 1(1)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 37/50 HP                           │
+│ Hand: 3 | Discard: 15 | Removed: 0             │ Hand: 0 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 3.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 3 | Discard: 15 | Removed: 0             │ Hand: 3 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 3.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 3 | Discard: 15 | Removed: 0             │ Hand: 3 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.2 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku Lv1                                                                          
+  - Kamehameha Energy Attack does three life card draw and only costs one power stage to perform.   
+Goku Lv1's power decreases from 4(2) to 3(2)                                                        
+Goku's attack damage estimate: Damage(0, 2)                                                         
+  - Damage modified by Piccolo's: Piccolo Defense Drill                                             
+Piccolo uses Piccolo Sidestep! to defend                                                            
+  - Stop an energy attack. Remove from the game after use.                                          
+Piccolo removes Piccolo Sidestep! (Energy Combat - Defense) from game                               
+
+---------- Attack Phase 3.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 2 | Discard: 15 | Removed: 1             │ Hand: 3 | Discard: 9 | Removed: 0               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    1(1)pwr                       │ Lv1.2 Goku       3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Front Kick                                                                 
+  - Physical attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku uses Goku's Energy Blast! to defend                                                            
+  - Energy defense stopping a foe's physical attack. Remove from the game after use.                
+Goku removes Goku's Energy Blast! (Energy Combat - Defense) from game                               
+Piccolo discards Red Front Kick (Physical Combat - Attack)                                          
+
+---------- Attack Phase 3.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 1 | Discard: 16 | Removed: 1             │ Hand: 2 | Discard: 9 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.2 Goku       3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 3.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 1 | Discard: 16 | Removed: 1             │ Hand: 2 | Discard: 9 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.2 Goku       3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+Goku must discard down to 1 card                                                                    
+Goku recycles Earth Dragon Ball 3 (Non-Combat)                                                      
+
+====================================================================================================
+========== Turn 4: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 35/50 HP                           │
+│ Hand: 1 | Discard: 16 | Removed: 1             │ Hand: 1 | Discard: 9 | Removed: 1               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.2 Goku       3(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Earth Dragon Ball 4 (Non-Combat)                                                         
+  - End the very next combat you are forced into before you sustain damage. Your anger level        
+    increases 2.                                                                                    
+Goku's anger increases from 2 to 4                                                                  
+Goku plays Roshi Training (Non-Combat)                                                              
+  - Heroes only. The top 3 discarded cards are placed at the bottom of your life deck.              
+Goku Lv1's power increases from 3(2) to 4(2)                                                        
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 26/50 HP                       │ Goku [CPU] - 32/50 HP                           │
+│ Hand: 1 | Discard: 16 | Removed: 1             │ Hand: 2 | Discard: 9 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.4 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Roshi Training                                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku declares combat!                                                                               
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+
+---------- Attack Phase 4.1: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 23/50 HP                       │ Goku [CPU] - 32/50 HP                           │
+│ Hand: 4 | Discard: 16 | Removed: 1             │ Hand: 2 | Discard: 9 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    1(1)pwr                       │ Lv1.4 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Roshi Training                                  │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Red Back Kick                                                                     
+  - Physical attack doing +3 stages of damage if successful. Stops all energy attacks for the rest  
+    of this combat. Foe's anger level decreases by 1.                                               
+Piccolo's anger decreases from 2 to 1                                                               
+Goku's attack damage estimate: Damage(5, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(5, 0)                                                                          
+Piccolo Lv1 takes 1 power damage                                                                    
+Piccolo Lv1's power decreases from 1(1) to 0(0)                                                     
+Piccolo takes 1 life damage: Piccolo Honor Duel! (Non-Combat)                                       
+Piccolo takes 1 life damage: Red Back Kick (Physical Combat - Attack)                               
+Piccolo takes 1 life damage: Orange Hip Throw (Physical Combat - Attack)                            
+Piccolo takes 1 life damage: Piccolo's Energy Attack (Energy Combat - Attack)                       
+Goku discards Red Back Kick (Physical Combat - Attack)                                              
+
+---------- Attack Phase 4.2: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 32/50 HP                           │
+│ Hand: 4 | Discard: 20 | Removed: 1             │ Hand: 1 | Discard: 10 | Removed: 1              │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.4 Goku       4(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Roshi Training                                  │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Back Kick                                                                  
+  - Physical attack doing +3 stages of damage if successful. Stops all energy attacks for the rest  
+    of this combat. Foe's anger level decreases by 1.                                               
+Goku's anger decreases from 4 to 3                                                                  
+Piccolo's attack damage estimate: Damage(5, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku has no defense                                                                                 
+Goku takes Damage(5, 0)                                                                             
+Goku Lv1 takes 4 power damage                                                                       
+Goku Lv1's power decreases from 4(2) to 0(0)                                                        
+Goku takes 1 life damage: Power Up! (Non-Combat)                                                    
+Piccolo discards Red Back Kick (Physical Combat - Attack)                                           
+
+---------- Attack Phase 4.3: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 31/50 HP                           │
+│ Hand: 3 | Discard: 21 | Removed: 1             │ Hand: 1 | Discard: 11 | Removed: 1              │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Roshi Training                                  │
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+│                                                │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku uses Roshi Training (Non-Combat)                                                               
+  - Heroes only. The top 3 discarded cards are placed at the bottom of your life deck.              
+Goku rejuvenates with Power Up! (Non-Combat)                                                        
+Goku rejuvenates with Red Back Kick (Physical Combat - Attack)                                      
+Goku rejuvenates with Goku's Capturing Drill (Non-Combat)                                           
+Goku discards Roshi Training (Non-Combat)                                                           
+
+---------- Attack Phase 4.4: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 34/50 HP                           │
+│ Hand: 3 | Discard: 21 | Removed: 1             │ Hand: 1 | Discard: 9 | Removed: 1               │
+│                                                │ Earth Dragon Ball 4(*)                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.1 Piccolo    0(0)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Hip Throw                                                               
+  - Physical Attack doing +2 stages of damage if successful. Raise card user's anger level 1.       
+Piccolo's anger increases from 1 to 2                                                               
+Piccolo's attack damage estimate: Damage(5, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku has no defense                                                                                 
+Goku takes Damage(5, 0)                                                                             
+Goku Lv1 takes 0 power damage                                                                       
+Goku takes 1 life damage: Goku Body Throw! (Physical Combat - Attack)                               
+Goku recycles Earth Dragon Ball 1 (Non-Combat)                                                      
+Goku takes 1 life damage: Goku's Surprise Attack (Physical Combat - Attack)                         
+Goku takes 1 life damage: Chi-Chi Lv1 (Personality)                                                 
+Goku takes 1 life damage: Tien Lv1 (Personality)                                                    
+Goku takes 1 life damage: Gohan's Physical Attack (Physical Combat - Attack)                        
+Piccolo steals Earth Dragon Ball 4!                                                                 
+Piccolo takes over Earth Dragon Ball 4 card power                                                   
+Piccolo discards Orange Hip Throw (Physical Combat - Attack)                                        
+
+---------- Attack Phase 4.5: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 29/50 HP                           │
+│ Hand: 2 | Discard: 22 | Removed: 1             │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    0(0)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 4.6: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 29/50 HP                           │
+│ Hand: 2 | Discard: 22 | Removed: 1             │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    0(0)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+│ Red Back Kick (*)                              │ Red Back Kick (*)                               │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+Piccolo must discard down to 1 card                                                                 
+Piccolo discards Power Up! (Non-Combat)                                                             
+
+====================================================================================================
+========== Turn 5: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 19/50 HP                       │ Goku [CPU] - 29/50 HP                           │
+│ Hand: 1 | Discard: 23 | Removed: 1             │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Ball 4(*)                         │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    0(0)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo plays Earth Dragon Ball 1 (Non-Combat)                                                      
+  - Instantly power up to full and draw a card.                                                     
+Piccolo Lv1's power increases from 0(0) to 10(3)                                                    
+Piccolo adds a card to hand                                                                         
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 29/50 HP                           │
+│ Hand: 4 | Discard: 23 | Removed: 1             │ Hand: 1 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo   10(3)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 5.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 26/50 HP                           │
+│ Hand: 4 | Discard: 23 | Removed: 1             │ Hand: 4 | Discard: 14 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo   10(3)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo's Energy Attack                                                        
+  - Does 6 life card draws of damage and costs 5 stages of power drain to perform.                  
+Piccolo Lv1's power decreases from 10(3) to 5(2)                                                    
+Piccolo's attack damage estimate: Damage(0, 6)                                                      
+Goku has no defense                                                                                 
+Goku takes Damage(0, 6)                                                                             
+Goku takes 1 life damage: Goku's Mixing Drill (Non-Combat)                                          
+Goku takes 1 life damage: Blue Deceiving Drill (Non-Combat)                                         
+Goku recycles Earth Dragon Ball 5 (Non-Combat)                                                      
+Goku takes 1 life damage: Senzu Bean (Non-Combat)                                                   
+Goku takes 1 life damage: Goku's Surprise Attack (Physical Combat - Attack)                         
+Goku recycles Earth Dragon Ball 7 (Non-Combat)                                                      
+Goku takes 1 life damage: Black Axe Heel Kick (Energy Combat - Defense)                             
+Goku takes 1 life damage: Orange Joint Restraint Drill (Non-Combat)                                 
+Piccolo discards Piccolo's Energy Attack (Energy Combat - Attack)                                   
+
+---------- Attack Phase 5.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 20/50 HP                           │
+│ Hand: 3 | Discard: 24 | Removed: 1             │ Hand: 4 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    5(2)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 5.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 20/50 HP                           │
+│ Hand: 3 | Discard: 24 | Removed: 1             │ Hand: 4 | Discard: 20 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    5(2)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Black Knife Hand Strike                                                        
+  - Energy Attack doing 4 life card draws of damage or stopping any energy attack.                  
+Piccolo Lv1's power decreases from 5(2) to 3(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 4)                                                      
+Goku uses Unexpected Allies to defend                                                               
+  - Search your Life Deck or discard pile for an Ally and put them into play at their highest power 
+    stage.                                                                                          
+Goku plays Chi-Chi Lv1 (Personality)                                                                
+  - Mother's Defense. Once per combat, this can block a single physical attack directed at Gohan or 
+    Goku so they are not hurt.                                                                      
+Chi-Chi Lv1's power increases from 3(1) to 10(3)                                                    
+Goku shuffles their deck                                                                            
+Goku discards Unexpected Allies (Combat - Defense)                                                  
+Goku takes Damage(0, 4)                                                                             
+Goku takes 1 life damage: Goku Anger Attack (Physical Combat - Attack)                              
+Goku recycles Earth Dragon Ball 2 (Non-Combat)                                                      
+Goku takes 1 life damage: Krillin's Physical Defense (Combat - Defense)                             
+Goku recycles Earth Dragon Ball 7 (Non-Combat)                                                      
+Goku takes 1 life damage: Red Back Kick (Physical Combat - Attack)                                  
+Goku takes 1 life damage: Black Knife Hand Strike (Energy Combat - Attack)                          
+Piccolo discards Black Knife Hand Strike (Energy Combat - Attack)                                   
+
+---------- Attack Phase 5.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 2 | Discard: 25 | Removed: 1             │ Hand: 3 | Discard: 24 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku passes                                                                                         
+
+---------- Attack Phase 5.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 2 | Discard: 25 | Removed: 1             │ Hand: 3 | Discard: 24 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Final Physical Attack                                                          
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku is weak and may select an ally to take control of Combat                                       
+Chi-Chi takes control of Combat for Goku                                                            
+Piccolo discards Black Axe Heel Kick (Energy Combat - Defense)                                      
+Piccolo's attack damage estimate: Damage(2, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku/Chi-Chi has no defense                                                                         
+Goku/Chi-Chi takes Damage(2, 0)                                                                     
+Goku/Chi-Chi selects Chi-Chi Lv1 to take damage                                                     
+Chi-Chi Lv1 takes 2 power damage                                                                    
+Chi-Chi Lv1's power decreases from 10(3) to 8(2)                                                    
+
+---------- Attack Phase 5.6: Goku/Chi-Chi ----------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 3 | Discard: 24 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.3 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi    8(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Goku has control of Combat                                                                          
+Goku attacks with Gohan's Physical Attack                                                           
+  - Physical attack. Raise your anger 1. Gain 5 power stages.                                       
+Goku's anger increases from 3 to 4                                                                  
+Chi-Chi Lv1's power increases from 8(2) to 10(3)                                                    
+Goku's attack damage estimate: Damage(0, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(0, 0)                                                                          
+Goku discards Gohan's Physical Attack (Physical Combat - Attack)                                    
+
+---------- Attack Phase 5.7: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 2 | Discard: 25 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.4 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 5.8: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 2 | Discard: 25 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.4 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku is weak and may select an ally to take control of Combat                                       
+Chi-Chi takes control of Combat for Goku                                                            
+Goku/Chi-Chi passes                                                                                 
+Goku resumes control of Combat                                                                      
+Goku must discard down to 1 card                                                                    
+Goku discards Goku's Energy Defense (Energy Combat - Defense)                                       
+
+====================================================================================================
+========== Turn 6: Goku ============================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 16/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 1 | Discard: 26 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │                                                 │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv1.4 Goku       0(0)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │                                                 │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku plays Orange Off-Balancing Drill (Non-Combat)                                                  
+  - Stop the first physical attack made on you in a combat.                                         
+Goku plays Earth Dragon Ball 3 (Non-Combat)                                                         
+  - Draw three cards if you wish, and place the top discarded card at the bottom of your life deck. 
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku rejuvenates with Goku's Energy Defense (Energy Combat - Defense)                               
+Goku plays Earth Dragon Ball 5 (Non-Combat)                                                         
+  - Raise any one of your personalities to their highest power stage. Raise your anger 2 levels.    
+    Draw 2 cards. Place the top 2 cards of your discard pile at the bottom of your Life Deck.       
+Goku's anger increases from 4 to 5                                                                  
+Goku levels up to Lv2!                                                                              
+Goku discards Orange Off-Balancing Drill (Non-Combat)                                               
+Goku Lv2's power increases from 5(4) to 10(4)                                                       
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku rejuvenates with Orange Off-Balancing Drill (Non-Combat)                                       
+Goku rejuvenates with Gohan's Physical Attack (Physical Combat - Attack)                            
+Goku plays Goku's Capturing Drill (Non-Combat)                                                      
+  - Dragon Balls you control may not be captured while this Drill is in play.                       
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 11/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 5 | Discard: 24 | Removed: 1              │
+│ Earth Dragon Balls 1,4(*)                      │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo uses Earth Dragon Ball 4                                                                    
+  - End the very next combat you are forced into before you sustain damage.                         
+Goku must discard down to 1 card                                                                    
+Goku removes Earth Dragon Ball 1 (Non-Combat) from game                                             
+Goku discards Red Back Kick (Physical Combat - Attack)                                              
+Goku discards Black Knife Hand Strike (Energy Combat - Attack)                                      
+Goku discards Blue Forward Foot Sweep (Physical Combat - Attack)                                    
+Goku rejuvenates with Blue Forward Foot Sweep (Physical Combat - Attack)                            
+
+====================================================================================================
+========== Turn 7: Piccolo =========================================================================
+====================================================================================================
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 15/50 HP                       │ Goku [CPU] - 12/50 HP                           │
+│ Hand: 1 | Discard: 26 | Removed: 1             │ Hand: 1 | Discard: 26 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    3(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo adds a card to hand                                                                         
+Piccolo Lv1's power increases from 3(2) to 4(2)                                                     
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 12/50 HP                           │
+│ Hand: 4 | Discard: 26 | Removed: 1             │ Hand: 1 | Discard: 26 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    4(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo declares combat!                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+Goku adds a card to hand                                                                            
+
+---------- Attack Phase 7.1: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 9/50 HP                            │
+│ Hand: 4 | Discard: 26 | Removed: 1             │ Hand: 4 | Discard: 26 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    4(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Blue Forward Foot Sweep                                                        
+  - Physical Attack doing +4 stages of damage. If successful, this attack stops any energy attack   
+    from an opponent in their next phase. Lower foe's anger level 1.                                
+Piccolo's attack damage estimate: Damage(6, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku uses Chi-Chi Lv1 to defend                                                                     
+  - Mother's Defense. Once per combat, this can block a single physical attack directed at Gohan or 
+    Goku so they are not hurt.                                                                      
+Piccolo discards Blue Forward Foot Sweep (Physical Combat - Attack)                                 
+
+---------- Attack Phase 7.2: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 9/50 HP                            │
+│ Hand: 3 | Discard: 27 | Removed: 1             │ Hand: 4 | Discard: 26 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    4(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku passes                                                                                         
+
+---------- Attack Phase 7.3: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 9/50 HP                            │
+│ Hand: 3 | Discard: 27 | Removed: 1             │ Hand: 4 | Discard: 26 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    4(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Piccolo Lv1                                                                    
+  - Screw Blast Energy Attack inflicts 2 life card draws of damage.                                 
+Piccolo Lv1's power decreases from 4(2) to 2(2)                                                     
+Piccolo's attack damage estimate: Damage(0, 2)                                                      
+Goku has no defense                                                                                 
+Goku takes Damage(0, 2)                                                                             
+Goku takes 1 life damage: Goku's Touch (Non-Combat)                                                 
+Goku takes 1 life damage: Goku's Lucky Break (Non-Combat)                                           
+
+---------- Attack Phase 7.4: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 3 | Discard: 27 | Removed: 1             │ Hand: 4 | Discard: 28 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    2(2)pwr                       │ Lv2.0 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Orange Standing Fist Punch                                                        
+  - Physical Attack. Raise card user's anger level 1.                                               
+Goku's anger increases from 0 to 1                                                                  
+Goku's attack damage estimate: Damage(3, 0)                                                         
+Piccolo uses Piccolo's Physical Defense to defend                                                   
+  - Stops a physical attack. Gain 4 power stages.                                                   
+Piccolo Lv1's power increases from 2(2) to 6(3)                                                     
+Piccolo discards Piccolo's Physical Defense (Physical Combat - Defense)                             
+Goku discards Orange Standing Fist Punch (Physical Combat - Attack)                                 
+
+---------- Attack Phase 7.5: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 2 | Discard: 28 | Removed: 1             │ Hand: 3 | Discard: 29 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.2 Piccolo    6(3)pwr                       │ Lv2.1 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi   10(3)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Red Front Kick                                                                 
+  - Physical attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 2 to 3                                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku has no defense                                                                                 
+Goku takes Damage(3, 0)                                                                             
+Goku selects Chi-Chi Lv1 to take damage                                                             
+Chi-Chi Lv1 takes 3 power damage                                                                    
+Chi-Chi Lv1's power decreases from 10(3) to 7(2)                                                    
+Piccolo discards Red Front Kick (Physical Combat - Attack)                                          
+
+---------- Attack Phase 7.6: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 1 | Discard: 29 | Removed: 1             │ Hand: 3 | Discard: 29 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    6(3)pwr                       │ Lv2.1 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Orange Arm Bar                                                                    
+  - Physical Attack doing +3 stages of damage if successful. Raise card user's anger level 1.       
+Goku's anger increases from 1 to 2                                                                  
+Goku's attack damage estimate: Damage(5, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(5, 0)                                                                          
+Piccolo Lv1 takes 5 power damage                                                                    
+Piccolo Lv1's power decreases from 6(3) to 1(1)                                                     
+Goku discards Orange Arm Bar (Physical Combat - Attack)                                             
+
+---------- Attack Phase 7.7: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 1 | Discard: 29 | Removed: 1             │ Hand: 2 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.3 Piccolo    1(1)pwr                       │ Lv2.2 Goku      10(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo attacks with Orange Two Knuckle Punch                                                       
+  - Physical Attack doing +1 stage of damage if successful. Raise card user's anger level 1.        
+Piccolo's anger increases from 3 to 4                                                               
+Piccolo's attack damage estimate: Damage(3, 0)                                                      
+  - Damage modified by Piccolo's: Black Bear Hug Drill                                              
+Goku has no defense                                                                                 
+Goku takes Damage(3, 0)                                                                             
+Goku Lv2 takes 3 power damage                                                                       
+Goku Lv2's power decreases from 10(4) to 7(4)                                                       
+Piccolo discards Orange Two Knuckle Punch (Physical Combat - Attack)                                
+
+---------- Attack Phase 7.8: Goku ------------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 12/50 HP                       │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 0 | Discard: 30 | Removed: 1             │ Hand: 2 | Discard: 30 | Removed: 2              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    1(1)pwr                       │ Lv2.2 Goku       7(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Goku's Physical Attack                                                            
+  - Physical attack. If successful, draw the bottom card from your discard pile. If used by Goku, it
+    stays in play to be used one more time this Combat. Remove from the game after use.             
+Goku's attack damage estimate: Damage(4, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(4, 0)                                                                          
+Piccolo Lv1 takes 1 power damage                                                                    
+Piccolo Lv1's power decreases from 1(1) to 0(0)                                                     
+Piccolo takes 1 life damage: Piccolo Defense Drill (Non-Combat)                                     
+Piccolo takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                  
+Piccolo takes 1 life damage: Orange Two Knuckle Punch (Physical Combat - Attack)                    
+Goku adds a card to hand                                                                            
+Goku removes Goku's Physical Attack (Physical Combat - Attack) from game                            
+
+---------- Attack Phase 7.9: Piccolo ---------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 9/50 HP                        │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 0 | Discard: 33 | Removed: 1             │ Hand: 2 | Discard: 29 | Removed: 3              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    0(0)pwr                       │ Lv2.2 Goku       7(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Goku's Physical Attack (*)                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Piccolo passes                                                                                      
+
+---------- Attack Phase 7.10: Goku -----------------------------------------------------------------
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 9/50 HP                        │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 0 | Discard: 33 | Removed: 1             │ Hand: 2 | Discard: 29 | Removed: 3              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    0(0)pwr                       │ Lv2.2 Goku       7(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│                                                │ Goku's Physical Attack (*)                      │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku attacks with Final Physical Attack                                                             
+  - Discard a card to perform a physical attack. You must pass for the rest of this combat.         
+Goku discards Power Up! (Non-Combat)                                                                
+Goku's attack damage estimate: Damage(5, 0)                                                         
+Piccolo has no defense                                                                              
+Piccolo takes Damage(5, 0)                                                                          
+Piccolo Lv1 takes 0 power damage                                                                    
+Piccolo takes 1 life damage: Vegeta's Physical Stance (Physical Combat - Defense)                   
+Piccolo takes 1 life damage: Grabbing the Tail (Combat - Attack)                                    
+Piccolo takes 1 life damage: Orange Standing Fist Punch (Physical Combat - Attack)                  
+╒════════════════════════════════════════════════╤═════════════════════════════════════════════════╕
+│ Piccolo [CPU] - 5/50 HP                        │ Goku [CPU] - 7/50 HP                            │
+│ Hand: 0 | Discard: 36 | Removed: 1             │ Hand: 1 | Discard: 30 | Removed: 3              │
+│ Earth Dragon Balls 1,4                         │ Earth Dragon Balls 3,5                          │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Lv1.4 Piccolo    0(0)pwr                       │ Lv2.2 Goku       7(4)pwr                        │
+│                                                │ Lv1   Chi-Chi    7(2)pwr                        │
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+├────────────────────────────────────────────────┼─────────────────────────────────────────────────┤
+│ Piccolo Defense Drill                          │ Goku's Capturing Drill                          │
+│ Black Bear Hug Drill                           │                                                 │
+╘════════════════════════════════════════════════╧═════════════════════════════════════════════════╛
+Goku (CPU1) wins!                                                                                   
+Piccolo can take no more life damage                                                                
+[exit code: 0]
