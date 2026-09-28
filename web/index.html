@@ -47,6 +47,8 @@
       margin-bottom: 0.4rem;
     }
     .player-header .counts { font-weight: normal; color: #555; font-size: 0.8rem; }
+    .pile-link { cursor: pointer; text-decoration: underline dotted; }
+    .pile-link:hover { color: #222; }
     .zone-label {
       font-size: 0.7rem;
       text-transform: uppercase;
@@ -67,6 +69,10 @@
       line-height: 1.25;
     }
     .card.main-personality { border-color: #e0a030; border-width: 2px; }
+    .card.floating-effect {
+      border-color: #e0a030;
+      box-shadow: 0 0 6px 1px rgba(224, 160, 48, 0.6);
+    }
     .card.selectable {
       cursor: pointer;
       border-color: #4ad06a;
@@ -100,6 +106,33 @@
     #choices { margin-top: 0.75rem; }
     #choices-prompt { font-family: ui-monospace, monospace; margin-bottom: 0.4rem; }
     #choices[hidden] { display: none; }
+
+    #pile-viewer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 3rem 1rem;
+      overflow-y: auto;
+    }
+    #pile-viewer-backdrop[hidden] { display: none; }
+    #pile-viewer {
+      background: #fafafa;
+      border-radius: 8px;
+      padding: 1rem;
+      max-width: 60rem;
+      width: 100%;
+    }
+    #pile-viewer-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.6rem;
+    }
+    #pile-viewer-title { font-weight: bold; }
+    #pile-viewer-close { font-size: 0.9rem; padding: 0.25rem 0.6rem; }
   </style>
 </head>
 <body>
@@ -129,6 +162,16 @@
   <div id="choices" hidden>
     <div id="choices-prompt"></div>
     <div id="choices-row" class="card-row"></div>
+  </div>
+
+  <div id="pile-viewer-backdrop" hidden>
+    <div id="pile-viewer">
+      <div id="pile-viewer-header">
+        <span id="pile-viewer-title"></span>
+        <button id="pile-viewer-close">Close</button>
+      </div>
+      <div id="pile-viewer-row" class="card-row"></div>
+    </div>
   </div>
 
   <pre id="log">Loading Pyodide and the dbz engine...</pre>

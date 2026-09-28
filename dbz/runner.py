@@ -129,6 +129,10 @@ class Runner:
             'deckSize': player.deck_size,
             'discardCount': len(player.discard_pile),
             'removedCount': len(player.removed_pile),
+            # Discard/Removed are public zones (unlike the Life Deck) -
+            # most-recently-added card first (Pile's 0-index is the bottom).
+            'discardCards': [card_snapshot(c) for c in reversed(player.discard_pile.cards)],
+            'removedCards': [card_snapshot(c) for c in reversed(player.removed_pile.cards)],
             'handCount': len(player.hand),
             'hand': ([card_snapshot(c) for c in player.hand]
                      if player.should_show_hand() else None),
@@ -137,8 +141,14 @@ class Runner:
             'nonCombat': [card_snapshot(c) for c in player.non_combat],
             'drills': [card_snapshot(c) for c in player.drills],
             'dragonBalls': [dragon_ball_snapshot(c) for c in player.dragon_balls],
+            # Effects that have detached from their source card (e.g.
+            # Vegeta's Physical Stance removes itself from the game but
+            # keeps stopping physical attacks for the rest of the turn) -
+            # CardPower.set_floating() nulls .card, so there's no Card to
+            # build a snapshot from; synthesize one from the power itself.
             'floatingCardPowers': [
-                str(cp) for cp in active_card_powers if cp.is_floating],
+                {'id': f'floating-{cp.name}', 'name': cp.name, 'cardText': cp.description}
+                for cp in active_card_powers if cp.is_floating],
         }
 
     def run(self):

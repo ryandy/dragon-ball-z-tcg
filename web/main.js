@@ -9,6 +9,10 @@ const startGameButton = document.getElementById('start-game');
 const choicesDiv = document.getElementById('choices');
 const choicesPrompt = document.getElementById('choices-prompt');
 const choicesRow = document.getElementById('choices-row');
+const pileViewerBackdrop = document.getElementById('pile-viewer-backdrop');
+const pileViewerTitle = document.getElementById('pile-viewer-title');
+const pileViewerRow = document.getElementById('pile-viewer-row');
+const pileViewerClose = document.getElementById('pile-viewer-close');
 
 // Fixed starting point for reproducible playtesting.
 const DEFAULT_SEED = 1;
@@ -77,10 +81,16 @@ function cardBackRowHtml(count) {
   return html;
 }
 
+function pileLinkHtml(player, pile, count) {
+  const label = pile === 'discard' ? 'Discard' : 'Removed';
+  return `<span class="pile-link" data-player-num="${player.playerNum}" data-pile="${pile}">${label}: ${count}</span>`;
+}
+
 function playerZoneHtml(player) {
   const label = player.interactive ? `You (${player.name})` : `${player.name} (CPU${player.playerNum})`;
-  const counts = `Life Deck: ${player.lifeDeckCount}/${player.deckSize}`
-    + ` | Discard: ${player.discardCount} | Removed: ${player.removedCount}`;
+  const counts = `Life Deck: ${player.lifeDeckCount}/${player.deckSize} | `
+    + pileLinkHtml(player, 'discard', player.discardCount) + ' | '
+    + pileLinkHtml(player, 'removed', player.removedCount);
 
   const personalitiesHtml = personalityHtml(player.mainPersonality, 'main-personality')
     + player.allies.map((a) => personalityHtml(a)).join('');
@@ -93,6 +103,7 @@ function playerZoneHtml(player) {
     ['Personalities', personalitiesHtml],
     ['Hand', handHtml],
     ['Non-Combat', player.nonCombat.map((c) => cardHtml(c)).join('')],
+    ['Active Effects', player.floatingCardPowers.map((c) => cardHtml(c, 'floating-effect')).join('')],
     ['Drills', player.drills.map((c) => cardHtml(c)).join('')],
     ['Dragon Balls', player.dragonBalls.map((c) => cardHtml(c)).join('')],
   ];
@@ -106,19 +117,74 @@ function playerZoneHtml(player) {
     <div class="player-zone">
       <div class="player-header">
         <span>${escapeHtml(label)}</span>
-        <span class="counts">${escapeHtml(counts)}</span>
+        <span class="counts">${counts}</span>
       </div>
       ${zonesHtml}
     </div>`;
 }
 
+let latestSnapshot = null;
+
 function renderBoard(snapshot) {
+  latestSnapshot = snapshot;
   board.innerHTML = snapshot.players.map((p) => playerZoneHtml(p)).join('');
 
   const phase = snapshot.phase ?? 'Starting';
   status.textContent = `Turn ${snapshot.turn} | Phase: ${phase} | Seed: ${snapshot.seed}`;
   status.hidden = false;
+
+  if (!pileViewerBackdrop.hidden) {
+    renderPileViewer(pileViewerBackdrop.dataset.playerNum, pileViewerBackdrop.dataset.pile);
+  }
 }
+
+function renderPileViewer(playerNum, pile) {
+  const player = latestSnapshot.players.find((p) => String(p.playerNum) === String(playerNum));
+  if (!player) {
+    pileViewerBackdrop.hidden = true;
+    return;
+  }
+  const label = player.interactive ? `You (${player.name})` : `${player.name} (CPU${player.playerNum})`;
+  const cards = pile === 'discard' ? player.discardCards : player.removedCards;
+  const pileLabel = pile === 'discard' ? 'Discard' : 'Removed';
+
+  pileViewerBackdrop.dataset.playerNum = playerNum;
+  pileViewerBackdrop.dataset.pile = pile;
+  pileViewerTitle.textContent = `${label} - ${pileLabel} Pile (${cards.length})`;
+  pileViewerRow.innerHTML = cards.length
+    ? cards.map((c) => cardHtml(c)).join('')
+    : '<span>(empty)</span>';
+}
+
+function openPileViewer(playerNum, pile) {
+  renderPileViewer(playerNum, pile);
+  pileViewerBackdrop.hidden = false;
+}
+
+function closePileViewer() {
+  pileViewerBackdrop.hidden = true;
+}
+
+board.addEventListener('click', (event) => {
+  const link = event.target.closest('.pile-link');
+  if (link) {
+    openPileViewer(link.dataset.playerNum, link.dataset.pile);
+  }
+});
+
+pileViewerClose.addEventListener('click', closePileViewer);
+
+pileViewerBackdrop.addEventListener('click', (event) => {
+  if (event.target === pileViewerBackdrop) {
+    closePileViewer();
+  }
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !pileViewerBackdrop.hidden) {
+    closePileViewer();
+  }
+});
 
 function submitAnswer(value) {
   const text = String(value);
