@@ -6,7 +6,7 @@ from dbz.combat_attack_phase import CombatAttackPhase
 from dbz.draw_phase import DrawPhase
 from dbz.phase import Phase
 from dbz.state import State
-from dbz.util import dprint
+from dbz.util import announce_action, announce_round_end, dprint
 
 
 class CombatPhase(Phase):
@@ -46,10 +46,12 @@ class CombatPhase(Phase):
         if self.skipped:
             # Choice of declaring combat was prevented before combat phase began
             dprint(f'{self.player} cannot declare combat')
+            announce_action(self.player, 'skip_combat')
         else:
             self.skipped = not self.player.choose_declare_combat()
             if self.skipped:
                 dprint(f'{self.player} chooses to skip combat')
+                announce_action(self.player, 'skip_combat')
 
         if not self.skipped:
             for player in State.gen_players():
@@ -61,6 +63,7 @@ class CombatPhase(Phase):
             return
         else:
             dprint(f'{self.player} declares combat!')
+            announce_action(self.player, 'declare_combat')
 
         self.entering_combat()
 
@@ -83,8 +86,12 @@ class CombatPhase(Phase):
 
             attack_phase = CombatAttackPhase(
                 State.ATTACKING_PLAYER, self, attack_power_override=next_attack_power)
+            State.ROUND_KEY = f'{State.TURN+1}.{State.COMBAT_ROUND+1}'
+            State.ROUND_NEEDS_ACK = False
             attack_phase.execute()
             State.PHASE = self
+            announce_round_end()
+            State.ROUND_KEY = None
 
             if attack_phase.passed:
                 State.PASS_COUNT += 1

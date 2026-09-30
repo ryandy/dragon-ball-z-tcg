@@ -2,7 +2,7 @@ import sys
 
 from dbz.card_power import CardPower
 from dbz.cost import Cost
-from dbz.util import dprint
+from dbz.util import announce_play, dprint
 
 
 class CardPowerOnEndOfPowerUpPhase(CardPower):
@@ -20,6 +20,7 @@ class CardPowerOnEndOfPowerUpPhase(CardPower):
         if (self.on_condition(phase)
             and (not self.choice or self.player.choose_to_use_card_power(self))):
             dprint(f'{self.player} uses {self}')
+            announce_play(self.player, 'power', self.name, self.description)
             dprint(f'  - {self.description}')
             self.on_effect(phase)
             self.on_resolved()

@@ -26,7 +26,7 @@ from dbz.personality_card import PersonalityCard
 from dbz.pile import Pile
 from dbz.state import State
 from dbz.style import Style
-from dbz.util import dprint, dprint_table
+from dbz.util import announce_damage, announce_play, card_uid, dprint, dprint_table, ui_target
 
 
 MAX_ANGER = 5
@@ -624,9 +624,13 @@ class Player:
             else:
                 self.opponent.remove_from_game(ally)
 
+    _damage_report = None  # filled while _apply_damage runs, for announce_damage
+
     def _apply_damage(self, damage, src_personality=None, is_physical=None):
         damage = damage.resolve(self.opponent)
         dprint(f'{self} takes {damage}')
+        self._damage_report = {'target': None, 'powerDamage': 0, 'lifeCards': [],
+                               'drawn': 0, 'stolen': False}
 
         # Handle power damage prevention
         power_damage = damage.power
@@ -644,6 +648,7 @@ class Player:
         if life_draw > 0:
             life_damage -= life_draw
             dprint(f'{self} converted {life_draw} life damage into card draw')
+            self._damage_report['drawn'] = life_draw
             for _ in range(life_draw):
                 self.draw()
 
@@ -655,6 +660,9 @@ class Player:
 
         # Apply life damage
         self.apply_life_damage(life_damage, src_personality=src_personality)
+
+        report, self._damage_report = self._damage_report, None
+        announce_damage(self, lifeDamage=life_damage, **report)
 
         return Damage(power=power_damage, life=life_damage)
 
@@ -676,7 +684,17 @@ class Player:
         carryover_life_damage = max(0, power_damage - target_personality.power_stage)
         power_damage -= carryover_life_damage
         dprint(f'{target_personality.name} takes {power_damage} power damage')
+        power_before = target_personality.get_power_attack_str()
         target_personality.reduce_power_stage(power_damage)
+        if self._damage_report is not None:
+            self._damage_report['powerDamage'] = power_damage
+            self._damage_report['target'] = {
+                'uid': card_uid(target_personality),
+                'name': target_personality.char_name(),
+                'level': target_personality.level,
+                'powerBefore': power_before,
+                'powerAfter': target_personality.get_power_attack_str(),
+            }
 
         for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
@@ -701,6 +719,8 @@ class Player:
                 ['Steal a Dragon Ball', 'Deal the damage'], [''], allow_pass=False)
             if idx == 0:
                 self.opponent.steal_dragon_ball()
+                if self._damage_report is not None:
+                    self._damage_report['stolen'] = True
                 return
 
         discard_count = 0
@@ -709,6 +729,9 @@ class Player:
             if card_discarded:
                 discard_count += 1
                 dprint(f'{self} takes 1 life damage: {card_discarded}')
+                if self._damage_report is not None:
+                    self._damage_report['lifeCards'].append(
+                        {'name': card_discarded.name, 'cardText': card_discarded.card_text})
 
         for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnDamageApplied)
@@ -719,6 +742,8 @@ class Player:
         if (discard_count >= 5 and src_personality
             and self.opponent.can_steal_dragon_ball()):
             self.opponent.steal_dragon_ball()
+            if self._damage_report is not None:
+                self._damage_report['stolen'] = True
 
     def determine_control_of_combat(self):
         if self.main_personality.power_stage < 2 and len(self.allies) > 0:
@@ -817,6 +842,7 @@ class Player:
     def choose(self, names, descriptions,
                other_names=None, other_descriptions=None,
                allow_pass=True, prompt=None,
+               refs=None, other_refs=None,
                ai_refs=None, ai_context=None,
                ai_eval_maximize=True, ai_immediate=True):
         assert names or allow_pass
@@ -865,10 +891,14 @@ class Player:
         while (choice < 0
                or choice >= len(names)+int(allow_pass)):
             if State.TUTORIAL_COMPLETE:
+                targets = [ui_target(r) for r in (refs or ai_refs or [])]
+                targets += [None] * (len(names) - len(targets))
+                other_targets = [ui_target(r) for r in (other_refs or [])]
+                other_targets += [None] * (len(other_names) - len(other_targets))
                 choice = State.IO_BACKEND.read_choice(
                     short_prompt, names=names, descriptions=descriptions,
                     other_names=other_names, other_descriptions=other_descriptions,
-                    allow_pass=allow_pass)
+                    allow_pass=allow_pass, targets=targets, other_targets=other_targets)
                 choice = ''.join(choice.split()).lower()
             else:
                 choice = 'help'
@@ -946,7 +976,7 @@ class Player:
             [cp.description for cp in filtered],
             other_names=[c.name for c in other_hand],
             other_descriptions=[c.card_text for c in other_hand],
-            prompt=prompt,
+            prompt=prompt, refs=filtered, other_refs=other_hand,
             ai_refs=filtered, ai_context=ai_context, ai_eval_maximize=True, ai_immediate=True)
 
         if idx is None:  # Pass
@@ -964,7 +994,7 @@ class Player:
         idx = self.choose(
             [str(cp) for cp in filtered],
             [cp.description for cp in filtered],
-            allow_pass=False,
+            allow_pass=False, refs=filtered,
             prompt='Select a Defense Shield to activate')
         return filtered[idx]
 
@@ -992,7 +1022,7 @@ class Player:
         idx = self.choose(
             [str(c) for c in hand_cards],
             [c.card_text for c in hand_cards],
-            allow_pass=False,
+            allow_pass=False, refs=hand_cards,
             prompt='Select a card to discard')
 
         return hand_cards[idx]
@@ -1011,7 +1041,7 @@ class Player:
 
     def choose_to_use_card_power(self, card_power):
         idx = self.choose([f'Use {card_power}'], [card_power.description],
-                          prompt=f'You can use {card_power} now')
+                          prompt=f'You can use {card_power} now', refs=[card_power])
         return idx == 0
 
     def choose_opponent_dragon_ball(self, prompt=None):
@@ -1032,7 +1062,8 @@ class Player:
             names.append(f'{card.name}{suffix}')
             descriptions.append(card.card_text)
 
-        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
+        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt,
+                          refs=self.opponent.dragon_balls.cards)
         return self.opponent.dragon_balls.cards[idx]
 
     def choose_damage_target(self):
@@ -1074,7 +1105,7 @@ class Player:
             names.append(f'{level : <5} {name : <9} {power : >5}pwr')
             descriptions.append(f'{prefix}{personality.card_text}')
 
-        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt)
+        idx = self.choose(names, descriptions, allow_pass=False, prompt=prompt, refs=cards)
         return cards[idx]
 
     def choose_hand_non_combat_card(self):
@@ -1097,7 +1128,8 @@ class Player:
             [c.card_text for c in filtered],
             other_names=[c.name for c in other_hand],
             other_descriptions=[c.card_text for c in other_hand],
-            prompt='Select a Non-Combat card to play from your hand')
+            prompt='Select a Non-Combat card to play from your hand',
+            refs=filtered, other_refs=other_hand)
 
         if idx is None:  # Pass
             return None
@@ -1105,6 +1137,7 @@ class Player:
 
     def play_ally(self, card):
         dprint(f'{self} plays {card}')
+        announce_play(self, 'ally', card.name, card.card_text)
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
@@ -1156,6 +1189,7 @@ class Player:
 
     def play_drill(self, card):
         dprint(f'{self} plays {card}')
+        announce_play(self, 'drill', card.name, card.card_text)
         if not self.interactive:
             dprint(f'  - {card.card_text}')
 
@@ -1179,6 +1213,7 @@ class Player:
     def play_dragon_ball(self, card, verbose=True):
         if verbose:
             dprint(f'{self} plays {card}')
+            announce_play(self, 'dragon_ball', card.name, card.card_text)
             if not self.interactive:
                 dprint(f'  - {card.card_text}')
 
@@ -1196,6 +1231,7 @@ class Player:
     def play_non_combat_card(self, card):
         if isinstance(card, NonCombatCard):
             dprint(f'{self} plays {card}')
+            announce_play(self, 'noncombat', card.name, card.card_text)
             if not self.interactive:
                 dprint(f'  - {card.card_text}')
 

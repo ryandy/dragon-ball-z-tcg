@@ -4,7 +4,7 @@ from dbz.card_power_defense import CardPowerEnergyDefense, CardPowerPhysicalDefe
 from dbz.combat_card import CombatCard
 from dbz.phase import Phase
 from dbz.state import State
-from dbz.util import dprint
+from dbz.util import announce_action, announce_play, dprint
 
 
 class CombatDefensePhase(Phase):
@@ -39,11 +39,13 @@ class CombatDefensePhase(Phase):
             if card_power.card and not card_power.is_floating:
                 self.player.cards_played_this_combat.append(card_power.card)
             dprint(f'{self.player} uses {card_power} to defend')
+            announce_play(self.player, 'defense', card_power.name, card_power.description)
             if not self.player.interactive:
                 dprint(f'  - {card_power.description}')
             damage = card_power.on_defense(self.player, self, damage)
         else:
             dprint(f'{self.player} has no defense')
+            announce_action(self.player, 'no_defense')
             self.player.card_powers_played_this_combat.append(None)
 
         if not damage.was_stopped():
@@ -55,6 +57,8 @@ class CombatDefensePhase(Phase):
                 if shield_card_power.card and not shield_card_power.is_floating:
                     self.player.cards_played_this_combat.append(shield_card_power.card)
                 dprint(f'{self.player} activates Defense Shield: {shield_card_power}')
+                announce_play(self.player, 'shield', shield_card_power.name,
+                              shield_card_power.description)
                 damage = shield_card_power.on_defense(self.player, self, damage)
 
         return damage

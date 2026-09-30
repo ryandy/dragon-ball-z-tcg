@@ -6,7 +6,7 @@ from dbz.card_power_on_damage_modification import CardPowerOnDamageModification
 from dbz.combat_defense_phase import CombatDefensePhase
 from dbz.phase import Phase
 from dbz.state import State
-from dbz.util import dprint
+from dbz.util import announce_action, announce_damage, announce_play, dprint
 
 
 class CombatAttackPhase(Phase):
@@ -34,6 +34,7 @@ class CombatAttackPhase(Phase):
         if not self.attack_power:
             self.passed = True
             dprint(f'{self.player} passes')
+            announce_action(self.player, 'pass')
             self.player.card_powers_played_this_combat.append(None)
             return
 
@@ -45,8 +46,12 @@ class CombatAttackPhase(Phase):
         damage_mod_srcs = []
         if self.attack_power.is_physical is None:  # Non-combat attacks
             dprint(f'{self.player} uses {self.attack_power} (Non-Combat)')
+            announce_play(self.player, 'noncombat', self.attack_power.name,
+                          self.attack_power.description)
         else:
             dprint(f'{self.player} attacks with {self.attack_power}')
+            announce_play(self.player, 'attack', self.attack_power.name,
+                          self.attack_power.description)
         if not self.player.interactive:
             dprint(f'  - {self.attack_power.description}')
 
@@ -104,6 +109,8 @@ class CombatAttackPhase(Phase):
             else:
                 damage_applied = self.player.opponent.apply_energy_attack_damage(
                     damage, src_personality=self.player.control_personality)
+        else:
+            announce_damage(self.player.opponent, stopped=True)
 
         for player in State.gen_players():
             card_powers = player.get_valid_card_powers(CardPowerOnAttackResolved)

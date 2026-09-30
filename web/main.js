@@ -13,6 +13,8 @@ const pileViewerBackdrop = document.getElementById('pile-viewer-backdrop');
 const pileViewerTitle = document.getElementById('pile-viewer-title');
 const pileViewerRow = document.getElementById('pile-viewer-row');
 const pileViewerClose = document.getElementById('pile-viewer-close');
+const historyList = document.getElementById('history');
+const logDetails = document.getElementById('log-details');
 
 // Fixed starting point for reproducible playtesting.
 const DEFAULT_SEED = 1;
@@ -54,7 +56,7 @@ function escapeHtml(text) {
 
 function cardHtml(card, extraClass = '') {
   return `
-    <div class="card ${extraClass}" data-card-id="${escapeHtml(card.id)}">
+    <div class="card ${extraClass}" data-card-id="${escapeHtml(card.id)}" data-uid="${escapeHtml(card.uid)}">
       <div class="card-name">${escapeHtml(card.name)}</div>
       <div class="card-text">${escapeHtml(card.cardText)}</div>
     </div>`;
@@ -65,7 +67,7 @@ function personalityHtml(personality, extraClass = '') {
     ? `Lv${personality.level}.${personality.anger}`
     : `Lv${personality.level}`;
   return `
-    <div class="card ${extraClass}" data-card-id="${escapeHtml(personality.id)}">
+    <div class="card ${extraClass}" data-card-id="${escapeHtml(personality.id)}" data-uid="${escapeHtml(personality.uid)}">
       <div class="card-name">${escapeHtml(personality.name)}
         <span class="card-stat">${levelStr} - ${escapeHtml(personality.powerAttackStr)}pwr</span>
       </div>
@@ -124,18 +126,200 @@ function playerZoneHtml(player) {
 }
 
 let latestSnapshot = null;
+// The stage between the player zones shows the current combat round as a
+// growing row of "beats" (attack -> defense -> damage). Events outside a round
+// (round == null) are single-beat strips. The row is cleared when the first
+// event of the next round arrives.
+let stageBeats = [];
+let stageRound = null;   // round key of stageBeats (null = single-beat strip)
+let stageAcked = false;  // the player has pressed Continue for this strip
+let lastEvent = null;    // most recent event, including round_end
+let pendingAck = false;  // true while the engine is blocked waiting for "Continue"
+
+const PLAY_VERBS = {
+  attack: 'attacks with',
+  defense: 'defends with',
+  shield: 'activates Defense Shield',
+  noncombat: 'uses',
+  ally: 'plays ally',
+  drill: 'plays drill',
+  dragon_ball: 'plays Dragon Ball',
+  power: 'uses',
+};
+const ACTION_TEXT = {
+  pass: 'passes',
+  declare_combat: 'declares combat!',
+  skip_combat: 'skips combat',
+  no_defense: 'has no defense',
+};
+
+// "attacks with" -> "attack with", "has no defense" -> "have no defense"
+function secondPerson(phrase) {
+  const [verb, ...rest] = phrase.split(' ');
+  let base = verb.replace(/s$/, '');
+  if (verb === 'has') {
+    base = 'have';
+  } else if (verb.endsWith('sses')) {
+    base = verb.slice(0, -2);
+  }
+  return [base, ...rest].join(' ');
+}
+
+function eventText(ev) {
+  const actor = ev.isYou ? 'You' : ev.playerName;
+  const verbPhrase = ev.type === 'play'
+    ? (PLAY_VERBS[ev.role] ?? 'plays')
+    : (ACTION_TEXT[ev.kind] ?? ev.kind);
+  return `${actor} ${ev.isYou ? secondPerson(verbPhrase) : verbPhrase}`;
+}
+
+function damageSummary(ev) {
+  if (ev.stopped) {
+    return 'Attack stopped';
+  }
+  const parts = [];
+  if (ev.powerDamage) {
+    parts.push(`${ev.powerDamage} power`);
+  }
+  if (ev.lifeDamage) {
+    parts.push(`${ev.lifeDamage} life card${ev.lifeDamage === 1 ? '' : 's'}`);
+  }
+  const verb = ev.isYou ? 'take' : 'takes';
+  return parts.length ? `${verb} ${parts.join(' + ')}` : `${verb} no damage`;
+}
+
+function damageLine(ev) {
+  const who = ev.isYou ? 'You' : ev.playerName;
+  return ev.stopped ? `${who}: attack stopped` : `${who} ${damageSummary(ev)}`;
+}
+
+function addHistory(ev) {
+  const turn = latestSnapshot ? `T${latestSnapshot.turn}: ` : '';
+  const li = document.createElement('li');
+  li.className = ev.isYou ? 'you' : 'opponent';
+  if (ev.type === 'damage') {
+    li.textContent = `${turn}${damageLine(ev)}`;
+  } else {
+    const card = ev.type === 'play' ? ` ${ev.name}` : '';
+    li.textContent = `${turn}${eventText(ev)}${card}`;
+  }
+  historyList.prepend(li);
+}
+
+function damageBeatHtml(ev) {
+  const who = ev.isYou ? 'You' : ev.playerName;
+  let body = '';
+  if (ev.stopped) {
+    body = '<div class="card-text">No damage.</div>';
+  } else {
+    if (ev.target) {
+      body += `<div class="card-text">${escapeHtml(ev.target.name)} Lv${ev.target.level}: `
+        + `${escapeHtml(ev.target.powerBefore)} &rarr; ${escapeHtml(ev.target.powerAfter)}pwr</div>`;
+    }
+    (ev.lifeCards ?? []).forEach((c) => {
+      body += `<div class="card-text">&minus; ${escapeHtml(c.name)}</div>`;
+    });
+    if (ev.drawn) {
+      body += `<div class="card-text">+${ev.drawn} card${ev.drawn === 1 ? '' : 's'} drawn</div>`;
+    }
+    if (ev.stolen) {
+      body += '<div class="card-text">Dragon Ball stolen!</div>';
+    }
+  }
+  return `
+    <div class="stage-beat">
+      <div class="stage-text">${escapeHtml(who)} ${ev.stopped ? '' : escapeHtml(damageSummary(ev))}</div>
+      <div class="card damage-beat">
+        <div class="card-name">${ev.stopped ? 'Attack stopped' : 'Damage'}</div>
+        ${body}
+      </div>
+    </div>`;
+}
+
+function beatHtml(ev) {
+  if (ev.type === 'damage') {
+    return damageBeatHtml(ev);
+  }
+  const cardPart = ev.type === 'play'
+    ? cardHtml({id: `stage-${ev.name}`, name: ev.name, cardText: ev.cardText})
+    : '';
+  return `
+    <div class="stage-beat">
+      <div class="stage-text">${escapeHtml(eventText(ev))}</div>
+      ${cardPart}
+    </div>`;
+}
+
+function stageHtml() {
+  if (stageBeats.length === 0) {
+    return '';
+  }
+  const opponentInvolved = stageBeats.some((ev) => !ev.isYou);
+  const cls = `stage ${opponentInvolved ? 'opponent' : 'you'}${stageAcked ? ' acked' : ''}`;
+  return `
+    <div class="${cls}">
+      ${stageBeats.map((ev) => beatHtml(ev)).join('<div class="stage-arrow">&rarr;</div>')}
+    </div>`;
+}
 
 function renderBoard(snapshot) {
   latestSnapshot = snapshot;
-  board.innerHTML = snapshot.players.map((p) => playerZoneHtml(p)).join('');
+  const zones = snapshot.players.map((p) => playerZoneHtml(p));
+  board.innerHTML = zones[0] + stageHtml() + zones.slice(1).join('');
 
   const phase = snapshot.phase ?? 'Starting';
   status.textContent = `Turn ${snapshot.turn} | Phase: ${phase} | Seed: ${snapshot.seed}`;
   status.hidden = false;
 
+  applyChoiceToBoard();
+
   if (!pileViewerBackdrop.hidden) {
     renderPileViewer(pileViewerBackdrop.dataset.playerNum, pileViewerBackdrop.dataset.pile);
   }
+}
+
+// The pending choice (payload from BrowserBackend.read_choice), or null.
+let activeChoice = null;
+
+function boardCardByUid(uid) {
+  return uid ? board.querySelector(`.card[data-uid="${CSS.escape(String(uid))}"]`) : null;
+}
+
+// Options whose target card is visible on the board (and unambiguous - no
+// other option points at the same card) are answered by clicking that card.
+// Everything else stays in the bottom row.
+function onBoardOptionIndexes(payload) {
+  const counts = {};
+  payload.targets.forEach((t) => { if (t) counts[t] = (counts[t] ?? 0) + 1; });
+  const indexes = new Set();
+  payload.targets.forEach((t, i) => {
+    if (t && counts[t] === 1 && boardCardByUid(t)) {
+      indexes.add(i);
+    }
+  });
+  return indexes;
+}
+
+function clearChoiceFromBoard() {
+  board.querySelectorAll('.card.selectable, .card.unavailable').forEach((el) => {
+    el.classList.remove('selectable', 'unavailable');
+    delete el.dataset.value;
+  });
+}
+
+function applyChoiceToBoard() {
+  clearChoiceFromBoard();
+  if (!activeChoice) {
+    return;
+  }
+  onBoardOptionIndexes(activeChoice).forEach((i) => {
+    const el = boardCardByUid(activeChoice.targets[i]);
+    el.classList.add('selectable');
+    el.dataset.value = String(i + 1);
+  });
+  (activeChoice.otherTargets ?? []).forEach((t) => {
+    boardCardByUid(t)?.classList.add('unavailable');
+  });
 }
 
 function renderPileViewer(playerNum, pile) {
@@ -170,7 +354,45 @@ board.addEventListener('click', (event) => {
   if (link) {
     openPileViewer(link.dataset.playerNum, link.dataset.pile);
   }
+  const chosen = event.target.closest('.card.selectable[data-value]');
+  if (chosen && activeChoice) {
+    submitAnswer(chosen.dataset.value);
+  }
 });
+
+// Shows "Continue" as a normal choice card (same look/place as "Pass") so an
+// ack feels like any other decision.
+function renderAckChoice() {
+  activeChoice = null;
+  clearChoiceFromBoard();
+  const ev = lastEvent;
+  if (!ev) {
+    choicesPrompt.textContent = '';
+  } else if (ev.type === 'round_end') {
+    choicesPrompt.textContent = 'Round complete';
+  } else if (ev.type === 'damage') {
+    choicesPrompt.textContent = damageLine(ev);
+  } else {
+    choicesPrompt.textContent = `${eventText(ev)}${ev.type === 'play' ? ` ${ev.name}` : ''}`;
+  }
+  choicesRow.innerHTML = choiceCardHtml('Continue', '', 'selectable', 1);
+  choicesRow.querySelector('.card.selectable').addEventListener('click', acknowledge);
+  choicesDiv.hidden = false;
+}
+
+function acknowledge() {
+  if (!pendingAck) {
+    return;
+  }
+  pendingAck = false;
+  stageAcked = true;
+  sendAnswer('1');
+  choicesDiv.hidden = true;
+  activeChoice = null;
+  if (latestSnapshot) {
+    renderBoard(latestSnapshot);
+  }
+}
 
 pileViewerClose.addEventListener('click', closePileViewer);
 
@@ -183,19 +405,28 @@ pileViewerBackdrop.addEventListener('click', (event) => {
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && !pileViewerBackdrop.hidden) {
     closePileViewer();
+  } else if ((event.key === 'Enter' || event.key === ' ')
+             && pendingAck && pileViewerBackdrop.hidden) {
+    event.preventDefault();
+    acknowledge();
   }
 });
 
-function submitAnswer(value) {
-  const text = String(value);
-  const bytes = new TextEncoder().encode(text);
+// Wakes the worker thread blocked in dbzReadChoice with the given answer text.
+function sendAnswer(value) {
+  const bytes = new TextEncoder().encode(String(value));
   textView.set(bytes);
   Atomics.store(controlArray, CONTROL_LENGTH, bytes.length);
   Atomics.store(controlArray, CONTROL_FLAG, 1);
   Atomics.notify(controlArray, CONTROL_FLAG);
+}
 
-  appendLine(`>>> Choice: ${text}`);
+function submitAnswer(value) {
+  sendAnswer(value);
+  appendLine(`>>> Choice: ${value}`);
   choicesDiv.hidden = true;
+  activeChoice = null;
+  clearChoiceFromBoard();
 }
 
 function choiceCardHtml(name, description, extraClass, value) {
@@ -211,17 +442,19 @@ function choiceCardHtml(name, description, extraClass, value) {
 // allowPass} - Player.choose()'s own parameters (dbz/player.py), forwarded
 // unchanged through BrowserBackend.read_choice. names/descriptions are
 // the selectable options (1-indexed, matching what a terminal session
-// would type); otherNames are shown for context but aren't choosable
-// (mirrors the CLI's "/." prefix).
+// would type). targets are board-card uids for on-board selection (see
+// applyChoiceToBoard); otherNames are unplayable hand cards, dimmed on the board.
 function renderChoices(payload) {
   choicesPrompt.textContent = payload.prompt || '';
 
+  activeChoice = payload;
+  const onBoard = onBoardOptionIndexes(payload);
+
   let html = '';
   payload.names.forEach((name, i) => {
-    html += choiceCardHtml(name, payload.descriptions[i], 'selectable', i + 1);
-  });
-  payload.otherNames.forEach((name, i) => {
-    html += choiceCardHtml(name, payload.otherDescriptions[i], 'unavailable');
+    if (!onBoard.has(i)) {
+      html += choiceCardHtml(name, payload.descriptions[i], 'selectable', i + 1);
+    }
   });
   if (payload.allowPass) {
     html += choiceCardHtml('Pass', 'Do nothing.', 'selectable', payload.names.length + 1);
@@ -233,6 +466,7 @@ function renderChoices(payload) {
   });
 
   choicesDiv.hidden = false;
+  applyChoiceToBoard();
 }
 
 function populateDeckSelects(deckNames) {
@@ -262,6 +496,27 @@ worker.onmessage = (event) => {
     appendLine(msg.line);
   } else if (msg.type === 'state') {
     renderBoard(msg.snapshot);
+  } else if (msg.type === 'event') {
+    const ev = {...msg.event, ack: msg.ack};
+    lastEvent = ev;
+    if (ev.type !== 'round_end') {
+      if (ev.round == null || ev.round !== stageRound) {
+        stageBeats = [];
+        stageAcked = false;
+      }
+      stageRound = ev.round ?? null;
+      stageBeats.push(ev);
+      addHistory(ev);
+    }
+    if (latestSnapshot) {
+      renderBoard(latestSnapshot);
+    }
+  } else if (msg.type === 'need_input' && msg.kind === 'ack') {
+    pendingAck = true;
+    renderAckChoice();
+    if (latestSnapshot) {
+      renderBoard(latestSnapshot);
+    }
   } else if (msg.type === 'need_input') {
     renderChoices(msg);
   } else if (msg.type === 'done') {
@@ -270,6 +525,7 @@ worker.onmessage = (event) => {
     showSetup();
   } else if (msg.type === 'error') {
     appendLine(`[Error] ${msg.message}`);
+    logDetails.open = true;
     choicesDiv.hidden = true;
     showSetup();
   }
@@ -283,6 +539,13 @@ startGameButton.addEventListener('click', () => {
   setupDiv.hidden = true;
   log.textContent = '';
   board.innerHTML = '';
+  stageBeats = [];
+  stageRound = null;
+  stageAcked = false;
+  lastEvent = null;
+  pendingAck = false;
+  activeChoice = null;
+  historyList.innerHTML = '';
   worker.postMessage({type: 'run_interactive', seed, deck1, deck2});
 });
 

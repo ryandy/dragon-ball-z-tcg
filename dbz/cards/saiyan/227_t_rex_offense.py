@@ -7,7 +7,7 @@ from dbz.cost import Cost
 from dbz.damage import Damage
 from dbz.damage_modifier import DamageModifier
 from dbz.state import State
-from dbz.util import dprint
+from dbz.util import announce_play, dprint
 
 
 TYPE = 'Non-Combat'
@@ -39,6 +39,7 @@ class CardPowerOnDamageModificationTRO(CardPowerOnDamageModification):
             self._choice = self.player.choose_to_use_card_power(self)
             if self._choice:
                 dprint(f'{self.player} uses {self}')
+                announce_play(self.player, 'power', self.name, self.description)
                 dprint(f'  - {self.description}')
                 self.exhaust_after_this_combat_attack_phase()
                 if self.card:

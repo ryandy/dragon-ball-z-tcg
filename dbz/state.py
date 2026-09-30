@@ -17,6 +17,9 @@ class State:
     QUIET = False
     ALLOW_MOST_POWERFUL_PERSONALITY_VICTORY = True
     INTERACTIVE = False
+    ACK_OPPONENT_ACTIONS = False  # browser UI: block on "Continue" after opponent actions
+    ROUND_KEY = None  # e.g. "1.2" while inside a combat attack round, else None
+    ROUND_NEEDS_ACK = False  # an opponent action happened in the current round
     PRINT_FREQUENCY = 20  # lines per second
     MIN_PRINT_FREQUENCY = 10
     PRINT_WIDTH = 100

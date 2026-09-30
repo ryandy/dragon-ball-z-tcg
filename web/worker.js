@@ -83,6 +83,7 @@ const INTERACTIVE_CODE = `
   State.IO_BACKEND = BrowserBackend()
   State.INTERACTIVE = True
   State.QUIET = False
+  State.ACK_OPPONENT_ACTIONS = True
 
   deck1 = Deck.from_spec(DECK1_NAME)
   deck2 = Deck.from_spec(DECK2_NAME)

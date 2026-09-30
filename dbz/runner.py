@@ -13,7 +13,7 @@ from dbz.non_combat_phase import NonCombatPhase
 from dbz.player import Player
 from dbz.power_up_phase import PowerUpPhase
 from dbz.state import State
-from dbz.util import dprint, dprint_table
+from dbz.util import card_uid, dprint, dprint_table, floating_uid
 
 
 _PHASE_LABELS = {
@@ -32,6 +32,8 @@ class Runner:
         State.TURN = 0
         State.COMBAT_ROUND = 0
         State.RUNNER = self
+        State.ROUND_KEY = None
+        State.ROUND_NEEDS_ACK = False
 
         self.players = [
             Player(deck=deck1, player_num=1, interactive=State.INTERACTIVE),
@@ -97,11 +99,13 @@ class Runner:
         active_card_powers = player.get_valid_card_powers(CardPower)
 
         def card_snapshot(card):
-            return {'id': card.get_id(), 'name': card.name, 'cardText': card.card_text}
+            return {'id': card.get_id(), 'uid': card_uid(card),
+                    'name': card.name, 'cardText': card.card_text}
 
         def personality_snapshot(personality, anger=None):
             snapshot = {
                 'id': personality.get_id(),
+                'uid': card_uid(personality),
                 'name': personality.char_name(),
                 'level': personality.level,
                 'powerAttackStr': personality.get_power_attack_str(),
@@ -115,6 +119,7 @@ class Runner:
         def dragon_ball_snapshot(card):
             return {
                 'id': card.get_id(),
+                'uid': card_uid(card),
                 'name': card.name,
                 'dbSet': card.db_set,
                 'dbNumber': card.db_number,
@@ -147,7 +152,8 @@ class Runner:
             # CardPower.set_floating() nulls .card, so there's no Card to
             # build a snapshot from; synthesize one from the power itself.
             'floatingCardPowers': [
-                {'id': f'floating-{cp.name}', 'name': cp.name, 'cardText': cp.description}
+                {'id': f'floating-{cp.name}', 'uid': floating_uid(cp),
+                 'name': cp.name, 'cardText': cp.description}
                 for cp in active_card_powers if cp.is_floating],
         }
 

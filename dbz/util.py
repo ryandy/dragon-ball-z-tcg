@@ -15,6 +15,84 @@ def dprint(msg='', quiet=None):
                 State.IO_BACKEND.write(splitline)
 
 
+def card_uid(card):
+    '''Per-instance id for a Card (Card.get_id() is shared by duplicate copies).
+    Lets the UI match a choice option to the exact card on the board.'''
+    return str(id(card))
+
+
+def floating_uid(card_power):
+    return f'floating-{id(card_power)}'
+
+
+def ui_target(ref):
+    '''Board-element uid a choice option refers to, or None if it has no
+    single visible card (Pass, Declare Combat, powers with no card, ...).'''
+    from dbz.card import Card
+    from dbz.card_power import CardPower
+    if isinstance(ref, Card):
+        return card_uid(ref)
+    if isinstance(ref, CardPower):
+        if ref.is_floating:
+            return floating_uid(ref)
+        return card_uid(ref.card) if ref.card is not None else None
+    return None
+
+
+def _announce(player, event):
+    '''Sends a structured game event to the IO backend. Opponent actions
+    (CPU acting while a human is playing) block for acknowledgement when
+    State.ACK_OPPONENT_ACTIONS is set. No-op for the CLI backend.'''
+    event.update({
+        'playerNum': player.player_num,
+        'playerName': player.name,
+        'isYou': bool(player.interactive),
+        'round': State.ROUND_KEY,
+    })
+    opponent_action = (State.ACK_OPPONENT_ACTIONS
+                       and not player.interactive
+                       and bool(player.opponent and player.opponent.interactive))
+    if State.ROUND_KEY is not None:
+        # Inside a combat round: don't block per action - one ack at round end.
+        if opponent_action:
+            State.ROUND_NEEDS_ACK = True
+        State.IO_BACKEND.announce(event, ack=False)
+    else:
+        State.IO_BACKEND.announce(event, ack=opponent_action)
+
+
+def announce_round_end():
+    '''Closes the current combat round; blocks once for an ack if the round
+    contained an opponent action.'''
+    event = {'type': 'round_end', 'round': State.ROUND_KEY}
+    ack = State.ROUND_NEEDS_ACK
+    State.ROUND_NEEDS_ACK = False
+    State.IO_BACKEND.announce(event, ack=ack)
+
+
+def announce_damage(player, **fields):
+    '''Damage summary for `player` (the damaged player). Never blocks.'''
+    event = {
+        'type': 'damage',
+        'playerNum': player.player_num,
+        'playerName': player.name,
+        'isYou': bool(player.interactive),
+        'round': State.ROUND_KEY,
+    }
+    event.update(fields)
+    State.IO_BACKEND.announce(event, ack=False)
+
+
+def announce_play(player, role, name, text):
+    '''role: attack | defense | shield | noncombat | ally | drill | dragon_ball | power'''
+    _announce(player, {'type': 'play', 'role': role, 'name': name, 'cardText': text})
+
+
+def announce_action(player, kind):
+    '''kind: pass | declare_combat | skip_combat | no_defense'''
+    _announce(player, {'type': 'action', 'kind': kind})
+
+
 def dprint_table(table, quiet=None):
     tabulate.PRESERVE_WHITESPACE = True
     column_count = len(table)

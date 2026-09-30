@@ -12,7 +12,8 @@ class IOBackend(abc.ABC):
 
     @abc.abstractmethod
     def read_choice(self, prompt, names=None, descriptions=None,
-                     other_names=None, other_descriptions=None, allow_pass=True):
+                     other_names=None, other_descriptions=None, allow_pass=True,
+                     targets=None, other_targets=None):
         '''Blocks and returns raw text the way input() does today.
 
         prompt is the short, plain-text label for this choice (e.g.
@@ -26,12 +27,23 @@ class IOBackend(abc.ABC):
         Player.choose()'s own parameters, forwarded through unchanged, for
         backends that want the structured option data (e.g. to render
         clickable cards) instead of/in addition to the pre-formatted
-        prompt text already sent via write().'''
+        prompt text already sent via write().
+
+        targets/other_targets are parallel to names/other_names: the uid of
+        the board card each option refers to (see util.ui_target), or None,
+        so a UI can let the player click the card on the board.'''
 
     def write_state(self, snapshot):
         '''Receives a JSON-serializable board-state snapshot (see
         Runner.build_state_snapshot). No-op by default - CLIBackend has
         no use for it since the terminal already shows state via write().'''
+        pass
+
+    def announce(self, event, ack=False):
+        '''Receives a JSON-serializable game event (see util.announce_play).
+        If ack is True, blocks until the player acknowledges it. No-op by
+        default - CLIBackend has no use for it since the terminal already
+        shows the same information as text via write().'''
         pass
 
 
@@ -74,23 +86,35 @@ class BrowserBackend(IOBackend):
         postMessage(json.dumps({'type': 'write', 'line': line}))
 
     def read_choice(self, prompt, names=None, descriptions=None,
-                     other_names=None, other_descriptions=None, allow_pass=True):
+                     other_names=None, other_descriptions=None, allow_pass=True,
+                     targets=None, other_targets=None):
         from js import dbzReadChoice
         if State.RUNNER is not None:
             State.RUNNER.refresh_state()
         options = json.dumps({
+            'kind': 'choice',
             'prompt': prompt,
             'names': names or [],
             'descriptions': descriptions or [],
             'otherNames': other_names or [],
             'otherDescriptions': other_descriptions or [],
             'allowPass': bool(allow_pass),
+            'targets': targets or [None] * len(names or []),
+            'otherTargets': other_targets or [None] * len(other_names or []),
         })
         return dbzReadChoice(options)
 
     def write_state(self, snapshot):
         from js import postMessage
         postMessage(json.dumps({'type': 'state', 'snapshot': snapshot}))
+
+    def announce(self, event, ack=False):
+        from js import dbzReadChoice, postMessage
+        postMessage(json.dumps({'type': 'event', 'event': event, 'ack': ack}))
+        if ack:
+            if State.RUNNER is not None:
+                State.RUNNER.refresh_state()
+            dbzReadChoice(json.dumps({'kind': 'ack'}))
 
 
 # Default backend preserves current terminal behavior. Swap by assigning
